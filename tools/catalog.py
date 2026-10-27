@@ -470,6 +470,7 @@ def exportSources(catalog, finding, tracked):
 
 def exportReadme(finding, files, repoUrl):
     source = f"{repoUrl.rstrip('/')}/{finding['path']}" if repoUrl else finding["path"]
+    sourceReference = f"[full package]({source})" if repoUrl else f"`{source}`"
     lines = [
         f"# {finding['title']}",
         "",
@@ -489,7 +490,7 @@ def exportReadme(finding, files, repoUrl):
         "Files: " + ", ".join(f"[{name}]({name})" for name in files),
         "",
         "The paper is the human-author presentation of the recorded manuscript. The LaTeX source, "
-        f"proofs and verification are in the [full package]({source}).",
+        f"proofs and verification are in the full source collection: {sourceReference}.",
         "",
         "Papers and original media: [CC BY 4.0](../LICENSES/CC-BY-4.0.txt), subject to "
         "the exceptions in [LICENSE](../LICENSE). Retain [NOTICE](../NOTICE) when reusing the material.",
