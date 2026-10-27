@@ -1,0 +1,42 @@
+[
+  {
+    "scene": "OneReaction",
+    "start": 0.0,
+    "end": 71.566667
+  },
+  {
+    "scene": "Robustness",
+    "start": 71.566667,
+    "end": 143.566016
+  },
+  {
+    "scene": "ThreeRestingStates",
+    "start": 143.566016,
+    "end": 219.866016
+  },
+  {
+    "scene": "TwoDimensions",
+    "start": 219.866016,
+    "end": 298.532683
+  },
+  {
+    "scene": "OppositeSlopes",
+    "start": 298.532683,
+    "end": 379.19935000000004
+  },
+  {
+    "scene": "BendingRule",
+    "start": 379.19935000000004,
+    "end": 441.93268300000005
+  },
+  {
+    "scene": "SharpSizes",
+    "start": 441.93268300000005,
+    "end": 512.1993500000001
+  },
+  {
+    "scene": "Evidence",
+    "start": 512.1993500000001,
+    "end": 583.5660170000001
+  }
+]

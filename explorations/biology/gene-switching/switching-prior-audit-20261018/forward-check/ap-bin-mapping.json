@@ -1,0 +1,52 @@
+{
+  "selectionRule": "mean(M1[MATLAB 16:301]) > 0.5 and nTraces > 100",
+  "selectedOriginalBins1based": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "AP16originalBin1based": 21,
+  "AP16coordinate": 0.43018822862226613,
+  "AP16nTraces": 217,
+  "traceFields": [
+    "t",
+    "int",
+    "mbg",
+    "sbg",
+    "ap",
+    "dv",
+    "emb",
+    "nid",
+    "rs",
+    "A"
+  ],
+  "dataFields": [
+    "Traces",
+    "AP",
+    "Ti",
+    "M1",
+    "S2",
+    "K3",
+    "K4",
+    "WEmb",
+    "M1Emb",
+    "S2Emb",
+    "V1Emb",
+    "Corr"
+  ]
+}

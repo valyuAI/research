@@ -1,0 +1,53 @@
+\begin{thebibliography}{1}
+
+\bibitem{BD1986}
+Hans-J{\"u}rgen Bandelt and Andreas Dress.
+\newblock Reconstructing the shape of a tree from observed dissimilarity data.
+\newblock {\em Advances in Applied Mathematics}, 7(3):309--343, 1986.
+
+\bibitem{Kissat}
+Armin Biere et~al.
+\newblock Kissat {SAT} solver, version 4.0.4.
+\newblock \url{https://github.com/arminbiere/kissat}, 2024.
+
+\bibitem{CaDiCaL2}
+Armin Biere, Tobias Faller, Katalin Fazekas, Mathias Fleury, Nils Froleyks, and
+  Florian Pollitt.
+\newblock {CaDiCaL} 2.0.
+\newblock In {\em Computer Aided Verification -- CAV 2024}, volume 14681 of
+  {\em Lecture Notes in Computer Science}, pages 133--152. Springer, 2024.
+
+\bibitem{CS1981}
+Hans Colonius and Hans~Henning Schulze.
+\newblock Tree structures for proximity data.
+\newblock {\em British Journal of Mathematical and Statistical Psychology},
+  34:167--180, 1981.
+
+\bibitem{CCFSSW2026}
+Bryan Currie, {\'E}va Czabarka, Mareike Fischer, Henry Simmons, L{\'a}szl{\'o}
+  Sz{\'e}kely, and Kristina Wicke.
+\newblock On agreement subtrees in multiple phylogenetic trees.
+\newblock arXiv:2607.12778v2, 2026.
+
+\bibitem{OEISA000672}
+{OEIS Foundation Inc.}
+\newblock Sequence {A000672}: Number of 3-valent trees (= boron trees or binary
+  trees) with n nodes.
+\newblock The On-Line Encyclopedia of Integer Sequences,
+  \url{https://oeis.org/A000672}, 2026.
+
+\bibitem{SY2026}
+Sagi Snir and Raphael Yuster.
+\newblock Simultaneous separation in bounded degree trees.
+\newblock {\em Discrete Applied Mathematics}, 387:160--171, 2026.
+\newblock arXiv:2602.23096v1.
+
+\bibitem{DRATtrim}
+Nathan Wetzler, Marijn J.~H. Heule, and Warren~A. Hunt, Jr.
+\newblock {DRAT}-trim: Efficient checking and trimming using expressive clausal
+  proofs.
+\newblock In {\em Theory and Applications of Satisfiability Testing -- SAT
+  2014}, volume 8561 of {\em Lecture Notes in Computer Science}, pages
+  422--429. Springer, 2014.
+
+\end{thebibliography}

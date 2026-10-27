@@ -1,0 +1,104 @@
+Successful complete replay, completed 2026-10-26 12:29:39 UTC.
+Tool versions: environment.json.
+
+k=4, checked=1, elapsed=0.0205663s
+k=4, checked=2, elapsed=0.210874s
+k=4, checked=3, elapsed=0.870319s
+k=4, checked=4, elapsed=1.23625s
+k=4, checked=5, elapsed=1.75948s
+k=4, checked=6, elapsed=2.74099s
+k=4, checked=7, elapsed=2.832s
+k=4, checked=8, elapsed=3.5695s
+k=4, checked=9, elapsed=4.16631s
+k=4, checked=10, elapsed=4.26316s
+k=4, checked=11, elapsed=4.78415s
+k=4, checked=12, elapsed=4.93398s
+complete: k=4, patterns=12
+k=5, checked=20, elapsed=0.059679s
+k=5, checked=40, elapsed=0.24176s
+k=5, checked=60, elapsed=0.443389s
+complete: k=5, patterns=60
+k=6, checked=20, elapsed=0.001237s
+k=6, checked=40, elapsed=0.0021845s
+k=6, checked=60, elapsed=0.00310079s
+k=6, checked=80, elapsed=0.00426679s
+k=6, checked=100, elapsed=0.0051465s
+k=6, checked=120, elapsed=0.00599546s
+k=6, checked=140, elapsed=0.00684033s
+k=6, checked=160, elapsed=0.00770092s
+k=6, checked=180, elapsed=0.00839525s
+k=6, checked=200, elapsed=0.00907692s
+k=6, checked=220, elapsed=0.00972154s
+k=6, checked=240, elapsed=0.0103781s
+k=6, checked=260, elapsed=0.0110339s
+k=6, checked=280, elapsed=0.0116808s
+k=6, checked=300, elapsed=0.0123149s
+k=6, checked=320, elapsed=0.0129558s
+k=6, checked=340, elapsed=0.0136171s
+k=6, checked=360, elapsed=0.0142701s
+complete: k=6, patterns=360
+k=7, checked=500, elapsed=0.0212227s
+k=7, checked=1000, elapsed=0.0420208s
+k=7, checked=1500, elapsed=0.0620679s
+k=7, checked=2000, elapsed=0.0814203s
+k=7, checked=2500, elapsed=0.141832s
+complete: k=7, patterns=2520
+k=4: 12 representatives, min=56793771256499/72407797862400, tail=5/12, PASS
+k=5: 60 representatives, min=19248964193/20583763200, tail=4/35, PASS
+k=6: 360 representatives, min=433/440, tail=28/71, PASS
+k=7: 2520 representatives, min=2333/2340, tail=32/419, PASS
+k>=8: exact uniform scaled margin >= 218738049/2305503200, PASS
+Certificate arithmetic and coverage PASS; independent coefficients MATCH
+Direct permutations n=4: [1, 1], MATCH
+Direct permutations n=5: [3, 4], MATCH
+Direct permutations n=6: [18, 24], MATCH
+Direct permutations n=7: [116, 148], MATCH
+Direct permutations n=8: [883, 1135], MATCH
+Direct permutations n=9: 0/362880 examined
+Direct permutations n=9: 50000/362880 examined
+Direct permutations n=9: 100000/362880 examined
+Direct permutations n=9: 150000/362880 examined
+Direct permutations n=9: 200000/362880 examined
+Direct permutations n=9: 250000/362880 examined
+Direct permutations n=9: 300000/362880 examined
+Direct permutations n=9: 350000/362880 examined
+Direct permutations n=9: [7383, 9479], MATCH
+Pointwise recurrence k=3: all 8192 start sets through span 13, PASS
+Pointwise recurrence k=4: all 8192 start sets through span 13, PASS
+Pointwise recurrence k=5: all 8192 start sets through span 13, PASS
+Pointwise recurrence k=6: all 8192 start sets through span 13, PASS
+Pointwise recurrence k=7: all 8192 start sets through span 13, PASS
+Pointwise recurrence k=8: all 8192 start sets through span 13, PASS
+k=3, pattern=(1, 2, 3): A=2185387729252848, B=4198821026723280, R=18164949751872, denominator=6402373705728000, PASS
+k=3, pattern=(1, 3, 2): A=2947998300006576, B=3442243258293219, R=12132147428205, denominator=6402373705728000, PASS
+k=3, pattern=(2, 1, 3): A=2871026211858912, B=3513182544117216, R=18164949751872, denominator=6402373705728000, PASS
+Length three: both independent integer recurrences MATCH; all three complement representatives PASS
+Direct k=3, horizon=8, all six races, 40320 permutations COMPLETE
+Direct k=3, horizon=9, all six races, 362880 permutations COMPLETE
+Direct k=3, horizon=10, examined=500000
+Direct k=3, horizon=10, examined=1000000
+Direct k=3, horizon=10, examined=1500000
+Direct k=3, horizon=10, examined=2000000
+Direct k=3, horizon=10, examined=2500000
+Direct k=3, horizon=10, examined=3000000
+Direct k=3, horizon=10, examined=3500000
+Direct k=3, horizon=10, all six races, 3628800 permutations COMPLETE
+Direct k=3 H=8, pattern=(1, 2, 3): both recurrences MATCH
+Direct k=3 H=8, pattern=(1, 3, 2): both recurrences MATCH
+Direct k=3 H=8, pattern=(2, 1, 3): both recurrences MATCH
+Direct k=3 H=8, pattern=(2, 3, 1): both recurrences MATCH
+Direct k=3 H=8, pattern=(3, 1, 2): both recurrences MATCH
+Direct k=3 H=8, pattern=(3, 2, 1): both recurrences MATCH
+Direct k=3 H=9, pattern=(1, 2, 3): both recurrences MATCH
+Direct k=3 H=9, pattern=(1, 3, 2): both recurrences MATCH
+Direct k=3 H=9, pattern=(2, 1, 3): both recurrences MATCH
+Direct k=3 H=9, pattern=(2, 3, 1): both recurrences MATCH
+Direct k=3 H=9, pattern=(3, 1, 2): both recurrences MATCH
+Direct k=3 H=9, pattern=(3, 2, 1): both recurrences MATCH
+Direct k=3 H=10, pattern=(1, 2, 3): both recurrences MATCH
+Direct k=3 H=10, pattern=(1, 3, 2): both recurrences MATCH
+Direct k=3 H=10, pattern=(2, 1, 3): both recurrences MATCH
+Direct k=3 H=10, pattern=(2, 3, 1): both recurrences MATCH
+Direct k=3 H=10, pattern=(3, 1, 2): both recurrences MATCH
+Direct k=3 H=10, pattern=(3, 2, 1): both recurrences MATCH
+All 18 direct horizon/race comparisons PASS

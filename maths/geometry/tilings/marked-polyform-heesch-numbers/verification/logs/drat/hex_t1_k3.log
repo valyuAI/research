@@ -1,0 +1,16 @@
+[12:08:29] build hex_t1_k3 hex [[0, 0], [0, 1], [0, 2], [1, -1]] k=3 
+hex cells=[[0, 0], [0, 1], [0, 2], [1, -1]] k=3 imb=1 radius=18.2: placements 14412 vars 218300 clauses 1606698 (17.3s)
+wrote hex_t1_k3.cnf
+6caac3d1fdd7229f573ef9f7cac5765a90cf0571836786caff684c76e5c23446  hex_t1_k3.cnf
+[12:08:49] cadical start
+s UNSATISFIABLE
+[12:15:10] cadical rc=20 (381s) proof bytes 81622257
+76decd8a02299f77f28d7bea3a581b4cc47290405f34d64892cc7592f82938a4  hex_t1_k3.drat
+c 138192 of 1606698 clauses in core                            
+c 280439 of 683274 lemmas in core using 41824520 resolution steps
+c 0 RAT lemmas in core; 208118 redundant literals in core lemmas
+s VERIFIED
+c verification time: 412.379 seconds
+[12:22:04] drat-trim done (413s)
+DRAT_VERIFIED hex_t1_k3
+[12:22:15] END rc=20

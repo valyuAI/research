@@ -1,0 +1,27 @@
+{
+  "status": "verified historical DRAT replay; regenerated CNF matches exactly",
+  "formula": {
+    "file": "certificates/sat_A2_rank8.cnf",
+    "sha256": "749009772e31befb78f54eaeed9d395d43cf6e1dc59aea62844ff73678536a13",
+    "bytes": 60188,
+    "variables": 1268,
+    "clauses": 4273
+  },
+  "proof": {
+    "archive_path": "<unpublished-record-c5781a19c9cf>",
+    "bundled": false,
+    "sha256": "3d5d42e860323e728d3f32b7144a33ba793ff54a1bfeda7ff8823e2dc54f974a",
+    "bytes": 628254455
+  },
+  "checker_log": {
+    "file": "logs/drat_A2_rank8.txt",
+    "sha256": "a39c203136b0cce7203b489cc838d6c87d2ea168cde031ed011883615720b78f",
+    "result": "s VERIFIED",
+    "seconds": 1532.153
+  },
+  "encoder_sha256": "20185446a8f591e7a11bcb9c0d592fc9c8e033b8a50945e2ccff1a5d36e78838",
+  "solver": "CaDiCaL 3.0.1",
+  "solver_result": "UNSATISFIABLE",
+  "solver_process_seconds": 367.95,
+  "reproduction": "See sat-replay.md. Main proof uses bundled exhaustive checkers; archived DRAT is optional corroboration."
+}

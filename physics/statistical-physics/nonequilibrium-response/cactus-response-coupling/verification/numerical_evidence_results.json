@@ -1,0 +1,71 @@
+{
+  "A_gumbel_monte_carlo": {
+    "C6": {
+      "samples": 50000,
+      "non_uc_families": 0,
+      "max_abs_frequency_error": 0.0029886343815496152,
+      "binomial_sd_bound": 0.00223606797749979
+    },
+    "bowtie_plus_pendant": {
+      "samples": 50000,
+      "non_uc_families": 0,
+      "max_abs_frequency_error": 0.0018194550738948045,
+      "binomial_sd_bound": 0.00223606797749979
+    },
+    "diamond": {
+      "samples": 50000,
+      "non_uc_families": 0,
+      "max_abs_frequency_error": 0.06149861081989369,
+      "binomial_sd_bound": 0.00223606797749979
+    },
+    "C5_independent_noise_per_arc": {
+      "samples": 50000,
+      "non_uc_families": 0,
+      "max_abs_frequency_error": 0.1085878316714409,
+      "binomial_sd_bound": 0.00223606797749979
+    }
+  },
+  "B_coupling_lp": {
+    "diamond": {
+      "uc_families": 90,
+      "trials": 100,
+      "infeasible_trials": 0,
+      "max_l1_slack": 0.0
+    },
+    "K23": {
+      "uc_families": 264,
+      "trials": 60,
+      "infeasible_trials": 0,
+      "max_l1_slack": 0.0
+    },
+    "C5_plus_chord": {
+      "uc_families": 223,
+      "trials": 60,
+      "infeasible_trials": 0,
+      "max_l1_slack": 0.0
+    },
+    "K4": {
+      "uc_families": 346,
+      "trials": 100,
+      "infeasible_trials": 11,
+      "max_l1_slack": 0.013981107060801638
+    },
+    "K4_subdivided": {
+      "uc_families": 984,
+      "trials": 40,
+      "infeasible_trials": 5,
+      "max_l1_slack": 0.03704750339803976
+    }
+  },
+  "C_conjecture_search": {
+    "K4_all_roots": {
+      "trials": 150,
+      "max_gap_soft_minus_bound": -2.8266278206956486e-13
+    },
+    "K5_roots_0_1": {
+      "trials": 150,
+      "max_gap_soft_minus_bound": -2.7770941102289726e-10
+    }
+  },
+  "seconds": 47.1
+}

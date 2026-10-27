@@ -1,0 +1,381 @@
+{
+  "description": "Stable labels for research-review jobs; original identifiers are committed by SHA-256 without exposing service job IDs.",
+  "reviews": [
+    {
+      "label": "DR-001",
+      "identifierSha256": "fba2fc37a9c1c07bd36707b716dbaac9a4f5538865785a27cb80002275fb714c"
+    },
+    {
+      "label": "DR-002",
+      "identifierSha256": "f237e26a5be5e40396425069827915b0fba2eb5f744ea984f8873632e7e572e3"
+    },
+    {
+      "label": "DR-003",
+      "identifierSha256": "7a0ae90e08c2f8f7ffcddad915e52994693397b400f56a02eba636b4acf7fa41"
+    },
+    {
+      "label": "DR-004",
+      "identifierSha256": "d4484f087af005af4582d89d8c8f76bca1fc7d85704337d4f07e916a7b1130b2"
+    },
+    {
+      "label": "DR-005",
+      "identifierSha256": "654cb45e4aa437e7e6292cd1fe32ef0c3cefcb00f4c6771d23b1f78137936475"
+    },
+    {
+      "label": "DR-006",
+      "identifierSha256": "e24c3699454018e6612be598b4cff091f023038f4f0e2e75efa10c76d29caafd"
+    },
+    {
+      "label": "DR-007",
+      "identifierSha256": "b18e5373d8668722671b3fe5046157fe09469b072df51f6fa5c51c230e9feabc"
+    },
+    {
+      "label": "DR-008",
+      "identifierSha256": "1300e683f632f1ba89c37db83cd185aa6f34e28682d2add7ddebce03fedae0b8"
+    },
+    {
+      "label": "DR-009",
+      "identifierSha256": "cda75e07940f8694617c0c68e1c38a25ca5f15e43d746608ab17bcf48e76a292"
+    },
+    {
+      "label": "DR-010",
+      "identifierSha256": "ace50847d9593414360740a510c474a376a5bb94c395af2af13f8ffe42879800"
+    },
+    {
+      "label": "DR-011",
+      "identifierSha256": "77e3a73b622e8ff0667bf0da0893c5cb193f67ca0c2b9104b6252e695cb56343"
+    },
+    {
+      "label": "DR-012",
+      "identifierSha256": "41f680badbe5c4c5046fdc6b287ed9afd589314552ccae2db866140e90042adf"
+    },
+    {
+      "label": "DR-013",
+      "identifierSha256": "b2f2675e6e1d19019db708aad5b1b4568057452c46fe88573339f4ab141d75e6"
+    },
+    {
+      "label": "DR-014",
+      "identifierSha256": "6090ab6159b4c598690417c644097f629481fc46d09529d7051cd3626f4e4e97"
+    },
+    {
+      "label": "DR-015",
+      "identifierSha256": "9154b7c0a3134454b5ae95958904389e9e31a53f4cf5b5caf69b74ca206a944b"
+    },
+    {
+      "label": "DR-016",
+      "identifierSha256": "52f3011ce8e6100e6a780563f111687cbfbbf667544edd43ba03a54b710b9161"
+    },
+    {
+      "label": "DR-017",
+      "identifierSha256": "5cf5c16bd03295a740b21937f834a69fde66c22a0b15e0fa7a207bf58988135e"
+    },
+    {
+      "label": "DR-018",
+      "identifierSha256": "3e4855de19cf634eabcd0d4755e433f6af039274a3ee4c0feb59ba41fd6d7069"
+    },
+    {
+      "label": "DR-019",
+      "identifierSha256": "b61c594aa2021cf96d26b3e32a1ba55fce0c2dd6e8b5e82ef1b42fb67b5fbdaf"
+    },
+    {
+      "label": "DR-020",
+      "identifierSha256": "2fb889727b81d9350f440485a7d633425eabdcb74780b2eafb5de745cdaf88c5"
+    },
+    {
+      "label": "DR-021",
+      "identifierSha256": "6add6e82b93afd9e04db0be67a20f7345d71f9688d2f5a99e49f7a80a9b5efc2"
+    },
+    {
+      "label": "DR-022",
+      "identifierSha256": "2fe41e18e357b3fa5b183072b960016961caa861e2c50e5fea6ce78d589e7b11"
+    },
+    {
+      "label": "DR-023",
+      "identifierSha256": "3f8cc76bf1024fdafda88521e161c72cc893938444cd963f46b1611430f986f6"
+    },
+    {
+      "label": "DR-024",
+      "identifierSha256": "4e6752902813f6bf77bb8888f2918efdf48790ff8ecc3207f8db502a95724de8"
+    },
+    {
+      "label": "DR-025",
+      "identifierSha256": "594912c1d87c99509a0e3253cc6aa1c0ec7f81f246b14a449ddcf60bd34329e5"
+    },
+    {
+      "label": "DR-026",
+      "identifierSha256": "22280f2401b4410901feccf1a9c508bc638a8ef535b6390902bc415e6adb8ac7"
+    },
+    {
+      "label": "DR-027",
+      "identifierSha256": "dcd92c923b3edf0716636219d3fd83110f3e0337cf2e3ed1dfe38436ba4d9778"
+    },
+    {
+      "label": "DR-028",
+      "identifierSha256": "95a5766aa9ed5a0a237834249a070deac19ab21ce78dead77c786ff654c0346b"
+    },
+    {
+      "label": "DR-029",
+      "identifierSha256": "ece51e78f84d261c9caab3f87bb22f24d02d67d95774f67602a4b40592846287"
+    },
+    {
+      "label": "DR-030",
+      "identifierSha256": "7b9a2f9b48cdde5da3e42ece48812d795e140672e46bc14acba60035fd1680c2"
+    },
+    {
+      "label": "DR-031",
+      "identifierSha256": "0c6a918877f8e5a190bbc2e429ab3237039a38977971d25bc123959c0f1d02e5"
+    },
+    {
+      "label": "DR-032",
+      "identifierSha256": "3bfe0918a810ad9e98de67a3161d15638d67bb961d04d1cdd3beb172b6770c44"
+    },
+    {
+      "label": "DR-033",
+      "identifierSha256": "ea90c88b4321bdc6bd45cf6510633c1653f0931fd78ca8c9769682b448b87776"
+    },
+    {
+      "label": "DR-034",
+      "identifierSha256": "5456c0e326f2ad20633717a724a9ce014f262a123519c782d3d216616ec0e7e6"
+    },
+    {
+      "label": "DR-035",
+      "identifierSha256": "6f7234e82785f1198b51d7f6475806bdf4ea7e5aaed6727010e39f2aa55122eb"
+    },
+    {
+      "label": "DR-036",
+      "identifierSha256": "e0a818b5658c88e01de6fb06074fccaa10427dc2007742436d16aed5e2224f9d"
+    },
+    {
+      "label": "DR-037",
+      "identifierSha256": "fe288b7950bf4ce771c65191df7825a28632827ae29e00ec82dcee2657f2e9cd"
+    },
+    {
+      "label": "DR-038",
+      "identifierSha256": "8a7f918fbb6d0b2af6578d7dd64138c4d96782953ce4f06b03e5b62fe62bc9ba"
+    },
+    {
+      "label": "DR-039",
+      "identifierSha256": "4df8e6184f9924049b329d5bf6b101bd1d3ed2c9d3b721b980ee3679308fdb41"
+    },
+    {
+      "label": "DR-040",
+      "identifierSha256": "092940f48d6162f2da5824e2c289f6aa996202bc8926b72ed654f64d6d9752a9"
+    },
+    {
+      "label": "DR-041",
+      "identifierSha256": "a8feec53bf689886feb2ab8b8a6813de2a4d5ef32fcb2e1051f109b04ef069a1"
+    },
+    {
+      "label": "DR-042",
+      "identifierSha256": "ff07b3b47257d5bc016e253a42cf14570a6097801ba4583bf3825899ea6d59f9"
+    },
+    {
+      "label": "DR-043",
+      "identifierSha256": "a28df3263461994852706cf0ae0e96047b2e8c42edb67e2d33b93fff85326a59"
+    },
+    {
+      "label": "DR-044",
+      "identifierSha256": "9fcc9dfa093ebb8a495f9e07c95525f5d86e4e6cc4d0af7a0b93ad11cea70413"
+    },
+    {
+      "label": "DR-045",
+      "identifierSha256": "3288a7aa13785849c8c6b133da4e886b9c088c2f049f9364c0a8b1f5e82c1ccc"
+    },
+    {
+      "label": "DR-046",
+      "identifierSha256": "736ba4937ced89f5ebbdbdbe5798a9db2251634ef1eb763812e95fc18d52b9e9"
+    },
+    {
+      "label": "DR-047",
+      "identifierSha256": "e59e1dbbceb04076d2fe4bb1ac04ec1a7da4dbb77be12926e1592b5d2a86784c"
+    },
+    {
+      "label": "DR-048",
+      "identifierSha256": "68d9a52100a87f5103944e6f1c32fa919446086e254da5a74d8009815f48bc6c"
+    },
+    {
+      "label": "DR-049",
+      "identifierSha256": "62625edf4ed94e8a302d8ea1712a3a9f7d7f3f384e04f8769a6cc835c54e5bfc"
+    },
+    {
+      "label": "DR-050",
+      "identifierSha256": "419e941b266234bebb161417509d713e5ff381819ff2a6c025eef5cbbfc1aab4"
+    },
+    {
+      "label": "DR-051",
+      "identifierSha256": "fd657a665d5aa3018f9866c95bf71e245091b58569c225f6e94eadc4df8fba52"
+    },
+    {
+      "label": "DR-052",
+      "identifierSha256": "5f3e7e11f30b757989e7e76c6bcc767242a2eb5ba27ce2c4789a751e5da38c5b"
+    },
+    {
+      "label": "DR-053",
+      "identifierSha256": "958761b5f9001e664d733ef74e340855f803073afb1fa5fec20e69247c35fdac"
+    },
+    {
+      "label": "DR-054",
+      "identifierSha256": "7f8d437eda38ad4eb259750a2cbd3466713584764806343bd68ace3fd9130c30"
+    },
+    {
+      "label": "DR-055",
+      "identifierSha256": "ffbcf65504f18032848cd9dcf890c896fcff1996c43b10e54c554bbf9b0efbeb"
+    },
+    {
+      "label": "DR-056",
+      "identifierSha256": "70e2a5b9d8b73218a9655f5b056d04e41eb19ce11b42046d155fe478368e089e"
+    },
+    {
+      "label": "DR-057",
+      "identifierSha256": "a4cb16b8965d9ce8b93163ef1c76d4c22ef27c9101017ac429a31ca2c125c22a"
+    },
+    {
+      "label": "DR-058",
+      "identifierSha256": "8e259924a57923f1d94becb0c85f65e80cdf9d098798feae04caa36c030c1d5c"
+    },
+    {
+      "label": "DR-059",
+      "identifierSha256": "85ea8fad48fa38ef5db20d86c9552522e363cf73fb4386d9eec0279236669e62"
+    },
+    {
+      "label": "DR-060",
+      "identifierSha256": "033ef8ab3d4ed6378a273a36d505955a9530e3fa338bdf6fb42c6bb55cbf61d3"
+    },
+    {
+      "label": "DR-061",
+      "identifierSha256": "13d16d888392db242bd7b9d66950f5ba6a532060d0fd18bda14f6c435f3235db"
+    },
+    {
+      "label": "DR-062",
+      "identifierSha256": "9139da83e70aade4d320a88e7a40abb60dd5b9ccf25c3503b7dce91e7da091ec"
+    },
+    {
+      "label": "DR-063",
+      "identifierSha256": "197ab3636abc7c86986fcdb7b503714f000830f16698cb95066bd6ec56edaa98"
+    },
+    {
+      "label": "DR-064",
+      "identifierSha256": "8691430cbeaa7ec6d83821b0f24c6fc62d3c05f04362320b323fba59086a4853"
+    },
+    {
+      "label": "DR-065",
+      "identifierSha256": "14a6ca7fdad553ecdbd16190abf46d748c099a10f1beb6e0bc13077888917481"
+    },
+    {
+      "label": "DR-066",
+      "identifierSha256": "6dd39e41e96d8754882620ee2bb76b069d739ab8f205f648be940b71e2762f4f"
+    },
+    {
+      "label": "DR-067",
+      "identifierSha256": "ffefef25d80e587ea764cf242f8aa69402adf468b53be73dfd66063d6b217024"
+    },
+    {
+      "label": "DR-068",
+      "identifierSha256": "95074ebe00d7a1947fe6b3f85f56bd640740e26a91ec8254203542205e9cc855"
+    },
+    {
+      "label": "DR-069",
+      "identifierSha256": "ce121ba840b93271990cd07cfad9b570e70cef9b278dea33cad6b28bfc3a4ad6"
+    },
+    {
+      "label": "DR-070",
+      "identifierSha256": "bc8f2c3812af1cf642e4328a090fe81b04df0bc8a4794db24ac04deb174c7139"
+    },
+    {
+      "label": "DR-071",
+      "identifierSha256": "45a8aa1d10dfe6e099369e2eebab509ffcf965cbe179e4023c6f605f41f19ace"
+    },
+    {
+      "label": "DR-072",
+      "identifierSha256": "c192f61b6b54280cefe487903c02e55a14f8faddda56ea27e7ca335c048fe4d9"
+    },
+    {
+      "label": "DR-073",
+      "identifierSha256": "525d112488638ca51fd7296abe968a983c9cf3af0380d4afe3d0888bad514be0"
+    },
+    {
+      "label": "DR-074",
+      "identifierSha256": "93789115954f205aa9579811c45804d59b16205f8a5086651a379725e18fa088"
+    },
+    {
+      "label": "DR-075",
+      "identifierSha256": "a7237d95f1a22a0f25ecbc061de947f4333c4b2f7b3412856c3b402af9985a0e"
+    },
+    {
+      "label": "DR-076",
+      "identifierSha256": "bfe87a5cba22abc55d987a3298e37710aec3b7b2c85ea5ba35de6fd1262b36ee"
+    },
+    {
+      "label": "DR-077",
+      "identifierSha256": "98caf8b8bc7527cdd12ceeea2628c977c2b55c429def28f3430b60fb159735c2"
+    },
+    {
+      "label": "DR-078",
+      "identifierSha256": "3782393c7697044961c5c689f62cca8c7f93cae11b1204a278aea8062aa3cfad"
+    },
+    {
+      "label": "DR-079",
+      "identifierSha256": "69fd17a89357fd2576d25221df754771937ad88497f9fef85a83903e028a524a"
+    },
+    {
+      "label": "DR-080",
+      "identifierSha256": "1e64e6f7f1e34c2717604d5018a99632586f83d1afd89dc2dc77e50b7f8e235a"
+    },
+    {
+      "label": "DR-081",
+      "identifierSha256": "716564aca3e2b27201b1b478b04e294bf384ad5bd5eb42c8a8052ee01bd66159"
+    },
+    {
+      "label": "DR-082",
+      "identifierSha256": "a086a0032ff6ee16f523c1b68f761c38cf8ff07f278972a5b19e256dd7290d32"
+    },
+    {
+      "label": "DR-083",
+      "identifierSha256": "2131e2d0b0731032d4c9d785acbbdfb4f5ed9bdf6db071cf57873d85ffeab8ad"
+    },
+    {
+      "label": "DR-084",
+      "identifierSha256": "1654dc7a531c631eed790b156edd76b43c2099b6be2d3bc2b85a6e7a120affca"
+    },
+    {
+      "label": "DR-085",
+      "identifierSha256": "9c4db8f3501a11d45311c4cb81e500764a7dc741354b25e439ebc09055332d9f"
+    },
+    {
+      "label": "DR-086",
+      "identifierSha256": "cd0156aad4ffb76a86ab2fa3e526407775658bc1778b07690c6b805ed9da23e8"
+    },
+    {
+      "label": "DR-087",
+      "identifierSha256": "8b51de362f106e36a3ffee22346fb638152ac5cf0bbe3ddda816d3bc8d44ad02"
+    },
+    {
+      "label": "DR-088",
+      "identifierSha256": "4b076aa989a0678ecacb1f119f89085cbf81319ab3a360597cd13ab11136726d"
+    },
+    {
+      "label": "DR-089",
+      "identifierSha256": "45aa114d98ea1bd659565a7e5034e6b5c3e1458ce4799061b9d36c532de3ab35"
+    },
+    {
+      "label": "DR-090",
+      "identifierSha256": "d6272b0284fe19ae448e145e4b7249107bc69759ab5d2c854f82e2b72df50998"
+    },
+    {
+      "label": "DR-091",
+      "identifierSha256": "9e9e06f93854842b7e5a6e5ea950a534b8c1851baafc34ad5537fc333bd48b81"
+    },
+    {
+      "label": "DR-092",
+      "identifierSha256": "f2e29657a99459c25d8be3f58fe3a331fdbaf384d0497e5cb3197110fd551da9"
+    },
+    {
+      "label": "DR-093",
+      "identifierSha256": "0f27db0d152ee216789e33409f537f3a246686630e0de866ff7776b9772f6d99"
+    },
+    {
+      "label": "DR-094",
+      "identifierSha256": "fc6acd1cfc465629ac703162a020b3edf134c9da790131ddc136b9107622f4b1"
+    }
+  ]
+}

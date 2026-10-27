@@ -1,0 +1,15 @@
+{
+  "adjacentPairPieceIndices": [
+    0,
+    5
+  ],
+  "centralEdgeDirection": 0,
+  "centralMark": "b",
+  "neighborLocalEdgeDirection": 1,
+  "neighborMark": "n",
+  "neighborTranslation": [
+    1,
+    0
+  ],
+  "verified": "The retained neighbor transforms its nick normal to the central bump-facing edge. Both polygons use retained witness placements."
+}

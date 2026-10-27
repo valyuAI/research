@@ -1,0 +1,169 @@
+{
+ "file": "examples/G11.json",
+ "n": 11,
+ "eps": "1/4",
+ "delta": "1/2",
+ "num_edges": 89,
+ "support_size": 11,
+ "legal": true,
+ "support_is_clique": false,
+ "missing_edges_in_support": 21,
+ "fixed_point_positive_on_support": true,
+ "min_fixed_point_entry": "7/292",
+ "off_support_strict": true,
+ "fixed_point_residual_zero": true,
+ "crt_primes": 1,
+ "charpoly_methods": [
+  "berkowitz",
+  "hessenberg_rational",
+  "multimodular_hessenberg_crt"
+ ],
+ "charpoly_methods_agree": true,
+ "routh_stable": true,
+ "lienard_chipart_stable": true,
+ "positive_stable": true,
+ "K_integer": true,
+ "K_congruent_I_mod_3": true,
+ "nondegenerate_bruteforce": true,
+ "nondegenerate": true,
+ "stable_nonclique_fixed_point": true,
+ "seconds": 2.35
+}
+{
+ "file": "examples/W4.json",
+ "n": 23,
+ "eps": "1/4",
+ "delta": "1/2",
+ "num_edges": 478,
+ "support_size": 23,
+ "legal": true,
+ "support_is_clique": false,
+ "missing_edges_in_support": 28,
+ "fixed_point_positive_on_support": true,
+ "min_fixed_point_entry": "28/4273",
+ "off_support_strict": true,
+ "fixed_point_residual_zero": true,
+ "crt_primes": 2,
+ "charpoly_methods": [
+  "berkowitz",
+  "hessenberg_rational",
+  "multimodular_hessenberg_crt"
+ ],
+ "charpoly_methods_agree": true,
+ "routh_stable": true,
+ "lienard_chipart_stable": true,
+ "positive_stable": true,
+ "K_integer": true,
+ "K_congruent_I_mod_3": true,
+ "nondegenerate": true,
+ "stable_nonclique_fixed_point": true,
+ "seconds": 0.17
+}
+{
+ "file": "examples/G27.json",
+ "n": 27,
+ "eps": "1/4",
+ "delta": "1/2",
+ "num_edges": 615,
+ "support_size": 27,
+ "legal": true,
+ "support_is_clique": false,
+ "missing_edges_in_support": 87,
+ "fixed_point_positive_on_support": true,
+ "min_fixed_point_entry": "4/151",
+ "off_support_strict": true,
+ "fixed_point_residual_zero": true,
+ "crt_primes": 2,
+ "charpoly_methods": [
+  "berkowitz",
+  "hessenberg_rational",
+  "multimodular_hessenberg_crt"
+ ],
+ "charpoly_methods_agree": true,
+ "routh_stable": true,
+ "lienard_chipart_stable": true,
+ "positive_stable": true,
+ "K_integer": true,
+ "K_congruent_I_mod_3": true,
+ "nondegenerate": true,
+ "stable_nonclique_fixed_point": true,
+ "seconds": 0.32
+}
+{
+ "file": "examples/G100.json",
+ "n": 100,
+ "eps": "1/4",
+ "delta": "1/2",
+ "num_edges": 9726,
+ "support_size": 100,
+ "legal": true,
+ "support_is_clique": false,
+ "missing_edges_in_support": 174,
+ "fixed_point_positive_on_support": true,
+ "min_fixed_point_entry": "4/1009",
+ "off_support_strict": true,
+ "fixed_point_residual_zero": true,
+ "crt_primes": 9,
+ "cluster_description_matches_graph": true,
+ "charpoly_methods": [
+  "cluster_quotient_times_(x-1)^(n-k)",
+  "multimodular_hessenberg_crt"
+ ],
+ "charpoly_methods_agree": true,
+ "routh_stable": true,
+ "lienard_chipart_stable": "skipped (n > 60)",
+ "positive_stable": true,
+ "K_integer": true,
+ "K_congruent_I_mod_3": true,
+ "nondegenerate": true,
+ "stable_nonclique_fixed_point": true,
+ "seconds": 1.2
+}
+ALL PASS
+{"file": "examples/G11.json", "n": 11, "permitted": true, "min_y": "7/1168", "all_hurwitz_determinants_positive": true, "nonclique": true}
+{"file": "examples/W4.json", "n": 23, "permitted": true, "min_y": "7/4273", "all_hurwitz_determinants_positive": true, "nonclique": true}
+{"file": "examples/G27.json", "n": 27, "permitted": true, "min_y": "1/151", "all_hurwitz_determinants_positive": true, "nonclique": true}
+{"file": "examples/G100.json", "n": 100, "permitted": true, "min_y": "1/1009", "all_hurwitz_determinants_positive": true, "nonclique": true}
+ALL PASS
+{"subsets": 2035, "clique": 90, "not_permitted": 1778, "not_stable": 167, "stable": 0}
+NO PROPER INDUCED SUBGRAPH WORKS
+START n2_std: expecting 3 digraphs
+rechecked 0 candidates {}: exactly positive stable 0; float/exact disagreements 0
+PASS n2_std: all 3 digraphs, 0 exact candidate checks
+START n3_std: expecting 16 digraphs
+rechecked 0 candidates {}: exactly positive stable 0; float/exact disagreements 0
+PASS n3_std: all 16 digraphs, 0 exact candidate checks
+START n4_std: expecting 218 digraphs
+rechecked 2 candidates {'REJ': 2}: exactly positive stable 0; float/exact disagreements 0
+PASS n4_std: all 218 digraphs, 2 exact candidate checks
+START n5_std: expecting 9608 digraphs
+rechecked 15 candidates {'REJ': 15}: exactly positive stable 0; float/exact disagreements 0
+PASS n5_std: all 9608 digraphs, 15 exact candidate checks
+START n6_std: expecting 1540944 digraphs
+rechecked 372 candidates {'REJ': 372}: exactly positive stable 0; float/exact disagreements 0
+PASS n6_std: all 1540944 digraphs, 372 exact candidate checks
+START n6_control: expecting 1540944 digraphs
+STABLE HIT &ED@@QsE
+STABLE HIT &ED@@QkE
+rechecked 2322 candidates {'REJ': 2320, 'HIT': 2}: exactly positive stable 2; float/exact disagreements 0
+PASS n6_control: all 1540944 digraphs, 2322 exact candidate checks
+ALL SCAN STAGES PASS
+exactly rechecked 21124/35842 candidates; stable 0
+rechecked 35842 candidates {'REJ': 35842}: exactly positive stable 0; float/exact disagreements 0
+{
+  "ok": true,
+  "n7_digraphs": 882033440,
+  "n7_exact_candidates": 35842,
+  "n7_exact_stable": 0,
+  "n7_permitted": 14157577,
+  "n7_residual_bound_rejections": 867875862,
+  "n2_to_n6": {
+    "2": 3,
+    "3": 16,
+    "4": 218,
+    "5": 9608,
+    "6": 1540944
+  },
+  "positive_control_stable": 2
+}
+Built paper.pdf

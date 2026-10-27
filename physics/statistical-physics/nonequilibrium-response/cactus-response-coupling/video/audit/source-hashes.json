@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-26T12:55:43+00:00",
+  "sha256": {
+    "paper.tex": "071c242d914048abff399bc7c1ff4d5d5409ec2203fc5d6fcdae37cddbc2e254",
+    "README.md": "5e5e9e68495ae3e810514ca0a15c511c67d4136da81a43fbf735ca7b132a110d",
+    "references.bib": "519608a23efbb3f7636d1172296bde9029b610f910cbfa7ec8ae4145058366ad",
+    "video/check_numbers.py": "810a1296c39b2d213043f1b115388d415cceffb0722e6b29588ee2d9e9c1e51c"
+  }
+}

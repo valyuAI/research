@@ -1,0 +1,467 @@
+\documentclass[11pt]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\usepackage{amsmath,amssymb,mathtools,booktabs,array}
+\usepackage[margin=1.12in]{geometry}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\PP}{\mathbb P}
+\newcommand{\E}{\mathcal E}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\adj}{\operatorname{adj}}
+\newcommand{\Sym}{\operatorname{Sym}}
+\newcommand{\SO}{\operatorname{SO}}
+\newcommand{\codim}{\operatorname{codim}}
+\title[Generic elastic reconstruction]{Generic Recovery of Three-Dimensional Elasticity from the Slowness Polynomial}
+\author{Harvey Yorke}
+\address{Valyu AI}
+\ifdefined\journalversion\else
+\author{Valyu DeepResearch}
+\address{Valyu AI}
+\fi
+\date{18 October 2026}
+\thanks{Research draft. The exact certificates and written argument have undergone independent internal checks. External review and priority assessment remain separate; no publication is claimed.}
+\subjclass[2020]{Primary 35R30; Secondary 14M12, 74B05, 13P10.}
+\keywords{anisotropic elasticity, inverse problem, slowness polynomial, determinantal variety, generic identifiability}
+
+\newcommand{\paperAuthorBlock}[1]{%
+  \begin{minipage}[t]{.44\textwidth}
+    \centering\normalfont\normalsize
+    #1\par
+    \small Valyu AI\par
+  \end{minipage}%
+}
+\makeatletter
+\renewcommand{\@setauthors}{%
+  \begingroup
+  \trivlist
+  \centering\normalfont\normalsize
+  \@topsep30\p@\relax
+  \advance\@topsep by -\baselineskip
+  \item\relax
+  \ifdefined\journalversion
+    \paperAuthorBlock{Harvey Yorke}%
+  \else
+    \paperAuthorBlock{Harvey Yorke}\hspace{.06\textwidth}%
+    \paperAuthorBlock{Valyu DeepResearch}%
+  \fi
+  \endtrivlist
+  \endgroup
+}
+\renewcommand{\@setaddresses}{}
+\makeatother
+
+\ifdefined\journalversion
+\hypersetup{pdftitle={Generic Recovery of Three-Dimensional Elasticity from the Slowness Polynomial},pdfauthor={Harvey Yorke}}
+\else
+\hypersetup{pdftitle={Generic Recovery of Three-Dimensional Elasticity from the Slowness Polynomial},pdfauthor={Harvey Yorke and Valyu DeepResearch}}
+\fi
+\begin{document}
+\begin{abstract}
+Can two different elasticity tensors produce the same phase wave speeds in every direction? We prove that a generic density-normalized three-dimensional tensor has no such companion, resolving Conjecture~E of de~Hoop, Ilmavirta, Lassas and V\'arilly-Alvarado. In fact, twenty-two scalar invariants suffice: six trace coefficients, fifteen second-characteristic coefficients, and one determinant value in a fixed nonisotropic direction. Unordered spectra in eleven generic directions also suffice; at least eight directions are necessary. We additionally give fifteen explicit sufficient directions. The proof works over the complex numbers and includes exceptional competing tensors. Its central step bounds every rank stratum of a bilinear collision incidence, using Borel fixed points, successive normal spaces, and exact determinantal certificates. Projective specialization transfers finite-field certificates to characteristic zero. The conclusions concern generic algebraic identifiability; they do not assert uniqueness in every symmetry class or stability under measurement error.
+\end{abstract}
+\maketitle
+
+\section{The reconstruction problem}
+
+Let $\E$ be the complex vector space of fourth-order tensors satisfying
+\begin{equation}\label{eq:symmetry}
+ C_{ijkl}=C_{jikl}=C_{ijlk}=C_{klij},\qquad 1\leq i,j,k,l\leq3.
+\end{equation}
+It has dimension $21$. For $p\in\C^3$, write
+\begin{equation}\label{eq:christoffel}
+ \Gamma_C(p)_{il}=\sum_{j,k=1}^3 C_{ijkl}p_jp_k,
+ \qquad F(C)(p)=\det\bigl(\Gamma_C(p)-I_3\bigr).
+\end{equation}
+The matrix $\Gamma_C$ is symmetric. Here $C$ is the \emph{reduced}, or density-normalized, stiffness tensor: density has been absorbed into its entries. No claim is made to recover physical stiffness and mass density separately from wave kinematics.
+
+The homogeneous parts of $F(C)$ determine $\tr\Gamma_C$, the second elementary symmetric function $e_2(\Gamma_C)$, and $\det\Gamma_C$. Their coefficient spaces have dimensions $6$, $15$ and $28$. The fixed constant coefficient is $-1$.
+
+For a real unit direction $n$, the three eigenvalues of $\Gamma_C(n)$ are the squared phase speeds. Their eigenvectors describe the polarizations, which are not part of our data. Thus the question is whether speed measurements alone distinguish a general elastic material. A successful fit at one tensor or a locally invertible measurement map does not rule out a distant tensor with identical data; the uniqueness proved below does.
+
+De~Hoop, Ilmavirta, Lassas and V\'arilly-Alvarado prove generic recovery in two dimensions and formulate the corresponding three-dimensional statement as Conjecture~E \cite{dehoop2025}. They also prove that partial information around one polarization determines the full slowness surface under their genericity hypotheses. Their three-dimensional tensor-recovery and two-layer conclusions are conditional on that conjecture. An exact singleton reconstruction for a particular material is useful evidence, but does not by itself establish generic injectivity of the polynomial map.
+
+\begin{theorem}\label{thm:main}
+Fix $v\in\C^3$ with $v^{\mathsf T}v\ne0$. Let $G_v(C)$ consist of the six coefficients of $\tr\Gamma_C$, the fifteen coefficients of $e_2(\Gamma_C)$, and the scalar $\det\Gamma_C(v)$. There is a proper algebraic subset $Z_v\subset\E$ such that, for every $C\in\E\setminus Z_v$ and every $C'\in\E$,
+\[
+ G_v(C)=G_v(C')\quad\Longrightarrow\quad C=C'.
+\]
+Consequently a generic complex or real density-normalized elasticity tensor is uniquely determined by its full slowness polynomial.
+\end{theorem}
+
+The exceptional set $Z_v$ is defined for the chosen direction $v$ in a fixed coordinate frame; no common exceptional set for all $v$ is asserted.
+
+This statement is generic in the full $21$-parameter space. It does not assert uniqueness for every tensor. In particular, the four-to-one orthorhombic and two-to-one monoclinic results in \cite[Theorem~D]{dehoop2025} concern exceptional subfamilies and are consistent with Theorem~\ref{thm:main}. The positive-definite real cone is Euclidean open and Zariski dense, so the conclusion applies generically there as well.
+
+The proof is computational in a specific and limited sense. Exact linear algebra supplies small representation and normal-space calculations. Three nested projective slices are certified by finite-field Bezout identities. Eleven explicit identities in the $3\times3$ and $4\times4$ minors of one $7\times13$ matrix certify the required dimension bounds over $\Q(i)$ without a Gr\"obner-basis engine. A separate eleven-identity certificate supports the finite-direction theorem in Section~\ref{sec:finite}. The package described in Section~\ref{sec:computation} reconstructs these objects from \eqref{eq:christoffel}; no numerical optimization or sampled uniqueness assertion enters the proof.
+
+\section{Collisions as a bilinear incidence}
+
+Suppose $F(C)=F(C')$, and introduce
+\[
+ X=\tfrac12(C+C'),\qquad H=\tfrac12(C-C').
+\]
+Comparison of the homogeneous parts gives the polynomial identities
+\begin{align}
+ \tr\Gamma_H&=0,\label{eq:tracezero}\\
+ \tr(\Gamma_X\Gamma_H)&=0,\label{eq:bilinear}\\
+ \tr\bigl(\adj(\Gamma_X)\Gamma_H\bigr)+\det\Gamma_H&=0.
+ \label{eq:cubic}
+\end{align}
+Indeed, $e_2(A)=((\tr A)^2-\tr(A^2))/2$, while for $3\times3$ matrices
+\[
+ \det(A+B)-\det(A-B)=2\tr(\adj(A)B)+2\det B.
+\]
+
+For equality of $G_v$, the first two identities still hold as polynomials, and the third is required only at $p=v$.
+
+Put
+\[
+ K=\{H\in\E:\tr\Gamma_H=0\},\qquad
+ L_H:\E\longrightarrow\Sym^4(\C^3),\quad
+ X\longmapsto\tr(\Gamma_X\Gamma_H).
+\]
+The six trace equations are independent, so $\dim K=15$. Choosing monomial bases makes $L_H$ a $15\times21$ matrix whose entries depend linearly on $H$. Define the closed cones
+\begin{equation}\label{eq:rankloci}
+ R_r=\{H\in K:\rank L_H\leq r\}.
+\end{equation}
+
+\begin{proposition}\label{prop:rankbounds}
+The rank loci satisfy
+\[
+ R_5=\{0\},\qquad \dim R_r\leq r-1\quad(6\leq r\leq14).
+\]
+Moreover $L_H$ has rank $15$ on a nonempty open subset of $K$.
+\end{proposition}
+
+Sections~\ref{sec:normal}--\ref{sec:rankproof} establish the proposition. We first explain why it completes the inverse problem.
+
+\begin{proof}[Proof of Theorem~\ref{thm:main} from Proposition~\ref{prop:rankbounds}]
+For $6\leq r\leq14$, the incidence over the rank-exactly-$r$ stratum of $K$ has dimension at most
+\[
+ \dim R_r+(21-r)\leq20.
+\]
+This bounds the collisions satisfying \eqref{eq:bilinear} there, even before imposing the scalar equation \eqref{eq:cubic} at $p=v$.
+
+Let $U=K\setminus R_{14}$. The incidence
+\[
+ \mathcal I=\{(H,X):H\in U,\ L_HX=0\}
+\]
+is a rank-six vector bundle over the irreducible variety $U$. It is irreducible of dimension $21$. Take the isotropic tensor $H_0$ with Lam\'e parameters $\lambda=4$, $\mu=-1$. With $q=p_1^2+p_2^2+p_3^2$,
+\begin{equation}\label{eq:isotropic}
+ \Gamma_{H_0}=3pp^{\mathsf T}-qI_3,
+ \quad\rank L_{H_0}=15,
+ \quad\det\Gamma_{H_0}=2q^3.
+\end{equation}
+The rank is an exact linear-algebra certificate; the determinant identity follows directly from the displayed matrix. At $(H,X)=(H_0,0)$, the left side of \eqref{eq:cubic} evaluated at $p=v$ is $2(v^{\mathsf T}v)^3\ne0$. Hence this scalar equation defines the zero set of a nonzero regular function on $\mathcal I$, of dimension at most $20$.
+
+Thus the constructible set of all nontrivial collisions, with $H\ne0$, has dimension at most $20$. Its image under $(X,H)\mapsto X+H$ has closure $Z_v$ of dimension at most $20$. Since $\dim\E=21$, this closure is proper and has the asserted property. For real $v$, the exceptional set can be chosen defined over $\R$, because the collision equations are real. Choosing $v=(0,0,1)$ proves the slowness-polynomial assertion.\qedhere
+\end{proof}
+
+\section{Local rank bounds from fixed points}\label{sec:normal}
+
+We use two standard geometric facts, stated explicitly to identify the role of the computations. Borel's fixed-point theorem says that a connected solvable algebraic group acting on a nonempty complete complex variety has a fixed point \cite{borel1991,elek2020}. Since a connected group preserves every irreducible component of an invariant variety, each projective component of an invariant rank locus contains such a point.
+
+\begin{lemma}[Normal-space bound]\label{lem:normal}
+Let $M:V\to\operatorname{Mat}_{m,n}(\C)$ be linear, and let $M(v_0)$ have rank $a$. Let the columns of $A$ and $D$ be bases of its left and right nullspaces. Set
+\[
+ T(v)=A^{\mathsf T}M(v)D.
+\]
+Suppose $\dim\ker T=k$, and let $\overline T$ be the induced injective linear matrix family on $V/\ker T$. Then
+\[
+ \dim_{v_0}\{v:\rank M(v)\leq a+s\}
+ \leq k+\dim\{u:\rank\overline T(u)\leq s\}.
+\]
+\end{lemma}
+
+\begin{proof}
+Choose an invertible $a\times a$ submatrix at $v_0$. Locally, row and column operations reduce the remaining rank condition to rank at most $s$ for its Schur complement. The Schur complement vanishes at $v_0$ and its linear part, up to invertible constant changes of bases, is $T$. The homogeneous degree-$(s+1)$ components of its $(s+1)$-minors are the corresponding minors of $T$. Whenever such a minor of $T$ is nonzero, it is therefore the initial form of the Schur-complement minor; identically zero minors impose no additional constraint. Hence the tangent cone is contained in $\{\rank T\leq s\}$. Local dimension equals tangent-cone dimension, and the latter set has dimension $k+\dim\{\rank\overline T\leq s\}$. No equality between the original locus and its tangent cone is required.
+\end{proof}
+
+When a connected solvable group $B$ preserves the rank loci and fixes $[v_0]$, it also preserves $\ker T$ and acts on the quotient. To see this, use the equivariance of $M$ and the fact that multiplying $v_0$ by a nonzero scalar leaves both nullspaces unchanged. The induced row and column transformations preserve rank. Scalar characters introduced by this projective normalization do not change fixed projective lines.
+
+\begin{lemma}[Fixed-point reduction]\label{lem:fixed}
+Suppose the projective rank locus of a linear matrix family is $B$-invariant. Call a $B$-fixed projective point eligible if it belongs to this locus, equivalently if its matrix rank is at most the specified threshold. If its eligible points are $[v_1],\ldots,[v_t]$, an upper bound on its local affine-cone dimension at each $v_j\ne0$ is an upper bound on its global affine dimension.
+\end{lemma}
+
+\begin{proof}
+Every nonzero irreducible cone component has a projectivization preserved by $B$. Borel's theorem places one of the $[v_j]$ on it. The local dimension at the corresponding nonzero closed point is at least the dimension of that component. Taking the maximum gives the result.
+\end{proof}
+
+\section{The rank-stratum certificate}\label{sec:rankproof}
+
+The group $\SO_3(\C)$ acts naturally on elasticity tensors and on the variables $p$. Contraction makes $H\mapsto L_H$ equivariant up to the natural invertible transformations on source and target. Thus all loci \eqref{eq:rankloci} are invariant.
+
+\subsection{The first fixed points}
+The equivariant linear map
+\begin{equation}\label{eq:quarticiso}
+ K\longrightarrow\Sym^4(\C^3),\qquad H\longmapsto p^{\mathsf T}\Gamma_H(p)p
+\end{equation}
+is an isomorphism. In the coordinate bases specified in Appendix~\ref{app:coordinates}, its determinant is $4194304$. Write $a=p_1+ip_2$ and $q=p_1^2+p_2^2+p_3^2$. For a Borel subgroup $B\subset\SO_3(\C)$, its raising operator on quartics can be taken to be
+\[
+ a\partial_{p_3}-p_3(\partial_{p_1}+i\partial_{p_2}).
+\]
+Its kernel has basis $a^4,qa^2,q^2$. These vectors have distinct torus weights $4,2,0$, so they give precisely the three fixed projective lines. The exact ranks and normal-map kernel dimensions are
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+Quartic under \eqref{eq:quarticiso} & $\rank L_H$ & normal kernel dimension\\
+\midrule
+$a^4$ & $6$ & $5$\\
+$qa^2$ & $11$ & $8$\\
+$q^2$ & $15$ & not needed\\
+\bottomrule
+\end{tabular}
+\end{center}
+All entries are obtained over $\Q(i)$ from explicit matrices. In particular, Borel's theorem gives $R_5=\{0\}$. For $r\leq10$, every projective component of $R_r$ contains the rank-six point $P$ corresponding to $a^4$.
+
+\subsection{Two normal spaces}
+At $P$, the normal matrix of Lemma~\ref{lem:normal} has size $9\times15$, and its linear map has a five-dimensional kernel. Let $N_1$ be the induced family on the ten-dimensional quotient. The raising and torus operators descend because they preserve that kernel. Their joint fixed-line calculation yields exactly two projective fixed points:
+\[
+ \begin{array}{c|cc}
+ \text{torus weight}&0&2\\ \hline
+ \text{matrix rank under }N_1&6&2.
+ \end{array}
+\]
+Thus every nonzero matrix in this family has rank at least $2$. For rank thresholds $2,3,4,5$, every projective component contains the same rank-two fixed point $P_1$.
+
+At $P_1$, the second normal matrix has size $7\times13$, and the normal linear map has a two-dimensional kernel. Denote the resulting eight-variable family by $N_2$. Exact polynomial certificates give
+\begin{equation}\label{eq:n2dims}
+ \dim\{w:\rank N_2(w)\leq s\}\leq s,
+ \qquad s=1,2,3.
+\end{equation}
+The $s=1$ locus has reduced support
+\[
+ w_0=w_2=w_4=w_5=w_6=w_7=0,\qquad w_1=w_3.
+\]
+Its projective scheme is nonreduced; using tangent dimension alone would give a weaker bound. For $s=2,3$, the ideals are generated by all $3$- and $4$-minors of $N_2$, respectively. Their exact certificates are described in Section~\ref{sec:computation}.
+
+Applying Lemmas~\ref{lem:normal} and~\ref{lem:fixed} now gives
+\begin{equation}\label{eq:lowbounds}
+ \begin{array}{c|rrrrrr}
+ r&6&7&8&9&10&11\\ \hline
+ \text{bound from }P&5&5&7&8&9&10.
+ \end{array}
+\end{equation}
+For example, at $r=10$ the two reductions give $5+2+\dim\{\rank N_2\leq2\}\leq9$. At $r=11$, a component can instead contain the point corresponding to $qa^2$; its affine tangent dimension is $8$, which is smaller than the bound $10$ in \eqref{eq:lowbounds}. This handles every eligible fixed point for $r\leq11$.
+
+\subsection{Projective slices for ranks twelve to fourteen}
+For the remaining strata, we use small exact projective slices rather than large determinantal ideals in fifteen variables. Let $S_r\subset\PP(K)$ be a projective linear space of dimension $15-r$. If $S_r\cap\PP(R_r)=\varnothing$, the projective intersection theorem gives $\dim R_r\leq r-1$.
+
+The certificate uses four integer vectors $H_0,H_1,H_2,H_3\in K$, listed in Appendix~\ref{app:coordinates}, and the nested spaces
+\[
+ S_{14}=\PP\langle H_0,H_1\rangle,\quad
+ S_{13}=\PP\langle H_0,H_1,H_2\rangle,\quad
+ S_{12}=\PP\langle H_0,H_1,H_2,H_3\rangle.
+\]
+Modulo $32003$, two $15$-minors on $S_{14}$ have coprime degree-$15$ dehomogenizations and nonzero leading coefficients. Their saved Bezout identity proves absence of a common projective root. On the affine chart of $S_{13}$ outside $S_{14}$, six selected $14$-minors have a saved Bezout identity equal to $1$. Likewise, six selected $13$-minors do so on the affine chart of $S_{12}$ outside $S_{13}$. The established preceding slice excludes the hyperplane at infinity in each case.
+
+These calculations prove empty projective intersections over the algebraic closure of $\mathbb F_{32003}$, not merely absence of points over the finite field itself. The fixed integer matrices define projective determinantal families over $\operatorname{Spec}\mathbb Z$. A nonempty characteristic-zero fiber would have nonempty image over every prime, because a projective morphism is proper \cite[Tag~01WC]{stacks}, hence closed, and its image would contain the generic point. Thus emptiness of this special fiber implies emptiness over $\C$. The vectors are linearly independent; this is also checked in the certificate.
+
+Together with \eqref{eq:lowbounds}, the three slice bounds prove Proposition~\ref{prop:rankbounds}.
+
+\section{Exact computation and reproducibility}\label{sec:computation}
+
+The companion package contains source construction, recorded certificates, a verification driver, and this paper's editable source. The tensor symmetries, Christoffel matrix, trace kernel and matrix $L_H$ are built symbolically. Nullspace bases and the two normal quotients are then reconstructed by exact row reduction. The operator calculations verify both kernel invariance and the complete list of fixed lines; they do not infer it from a numerical eigensolver.
+
+The principal arithmetic checks are summarized below. Dimensions are affine dimensions throughout.
+\begin{center}
+\small
+\begin{tabular}{p{.39\textwidth}p{.18\textwidth}p{.29\textwidth}}
+\toprule
+Object & Arithmetic & Result\\
+\midrule
+$K\to\Sym^4(\C^3)$ & $\Q$ & determinant $4194304$\\
+Fixed points of $L_H$ & $\Q(i)$ & ranks $6,11,15$\\
+First normal quotient & $\Q(i)$ & kernel dimension $5$\\
+Second normal quotient & $\Q(i)$ & kernel dimension $2$\\
+$2$-minors of $N_2$ & $\Q(i)$ & dimension $1$\\
+$3$-minors of $N_2$ & $\Q(i)$ & dimension at most $2$\\
+$4$-minors of $N_2$ & $\Q(i)$ & dimension at most $3$\\
+Nested slices & $\mathbb F_{32003}$ & projective intersections empty\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Let $I_s$ be the ideal of $(s+1)$-minors of $N_2$. For $s=2$, six certified cubics in $I_2$ have leading monomials
+\[
+ w_4^2w_7,\quad w_6^3,\quad w_5^3,\quad w_2^3,\quad w_1^3,\quad w_0^3.
+\]
+For $s=3$, four quartics and one quintic in $I_3$ have leading monomials
+\[
+ w_6^4,\quad w_5^4,\quad w_2^4,\quad w_0^4,\quad w_1w_4^2w_7^2.
+\]
+The order is graded reverse lexicographic with $w_0>\cdots>w_7$. Each identity expresses the target as a linear combination of original minors; only the quintic uses variable multipliers. A checker using Python's standard-library rational arithmetic recomputes those minors and verifies every coefficient. If $J_s$ is generated by the displayed leading monomials, then $J_s\subset\operatorname{in}(I_s)$, so
+\[
+ \dim\Q(i)[w]/I_s=\dim\Q(i)[w]/\operatorname{in}(I_s)
+ \leq\dim\Q(i)[w]/J_s.
+\]
+The minimum variable-cover sizes are $6$ and $5$, giving the upper bounds $2$ and $3$. These dimensions are unchanged by extension to $\C$. No completeness assertion about a Gr\"obner basis is used. Optional Singular~4.4.1p5 computations \cite{singular}, retained in two monomial orders, corroborate the exact dimensions; their equality statements are not needed in the proof.
+
+The $2$-minor certificate is also checked without a Gr\"obner-basis algorithm: rational linear algebra verifies that all $34$ displayed quadratic equations belong to the span of the original minors, and elementary elimination gives the stated support line. The slice checker separately verifies every finite-field Bezout identity by polynomial multiplication. It reconstructs each saved minor from the source matrix on an unisolvent simplex grid, using the determinant's degree bound. This checks identities of polynomials, rather than a selection of test points.
+
+The default verifier needs Python and SymPy, with no network or Singular dependency. It reconstructs the matrices and checks their agreement with the saved certificates. Both the minor-identity checker and the finite-direction source and identity checkers use only the standard library; all are included in the default run. Optional Gr\"obner regeneration is separate. Companion Lean proofs kernel-check the $3\times3$ characteristic expansion, the complete three-equation collision reduction over characteristic-zero fields, and all eleven original-minor identities used for the dimension bounds on $N_2$. The determinant identities are checked against explicit matrix entries, with an axiom audit allowing only \texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}. Tensor assembly, the finite-direction cubic-slice certificate, and the algebraic-geometric deductions remain outside that formalization. The full theorem is therefore not Lean-verified.
+
+\section{Consequences and scope}
+
+Theorem~\ref{thm:main} supplies the generic algebraic uniqueness statement required in \cite[Theorems~A and~B]{dehoop2025}. Their three-dimensional conclusions therefore become unconditional with respect to Conjecture~E, while retaining all of their measurement, geometry, positivity and admissibility hypotheses. The present argument adds no claim of stability for noisy experimental data.
+
+Recovery of elastic constants from acoustic data has a substantial history. Norris \cite{norris1989} recovers all twenty-one moduli from full acoustical tensors in six directions satisfying nondegeneracy conditions; those matrices contain more information than their unordered eigenvalues. Ditri \cite{ditri1994} studies data confined to one or two planes in a setting that includes polarization vectors. Arist\'egui and Baste \cite{aristegui1997} describe constrained optimization for all twenty-one constants, with numerical and experimental reconstruction studies. Our data consist only of unordered phase spectra, and our conclusion is algebraic global uniqueness. Comparison with the full Arist\'egui--Baste article remains outside the present source audit.
+
+\begin{corollary}\label{cor:directions}
+Let $\mathcal P=\{(a,b,1):a,b\in\mathbb Z_{\geq0},\ a+b\leq4\}$. The three unordered eigenvalues of $\Gamma_C(p)$ for each of these fifteen directions determine a generic $C\in\E$, uniquely among all $\E$.
+\end{corollary}
+\begin{proof}
+The eigenvalues give the trace and $e_2$ at each node, and the determinant at $(0,0,1)$. Dehomogenization at $p_3=1$ identifies homogeneous ternary forms of degree $d$ with bivariate polynomials of degree at most $d$. The triangular grid $a+b\leq d$ is unisolvent: in the basis $\binom{x}{i}\binom{y}{j}$, ordered by total degree, its evaluation matrix is triangular with diagonal $1$. Thus the six-node subset $a+b\leq2$ recovers the trace, and all fifteen nodes recover $e_2$. Apply Theorem~\ref{thm:main} with $v=(0,0,1)$.
+\end{proof}
+For unit directions $n=p/\lVert p\rVert$, the eigenvalues measured at $n$ are multiplied by $\lVert p\rVert^2$ before applying this interpolation. The twenty-two scalar invariants in Theorem~\ref{thm:main} and the fifteen directions in Corollary~\ref{cor:directions} are sufficient; neither count is asserted to be minimal.
+
+The method does not provide a preferred numerical reconstruction algorithm or a quantitative conditioning bound. It isolates the possible collision directions into low-dimensional rank strata and proves that those strata cannot dominate the space of tensors. Describing the exceptional set more explicitly, and deriving stable reconstruction procedures near a specified positive-definite tensor, remain separate questions.
+
+\section{Eleven generic directions and a lower bound}\label{sec:finite}
+
+The explicit interpolation corollary uses more directions than are needed for generic configurations. The result below narrows the gap without asserting the optimal count. Spectra at projective directions mean spectra at any fixed nonzero representatives, with the known quadratic rescaling when representatives change.
+
+\begin{theorem}\label{thm:eleven}
+There is a nonempty Zariski-open subset $\Omega\subset(\PP^2)^{11}$ such that, for every configuration in $\Omega$, its eleven unordered Christoffel spectra determine a generic tensor $C\in\E$, uniquely among all tensors in $\E$. On the other hand, no configuration of seven or fewer directions determines a generic tensor. Thus the minimum number of generic directions lies between eight and eleven, inclusive.
+\end{theorem}
+
+\begin{proof}[Proof of the lower bound]
+At $m$ fixed directions, spectra are equivalent to the trace, $e_2$ and determinant at those directions. The trace is a homogeneous quadratic with six coefficients. The image of the measurement map therefore has dimension at most
+\[
+ \min(m,6)+2m.
+\]
+For $m\leq7$ this is at most $20$, less than $\dim\E=21$. The generic fiber has positive dimension. The same obstruction applies generically on the real positive-definite cone by the constant-rank theorem.
+\end{proof}
+
+We prove the upper bound by counting all nontrivial collisions. For $H\in K\setminus\{0\}$ define the quartic and sextic
+\[
+ Q=\tr(\Gamma_X\Gamma_H),\qquad
+ R=\tr(\adj(\Gamma_X)\Gamma_H)+\det\Gamma_H.
+\]
+Their parameter space $(X,H)$ has dimension $36$. Proposition~\ref{prop:rankbounds} gives
+\begin{equation}\label{eq:zeroQbounds}
+ \dim\{Q=0,H\ne0\}\leq21,\qquad
+ \dim\{Q=R=0,H\ne0\}\leq20.
+\end{equation}
+The first bound follows from the six-dimensional kernel over the full-rank open set and the bound $20$ over every deficient-rank stratum. The second is the complete collision bound in the proof of Theorem~\ref{thm:main}.
+
+\begin{lemma}\label{lem:quarticdivisibility}
+The locus of pairs $(X,H)$ with $H\in K$, $Q\ne0$ and $Q\mid R$ has dimension at most $31$. The case $R=0$ is included.
+\end{lemma}
+
+\begin{proof}
+Introduce a homogeneous quadratic $S$ with six coefficients, and let $V\subset\mathbb A^{42}$ be defined by the $28$ coefficients of
+\begin{equation}\label{eq:cubiccone}
+ R-QS=0.
+\end{equation}
+These are homogeneous cubics in the $21+15+6$ source variables. The certificate described below proves $\dim V\leq31$. For $Q\ne0$, the quadratic $S$ is unique whenever it exists, so this gives the asserted bound. No condition on the rank of $L_H$ is imposed, and no component at $H=0$ or $Q=0$ is removed from $V$.
+
+Here is the exact certificate. A fixed integer $42\times11$ matrix of rank $11$ gives a linear slice with variables $t_0,\ldots,t_{10}$. Modulo $32003$, write the resulting cubics as $J_1,\ldots,J_{28}$. Eleven supplied identities
+\[
+ F_i=\sum_{j=1}^{28}U_{ji}J_j
+\]
+have pure leading monomials, in graded reverse lexicographic order,
+\begin{equation}\label{eq:finitepowers}
+ t_0^3,t_1^3,t_2^3,t_3^3,t_4^4,t_5^4,
+ t_6^5,t_7^5,t_8^6,t_9^6,t_{10}^7.
+\end{equation}
+Exact polynomial multiplication checks every identity directly against the original cubics. Hence their ideal has a zero-dimensional initial ideal and a finite-dimensional quotient. Homogeneity implies that its only geometric affine zero is the origin. There is no claim that the eleven polynomials form a Gr\"obner basis.
+
+The source checker independently reconstructs \eqref{eq:cubiccone} from the Christoffel entries and the determinant odd-part formula after the fixed linear substitution into the eleven slice variables. It uses the $286$ points $t=(u_0,\ldots,u_9,1)$ with nonnegative integers $u_i$ satisfying $\sum u_i\leq3$, and the $28$ points $p=(a,b,1)$ with nonnegative integers $a,b$ satisfying $a+b\leq6$. These grids are unisolvent for the homogeneous cubic and sextic identities, respectively; the characteristic exceeds both degrees. It also verifies the slice rank and primality of the modulus. These are full polynomial-identity checks.
+
+The projective $10$-plane slice is therefore disjoint from $\PP(V)$ over the algebraic closure of $\mathbb F_{32003}$. As in Section~\ref{sec:rankproof}, properness of the projective intersection over $\mathbb Z[1/2]$ transfers this emptiness to characteristic zero. The projective intersection theorem in $\PP^{41}$ gives $\dim\PP(V)\leq30$, and thus $\dim V\leq31$. The original equations, integer slice, targets and direct identity coefficients occupy approximately one megabyte. Both checkers use only standard-library exact arithmetic.
+\end{proof}
+
+\begin{proof}[Proof of the upper bound in Theorem~\ref{thm:eleven}]
+First restrict to the nonempty open configuration space $\Omega_0$ on which no three directions lie on a line, no six on a quadratic curve, and no ten on a cubic curve. Curves may be reducible or nonreduced. These conditions are open and jointly nonempty: polynomial evaluation at a triangular grid is invertible in each degree, and finitely many nonempty opens intersect in the irreducible space $(\PP^2)^{11}$. In particular, quadratic evaluation has rank six. Equality of the eleven measured traces therefore forces $H\in K$.
+
+Suppose $Q\ne0$. If $R\ne0$, let $G$ be their complete greatest common divisor and set $d=\deg G\leq4$. If $R=0$, put $G=Q$ and $d=4$. The common-zero set consists of the curve $G=0$ and finitely many residual points. Thus the dimension of the allowed direction choices over a fixed pair is at most $0,2,5,9,11$ for $d=0,1,2,3,4$, respectively. For $d\leq3$ the bounds use the defining conditions of $\Omega_0$; any residual choices are finite.
+
+Let $A_d$ be the cone of quartics having a degree-$d$ factor. Multiplication of forms gives
+\[
+ \dim A_1=\dim A_3\leq3+10-1=12,
+ \qquad \dim A_2\leq6+6-1=11.
+\]
+These counts include repeated and reducible factors. Over a full-rank $H$, the map $X\mapsto Q$ is surjective with kernel dimension six. Over an exact-rank-$r$ stratum with $r\leq14$, Proposition~\ref{prop:rankbounds} bounds the pair locus with $Q\in A_d$ by
+\[
+ (r-1)+(21-r)+\dim A_d=20+\dim A_d.
+\]
+The full-rank bound is $21+\dim A_d$. Consequently the pair-locus bounds for $d=1,2,3$ are $33,32,33$. Requiring the same factor to divide $R$ cannot increase them. This argument covers every rank stratum and does not assume transverse intersection with the factor locus. Lemma~\ref{lem:quarticdivisibility} supplies the bound for $d=4$.
+
+Combining these facts with \eqref{eq:zeroQbounds} gives the complete incidence count:
+\begin{center}
+\begin{tabular}{lrrr}
+\toprule
+Pair class & Pair dimension & Direction fiber & Total\\
+\midrule
+$Q,R$ coprime & $36$ & $0$ & $36$\\
+$\deg\gcd(Q,R)=1$ & $33$ & $2$ & $35$\\
+$\deg\gcd(Q,R)=2$ & $32$ & $5$ & $37$\\
+$\deg\gcd(Q,R)=3$ & $33$ & $9$ & $42$\\
+$Q\mid R$, $Q\ne0$ & $31$ & $11$ & $42$\\
+$Q=0$, $R\ne0$ & $21$ & $11$ & $32$\\
+$Q=R=0$, $H\ne0$ & $20$ & $22$ & $42$\\
+\bottomrule
+\end{tabular}
+\end{center}
+All entries are upper bounds. When both polynomials vanish, all directions are allowed; the last row explicitly includes that case. When only $Q$ vanishes, the sextic zero curve gives at most one dimension per direction.
+
+Every total is less than $21+22=43$, the dimension of a tensor together with an eleven-direction configuration. The image of the off-diagonal incidence under $(X,H,\mathbf p)\mapsto(X+H,\mathbf p)$ therefore has closure of dimension at most $42$. By the fiber-dimension theorem, on a nonempty open subset $\Omega\subset\Omega_0$ its fiber has dimension at most $20$. Removing that fiber from $\E$ gives uniqueness against all competing tensors, as asserted.
+\end{proof}
+
+The constructions are defined over the reals, so the open conditions also give generic real direction configurations and generic positive-definite real tensors. Eleven generic directions and the fifteen explicit directions of Corollary~\ref{cor:directions} are different guarantees. The argument neither provides an explicit eleven-direction configuration nor proves that eight, nine or ten directions suffice. It also gives no conditioning bound for any of these measurements.
+
+\section*{Research assistance and verification}
+AI coding agents contributed candidate proof arguments, symbolic calculations, certificate construction and checking, and manuscript drafting and revision. Valyu DeepResearch and the Valyu search and contents APIs supported literature exploration and source retrieval. The mathematical claims rest on the written proof and reproducible exact-arithmetic package. The formal-verification scope is stated in Section~\ref{sec:computation}; internal automated reviews are not external peer review.
+
+\appendix
+\section{Coordinates and certificate construction}\label{app:coordinates}
+
+Use Voigt pair order $(11,22,33,23,13,12)$ and write the symmetric $6\times6$ matrix as $(c_{uv})$. The Christoffel matrix can be reconstructed from \eqref{eq:christoffel}; for example,
+\begin{align*}
+ \Gamma_{11}&=c_{11}p_1^2+c_{66}p_2^2+c_{55}p_3^2
+ +2c_{16}p_1p_2+2c_{15}p_1p_3+2c_{56}p_2p_3,\\
+ \Gamma_{12}&=c_{16}p_1^2+c_{26}p_2^2+c_{45}p_3^2
+ +(c_{12}+c_{66})p_1p_2\\
+ &\hspace{2em}+(c_{14}+c_{56})p_1p_3+(c_{25}+c_{46})p_2p_3.
+\end{align*}
+The six trace constraints are eliminated as
+\begin{align*}
+ c_{11}&=-c_{55}-c_{66},&c_{22}&=-c_{44}-c_{66},&c_{33}&=-c_{44}-c_{55},\\
+ c_{16}&=-c_{26}-c_{45},&c_{15}&=-c_{35}-c_{46},&c_{24}&=-c_{34}-c_{56}.
+\end{align*}
+The remaining coordinate order is
+\[
+ (c_{12},c_{13},c_{14},c_{23},c_{25},c_{26},c_{34},c_{35},c_{36},
+ c_{44},c_{45},c_{46},c_{55},c_{56},c_{66}).
+\]
+Rows of $L_H$ are the quartic monomial coefficients of $\tr(\Gamma_X\Gamma_H)$, in decreasing lexicographic order. Columns follow the upper-triangular Voigt order
+\[
+ c_{11},c_{12},\ldots,c_{16},c_{22},\ldots,c_{26},c_{33},\ldots,c_{66}.
+\]
+These conventions determine the matrix without a lengthy printed array.
+
+In the displayed coordinates of $K$, the slice vectors are
+\begingroup\small
+\begin{align*}
+ H_0&=(4,4,0,4,0,0,0,0,0,-1,0,0,-1,0,-1),\\
+ H_1&=(-3,-7,0,-5,3,-6,0,7,5,1,1,1,5,1,1),\\
+ H_2&=(-7,6,-4,-3,3,-4,0,-4,5,-7,-7,-4,-3,7,7),\\
+ H_3&=(5,1,5,5,5,1,6,-1,2,4,-3,7,-1,-6,3).
+\end{align*}
+\endgroup
+The selected row and column sets, all minor polynomials and all Bezout coefficients are retained in the certificate files. The first normal quotient is obtained by setting the five nonpivot coordinates to zero after row-reducing its linear coefficient map; the second quotient is formed in the same way. The source code records these choices and the resulting operators so that the fixed-point calculations can be reproduced with different nullspace bases if desired.
+
+\bibliographystyle{amsplain}
+\bibliography{references}
+\end{document}

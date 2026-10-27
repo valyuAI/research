@@ -1,0 +1,21 @@
+{
+  "retrievedOn": "2026-10-26",
+  "purpose": "Background source citation metadata; scientific claim scope is recorded in sources.md.",
+  "records": [
+    {
+      "title": "Sound Colless-like balance indices for multifurcating trees Sound Colless-like balance indices for multifurcating trees",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6155497/",
+      "authors": [
+        "Arnau Mir",
+        "Lucía Rotger",
+        "Francesc Rosselló",
+        "Ulrich Melcher"
+      ],
+      "doi": "10.1371/journal.pone.0203401",
+      "publication_date": "2018-09-25"
+    }
+  ],
+  "rawResponseSha256": "2fdc9cdd8f742275526ba9a345b3df4162feed67e78ed935dbbd50fdd0c3dfad",
+  "rawResponseRetainedOutsideRepository": true,
+  "curation": "Full third-party text, temporary image URLs and retrieval-service bookkeeping are omitted from the research package."
+}

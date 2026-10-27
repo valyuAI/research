@@ -1,0 +1,187 @@
+\documentclass[11pt]{amsart}
+\usepackage[a4paper,textwidth=158mm,textheight=237mm,centering]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,mathtools,amssymb,graphicx,flafter,booktabs}
+\usepackage[unicode,colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\cc}{\mathbf c}
+\title{A Hall-surplus certificate for \texorpdfstring{$7\times7\times7$}{7x7x7} tic-tac-toe}
+\author{Harvey Yorke}
+\address{Valyu AI}
+\ifdefined\journalversion\else
+\author{Valyu DeepResearch}
+\address{Valyu AI}
+\fi
+\ifdefined\journalversion
+  \hypersetup{pdftitle={A Hall-surplus certificate for 7x7x7 tic-tac-toe},pdfauthor={Harvey Yorke}}
+\else
+  \hypersetup{pdftitle={A Hall-surplus certificate for 7x7x7 tic-tac-toe},pdfauthor={Harvey Yorke and Valyu DeepResearch}}
+\fi
+\date{25 October 2026}
+\keywords{Maker-Breaker games, cubic tic-tac-toe, pairing strategies, Hall's theorem, surplus}
+\newcommand{\paperAuthorBlock}[1]{%
+  \begin{minipage}[t]{.44\textwidth}
+    \centering\normalfont\normalsize #1\par\small Valyu AI\par
+  \end{minipage}%
+}
+\makeatletter
+\renewcommand{\@setauthors}{%
+  \begingroup\trivlist\centering\normalfont\normalsize
+  \@topsep30\p@\relax\advance\@topsep by -\baselineskip\item\relax
+  \ifdefined\journalversion
+    \paperAuthorBlock{Harvey Yorke}%
+  \else
+    \paperAuthorBlock{Harvey Yorke}\hspace{.06\textwidth}\paperAuthorBlock{Valyu DeepResearch}%
+  \fi
+  \endtrivlist\endgroup
+}
+\renewcommand{\@setaddresses}{}
+\makeatother
+\begin{document}
+\raggedbottom
+\begin{abstract}
+Cain, Raymond and K\"allersj\"o recently proved that Breaker wins Maker-Breaker tic-tac-toe on the $7\times7\times7$ cube, so the standard game is a draw. Their proof fixes Breaker's first three or four moves and then checks about $3.5\times10^7$ positions for a pairing strategy. We give a shorter certificate. If the bipartite graph matching surviving lines to free cells has Hall surplus at least $d$ (in the sense of Lov\'asz and Plummer), then a pairing survives any $d$ further Maker moves. So Maker's later opening moves need not be enumerated. Breaker's opening needs only to meet enough lines, and $1{,}224$ symmetry classes of positions, each checked with at most $170$ matchings, prove the theorem. The certificate also covers a family of positions omitted from the published case analysis, in which Maker's first two moves lie in opposite octants. As a cross-check we re-ran the published central-opening enumeration ($22{,}163{,}142$ positions) and the published non-central rule completed by a greedy rule on the omitted positions ($2{,}196{,}381$ positions, Maker's first move reduced by symmetry); every position has a pairing. For $6\times6\times6$, which remains open, we show why the method stalls: no pairing can exist before Breaker's eighth move, and the surplus of any position is at most $4$.
+\end{abstract}
+\maketitle
+
+\section{The game and the question}
+
+Cubic tic-tac-toe on $[n]^3$ is played on the $n^3$ cells of the cube. The winning sets are the \emph{lines}: the $3n^2$ axis-parallel rows, the $6n$ diagonals of the axis-parallel planes and the $4$ space diagonals, in total $((n+2)^3-n^3)/2$ lines of $n$ cells each. In the Maker-Breaker version Maker moves first and wins by claiming every cell of some line; Breaker wins otherwise. A Breaker win in the Maker-Breaker game implies that the standard game, in which the first player to complete a line wins, is a draw: the second player can block, and by strategy stealing the first player cannot lose~\cite[Sec.~2]{CRK2025}.
+
+Maker wins for $n\le 4$; the case $n=4$ is Patashnik's computer proof for Qubic~\cite{Patashnik1980}. Breaker wins for $n\ge 8$, by a pairing strategy~\cite{GolombHales2002}; see also the potential-function method of Erd\H{o}s and Selfridge~\cite{ErdosSelfridge1973} as discussed in~\cite{CRK2025}. Beck calls the $5^3$ game a hopeless open problem and conjectures that the standard game is a draw~\cite{Beck2008}. In 2025, Cain, Raymond and K\"allersj\"o~\cite{CRK2025} settled $n=7$.
+
+\begin{theorem}[\cite{CRK2025}]\label{thm:main}
+Breaker has a winning strategy in Maker-Breaker tic-tac-toe on $[7]^3$. Hence the standard $7^3$ game is a draw.
+\end{theorem}
+
+They state that $n=5$ and $n=6$ are the only unresolved cases~\cite[Sec.~6.2]{CRK2025}. This note does not settle either. It contributes the following.
+\begin{enumerate}
+\item A robust use of Hall's condition (Lemma~\ref{lem:surplus}, which restates a textbook characterization of surplus): one matching computation per line certifies a pairing against every choice of $d$ unknown Maker cells. It is formalized in Lean~4 with Mathlib. We are not aware of an earlier use of surplus to absorb unknown opponent moves in a Maker-Breaker proof.
+\item A new proof of Theorem~\ref{thm:main} with a flexible Breaker opening. It needs $66+1{,}158$ symmetry classes of positions, each checked with at most $170$ matchings, instead of about $3.5\times10^7$ positions (Section~\ref{sec:proof}).
+\item A family of positions not covered by the published case analysis for a non-central first move, with explicit examples; the new proof covers them (Section~\ref{sec:gap}).
+\item Two obstructions explaining why this route does not reach $6^3$ (Section~\ref{sec:six}).
+\end{enumerate}
+
+\section{Pairings and Hall surplus}
+
+Fix a position. Call a line \emph{alive} if Breaker holds none of its cells. A \emph{pairing} assigns to every alive line two of its free cells, all $2\cdot\#\{\text{alive lines}\}$ cells distinct. If Maker is to move and a pairing exists, Breaker wins: whenever Maker claims a paired cell, Breaker claims its partner, and otherwise Breaker moves arbitrarily. So Breaker obtains at least one of the two cells assigned to each alive line.
+
+Pairings are matchings, an observation going back to Hales and Jewett~\cite{HalesJewett1963} and used as Beck's ``bigamy corollary'' of Hall's theorem~\cite{Beck2002,CRK2025}: a position admits a pairing iff every set $\mathcal G$ of alive lines has at least $2|\mathcal G|$ free cells in its union. Cain, Raymond and K\"allersj\"o tried to verify this condition by hand for $7^3$ and found it hard for intermediate $|\mathcal G|$~\cite[Sec.~5]{CRK2025}. Let $G$ be the bipartite graph whose left vertices are \emph{slots}, two per alive line, and whose right vertices are free cells, a slot being adjacent to the free cells of its line. A pairing is a matching saturating all slots. Assume at least one line is alive. Following Lov\'asz and Plummer~\cite[Sec.~1.3]{LovaszPlummer1986} we use the \emph{surplus}
+\[
+  \sigma(G)=\min_{\emptyset\ne S\subseteq \mathrm{slots}}\bigl(|N(S)|-|S|\bigr).
+\]
+
+\begin{lemma}\label{lem:surplus}
+Let $d\ge0$.
+\begin{enumerate}
+\item If $\sigma(G)\ge d$, then for every set $D$ of at most $d$ cells there is a matching saturating all slots and avoiding $D$.
+\item $\sigma(G)\ge d$ if and only if, for every slot $x$, the graph $G_x$ obtained by adding $d$ further copies of $x$ has a matching saturating all its slots.
+\end{enumerate}
+\end{lemma}
+
+Part~(2) is Theorem~1.3.6 of~\cite{LovaszPlummer1986}; we include the short proof.
+
+\begin{proof}
+(1) For nonempty $S$, $|N(S)\setminus D|\ge |N(S)|-d\ge|S|$. Apply Hall's theorem~\cite{Hall1935} to $G-D$.
+(2) If $\sigma\ge d$ and $S'$ is a slot set of $G_x$ with underlying set $S$, then $|S'|\le|S|+d\le|N(S)|$ when $S'$ contains copies of $x$, and $|S'|=|S|\le |N(S)|$ otherwise; Hall's theorem gives the matching. Conversely, given nonempty $S$, pick $x\in S$ and saturate $S$ together with the $d$ copies of $x$ in $G_x$: their $|S|+d$ images are distinct and lie in $N(S)$.
+\end{proof}
+
+Both directions used below, the implication from the replication test to $\sigma\ge d$ and part~(1), are formalized in \texttt{formal/ValyuResearch/CubicTicTacToe.lean} (theorem \texttt{pairing\_of\_replication}); the Lean proof uses Mathlib's Hall theorem and only the standard axioms. Since the two slots of a line are twins, part~(2) needs one test per alive line. In a test, $d$ augmenting-path searches start from a fixed saturating matching.
+
+\begin{corollary}\label{cor:unknown}
+Suppose that, whatever Maker does, after $r$ rounds Breaker's cells form a set $B$ for which $\sigma\ge d$ in the position where Maker holds only a known set $K$ of cells. Suppose also that Maker's other $r-|K|$ cells number at most $d$. Then Breaker wins.
+\end{corollary}
+
+\begin{proof}
+Maker's unknown cells are a set $D$ with $|D|\le d$ disjoint from $B\cup K$. Lemma~\ref{lem:surplus}(1) gives a pairing of the actual position. Lines are only lost to Breaker's cells, so the set of alive lines is the same. Each alive line still has two free cells, so Maker has not completed a line, and Maker is to move.
+\end{proof}
+
+Corollary~\ref{cor:unknown} is the point of the method. The published proof enumerates Maker's later opening moves one by one. Here they never appear: only Breaker's own opening and Maker's first move enter the computation.
+
+\section{A short proof of the \texorpdfstring{$7^3$}{7\textasciicircum 3} theorem}\label{sec:proof}
+
+Write $\cc=(4,4,4)$ for the centre. It lies on $13$ lines; every other cell of a space diagonal lies on $7$ lines, and every remaining cell on at most $7$. The four space diagonals meet only at $\cc$.
+
+\subsection*{Maker opens at the centre}
+Breaker's rule $R_{\cc}$: first claim $(5,5,5)$. In each of rounds $2,3,4$, claim a free non-central cell on a space diagonal not yet used by Breaker, choosing one that meets the most lines not yet met by Breaker's cells (ties broken lexicographically).
+
+\begin{proposition}\label{prop:centre}
+\leavevmode
+\begin{enumerate}
+\item Let $B$ consist of one non-central cell on each space diagonal, with $B$ meeting at least $26$ lines. In the position where Maker holds $\cc$ and Breaker holds $B$, $\sigma\ge 4$.
+\item Against every Maker play, $R_{\cc}$ produces after four rounds such a set $B$ meeting exactly $27$ lines.
+\end{enumerate}
+\end{proposition}
+
+Part (1) is a computation over all $6^4=1296$ such sets, or over their $66$ classes under the $48$ symmetries of the cube. The results are in Table~\ref{tab:centre}; sets meeting $25$ or fewer lines are not used. For part (2), $R_{\cc}$ depends only on which space-diagonal cells are occupied. We therefore enumerate Maker's moves $2$, $3$ and $4$ as either a specific free space-diagonal cell or ``any other cell''. All $10{,}627$ leaves of this tree give one of $14$ distinct sets $B$, each meeting $27$ lines. With $d=3$ unknown Maker cells and $\sigma\ge4$, Corollary~\ref{cor:unknown} applies.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{rrrr}
+\toprule
+lines met by $B$ & alive lines & sets (classes) & $\sigma$\\
+\midrule
+27 & 166 & 576 (18) & $\ge 4$\\
+26 & 167 & 288 (15) & $\ge 4$\\
+25 & 168 & 384 (24) & $2$\\
+22 & 171 & 48 (9) & no pairing\\
+\bottomrule
+\end{tabular}
+\caption{Maker holds the centre and Breaker holds one non-central cell per space diagonal. Surplus computed exactly up to the cap $4$.}\label{tab:centre}
+\end{table}
+
+\subsection*{Maker opens elsewhere}
+Breaker's rule $R'$: claim $\cc$. In round $2$ claim any free non-central space-diagonal cell $a$. In round $3$ claim any free cell $b$ on a different space diagonal such that $a$ and $b$ lie on no common line. Every non-central space-diagonal cell has exactly $12$ such partners. At most three cells are Maker's, so a partner is always free; there are $144$ admissible pairs $\{a,b\}$. Breaker's three cells meet $13+6+6=25$ lines, leaving $168$ alive lines and $339$ free cells before Maker's two unknown moves.
+
+\begin{proposition}\label{prop:noncentre}
+For every non-central first move $m_1$ and every admissible pair $\{a,b\}$ avoiding $m_1$, the position with Maker holding $m_1$ and Breaker holding $\{\cc,a,b\}$ has $\sigma\ge 2$.
+\end{proposition}
+
+This is checked on all $48{,}960$ configurations without symmetry reduction, and separately on their $1{,}158$ symmetry classes; in every case $\sigma=3$ exactly. With $d=2$ unknown Maker cells, Corollary~\ref{cor:unknown} finishes the proof of Theorem~\ref{thm:main}. \qed
+
+\begin{remark}[Earliest possible pairing]\label{rem:optimal}
+After $k$ rounds with Maker to move there are $343-2k$ free cells, so a pairing needs Breaker's $k$ cells to meet at least $193-\lfloor(343-2k)/2\rfloor$ lines. If Maker holds the centre, $k$ Breaker cells meet at most $7k<25$ lines for $k=3$. If Maker opens elsewhere, then after $k=2$ rounds Breaker's cells meet at most $13+7=20<24$ lines (at most $14$ without the centre). So no pairing exists before the fourth round in the first case or the third in the second; both proofs use these earliest possible rounds. This is a counting bound only; it says nothing about strategies other than ``open, then pair''.
+\end{remark}
+
+\section{The published case analysis}\label{sec:gap}
+
+In~\cite[Sec.~4.3]{CRK2025}, when Maker does not open at the centre, Breaker takes $\cc$. The text assumes that, by rotating the cube, both of Maker's first two moves may be assumed to lie in the half-cube $x\le4$. Breaker's next moves are $(5,5,5)$ and then $(6,2,6)$, or $(7,1,7)$ if $(6,2,6)$ is taken. The enumeration covers $195\times194\times339$ positions with $x_1,x_2\le4$.
+
+No symmetry of the cube maps two cells into $x\le4$ when they lie in strictly opposite open octants about the centre, that is, when $m_1-\cc$ and $m_2-\cc$ have opposite nonzero signs in every coordinate. Such pairs are not covered. For example, after $m_1=(1,7,1)$, Breaker's $\cc$, $m_2=(6,2,6)$, Breaker's $(5,5,5)$ and $m_3=(7,1,7)$, both prescribed third moves are Maker's. After $m_1=(3,3,3)$ and $m_2=(5,5,5)$ even the prescribed second move is Maker's. Counting ordered pairs, $216\cdot27=5{,}832$ choices of $(m_1,m_2)$ are affected, or $1{,}977{,}048$ positions after Maker's third move. The authors' public code~\cite{CRKcode} treats only the central opening; its README says that code for the other case will be provided on request. We have not seen that code, so we cannot say whether the computation, as opposed to the text, covers these positions.
+
+The omission does not affect the truth of Theorem~\ref{thm:main}: Proposition~\ref{prop:noncentre} covers every non-central opening. As a cross-check, we implemented the published strategy for both openings. In the non-central case we reduced $m_1$ to its $19$ symmetry classes, and Maker's second and third moves were unrestricted. Whenever a symmetry maps $m_1,m_2$ into $x\le4$, Breaker follows the published rule in those coordinates. In the $270$ remaining class-move pairs, Breaker takes greedily the free cell meeting the most alive lines, twice. All $2{,}196{,}381$ resulting positions, including the $91{,}530$ uncovered ones (counted with $m_1$ reduced by symmetry), have a pairing. For the central opening we re-ran all $22{,}163{,}142$ positions of the published enumeration; every one has a pairing, as reported in~\cite{CRK2025}.
+
+\section{What this says about \texorpdfstring{$6\times6\times6$}{6x6x6}}\label{sec:six}
+
+The $6^3$ board has $216$ cells and $148$ lines. The $24$ cells of the space diagonals lie on $7$ lines each, $144$ cells lie on $4$ and $48$ on $3$. Every cell lies on at most $6$ lines that are not space diagonals.
+
+\begin{proposition}\label{prop:six}
+\leavevmode
+\begin{enumerate}
+\item In $6^3$ no position after $k\le7$ complete rounds, with Maker to move, admits a pairing.
+\item Every $6^3$ position with an alive line containing $j$ Maker cells has $\sigma\le 4-j$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+(1) A pairing needs $2(148-E)\le 216-2k$, where $E$ is the number of lines met by Breaker's $k$ cells, so $E\ge40+k$. But $E\le 6k+\min(k,4)$, which is $46<47$ for $k=7$. (2) Take $S$ to be the two slots of that line: $|N(S)|-|S|\le(6-j)-2$.
+\end{proof}
+
+Both facts matter for the method. A pure ``open, then pair'' proof for $6^3$ must enumerate Maker's first eight moves (seven after a symmetry reduction of the first), against three in each case of the $7^3$ proof. Proposition~\ref{prop:six}(2) limits Corollary~\ref{cor:unknown} to at most four unknown Maker cells, and fewer once Maker's known cells lie on alive lines. So at least three of Maker's moves after the first must be enumerated explicitly, and Breaker must react to Maker's threats during the opening. In simulated play, with a danger-greedy Breaker against random, line-stealing and danger-greedy Makers, a pairing first appeared after $9$ to $11$ rounds. This is evidence, not proof. We therefore regard $6^3$ as needing a genuine game-tree search, perhaps with these certificates as leaf tests, rather than the enumeration used for $7^3$. Uiterwijk's set matchings~\cite{Uiterwijk2017} are another way to cover lines with fewer than two cells each, and could serve as stronger leaf tests.
+
+\section{Reproduction and scope of verification}
+
+The directory \texttt{verification/} contains three independent programs. \texttt{surplus\_certificate.py} is standard-library Python. It checks Proposition~\ref{prop:centre} on the $66$ classes and the $10{,}627$-leaf tree, and Proposition~\ref{prop:noncentre} on the $1{,}158$ classes. \texttt{surplus7.c} recomputes the exact surplus, capped at $4$, for all $1296$ central-case sets and all $48{,}960$ non-central configurations, without symmetry. \texttt{replicate\_published.c} runs the published strategy and the greedy repair over the $24{,}359{,}523$ positions of Section~\ref{sec:gap}. In \texttt{replicate\_published.c} every matching found is re-validated, and every failed incremental test is re-solved from scratch. The Lean file formalizes Lemma~\ref{lem:surplus}(1) and the replication direction of~(2), and the fact that a pairing needs two free cells per alive line, used in Proposition~\ref{prop:six}(1). It does not formalize the game semantics or the computations.
+
+On a loaded laptop the Python certificate runs in about six minutes with three processes; the C surplus program needs seconds for the central case and tens of minutes for all non-central configurations. The comparison with $3.5\times10^7$ positions is between different strategies, and the published enumeration did not use symmetry; the structural gain is that Maker's later opening moves are absorbed by the surplus instead of enumerated. All certificates are computer outputs, replayed by three programs written separately. Theorem~\ref{thm:main} was already proved in~\cite{CRK2025}. What is new here is the surplus certificate, the smaller computation, the identification of the uncovered positions, and the $6^3$ obstructions. The $5^3$ and $6^3$ games remain open.
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

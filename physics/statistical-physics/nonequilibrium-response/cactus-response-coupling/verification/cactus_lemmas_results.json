@@ -1,0 +1,23 @@
+{
+  "cycle_identity": {
+    "n=3": true,
+    "n=4": true,
+    "n=5": true,
+    "n=6": true,
+    "n=7": true,
+    "n=8": true
+  },
+  "block_factorisation": {
+    "bowtie": true,
+    "bowtie_plus_pendant": true,
+    "square_with_two_triangles": true,
+    "cycle_with_tails": true,
+    "triangle_chain": true
+  },
+  "dominant_families_are_uc": {
+    "cycle5": true,
+    "cycle6": true,
+    "bowtie": true
+  },
+  "all_passed": true
+}

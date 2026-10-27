@@ -1,0 +1,336 @@
+{
+  "started_utc": "20261026T125315Z",
+  "mode": "full",
+  "steps": [
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-B",
+        "-u",
+        "check_labels.py"
+      ],
+      "cwd": "verification",
+      "exit_code": 0,
+      "elapsed_seconds": 1.06,
+      "log": "verification/results/replay/20261026T125315Z/01-check_labels.py.log"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-B",
+        "-u",
+        "check1_rank.py"
+      ],
+      "cwd": "verification",
+      "exit_code": 0,
+      "elapsed_seconds": 42.33,
+      "log": "verification/results/replay/20261026T125315Z/02-check1_rank.py.log"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-B",
+        "-u",
+        "check2_independent.py"
+      ],
+      "cwd": "verification",
+      "exit_code": 0,
+      "elapsed_seconds": 35.22,
+      "log": "verification/results/replay/20261026T125315Z/03-check2_independent.py.log"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-B",
+        "-u",
+        "check_flex_finite.py"
+      ],
+      "cwd": "verification",
+      "exit_code": 0,
+      "elapsed_seconds": 8.03,
+      "log": "verification/results/replay/20261026T125315Z/04-check_flex_finite.py.log"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-B",
+        "-u",
+        "check_second_order.py"
+      ],
+      "cwd": "verification",
+      "exit_code": 0,
+      "elapsed_seconds": 150.71,
+      "log": "verification/results/replay/20261026T125315Z/05-check_second_order.py.log"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-B",
+        "-u",
+        "check_prestress.py"
+      ],
+      "cwd": "verification",
+      "exit_code": 0,
+      "elapsed_seconds": 53.23,
+      "log": "verification/results/replay/20261026T125315Z/06-check_prestress.py.log"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-B",
+        "-u",
+        "check_extra.py"
+      ],
+      "cwd": "verification",
+      "exit_code": 0,
+      "elapsed_seconds": 67.27,
+      "log": "verification/results/replay/20261026T125315Z/07-check_extra.py.log"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-B",
+        "-u",
+        "check_real_zeros_independent.py"
+      ],
+      "cwd": "verification",
+      "exit_code": 0,
+      "elapsed_seconds": 7.03,
+      "log": "verification/results/replay/20261026T125315Z/08-check_real_zeros_independent.py.log"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-B",
+        "-u",
+        "exact_flex_dims.py"
+      ],
+      "cwd": "verification",
+      "exit_code": 0,
+      "elapsed_seconds": 202.01,
+      "log": "verification/results/replay/20261026T125315Z/09-exact_flex_dims.py.log"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-B",
+        "-u",
+        "check2_independent.py",
+        "--rank-only"
+      ],
+      "cwd": "verification",
+      "exit_code": 0,
+      "elapsed_seconds": 30.13,
+      "log": "verification/results/replay/20261026T125315Z/10-check2_independent.py_--rank-only.log"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-B",
+        "-u",
+        "check_irreducible.py"
+      ],
+      "cwd": "verification",
+      "exit_code": 0,
+      "elapsed_seconds": 1.01,
+      "log": "verification/results/replay/20261026T125315Z/11-check_irreducible.py.log"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-B",
+        "-u",
+        "check_antiprisms.py"
+      ],
+      "cwd": "verification",
+      "exit_code": 0,
+      "elapsed_seconds": 1.01,
+      "log": "verification/results/replay/20261026T125315Z/12-check_antiprisms.py.log"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-B",
+        "-u",
+        "summarize.py"
+      ],
+      "cwd": "verification",
+      "exit_code": 0,
+      "elapsed_seconds": 27.12,
+      "log": "verification/results/replay/20261026T125315Z/13-summarize.py.log"
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "paper.tex"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "elapsed_seconds": 2.02,
+      "log": "verification/results/replay/20261026T125315Z/14-latex-1.log"
+    },
+    {
+      "command": [
+        "bibtex",
+        "paper"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "elapsed_seconds": 1.02,
+      "log": "verification/results/replay/20261026T125315Z/15-bibtex.log"
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "paper.tex"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "elapsed_seconds": 2.02,
+      "log": "verification/results/replay/20261026T125315Z/16-latex-2.log"
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "paper.tex"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "elapsed_seconds": 2.05,
+      "log": "verification/results/replay/20261026T125315Z/17-latex-3.log"
+    }
+  ],
+  "input_sha256": {
+    "build.sh": "38b330d5b89359299b862d1c20442483124272a9a3949a9e2e6f96c9675b9a8c",
+    "paper.tex": "eedf29479e351a193d0f94e97cad87ff793f0fd8b2e9ea0316a26e5d4e50efb2",
+    "references.bib": "2c504cca7dc1af9b4c4190825cb86f88d2555bcbf421df210baa5885fb17086a",
+    "verification/nfsolid.py": "3243ed1b87aabbb3b9dd2a1f4bfb9e6b3145fdccbc9f1c10d9bf0c2321a0962a",
+    "verification/check_real_zeros_independent.py": "ced699f610741ce4f19a8ff7e6384b4ad7af2888ff0d8e2ccd9ae757cf8f83b1",
+    "verification/check_flex_finite.py": "e9a2eaf6a019978c6aa0505218832cd735a670904798565af6c459f3fa7e8711",
+    "verification/check_prestress.py": "bf842859cb139b39c442d99d6bc2b749d5a93c3a15a2ae011a267e223348e491",
+    "verification/check_extra.py": "b70d4176031acbba80f9d44915327ad8490f6bed7b46af59eaa5fe496d53fa0b",
+    "verification/check_antiprisms_numeric.py": "41a5e1965720e8aa502ce004d64167395a64e221bf2232eba49e8140f580f725",
+    "verification/check_antiprisms.py": "0ff1597bf79679b7de1defdc9be34b91705f550b8b26c172e08cba976fb84a25",
+    "verification/exactlin.py": "d012c59fb82be0eca6d66f1bca6d7c224822da1312bf63ffde4d2c4430d3a5b5",
+    "verification/check_labels.py": "fd734ddc333334e36b8685e4e1ecb55c7f6e269656df9f5bd38d4673d0bdbd30",
+    "verification/summarize.py": "872e13a7f588a09462f10ca7d1fa3694ab383c96d13e8a488389456667ad6ebf",
+    "verification/tower.py": "7fd1e3c4cb9d162cd953be174410f371d338c6353df60e7658fe43b85e7b1c1e",
+    "verification/minkflex.py": "766db45e665d3f539d84901e8d26840ac75de2348de5b75782b36974180d4927",
+    "verification/check_labels_oscar.py": "5765b0d5d968a4fcab62f281791e6b93ece7dc63a56bf6de6d5a518b701efe27",
+    "verification/prismflex.py": "60140e3c73b0cc0c52039d676c3e25f06763ac6516d63b6b33dbdd0aa1fea24c",
+    "verification/exact_flex_dims.py": "e48cf452e11c96be67f86a819b0e8d32497bb862f31f9c4be022baa3ee5628f8",
+    "verification/make_extra.py": "a360f306ad912b0176539488b936bf83ff39ae74fe0a83f5d4f495ffcae9d077",
+    "verification/check1_rank.py": "ac7f7c9630816d64bed498e1733ec2d2cefa85f7599cd3e6672815b346912bfc",
+    "verification/gen_flex_vectors.py": "a0e54d8e79ed4d8f91cf47318c6f0727799d8ebb2e728eb7cc70b0626039d10a",
+    "verification/nf.py": "3213d2a731bb3c2be09759fccae1e1e4c269c46b1cb2a06114f4d87c739526d5",
+    "verification/check2_independent.py": "34c63ef6b459f3841af184f9c5a4afd1e307ed5916cf591a21db707897039655",
+    "verification/run_build.py": "48121d9543d39b1e1e68cf87b33926738ad061146dcb5c8ea7c35c43366f0bab",
+    "verification/check_irreducible.py": "a2c5674e6c2afea9940166b4a294492f9c224f4edc257f677ebdc96ec4a2b8e3",
+    "verification/check_second_order.py": "2350d31803c4a92880f2e086b0387aed7a636158e3ea2ef4c4f2651538b58d86",
+    "verification/data/J01.json": "3ec2dcf9bb7bd5d4ef475d241c674d78e4e277f821c8998bf6ac22c432041e7b",
+    "verification/data/J02.json": "35c5021cdd30f0537941407e0fefd97e3824fa08a9456767bd9346d9296ab594",
+    "verification/data/J03.json": "c109c5665f043fbd09cc1cbe3d2d49d8f63a8b652d019f5f065f859560671302",
+    "verification/data/J04.json": "c0a68d5aa5b603fc7c83f2b9c49bf87ac53ee929399167c8c297550a458066cc",
+    "verification/data/J05.json": "cc863c2d23e996ba5bd5b04bf7f290a2c43b92f4e50f495061eceb22dac5d60f",
+    "verification/data/J06.json": "f521a3e8c27efd1d07657df0f769401f1a0d1feb97d4a5db45f9408cd441049e",
+    "verification/data/J07.json": "d2e04a68175e605bc204cfea60b327ee1958da2812ea80e5a91220184303c55f",
+    "verification/data/J08.json": "996b44dad96d5dbd6ae361cf0fb4153733360d04a18dceb8011001c4e837b67f",
+    "verification/data/J09.json": "4d685d358f07777e741b21dba47a915fc11722da2313756beaaad93ba2b071d9",
+    "verification/data/J10.json": "76db159c78a6f3ecac31f60c5e887fe0b49e68bc850ced369f07c3c926a25f83",
+    "verification/data/J11.json": "6fb41ae04a8d07a2b640d924b24dced8640be87b2b47e4b81ada66bc84311291",
+    "verification/data/J12.json": "166e86684e15685ae42cbe63ea276cd39ce79b7d34f8c61d3e3aa2d90d14d71b",
+    "verification/data/J13.json": "a5c1a5faf7346bc520efc63d923c90e618a0cbd7752f0e1476111b9cb33e5b77",
+    "verification/data/J14.json": "93dc531780c1131a5737fc71793246fb555267128cc3f9c822e139545d3f1246",
+    "verification/data/J15.json": "70a7060b1b4816c338231128aba80e0b139e47de796234b3a8701c871bdaca3a",
+    "verification/data/J16.json": "d2cffc034bb2a2dd681bfb05a4318670d36f53c0da35d22f15ede8cd06d2a35e",
+    "verification/data/J17.json": "0219ae1d2b646d4ce79f28ce3049c53de3a3d7a604351da67e86ce9bf09d239a",
+    "verification/data/J18.json": "a2c689ae3d87f9f0377e075ca5c6f968cb370ec0dceb93dc988b656f536bc703",
+    "verification/data/J19.json": "54b4391b92e7b22e597460fb1b62d926b5a0c7baa61aedddb9610bcfdef9b9ac",
+    "verification/data/J20.json": "3ca80464e0a43f1b1ca91820529c5251410502ee1e4d864bc6da8317dab59bcd",
+    "verification/data/J21.json": "b572be3feb40d0457a3f9d5fd9a62630fc4f298da05337f7853e6555ed804cac",
+    "verification/data/J22.json": "3edb9b32956b6fb2a0dfab0001a271e97fa86905dba2bcab6f8693b15d1afeeb",
+    "verification/data/J23.json": "883f05740e9193a54ccdb3821226269d8ac5b277ad01fb7a67a0efe58fac075e",
+    "verification/data/J24.json": "39a7c1283ae7e546d5989ca4bbb2cb9f8745fdae2f5d1606f27c6277cb462817",
+    "verification/data/J25.json": "d728f58ca9a26557285f972ff368413ea7e4c575eb38cf47a43504aff60642cc",
+    "verification/data/J26.json": "6c9004236cd9bde4bfa3b0623ae1ccba3bb44a6e47075f715aefec9c58b1e0ce",
+    "verification/data/J27.json": "858a595a13fa0d812736f35511f45b1a243d6ae29e10cd083b58a32471067b2b",
+    "verification/data/J28.json": "ef67a143bdeed20a771c92a9306b0b3101f25314f72693af0d0af185e4e8ed41",
+    "verification/data/J29.json": "b1bc962269726281f47656150c933f4564f50c9b9b8ed16f9643a1af29bff0d9",
+    "verification/data/J30.json": "1c2cfd8f187def3dc294c7aa529bea51a6079cd5735903c6bea3fa14617634ec",
+    "verification/data/J31.json": "577e894763ecae5bc03107d2375d05bb37fdbcf8c07e4fe532457d2fd70ebc13",
+    "verification/data/J32.json": "eb10b7918da339ac0062646b8daa792285e910a9649251dcb2576f4e6450c370",
+    "verification/data/J33.json": "6db5da0ac8daabce2b08113988863446ee1c6536ac54754968df8faa429d5d2b",
+    "verification/data/J34.json": "eac66fc485e7bae7dfb17c0e861d8080e3c64d97c3d395196b572c5424367cca",
+    "verification/data/J35.json": "fce8794981ae4b880039eb05cf3e4fab8477db9fc977090123e8611bb327cad0",
+    "verification/data/J36.json": "11b2b23ad0262ccc5b1cc200af3ba0e437e6bdafb18a6b00f92d6a56bddba089",
+    "verification/data/J37.json": "72524b8623dfd9a37f2a877b81991eac79589244e777d79c211b088f334b6969",
+    "verification/data/J38.json": "bafc43da7f071c11e475dbaba3aa434ffce919fd172dc5791bab6c9f941eae26",
+    "verification/data/J39.json": "1cff1cff5e3df60b8382c25ddc28b663a2cb136028cc6e9323d27fe0146d92b8",
+    "verification/data/J40.json": "fa42e9df709ec188a0e69f314d2f6c16a5d917e4559929dea552299818433409",
+    "verification/data/J41.json": "a8acc18f59faa130c49faf6837c4995c66104379a078365be11c30d5300cf0bb",
+    "verification/data/J42.json": "9049079b6b9ba3a632830a4d3b1b917750880f606d68984ea8efda2424457483",
+    "verification/data/J43.json": "5f6e5868590eff051c02e88a1b38fd0e320bd1cce39b9cb44737290d4b7ad0cd",
+    "verification/data/J44.json": "2427a63f279f9cf34b93046014c12edc346172a697d22ed2a4e9eba06f1cd401",
+    "verification/data/J45.json": "b8ac2bc6df51c2f0ba5204024d816da2feff87a032682612effb1573c722b3fa",
+    "verification/data/J46.json": "42f19cec68c2366410a46107f07d1d95019552d66340ed8d963b534457a214be",
+    "verification/data/J47.json": "d466d03029c4d152728bb848456815a55cff643790631f02d00fa7c9ad444558",
+    "verification/data/J48.json": "2836e57b719c59b9b8c61cb803a877c6bd82662b8fa7c9aefc05a2c4a63885cb",
+    "verification/data/J49.json": "76b47761ef81d11cb36849ffa511c052ac787530d4063a7592093dc268af4e24",
+    "verification/data/J50.json": "8c6c022209b8b8ff9c197505d0463d27b84c92b2410cec0cfb00a63c802be4ec",
+    "verification/data/J51.json": "247c9bbda232648d423dc49717ca28c857deb6d35ee048e269d09d3acdd7f495",
+    "verification/data/J52.json": "3b2dba8d0e08d17c9a7799af6a3048a645da7971788ca3c4b24af8242af87c27",
+    "verification/data/J53.json": "93a569af67a3f568ba18ff2f5559695e38019b9b2a7dbd160762bde65f522bb9",
+    "verification/data/J54.json": "7de99efada4d8967887f4619cc216ec10f1e7b0c147f6a4f58ca9403a5b5f5de",
+    "verification/data/J55.json": "75a06834dd3f071591023d9e3a12e46f935dc840a0e682431da1a31618dd4b23",
+    "verification/data/J56.json": "d692491e56bcf2e5e7be647184cf783f43eb7376ad8fabf2e0eb536480bbc877",
+    "verification/data/J57.json": "dc7bc29399b2194db1c6d9ed36d3d610a76d4e3336ebde22c00a0ad91a2dea84",
+    "verification/data/J58.json": "37a6853ceaec3355fd5e0d632b03247bad7a64395057c8f61a6d15671a98ead9",
+    "verification/data/J59.json": "f9e4590642911ef3436dada353ee1ee060fc2cf892ed06c6dc3306192c25211f",
+    "verification/data/J60.json": "25d6dd0b5a7ef991ccc252d5a2f4d2fd3cc3fef56d5a65302fadce0ccede3c38",
+    "verification/data/J61.json": "ab6383a98ec7e05ac288483e4942eb1ea2a0643fb5e3701471cb5f2e4f534295",
+    "verification/data/J62.json": "3d9ef741fa23195a120fb9ed6e02063fbde7dacd47cfebab73c843b1ac048a58",
+    "verification/data/J63.json": "02d4e326d0add04a09673b16bc5ab2318371c7ccc387b9fd3a843c22e155e1a0",
+    "verification/data/J64.json": "83d9cfd5e2fd61fd88397953cbafe423f3e1268466a39e9ffb5f99b24faf2e60",
+    "verification/data/J65.json": "cf94dc0167e060bc6e900a2a627e579f5bb96d0866fa9a1fa7af46f89275b55f",
+    "verification/data/J66.json": "a5bf8b6e1918163ec29dfca59f1994b9069837bf1df6127b9acfab958c4bd518",
+    "verification/data/J67.json": "76eb7c752f62b83bfba538a3e3745d1e1e27ed6ea9ac7fe838e738e5f3d16ee1",
+    "verification/data/J68.json": "65b3a52edaeaf73fc85fcaefd0c07839ce16b82dd8e24c7a1a26dc8744152bf3",
+    "verification/data/J69.json": "e98b83ae5f08db6a5ba855db12487395888aedf1118d01f5a36b91fea1641373",
+    "verification/data/J70.json": "00775fcbc9b813d5542f4f01fbe31a20d5688ff5d50607673d46d4f611b25edd",
+    "verification/data/J71.json": "9dd7e73037f90627fab7f886784eeccc39f9db6eaffd89239efa39c81a3752ec",
+    "verification/data/J72.json": "5844cde4bdfd0f2ab8e1d22b859d287031502b631c77bac0fd074ca1876ec1f3",
+    "verification/data/J73.json": "3333fe063be1be2bdb84e2ee0df6b6a24fa03b87b35d778f8e8c364cfd06ff38",
+    "verification/data/J74.json": "de931d4ed75277fb984f26faf95794600aba240325f23fcf5bf3e5858d3fe056",
+    "verification/data/J75.json": "9d39ffa40c42d504c5abdb4ca6967b41d8f106c2deccdeabe4d88b5e47b832e2",
+    "verification/data/J76.json": "a1d98733e675a1e2478812091f824909c75ac3599741aac286d756a9feaf42c9",
+    "verification/data/J77.json": "390b8cf4abd1630c1c9d3e66a2e5298931aa9bc4a9c2353ad170bb04f9eaa070",
+    "verification/data/J78.json": "ff6f6d225c2aa3dcdb668224a83a92c42605f24ba34efd39c27d565415966561",
+    "verification/data/J79.json": "3352af8389b0f0dfe62896f9d74b92fcb7129ca81a11952198ef87222d477dca",
+    "verification/data/J80.json": "c7e7076d028f255e576653bd0c0cd5c7f8f2deda56c2a8708cb9f091f2150c24",
+    "verification/data/J81.json": "47fd33e72619cf0c0f891393082cd1f96fe849a42f41a0ab8fea95b8972fb705",
+    "verification/data/J82.json": "86e8044a3333809394b74efa7ed7837faebc3d46348296300e3d16c0bda3810a",
+    "verification/data/J83.json": "726c1e70e28b21dd665338de7e9440d45e375a12d5dbeaa1db88e2c4ef33eb0c",
+    "verification/data/J84.json": "8b3440adf32a59087b97b4cc8fba7447b7c1fa604d726687dcebd2a77bc897bb",
+    "verification/data/J85.json": "b91c55670041dcdcf241ee23027df3ac06c759e6433a2ed3c2a50fcf515e549a",
+    "verification/data/J86.json": "4092e622d698b2417c7035a254e01f0fef19a154efa36f0d7491279679eae261",
+    "verification/data/J87.json": "a926b8763bdd3157ac71b31894cc5ba167efb3b964ffe9713b7dde16517147e4",
+    "verification/data/J88.json": "3572bf86d018f19fa3e221c9680f8fcfe43dbe16dfda47c55d70f18c7b464725",
+    "verification/data/J89.json": "cec51a947fe9d9dcf298ffc522051222d9bc4d87ba0ec836c228ef243bf2f254",
+    "verification/data/J90.json": "46b7d92aec2fcc170a4ace698f75ea54a8fb2cd5b3b1874f55ea1a90adb6cfbb",
+    "verification/data/J91.json": "0952c02382a84f6cdba431dcc7cbc7da79f58b6ff19e47b9f3ad2910399a974e",
+    "verification/data/J92.json": "a27cc6d4d03cee5e989955cd053d543c3e62b694ccb33c45fc9a6c9de166f1ad",
+    "verification/data_extra/dodecahedron.json": "78bf3023f5d6ef803f3031fe7c105e03b6851c63ee26b201a59726507205c084",
+    "verification/data_extra/truncated_icosahedron.json": "8bdc4bf09fcf0cfa3799607ded8f009103e375c5ac17f41b00c95f4fffc6b2a7",
+    "verification/certificates/flex_vectors.json": "b030ff8c13e6d01fe4baa9e0635c9e02a8b9cc91d476131ae418e4bac59820f1",
+    "verification/certificates/minkowski_partitions.json": "dede21885cd5cbef2ad565735aa24366b2eb7a593e23d9217d4f8b17efa2cd8a",
+    "verification/certificates/prestress.json": "27d40d48cc1fa07d1e4f2955b3646b6380de0836218aa06e7c72c57206928bbe"
+  },
+  "complete": true,
+  "finished_utc": "2026-10-26T13:03:48.766192+00:00"
+}

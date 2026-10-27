@@ -1,0 +1,47 @@
+{
+  "recordedAt": "2026-10-26T17:56:22.226372+00:00",
+  "affectedCommit": "d3604b1d272481cd8b421e338479b152e1abf1fc",
+  "pullRequest": "<retained-execution-record>",
+  "observedRuns": [
+    {
+      "id": 40365041981,
+      "event": "push",
+      "conclusion": "failure",
+      "reason": "Lean build succeeded; apt package-index writes failed with ENOSPC while installing bubblewrap."
+    },
+    {
+      "id": 40365093963,
+      "event": "pull_request",
+      "conclusion": "cancelled",
+      "reason": "Lean build completed 9055 jobs; saving formal/.lake cache failed with ENOSPC. Sandbox installation then hit ENOSPC and the job reached its 45-minute timeout."
+    }
+  ],
+  "change": [
+    "Check out only formal/ and root files with the pinned checkout action sparse mode.",
+    "Install the required bubblewrap sandbox before Lean, with a five-minute step timeout.",
+    "Disable GitHub build-cache restore/save while retaining the Mathlib download cache.",
+    "Record disk space before and after build and during proof replay."
+  ],
+  "unchanged": [
+    "Lean source and pinned toolchain",
+    "Sandbox restrictions",
+    "Axiom audit and complete project-proof export",
+    "All six independent proof checkers",
+    "Pinned action versions and credential persistence setting"
+  ],
+  "localValidation": {
+    "actionlint": "passed",
+    "diffCheck": "passed",
+    "sparseCheckout": {
+      "formalFilesMatched": 14,
+      "mediaDirectoriesAbsent": true,
+      "totalCheckoutBytesIncludingGit": 1108529,
+      "head": "d3604b1d272481cd8b421e338479b152e1abf1fc"
+    }
+  },
+  "documentation": [
+    "https://raw.githubusercontent.com/actions/checkout/3d3c42e5aac5ba805825da76410c181273ba90b1/README.md",
+    "https://raw.githubusercontent.com/leanprover/lean-action/24581d74d674803a25a81b10b059c5c0cdd344c6/action.yml"
+  ],
+  "scope": "These failures occurred before the independent proof replay. This record does not claim that the expanded 153-theorem six-checker replay completed."
+}

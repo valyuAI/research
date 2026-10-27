@@ -1,0 +1,21 @@
+{
+  "scene": "UniformRange",
+  "total": 52.666666666666885,
+  "clips": [
+    {
+      "id": "p25",
+      "start": 0.0,
+      "duration": 15.6
+    },
+    {
+      "id": "p26",
+      "start": 15.933333333333335,
+      "duration": 18.4
+    },
+    {
+      "id": "p27",
+      "start": 34.733333333333306,
+      "duration": 17.6
+    }
+  ]
+}

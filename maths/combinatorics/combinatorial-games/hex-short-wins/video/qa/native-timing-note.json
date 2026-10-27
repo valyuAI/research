@@ -1,0 +1,10 @@
+{
+  "explanation": "Native Manim partial-clip concatenation shortens some boundary packets by one codec time quantum. Verify nominal30fps and total frame count within one frame; final MP4 average is required to be exactly30/1.",
+  "checkedScene": "Checking",
+  "packetDurationSecondsCounts": {
+    "0.033333": 2874,
+    "0.032682": 11
+  },
+  "durationMinusFrameCountAt30Seconds": -0.007161666666675615,
+  "finalFrameRateRequirement": "30/1"
+}

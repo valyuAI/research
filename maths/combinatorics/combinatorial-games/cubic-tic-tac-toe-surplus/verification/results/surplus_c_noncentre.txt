@@ -1,0 +1,3 @@
+lines=193
+noncentre: configurations=48960 with sigma<2: 0
+  killed=25 sigma=3 count=48960

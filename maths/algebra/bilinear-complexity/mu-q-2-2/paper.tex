@@ -1,0 +1,239 @@
+\documentclass[11pt]{amsart}
+\usepackage[a4paper,textwidth=158mm,textheight=237mm,centering]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,mathtools,amssymb,graphicx,flafter,booktabs}
+\usepackage[unicode,colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\F}{\mathbb F}
+\newcommand{\R}{\operatorname{R}}
+\newcommand{\Rsym}{\operatorname{R}^{\mathrm{sym}}}
+\newcommand{\spn}{\operatorname{span}}
+\DeclareRobustCommand{\Fqqu}{\ensuremath{\mathbb F_{q^2}[u]/(u^2)}}
+\DeclareRobustCommand{\Csix}{\ensuremath{\mathrm C_6}}
+\title[The bilinear complexity of \Fqqu{} and of \Csix]{The bilinear complexity of \texorpdfstring{\Fqqu}{Fq2[u]/(u2)} and of length-six cyclic convolution over \texorpdfstring{$\F_2$}{F2}}
+\author{Harvey Yorke}
+\address{Valyu AI}
+\ifdefined\journalversion\else
+\author{Valyu DeepResearch}
+\address{Valyu AI}
+\fi
+\ifdefined\journalversion
+  \hypersetup{pdftitle={The bilinear complexity of Fq2[u]/(u2) and of length-six cyclic convolution over F2},pdfauthor={Harvey Yorke}}
+\else
+  \hypersetup{pdftitle={The bilinear complexity of Fq2[u]/(u2) and of length-six cyclic convolution over F2},pdfauthor={Harvey Yorke and Valyu DeepResearch}}
+\fi
+\date{25 October 2026}
+\keywords{Bilinear complexity, tensor rank, finite fields, Chudnovsky-type multiplication, cyclic convolution}
+\newcommand{\paperAuthorBlock}[1]{%
+  \begin{minipage}[t]{.44\textwidth}
+    \centering\normalfont\normalsize #1\par\small Valyu AI\par
+  \end{minipage}%
+}
+\makeatletter
+\renewcommand{\@setauthors}{%
+  \begingroup\trivlist\centering\normalfont\normalsize
+  \@topsep30\p@\relax\advance\@topsep by -\baselineskip\item\relax
+  \ifdefined\journalversion
+    \paperAuthorBlock{Harvey Yorke}%
+  \else
+    \paperAuthorBlock{Harvey Yorke}\hspace{.06\textwidth}\paperAuthorBlock{Valyu DeepResearch}%
+  \fi
+  \endtrivlist\endgroup
+}
+\renewcommand{\@setaddresses}{}
+\makeatother
+\begin{document}
+\raggedbottom
+\begin{abstract}
+Let $\mu_q(2,2)$ denote the bilinear complexity over $\F_q$ of multiplication in $\F_{q^2}[u]/(u^2)$, the local algebra attached to a degree-two place with multiplicity two in Chudnovsky-type multiplication algorithms. Randriambololona asked for the exact values of such quantities and observed that for $q=2$ and $q=3$ it was not known whether the generic bound $\mu_q(2,2)\le 9$ is sharp. We prove that $\mu_2(2,2)=9$ and $\mu_3(2,2)=8$. Together with elementary interpolation and exact small-field searches this gives $\mu_q(2,2)=9,8,8,8$ for $q=2,3,4,5$ and $\mu_q(2,2)=7$ for $q\ge7$, with the same values for symmetric bilinear complexity. The lower bound for $q=2$ is a computer-assisted proof by exhaustive search over subspaces of bilinear forms, reduced by the unit group of the algebra and replayed by independent programs. The upper bound for $q=3$ is an explicit symmetric algorithm with eight products. Since $\F_2[x]/(x^6-1)\cong\F_2[x]/((x+1)^2)\times\F_2[x]/((x^2+x+1)^2)$, the Ja'Ja'--Takche additivity theorem then shows that cyclic convolution of length six over $\F_2$ has bilinear complexity exactly $12$. This closes the interval $[11,12]$ recorded in a 2026 table of small polynomial-multiplication ranks.
+\end{abstract}
+\maketitle
+
+\section{Introduction}
+
+For a finite-dimensional commutative $\F_q$-algebra $A$, the bilinear complexity $\R_{\F_q}(A)$ is the tensor rank of its multiplication map $A\times A\to A$: the least $r$ such that
+\[
+ xy=\sum_{t=1}^r \alpha_t(x)\,\beta_t(y)\,w_t\qquad(x,y\in A)
+\]
+for linear forms $\alpha_t,\beta_t$ on $A$ and elements $w_t\in A$. The symmetric bilinear complexity $\Rsym_{\F_q}(A)$ additionally requires $\alpha_t=\beta_t$. Randriambololona~\cite{Randriambololona2012} introduced
+\[
+ \mu_q(m,\ell)=\R_{\F_q}\bigl(\F_{q^m}[u]/(u^\ell)\bigr),
+\]
+because evaluation at a place of degree $m$ with multiplicity $\ell$ in the generalized Chudnovsky--Chudnovsky method costs exactly this many products; see also the survey~\cite{BalletSurvey}. His Question~4.1 asks: ``What is the actual value of $\mu_q(m,\ell)$ for small $q,m,\ell$?'' The first case not covered by classical results is $(m,\ell)=(2,2)$. In Example~4.4 he obtains $\mu_q(2,2)\le7$ for $q\ge7$ and $\mu_q(2,2)\le8$ for $q=4,5$, and adds: ``Unfortunately it seems difficult to improve the bound $\mu_q(2,2)\le 9$ for $q=2$ or $3$, at least with this generic method. Whether this is the exact value is yet unsettled.''~\cite[Example~4.4]{Randriambololona2012}. The survey~\cite[\S8.2]{BalletSurvey} repeats $\mu_4(2,2)\le8$ and remarks that an unpublished exhaustive search suggests equality.
+
+\begin{theorem}\label{thm:main}
+For every prime power $q$,
+\[
+ \mu_q(2,2)=\mu_q^{\mathrm{sym}}(2,2)=\begin{cases}9,&q=2,\\ 8,&q\in\{3,4,5\},\\ 7,&q\ge7.\end{cases}
+\]
+\end{theorem}
+
+The contributions are the unrestricted lower bound $\mu_2(2,2)\ge9$ and the explicit symmetric upper bound $\mu_3(2,2)\le8$. The symmetric binary value $\mu_2^{\mathrm{sym}}(2,2)=9$ is already tabulated by Rambaud~\cite[Tables~1--2]{Rambaud2014}, and retained in his corrected thesis~\cite[Table~I.2.1 and \S II.3.1]{RambaudThesis}. We do not claim that value as new: the binary search here also excludes asymmetric algorithms with eight products. The ternary result improves the bound $9$ stated in the sources above. The survey already claims the value $8$ for $q=4$, on the basis of an unpublished exhaustive search~\cite[\S8.2]{BalletSurvey}.
+
+The case $q=2$ has a direct consequence for convolution. Write $\mathrm C_N$ for multiplication in $\F_q[x]/(x^N-1)$. Wang's 2026 tables of small polynomial-multiplication ranks list $\R_{\F_2}(\mathrm C_6)$ in the interval $[11,12]$~\cite[Table~5]{Wang2026}: the lower bound comes from the theory of algebras of minimal rank~\cite{AGW1988,Blaser2005} and the upper bound from~\cite{BDEZ2012}, and Wang's automated framework also stops at $11$.
+
+\begin{corollary}\label{cor:c6}
+The bilinear complexity of cyclic convolution of length six over $\F_2$ is $\R_{\F_2}(\mathrm C_6)=12$.
+\end{corollary}
+
+Section~\ref{sec:setup} reduces the rank question to a finite search over subspaces. Section~\ref{sec:upper} gives the upper bounds, Section~\ref{sec:lower} the lower bounds and the computation, and Section~\ref{sec:c6} the corollary.
+
+\section{Subspaces spanned by rank-one forms}\label{sec:setup}
+
+The search uses the established subspace framework of Barbulescu, Detrey, Estibals and Zimmermann~\cite{BDEZ2012}, its development by Covanov~\cite[Propositions~6 and~14]{Covanov2019}, and Rambaud's use of algebra symmetries~\cite{Rambaud2014}. We give the reductions explicitly to make the finite proof auditable; these reductions are not claimed as new algorithms.
+
+Let $p\in\F_q[x]$ be monic irreducible of degree two and $A=\F_q[x]/(p^2)$. By the structure theory of complete local rings, $A\cong\F_{q^2}[u]/(u^2)$ with $u=p(x)$, so $\R_{\F_q}(A)=\mu_q(2,2)$; we work in the monomial basis $1,x,x^2,x^3$ of $A$ and identify bilinear forms on $A$ with $4\times4$ matrices. For a linear form $\varphi$ on $A$, let $M_\varphi$ be the matrix of $(x,y)\mapsto\varphi(xy)$, and let $S=\{M_\varphi\}$ be the four-dimensional space of these \emph{slices}. A bilinear form has rank one if it equals $\alpha(x)\beta(y)$ for nonzero linear forms $\alpha,\beta$.
+
+\begin{lemma}\label{lem:slices}
+$\R_{\F_q}(A)\le r$ if and only if some $r$ rank-one forms span a space containing $S$.
+\end{lemma}
+
+\begin{proof}
+If $xy=\sum_t\alpha_t(x)\beta_t(y)w_t$, applying $\varphi$ gives $M_\varphi=\sum_t\varphi(w_t)\,\alpha_t\otimes\beta_t$. Conversely, suppose $M_{\varphi_k}=\sum_t c_{tk}\,\alpha_t\otimes\beta_t$ for the dual basis of the monomial basis. Then
+\[
+xy=\sum_t\alpha_t(x)\beta_t(y)\sum_k c_{tk}x^k.
+\]
+\end{proof}
+
+\begin{lemma}\label{lem:normal}
+Let $m\ge1$ with $4+m\le16$. Then $\R_{\F_q}(A)\le 4+m$ if and only if there are rank-one forms $F_1,\dots,F_m$ whose images in $V=\F_q^{4\times4}/S$ are linearly independent and such that $W=S+\spn(F_1,\dots,F_m)$ is spanned by the rank-one forms it contains.
+\end{lemma}
+
+\begin{proof}
+Sufficiency is Lemma~\ref{lem:slices}, since $\dim W=4+m$. Conversely, suppose $r\le4+m$ rank-one forms span $W_0\supseteq S$. Rank-one forms span all matrices, so adding rank-one forms not already in the span enlarges $W_0$ to a space $W$ of dimension exactly $4+m$, still spanned by rank-one forms. Choose a basis of $W$ consisting of rank-one forms and extend a basis of $S$ to a basis of $W$ using $m$ of them, $F_1,\dots,F_m$, by the exchange lemma. Their images in $V$ are independent and $W=S+\spn(F_1,\dots,F_m)$.
+\end{proof}
+
+\begin{lemma}\label{lem:sym}
+For units $u,v\in A^\times$ the maps $M\mapsto L_u^{\mathsf T}ML_v$, where $L_u$ is multiplication by $u$, together with $M\mapsto M^{\mathsf T}$, preserve $S$ and the set of rank-one forms. Consequently, if the condition of Lemma~\ref{lem:normal} holds, it holds with $F_1$ equal to a prescribed representative of any orbit of rank-one forms meeting $W\setminus S$ under the group they generate.
+\end{lemma}
+
+\begin{proof}
+The first map sends $(x,y)\mapsto\varphi(xy)$ to $(x,y)\mapsto\varphi(uvxy)$, which lies in $S$, and it sends $\alpha(x)\beta(y)$ to $\alpha(ux)\beta(vy)$. Transposition fixes each $M_\varphi$ because $A$ is commutative. If $W$ satisfies Lemma~\ref{lem:normal} and $E\in W\setminus S$ is rank-one, apply a group element $g$ with $gE$ equal to the representative; $gW\supseteq S$ is again spanned by rank-one forms, and the proof of Lemma~\ref{lem:normal} applied to $gW$ may start its basis extension with $gE$.
+\end{proof}
+
+The unit group acts on nonzero linear forms by $\alpha\mapsto\alpha\circ L_u$. Since $A=\F_q[x]/(p^2)$ is a Frobenius algebra, its dual is isomorphic to $A$ as an $A$-module, and units act transitively on $A^\times$ and on $(p)\setminus\{0\}\cong\F_{q^2}^\times$. So there are exactly two orbits of nonzero forms, and rank-one forms fall into three orbits under the group of Lemma~\ref{lem:sym}, indexed by unordered pairs of form types. The field-table implementation independently computes these orbits.
+
+\paragraph{The search.} Fix an orbit representative $F_1$ and further rank-one forms $F_2,\dots,F_{m-1}$ with independent images spanning $Q'\subset V$. Every $m$-dimensional $Q\supset Q'$ is $Q'+\langle v\rangle$, and it determines the projective class of $v$ modulo $Q'$. Sorting all rank-one forms by the projective class of their image modulo $Q'$ therefore partitions those outside the preimage of $Q'$ into \emph{buckets}, one for each candidate $Q$ containing a rank-one image outside $Q'$. The preimage $W$ of $Q$ is spanned by rank-one forms exactly when the forms lying over $Q'$, together with the bucket of $Q$, have rank $4+m$. Iterating over $F_1$ (three choices), unordered $F_2,\dots,F_{m-1}$ and buckets decides $\R_{\F_q}(A)\le4+m$ exhaustively. A bucket is skipped without a rank computation if its size is below $4+m$ minus the rank of the forms over $Q'$, since adding $k$ forms raises the rank by at most $k$.
+
+\section{Upper bounds}\label{sec:upper}
+
+\begin{proposition}\label{prop:nine}
+$\mu_q^{\mathrm{sym}}(2,2)\le9$ for every $q$.
+\end{proposition}
+
+\begin{proof}
+Write $f=f_0+f_1p$ and $g=g_0+g_1p$ in $A$ with $\deg f_i,\deg g_i\le1$. Then $fg\equiv F+(G-F-H)\,p\pmod{p^2}$, where $F=f_0g_0$, $G=(f_0+f_1)(g_0+g_1)$ and $H=f_1g_1$ are full products of linear polynomials. Each costs three symmetric products by Karatsuba's identity $(a_0+a_1x)(b_0+b_1x)=a_0b_0+((a_0+a_1)(b_0+b_1)-a_0b_0-a_1b_1)x+a_1b_1x^2$.
+\end{proof}
+
+\begin{proposition}[{compare~\cite[Example~4.4]{Randriambololona2012}}]\label{prop:crt}
+$\mu_q^{\mathrm{sym}}(2,2)\le8$ for $q\ge4$ and $\mu_q^{\mathrm{sym}}(2,2)\le7$ for $q\ge7$.
+\end{proposition}
+
+\begin{proof}
+Represent elements of $A$ by polynomials of degree at most three. Their product $fg$ has degree at most six. For $q\ge7$, choose six points $c_1,\dots,c_6\in\F_q$; Lagrange interpolation recovers $fg$ from the six products $f(c_i)g(c_i)$ and the leading product $f_3g_3$ (evaluation at $\infty$), seven in all. For $q\ge4$, choose four points $c_1,\dots,c_4\in\F_q$ and a monic irreducible quadratic $r$, and put $M=r\prod_i(x-c_i)$, of degree six. The residue of $fg$ modulo $M$ is determined by the four products $f(c_i)g(c_i)$ and by $fg\bmod r$, which costs three products by Karatsuba over $\F_{q^2}$. Then $fg=(fg\bmod M)+f_3g_3M$, so eight symmetric products suffice; reduce modulo $p^2$.
+\end{proof}
+
+\begin{proposition}\label{prop:f3}
+Over $\F_3$, with $A=\F_3[x]/((x^2+1)^2)$ and $f=f_0+f_1x+f_2x^2+f_3x^3$,
+\[
+ fg\equiv\sum_{t=1}^{8}\ell_t(f)\,\ell_t(g)\,w_t\pmod{(x^2+1)^2},
+\]
+with the linear forms $\ell_t$ and elements $w_t$ of Table~\ref{tab:f3}. Hence $\mu_3^{\mathrm{sym}}(2,2)\le8$.
+\end{proposition}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{rll}
+\toprule
+$t$ & $\ell_t(f)$ & $w_t$\\
+\midrule
+1 & $f_0$ & $2x$\\
+2 & $f_1$ & $2$\\
+3 & $f_0+f_2$ & $2x+x^3$\\
+4 & $f_0+f_1+2f_2$ & $2+2x+2x^3$\\
+5 & $f_0+2f_1+f_3$ & $2+x+2x^2$\\
+6 & $f_0+f_1+2f_2+f_3$ & $2+2x+x^2+2x^3$\\
+7 & $f_0+f_1+f_2+2f_3$ & $1+x+x^2+2x^3$\\
+8 & $f_0+2f_2+2f_3$ & $2x+2x^2+2x^3$\\
+\bottomrule
+\end{tabular}
+\caption{A symmetric bilinear algorithm with eight products for $\F_3[x]/((x^2+1)^2)\cong\F_9[u]/(u^2)$, found by the search of Section~\ref{sec:setup}. Coefficients are in $\F_3$.}
+\label{tab:f3}
+\end{table}
+
+\begin{proof}
+The identity is bilinear, so it suffices to check it on the sixteen pairs of monomials $x^i,x^j$; this is done by the supplied checker. As a spot check, for $f=g=1$ the forms equal $1$ for $t\ne2$ and $0$ for $t=2$, and $\sum_{t\ne2}w_t=7+12x+6x^2+9x^3\equiv1$.
+\end{proof}
+
+\section{Lower bounds}\label{sec:lower}
+
+The Alder--Strassen theorem gives $\R(A)\ge2\dim A-t$, where $t$ is the number of maximal ideals~\cite{AlderStrassen1981}; here $\mu_q(2,2)\ge7$. With Proposition~\ref{prop:crt}, this settles $q\ge7$. For $q=3,4,5$ we establish the stronger lower bound $8$ by the exhaustive criterion of Section~\ref{sec:setup} with $m=3$: respectively $4{,}794$, $21{,}668$ and $73{,}000$ independent-image prefixes are examined, and none extends to a seven-dimensional space spanned by rank-one forms. The field-table implementation handles all three fields. A separate implementation using ordinary modular arithmetic and the basis $1,t,u,tu$, with $t^2=-d$, $u^2=0$ and $d=1$ for $q=3$, $d=2$ for $q=5$, independently checks the two prime-field cases. It sorts full-matrix residuals rather than hashing quotient-coordinate vectors. Positive controls replace $u^2=0$ by $u^2=u$, giving a product of two quadratic fields with algorithms using at most seven products. These finite proofs, together with Propositions~\ref{prop:crt} and~\ref{prop:f3}, settle $q=3,4,5$ and squeeze symmetric complexity between the same bounds. The classification literature~\cite{Winograd1977,AGW1988,Blaser2005} supplies related classical context; this proof does not depend on an unverified field-size hypothesis attributed to that classification.
+
+\begin{theorem}\label{thm:q2}
+$\mu_2(2,2)\ge9$.
+\end{theorem}
+
+\begin{proof}[Computer-assisted proof]
+By Lemmas~\ref{lem:normal} and~\ref{lem:sym} it suffices to show that for $A=\F_2[x]/((x^2+x+1)^2)$ no subspace $W=S+\spn(F_1,\dots,F_4)$ with $F_1$ one of three orbit representatives is spanned by rank-one forms. Over $\F_2$ there are $15^2=225$ rank-one forms, the unit group has order $12$, and the search of Section~\ref{sec:setup} examines $74{,}377$ prefixes $(F_1,F_2,F_3)$ with independent images. None of their buckets yields a space of dimension eight spanned by rank-one forms. A second program omits the symmetry reduction and the buckets: it enumerates all $103{,}406{,}616$ sets $\{F_1,\dots,F_4\}$ of rank-one forms with independent images and tests each $W$ directly. It also finds none.
+\end{proof}
+
+The theorem together with Proposition~\ref{prop:nine} gives $\mu_2(2,2)=\mu_2^{\mathrm{sym}}(2,2)=9$, completing the proof of Theorem~\ref{thm:main}.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lllrl}
+\toprule
+$q$ & algebra & question & prefixes & answer\\
+\midrule
+2 & $\F_2[x]/((x^2+x+1)^2)$ & rank $\le8$? & 74{,}377 & no\\
+2 & $\F_2[x]/(x^4)$ (control, rank 8) & rank $\le8$? & & yes\\
+2 & $\F_{16}=\F_2[x]/(x^4+x+1)$ (control, rank 9) & rank $\le8$? & 24{,}962 & no\\
+3 & $\F_3[x]/((x^2+1)^2)$ & rank $\le7$? & 4{,}794 & no\\
+3 & $\F_3[x]/((x^2+1)^2)$ & rank $\le8$? & & yes\\
+4 & $\F_4[x]/((x^2+x+\omega)^2)$ & rank $\le7$? & 21{,}668 & no\\
+5 & $\F_5[x]/((x^2+2)^2)$ & rank $\le7$? & 73{,}000 & no\\
+\bottomrule
+\end{tabular}
+\caption{Exhaustive runs of the bucket search. A ``prefix'' is $(F_1,\dots,F_{m-1})$ with independent images; ``yes'' runs stop at the first subspace found. Here $\omega^2=\omega+1$ in $\F_4$.}
+\label{tab:runs}
+\end{table}
+
+\paragraph{Independent implementations.} The lower bound for $q=2$ was obtained by five programs: two C programs implementing the bucket search (one specialised to prime fields, one using field tables), a C program enumerating all four-element sets without symmetry, and two standard-library Python programs implementing the bucket search with their own orbit computations. All agree. As a sixth, structurally different check, a direct SAT encoding of a rank-$8$ decomposition over $\F_2$ (one Boolean variable per coefficient, products and parities by Tseitin clauses, and a lexicographic order on the terms) is reported unsatisfiable by CaDiCaL in about six minutes of processor time. Its DRAT proof was accepted by \texttt{drat-trim}; the verification log, input hash and proof hash are recorded with replay instructions. The large proof file is retained in the research archive rather than bundled with this package, so the standard reproduction uses the exhaustive checkers. The controls in Table~\ref{tab:runs} reproduce the known values $\R_{\F_2}(\F_2[x]/(x^4))=8$~\cite{Wang2026} and $\R_{\F_2}(\F_{16})=9$~\cite{BalletSurvey}, so the code is neither vacuously negative nor vacuously positive. The recorded full Python replay took approximately 26 minutes on the shared machine; timings depend on load.
+
+\section{Cyclic convolution of length six}\label{sec:c6}
+
+\begin{theorem}[Ja'Ja' and Takche~\cite{JaJaTakche1986}]\label{thm:jt}
+Let $T_1$ and $T_2$ be tensors over a field $k$ such that one of the six dimensions of their formats equals $2$. Then $\R(T_1\oplus T_2)=\R(T_1)+\R(T_2)$.
+\end{theorem}
+
+Their abstract states the result ``over any field''; Buczy\'nski, Postinghel and Rupniewski note that the original approach, unlike later reproofs, works over any field~\cite[\S3.2]{BPR2019}.
+
+\begin{proof}[Proof of Corollary~\ref{cor:c6}]
+Over $\F_2$, $x^6-1=(x+1)^2(x^2+x+1)^2$, so by the Chinese remainder theorem $\mathrm C_6\cong A_1\times A_2$ with $A_1=\F_2[x]/((x+1)^2)$ and $A_2=\F_2[x]/((x^2+x+1)^2)$. In a basis adapted to this product the multiplication tensor of $\mathrm C_6$ is the direct sum of those of $A_1$ and $A_2$, and rank is invariant under changes of basis. The tensor of $A_1$ has format $2\times2\times2$ and rank $3$ (Alder--Strassen and Karatsuba). By Theorem~\ref{thm:jt} and Theorem~\ref{thm:main}, $\R_{\F_2}(\mathrm C_6)=3+\mu_2(2,2)=12$.
+\end{proof}
+
+The supplied certificate also contains an explicit $12$-term algorithm for $\mathrm C_6$, obtained by lifting the algorithms for $A_1$ and $A_2$ through the idempotents of the product.
+
+\section{Remarks}
+
+Randriambololona's bound~\cite[(78)]{Randriambololona2012} charges $\mu_q(2,2)-3$ extra products for each degree-two place used with multiplicity two, and he notes that it improves earlier bounds exactly when $\mu_q(2,2)<9$. For $q=3$ the extra charge is therefore $5$ rather than $6$; we do not pursue the resulting bounds on $\mu_3(n)$. Over $\F_2$ the theorem shows the opposite: degree-two places with multiplicity two cost nothing less than the product of the separate costs, $\mu_2(2)\cdot\R(\F_4[u]/(u^2))=3\cdot3$.
+
+The measured searches concern the particular four-dimensional algebras and rank thresholds in Table~\ref{tab:runs}; they do not imply a uniform running-time bound for all small algebras. Larger cases such as the unrestricted quantities $\mu_2(2,3)$, $\mu_2(3,2)$ and $\mu_3(2,3)$, or the truncated product modulo $x^6$ over $\F_2$ (rank $13$ or $14$ in~\cite{Wang2026}), require further work. Rambaud already gives symmetric values for some of these algebras~\cite{RambaudThesis}, so those symmetric cases must be distinguished from unrestricted rank.
+
+\section{Reproduction and scope}
+
+The directory \path{verification/} contains the C and C++ sources, recorded outputs, explicit algorithms as JSON, and \path{verify.py}, a standard-library Python program that rechecks every algorithm coefficient by coefficient, rejects all $96$ single-entry corruptions of the $\F_3$ certificate, reruns the exhaustive search for $q=2$ with both controls, and optionally reruns the $q=3$ lower bound. It uses no assertions and exits non-zero on any failure. The compiled runner requires the expected answers and enumeration counts and emits progress. The lower bounds are computer-assisted proofs: their correctness rests on the reductions proved above and exact finite enumeration. They are not formalized in a proof assistant. The upper bounds and the value for $q\ge7$ use the elementary constructions and cited Alder--Strassen theorem.
+
+\paragraph{Research assistance.}
+Valyu DeepResearch scouted the literature, identified the open interval in~\cite{Wang2026} and audited prior work. Coding agents designed and ran the searches, wrote the independent checkers and drafted this manuscript. These are internal checks and do not constitute external peer review.
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

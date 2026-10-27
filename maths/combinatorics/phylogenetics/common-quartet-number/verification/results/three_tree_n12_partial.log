@@ -1,0 +1,9 @@
+23:01:22 start n=12 k=3 shapes=37 enc=aux workers=4 check=True
+23:08:04 {"shape": 2, "status": "UNSAT", "solve_s": 267.9, "drat": "VERIFIED", "check_s": 133.5, "proof_bytes": 41128895}
+23:08:30 {"shape": 0, "status": "UNSAT", "solve_s": 284.6, "drat": "VERIFIED", "check_s": 142.6, "proof_bytes": 44354834}
+23:10:19 {"shape": 1, "status": "UNSAT", "solve_s": 329.2, "drat": "VERIFIED", "check_s": 207.4, "proof_bytes": 47566223}
+23:10:38 {"shape": 3, "status": "UNSAT", "solve_s": 349.7, "drat": "VERIFIED", "check_s": 205.8, "proof_bytes": 47060054}
+23:16:25 {"shape": 4, "status": "UNSAT", "solve_s": 309.8, "drat": "VERIFIED", "check_s": 190.9, "proof_bytes": 46234997}
+23:16:34 {"shape": 8, "status": "SAT", "solve_s": 8.4}
+23:16:39 {"shape": 9, "status": "SAT", "solve_s": 5.1}
+23:16:46 {"shape": 10, "status": "SAT", "solve_s": 6.4}

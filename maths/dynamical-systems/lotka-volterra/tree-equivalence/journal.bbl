@@ -1,0 +1,44 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{1}
+
+\bibitem{cuypers}
+Hans Cuypers, \emph{{Whitney}'s theorem for line graphs of multi-graphs},
+  arXiv:2105.08610, 2021.
+
+\bibitem{construction}
+G.~R.~W. Quispel, Benjamin~K. Tapley, D.~I. McLaren, and Peter~H. van~der Kamp,
+  \emph{Linear {Darboux} polynomials for {Lotka--Volterra} systems, trees and
+  superintegrable families}, J. Phys. A: Math. Theor. \textbf{56} (2023),
+  315201, \url{https://doi.org/10.1088/1751-8121/ace0e9}; arXiv:2303.00229v2.
+
+\bibitem{hypergraphs}
+Peter~H. van~der Kamp, \emph{Hypergraphs and {Lotka--Volterra} systems with
+  linear {Darboux} polynomials}, J. Dynam. Differential Equations (2025),
+  \url{https://doi.org/10.1007/s10884-025-10446-2}. Version used:
+  arXiv:2411.18264v4.
+
+\bibitem{homogeneous}
+Peter~H. van~der Kamp, D.~I. McLaren, and G.~R.~W. Quispel, \emph{Homogeneous
+  {Darboux} polynomials and generalising integrable {ODE} systems}, J. Comput.
+  Dyn. \textbf{8} (2021), no.~1, 1--8,
+  \url{https://doi.org/10.3934/jcd.2021001}.
+
+\bibitem{trees}
+Peter~H. van~der Kamp, G.~R.~W. Quispel, and D.~I. McLaren, \emph{Trees and
+  superintegrable {Lotka--Volterra} families}, Math. Phys. Anal. Geom.
+  \textbf{27} (2024), Article 25, arXiv:2311.15169v2.
+
+\bibitem{zeng}
+Zijian Zeng, \emph{{WITHDRAWN}: Generic {Lotka--Volterra} tree systems
+  determine their trees}, SSRN preprint 7379198, 2026, Written 27 August 2026;
+  posted 2 September 2026. Withdrawn record inspected 17 October 2026; original
+  abstract and manuscript unavailable.
+  \url{https://doi.org/10.2139/ssrn.7379198}.
+
+\end{thebibliography}

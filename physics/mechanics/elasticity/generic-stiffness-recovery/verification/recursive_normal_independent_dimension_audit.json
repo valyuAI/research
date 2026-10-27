@@ -1,0 +1,46 @@
+[
+  {
+    "rank_bound": 2,
+    "affine_dimension": 2,
+    "minimum_variable_cover_size": 6,
+    "minimal_covers": [
+      [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    ]
+  },
+  {
+    "rank_bound": 3,
+    "affine_dimension": 3,
+    "minimum_variable_cover_size": 5,
+    "minimal_covers": [
+      [
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      [
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    ]
+  }
+]

@@ -1,0 +1,97 @@
+Replay started: 2026-10-26T13:07:49Z
+families/triple13.nwk: 3 trees on 13 leaves, common quartets: 0
+families/triple12.nwk: 3 trees on 12 leaves, common quartets: 0
+families/triple11.nwk: 3 trees on 11 leaves, common quartets: 0
+families/quad22_k4.nwk: 4 trees on 22 leaves, common quartets: 0
+families/triple13.nwk: 3 trees, 13 leaves, 715 four-sets, 0 common (edge splits)
+families/quad22_k4.nwk: 4 trees, 22 leaves, 7315 four-sets, 0 common (edge splits)
+(1,(3,6),(((7,9),(4,(5,12))),((10,11),(2,(8,13)))));
+(2,(1,4),(((8,7),(5,(6,10))),((11,12),(3,(9,13)))));
+(3,(2,5),(((9,8),(6,(4,11))),((12,10),(1,(7,13)))));
+3 trees on 13 leaves; common quartets: 0
+pair (1,2): separated (3,4) pair: None
+pair (1,3): separated (3,4) pair: None
+pair (2,3): separated (3,4) pair: None
+k=2 n=7: 300 random families, all steps within bounds, common quartet found each time
+k=3 n=19: 200 random families, all steps within bounds, common quartet found each time
+k=4 n=55: 50 random families, all steps within bounds, common quartet found each time
+k=5 n=163: 10 random families, all steps within bounds, common quartet found each time
+Lemma 2.6 grid check (N=60): minimum ratio 17/90 at r=2, x=13/30, y=1/3
+weighted, k=1 n=4: 50 random families, Psi factor >= 3/16 at every step, common quartet found each time
+weighted, k=2 n=7: 300 random families, Psi factor >= 3/16 at every step, common quartet found each time
+weighted, k=3 n=17: 200 random families, Psi factor >= 3/16 at every step, common quartet found each time
+weighted, k=4 n=37: 50 random families, Psi factor >= 3/16 at every step, common quartet found each time
+weighted, k=5 n=86: 10 random families, Psi factor >= 3/16 at every step, common quartet found each time
+weighted, k=6 n=198: 3 random families, Psi factor >= 3/16 at every step, common quartet found each time
+n=14 |X|=5: 15/135 shapes done, bad=0
+n=14 |X|=5: 30/135 shapes done, bad=0
+n=14 |X|=5: 45/135 shapes done, bad=0
+n=14 |X|=5: 60/135 shapes done, bad=0
+n=14 |X|=5: 75/135 shapes done, bad=0
+n=14 |X|=5: 90/135 shapes done, bad=0
+n=14 |X|=5: 105/135 shapes done, bad=0
+n=14 |X|=5: 120/135 shapes done, bad=0
+n=14 |X|=5: 135/135 shapes done, bad=0
+n=14 |X|=5 |Y|=9: 135 shapes, 0 (shape, X) pairs with no good edge
+n=14 |X|=6: 15/135 shapes done, bad=0
+n=14 |X|=6: 30/135 shapes done, bad=0
+n=14 |X|=6: 45/135 shapes done, bad=0
+n=14 |X|=6: 60/135 shapes done, bad=0
+n=14 |X|=6: 75/135 shapes done, bad=0
+n=14 |X|=6: 90/135 shapes done, bad=0
+n=14 |X|=6: 105/135 shapes done, bad=0
+n=14 |X|=6: 120/135 shapes done, bad=0
+n=14 |X|=6: 135/135 shapes done, bad=0
+n=14 |X|=6 |Y|=8: 135 shapes, 0 (shape, X) pairs with no good edge
+n=14 |X|=7: 15/135 shapes done, bad=0
+n=14 |X|=7: 30/135 shapes done, bad=0
+n=14 |X|=7: 45/135 shapes done, bad=0
+n=14 |X|=7: 60/135 shapes done, bad=0
+n=14 |X|=7: 75/135 shapes done, bad=0
+n=14 |X|=7: 90/135 shapes done, bad=0
+n=14 |X|=7: 105/135 shapes done, bad=0
+n=14 |X|=7: 120/135 shapes done, bad=0
+n=14 |X|=7: 135/135 shapes done, bad=0
+n=14 |X|=7 |Y|=7: 135 shapes, 0 (shape, X) pairs with no good edge
+n=13 |X|=5: 15/66 shapes done, bad=378
+n=13 |X|=5: 30/66 shapes done, bad=378
+n=13 |X|=5: 45/66 shapes done, bad=621
+n=13 |X|=5: 60/66 shapes done, bad=891
+n=13 |X|=5: 66/66 shapes done, bad=891
+n=13 |X|=5 |Y|=8: 66 shapes, 891 (shape, X) pairs with no good edge
+n=13 |X|=6: 15/66 shapes done, bad=0
+n=13 |X|=6: 30/66 shapes done, bad=0
+n=13 |X|=6: 45/66 shapes done, bad=0
+n=13 |X|=6: 60/66 shapes done, bad=0
+n=13 |X|=6: 66/66 shapes done, bad=0
+n=13 |X|=6 |Y|=7: 66 shapes, 0 (shape, X) pairs with no good edge
+k=2: verified that every 2 trees on 7 leaves have a common quartet (h(2) <= 7)
+k=3: verified that every 3 trees on 14 leaves have a common quartet (h(3) <= 14)
+k=4: verified that every 4 trees on 28 leaves have a common quartet (h(4) <= 28)
+k=5: verified that every 5 trees on 61 leaves have a common quartet (h(5) <= 61)
+k=6: verified that every 6 trees on 125 leaves have a common quartet (h(6) <= 125)
+OK
+k=1: 1 caterpillars on 3 leaves, common quartets: 0  orders [[1, 2, 3]]
+k=2: 2 caterpillars on 5 leaves, common quartets: 0  orders [[1, 2, 3, 4, 5], [1, 4, 3, 2, 5]]
+k=3: 3 caterpillars on 9 leaves, common quartets: 0  orders [[1, 2, 3, 4, 5, 6, 7, 8, 9], [1, 8, 3, 6, 5, 4, 7, 2, 9], [1, 2, 7, 6, 5, 4, 3, 8, 9]]
+k=4: 4 caterpillars on 17 leaves, common quartets: 0
+k=5: 5 caterpillars on 33 leaves, common quartets: 0
+k=6: 6 caterpillars on 65 leaves, common quartets: 0
+OK
+k 1 h <= 4
+13:08:07 level 1 (0s) thr[2..14] [None, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3] => k 2 h <= 7
+13:08:07 level 2 (0s) thr[2..14] [None, None, None, 9, 7, 6, 6, 5, 5, 5, 5, 5, 5] => k 3 h <= 14
+13:08:07 level 3 (0s) thr[2..14] [None, None, None, None, None, None, None, 22, 18, 16, 16, 14, 13] => k 4 h <= 28
+13:08:09 level 4 (2s) thr[2..14] [None, None, None, None, None, None, None, None, None, None, None, None, None] => k 5 h <= 61
+recomputed table matches
+Preserved generator output: <repo>/maths/combinatorics/phylogenetics/common-quartet-number/verification/results/game-replay-20261026T130807Z
+L 5 trees 15
+  agree on 240 random complement-symmetric bad sets
+L 6 trees 105
+  agree on 300 random complement-symmetric bad sets
+L 7 trees 945
+  agree on 360 random complement-symmetric bad sets
+L 8 trees 10395
+  agree on 175 random complement-symmetric bad sets
+Building paper
+Built paper.pdf at 2026-10-26T13:08:16Z

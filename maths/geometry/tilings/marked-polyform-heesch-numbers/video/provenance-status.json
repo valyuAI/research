@@ -1,0 +1,25 @@
+{
+  "status": "validated; both checker/control hashes reconciled; original snapshot preserved",
+  "updatedUtc": "2026-10-26T16:46:56.441083+00:00",
+  "affectedSource": "verification/check_ledger.py",
+  "oldSourceSha256": "99785d6882936e44304971c396602162dd3988863fdc02cd26f02671b1d5c59c",
+  "preservedSnapshot": "scientific-input-sha256.before-validation-fixes.json",
+  "preservedSnapshotSha256": "b16cf4fa326ed5a18e684d29c70c95ca34e134d104b692041275077d5a03a406",
+  "reviewReport": "<unpublished-record-78a1b30421ad>",
+  "scope": "Checker validation hardening; no reported theorem, narration or media change. Do not refresh scientific snapshots until root confirms validation.",
+  "affectedSources": [
+    "verification/check_ledger.py",
+    "verification/negative_ledger.py"
+  ],
+  "supplement": "scientific-input-supplement.json",
+  "approvedChanges": {
+    "verification/check_ledger.py": {
+      "before": "99785d6882936e44304971c396602162dd3988863fdc02cd26f02671b1d5c59c",
+      "after": "9e895ef62a1ffd521187f4721d408abb9f14062e9b87f990802c29e6079f99c7"
+    },
+    "verification/negative_ledger.py": {
+      "before": "14e94c73ab41c759ae3ac8f50561d389ac22cc48b8e003b678ce5fec8d4a6572",
+      "after": "0d688a44e1b8a78dc985e1166d3ea48e0ed31031caa12b1bfd86c4fd31ca4fa8"
+    }
+  }
+}

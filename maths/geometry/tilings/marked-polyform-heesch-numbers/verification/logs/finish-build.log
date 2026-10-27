@@ -1,0 +1,60 @@
+VERIFIED verification/witnesses/hex1_k3.json: hex tile with 1 cells, imbalance +1, 37 copies, 3 coronas (|U_j| = [1, 7, 19, 37])
+VERIFIED verification/witnesses/hex2_k4.json: hex tile with 2 cells, imbalance +1, 81 copies, 4 coronas (|U_j| = [2, 16, 48, 100, 162])
+VERIFIED verification/witnesses/hex3_bent.json: hex tile with 3 cells, imbalance +2, 40 copies, 3 coronas (|U_j| = [3, 18, 57, 120])
+VERIFIED verification/witnesses/hex3_line_k4.json: hex tile with 3 cells, imbalance +1, 64 copies, 4 coronas (|U_j| = [3, 18, 48, 111, 192])
+VERIFIED verification/witnesses/hex3_triangle.json: hex tile with 3 cells, imbalance +1, 19 copies, 2 coronas (|U_j| = [3, 21, 57])
+VERIFIED verification/witnesses/hex4_line_k5.json: hex tile with 4 cells, imbalance +1, 131 copies, 5 coronas (|U_j| = [4, 24, 68, 160, 316, 524])
+VERIFIED verification/witnesses/hex4_t1.json: hex tile with 4 cells, imbalance +3, 25 copies, 2 coronas (|U_j| = [4, 32, 100])
+VERIFIED verification/witnesses/hex4_t2.json: hex tile with 4 cells, imbalance +3, 37 copies, 3 coronas (|U_j| = [4, 24, 68, 148])
+VERIFIED verification/witnesses/hex4_t3.json: hex tile with 4 cells, imbalance +1, 19 copies, 2 coronas (|U_j| = [4, 28, 76])
+VERIFIED verification/witnesses/hex4_t4.json: hex tile with 4 cells, imbalance +2, 20 copies, 2 coronas (|U_j| = [4, 28, 80])
+VERIFIED verification/witnesses/hex4_t5.json: hex tile with 4 cells, imbalance +1, 6 copies, 1 coronas (|U_j| = [4, 24])
+VERIFIED verification/witnesses/hex4_t6.json: hex tile with 4 cells, imbalance +1, 7 copies, 1 coronas (|U_j| = [4, 28])
+VERIFIED verification/witnesses/hex5_line_k5.json: hex tile with 5 cells, imbalance +1, 157 copies, 5 coronas (|U_j| = [5, 30, 90, 225, 465, 785])
+VERIFIED verification/witnesses/sq00_k1.json: sq tile with 1 cells, imbalance +1, 9 copies, 1 coronas (|U_j| = [1, 9])
+VERIFIED verification/witnesses/sq01_k2.json: sq tile with 2 cells, imbalance +1, 23 copies, 2 coronas (|U_j| = [2, 16, 46])
+VERIFIED verification/witnesses/sq02_k2.json: sq tile with 3 cells, imbalance +1, 26 copies, 2 coronas (|U_j| = [3, 30, 78])
+VERIFIED verification/witnesses/sq03_k1.json: sq tile with 3 cells, imbalance +1, 6 copies, 1 coronas (|U_j| = [3, 18])
+VERIFIED verification/witnesses/sq04_k3.json: sq tile with 4 cells, imbalance +1, 50 copies, 3 coronas (|U_j| = [4, 32, 88, 200])
+VERIFIED verification/witnesses/sq05_k2.json: sq tile with 4 cells, imbalance +1, 21 copies, 2 coronas (|U_j| = [4, 28, 84])
+VERIFIED verification/witnesses/sq06_k1.json: sq tile with 4 cells, imbalance +1, 8 copies, 1 coronas (|U_j| = [4, 32])
+VERIFIED verification/witnesses/sq07_k1.json: sq tile with 4 cells, imbalance +1, 6 copies, 1 coronas (|U_j| = [4, 24])
+VERIFIED verification/witnesses/sq08_k1.json: sq tile with 4 cells, imbalance +1, 7 copies, 1 coronas (|U_j| = [4, 28])
+VERIFIED verification/witnesses/sq09_k3.json: sq tile with 5 cells, imbalance +1, 51 copies, 3 coronas (|U_j| = [5, 40, 120, 255])
+VERIFIED verification/witnesses/sq10_k1.json: sq tile with 5 cells, imbalance +1, 10 copies, 1 coronas (|U_j| = [5, 50])
+VERIFIED verification/witnesses/sq11_k1.json: sq tile with 5 cells, imbalance +1, 6 copies, 1 coronas (|U_j| = [5, 30])
+VERIFIED verification/witnesses/sq12_k1.json: sq tile with 5 cells, imbalance +1, 9 copies, 1 coronas (|U_j| = [5, 45])
+VERIFIED verification/witnesses/sq13_k1.json: sq tile with 5 cells, imbalance +2, 8 copies, 1 coronas (|U_j| = [5, 40])
+VERIFIED verification/witnesses/sq14_k1.json: sq tile with 5 cells, imbalance +1, 7 copies, 1 coronas (|U_j| = [5, 35])
+VERIFIED verification/witnesses/sq15_k1.json: sq tile with 5 cells, imbalance +1, 8 copies, 1 coronas (|U_j| = [5, 40])
+VERIFIED verification/witnesses/sq16_k1.json: sq tile with 5 cells, imbalance +2, 8 copies, 1 coronas (|U_j| = [5, 40])
+VERIFIED verification/witnesses/sq17_k1.json: sq tile with 5 cells, imbalance +1, 8 copies, 1 coronas (|U_j| = [5, 40])
+VERIFIED verification/witnesses/sq18_k1.json: sq tile with 5 cells, imbalance +1, 8 copies, 1 coronas (|U_j| = [5, 40])
+VERIFIED verification/witnesses/sq19_k1.json: sq tile with 5 cells, imbalance +1, 7 copies, 1 coronas (|U_j| = [5, 35])
+VERIFIED verification/witnesses/sq20_k1.json: sq tile with 5 cells, imbalance +1, 9 copies, 1 coronas (|U_j| = [5, 45])
+negative tests: all 170 corrupted witnesses rejected
+Topology controls: 2 disks accepted; pinch, disconnected union and hole rejected
+tile: 6 hexagons, 69 drafters (= 11.5000 triangles); balance t - 2h = -0.5000
+169 placements, levels 0..6, no overlaps
+contact condition ok
+U_0: one simple boundary cycle, 75 edges
+U_0: closed disk, 75 faces
+U_1: one simple boundary cycle, 227 edges
+U_1: closed disk, 525 faces; contains U_0 in its interior
+U_2: one simple boundary cycle, 343 edges
+U_2: closed disk, 1275 faces; contains U_1 in its interior
+U_3: one simple boundary cycle, 490 edges
+U_3: closed disk, 2250 faces; contains U_2 in its interior
+U_4: one simple boundary cycle, 718 edges
+U_4: closed disk, 4650 faces; contains U_3 in its interior
+U_5: one simple boundary cycle, 842 edges
+U_5: closed disk, 8550 faces; contains U_4 in its interior
+U_6: one simple boundary cycle, 965 edges
+U_6: closed disk, 12675 faces; contains U_5 in its interior
+VERIFIED: the tile is surrounded 6 times (Heesch number >= 6)
+ledger: 12 polyhexes (<= 4 cells) + straight 5-row, 21 polyominoes (<= 5 cells); every value has a freshly checked witness and a retained DRAT verification record; max h: polyhex 5, polyomino 3
+Ledger controls: all 6 corrupted ledgers rejected
+Retained comparisons: 64 marked SAT/UNSAT agreements; 41 unmarked Hc agreements
+wrote tables.tex and drat-table.tex
+Building paper
+Built paper.pdf

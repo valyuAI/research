@@ -1,0 +1,2 @@
+q=3 basis=1,t,u,tu u^2=u forms=40 rank-ones=1600
+RESULT rank<=7: YES prefixes=1 candidates=18

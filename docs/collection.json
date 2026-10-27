@@ -1,0 +1,354 @@
+{
+  "updated": "2026-10-26",
+  "status": "All 26 research packages and narrated videos complete; local verification and independent integration closure review complete.",
+  "entries": [
+    {
+      "id": "quartets",
+      "path": "maths/combinatorics/phylogenetics/common-quartet-number",
+      "title": "Common quartets in evolutionary trees",
+      "kind": "new_result_candidate",
+      "campaign": "2026-10-25",
+      "result": "h(3)=14; a single-exponential general upper bound with base (1+sqrt(13))/2; 23<=h(4)<=28.",
+      "limits": "Lean checks only the sharp potential inequality and equality witness. Global optimality and h(4) remain open.",
+      "video": {
+        "status": "complete",
+        "path": "maths/combinatorics/phylogenetics/common-quartet-number/video/video.mp4"
+      }
+    },
+    {
+      "id": "johnson",
+      "path": "maths/geometry/rigidity/johnson-solids",
+      "title": "Rigidity of the 92 Johnson solids",
+      "kind": "new_result_candidate",
+      "campaign": "2026-10-25",
+      "result": "47 locally rigid and 45 flexible under fixed edge lengths and planar faces.",
+      "limits": "Local rigidity in the stated model, not rigidity of the bare edge graph or global uniqueness.",
+      "video": {
+        "status": "complete",
+        "path": "maths/geometry/rigidity/johnson-solids/video/video.mp4"
+      }
+    },
+    {
+      "id": "qudit",
+      "path": "physics/quantum-information/error-correction/distance-three-qudit-codes",
+      "title": "Distance-three qudit stabilizer codes",
+      "kind": "new_result_candidate",
+      "campaign": "2026-10-25",
+      "result": "Complete admissible lengths for F_q-linear stabilizer codes, q>=3; twelve pinned table entries improve, eleven become exact.",
+      "limits": "Known endpoint families and support-removal methods are credited. Nonlinear codes and general additive non-prime-field codes are outside the classification.",
+      "video": {
+        "status": "complete",
+        "path": "physics/quantum-information/error-correction/distance-three-qudit-codes/video/video.mp4"
+      }
+    },
+    {
+      "id": "acr",
+      "path": "chemistry/reaction-networks/mass-action/acr-multistability-bounds",
+      "title": "Chemical robustness with multiple stable states",
+      "kind": "new_result_candidate",
+      "campaign": "2026-10-25",
+      "result": "Minimum stoichiometric dimension three and six complexes for ACR with multistability in at-most-bimolecular networks.",
+      "limits": "The species-three construction is elementary; reaction-count minimum is open. Lean checks examples and ACR, not stability or the general lower bounds.",
+      "video": {
+        "status": "complete",
+        "path": "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/video.mp4",
+        "durationSeconds": 583.566667
+      }
+    },
+    {
+      "id": "covering",
+      "path": "maths/number-theory/covering-systems/min-modulus-six-odd-part-45",
+      "title": "A finite covering-system obstruction",
+      "kind": "new_result_candidate",
+      "campaign": "2026-10-25",
+      "result": "No finite distinct covering with all moduli at least six dividing 2^a*45, for any a.",
+      "limits": "The odd-part-135/minimum-eight extension is excluded.",
+      "video": {
+        "status": "complete",
+        "path": "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/video/video.mp4",
+        "durationSeconds": 535.233333
+      }
+    },
+    {
+      "id": "penney",
+      "path": "maths/probability/competing-patterns/rotation-wins-penney",
+      "title": "Winning permutation races by rotation",
+      "kind": "new_result_candidate",
+      "campaign": "2026-10-25",
+      "result": "Right rotation beats every permutation of length at least three under independent continuous observations.",
+      "limits": "The rotation is a winning reply, not necessarily the optimal reply.",
+      "video": {
+        "status": "complete",
+        "path": "maths/probability/competing-patterns/rotation-wins-penney/video/video.mp4"
+      }
+    },
+    {
+      "id": "colless",
+      "path": "maths/combinatorics/phylogenetics/colless-like-integer-weights",
+      "title": "Why integer tree-balance weights fail",
+      "kind": "new_result_candidate",
+      "campaign": "2026-10-25",
+      "result": "Nonnegative weights with f(2), f(3), f(4) in one cyclic real lattice cannot yield a sound Colless-like index.",
+      "limits": "The result does not exclude all real-valued weights.",
+      "video": {
+        "status": "complete",
+        "path": "maths/combinatorics/phylogenetics/colless-like-integer-weights/video/video.mp4"
+      }
+    },
+    {
+      "id": "octagon",
+      "path": "maths/dynamical-systems/billiards/special-octagon-symplectic-billiards",
+      "title": "Periodic symplectic billiards in special octagons",
+      "kind": "new_result_candidate",
+      "campaign": "2026-10-25",
+      "result": "Every orbit is periodic for special lattice octagons and mirror-symmetric Hexhouses, with an explicit bound.",
+      "limits": "Asymmetric Hexhouses and general Penthouses remain open.",
+      "video": {
+        "status": "complete",
+        "path": "maths/dynamical-systems/billiards/special-octagon-symplectic-billiards/video/video.mp4"
+      }
+    },
+    {
+      "id": "ctwords",
+      "path": "maths/combinatorics/combinatorics-on-words/cartesian-tree-square-free-words",
+      "title": "Infinite words avoiding Cartesian-tree squares",
+      "kind": "new_result_candidate",
+      "campaign": "2026-10-25",
+      "result": "Explicit binary and ternary morphisms settle the source's remaining infinite-word table entries.",
+      "limits": "The long-word deduction is written mathematics with independently checked finite cases, not a Lean theorem.",
+      "video": {
+        "status": "complete",
+        "path": "maths/combinatorics/combinatorics-on-words/cartesian-tree-square-free-words/video/video.mp4"
+      }
+    },
+    {
+      "id": "graphs",
+      "path": "maths/combinatorics/spectral-graph-theory/four-negative-eigenvalues",
+      "title": "Reduced graphs with four negative eigenvalues",
+      "kind": "new_result_candidate",
+      "campaign": "2026-10-25",
+      "result": "The maximum reduced order is 30; higher ranks are excluded and two positive-inertia extremizers are classified.",
+      "limits": "The four order-30 rank-eight graphs and the numerical bound A4=11 were already known.",
+      "video": {
+        "status": "complete",
+        "path": "maths/combinatorics/spectral-graph-theory/four-negative-eigenvalues/video/video.mp4",
+        "durationSeconds": 553.166667
+      }
+    },
+    {
+      "id": "hex",
+      "path": "maths/combinatorics/combinatorial-games/hex-short-wins",
+      "title": "How cheaply can the first player win Hex?",
+      "kind": "new_result_candidate",
+      "campaign": "2026-10-25",
+      "result": "Certified lambda(5)=lambda*(5)=6, delta(5)=7, delta(6)=10 and lambda(6)>=8.",
+      "limits": "The matching lambda(6)<=8 is search-only. No strict-rule value at six is claimed.",
+      "video": {
+        "status": "complete",
+        "path": "maths/combinatorics/combinatorial-games/hex-short-wins/video/video.mp4",
+        "durationSeconds": 559.166667
+      }
+    },
+    {
+      "id": "knots",
+      "path": "maths/topology/knot-theory/bridge-thirteen-crossing-census",
+      "title": "Bridge and meridional rank of thirteen-crossing knots",
+      "kind": "new_result_candidate",
+      "campaign": "2026-10-25",
+      "result": "Twenty-five entries in a pinned 293-name list have bridge number and meridional rank four.",
+      "limits": "Novel relative to the pinned list; overlap with broader family theorems remains a priority question.",
+      "video": {
+        "status": "complete",
+        "path": "maths/topology/knot-theory/bridge-thirteen-crossing-census/video/video.mp4"
+      }
+    },
+    {
+      "id": "social",
+      "path": "economics/social-choice/tournament-rules/three-team-manipulation-exact",
+      "title": "Exact resistance to three-team tournament manipulation",
+      "kind": "new_result_candidate",
+      "campaign": "2026-10-25",
+      "result": "Optimal coalition gain 2/5 for five through eight teams, with exact monotone top-cycle-consistent rules.",
+      "limits": "Finite cases only; the all-size question remains open and lower bounds are prior work.",
+      "video": {
+        "status": "complete",
+        "path": "economics/social-choice/tournament-rules/three-team-manipulation-exact/video/video.mp4",
+        "durationSeconds": 452.1
+      }
+    },
+    {
+      "id": "cactus",
+      "path": "physics/statistical-physics/nonequilibrium-response/cactus-response-coupling",
+      "title": "Response bounds on cactus networks",
+      "kind": "new_result_candidate",
+      "campaign": "2026-10-25",
+      "result": "The topological response conjecture holds on all cacti; a stronger coupling method fails on graphs with a K4 minor.",
+      "limits": "The obstruction concerns the method, not a counterexample to the general response conjecture.",
+      "video": {
+        "status": "complete",
+        "path": "physics/statistical-physics/nonequilibrium-response/cactus-response-coupling/video/video.mp4"
+      }
+    },
+    {
+      "id": "algebra",
+      "path": "maths/algebra/bilinear-complexity/mu-q-2-2",
+      "title": "Bilinear complexity over small finite fields",
+      "kind": "new_result_candidate",
+      "campaign": "2026-10-25",
+      "result": "mu_q(2,2)=mu_q^sym(2,2): 9 for q=2, 8 for q=3,4,5, and 7 for q>=7; binary length-six cyclic convolution has rank 12.",
+      "limits": "The symmetric binary value, q=4 claim and search methods have prior sources; novelty is narrower than the full table.",
+      "video": {
+        "status": "complete",
+        "path": "maths/algebra/bilinear-complexity/mu-q-2-2/video/video.mp4",
+        "durationSeconds": 504.233333
+      }
+    },
+    {
+      "id": "ctln",
+      "path": "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples",
+      "title": "An eleven-neuron stable nonclique network",
+      "kind": "new_result_candidate",
+      "campaign": "2026-10-25",
+      "result": "An exact standard-parameter counterexample is minimal under vertex deletion; the global minimum lies from eight to eleven.",
+      "limits": "Standard-parameter counterexamples were already implied by prior families. Eleven is not proved globally minimal.",
+      "video": {
+        "status": "complete",
+        "path": "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/video/video.mp4",
+        "durationSeconds": 566.466667
+      }
+    },
+    {
+      "id": "tilings",
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers",
+      "title": "Certified rings around marked tiles",
+      "kind": "new_result_candidate",
+      "campaign": "2026-10-25",
+      "result": "Thirty-four exact maxima over unbalanced single-slot lattice markings, with witnesses and checked exclusion proofs.",
+      "limits": "No new Heesch record or off-grid upper bound; overlap with smaller prior tables remains unresolved.",
+      "video": {
+        "status": "complete",
+        "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/video/video.mp4",
+        "durationSeconds": 572.433333
+      }
+    },
+    {
+      "id": "tictactoe",
+      "path": "maths/combinatorics/combinatorial-games/cubic-tic-tac-toe-surplus",
+      "title": "A shorter certificate for seven-cube tic-tac-toe",
+      "kind": "new_proof_and_correction",
+      "campaign": "2026-10-25",
+      "result": "A Hall-surplus proof of the known Breaker win repairs omissions in the published case analysis.",
+      "limits": "Six-cube and five-cube games remain open; Lean covers the abstract matching lemmas only.",
+      "video": {
+        "status": "complete",
+        "path": "maths/combinatorics/combinatorial-games/cubic-tic-tac-toe-surplus/video/video.mp4",
+        "durationSeconds": 542.433333
+      }
+    },
+    {
+      "id": "latin",
+      "path": "maths/combinatorics/latin-squares/latin-tableaux-staircase-count",
+      "title": "Counting staircase Latin tableaux",
+      "kind": "independent_verification",
+      "campaign": "2026-10-25",
+      "result": "An independently checked induction gives 9*4^(k-3), with a 576-tableau base case.",
+      "limits": "An earlier public proof has the same formula and four-extension mechanism. No novelty claim.",
+      "video": {
+        "status": "complete",
+        "path": "maths/combinatorics/latin-squares/latin-tableaux-staircase-count/video/video.mp4",
+        "durationSeconds": 486.733333
+      }
+    },
+    {
+      "id": "elasticity",
+      "path": "physics/mechanics/elasticity/generic-stiffness-recovery",
+      "title": "Generic three-dimensional stiffness recovery",
+      "kind": "new_result_candidate",
+      "campaign": "2026-10-17",
+      "result": "Generic density-normalized stiffness is determined by eleven generic wave-measurement directions.",
+      "limits": "Full geometric proof is not formalized; stable inversion and optimal direction count remain open.",
+      "video": {
+        "status": "complete",
+        "path": "physics/mechanics/elasticity/generic-stiffness-recovery/video/video.mp4"
+      }
+    },
+    {
+      "id": "halesjewett",
+      "path": "maths/combinatorics/ramsey-theory/prime-successor-hales-jewett",
+      "title": "Prime-successor Hales-Jewett numbers",
+      "kind": "new_result_candidate",
+      "campaign": "2026-10-17",
+      "result": "HJ(p+1,2;2)=p+1 for every prime p, with a complete Lean proof.",
+      "limits": "The off-diagonal convention matters; the source's geometric G(8,2) computation is not independently certified.",
+      "video": {
+        "status": "complete",
+        "path": "maths/combinatorics/ramsey-theory/prime-successor-hales-jewett/video/video.mp4"
+      }
+    },
+    {
+      "id": "dodecahedron",
+      "path": "maths/geometry/rigidity/truncated-dodecahedron",
+      "title": "Local rigidity of the truncated dodecahedron",
+      "kind": "new_result_candidate",
+      "campaign": "2026-10-17",
+      "result": "An exact higher-order certificate proves local rigidity with fixed edges and planar faces.",
+      "limits": "Does not prove global uniqueness or rigidity with only bar constraints.",
+      "video": {
+        "status": "complete",
+        "path": "maths/geometry/rigidity/truncated-dodecahedron/video/video.mp4"
+      }
+    },
+    {
+      "id": "entropy",
+      "path": "physics/statistical-physics/thermodynamic-inference/periodic-waiting-time",
+      "title": "A periodic waiting-time entropy counterexample",
+      "kind": "new_result_candidate",
+      "campaign": "2026-10-17",
+      "result": "A smooth three-state counterexample to a specific forward-protocol entropy-bound conjecture.",
+      "limits": "Protocol-reversal results remain intact; the broad false-positive mechanism has prior examples.",
+      "video": {
+        "status": "complete",
+        "path": "physics/statistical-physics/thermodynamic-inference/periodic-waiting-time/video/video.mp4"
+      }
+    },
+    {
+      "id": "cubicchem",
+      "path": "chemistry/reaction-networks/mass-action/cubic-equilibrium-sharpness",
+      "title": "Sharp equilibrium counts from cubic sources",
+      "kind": "new_result_candidate",
+      "campaign": "2026-10-17",
+      "result": "An all-n family attains the sharp equilibrium count; source molecularity three is sufficient and minimal.",
+      "limits": "Classes are unbounded, product molecularities may exceed three, and simultaneous stability is unproved.",
+      "video": {
+        "status": "complete",
+        "path": "chemistry/reaction-networks/mass-action/cubic-equilibrium-sharpness/video/video.mp4"
+      }
+    },
+    {
+      "id": "restart",
+      "path": "physics/statistical-physics/stochastic-resetting/conjugate-restart",
+      "title": "Global optimality of conjugate restart laws",
+      "kind": "new_result_candidate",
+      "campaign": "2026-10-17",
+      "result": "A global renewal-law optimum and uniqueness result, with a finite-state converse under cyclicity.",
+      "limits": "The kernel inequality and exponential conjugate pair are prior work; priority remains provisional.",
+      "video": {
+        "status": "complete",
+        "path": "physics/statistical-physics/stochastic-resetting/conjugate-restart/video/video.mp4"
+      }
+    },
+    {
+      "id": "lv",
+      "path": "maths/dynamical-systems/lotka-volterra/tree-equivalence",
+      "title": "Reconstructing generic Lotka-Volterra trees",
+      "kind": "independent_verification",
+      "campaign": "2026-10-17",
+      "result": "A self-contained reconstruction and verification note with an exact path-obstruction lemma.",
+      "limits": "An earlier withdrawn announcement closely overlaps; no priority claim.",
+      "video": {
+        "status": "complete",
+        "path": "maths/dynamical-systems/lotka-volterra/tree-equivalence/video/video.mp4"
+      }
+    }
+  ]
+}

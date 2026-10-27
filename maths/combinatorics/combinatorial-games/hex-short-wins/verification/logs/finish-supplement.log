@@ -1,0 +1,4 @@
+Strict positive control: VERIFIED [strict n=4 bound=5 first=3] (strict reading): Blue opening (1,4) forces its first connection to contain a path of <= 5 cells; keys checked=2297, max Blue stones=8
+Strict controls: all 6 corrupted certificates rejected
+Retained Hex records: L7 36/36; D9 36/36; D10 and strict5 complete; table 64/64; 100 shipped hashes match
+Optimized-Python guard controls: all entrypoints reject -O.

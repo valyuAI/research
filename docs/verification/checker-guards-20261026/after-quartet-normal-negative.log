@@ -1,0 +1,9 @@
+weighted, k=2 n=7: starting 1 families
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+    f = m['run_weighted']; f.__globals__['keeps_sharp_factor'] = lambda *a: False; f(2, 1, 602)
+                                                                                   ~^^^^^^^^^^^
+  File "<repo>/maths/combinatorics/phylogenetics/common-quartet-number/verification/iterate_check.py", line 174, in run_weighted
+    assert keeps_sharp_factor(psi(len(X2), len(Y2)), psi(a, d)), (
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: (3, 4, 3, 2)

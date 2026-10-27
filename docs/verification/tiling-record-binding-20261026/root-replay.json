@@ -1,0 +1,16 @@
+[
+  {
+    "script": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/check_ledger.py",
+    "sourceSha256": "9e895ef62a1ffd521187f4721d408abb9f14062e9b87f990802c29e6079f99c7",
+    "exit": 0,
+    "log": "check_ledger.log",
+    "logSha256": "1e4b42f164d214653417b7bae1453e101f6d513e237707b7e0d4ea46d7ee959d"
+  },
+  {
+    "script": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/negative_ledger.py",
+    "sourceSha256": "0d688a44e1b8a78dc985e1166d3ea48e0ed31031caa12b1bfd86c4fd31ca4fa8",
+    "exit": 0,
+    "log": "negative_ledger.log",
+    "logSha256": "bf92d0e0ec7df5972693860ab1a794ffe6c949791997455c604760aa4f5f0bb1"
+  }
+]

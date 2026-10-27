@@ -1,0 +1,6 @@
+lines=193
+centre: killed sigma(-1=no pairing) count
+  killed=22 sigma=-1 count=48
+  killed=25 sigma=2 count=384
+  killed=26 sigma=4+ count=288
+  killed=27 sigma=4+ count=576

@@ -1,0 +1,7 @@
+{"graph": "W6", "edges": 90, "inertia": [16, 0, 5], "positive_22nd_vertex_extensions": 0}
+{"graph": "W6 with K5+K1", "edges": 85, "inertia": [16, 0, 5], "positive_22nd_vertex_extensions": 0}
+{"graph": "W6 with K4+K2", "edges": 82, "inertia": [16, 0, 5], "positive_22nd_vertex_extensions": 0}
+{"graph": "W6 with K3+K3", "edges": 81, "inertia": [16, 0, 5], "positive_22nd_vertex_extensions": 0}
+{"graph": "Clebsch+K5", "edges": 90, "inertia": [16, 0, 5], "positive_22nd_vertex_extensions": 0}
+{"graph": "Clebsch+K5", "edges": 90, "inertia": [16, 0, 5], "positive_22nd_vertex_extensions": 0}
+{"classes": 6, "any_extension": false}

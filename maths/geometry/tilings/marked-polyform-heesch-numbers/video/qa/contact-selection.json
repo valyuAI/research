@@ -1,0 +1,182 @@
+[
+  {
+    "label": "t01",
+    "time": 10.331999999999999,
+    "file": "t01.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t02",
+    "time": 26.606399999999987,
+    "file": "t02.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t03",
+    "time": 43.07120000000023,
+    "file": "t03.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t04",
+    "time": 61.25253333333333,
+    "file": "t04.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t05",
+    "time": 76.57137999999999,
+    "file": "t05.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t06",
+    "time": 90.90951333333331,
+    "file": "t06.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t08",
+    "time": 121.02444666666682,
+    "file": "t08.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t09",
+    "time": 139.447443,
+    "file": "t09.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t10",
+    "time": 155.34024299999996,
+    "file": "t10.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t11",
+    "time": 172.91384300000027,
+    "file": "t11.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t12",
+    "time": 190.09882299999998,
+    "file": "t12.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t14",
+    "time": 221.86655633333362,
+    "file": "t14.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t15",
+    "time": 235.81855633333325,
+    "file": "t15.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t16",
+    "time": 250.622086,
+    "file": "t16.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t17",
+    "time": 267.1498193333333,
+    "file": "t17.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t18",
+    "time": 283.9639526666669,
+    "file": "t18.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t19",
+    "time": 300.5967526666668,
+    "file": "t19.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t20",
+    "time": 317.3311526666665,
+    "file": "t20.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t21",
+    "time": 334.6690193333328,
+    "file": "t21.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t23",
+    "time": 368.91189733333334,
+    "file": "t23.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t24",
+    "time": 385.5598973333336,
+    "file": "t24.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t25",
+    "time": 402.4460306666665,
+    "file": "t25.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t26",
+    "time": 421.8649639999997,
+    "file": "t26.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t27",
+    "time": 439.841975,
+    "file": "t27.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t28",
+    "time": 457.12837499999995,
+    "file": "t28.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t30",
+    "time": 494.157975,
+    "file": "t30.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t31",
+    "time": 512.0502416666661,
+    "file": "t31.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t32",
+    "time": 531.572586,
+    "file": "t32.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t33",
+    "time": 549.2205859999999,
+    "file": "t33.png",
+    "kind": "beat"
+  },
+  {
+    "label": "t34",
+    "time": 566.6939193333336,
+    "file": "t34.png",
+    "kind": "beat"
+  }
+]

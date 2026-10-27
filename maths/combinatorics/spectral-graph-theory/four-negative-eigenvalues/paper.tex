@@ -1,0 +1,216 @@
+\documentclass[11pt]{amsart}
+\usepackage[a4paper,textwidth=158mm,textheight=237mm,centering]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,mathtools,amssymb,graphicx,flafter,booktabs}
+\usepackage[unicode,colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\In}{\operatorname{In}}
+\newcommand{\adj}{\operatorname{adj}}
+\newcommand{\rk}{\operatorname{rank}}
+\title{Reduced graphs with four negative eigenvalues have at most thirty vertices}
+\author{Harvey Yorke}
+\address{Valyu AI}
+\ifdefined\journalversion\else
+\author{Valyu DeepResearch}
+\address{Valyu AI}
+\fi
+\ifdefined\journalversion
+  \hypersetup{pdftitle={Reduced graphs with four negative eigenvalues have at most thirty vertices},pdfauthor={Harvey Yorke}}
+\else
+  \hypersetup{pdftitle={Reduced graphs with four negative eigenvalues have at most thirty vertices},pdfauthor={Harvey Yorke and Valyu DeepResearch}}
+\fi
+\date{25 October 2026}
+\keywords{Adjacency eigenvalues, inertia, reduced graphs, Torga\v{s}ev's problem, exhaustive enumeration}
+\newcommand{\paperAuthorBlock}[1]{%
+  \begin{minipage}[t]{.44\textwidth}
+    \centering\normalfont\normalsize #1\par\small Valyu AI\par
+  \end{minipage}%
+}
+\makeatletter
+\renewcommand{\@setauthors}{%
+  \begingroup\trivlist\centering\normalfont\normalsize
+  \@topsep30\p@\relax\advance\@topsep by -\baselineskip\item\relax
+  \ifdefined\journalversion
+    \paperAuthorBlock{Harvey Yorke}%
+  \else
+    \paperAuthorBlock{Harvey Yorke}\hspace{.06\textwidth}\paperAuthorBlock{Valyu DeepResearch}%
+  \fi
+  \endtrivlist\endgroup
+}
+\renewcommand{\@setaddresses}{}
+\makeatother
+\begin{document}
+\raggedbottom
+\begin{abstract}
+Torga\v{s}ev proved that for each $k$ only finitely many reduced graphs (no isolated vertices, no two vertices with the same neighbourhood) have exactly $k$ negative adjacency eigenvalues. Mohammadian conjectured that such a graph has at most $2^{k+1}-2$ vertices, a bound attained by a doubling construction of Kotlov and Lov\'asz and known for $k\le3$. We prove the conjecture for $k=4$: every reduced graph with exactly four negative eigenvalues has at most $30$ vertices; the graphs with $30$ vertices are the four largest reduced graphs of rank $8$ found by Akbari, Cameron and Khosrovshahi. We also determine the extremal graphs for Torga\v{s}ev's problem at $k=4$. Every graph with exactly four negative eigenvalues has at most eleven positive eigenvalues; this bound is equivalent to the value $16$ of a nonpositive-eigenvalue Ramsey-type function found by Charles, Farber, Johnson and Kennedy-Shaffer in 2013. We show that, up to twins and isolated vertices, exactly two graphs attain it, namely the two 15-vertex graphs exhibited in that paper. The proofs rest on a complete enumeration of the $45{,}242$ nonsingular graphs with at most four negative eigenvalues. A Jacobi-minor lemma guarantees that each one extends a smaller one by one or two vertices, and every step uses exact integer arithmetic. Two implementations agree, a brute-force search confirms the census through ten vertices, and the computation reproduces published data of Torga\v{s}ev and of Akbari, Cameron and Khosrovshahi.
+\end{abstract}
+\maketitle
+
+\section{The question and the answer}
+
+All graphs are finite and simple. For a graph $G$ with adjacency matrix $A(G)$, let $n^+(G)$, $n^0(G)$ and $n^-(G)$ be the numbers of positive, zero and negative eigenvalues, counted with multiplicity, and write $\In(G)=(n^+,n^0,n^-)$. Two vertices are \emph{twins} if they have the same open neighbourhood. A graph is \emph{reduced} if it has no isolated vertices and no twins. Deleting a twin or an isolated vertex does not change $n^+$ or $n^-$, so every graph has a reduced graph with the same $n^+$ and $n^-$ (Torga\v{s}ev calls these canonical graphs~\cite{Torgasev1992}).
+
+Torga\v{s}ev~\cite{Torgasev1985finite} proved that for each $k$ only finitely many reduced graphs satisfy $n^-=k$. Two natural parameters follow. One is the largest order $n(k)$ of such a graph. The other is the largest positive inertia
+\[
+A_k=\max\{n^+(G): n^-(G)=k\}.
+\]
+Torga\v{s}ev defined $A_k$ over connected canonical graphs; for the values below the maximum over all graphs is attained by connected graphs, so the two versions agree. Torga\v{s}ev determined $n(k)=2,6,14$ and $A_k=1,3,6$ for $k=1,2,3$~\cite{Torgasev1985two,Torgasev1989,Torgasev1992,AEKPT2026}. He also studied the minimal graphs with four negative eigenvalues~\cite{Torgasev1987}, a paper we could not obtain; it concerns minimal graphs (no proper induced subgraph has four negative eigenvalues), not largest ones, and in 1990 Torga\v{s}ev still gave the values of $A_k$ only for $k\le3$~\cite{Torgasev1992}. Mohammadian conjectured that $n(k)\le 2^{k+1}-2$ for every $k$~\cite{Mohammadian2022} (see~\cite[Conjecture~2.2]{AEKPT2026}); the doubling construction of Kotlov and Lov\'asz shows this would be best possible~\cite{KotlovLovasz1996,AEKPT2026}. The first open case is $k=4$, with conjectured value $30$.
+
+Two general results bear on this case. Basso proved a quantitative form of Torga\v{s}ev's theorem: a reduced graph with $n^-\le k$ has at most $2R(k+2)$ vertices, where $R$ is the diagonal Ramsey number~\cite[Theorem~1.1]{Basso2021}. That bound is far above $30$ for $k=4$. Basso also proved that if every graph of orders $N+1$ and $N+2$ in a hereditary family has twins, then so does every larger graph in the family, and suggested this as a route to sharp bounds for small $k$~\cite[Proposition~1.3]{Basso2021}. Separately, the rank conjecture of Akbari, Cameron and Khosrovshahi, that a reduced graph of rank $r$ has at most $m(r)=2^{(r+2)/2}-2$ vertices for even $r$ and $5\cdot2^{(r-3)/2}-2$ for odd $r$, was verified by computation for $r\le8$ by its authors and for $r=9$ by Ghorbani, Mohammadian and Tayfeh-Rezaie~\cite{ACK2004,GMT2015}. (Akbari, Cameron and Khosrovshahi allow one isolated vertex, so their maximum orders are larger by one.) A reduced graph with $n^-=4$ has rank between $5$ and $4+A_4$; the rank results give the bound $30$ only for ranks up to $8$, since $m(9)=38$. The content of Theorem~\ref{thm:order} is therefore the control of ranks $9$ to $15$, where the condition $n^-=4$ is essential.
+
+\begin{theorem}\label{thm:order}
+Every reduced graph with exactly four negative eigenvalues has at most $30$ vertices, so $n(4)=30$ and Mohammadian's conjecture holds for $k=4$. Every reduced graph with $30$ vertices and four negative eigenvalues has rank $8$ and inertia $(4,22,4)$, and there are exactly four such graphs up to isomorphism: the four reduced graphs of rank $8$ and maximum order computed in~\cite[Table~1]{ACK2004}.
+\end{theorem}
+
+Torga\v{s}ev's second question has a more tangled recent history. In 2025 Akbari, Elphick, Kumar, Pragada and Tang conjectured $A_k\le\binom{k+1}{2}$~\cite{AEKPT2026}. Chen and Li refuted this with reduced graphs $W_k$ of inertia $(\binom{k}{2}+1,0,k-1)$; they described $n^-=4$ as ``the first unsettled case'', with $W_5$ giving $A_4\ge 11$~\cite{ChenLi2026}. Elphick, Kumar, Pragada and Spier pointed out that $W_k$ already appears in work of Charles, Farber, Johnson and Kennedy-Shaffer (CFJK)~\cite{CFJK2013}, and constructed graphs showing that $A_k$ grows at least like $k^{7/3}$ along a sequence of $k$~\cite{EKPS2026}. They also proved the identity $M(k)=P(k)+k$, where $P(k)$ is the largest $n^+$ among graphs with $n^-\le k$ and $M(k)$ is the largest order of a graph with at most $k$ nonpositive eigenvalues~\cite[\S2]{EKPS2026}.
+
+CFJK define $\mathrm{NPO}(k)$ as the least $n$ such that every graph on at least $n$ vertices has at least $k$ nonpositive eigenvalues. They prove $\mathrm{NPO}(5)=16$ by a computer search, and exhibit two 15-vertex graphs with only four nonpositive eigenvalues~\cite[Lemma~4.6 and Theorem~4.7]{CFJK2013}. Since $M(k)=\mathrm{NPO}(k+1)-1$, these results give $P(4)=M(4)-4=11$; as $W_5$ attains $11$, it follows that $A_4=11$. We are not aware that this consequence has been recorded. Our enumeration gives an independent proof of $\mathrm{NPO}(5)=16$, and it shows that the two CFJK graphs are the only extremal ones.
+
+\begin{theorem}\label{thm:main}
+Every graph with exactly four negative adjacency eigenvalues has at most eleven positive adjacency eigenvalues, so $A_4=11$. If $n^-(G)=4$ and $n^+(G)=11$, then deleting the isolated vertices of $G$ and all but one vertex of each twin class gives one of exactly two graphs: $W_5$, or the graph $X$ of Section~\ref{sec:extremal}. These are the graphs $G_4$ and $G_5$ of~\cite{CFJK2013}. Equivalently, exactly two graphs on $15$ vertices have only four nonpositive eigenvalues. Both are connected and nonsingular with inertia $(11,0,4)$.
+\end{theorem}
+
+The graph $X$ is CFJK's $G_5$: the Paley graph of order nine together with two triangles, each triangle vertex joined to one of three disjoint maximum independent sets. Section~\ref{sec:extremal} describes it through the affine plane $AG(2,3)$.
+
+Both theorems are computer-assisted. The mathematics reduces them to a finite, exactly checkable enumeration (Sections~\ref{sec:reduction} and~\ref{sec:closure}); the computation and its checks are described in Section~\ref{sec:computation}. Table~\ref{tab:census} records the complete census, which may be useful in its own right.
+
+\section{Reduction to nonsingular graphs}\label{sec:reduction}
+
+\begin{lemma}[cf.~\cite{Ellingham1993} and {\cite[Lemma~2.3]{EKPS2026}}]\label{lem:basis}
+Let $G$ be a graph of rank $r$ with $\In(G)=(p,n-r,q)$. Then $G$ has an induced subgraph $X$ on $r$ vertices with $A(X)$ nonsingular and $\In(X)=(p,0,q)$. Conversely, every nonsingular graph is reduced.
+\end{lemma}
+
+\begin{proof}
+Choose a set $I$ of $r$ vertices whose rows of $A=A(G)$ form a basis of the row space, and write $A=PA[I,\cdot]$. By symmetry $A=A[\cdot,I]P^{\mathsf T}$, so $A[I,\cdot]=A[I,I]P^{\mathsf T}$. Since $A[I,\cdot]$ has rank $r$, the $r\times r$ matrix $A[I,I]$ is nonsingular. Put $X=G[I]$. Cauchy interlacing gives $n^\pm(X)\le n^\pm(G)$, and $n^+(X)+n^-(X)=r=p+q$, so both inequalities are equalities. A graph with twins has two equal rows, and an isolated vertex gives a zero row; either makes $A$ singular.
+\end{proof}
+
+Consequently
+\begin{equation}\label{eq:Ak}
+A_k=\max\{p:\ \text{some nonsingular graph has inertia }(p,0,k)\},
+\end{equation}
+and it suffices to list all nonsingular graphs with at most $k$ negative eigenvalues. Such graphs have at most $A_k+k$ vertices, but no bound on $A_k$ is assumed: the enumeration below stops by itself.
+
+\section{One- and two-vertex extensions}\label{sec:closure}
+
+For a nonsingular symmetric matrix $H$ we write $M=H^{-1}$ and $\adj H=(\det H)M$, an integer matrix when $H$ is.
+
+\begin{lemma}[Haynsworth inertia additivity~\cite{Haynsworth1968}]\label{lem:schur}
+If $H$ is nonsingular and $G=\begin{psmallmatrix}H&B\\B^{\mathsf T}&C\end{psmallmatrix}$ is symmetric, then $\In(G)=\In(H)+\In(S)$ with $S=C-B^{\mathsf T}MB$.
+\end{lemma}
+
+For a single new vertex with neighbourhood vector $b\in\{0,1\}^h$, the Schur complement is the scalar $-b^{\mathsf T}Mb$. The extension is nonsingular exactly when $b^{\mathsf T}Mb\ne0$; it gains a positive eigenvalue if $b^{\mathsf T}Mb<0$ and a negative one if $b^{\mathsf T}Mb>0$. Because $\operatorname{sign}(b^{\mathsf T}Mb)=\operatorname{sign}(\det H)\operatorname{sign}(b^{\mathsf T}(\adj H)b)$, this test is an integer computation. Call $b$ \emph{isotropic} for $H$ if $b^{\mathsf T}Mb=0$.
+
+\begin{lemma}\label{lem:jacobi}
+Let $G$ be a nonsingular graph on $N\ge2$ vertices. Then one of the following holds.
+\begin{enumerate}
+\item There is a vertex $v$ with $G-v$ nonsingular.
+\item There are distinct vertices $u,w$ such that $H=G-u-w$ is nonsingular, the neighbourhood vectors $b_u,b_w$ of $u,w$ in $H$ are isotropic for $H$, $a-b_u^{\mathsf T}Mb_w\ne0$ where $a\in\{0,1\}$ records the edge $uw$, and $\In(G)=\In(H)+(1,0,1)$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+For every vertex set $T$, Jacobi's complementary-minor identity~\cite{HornJohnson2013} gives
+\[
+\det A(G-T)=\det A(G)\cdot\det\bigl(A(G)^{-1}[T]\bigr).
+\] If (1) fails then $A(G)^{-1}$ has zero diagonal. It is nonzero, so some off-diagonal entry $t=(A(G)^{-1})_{uw}$ is nonzero, and $\det A(G)^{-1}[\{u,w\}]=-t^2\neq0$. Hence $H=G-u-w$ is nonsingular. The inverse of the Schur complement $S$ of $A(H)$ in $A(G)$ is $A(G)^{-1}[\{u,w\}]=\begin{psmallmatrix}0&t\\t&0\end{psmallmatrix}$, so $S=\begin{psmallmatrix}0&1/t\\1/t&0\end{psmallmatrix}$. Its diagonal entries are $-b_u^{\mathsf T}Mb_u$ and $-b_w^{\mathsf T}Mb_w$, and its off-diagonal entry is $a-b_u^{\mathsf T}Mb_w$. Finally $\In(S)=(1,0,1)$, and Lemma~\ref{lem:schur} completes the proof.
+\end{proof}
+
+Let $\mathcal N_k(N)$ be the set of isomorphism classes of nonsingular graphs on $N$ vertices with $n^-\le k$. We take $\mathcal N_k(0)$ to consist of the empty graph, whose $0\times0$ adjacency matrix has determinant $1$, and $\mathcal N_k(1)=\emptyset$ because $K_1$ is singular. Lemma~\ref{lem:jacobi} with $N=2$ gives $K_2$ as the double extension of the empty graph by two adjacent vertices, with empty (hence isotropic) neighbourhood vectors. Interlacing shows that $n^-$ does not increase when vertices are deleted. Combining this with Lemma~\ref{lem:jacobi} gives the following.
+
+\begin{theorem}\label{thm:closure}
+For $N\ge1$, every member of $\mathcal N_k(N)$ is obtained in one of two ways. It may arise from a member $H$ of $\mathcal N_k(N-1)$ by adding one vertex with a non-isotropic neighbourhood vector, keeping $n^-\le k$. Alternatively, it may arise from a member $H$ of $\mathcal N_k(N-2)$ with $n^-(H)\le k-1$ by adding two vertices $u,w$. Their neighbourhood vectors must be isotropic for $H$, possibly equal, and they must satisfy $a-b_u^{\mathsf T}Mb_w\ne0$. In particular, if $\mathcal N_k(N)$ and $\mathcal N_k(N+1)$ are empty, then $\mathcal N_k(N')$ is empty for every $N'\ge N$.
+\end{theorem}
+
+\begin{proof}
+The first statement is Lemma~\ref{lem:jacobi}. In case (2), $n^-(H)=n^-(G)-1\le k-1$. When $b_u=b_w$, the condition reads $a\ne0$, so $u$ and $w$ are adjacent. For $N'\ge N+2$, every member of $\mathcal N_k(N')$ comes from $\mathcal N_k(N'-1)$ or $\mathcal N_k(N'-2)$; induction proves the last statement.
+\end{proof}
+
+\begin{remark}
+The last statement of Theorem~\ref{thm:closure} is close to two known facts: a real symmetric matrix whose principal minors of two consecutive orders all vanish has all larger principal minors zero (the `no 001' theorem for principal rank characteristic sequences~\cite{BDOD2012}), and Basso's Proposition~1.3~\cite{Basso2021}, which is proved with Dodgson's condensation identity, the case $|T|=2$ of the Jacobi identity used above. Lemma~\ref{lem:jacobi} adds the information needed to generate the next level: the two new vertices have isotropic neighbourhood vectors, and the parent has one fewer negative eigenvalue.
+\end{remark}
+
+\section{The computation}\label{sec:computation}
+
+Starting from $\mathcal N_k(0)$, we generate $\mathcal N_k(1),\mathcal N_k(2),\dots$ by Theorem~\ref{thm:closure}. For a parent $H$ of order $h$ we compute $\det H$ and $\adj H$ exactly. We then evaluate the integer quadratic form $b^{\mathsf T}(\adj H)b$ on all $2^h$ vectors $b\in\{0,1\}^h$. This gives the admissible single extensions and the isotropic vectors. For double extensions we evaluate the integer bilinear form on pairs of isotropic vectors. Isomorphic graphs are merged. Every graph that is kept is then checked again from scratch: we compute its exact characteristic polynomial and apply Descartes' rule of signs, which is exact for real-rooted polynomials.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{}lrrrrrrrrrrrrrr@{}}
+\toprule
+$N$ & 2&3&4&5&6&7&8&9&10&11&12&13&14&15\\
+\midrule
+$n^-=1$ & 1&&&&&&&&&&&&&\\
+$n^-=2$ & &1&3&1&&&&&&&&&&\\
+$n^-=3$ & &&1&7&39&25&7&2&&&&&&\\
+$n^-=4$ & &&&1&17&295&3648&10384&14422&10810&4473&993&110&2\\
+\bottomrule
+\end{tabular}
+\caption{Numbers of nonsingular graphs (connected or not, up to isomorphism) on $N$ vertices with exactly $n^-$ negative eigenvalues, for $n^-\le4$. A nonsingular graph with $n^-=q$ on $N$ vertices has $n^+=N-q$. There are none with $n^-\le4$ on $16$ or $17$ vertices, hence none on more.}
+\label{tab:census}
+\end{table}
+
+For $k=4$ the levels $N=16$ and $N=17$ are empty, so by Theorem~\ref{thm:closure} the enumeration is complete. Table~\ref{tab:census} gives the census. The largest nonsingular graphs with four negative eigenvalues have $15$ vertices, and there are exactly two of them. By~\eqref{eq:Ak}, $A_4=11$.
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+The bound is~\eqref{eq:Ak} together with the census. Suppose $n^-(G)=4$ and $n^+(G)=11$. Its reduced form $R$ has the same $n^\pm$. By Lemma~\ref{lem:basis}, $R$ has a nonsingular induced subgraph $X_0$ of order $15$ with inertia $(11,0,4)$, so $X_0\in\{W_5,X\}$. The order computation of Section~\ref{sec:order} shows that no reduced graph of rank $15$ with $n^-=4$ has more than $15$ vertices. Therefore $R=X_0$.
+\end{proof}
+
+\paragraph{Checks.} The enumeration was implemented twice. The main program uses FLINT~\cite{FLINT} for exact determinants, inverses and characteristic polynomials, and nauty certificates~\cite{McKayPiperno2014} for isomorphism. The second program is written separately. It uses fraction-free Bareiss elimination and Gauss--Jordan inversion over Python fractions, symmetric $LDL^{\mathsf T}$ congruence (Sylvester's law of inertia) for inertia, and invariant buckets with VF2 isomorphism tests~\cite{networkx}; it uses neither nauty nor FLINT. The two programs agree on every level. Both implement Theorem~\ref{thm:closure}, so they share its mathematics but not its code. A separate script re-verifies the inertia of every listed graph and checks that no two listed graphs are isomorphic, again without nauty or FLINT. A brute-force check that does not use Lemma~\ref{lem:jacobi} runs through all graphs on at most $10$ vertices generated by \texttt{geng}~\cite{McKayPiperno2014}. It computes their inertia directly and reproduces the columns $N\le10$ of Table~\ref{tab:census}. Two published results bear on the remaining levels. Akbari, Cameron and Khosrovshahi listed all reduced graphs of rank at most $7$ by order and number of negative eigenvalues~\cite[Table~2]{ACK2004}. Their diagonal entries are the counts of nonsingular graphs; for $n^-\le4$ they agree with Table~\ref{tab:census} at orders $4$--$7$. The CFJK value $\mathrm{NPO}(5)=16$~\cite{CFJK2013} was obtained by a different computer search, and it is equivalent to the emptiness of the levels $N\ge16$ for $k=4$.
+
+For $k\le3$ the same programs return $A_1=1$, $A_2=3$ (attained only by $C_5$) and $A_3=6$ (attained by exactly two nonsingular graphs on nine vertices, as stated in~\cite{AEKPT2026}). A separate generator handles all point-determining graphs with $n^-\le3$, using Sumner's deletion lemma~\cite{Sumner1973}. It finds exactly $32$ maximal connected reduced graphs with three negative eigenvalues, of orders $9$ to $14$, as Torga\v{s}ev proved~\cite{Torgasev1989}. Finally, the $14$-vertex graph obtained from $W_5$ by deleting a vertex of the $K_5$, which Chen and Li show to have inertia $(10,0,4)$~\cite{ChenLi2026}, appears in the level $N=14$ of Table~\ref{tab:census}.
+
+\section{The two extremal graphs}\label{sec:extremal}
+
+\paragraph{The graph $W_5$ ($G_4$ of~\cite{CFJK2013}, $W_5$ of~\cite{ChenLi2026}).} Its vertices are the five points of $\{1,\dots,5\}$, forming a $K_5$, and the ten $2$-subsets, forming the Petersen graph (disjoint pairs adjacent). A point is joined to the pairs that contain it. It has $45$ edges and degrees $8^5\,5^{10}$, and
+\[
+\chi_{W_5}(x)=(x-1)^5\,(x^2-7x+4)\,(x^2+3x-1)^4 .
+\]
+
+\paragraph{The affine-plane graph $X$ ($G_5$ of~\cite{CFJK2013}).} Let the points of $AG(2,3)$ be $\mathbb Z_3^2$, with the four parallel classes given by $y$, $x$, $y-x$ and $y+x$ constant. The vertices of $X$ are the nine points and the six lines of the last two classes. Two points are adjacent if they lie on a common line of the first two classes, so the points span the $3\times3$ rook graph. A point is adjacent to the lines through it. Two line-vertices are adjacent exactly when they are parallel, so the six line-vertices form $2K_3$. The graph $X$ has $42$ edges, degrees $6^9\,5^6$, an automorphism group of order $72$, and
+\[
+\chi_{X}(x)=(x-2)\,(x-1)^4\,(x^2-6x+2)\,(x^2+3x-1)^4 .
+\]
+
+In both polynomials every factor except $x^2+3x-1$ has only positive roots, since $x^2-7x+4$ and $x^2-6x+2$ have positive roots. Each copy of $x^2+3x-1$ contributes one root of each sign. So both graphs have inertia $(11,0,4)$, and both have the negative eigenvalue $-(3+\sqrt{13})/2$ with multiplicity four. Their degree sequences differ, so they are not isomorphic. A standard-library script rebuilds both graphs from these definitions and recomputes the polynomials and the inertia by two exact methods. It also checks that the two graphs are reduced and connected, and that they are the two order-$15$ graphs found by the enumeration. Building CFJK's $G_4$ and $G_5$ from their descriptions gives graphs isomorphic to $W_5$ and $X$; in CFJK's labelling of the Paley graph of order nine, the six maximal independent sets are exactly the lines of the two diagonal classes of the $3\times3$ grid.
+
+\section{The maximum order}\label{sec:order}
+
+Let $G$ be reduced with $n^-(G)=k$ and rank $r$, and let $X$ be a nonsingular basis as in Lemma~\ref{lem:basis}. Put $M=A(X)^{-1}$. Since $\rk A(G)=\rk A(X)$, each vertex $u$ of $G$ is determined by its neighbourhood vector $b_u=A[X,u]$, and
+\[
+A(G)_{uw}=b_u^{\mathsf T}Mb_w,\qquad b_u^{\mathsf T}Mb_u=0 .
+\]
+Distinct vertices have distinct vectors because $G$ has no twins, and $b_u\ne0$ because $G$ has no isolated vertices. Conversely, let $T$ be a set of nonzero isotropic $0/1$ vectors containing the columns of $A(X)$, with every pairwise value $b^{\mathsf T}Mb'$ in $\{0,1\}$. Then $T$ defines a reduced graph with basis $X$, and its inertia is that of $X$ with extra zeros. The columns of $A(X)$ are compatible with every isotropic vector, since $A(X)Mb=b$. So the largest reduced graph with basis $X$ has $|X|+\omega(C_X)$ vertices. This is the algorithm of Akbari, Cameron and Khosrovshahi~\cite[\S3]{ACK2004}, restricted to bases with $n^-=4$. Here $C_X$ is the compatibility graph on the remaining nonzero isotropic vectors, and $\omega$ is the clique number.
+
+Taking $X$ over all graphs in Table~\ref{tab:census} with $n^-=4$, we compute $\omega(C_X)$ exactly. The largest reduced order for each rank $r=5,\dots,15$, equivalently $n^+=1,\dots,11$, is
+\[
+5,\ 10,\ 18,\ 30,\ 26,\ 22,\ 20,\ 17,\ 15,\ 15,\ 15 .
+\]
+The values for ranks $5$, $6$ and $7$ agree with~\cite[Table~2]{ACK2004}, and enumerating all cliques (not only maximum ones) reproduces that table's full counts of reduced graphs of rank at most $7$ with three and four negative eigenvalues. An independent implementation of this step, using exact rational inversion and a separate clique search, returns the same values for every rank. The maximum $30$ occurs only at rank $8$. Enumerating all maximum cliques for the $3648$ bases of rank $8$ and merging isomorphic results gives exactly four reduced graphs of order $30$, with $155$, $187$, $211$ and $225$ edges. Their exact inertia is $(4,22,4)$ and all four are connected; their \texttt{graph6} codes are in the verification directory. Akbari, Cameron and Khosrovshahi computed that there are exactly four reduced graphs of rank $8$ and maximum order~\cite[Table~1]{ACK2004}, so ours are theirs, and our computation confirms their count independently. They arise from $K_2$ by the two doubling constructions of~\cite[\S4]{ACK2004}. Construction~A, due to Kotlov and Lov\'asz~\cite{KotlovLovasz1996} (see also~\cite[Theorem~2.2]{AEKPT2026}), sends $G$, with vertex set $V$ and adjacency matrix $A$, to the graph on $V\cup V'\cup\{x,y\}$ with adjacency matrix
+\[
+\kappa(A)=\begin{pmatrix}A&A&\mathbf 0&\mathbf 0\\A&A&\mathbf 1&\mathbf 0\\\mathbf 0&\mathbf 1&0&1\\\mathbf 0&\mathbf 0&1&0\end{pmatrix}.
+\]
+Construction~B, $\kappa'$, also joins $y$ to every vertex of $V$. The four graphs are $\kappa^{3-j}\kappa'^{\,j}(K_2)$ for $j=0,1,2,3$, with $155$, $187$, $211$ and $225$ edges, and along these words each step raises $n^+$ and $n^-$ by one. (Applying $\kappa'$ after $\kappa$ instead gives graphs with five negative eigenvalues.) In the same way, the reduced graphs of order $14$ with three negative eigenvalues are exactly $\kappa^{2-j}\kappa'^{\,j}(K_2)$, $j=0,1,2$, and those of order $6$ with two are $\kappa(K_2)$ and $\kappa'(K_2)$. This proves Theorem~\ref{thm:order}. The values $18$ and $30$ at ranks $7$ and $8$ equal $m(7)$ and $m(8)$, so at those ranks the condition $n^-=4$ costs nothing; from rank $9$ on, the maxima $26,22,20,17,15,15,15$ lie far below $m(r)$. For rank $15$ the bases $W_5$ and $X$ admit no further compatible vectors, which completes the proof of Theorem~\ref{thm:main}. The same computation for $k=2,3$ returns Torga\v{s}ev's maximum orders $6$ and $14$.
+
+\section{Scope and further questions}
+
+The results are computer-assisted theorems. Their mathematical content is Lemmas~\ref{lem:basis}--\ref{lem:jacobi} and Theorem~\ref{thm:closure}; the remaining claims are finite exact computations, which are replayed by the supplied scripts. Nothing here is formalized in a proof assistant. The census counts graphs up to isomorphism, including disconnected ones; the extremal graphs happen to be connected, so the theorem also determines Torga\v{s}ev's connected version of $A_4$.
+
+For $k\le4$, every reduced graph with $k$ negative eigenvalues and $2^{k+1}-2$ vertices has rank exactly $2k$, and the extremal graphs are the $k$ graphs $\kappa^{k-1-j}\kappa'^{\,j}(K_2)$, $0\le j\le k-1$. These are the extremal graphs of rank $2k$ conjectured by Akbari, Cameron and Khosrovshahi~\cite{ACK2004}. For $k=5$ and $6$ we checked exactly that these words give $k$ pairwise non-isomorphic reduced graphs with inertia $(k,2^{k+1}-2-2k,k)$.
+
+\begin{remark}[Question]
+Does every reduced graph with exactly $k$ negative eigenvalues and $2^{k+1}-2$ vertices have rank $2k$? This holds for $k\le4$. Where it holds, the rank bound together with the extremal classification conjectured by Akbari, Cameron and Khosrovshahi at rank $2k$ would identify the extremal graphs for Mohammadian's bound as the $k$ graphs above.
+\end{remark}
+
+The next case remains open. The graph $W_6$ gives $A_5\ge16$; so do three variants of it and the $21$-vertex graph $G_6$ of~\cite{CFJK2013}, built from the Clebsch graph and $K_5$, and CFJK suspect that $\mathrm{NPO}(6)=22$, which is equivalent to $A_5=16$. Some evidence in that direction: a nonsingular graph with inertia $(17,0,5)$ would, by Lemma~\ref{lem:jacobi} and $A_4=11$, be a one-vertex extension of a nonsingular graph with inertia $(16,0,5)$, and none of the six $21$-vertex graphs just mentioned (the Clebsch construction gives two non-isomorphic, cospectral graphs) has such an extension; we checked all $2^{21}$ neighbourhoods of each exactly. Heuristic beam searches through nonsingular graphs with $n^-=5$ also stopped at $21$ vertices. This is not a proof. Mohammadian's conjecture predicts $n(5)\le62$. Already $A_4=11$ exceeds $\binom{5}{2}$, and the $k^{7/3}$ growth of~\cite{EKPS2026} rules out any quadratic bound. The same method applies to $k=5$ in principle. As a rough heuristic, the census grows from $81$ graphs with $n^-=3$ to $45{,}155$ with $n^-=4$, so a $k=5$ run would need a far more efficient implementation, for instance canonical augmentation.
+
+\paragraph{Reproduction.} The verification directory contains both enumerators, the brute-force census, the order computation, the extremal-graph checker, and the complete list of $45{,}242$ nonsingular graphs with $n^-\le4$ with their exact inertias.
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

@@ -1,0 +1,53 @@
+PASS metadata drat_verified: rejected (('monohex', 'no verified upper bound'))
+PASS metadata k: rejected (('monohex', 'upper bound is not at k = h + 1'))
+PASS metadata proof_sha256: rejected (('hash not in log', 'monohex', 'proof_sha256'))
+PASS metadata evidence_log: rejected ([Errno 2] No such file or directory: '<repo>/maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/missing.log')
+PASS missing tile: rejected (('ledger does not match the enumeration', {('sq', ((0, 1), (1, 0), (1, 1), (1, 2), (2, 1)))}))
+PASS wrong witness corona count: rejected (('monohex', 'witness has', 3, 'coronas'))
+Ledger controls: all 6 corrupted metadata ledgers rejected
+PASS genuine dihex proof substituted for straight trihex: rejected (('formula log is for another tile', 'straight trihex'))
+PASS missing scope: rejected (('missing or ambiguous formula scope', 'monohex'))
+PASS duplicate scope: rejected (('missing or ambiguous formula scope', 'monohex'))
+PASS conflicting scope: rejected (('missing or ambiguous formula scope', 'monohex'))
+PASS malformed second scope: rejected (('missing or ambiguous formula scope', 'monohex'))
+PASS unknown-grid second scope: rejected (('missing or ambiguous formula scope', 'monohex'))
+PASS wrong grid: rejected (('formula log is for another tile', 'monohex'))
+PASS wrong k: rejected (('formula log has wrong bound or imbalance', 'monohex'))
+PASS zero imbalance: rejected (('formula log has wrong bound or imbalance', 'monohex'))
+PASS wrong positive imbalance: rejected (('formula log has wrong bound or imbalance', 'monohex'))
+PASS negative imbalance: rejected (('invalid formula scope', 'monohex'))
+PASS malformed k: rejected (('invalid formula scope', 'monohex'))
+PASS unexpected slots field: rejected (('invalid formula scope', 'monohex'))
+PASS truncated scope: rejected (('invalid formula scope', 'monohex'))
+PASS trailing scope text: rejected (('invalid formula scope', 'monohex'))
+PASS wrong placements: rejected (('formula log has wrong dimensions', 'monohex'))
+PASS wrong vars: rejected (('formula log has wrong dimensions', 'monohex'))
+PASS wrong clauses: rejected (('formula log has wrong dimensions', 'monohex'))
+PASS extra coordinate: rejected (('invalid formula cells', 'monohex'))
+PASS missing coordinate: rejected (('invalid formula cells', 'monohex'))
+PASS float coordinate: rejected (('invalid formula cells', 'monohex'))
+PASS boolean coordinate: rejected (('invalid formula cells', 'monohex'))
+PASS string coordinate: rejected (('invalid formula cells', 'monohex'))
+PASS empty cells: rejected (('invalid formula cells', 'monohex'))
+PASS null cell: rejected (('invalid formula cells', 'monohex'))
+PASS invalid JSON cells: rejected (('invalid formula cells', 'monohex'))
+PASS duplicate cells: rejected (('formula log is for another tile', 'monohex'))
+PASS same-size wrong tile: rejected (('formula log is for another tile', 'straight trihex'))
+Log controls: all 28 swapped-record/scope corruptions rejected
+ledger: 12 polyhexes (<= 4 cells) + straight 5-row, 21 polyominoes (<= 5 cells); every value has a freshly checked witness and a retained DRAT verification record; max h: polyhex 5, polyomino 3
+PASS hex translated: accepted
+ledger: 12 polyhexes (<= 4 cells) + straight 5-row, 21 polyominoes (<= 5 cells); every value has a freshly checked witness and a retained DRAT verification record; max h: polyhex 5, polyomino 3
+PASS hex rotated: accepted
+ledger: 12 polyhexes (<= 4 cells) + straight 5-row, 21 polyominoes (<= 5 cells); every value has a freshly checked witness and a retained DRAT verification record; max h: polyhex 5, polyomino 3
+PASS hex reflected: accepted
+ledger: 12 polyhexes (<= 4 cells) + straight 5-row, 21 polyominoes (<= 5 cells); every value has a freshly checked witness and a retained DRAT verification record; max h: polyhex 5, polyomino 3
+PASS hex reordered: accepted
+ledger: 12 polyhexes (<= 4 cells) + straight 5-row, 21 polyominoes (<= 5 cells); every value has a freshly checked witness and a retained DRAT verification record; max h: polyhex 5, polyomino 3
+PASS sq translated: accepted
+ledger: 12 polyhexes (<= 4 cells) + straight 5-row, 21 polyominoes (<= 5 cells); every value has a freshly checked witness and a retained DRAT verification record; max h: polyhex 5, polyomino 3
+PASS sq rotated: accepted
+ledger: 12 polyhexes (<= 4 cells) + straight 5-row, 21 polyominoes (<= 5 cells); every value has a freshly checked witness and a retained DRAT verification record; max h: polyhex 5, polyomino 3
+PASS sq reflected: accepted
+ledger: 12 polyhexes (<= 4 cells) + straight 5-row, 21 polyominoes (<= 5 cells); every value has a freshly checked witness and a retained DRAT verification record; max h: polyhex 5, polyomino 3
+PASS sq reordered: accepted
+Log controls: all 8 equivalent-geometry fixtures accepted

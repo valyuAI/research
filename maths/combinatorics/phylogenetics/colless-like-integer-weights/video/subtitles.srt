@@ -1,0 +1,431 @@
+1
+00:00:00,000 --> 00:00:05,251
+Look at these two branching shapes. On the left, each fork splits in two, then in two
+
+2
+00:00:05,251 --> 00:00:09,019
+again. On the right, one fork spreads straight into six tips.
+
+3
+00:00:09,019 --> 00:00:14,208
+Could a symmetry score mistake a tree made from these for a perfectly balanced tree?
+
+4
+00:00:14,600 --> 00:00:17,642
+These are rooted trees. The top point is the root.
+
+5
+00:00:17,642 --> 00:00:21,718
+Each line leads to a child, and a point with no children is a leaf.
+
+6
+00:00:21,718 --> 00:00:26,768
+The picture records branching relationships, not the physical lengths of the lines.
+
+7
+00:00:27,167 --> 00:00:30,216
+Here, fully symmetric has a precise meaning.
+
+8
+00:00:30,216 --> 00:00:34,373
+At every fork, all the child trees must have the same shape.
+
+9
+00:00:34,373 --> 00:00:37,422
+Both of these separate trees pass that test.
+
+10
+00:00:37,422 --> 00:00:40,679
+But their shapes are different from each other.
+
+11
+00:00:41,067 --> 00:00:46,619
+Now give every point a weight. For our first example, use the number of children plus
+
+12
+00:00:46,619 --> 00:00:50,735
+one. A leaf weighs one. A point with two children weighs three.
+
+13
+00:00:50,735 --> 00:00:53,283
+A point with six children weighs seven.
+
+14
+00:00:53,667 --> 00:00:59,109
+Add the weights on the left. There are three branching points, each worth three, and
+
+15
+00:00:59,109 --> 00:01:03,579
+four leaves, each worth one. Three plus six plus four makes thirteen.
+
+16
+00:01:03,579 --> 00:01:06,171
+We will call this sum the weighted size.
+
+17
+00:01:06,567 --> 00:01:11,236
+On the right, the root weighs seven and the six leaves contribute six.
+
+18
+00:01:11,236 --> 00:01:16,706
+That also makes thirteen. Different shapes have landed on exactly the same number.
+
+19
+00:01:16,706 --> 00:01:19,575
+This is a collision between weighted sizes.
+
+20
+00:01:19,967 --> 00:01:24,938
+Build a new tree by putting these two trees under a new root.
+
+21
+00:01:24,938 --> 00:01:28,362
+Its left child has weighted size thirteen.
+
+22
+00:01:28,362 --> 00:01:32,274
+Its right child also has weighted size thirteen.
+
+23
+00:01:32,274 --> 00:01:36,431
+So a comparison of the two sizes sees no imbalance.
+
+24
+00:01:36,800 --> 00:01:40,527
+Inside each child, every fork was already symmetric.
+
+25
+00:01:40,527 --> 00:01:43,825
+Every local comparison therefore returns zero.
+
+26
+00:01:43,825 --> 00:01:49,917
+Adding all those zeros still gives zero, even though the new root joins two different
+
+27
+00:01:49,917 --> 00:01:52,856
+shapes. You can see the mistake directly.
+
+28
+00:01:53,233 --> 00:01:56,798
+A Colless-like index adds these local differences.
+
+29
+00:01:56,798 --> 00:02:01,718
+It is called sound if zero happens exactly for fully symmetric trees.
+
+30
+00:02:01,718 --> 00:02:05,283
+Our example breaks soundness for this weight rule.
+
+31
+00:02:05,283 --> 00:02:10,345
+Soundness concerns the zero score, not the ranking of every other tree.
+
+32
+00:02:10,733 --> 00:02:16,079
+Perhaps we only chose bad weights. Could larger whole numbers avoid every collision?
+
+33
+00:02:16,079 --> 00:02:21,425
+The theorem says no. Whatever nonnegative whole-number weights you choose, some pair
+
+34
+00:02:21,425 --> 00:02:24,989
+of different symmetric trees will share a weighted size.
+
+35
+00:02:25,367 --> 00:02:29,944
+To see why, first describe a symmetric tree by its branching recipe.
+
+36
+00:02:29,944 --> 00:02:35,667
+The list two, three means two children at the first level, then three children at the
+
+37
+00:02:35,667 --> 00:02:38,831
+next. There are two times three, or six leaves.
+
+38
+00:02:39,200 --> 00:02:45,230
+Reverse that recipe to three, two. The shape changes: three branches come first, rather
+
+39
+00:02:45,230 --> 00:02:48,141
+than two. But the leaf count is still six.
+
+40
+00:02:48,141 --> 00:02:53,408
+Multiplication forgets the order of the recipe, while the tree remembers it.
+
+41
+00:02:53,800 --> 00:02:57,444
+For the counting proof, use the numbers two, three and four.
+
+42
+00:02:57,444 --> 00:03:00,421
+With one of each, there are six different orders.
+
+43
+00:03:00,421 --> 00:03:05,644
+Every order gives twenty-four leaves. These are six different symmetric trees with the
+
+44
+00:03:05,644 --> 00:03:06,616
+same leaf count.
+
+45
+00:03:07,000 --> 00:03:11,689
+Next take two copies of each number. There are ninety different recipes.
+
+46
+00:03:11,689 --> 00:03:17,029
+In general, take m copies of each. Their leaf count is twenty-four to the power m.
+
+47
+00:03:17,029 --> 00:03:20,416
+We need to count how many distinct recipes share it.
+
+48
+00:03:20,800 --> 00:03:26,599
+If all three m positions were different, there would be three m factorial arrangements.
+
+49
+00:03:26,599 --> 00:03:29,265
+Factorial means multiplying down to one.
+
+50
+00:03:29,265 --> 00:03:34,398
+But the m copies of two are interchangeable, and so are the threes and fours.
+
+51
+00:03:34,398 --> 00:03:36,664
+Divide by m factorial three times.
+
+52
+00:03:37,033 --> 00:03:40,403
+This exact count is not twenty-seven to the power m.
+
+53
+00:03:40,403 --> 00:03:46,301
+That number counts every string of length three m using three symbols, including unbalanced
+
+54
+00:03:46,301 --> 00:03:51,745
+mixtures. Our balanced mixture is the largest group when strings are sorted by their
+
+55
+00:03:51,745 --> 00:03:53,041
+three symbol counts.
+
+56
+00:03:53,433 --> 00:03:56,452
+There are only a quadratic number of those groups.
+
+57
+00:03:56,452 --> 00:04:01,705
+So our count is at least twenty-seven to the power m, divided by that quadratic factor.
+
+58
+00:04:01,705 --> 00:04:06,897
+The factor slows growth, but it cannot permanently defeat the larger exponential base.
+
+59
+00:04:07,267 --> 00:04:09,751
+Now count the possible weighted sizes.
+
+60
+00:04:09,751 --> 00:04:15,439
+First remove the leaves. Every tree in the family has exactly the same number, so their
+
+61
+00:04:15,439 --> 00:04:20,931
+total leaf weight is identical. Subtracting that common contribution preserves every
+
+62
+00:04:20,931 --> 00:04:22,435
+equality between sizes.
+
+63
+00:04:22,833 --> 00:04:28,019
+What remains is the internal sum. Each point there has two, three or four children.
+
+64
+00:04:28,019 --> 00:04:30,768
+Let M be the largest of those three weights.
+
+65
+00:04:30,768 --> 00:04:34,953
+The number of internal points is smaller than the number of leaves.
+
+66
+00:04:35,333 --> 00:04:39,097
+You can see this bound by looking upwards from the leaves.
+
+67
+00:04:39,097 --> 00:04:43,184
+Each earlier level has at most half as many points as the next.
+
+68
+00:04:43,184 --> 00:04:48,245
+Even adding every internal level gives fewer points than the leaf level alone.
+
+69
+00:04:48,633 --> 00:04:54,366
+The internal sum is therefore a whole number between zero and M times twenty-four to
+
+70
+00:04:54,366 --> 00:04:58,119
+the power m. Think of those integers as numbered boxes.
+
+71
+00:04:58,119 --> 00:05:02,145
+Each recipe must go into the box matching its internal sum.
+
+72
+00:05:02,533 --> 00:05:07,047
+When there are more recipes than boxes, two recipes must share a box.
+
+73
+00:05:07,047 --> 00:05:12,608
+Here is that pigeonhole principle on a small illustration: four objects cannot occupy
+
+74
+00:05:12,608 --> 00:05:18,037
+three boxes without a collision. The proof applies the same idea to enormous trees.
+
+75
+00:05:18,433 --> 00:05:21,827
+For a concrete comparison, set M equal to five.
+
+76
+00:05:21,827 --> 00:05:27,242
+The graph shows the exact recipe count divided by the upper bound on boxes.
+
+77
+00:05:27,242 --> 00:05:33,668
+Above one, a collision is forced. The count eventually crosses because twenty-seven grows
+
+78
+00:05:33,668 --> 00:05:35,401
+faster than twenty-four.
+
+79
+00:05:35,800 --> 00:05:38,733
+That crossing does not rely on M being five.
+
+80
+00:05:38,733 --> 00:05:41,599
+Any fixed choice of M is eventually beaten.
+
+81
+00:05:41,599 --> 00:05:47,598
+Two different symmetric trees then have the same internal sum, the same leaf contribution,
+
+82
+00:05:47,598 --> 00:05:50,464
+and therefore the same total weighted size.
+
+83
+00:05:50,833 --> 00:05:54,344
+Join the colliding trees under one root, just as before.
+
+84
+00:05:54,344 --> 00:05:59,046
+Every local comparison gives zero, but the root has different child shapes.
+
+85
+00:05:59,046 --> 00:06:04,438
+This completes a hand proof for all nonnegative integer weight functions, not just the
+
+86
+00:06:04,438 --> 00:06:06,193
+examples a computer checked.
+
+87
+00:06:06,567 --> 00:06:12,346
+The precise theorem is stronger. The weights at two, three and four only need to be whole
+
+88
+00:06:12,346 --> 00:06:17,866
+multiples of one positive unit. Divide by that unit and the boxes are integers again.
+
+89
+00:06:17,866 --> 00:06:19,815
+Rational weights are included.
+
+90
+00:06:20,200 --> 00:06:22,579
+The leaf weight need not fit that unit.
+
+91
+00:06:22,579 --> 00:06:25,080
+It cancels because the leaf counts agree.
+
+92
+00:06:25,080 --> 00:06:28,619
+Other branching weights do not enter this counting family.
+
+93
+00:06:28,619 --> 00:06:34,048
+These restrictions matter: the result does not say that every possible weight rule fails.
+
+94
+00:06:34,433 --> 00:06:38,764
+Mir, Rotger and Rossello proposed the whole-number conjecture in 2018.
+
+95
+00:06:38,764 --> 00:06:44,207
+They already gave some collisions, including one for powers of two, and sound irrational
+
+96
+00:06:44,207 --> 00:06:49,465
+weight rules. This result is the universal impossibility proof, not the first example
+
+97
+00:06:49,465 --> 00:06:50,393
+of a collision.
+
+98
+00:06:50,767 --> 00:06:56,286
+What about weights built from two independent units, such as one and the square root
+
+99
+00:06:56,286 --> 00:07:02,201
+of two? Then our boxes become a grid. This counting argument no longer forces a collision.
+
+100
+00:07:02,201 --> 00:07:05,815
+Whether some such rule is sound remains unsettled here.
+
+101
+00:07:06,200 --> 00:07:10,572
+Remember the three steps. Different symmetric trees can share a size.
+
+102
+00:07:10,572 --> 00:07:16,210
+Equal sizes hide an asymmetric join. And counting forces that collision for every allowed
+
+103
+00:07:16,210 --> 00:07:21,659
+whole-number rule. Correctness confidence is high; originality confidence is moderate,
+
+104
+00:07:21,659 --> 00:07:24,320
+because the literature search was bounded.
+
+105
+00:07:24,700 --> 00:07:28,563
+The paper and its example checker accompany this video.
+
+106
+00:07:28,563 --> 00:07:34,744
+The general theorem is a written mathematical proof; the small checks are illustrations,
+
+107
+00:07:34,744 --> 00:07:37,694
+not its replacement. Valyu Research, 2026.
+
+108
+00:07:37,694 --> 00:07:40,012
+Narration uses a synthetic voice.

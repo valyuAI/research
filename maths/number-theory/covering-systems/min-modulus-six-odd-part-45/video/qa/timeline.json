@@ -1,0 +1,233 @@
+[
+  {
+    "id": "c01",
+    "scene": "ClockCover",
+    "start": 0.0,
+    "duration": 17.52,
+    "end": 17.52
+  },
+  {
+    "id": "c02",
+    "scene": "ClockCover",
+    "start": 18.066666666666656,
+    "duration": 16.656,
+    "end": 34.722666666666655
+  },
+  {
+    "id": "c03",
+    "scene": "ClockCover",
+    "start": 35.2666666666669,
+    "duration": 13.608,
+    "end": 48.8746666666669
+  },
+  {
+    "id": "c04",
+    "scene": "ClockCover",
+    "start": 49.39999999999989,
+    "duration": 13.848,
+    "end": 63.24799999999989
+  },
+  {
+    "id": "c05",
+    "scene": "ClockCover",
+    "start": 63.76666666666624,
+    "duration": 13.512,
+    "end": 77.27866666666624
+  },
+  {
+    "id": "c06",
+    "scene": "RemainderBoards",
+    "start": 77.797396,
+    "duration": 15.96,
+    "end": 93.757396
+  },
+  {
+    "id": "c07",
+    "scene": "RemainderBoards",
+    "start": 94.29739599999999,
+    "duration": 18.0,
+    "end": 112.29739599999999
+  },
+  {
+    "id": "c08",
+    "scene": "RemainderBoards",
+    "start": 112.83072933333366,
+    "duration": 14.808,
+    "end": 127.63872933333366
+  },
+  {
+    "id": "c09",
+    "scene": "RemainderBoards",
+    "start": 128.16406266666658,
+    "duration": 14.952,
+    "end": 143.11606266666658
+  },
+  {
+    "id": "c10",
+    "scene": "Doubling",
+    "start": 143.660807,
+    "duration": 16.2,
+    "end": 159.860807
+  },
+  {
+    "id": "c11",
+    "scene": "Doubling",
+    "start": 160.39414033333333,
+    "duration": 15.0,
+    "end": 175.39414033333333
+  },
+  {
+    "id": "c12",
+    "scene": "Doubling",
+    "start": 175.92747366666686,
+    "duration": 14.352,
+    "end": 190.2794736666669
+  },
+  {
+    "id": "c13",
+    "scene": "Prices",
+    "start": 190.825521,
+    "duration": 17.52,
+    "end": 208.34552100000002
+  },
+  {
+    "id": "c14",
+    "scene": "Prices",
+    "start": 208.89218766666667,
+    "duration": 14.904,
+    "end": 223.79618766666667
+  },
+  {
+    "id": "c15",
+    "scene": "Prices",
+    "start": 224.32552100000032,
+    "duration": 15.216,
+    "end": 239.5415210000003
+  },
+  {
+    "id": "c16",
+    "scene": "Prices",
+    "start": 240.05885433333324,
+    "duration": 13.848,
+    "end": 253.90685433333323
+  },
+  {
+    "id": "c17",
+    "scene": "TheTrap",
+    "start": 254.42356800000002,
+    "duration": 13.512,
+    "end": 267.935568
+  },
+  {
+    "id": "c18",
+    "scene": "TheTrap",
+    "start": 268.45690133333335,
+    "duration": 13.8,
+    "end": 282.25690133333336
+  },
+  {
+    "id": "c19",
+    "scene": "TheTrap",
+    "start": 282.7902346666669,
+    "duration": 12.168,
+    "end": 294.9582346666669
+  },
+  {
+    "id": "c20",
+    "scene": "TheTrap",
+    "start": 295.4902346666668,
+    "duration": 16.56,
+    "end": 312.0502346666668
+  },
+  {
+    "id": "c21",
+    "scene": "ExactEnumeration",
+    "start": 312.588282,
+    "duration": 14.112,
+    "end": 326.700282
+  },
+  {
+    "id": "c22",
+    "scene": "ExactEnumeration",
+    "start": 327.2216153333333,
+    "duration": 17.664,
+    "end": 344.8856153333333
+  },
+  {
+    "id": "c23",
+    "scene": "ExactEnumeration",
+    "start": 345.42161533333353,
+    "duration": 14.616,
+    "end": 360.0376153333335
+  },
+  {
+    "id": "c24",
+    "scene": "ExactEnumeration",
+    "start": 360.55494866666663,
+    "duration": 18.6,
+    "end": 379.15494866666666
+  },
+  {
+    "id": "c25",
+    "scene": "ExactEnumeration",
+    "start": 379.68828199999973,
+    "duration": 15.552,
+    "end": 395.24028199999975
+  },
+  {
+    "id": "c26",
+    "scene": "ExactEnumeration",
+    "start": 395.7882819999993,
+    "duration": 19.248,
+    "end": 415.0362819999993
+  },
+  {
+    "id": "c27",
+    "scene": "ExactEnumeration",
+    "start": 415.55494866666544,
+    "duration": 16.92,
+    "end": 432.47494866666545
+  },
+  {
+    "id": "c28",
+    "scene": "FiniteAndInfinite",
+    "start": 433.017058,
+    "duration": 15.96,
+    "end": 448.977058
+  },
+  {
+    "id": "c29",
+    "scene": "FiniteAndInfinite",
+    "start": 449.517058,
+    "duration": 14.904,
+    "end": 464.421058
+  },
+  {
+    "id": "c30",
+    "scene": "FiniteAndInfinite",
+    "start": 464.9503913333338,
+    "duration": 17.256,
+    "end": 482.2063913333338
+  },
+  {
+    "id": "c31",
+    "scene": "FiniteAndInfinite",
+    "start": 482.75039133333354,
+    "duration": 16.2,
+    "end": 498.9503913333335
+  },
+  {
+    "id": "c32",
+    "scene": "FiniteAndInfinite",
+    "start": 499.48372466666655,
+    "duration": 17.952,
+    "end": 517.4357246666666
+  },
+  {
+    "id": "c33",
+    "scene": "FiniteAndInfinite",
+    "start": 517.9837246666663,
+    "duration": 16.704,
+    "end": 534.6877246666663
+  }
+]

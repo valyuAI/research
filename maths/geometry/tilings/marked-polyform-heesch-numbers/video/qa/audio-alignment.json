@@ -1,0 +1,177 @@
+{
+  "method": "Central waveform correlation after mono 8kHz decoding; encoding delay allowed. Not listening.",
+  "minimum_correlation": 0.9765919024976532,
+  "maximum_absolute_offset_seconds": 0.021375,
+  "clips": [
+    {
+      "id": "t01",
+      "correlation": 0.9862800517330873,
+      "offset_seconds": 0.021375
+    },
+    {
+      "id": "t02",
+      "correlation": 0.9922863681119898,
+      "offset_seconds": 0.020375
+    },
+    {
+      "id": "t03",
+      "correlation": 0.9853909974925928,
+      "offset_seconds": 0.021375
+    },
+    {
+      "id": "t04",
+      "correlation": 0.9872230771870856,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "t05",
+      "correlation": 0.9861662878275974,
+      "offset_seconds": 0.021375
+    },
+    {
+      "id": "t06",
+      "correlation": 0.9884942493049873,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "t07",
+      "correlation": 0.9830885660218207,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "t08",
+      "correlation": 0.9880670359262275,
+      "offset_seconds": 0.02075
+    },
+    {
+      "id": "t09",
+      "correlation": 0.9967769185372659,
+      "offset_seconds": 0.02125
+    },
+    {
+      "id": "t10",
+      "correlation": 0.9966175895508015,
+      "offset_seconds": 0.02025
+    },
+    {
+      "id": "t11",
+      "correlation": 0.9972268195122016,
+      "offset_seconds": 0.02125
+    },
+    {
+      "id": "t12",
+      "correlation": 0.9961393518206303,
+      "offset_seconds": 0.02125
+    },
+    {
+      "id": "t13",
+      "correlation": 0.9964412412710743,
+      "offset_seconds": 0.02025
+    },
+    {
+      "id": "t14",
+      "correlation": 0.9967917016945936,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "t15",
+      "correlation": 0.9955572584093019,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "t16",
+      "correlation": 0.9907605911396494,
+      "offset_seconds": 0.021375
+    },
+    {
+      "id": "t17",
+      "correlation": 0.9904113630455987,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "t18",
+      "correlation": 0.9893330073978129,
+      "offset_seconds": 0.02075
+    },
+    {
+      "id": "t19",
+      "correlation": 0.9870624492136809,
+      "offset_seconds": 0.02075
+    },
+    {
+      "id": "t20",
+      "correlation": 0.984639824666811,
+      "offset_seconds": 0.02075
+    },
+    {
+      "id": "t21",
+      "correlation": 0.9853460690630526,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "t22",
+      "correlation": 0.9836654226791234,
+      "offset_seconds": 0.02125
+    },
+    {
+      "id": "t23",
+      "correlation": 0.9838631267333326,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "t24",
+      "correlation": 0.9895030555678179,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "t25",
+      "correlation": 0.986792817304276,
+      "offset_seconds": 0.020625
+    },
+    {
+      "id": "t26",
+      "correlation": 0.9909052080080158,
+      "offset_seconds": 0.02025
+    },
+    {
+      "id": "t27",
+      "correlation": 0.9839097631170985,
+      "offset_seconds": 0.021375
+    },
+    {
+      "id": "t28",
+      "correlation": 0.9916874659009608,
+      "offset_seconds": 0.020375
+    },
+    {
+      "id": "t29",
+      "correlation": 0.9765919024976532,
+      "offset_seconds": 0.02075
+    },
+    {
+      "id": "t30",
+      "correlation": 0.9878469955726861,
+      "offset_seconds": 0.021375
+    },
+    {
+      "id": "t31",
+      "correlation": 0.979998130899005,
+      "offset_seconds": 0.02075
+    },
+    {
+      "id": "t32",
+      "correlation": 0.9996655346838375,
+      "offset_seconds": 0.021375
+    },
+    {
+      "id": "t33",
+      "correlation": 0.999734166647216,
+      "offset_seconds": 0.020375
+    },
+    {
+      "id": "t34",
+      "correlation": 0.9997891615142752,
+      "offset_seconds": 0.021
+    }
+  ]
+}

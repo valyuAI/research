@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "width": 1920,
+    "height": 1080,
+    "duration": 553.166667,
+    "controls": true,
+    "captionLanguage": "en",
+    "transcriptSections": 36
+  },
+  "samples": [
+    {
+      "time": 4.474828,
+      "error": null,
+      "readyState": 4,
+      "cueCount": 121,
+      "activeCaptions": [
+        "Replace each number by the number at its neighbour."
+      ],
+      "droppedFrames": 0,
+      "requestedTime": 3,
+      "advancedSeconds": 1.4748279999999996
+    },
+    {
+      "time": 278.04957,
+      "error": null,
+      "readyState": 4,
+      "cueCount": 121,
+      "activeCaptions": [
+        "This is exhaustive generation guided by a lemma, rather than\na random search."
+      ],
+      "droppedFrames": 0,
+      "requestedTime": 276.5833335,
+      "advancedSeconds": 1.466237000000035
+    },
+    {
+      "time": 548.631607,
+      "error": null,
+      "readyState": 4,
+      "cueCount": 121,
+      "activeCaptions": [
+        "The paper and verification files contain the full arguments,\nexact census and explicit"
+      ],
+      "droppedFrames": 0,
+      "requestedTime": 547.166667,
+      "advancedSeconds": 1.4649400000000696
+    }
+  ],
+  "mode": "Installed Chrome, fresh context, muted headless playback. No listening."
+}

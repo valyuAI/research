@@ -1,0 +1,11 @@
+  s <= 3: 11 symmetric Hexhouses ok, max |C| = 36
+  s <= 4: 22 symmetric Hexhouses ok, max |C| = 36
+  s <= 5: 44 symmetric Hexhouses ok, max |C| = 45
+  s <= 6: 61 symmetric Hexhouses ok, max |C| = 47
+  s <= 7: 94 symmetric Hexhouses ok, max |C| = 93
+  s <= 8: 122 symmetric Hexhouses ok, max |C| = 93
+  s <= 9: 163 symmetric Hexhouses ok, max |C| = 114
+  s <= 10: 197 symmetric Hexhouses ok, max |C| = 114
+  s <= 11: 252 symmetric Hexhouses ok, max |C| = 123
+PASS: 252 symmetric Hexhouses with parameters <= 11: C finite and inside S
+generic periods of X(3,1,1,2): [4, 44, 68, 92] (ABS Figure 18 reports 4, 44, 68, 92)

@@ -1,0 +1,51 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{1}
+
+\bibitem{Beck2008}
+J{\'o}zsef Beck, \emph{Combinatorial games: Tic-tac-toe theory}, Encyclopedia
+  of Mathematics and its Applications, vol. 114, Cambridge University Press,
+  2008.
+
+\bibitem{Campbell2004}
+Garikai Campbell, \emph{On optimal play in the game of {Hex}}, INTEGERS:
+  Electronic Journal of Combinatorial Number Theory \textbf{4} (2004), \#G02,
+  Published 11 May 2004. Archived at \url{https://zenodo.org/records/7642545}.
+
+\bibitem{CPS2026}
+Samuel Casco, Maria~Jos{\'e} Pacifico, and Diego Sanhueza, \emph{Optimal play
+  in {Hex} on finite and infinite boards}, 2026, arXiv:2607.28138v1, submitted
+  30 July 2026. \url{https://arxiv.org/abs/2607.28138}.
+
+\bibitem{Gale1979}
+David Gale, \emph{The game of {Hex} and the {Brouwer} fixed-point theorem}, The
+  American Mathematical Monthly \textbf{86} (1979), no.~10, 818--827.
+
+\bibitem{Gardner1959}
+Martin Gardner, \emph{The {Scientific American} book of mathematical puzzles
+  and diversions}, Simon and Schuster, New York, 1959, Chapter ``The Game of
+  Hex'', pp.~73--83; cited as reference [6] by Campbell.
+
+\bibitem{HZY2024}
+{HZY}, \emph{Analysis of the length of optimal games of {Hex} game using
+  {AlphaZero}-like {AI}}, DEV Community post, 8 September 2024. KataHex
+  estimates, described by the author as not an exhaustive search.
+  \url{https://dev.to/hzyhhzy/analysis-of-the-length-of-optimal-games-of-hex-game-using-alphazero-like-ai-16n7}.
+
+\bibitem{Irving2018}
+Geoffrey Irving, \emph{Length of optimal play in {Hex} as a function of size},
+  MathOverflow question 302821, asked 14 June 2018; answers by Junyan Xu (20
+  March 2024) and HZY (2024). \url{https://mathoverflow.net/questions/302821}.
+
+\bibitem{Stromquist2007}
+Walter Stromquist, \emph{Winning paths in $n$-by-infinity {Hex}}, INTEGERS:
+  Electronic Journal of Combinatorial Number Theory \textbf{7} (2007), \#G05,
+  Published 20 March 2007. Archived at
+  \url{https://zenodo.org/records/8337237}.
+
+\end{thebibliography}

@@ -1,0 +1,37 @@
+{
+  "source": "database_knotinfo 2026.10.5; Bhattacharjee v1.3.0 293-name open list",
+  "scope": "Transitive rank-two meridian permutation actions, one four-seed coloring per diagram",
+  "runs": [
+    {
+      "kind": "C",
+      "degree": 8,
+      "normalized_configurations": 3348,
+      "hit_names": ["13n_4587", "13n_4639", "13n_4645"]
+    },
+    {
+      "kind": "C",
+      "degree": 9,
+      "normalized_configurations": 555,
+      "hit_names": []
+    },
+    {
+      "kind": "D",
+      "degree": 8,
+      "normalized_configurations": 254964,
+      "hit_names": [
+        "13a_373", "13a_375", "13a_391", "13a_392",
+        "13a_3264", "13a_3266", "13a_3275", "13a_3276",
+        "13n_1005", "13n_1006", "13n_1007", "13n_1011",
+        "13n_1012", "13n_1013", "13n_1043", "13n_1044",
+        "13n_1045", "13n_1046", "13n_1047", "13n_1048",
+        "13n_3842", "13n_3844", "13n_3855", "13n_3856"
+      ]
+    },
+    {
+      "kind": "D",
+      "degree": 9,
+      "normalized_configurations": 121584,
+      "hit_names": []
+    }
+  ]
+}

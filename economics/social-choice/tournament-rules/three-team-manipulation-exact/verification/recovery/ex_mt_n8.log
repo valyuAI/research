@@ -1,0 +1,6 @@
+2859856 rows, 54256 vars (87s)
+|Z|=3547  |E|=4  next slacks [-4.97533072e-16 -4.81194512e-16 -4.69878706e-16]
+2 touched classes, 2 unknowns, 6 equations
+rank 2, independent 2; all equations satisfied: True; max |delta| 0
+lotteries/CC ok=True; exact max row value 2/5 (target 2/5); monotone rows ok=True; feasible=True; max denominator 1000003 (302s)
+saved lpm_n8_k3_le_mono_tcc_frrule.pkl

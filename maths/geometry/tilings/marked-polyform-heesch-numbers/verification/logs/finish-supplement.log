@@ -1,0 +1,3 @@
+Ledger controls: all 6 corrupted ledgers rejected
+Retained comparisons: 64 marked SAT/UNSAT agreements; 41 unmarked Hc agreements
+Optimized-Python guard controls: all entrypoints reject -O.

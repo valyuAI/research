@@ -1,0 +1,8 @@
+{
+  "cues": 124,
+  "all_narration_words_present_in_order": true,
+  "nonoverlapping": true,
+  "last_cue_end_seconds": 542.06,
+  "video_duration_seconds": 542.433333,
+  "timing": "Phrase chunks distributed over measured clips, not word-aligned."
+}

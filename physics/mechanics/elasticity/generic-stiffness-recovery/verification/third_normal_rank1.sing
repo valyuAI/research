@@ -1,0 +1,18 @@
+ring R=(0,ii),(w0,w1,w2,w3,w4,w5,w6,w7),dp;
+minpoly=ii^2+1;
+matrix N[7][13]=-2*w2,-2*w0 - 6*ii*w7,0,-2*ii*w4 - 2*w5,-2*w0 - 2*w6 - 2*ii*w7,0,0,0,2*w6 - 4*ii*w7,-2*w2 - 2*ii*w4 - 2*w5,-2*ii*w6 - 4*w7,-4*w4 + 4*ii*w5,2*ii*w6 + 4*w7,
+4*w0 - 2*w1 + 12*ii*w7,-2*w2 - 2*ii*w4,-4*ii*w2 + 2*w4,2*w0 + 2*w3 + 2*w6 + 2*ii*w7,-2*w2 - 2*ii*w4 - 4*w5,0,2*w6 - 4*ii*w7,-6*w2 - 4*ii*w4 - 2*w5,2*w2 + 2*w5,-2*w0 - 2*w1 + 2*w3 - 6*ii*w7,-4*ii*w2 + 2*w4 - 4*ii*w5,-4*ii*w3 - 4*ii*w6 - 8*w7,4*ii*w5,
+-2*ii*w2,-2*ii*w0 + 6*w7,0,2*w4 - 2*ii*w5,-2*ii*w0 - 2*ii*w6 + 2*w7,0,0,0,2*ii*w6 + 4*w7,-2*ii*w2 + 2*w4 - 2*ii*w5,2*w6 - 4*ii*w7,-4*ii*w4 - 4*w5,-2*w6 + 4*ii*w7,
+2*ii*w0 - 2*ii*w1 - 6*w7,-2*ii*w2 + 2*w4,2*w2 - 2*w5,2*ii*w3,-2*ii*w2 + 2*w4 - 4*ii*w5,0,2*ii*w6 + 4*w7,-4*ii*w2 + 2*w4,2*w4,-2*ii*w0 - 2*ii*w1 + 2*ii*w3 + 6*w7,2*w2 + 2*w5,4*w3 + 2*w6 - 4*ii*w7,-4*w5,
+-2*ii*w2 + 2*w4,0,-2*w1 + 2*w3 + 2*w6 - 4*ii*w7,-2*ii*w2 + 2*w4 - 4*ii*w5,0,w6 - 2*ii*w7,-2*ii*w2 + 2*w4 - 2*ii*w5,2*ii*w1 - 2*ii*w3 - 2*ii*w6 - 4*w7,-2*ii*w0 - 2*ii*w1 + 2*ii*w3 + 6*w7,0,-2*w1 + 2*w3 + w6 - 2*ii*w7,-4*w5,0,
+2*w7,0,2*w5,2*ii*w6 + 2*w7,0,2*w5,-2*ii*w1 + 2*ii*w3 + 2*ii*w6 + 4*w7,-2*ii*w5,-2*ii*w2 + 2*w4 - 2*ii*w5,0,0,2*w6,0,
+0,0,0,0,0,-w6,2*ii*w5,0,2*ii*w6 + 2*w7,0,w6,0,0;
+print("Computing all rank-one minors of third normal matrix over Q(i)");
+ideal J=minor(N,2);
+print("Nonzero minor count:"); size(J);
+ideal G=std(J);
+print("Affine dimension:"); dim(G);
+print("Degree:"); degree(G);
+print("Standard basis generator count:"); size(G);
+G;
+quit;

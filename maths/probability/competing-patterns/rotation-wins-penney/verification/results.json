@@ -1,0 +1,67 @@
+{
+  "4": {
+    "representatives": 12,
+    "cutoff": 15,
+    "minimumScaledDelta": "56793771256499/72407797862400",
+    "minimizers": [
+      [
+        2,
+        3,
+        4,
+        1
+      ]
+    ],
+    "scaledTail": "5/12"
+  },
+  "5": {
+    "representatives": 60,
+    "cutoff": 12,
+    "minimumScaledDelta": "19248964193/20583763200",
+    "minimizers": [
+      [
+        2,
+        3,
+        4,
+        5,
+        1
+      ]
+    ],
+    "scaledTail": "4/35"
+  },
+  "6": {
+    "representatives": 360,
+    "cutoff": 5,
+    "minimumScaledDelta": "433/440",
+    "minimizers": [
+      [
+        2,
+        3,
+        4,
+        5,
+        6,
+        1
+      ]
+    ],
+    "scaledTail": "28/71"
+  },
+  "7": {
+    "representatives": 2520,
+    "cutoff": 6,
+    "minimumScaledDelta": "2333/2340",
+    "minimizers": [
+      [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        1
+      ]
+    ],
+    "scaledTail": "32/419"
+  },
+  "uniform": {
+    "scaledMargin": "218738049/2305503200"
+  }
+}

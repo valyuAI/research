@@ -1,0 +1,18 @@
+# A robust chemical switch
+
+Audience: GCSE mathematics and science; no calculus or linear algebra assumed. 37 Cedar clips, each required to measure under 25 seconds. Purpose: explain what robustness and switching mean, construct the exact witness, then animate the geometric obstruction. Research is locked; the video does not change its claims.
+
+| Scene / clips | Spoken development | Animated mechanism | New understanding / source |
+|---|---|---|---|
+| OneReaction / a01-a05 | Two mixtures, then one worked reaction; concentrations 3 and 4 at rate constant 2 | Molecules transform; count changes; product becomes 24 and signed contributions | Rates and resting states; paper definitions. Teaching reaction is explicitly illustrative. |
+| Robustness / a06-a10 | Actual opposing reactions; definition and limits of ACR; complexes; stability | Production and loss combine into c(1-a); arrows point towards 1; six-node graph builds arrow by arrow; valley/hill analogy | ACR concerns positive equilibria; both sides at most bimolecular; stability is a response to perturbation. |
+| ThreeRestingStates / a11-a15 | Substitute a=1, solve c=6/b, factor B equation, recover states | Stepwise algebra, three roots, restricted curve, actual integrated trajectories in the invariant a=1 plane | Exact states (1,2,3), (1,3,2), (1,6,1). Curve is not full flow. Stability is from exact certificates. |
+| TwoDimensions / a16-a20 | Fixed total leaves two choices; known KNS example; theorem conditions | Point moves on fixed-total sheet; saddle/stable exact examples; sheet intersected by robust line | Species and stoichiometric dimension differ; nondegeneracy defined locally. |
+| OppositeSlopes / a21-a25 | Quadratic restriction, opposite slopes, determinant factor | Quadratic draws, tangents appear, local saddle directions animate, sign multiplication, zero line crosses gap | Mechanism of dimension-two obstruction; factorisation lemma and determinant lemma in paper. |
+| BendingRule / a26-a29 | Chemical boundary restrictions; concavity; representative contradiction | Downward-bending rate curve, moving point enters negative region, forced negative continuation conflicts with required positive rate | Decisive proof mechanism. Remaining sign/exceptional cases explicitly left to written proof. |
+| SharpSizes / a30-a33 | Matching construction, six-complex lower bound, decoupled species construction, prior question | Network reconstructed; separate switch and Z regulator; coupled graph highlighted; minima transform | Dimension 3, complexes 6, species 3. Species consequence is simple; no inflated priority claim. |
+| Evidence / a34-a37 | Exact checks; limited Lean scope; recap and open problem | Reaction-to-equation-to-check flow; scope comparison; three retained statements | Confidence high for correctness, bounded moderate novelty; synthetic narration disclosure. |
+
+First-view comprehension review: concentrations and signed change precede derivatives; two concrete resting mixtures precede terminology; fixed totals precede dimension; slopes precede determinant; determinant is introduced only as a test for an expanding direction. The concavity figure is labelled as one representative case, never as a complete replacement for the proof. The apparent thermostat analogy is qualified immediately. The curve caption continuously preserves a=1,c=6/b. No biological implementation is asserted.
+
+Deliberate exclusions: the four-reactant enumeration, second coupled witness and full deficiency-one proof are in companion sources, not compressed into the narration. No named presenter, voice or brand is imitated.

@@ -1,0 +1,26 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{1}
+
+\bibitem{CFR}
+Nathan Conlon, Nayda Farnsworth, and Aaron Robertson, \emph{On {Hales--Jewett}
+  and related numbers}, 2026, arXiv:2607.18111v1, submitted 20 July 2026.
+  \url{https://arxiv.org/abs/2607.18111}.
+
+\bibitem{Farnsworth}
+Nayda Farnsworth, \emph{A computational approach to improving bounds on the
+  {Hales--Jewett} numbers}, Rutgers Experimental Mathematics Seminar, 5 March
+  2026, slides, 2026,
+  \url{https://sites.math.rutgers.edu/~zeilberg/expmath/farnsworth26.pdf}.
+
+\bibitem{Mouhib}
+Younes Mouhib, \emph{Lower bounds for the {Hales--Jewett} numbers via symmetric
+  and one-weight colorings}, 2026, arXiv:2606.22155v2, revised 24 July 2026;
+  supersedes arXiv:2607.02226. \url{https://arxiv.org/abs/2606.22155}.
+
+\end{thebibliography}

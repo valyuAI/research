@@ -1,0 +1,56 @@
+⚠ [1215/1421] Replayed ValyuResearch.HalesJewett
+warning: ValyuResearch/HalesJewett.lean: imports `Mathlib.Algebra.Field.ZMod` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ValyuResearch/HalesJewett.lean: imports `Mathlib.Data.Fintype.Card` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ValyuResearch/HalesJewett.lean: imports `Mathlib.Algebra.BigOperators.Group.Finset.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ValyuResearch/HalesJewett.lean: imports `Mathlib.Tactic.Ring` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ValyuResearch/HalesJewett.lean: imports `Mathlib.Tactic.Push` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1271/1421] Replayed ValyuResearch.LotkaVolterra
+warning: ValyuResearch/LotkaVolterra.lean: imports `Mathlib.Basic.Real.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ValyuResearch/LotkaVolterra.lean: imports `Mathlib.Tactic.LinearCombination` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ValyuResearch/LotkaVolterra.lean: imports `Mathlib.Tactic.Linarith` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+info: ValyuResearch/LotkaVolterra.lean:73:0: 'ValyuResearch.LotkaVolterra.path_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ValyuResearch/LotkaVolterra.lean:74:0: 'ValyuResearch.LotkaVolterra.path_forces_middle_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ValyuResearch/LotkaVolterra.lean:75:0: 'ValyuResearch.LotkaVolterra.no_path_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ValyuResearch/LotkaVolterra.lean:76:0: 'ValyuResearch.LotkaVolterra.positive_off_diagonal_no_path_coefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [1420/1627] Replayed ValyuResearch.Resetting
+warning: ValyuResearch/Resetting.lean: imports `Mathlib.Algebra.BigOperators.Field` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ValyuResearch/Resetting.lean: imports `Mathlib.Basic.Real.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ValyuResearch/Resetting.lean: imports `Mathlib.LinearAlgebra.Matrix.Notation` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ValyuResearch/Resetting.lean: imports `Mathlib.Tactic.FieldSimp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ValyuResearch/Resetting.lean: imports `Mathlib.Tactic.FinCases` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ValyuResearch/Resetting.lean: imports `Mathlib.Tactic.Linarith` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ValyuResearch/Resetting.lean: imports `Mathlib.Tactic.NormNum` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ValyuResearch/Resetting.lean: imports `Mathlib.Tactic.Ring` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1696/1970] Replayed ValyuResearch.Elasticity
+warning: ValyuResearch/Elasticity.lean: imports `Mathlib.LinearAlgebra.Matrix.Adjugate` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ValyuResearch/Elasticity.lean: imports `Mathlib.LinearAlgebra.Matrix.Trace` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ValyuResearch/Elasticity.lean: imports `Mathlib.Tactic.Ring` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ValyuResearch/Elasticity.lean: imports `Mathlib.Tactic.LinearCombination` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+info: ValyuResearch/Elasticity.lean:87:0: 'ValyuResearch.ExploratoryElasticity.second_coefficient_difference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ValyuResearch/Elasticity.lean:88:0: 'ValyuResearch.ExploratoryElasticity.determinant_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ValyuResearch/Elasticity.lean:89:0: 'ValyuResearch.ExploratoryElasticity.characteristic_expansion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ValyuResearch/Elasticity.lean:90:0: 'ValyuResearch.ExploratoryElasticity.trace_collision' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ValyuResearch/Elasticity.lean:91:0: 'ValyuResearch.ExploratoryElasticity.quadratic_collision' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ValyuResearch/Elasticity.lean:92:0: 'ValyuResearch.ExploratoryElasticity.cubic_collision' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ValyuResearch/Elasticity.lean:93:0: 'ValyuResearch.ExploratoryElasticity.coefficient_collision_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [9051/9055] Built ValyuResearch.AcrMultistability (8.7s)
+warning: ValyuResearch/AcrMultistability.lean: imports `Mathlib.Basic.Real.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ValyuResearch/AcrMultistability.lean: imports `Mathlib.Algebra.BigOperators.Group.List.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ValyuResearch/AcrMultistability.lean: imports `Mathlib.Tactic.LinearCombination` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ValyuResearch/AcrMultistability.lean: imports `Mathlib.Tactic.Linarith` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ValyuResearch/AcrMultistability.lean: imports `Mathlib.Tactic.NormNum` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ValyuResearch/AcrMultistability.lean: imports `Mathlib.Tactic.Ring` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [9052/9055] Built ValyuResearch.CubicTicTacToe (104s)
+warning: ValyuResearch/CubicTicTacToe.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [9053/9055] Built ValyuResearch.CommonQuartetPotential (109s)
+warning: ValyuResearch/CommonQuartetPotential.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+✔ [9054/9055] Built ValyuResearch (89s)
+Build completed successfully (9055 jobs).

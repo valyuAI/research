@@ -1,0 +1,1320 @@
+{
+ "1": {
+  "name": "Square Pyramid",
+  "V": 5,
+  "E": 8,
+  "F": 5,
+  "rows": 9,
+  "cols": 15,
+  "rank_lower_bound": 9,
+  "verdict": "first-order rigid",
+  "seconds": 0.0
+ },
+ "2": {
+  "name": "Pentagonal Pyramid",
+  "V": 6,
+  "E": 10,
+  "F": 6,
+  "rows": 12,
+  "cols": 18,
+  "rank_lower_bound": 12,
+  "verdict": "first-order rigid",
+  "seconds": 0.0
+ },
+ "3": {
+  "name": "Triangular Cupola",
+  "V": 9,
+  "E": 15,
+  "F": 8,
+  "rows": 21,
+  "cols": 27,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    1
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.0
+ },
+ "4": {
+  "name": "Square Cupola",
+  "V": 12,
+  "E": 20,
+  "F": 10,
+  "rows": 30,
+  "cols": 36,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    3
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.0
+ },
+ "5": {
+  "name": "Pentagonal Cupola",
+  "V": 15,
+  "E": 25,
+  "F": 12,
+  "rows": 39,
+  "cols": 45,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    4
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.1
+ },
+ "6": {
+  "name": "Pentagonal Rotunda",
+  "V": 20,
+  "E": 35,
+  "F": 17,
+  "rows": 54,
+  "cols": 60,
+  "rank_lower_bound": 54,
+  "verdict": "first-order rigid",
+  "seconds": 0.2
+ },
+ "7": {
+  "name": "Elongated Triangular Pyramid",
+  "V": 7,
+  "E": 12,
+  "F": 7,
+  "rows": 15,
+  "cols": 21,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    5
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.1
+ },
+ "8": {
+  "name": "Elongated Square Pyramid",
+  "V": 9,
+  "E": 16,
+  "F": 9,
+  "rows": 21,
+  "cols": 27,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    3
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.0
+ },
+ "9": {
+  "name": "Elongated Pentagonal Pyramid",
+  "V": 11,
+  "E": 20,
+  "F": 11,
+  "rows": 27,
+  "cols": 33,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    5
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.1
+ },
+ "10": {
+  "name": "Gyroelongated Square Pyramid",
+  "V": 9,
+  "E": 20,
+  "F": 13,
+  "rows": 21,
+  "cols": 27,
+  "rank_lower_bound": 21,
+  "verdict": "first-order rigid",
+  "seconds": 0.1
+ },
+ "11": {
+  "name": "Gyroelongated Pentagonal Pyramid",
+  "V": 11,
+  "E": 25,
+  "F": 16,
+  "rows": 27,
+  "cols": 33,
+  "rank_lower_bound": 27,
+  "verdict": "first-order rigid",
+  "seconds": 0.0
+ },
+ "12": {
+  "name": "Triangular Dipyramid J12",
+  "V": 5,
+  "E": 9,
+  "F": 6,
+  "rows": 9,
+  "cols": 15,
+  "rank_lower_bound": 9,
+  "verdict": "first-order rigid",
+  "seconds": 0.0
+ },
+ "13": {
+  "name": "Pentagonal Dipyramid",
+  "V": 7,
+  "E": 15,
+  "F": 10,
+  "rows": 15,
+  "cols": 21,
+  "rank_lower_bound": 15,
+  "verdict": "first-order rigid",
+  "seconds": 0.0
+ },
+ "14": {
+  "name": "Elongated Triangular Dipyramid",
+  "V": 8,
+  "E": 15,
+  "F": 9,
+  "rows": 18,
+  "cols": 24,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    5
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.1
+ },
+ "15": {
+  "name": "Elongated Square Dipyramid",
+  "V": 10,
+  "E": 20,
+  "F": 12,
+  "rows": 24,
+  "cols": 30,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    3
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.0
+ },
+ "16": {
+  "name": "Elongated Pentagonal Dipyramid",
+  "V": 12,
+  "E": 25,
+  "F": 15,
+  "rows": 30,
+  "cols": 36,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    5
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.1
+ },
+ "17": {
+  "name": "Gyroelongated Square Dipyramid",
+  "V": 10,
+  "E": 24,
+  "F": 16,
+  "rows": 24,
+  "cols": 30,
+  "rank_lower_bound": 24,
+  "verdict": "first-order rigid",
+  "seconds": 0.0
+ },
+ "18": {
+  "name": "Elongated Triangular Cupola",
+  "V": 15,
+  "E": 27,
+  "F": 14,
+  "rows": 39,
+  "cols": 45,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    3
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.1
+ },
+ "19": {
+  "name": "Elongated Square Cupola",
+  "V": 20,
+  "E": 36,
+  "F": 18,
+  "rows": 54,
+  "cols": 60,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    6
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.1
+ },
+ "20": {
+  "name": "Elongated Pentagonal Cupola",
+  "V": 25,
+  "E": 45,
+  "F": 22,
+  "rows": 69,
+  "cols": 75,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    8
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.1
+ },
+ "21": {
+  "name": "Elongated Pentagonal Rotunda",
+  "V": 30,
+  "E": 55,
+  "F": 27,
+  "rows": 84,
+  "cols": 90,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    5
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.2
+ },
+ "22": {
+  "name": "Gyroelongated Triangular Cupola",
+  "V": 15,
+  "E": 33,
+  "F": 20,
+  "rows": 39,
+  "cols": 45,
+  "rank_lower_bound": 39,
+  "verdict": "first-order rigid",
+  "seconds": 0.4
+ },
+ "23": {
+  "name": "Gyroelongated Square Cupola",
+  "V": 20,
+  "E": 44,
+  "F": 26,
+  "rows": 54,
+  "cols": 60,
+  "rank_lower_bound": 54,
+  "verdict": "first-order rigid",
+  "seconds": 0.6
+ },
+ "24": {
+  "name": "Gyroelongated Pentagonal Cupola",
+  "V": 25,
+  "E": 55,
+  "F": 32,
+  "rows": 69,
+  "cols": 75,
+  "rank_lower_bound": 69,
+  "verdict": "first-order rigid",
+  "seconds": 0.9
+ },
+ "25": {
+  "name": "Gyroelongated Pentagonal Rotunda",
+  "V": 30,
+  "E": 65,
+  "F": 37,
+  "rows": 84,
+  "cols": 90,
+  "rank_lower_bound": 84,
+  "verdict": "first-order rigid",
+  "seconds": 1.2
+ },
+ "26": {
+  "name": "Gyrobifastigium",
+  "V": 8,
+  "E": 14,
+  "F": 8,
+  "rows": 18,
+  "cols": 24,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    2
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.0
+ },
+ "27": {
+  "name": "Triangular Orthobicupola",
+  "V": 12,
+  "E": 24,
+  "F": 14,
+  "rows": 30,
+  "cols": 36,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    3
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.1
+ },
+ "28": {
+  "name": "Square Orthobicupola",
+  "V": 16,
+  "E": 32,
+  "F": 18,
+  "rows": 42,
+  "cols": 48,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    9
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.0
+ },
+ "29": {
+  "name": "Square Gyrobicupola",
+  "V": 16,
+  "E": 32,
+  "F": 18,
+  "rows": 42,
+  "cols": 48,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    10
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.1
+ },
+ "30": {
+  "name": "Pentagonal Orthobicupola",
+  "V": 20,
+  "E": 40,
+  "F": 22,
+  "rows": 54,
+  "cols": 60,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    10
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.2
+ },
+ "31": {
+  "name": "Pentagonal Gyrobicupola",
+  "V": 20,
+  "E": 40,
+  "F": 22,
+  "rows": 54,
+  "cols": 60,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    3
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.1
+ },
+ "32": {
+  "name": "Pentagonal Orthocupolarotunda",
+  "V": 25,
+  "E": 50,
+  "F": 27,
+  "rows": 69,
+  "cols": 75,
+  "rank_lower_bound": 69,
+  "verdict": "first-order rigid",
+  "seconds": 0.1
+ },
+ "33": {
+  "name": "Pentagonal Gyrocupolarotunda",
+  "V": 25,
+  "E": 50,
+  "F": 27,
+  "rows": 69,
+  "cols": 75,
+  "rank_lower_bound": 69,
+  "verdict": "first-order rigid",
+  "seconds": 0.2
+ },
+ "34": {
+  "name": "Pentagonal Orthobirotunda",
+  "V": 30,
+  "E": 60,
+  "F": 32,
+  "rows": 84,
+  "cols": 90,
+  "rank_lower_bound": 84,
+  "verdict": "first-order rigid",
+  "seconds": 0.4
+ },
+ "35": {
+  "name": "Elongated Triangular Orthobicupola",
+  "V": 18,
+  "E": 36,
+  "F": 20,
+  "rows": 48,
+  "cols": 54,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    1
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.1
+ },
+ "36": {
+  "name": "Elongated Triangular Gyrobicupola",
+  "V": 18,
+  "E": 36,
+  "F": 20,
+  "rows": 48,
+  "cols": 54,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    1
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.1
+ },
+ "37": {
+  "name": "Elongated Square Gyrobicupola",
+  "V": 24,
+  "E": 48,
+  "F": 26,
+  "rows": 66,
+  "cols": 72,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    9
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.1
+ },
+ "38": {
+  "name": "Elongated Pentagonal Orthobicupola",
+  "V": 30,
+  "E": 60,
+  "F": 32,
+  "rows": 84,
+  "cols": 90,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    7
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.2
+ },
+ "39": {
+  "name": "Elongated Pentagonal Gyrobicupola",
+  "V": 30,
+  "E": 60,
+  "F": 32,
+  "rows": 84,
+  "cols": 90,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    7
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.2
+ },
+ "40": {
+  "name": "Elongated Pentagonal Orthocupolarotunda",
+  "V": 35,
+  "E": 70,
+  "F": 37,
+  "rows": 99,
+  "cols": 105,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    5
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.2
+ },
+ "41": {
+  "name": "Elongated Pentagonal Gyrocupolarotunda",
+  "V": 35,
+  "E": 70,
+  "F": 37,
+  "rows": 99,
+  "cols": 105,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    5
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.3
+ },
+ "42": {
+  "name": "Elongated Pentagonal Orthobirotunda",
+  "V": 40,
+  "E": 80,
+  "F": 42,
+  "rows": 114,
+  "cols": 120,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    5
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.3
+ },
+ "43": {
+  "name": "Elongated Pentagonal Gyrobirotunda",
+  "V": 40,
+  "E": 80,
+  "F": 42,
+  "rows": 114,
+  "cols": 120,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    5
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.4
+ },
+ "44": {
+  "name": "Gyroelongated Triangular Bicupola",
+  "V": 18,
+  "E": 42,
+  "F": 26,
+  "rows": 48,
+  "cols": 54,
+  "rank_lower_bound": 48,
+  "verdict": "first-order rigid",
+  "seconds": 0.5
+ },
+ "45": {
+  "name": "Gyroelongated Square Bicupola",
+  "V": 24,
+  "E": 56,
+  "F": 34,
+  "rows": 66,
+  "cols": 72,
+  "rank_lower_bound": 66,
+  "verdict": "first-order rigid",
+  "seconds": 0.7
+ },
+ "46": {
+  "name": "Gyroelongated Pentagonal Bicupola",
+  "V": 30,
+  "E": 70,
+  "F": 42,
+  "rows": 84,
+  "cols": 90,
+  "rank_lower_bound": 84,
+  "verdict": "first-order rigid",
+  "seconds": 1.0
+ },
+ "47": {
+  "name": "Gyroelongated Pentagonal Cupolarotunda",
+  "V": 35,
+  "E": 80,
+  "F": 47,
+  "rows": 99,
+  "cols": 105,
+  "rank_lower_bound": 99,
+  "verdict": "first-order rigid",
+  "seconds": 1.4
+ },
+ "48": {
+  "name": "Gyroelongated Pentagonal Birotunda",
+  "V": 40,
+  "E": 90,
+  "F": 52,
+  "rows": 114,
+  "cols": 120,
+  "rank_lower_bound": 114,
+  "verdict": "first-order rigid",
+  "seconds": 1.6
+ },
+ "49": {
+  "name": "Augmented Triangular Prism",
+  "V": 7,
+  "E": 13,
+  "F": 8,
+  "rows": 15,
+  "cols": 21,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    5
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.1
+ },
+ "50": {
+  "name": "Biaugmented Triangular Prism",
+  "V": 8,
+  "E": 17,
+  "F": 11,
+  "rows": 18,
+  "cols": 24,
+  "rank_lower_bound": 18,
+  "verdict": "first-order rigid",
+  "seconds": 0.0
+ },
+ "51": {
+  "name": "Triaugmented Triangular Prism",
+  "V": 9,
+  "E": 21,
+  "F": 14,
+  "rows": 21,
+  "cols": 27,
+  "rank_lower_bound": 21,
+  "verdict": "first-order rigid",
+  "seconds": 0.1
+ },
+ "52": {
+  "name": "Augmented Pentagonal Prism",
+  "V": 11,
+  "E": 19,
+  "F": 10,
+  "rows": 27,
+  "cols": 33,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    5
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.2
+ },
+ "53": {
+  "name": "Biaugmented Pentagonal Prism",
+  "V": 12,
+  "E": 23,
+  "F": 13,
+  "rows": 30,
+  "cols": 36,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    2
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.2
+ },
+ "54": {
+  "name": "Augmented Hexagonal Prism",
+  "V": 13,
+  "E": 22,
+  "F": 11,
+  "rows": 33,
+  "cols": 39,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    6
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.1
+ },
+ "55": {
+  "name": "Parabiaugmented Hexagonal Prism",
+  "V": 14,
+  "E": 26,
+  "F": 14,
+  "rows": 36,
+  "cols": 42,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    4
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.1
+ },
+ "56": {
+  "name": "Metabiaugmented Hexagonal Prism",
+  "V": 14,
+  "E": 26,
+  "F": 14,
+  "rows": 36,
+  "cols": 42,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    9
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.1
+ },
+ "57": {
+  "name": "Triaugmented Hexagonal Prism",
+  "V": 15,
+  "E": 30,
+  "F": 17,
+  "rows": 39,
+  "cols": 45,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    2
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.1
+ },
+ "58": {
+  "name": "Augmented Dodecahedron",
+  "V": 21,
+  "E": 35,
+  "F": 16,
+  "rows": 57,
+  "cols": 63,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    1
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.1
+ },
+ "59": {
+  "name": "Parabiaugmented Dodecahedron",
+  "V": 22,
+  "E": 40,
+  "F": 20,
+  "rows": 60,
+  "cols": 66,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    1
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.1
+ },
+ "60": {
+  "name": "Metabiaugmented Dodecahedron",
+  "V": 22,
+  "E": 40,
+  "F": 20,
+  "rows": 60,
+  "cols": 66,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    1
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.1
+ },
+ "61": {
+  "name": "Triaugmented Dodecahedron",
+  "V": 23,
+  "E": 45,
+  "F": 24,
+  "rows": 63,
+  "cols": 69,
+  "rank_lower_bound": 63,
+  "verdict": "first-order rigid",
+  "seconds": 0.2
+ },
+ "62": {
+  "name": "Metabidiminished Icosahedron",
+  "V": 10,
+  "E": 20,
+  "F": 12,
+  "rows": 24,
+  "cols": 30,
+  "rank_lower_bound": 24,
+  "verdict": "first-order rigid",
+  "seconds": 0.0
+ },
+ "63": {
+  "name": "Tridiminished Icosahedron",
+  "V": 9,
+  "E": 15,
+  "F": 8,
+  "rows": 21,
+  "cols": 27,
+  "rank_lower_bound": 21,
+  "verdict": "first-order rigid",
+  "seconds": 0.1
+ },
+ "64": {
+  "name": "Augmented Tridiminished Icosahedron",
+  "V": 10,
+  "E": 18,
+  "F": 10,
+  "rows": 24,
+  "cols": 30,
+  "rank_lower_bound": 24,
+  "verdict": "first-order rigid",
+  "seconds": 0.1
+ },
+ "65": {
+  "name": "Augmented Truncated Tetrahedron",
+  "V": 15,
+  "E": 27,
+  "F": 14,
+  "rows": 39,
+  "cols": 45,
+  "rank_lower_bound": 39,
+  "verdict": "first-order rigid",
+  "seconds": 0.1
+ },
+ "66": {
+  "name": "Augmented Truncated Cube",
+  "V": 28,
+  "E": 48,
+  "F": 22,
+  "rows": 78,
+  "cols": 84,
+  "rank_lower_bound": 78,
+  "verdict": "first-order rigid",
+  "seconds": 0.3
+ },
+ "67": {
+  "name": "Biaugmented Truncated Cube",
+  "V": 32,
+  "E": 60,
+  "F": 30,
+  "rows": 90,
+  "cols": 96,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    3
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.1
+ },
+ "68": {
+  "name": "Augmented Truncated Dodecahedron",
+  "V": 65,
+  "E": 105,
+  "F": 42,
+  "rows": 189,
+  "cols": 195,
+  "rank_lower_bound": 189,
+  "verdict": "first-order rigid",
+  "seconds": 2.5
+ },
+ "69": {
+  "name": "Parabiaugmented Truncated Dodecahedron",
+  "V": 70,
+  "E": 120,
+  "F": 52,
+  "rows": 204,
+  "cols": 210,
+  "rank_lower_bound": 204,
+  "verdict": "first-order rigid",
+  "seconds": 2.9
+ },
+ "70": {
+  "name": "Metabiaugmented Truncated Dodecahedron",
+  "V": 70,
+  "E": 120,
+  "F": 52,
+  "rows": 204,
+  "cols": 210,
+  "rank_lower_bound": 204,
+  "verdict": "first-order rigid",
+  "seconds": 2.5
+ },
+ "71": {
+  "name": "Triaugmented Truncated Dodecahedron",
+  "V": 75,
+  "E": 135,
+  "F": 62,
+  "rows": 219,
+  "cols": 225,
+  "rank_lower_bound": 219,
+  "verdict": "first-order rigid",
+  "seconds": 3.3
+ },
+ "72": {
+  "name": "Gyrate Rhombicosidodecahedron",
+  "V": 60,
+  "E": 120,
+  "F": 62,
+  "rows": 174,
+  "cols": 180,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    3
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.4
+ },
+ "73": {
+  "name": "Parabigyrate Rhombicosidodecahedron",
+  "V": 60,
+  "E": 120,
+  "F": 62,
+  "rows": 174,
+  "cols": 180,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    3
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.6
+ },
+ "74": {
+  "name": "Metabigyrate Rhombicosidodecahedron",
+  "V": 60,
+  "E": 120,
+  "F": 62,
+  "rows": 174,
+  "cols": 180,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    3
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.5
+ },
+ "75": {
+  "name": "Trigyrate Rhombicosidodecahedron",
+  "V": 60,
+  "E": 120,
+  "F": 62,
+  "rows": 174,
+  "cols": 180,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    3
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.4
+ },
+ "76": {
+  "name": "Diminished Rhombicosidodecahedron",
+  "V": 55,
+  "E": 105,
+  "F": 52,
+  "rows": 159,
+  "cols": 165,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    5
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.3
+ },
+ "77": {
+  "name": "Paragyrate Diminished Rhombicosidodecahedron",
+  "V": 55,
+  "E": 105,
+  "F": 52,
+  "rows": 159,
+  "cols": 165,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    5
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.3
+ },
+ "78": {
+  "name": "Metagyrate Diminished Rhombicosidodecahedron",
+  "V": 55,
+  "E": 105,
+  "F": 52,
+  "rows": 159,
+  "cols": 165,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    5
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.3
+ },
+ "79": {
+  "name": "Bigyrate Diminished Rhombicosidodecahedron",
+  "V": 55,
+  "E": 105,
+  "F": 52,
+  "rows": 159,
+  "cols": 165,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    5
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.3
+ },
+ "80": {
+  "name": "Parabidiminished Rhombicosidodecahedron",
+  "V": 50,
+  "E": 90,
+  "F": 42,
+  "rows": 144,
+  "cols": 150,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    5
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.3
+ },
+ "81": {
+  "name": "Metabidiminished Rhombicosidodecahedron",
+  "V": 50,
+  "E": 90,
+  "F": 42,
+  "rows": 144,
+  "cols": 150,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    3
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.3
+ },
+ "82": {
+  "name": "Gyrate Bidiminished Rhombicosidodecahedron",
+  "V": 50,
+  "E": 90,
+  "F": 42,
+  "rows": 144,
+  "cols": 150,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    1
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.3
+ },
+ "83": {
+  "name": "Tridiminished Rhombicosidodecahedron",
+  "V": 45,
+  "E": 75,
+  "F": 32,
+  "rows": 129,
+  "cols": 135,
+  "flex": {
+   "ok": true,
+   "witness_pair": [
+    0,
+    5
+   ]
+  },
+  "verdict": "first-order flexible",
+  "seconds": 0.2
+ },
+ "84": {
+  "name": "Snub Disphenoid",
+  "V": 8,
+  "E": 18,
+  "F": 12,
+  "rows": 18,
+  "cols": 24,
+  "rank_lower_bound": 18,
+  "verdict": "first-order rigid",
+  "seconds": 0.1
+ },
+ "85": {
+  "name": "Snub Square Antiprism",
+  "V": 16,
+  "E": 40,
+  "F": 26,
+  "rows": 42,
+  "cols": 48,
+  "rank_lower_bound": 42,
+  "verdict": "first-order rigid",
+  "seconds": 0.4
+ },
+ "86": {
+  "name": "Sphenocorona",
+  "V": 10,
+  "E": 22,
+  "F": 14,
+  "rows": 24,
+  "cols": 30,
+  "rank_lower_bound": 24,
+  "verdict": "first-order rigid",
+  "seconds": 0.3
+ },
+ "87": {
+  "name": "Augmented Sphenocorona",
+  "V": 11,
+  "E": 26,
+  "F": 17,
+  "rows": 27,
+  "cols": 33,
+  "rank_lower_bound": 27,
+  "verdict": "first-order rigid",
+  "seconds": 0.3
+ },
+ "88": {
+  "name": "Sphenomegacorona",
+  "V": 12,
+  "E": 28,
+  "F": 18,
+  "rows": 30,
+  "cols": 36,
+  "rank_lower_bound": 30,
+  "verdict": "first-order rigid",
+  "seconds": 1.7
+ },
+ "89": {
+  "name": "Hebesphenomegacorona",
+  "V": 14,
+  "E": 33,
+  "F": 21,
+  "rows": 36,
+  "cols": 42,
+  "rank_lower_bound": 36,
+  "verdict": "first-order rigid",
+  "seconds": 0.7
+ },
+ "90": {
+  "name": "Disphenocingulum",
+  "V": 16,
+  "E": 38,
+  "F": 24,
+  "rows": 42,
+  "cols": 48,
+  "rank_lower_bound": 42,
+  "verdict": "first-order rigid",
+  "seconds": 1.1
+ },
+ "91": {
+  "name": "Bilunabirotunda",
+  "V": 14,
+  "E": 26,
+  "F": 14,
+  "rows": 36,
+  "cols": 42,
+  "rank_lower_bound": 36,
+  "verdict": "first-order rigid",
+  "seconds": 0.1
+ },
+ "92": {
+  "name": "Triangular Hebesphenorotunda",
+  "V": 18,
+  "E": 36,
+  "F": 20,
+  "rows": 48,
+  "cols": 54,
+  "rank_lower_bound": 48,
+  "verdict": "first-order rigid",
+  "seconds": 0.1
+ }
+}

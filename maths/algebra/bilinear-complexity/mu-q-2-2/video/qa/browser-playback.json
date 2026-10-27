@@ -1,0 +1,27 @@
+{
+  "method": "Muted browser playback using an in-memory Blob of the actual MP4; seek to beginning, middle and end, then play1.1 seconds at each. Local simple HTTP server lacks Range support, so Blob enables reliable seeking. This is not listening or full real-time playback.",
+  "duration": 504.233333,
+  "videoWidth": 1920,
+  "videoHeight": 1080,
+  "muted": true,
+  "records": [
+    {
+      "requested": 5,
+      "currentTime": 6.056953,
+      "readyState": 4,
+      "error": null
+    },
+    {
+      "requested": 252.1166665,
+      "currentTime": 253.177075,
+      "readyState": 4,
+      "error": null
+    },
+    {
+      "requested": 498.233333,
+      "currentTime": 499.290074,
+      "readyState": 4,
+      "error": null
+    }
+  ]
+}

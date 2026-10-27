@@ -1,0 +1,1914 @@
+{
+  "p": [
+    [
+      0.5,
+      -0.2886751345948129,
+      0.5443310539518176
+    ],
+    [
+      0.5,
+      0.8660254037844388,
+      -0.2721655269759087
+    ],
+    [
+      -0.5000000000000001,
+      -0.8660254037844388,
+      -0.2721655269759087
+    ],
+    [
+      -2.0831287333612275e-17,
+      0.5773502691896258,
+      0.5443310539518176
+    ],
+    [
+      1.0,
+      -2.27387121190739e-17,
+      -0.27216552697590873
+    ],
+    [
+      -1.0,
+      -2.27387121190739e-17,
+      -0.27216552697590873
+    ],
+    [
+      -0.5,
+      -0.2886751345948129,
+      0.5443310539518176
+    ],
+    [
+      -0.5,
+      0.8660254037844388,
+      -0.27216552697590873
+    ],
+    [
+      0.5000000000000001,
+      -0.8660254037844388,
+      -0.2721655269759087
+    ]
+  ],
+  "s1": [
+    [
+      0.5,
+      -0.2886751345948129,
+      4.884303754091172e-18
+    ],
+    [
+      7.214424069678329e-18,
+      0.5773502691896257,
+      2.2280770598210393e-17
+    ],
+    [
+      -0.49999999999999994,
+      -0.2886751345948129,
+      4.884303754091172e-18
+    ],
+    [
+      7.214424069678329e-18,
+      0.5773502691896257,
+      2.2280770598210393e-17
+    ],
+    [
+      0.5,
+      -0.2886751345948129,
+      4.884303754091172e-18
+    ],
+    [
+      -0.49999999999999994,
+      -0.2886751345948129,
+      4.884303754091172e-18
+    ],
+    [
+      -0.49999999999999994,
+      -0.2886751345948129,
+      4.884303754091172e-18
+    ],
+    [
+      7.214424069678329e-18,
+      0.5773502691896257,
+      2.2280770598210393e-17
+    ],
+    [
+      0.5,
+      -0.28867513459481287,
+      0.0
+    ]
+  ],
+  "s2": [
+    [
+      1.120660006380377e-17,
+      1.527590544638579e-19,
+      0.5443310539518175
+    ],
+    [
+      0.5,
+      0.288675134594813,
+      -0.2721655269759088
+    ],
+    [
+      -8.22066631406525e-17,
+      -0.5773502691896258,
+      -0.2721655269759088
+    ],
+    [
+      -2.8045711403290603e-17,
+      1.527590544638579e-19,
+      0.5443310539518175
+    ],
+    [
+      0.5,
+      0.28867513459481287,
+      -0.27216552697590873
+    ],
+    [
+      -0.5000000000000001,
+      0.28867513459481287,
+      -0.27216552697590873
+    ],
+    [
+      -2.8045711403290603e-17,
+      1.527590544638579e-19,
+      0.5443310539518175
+    ],
+    [
+      -0.5000000000000001,
+      0.28867513459481303,
+      -0.27216552697590873
+    ],
+    [
+      0.0,
+      -0.5773502691896257,
+      -0.27216552697590873
+    ]
+  ],
+  "faces": [
+    [
+      1,
+      4,
+      8,
+      2,
+      5,
+      7
+    ],
+    [
+      0,
+      6,
+      2,
+      8
+    ],
+    [
+      6,
+      3,
+      7,
+      5
+    ],
+    [
+      3,
+      0,
+      4,
+      1
+    ],
+    [
+      0,
+      3,
+      6
+    ],
+    [
+      0,
+      8,
+      4
+    ],
+    [
+      6,
+      5,
+      2
+    ],
+    [
+      3,
+      1,
+      7
+    ]
+  ],
+  "edges": [
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      7
+    ]
+  ],
+  "group1": [
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      5,
+      7
+    ]
+  ],
+  "classification": {
+    "1": {
+      "name": "Square Pyramid",
+      "V": 5,
+      "E": 8,
+      "F": 5,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "2": {
+      "name": "Pentagonal Pyramid",
+      "V": 6,
+      "E": 10,
+      "F": 6,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 5,
+      "parallel_edges": false
+    },
+    "3": {
+      "name": "Triangular Cupola",
+      "V": 9,
+      "E": 15,
+      "F": 8,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 1,
+      "checker2": "first-order flexible",
+      "flex_dim": 1,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (3 vertices, dim 2) + R_t S2 (4 vertices, dim 3)",
+      "summands": [
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "max_face": 6,
+      "parallel_edges": true
+    },
+    "4": {
+      "name": "Square Cupola",
+      "V": 12,
+      "E": 20,
+      "F": 10,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 2,
+      "checker2": "first-order flexible",
+      "flex_dim": 2,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (8 vertices, dim 3) + R_t S2 (2 vertices, dim 1)",
+      "summands": [
+        [
+          8,
+          3
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "max_face": 8,
+      "parallel_edges": true
+    },
+    "5": {
+      "name": "Pentagonal Cupola",
+      "V": 15,
+      "E": 25,
+      "F": 12,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 3,
+      "checker2": "first-order flexible",
+      "flex_dim": 3,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (5 vertices, dim 2) + R_t S2 (6 vertices, dim 3)",
+      "summands": [
+        [
+          5,
+          2
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "max_face": 10,
+      "parallel_edges": true
+    },
+    "6": {
+      "name": "Pentagonal Rotunda",
+      "V": 20,
+      "E": 35,
+      "F": 17,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 10,
+      "parallel_edges": true
+    },
+    "7": {
+      "name": "Elongated Triangular Pyramid",
+      "V": 7,
+      "E": 12,
+      "F": 7,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 2,
+      "checker2": "first-order flexible",
+      "flex_dim": 2,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (2 vertices, dim 1) + R_t S2 (4 vertices, dim 3)",
+      "summands": [
+        [
+          2,
+          1
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "8": {
+      "name": "Elongated Square Pyramid",
+      "V": 9,
+      "E": 16,
+      "F": 9,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 2,
+      "checker2": "first-order flexible",
+      "flex_dim": 2,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (2 vertices, dim 1) + R_t S2 (5 vertices, dim 3)",
+      "summands": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "9": {
+      "name": "Elongated Pentagonal Pyramid",
+      "V": 11,
+      "E": 20,
+      "F": 11,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 2,
+      "checker2": "first-order flexible",
+      "flex_dim": 2,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (2 vertices, dim 1) + R_t S2 (6 vertices, dim 3)",
+      "summands": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "10": {
+      "name": "Gyroelongated Square Pyramid",
+      "V": 9,
+      "E": 20,
+      "F": 13,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "11": {
+      "name": "Gyroelongated Pentagonal Pyramid",
+      "V": 11,
+      "E": 25,
+      "F": 16,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "12": {
+      "name": "Triangular Dipyramid J12",
+      "V": 5,
+      "E": 9,
+      "F": 6,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 3,
+      "parallel_edges": false
+    },
+    "13": {
+      "name": "Pentagonal Dipyramid",
+      "V": 7,
+      "E": 15,
+      "F": 10,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 3,
+      "parallel_edges": false
+    },
+    "14": {
+      "name": "Elongated Triangular Dipyramid",
+      "V": 8,
+      "E": 15,
+      "F": 9,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 2,
+      "checker2": "first-order flexible",
+      "flex_dim": 2,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (2 vertices, dim 1) + R_t S2 (5 vertices, dim 3)",
+      "summands": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "15": {
+      "name": "Elongated Square Dipyramid",
+      "V": 10,
+      "E": 20,
+      "F": 12,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 2,
+      "checker2": "first-order flexible",
+      "flex_dim": 2,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (2 vertices, dim 1) + R_t S2 (6 vertices, dim 3)",
+      "summands": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "16": {
+      "name": "Elongated Pentagonal Dipyramid",
+      "V": 12,
+      "E": 25,
+      "F": 15,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 2,
+      "checker2": "first-order flexible",
+      "flex_dim": 2,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (2 vertices, dim 1) + R_t S2 (7 vertices, dim 3)",
+      "summands": [
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          3
+        ]
+      ],
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "17": {
+      "name": "Gyroelongated Square Dipyramid",
+      "V": 10,
+      "E": 24,
+      "F": 16,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 3,
+      "parallel_edges": true
+    },
+    "18": {
+      "name": "Elongated Triangular Cupola",
+      "V": 15,
+      "E": 27,
+      "F": 14,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 3,
+      "checker2": "first-order flexible",
+      "flex_dim": 3,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (6 vertices, dim 3) + R_t S2 (4 vertices, dim 3)",
+      "summands": [
+        [
+          6,
+          3
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "max_face": 6,
+      "parallel_edges": true
+    },
+    "19": {
+      "name": "Elongated Square Cupola",
+      "V": 20,
+      "E": 36,
+      "F": 18,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 4,
+      "checker2": "first-order flexible",
+      "flex_dim": 4,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (14 vertices, dim 3) + R_t S2 (2 vertices, dim 1)",
+      "summands": [
+        [
+          14,
+          3
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "max_face": 8,
+      "parallel_edges": true
+    },
+    "20": {
+      "name": "Elongated Pentagonal Cupola",
+      "V": 25,
+      "E": 45,
+      "F": 22,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 5,
+      "checker2": "first-order flexible",
+      "flex_dim": 5,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (11 vertices, dim 3) + R_t S2 (5 vertices, dim 2)",
+      "summands": [
+        [
+          11,
+          3
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "max_face": 10,
+      "parallel_edges": true
+    },
+    "21": {
+      "name": "Elongated Pentagonal Rotunda",
+      "V": 30,
+      "E": 55,
+      "F": 27,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 2,
+      "checker2": "first-order flexible",
+      "flex_dim": 2,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (2 vertices, dim 1) + R_t S2 (20 vertices, dim 3)",
+      "summands": [
+        [
+          2,
+          1
+        ],
+        [
+          20,
+          3
+        ]
+      ],
+      "max_face": 10,
+      "parallel_edges": true
+    },
+    "22": {
+      "name": "Gyroelongated Triangular Cupola",
+      "V": 15,
+      "E": 33,
+      "F": 20,
+      "field_degree": 8,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 6,
+      "parallel_edges": true
+    },
+    "23": {
+      "name": "Gyroelongated Square Cupola",
+      "V": 20,
+      "E": 44,
+      "F": 26,
+      "field_degree": 8,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 8,
+      "parallel_edges": true
+    },
+    "24": {
+      "name": "Gyroelongated Pentagonal Cupola",
+      "V": 25,
+      "E": 55,
+      "F": 32,
+      "field_degree": 8,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 10,
+      "parallel_edges": true
+    },
+    "25": {
+      "name": "Gyroelongated Pentagonal Rotunda",
+      "V": 30,
+      "E": 65,
+      "F": 37,
+      "field_degree": 8,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 10,
+      "parallel_edges": true
+    },
+    "26": {
+      "name": "Gyrobifastigium",
+      "V": 8,
+      "E": 14,
+      "F": 8,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 3,
+      "checker2": "first-order flexible",
+      "flex_dim": 3,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (3 vertices, dim 2) + R_t S2 (3 vertices, dim 2)",
+      "summands": [
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "27": {
+      "name": "Triangular Orthobicupola",
+      "V": 12,
+      "E": 24,
+      "F": 14,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 3,
+      "checker2": "first-order flexible",
+      "flex_dim": 3,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (3 vertices, dim 2) + R_t S2 (5 vertices, dim 3)",
+      "summands": [
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "28": {
+      "name": "Square Orthobicupola",
+      "V": 16,
+      "E": 32,
+      "F": 18,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 4,
+      "checker2": "first-order flexible",
+      "flex_dim": 4,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (10 vertices, dim 3) + R_t S2 (2 vertices, dim 1)",
+      "summands": [
+        [
+          10,
+          3
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "29": {
+      "name": "Square Gyrobicupola",
+      "V": 16,
+      "E": 32,
+      "F": 18,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 3,
+      "checker2": "first-order flexible",
+      "flex_dim": 3,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (5 vertices, dim 3) + R_t S2 (5 vertices, dim 3)",
+      "summands": [
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "30": {
+      "name": "Pentagonal Orthobicupola",
+      "V": 20,
+      "E": 40,
+      "F": 22,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 5,
+      "checker2": "first-order flexible",
+      "flex_dim": 5,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (7 vertices, dim 3) + R_t S2 (5 vertices, dim 2)",
+      "summands": [
+        [
+          7,
+          3
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "31": {
+      "name": "Pentagonal Gyrobicupola",
+      "V": 20,
+      "E": 40,
+      "F": 22,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 3,
+      "checker2": "first-order flexible",
+      "flex_dim": 3,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (6 vertices, dim 3) + R_t S2 (6 vertices, dim 3)",
+      "summands": [
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "32": {
+      "name": "Pentagonal Orthocupolarotunda",
+      "V": 25,
+      "E": 50,
+      "F": 27,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "33": {
+      "name": "Pentagonal Gyrocupolarotunda",
+      "V": 25,
+      "E": 50,
+      "F": 27,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "34": {
+      "name": "Pentagonal Orthobirotunda",
+      "V": 30,
+      "E": 60,
+      "F": 32,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "35": {
+      "name": "Elongated Triangular Orthobicupola",
+      "V": 18,
+      "E": 36,
+      "F": 20,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 5,
+      "checker2": "first-order flexible",
+      "flex_dim": 5,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (6 vertices, dim 3) + R_t S2 (5 vertices, dim 3)",
+      "summands": [
+        [
+          6,
+          3
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "36": {
+      "name": "Elongated Triangular Gyrobicupola",
+      "V": 18,
+      "E": 36,
+      "F": 20,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 5,
+      "checker2": "first-order flexible",
+      "flex_dim": 5,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (7 vertices, dim 3) + R_t S2 (4 vertices, dim 3)",
+      "summands": [
+        [
+          7,
+          3
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "37": {
+      "name": "Elongated Square Gyrobicupola",
+      "V": 24,
+      "E": 48,
+      "F": 26,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 5,
+      "checker2": "first-order flexible",
+      "flex_dim": 5,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (16 vertices, dim 3) + R_t S2 (2 vertices, dim 1)",
+      "summands": [
+        [
+          16,
+          3
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "38": {
+      "name": "Elongated Pentagonal Orthobicupola",
+      "V": 30,
+      "E": 60,
+      "F": 32,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 7,
+      "checker2": "first-order flexible",
+      "flex_dim": 7,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (12 vertices, dim 3) + R_t S2 (5 vertices, dim 2)",
+      "summands": [
+        [
+          12,
+          3
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "39": {
+      "name": "Elongated Pentagonal Gyrobicupola",
+      "V": 30,
+      "E": 60,
+      "F": 32,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 5,
+      "checker2": "first-order flexible",
+      "flex_dim": 5,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (11 vertices, dim 3) + R_t S2 (6 vertices, dim 3)",
+      "summands": [
+        [
+          11,
+          3
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "40": {
+      "name": "Elongated Pentagonal Orthocupolarotunda",
+      "V": 35,
+      "E": 70,
+      "F": 37,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 2,
+      "checker2": "first-order flexible",
+      "flex_dim": 2,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (2 vertices, dim 1) + R_t S2 (25 vertices, dim 3)",
+      "summands": [
+        [
+          2,
+          1
+        ],
+        [
+          25,
+          3
+        ]
+      ],
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "41": {
+      "name": "Elongated Pentagonal Gyrocupolarotunda",
+      "V": 35,
+      "E": 70,
+      "F": 37,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 2,
+      "checker2": "first-order flexible",
+      "flex_dim": 2,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (2 vertices, dim 1) + R_t S2 (25 vertices, dim 3)",
+      "summands": [
+        [
+          2,
+          1
+        ],
+        [
+          25,
+          3
+        ]
+      ],
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "42": {
+      "name": "Elongated Pentagonal Orthobirotunda",
+      "V": 40,
+      "E": 80,
+      "F": 42,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 2,
+      "checker2": "first-order flexible",
+      "flex_dim": 2,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (2 vertices, dim 1) + R_t S2 (30 vertices, dim 3)",
+      "summands": [
+        [
+          2,
+          1
+        ],
+        [
+          30,
+          3
+        ]
+      ],
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "43": {
+      "name": "Elongated Pentagonal Gyrobirotunda",
+      "V": 40,
+      "E": 80,
+      "F": 42,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 2,
+      "checker2": "first-order flexible",
+      "flex_dim": 2,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (2 vertices, dim 1) + R_t S2 (30 vertices, dim 3)",
+      "summands": [
+        [
+          2,
+          1
+        ],
+        [
+          30,
+          3
+        ]
+      ],
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "44": {
+      "name": "Gyroelongated Triangular Bicupola",
+      "V": 18,
+      "E": 42,
+      "F": 26,
+      "field_degree": 8,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "45": {
+      "name": "Gyroelongated Square Bicupola",
+      "V": 24,
+      "E": 56,
+      "F": 34,
+      "field_degree": 8,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "46": {
+      "name": "Gyroelongated Pentagonal Bicupola",
+      "V": 30,
+      "E": 70,
+      "F": 42,
+      "field_degree": 8,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "47": {
+      "name": "Gyroelongated Pentagonal Cupolarotunda",
+      "V": 35,
+      "E": 80,
+      "F": 47,
+      "field_degree": 8,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "48": {
+      "name": "Gyroelongated Pentagonal Birotunda",
+      "V": 40,
+      "E": 90,
+      "F": 52,
+      "field_degree": 8,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "49": {
+      "name": "Augmented Triangular Prism",
+      "V": 7,
+      "E": 13,
+      "F": 8,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 1,
+      "checker2": "first-order flexible",
+      "flex_dim": 1,
+      "class": "flexible",
+      "mechanism": "prism flex: tilt of h about the augmented squares horizontal edge direction",
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "50": {
+      "name": "Biaugmented Triangular Prism",
+      "V": 8,
+      "E": 17,
+      "F": 11,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "51": {
+      "name": "Triaugmented Triangular Prism",
+      "V": 9,
+      "E": 21,
+      "F": 14,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 3,
+      "parallel_edges": true
+    },
+    "52": {
+      "name": "Augmented Pentagonal Prism",
+      "V": 11,
+      "E": 19,
+      "F": 10,
+      "field_degree": 8,
+      "flex_dim_upper_bound_mod_p": 3,
+      "checker2": "first-order flexible",
+      "flex_dim": 3,
+      "class": "flexible",
+      "mechanism": "prism flex: polygon flex of the regular 5-gon (dimension 2), all lateral squares preserved",
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "53": {
+      "name": "Biaugmented Pentagonal Prism",
+      "V": 12,
+      "E": 23,
+      "F": 13,
+      "field_degree": 8,
+      "flex_dim_upper_bound_mod_p": 2,
+      "checker2": "first-order flexible",
+      "flex_dim": 2,
+      "class": "flexible",
+      "mechanism": "prism flex: polygon flex of the regular 5-gon (dimension 2), all lateral squares preserved",
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "54": {
+      "name": "Augmented Hexagonal Prism",
+      "V": 13,
+      "E": 22,
+      "F": 11,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 4,
+      "checker2": "first-order flexible",
+      "flex_dim": 4,
+      "class": "flexible",
+      "mechanism": "prism flex: polygon flex of the regular 6-gon (dimension 3), all lateral squares preserved",
+      "max_face": 6,
+      "parallel_edges": true
+    },
+    "55": {
+      "name": "Parabiaugmented Hexagonal Prism",
+      "V": 14,
+      "E": 26,
+      "F": 14,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 4,
+      "checker2": "first-order flexible",
+      "flex_dim": 4,
+      "class": "flexible",
+      "mechanism": "prism flex: polygon flex of the regular 6-gon (dimension 3), all lateral squares preserved",
+      "max_face": 6,
+      "parallel_edges": true
+    },
+    "56": {
+      "name": "Metabiaugmented Hexagonal Prism",
+      "V": 14,
+      "E": 26,
+      "F": 14,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 3,
+      "checker2": "first-order flexible",
+      "flex_dim": 3,
+      "class": "flexible",
+      "mechanism": "prism flex: polygon flex of the regular 6-gon (dimension 3), all lateral squares preserved",
+      "max_face": 6,
+      "parallel_edges": true
+    },
+    "57": {
+      "name": "Triaugmented Hexagonal Prism",
+      "V": 15,
+      "E": 30,
+      "F": 17,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 3,
+      "checker2": "first-order flexible",
+      "flex_dim": 3,
+      "class": "flexible",
+      "mechanism": "prism flex: polygon flex of the regular 6-gon (dimension 3), all lateral squares preserved",
+      "max_face": 6,
+      "parallel_edges": true
+    },
+    "58": {
+      "name": "Augmented Dodecahedron",
+      "V": 21,
+      "E": 35,
+      "F": 16,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 3,
+      "checker2": "first-order flexible",
+      "flex_dim": 3,
+      "class": "first-order flexible, second-order rigid",
+      "prestress_certificate": false,
+      "mechanism": "resultants + gcd over K + Sturm: no common real zero",
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "59": {
+      "name": "Parabiaugmented Dodecahedron",
+      "V": 22,
+      "E": 40,
+      "F": 20,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 3,
+      "checker2": "first-order flexible",
+      "flex_dim": 3,
+      "class": "first-order flexible, second-order rigid",
+      "prestress_certificate": false,
+      "mechanism": "resultants + gcd over K + Sturm: no common real zero",
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "60": {
+      "name": "Metabiaugmented Dodecahedron",
+      "V": 22,
+      "E": 40,
+      "F": 20,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 1,
+      "checker2": "first-order flexible",
+      "flex_dim": 1,
+      "class": "first-order flexible, second-order rigid",
+      "prestress_certificate": true,
+      "mechanism": "single flex: some stress form Q_xi(F1) != 0",
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "61": {
+      "name": "Triaugmented Dodecahedron",
+      "V": 23,
+      "E": 45,
+      "F": 24,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "62": {
+      "name": "Metabidiminished Icosahedron",
+      "V": 10,
+      "E": 20,
+      "F": 12,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "63": {
+      "name": "Tridiminished Icosahedron",
+      "V": 9,
+      "E": 15,
+      "F": 8,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "64": {
+      "name": "Augmented Tridiminished Icosahedron",
+      "V": 10,
+      "E": 18,
+      "F": 10,
+      "field_degree": 4,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "65": {
+      "name": "Augmented Truncated Tetrahedron",
+      "V": 15,
+      "E": 27,
+      "F": 14,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 6,
+      "parallel_edges": true
+    },
+    "66": {
+      "name": "Augmented Truncated Cube",
+      "V": 28,
+      "E": 48,
+      "F": 22,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 8,
+      "parallel_edges": true
+    },
+    "67": {
+      "name": "Biaugmented Truncated Cube",
+      "V": 32,
+      "E": 60,
+      "F": 30,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 2,
+      "checker2": "first-order flexible",
+      "flex_dim": 2,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (6 vertices, dim 3) + R_t S2 (16 vertices, dim 3)",
+      "summands": [
+        [
+          6,
+          3
+        ],
+        [
+          16,
+          3
+        ]
+      ],
+      "max_face": 8,
+      "parallel_edges": true
+    },
+    "68": {
+      "name": "Augmented Truncated Dodecahedron",
+      "V": 65,
+      "E": 105,
+      "F": 42,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 10,
+      "parallel_edges": true
+    },
+    "69": {
+      "name": "Parabiaugmented Truncated Dodecahedron",
+      "V": 70,
+      "E": 120,
+      "F": 52,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 10,
+      "parallel_edges": true
+    },
+    "70": {
+      "name": "Metabiaugmented Truncated Dodecahedron",
+      "V": 70,
+      "E": 120,
+      "F": 52,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 10,
+      "parallel_edges": true
+    },
+    "71": {
+      "name": "Triaugmented Truncated Dodecahedron",
+      "V": 75,
+      "E": 135,
+      "F": 62,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 10,
+      "parallel_edges": true
+    },
+    "72": {
+      "name": "Gyrate Rhombicosidodecahedron",
+      "V": 60,
+      "E": 120,
+      "F": 62,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 6,
+      "checker2": "first-order flexible",
+      "flex_dim": 6,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (21 vertices, dim 3) + R_t S2 (11 vertices, dim 3)",
+      "summands": [
+        [
+          21,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "73": {
+      "name": "Parabigyrate Rhombicosidodecahedron",
+      "V": 60,
+      "E": 120,
+      "F": 62,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 6,
+      "checker2": "first-order flexible",
+      "flex_dim": 6,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (22 vertices, dim 3) + R_t S2 (10 vertices, dim 3)",
+      "summands": [
+        [
+          22,
+          3
+        ],
+        [
+          10,
+          3
+        ]
+      ],
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "74": {
+      "name": "Metabigyrate Rhombicosidodecahedron",
+      "V": 60,
+      "E": 120,
+      "F": 62,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 4,
+      "checker2": "first-order flexible",
+      "flex_dim": 4,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (22 vertices, dim 3) + R_t S2 (10 vertices, dim 3)",
+      "summands": [
+        [
+          22,
+          3
+        ],
+        [
+          10,
+          3
+        ]
+      ],
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "75": {
+      "name": "Trigyrate Rhombicosidodecahedron",
+      "V": 60,
+      "E": 120,
+      "F": 62,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 3,
+      "checker2": "first-order flexible",
+      "flex_dim": 3,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (23 vertices, dim 3) + R_t S2 (9 vertices, dim 3)",
+      "summands": [
+        [
+          23,
+          3
+        ],
+        [
+          9,
+          3
+        ]
+      ],
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "76": {
+      "name": "Diminished Rhombicosidodecahedron",
+      "V": 55,
+      "E": 105,
+      "F": 52,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 6,
+      "checker2": "first-order flexible",
+      "flex_dim": 6,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (20 vertices, dim 3) + R_t S2 (11 vertices, dim 3)",
+      "summands": [
+        [
+          20,
+          3
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "max_face": 10,
+      "parallel_edges": true
+    },
+    "77": {
+      "name": "Paragyrate Diminished Rhombicosidodecahedron",
+      "V": 55,
+      "E": 105,
+      "F": 52,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 4,
+      "checker2": "first-order flexible",
+      "flex_dim": 4,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (21 vertices, dim 3) + R_t S2 (10 vertices, dim 3)",
+      "summands": [
+        [
+          21,
+          3
+        ],
+        [
+          10,
+          3
+        ]
+      ],
+      "max_face": 10,
+      "parallel_edges": true
+    },
+    "78": {
+      "name": "Metagyrate Diminished Rhombicosidodecahedron",
+      "V": 55,
+      "E": 105,
+      "F": 52,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 4,
+      "checker2": "first-order flexible",
+      "flex_dim": 4,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (21 vertices, dim 3) + R_t S2 (10 vertices, dim 3)",
+      "summands": [
+        [
+          21,
+          3
+        ],
+        [
+          10,
+          3
+        ]
+      ],
+      "max_face": 10,
+      "parallel_edges": true
+    },
+    "79": {
+      "name": "Bigyrate Diminished Rhombicosidodecahedron",
+      "V": 55,
+      "E": 105,
+      "F": 52,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 2,
+      "checker2": "first-order flexible",
+      "flex_dim": 2,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (22 vertices, dim 3) + R_t S2 (9 vertices, dim 3)",
+      "summands": [
+        [
+          22,
+          3
+        ],
+        [
+          9,
+          3
+        ]
+      ],
+      "max_face": 10,
+      "parallel_edges": true
+    },
+    "80": {
+      "name": "Parabidiminished Rhombicosidodecahedron",
+      "V": 50,
+      "E": 90,
+      "F": 42,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 6,
+      "checker2": "first-order flexible",
+      "flex_dim": 6,
+      "class": "flexible",
+      "mechanism": "Minkowski reorientation: S1 (20 vertices, dim 3) + R_t S2 (10 vertices, dim 3)",
+      "summands": [
+        [
+          20,
+          3
+        ],
+        [
+          10,
+          3
+        ]
+      ],
+      "max_face": 10,
+      "parallel_edges": true
+    },
+    "81": {
+      "name": "Metabidiminished Rhombicosidodecahedron",
+      "V": 50,
+      "E": 90,
+      "F": 42,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 4,
+      "checker2": "first-order flexible",
+      "flex_dim": 4,
+      "class": "first-order flexible, second-order rigid",
+      "prestress_certificate": false,
+      "mechanism": "Macaulay matrix full rank: no common complex zero",
+      "max_face": 10,
+      "parallel_edges": true
+    },
+    "82": {
+      "name": "Gyrate Bidiminished Rhombicosidodecahedron",
+      "V": 50,
+      "E": 90,
+      "F": 42,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 2,
+      "checker2": "first-order flexible",
+      "flex_dim": 2,
+      "class": "first-order flexible, second-order rigid",
+      "prestress_certificate": true,
+      "mechanism": "Macaulay matrix full rank: no common complex zero",
+      "max_face": 10,
+      "parallel_edges": true
+    },
+    "83": {
+      "name": "Tridiminished Rhombicosidodecahedron",
+      "V": 45,
+      "E": 75,
+      "F": 32,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 2,
+      "checker2": "first-order flexible",
+      "flex_dim": 2,
+      "class": "first-order flexible, second-order rigid",
+      "prestress_certificate": false,
+      "mechanism": "Macaulay matrix full rank: no common complex zero",
+      "max_face": 10,
+      "parallel_edges": true
+    },
+    "84": {
+      "name": "Snub Disphenoid",
+      "V": 8,
+      "E": 18,
+      "F": 12,
+      "field_degree": 6,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 3,
+      "parallel_edges": false
+    },
+    "85": {
+      "name": "Snub Square Antiprism",
+      "V": 16,
+      "E": 40,
+      "F": 26,
+      "field_degree": 12,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "86": {
+      "name": "Sphenocorona",
+      "V": 10,
+      "E": 22,
+      "F": 14,
+      "field_degree": 8,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "87": {
+      "name": "Augmented Sphenocorona",
+      "V": 11,
+      "E": 26,
+      "F": 17,
+      "field_degree": 16,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "88": {
+      "name": "Sphenomegacorona",
+      "V": 12,
+      "E": 28,
+      "F": 18,
+      "field_degree": 32,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "89": {
+      "name": "Hebesphenomegacorona",
+      "V": 14,
+      "E": 33,
+      "F": 21,
+      "field_degree": 20,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "90": {
+      "name": "Disphenocingulum",
+      "V": 16,
+      "E": 38,
+      "F": 24,
+      "field_degree": 24,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 4,
+      "parallel_edges": true
+    },
+    "91": {
+      "name": "Bilunabirotunda",
+      "V": 14,
+      "E": 26,
+      "F": 14,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 5,
+      "parallel_edges": true
+    },
+    "92": {
+      "name": "Triangular Hebesphenorotunda",
+      "V": 18,
+      "E": 36,
+      "F": 20,
+      "field_degree": 2,
+      "flex_dim_upper_bound_mod_p": 0,
+      "checker2": "first-order rigid",
+      "class": "first-order rigid",
+      "flex_dim": 0,
+      "max_face": 6,
+      "parallel_edges": true
+    }
+  }
+}

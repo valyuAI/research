@@ -1,0 +1,51 @@
+J3 Triangular Cupola: minkowski: l x s2
+J4 Square Cupola: minkowski: l x s2
+J5 Pentagonal Cupola: minkowski: l x s2
+J7 Elongated Triangular Pyramid: minkowski: l x s2
+J8 Elongated Square Pyramid: minkowski: l x s2
+J9 Elongated Pentagonal Pyramid: minkowski: l x s2
+J14 Elongated Triangular Dipyramid: minkowski: l x s2
+J15 Elongated Square Dipyramid: minkowski: l x s2
+J16 Elongated Pentagonal Dipyramid: minkowski: l x s2
+J18 Elongated Triangular Cupola: minkowski: l x s2
+J19 Elongated Square Cupola: minkowski: l x s2
+J20 Elongated Pentagonal Cupola: minkowski: l x s2
+J21 Elongated Pentagonal Rotunda: minkowski: l x s2
+J26 Gyrobifastigium: minkowski: l x s2
+J27 Triangular Orthobicupola: minkowski: l x s2
+J28 Square Orthobicupola: minkowski: l x s2
+J29 Square Gyrobicupola: minkowski: l x s2
+J30 Pentagonal Orthobicupola: minkowski: l x s2
+J31 Pentagonal Gyrobicupola: minkowski: l x s2
+J35 Elongated Triangular Orthobicupola: minkowski: l x s2
+J36 Elongated Triangular Gyrobicupola: minkowski: l x s2
+J37 Elongated Square Gyrobicupola: minkowski: l x s2
+J38 Elongated Pentagonal Orthobicupola: minkowski: l x s2
+J39 Elongated Pentagonal Gyrobicupola: minkowski: l x s2
+J40 Elongated Pentagonal Orthocupolarotunda: minkowski: l x s2
+J41 Elongated Pentagonal Gyrocupolarotunda: minkowski: l x s2
+J42 Elongated Pentagonal Orthobirotunda: minkowski: l x s2
+J43 Elongated Pentagonal Gyrobirotunda: minkowski: l x s2
+J49 Augmented Triangular Prism: exact kernel vector (flex space dim 1)
+J52 Augmented Pentagonal Prism: exact kernel vector (flex space dim 3)
+J53 Biaugmented Pentagonal Prism: exact kernel vector (flex space dim 2)
+J54 Augmented Hexagonal Prism: exact kernel vector (flex space dim 4)
+J55 Parabiaugmented Hexagonal Prism: exact kernel vector (flex space dim 4)
+J56 Metabiaugmented Hexagonal Prism: exact kernel vector (flex space dim 3)
+J57 Triaugmented Hexagonal Prism: exact kernel vector (flex space dim 3)
+J58 Augmented Dodecahedron: exact kernel vector (flex space dim 3)
+J59 Parabiaugmented Dodecahedron: exact kernel vector (flex space dim 3)
+J60 Metabiaugmented Dodecahedron: exact kernel vector (flex space dim 1)
+J67 Biaugmented Truncated Cube: minkowski: l x s2
+J72 Gyrate Rhombicosidodecahedron: minkowski: l x s2
+J73 Parabigyrate Rhombicosidodecahedron: minkowski: l x s2
+J74 Metabigyrate Rhombicosidodecahedron: minkowski: l x s2
+J75 Trigyrate Rhombicosidodecahedron: minkowski: l x s2
+J76 Diminished Rhombicosidodecahedron: minkowski: l x s2
+J77 Paragyrate Diminished Rhombicosidodecahedron: minkowski: l x s2
+J78 Metagyrate Diminished Rhombicosidodecahedron: minkowski: l x s2
+J79 Bigyrate Diminished Rhombicosidodecahedron: minkowski: l x s2
+J80 Parabidiminished Rhombicosidodecahedron: minkowski: l x s2
+J81 Metabidiminished Rhombicosidodecahedron: exact kernel vector (flex space dim 4)
+J82 Gyrate Bidiminished Rhombicosidodecahedron: exact kernel vector (flex space dim 2)
+J83 Tridiminished Rhombicosidodecahedron: exact kernel vector (flex space dim 2)

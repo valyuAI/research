@@ -1,0 +1,8 @@
+{
+  "cues": 141,
+  "text_matches": true,
+  "nonoverlapping": true,
+  "max_lines": 2,
+  "last_end": 558.6278169999995,
+  "timing": "Phrase timing proportional to character counts within measured clips; not forced word alignment."
+}

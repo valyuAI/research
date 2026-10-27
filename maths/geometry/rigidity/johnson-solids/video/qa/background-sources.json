@@ -1,0 +1,19 @@
+{
+  "retrievedOn": "2026-10-26",
+  "purpose": "Background source citation metadata; scientific claim scope is recorded in sources.md.",
+  "records": [
+    {
+      "title": "[2505.00874] Rigidity of polytopes with edge length and coplanarity constraints",
+      "url": "https://arxiv.org/abs/2505.00874",
+      "publication_date": "2026-10-26"
+    },
+    {
+      "title": "[2607.09252] Deformations and second-order rigidity of polytopes",
+      "url": "https://arxiv.org/abs/2607.09252",
+      "publication_date": "2026-10-26"
+    }
+  ],
+  "rawResponseSha256": "acfca8ce739249d88190c9834d74d33a01cf554b553c350cb4421cf9d40d4a78",
+  "rawResponseRetainedOutsideRepository": true,
+  "curation": "Full third-party text, temporary image URLs and retrieval-service bookkeeping are omitted from the research package."
+}

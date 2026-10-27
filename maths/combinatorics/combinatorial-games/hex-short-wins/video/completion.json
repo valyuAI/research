@@ -1,0 +1,17 @@
+{
+  "duration": 559.166667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "clip_count": 35,
+  "max_clip_seconds": 19.32,
+  "full_decode": "passed",
+  "mean_db": -26.2,
+  "peak_db": -5.3,
+  "listening_performed": false,
+  "visual_inspection": "passed; see visual-inspection.json",
+  "source_hashes_unchanged": true,
+  "completedUtc": "2026-10-26T16:22:14.603191+00:00"
+}

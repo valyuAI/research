@@ -1,0 +1,320 @@
+[
+  {
+    "label": "a01",
+    "time": 8.5512,
+    "file": "a01.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a02",
+    "time": 22.158133333333325,
+    "file": "a02.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a03",
+    "time": 36.51093333333335,
+    "file": "a03.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a04",
+    "time": 50.85973333333354,
+    "file": "a04.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a05",
+    "time": 66.38613333333319,
+    "file": "a05.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a06",
+    "time": 81.377867,
+    "file": "a06.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a07",
+    "time": 96.43200033333332,
+    "file": "a07.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a08",
+    "time": 110.15280033333359,
+    "file": "a08.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a09",
+    "time": 123.891733666667,
+    "file": "a09.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a10",
+    "time": 138.6642669999998,
+    "file": "a10.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a11",
+    "time": 153.444416,
+    "file": "a11.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a12",
+    "time": 167.3385493333333,
+    "file": "a12.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a13",
+    "time": 181.5769493333337,
+    "file": "a13.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a14",
+    "time": 196.5305493333337,
+    "file": "a14.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a15",
+    "time": 213.9654826666666,
+    "file": "a15.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a16",
+    "time": 229.677216,
+    "file": "a16.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a17",
+    "time": 245.2857493333333,
+    "file": "a17.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a18",
+    "time": 261.7049493333337,
+    "file": "a18.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a19",
+    "time": 278.97748266666684,
+    "file": "a19.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a20",
+    "time": 293.9902826666664,
+    "file": "a20.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a21",
+    "time": 309.385483,
+    "file": "a21.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a22",
+    "time": 325.03241633333334,
+    "file": "a22.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a23",
+    "time": 340.7172163333336,
+    "file": "a23.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a24",
+    "time": 357.74414966666654,
+    "file": "a24.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a25",
+    "time": 374.08414966666624,
+    "file": "a25.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a26",
+    "time": 389.36335,
+    "file": "a26.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a27",
+    "time": 405.3708166666667,
+    "file": "a27.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a28",
+    "time": 421.6196166666672,
+    "file": "a28.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a29",
+    "time": 437.0302833333336,
+    "file": "a29.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a30",
+    "time": 452.46628300000003,
+    "file": "a30.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a31",
+    "time": 469.4441496666667,
+    "file": "a31.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a32",
+    "time": 488.11934966666695,
+    "file": "a32.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a33",
+    "time": 506.446283,
+    "file": "a33.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a34",
+    "time": 524.4969500000001,
+    "file": "a34.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a35",
+    "time": 541.1857500000001,
+    "file": "a35.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a36",
+    "time": 559.1505500000004,
+    "file": "a36.png",
+    "kind": "beat"
+  },
+  {
+    "label": "a37",
+    "time": 577.6654833333334,
+    "file": "a37.png",
+    "kind": "beat"
+  },
+  {
+    "label": "OneReaction start",
+    "time": 0.25,
+    "file": "boundary-00-start.png",
+    "kind": "boundary"
+  },
+  {
+    "label": "OneReaction end",
+    "time": 71.36666699999999,
+    "file": "boundary-00-end.png",
+    "kind": "boundary"
+  },
+  {
+    "label": "Robustness start",
+    "time": 71.816667,
+    "file": "boundary-01-start.png",
+    "kind": "boundary"
+  },
+  {
+    "label": "Robustness end",
+    "time": 143.366016,
+    "file": "boundary-01-end.png",
+    "kind": "boundary"
+  },
+  {
+    "label": "ThreeRestingStates start",
+    "time": 143.816016,
+    "file": "boundary-02-start.png",
+    "kind": "boundary"
+  },
+  {
+    "label": "ThreeRestingStates end",
+    "time": 219.666016,
+    "file": "boundary-02-end.png",
+    "kind": "boundary"
+  },
+  {
+    "label": "TwoDimensions start",
+    "time": 220.116016,
+    "file": "boundary-03-start.png",
+    "kind": "boundary"
+  },
+  {
+    "label": "TwoDimensions end",
+    "time": 298.33268300000003,
+    "file": "boundary-03-end.png",
+    "kind": "boundary"
+  },
+  {
+    "label": "OppositeSlopes start",
+    "time": 298.782683,
+    "file": "boundary-04-start.png",
+    "kind": "boundary"
+  },
+  {
+    "label": "OppositeSlopes end",
+    "time": 378.99935000000005,
+    "file": "boundary-04-end.png",
+    "kind": "boundary"
+  },
+  {
+    "label": "BendingRule start",
+    "time": 379.44935000000004,
+    "file": "boundary-05-start.png",
+    "kind": "boundary"
+  },
+  {
+    "label": "BendingRule end",
+    "time": 441.73268300000007,
+    "file": "boundary-05-end.png",
+    "kind": "boundary"
+  },
+  {
+    "label": "SharpSizes start",
+    "time": 442.18268300000005,
+    "file": "boundary-06-start.png",
+    "kind": "boundary"
+  },
+  {
+    "label": "SharpSizes end",
+    "time": 511.9993500000001,
+    "file": "boundary-06-end.png",
+    "kind": "boundary"
+  },
+  {
+    "label": "Evidence start",
+    "time": 512.4493500000001,
+    "file": "boundary-07-start.png",
+    "kind": "boundary"
+  },
+  {
+    "label": "Evidence end",
+    "time": 583.366017,
+    "file": "boundary-07-end.png",
+    "kind": "boundary"
+  }
+]

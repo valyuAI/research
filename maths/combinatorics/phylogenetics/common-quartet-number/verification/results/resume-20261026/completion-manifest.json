@@ -1,0 +1,31 @@
+{
+  "recorded_utc": "2026-10-26 13:23:14 UTC",
+  "package_build_command": "nice -n 10 sh build.sh --game",
+  "package_build_exit_code": 0,
+  "pdf_pages_visually_inspected": 8,
+  "final_latex_warnings": [],
+  "artifact_sha256": {
+    "paper.tex": "f0cb726792c7e37ceff7476383e6bdc61f3a1b6f8ef5b992eb261e49a8b0cdad",
+    "paper.pdf": "f289b72f116eccffdccc2c7e579159663b338124373e71442e30e5e6732e8a87",
+    "references.bib": "9f99b869e9bd4ddff8ecf3505bb76a986081c486380a2bf91da53379af9d5c6b",
+    "build.sh": "dc9f2e420f948e56310286f374d7d50310800f3ea35150310569f71eecc693df",
+    "readiness.md": "b362dc86a60262b39bbe50d55ab5a788da6b4c5b56e0bc6423fdc8f986bc8298",
+    "video-brief.md": "4300e109256318cd21df53143fab0fc0458a4721e5174f1d3500eba8b44a9b9f"
+  },
+  "original_build_manifest": "quartet-manifest.json",
+  "changed_since_build": [
+    "paper.tex"
+  ],
+  "change_scope": "One prose sentence narrows strategy-optimality claim; mathematical inputs unchanged.",
+  "final_typeset_passes": 2,
+  "final_typeset_exit_code": 0,
+  "lean_exit_code": 0,
+  "lean_axiom_audit_exit_code": 0,
+  "lean_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "negative_controls_rejected": 4,
+  "lean_source_sha256": "7ab42011fffe6dd57b3a12529672d228ed962805197e259b05cab2563da7e44e"
+}

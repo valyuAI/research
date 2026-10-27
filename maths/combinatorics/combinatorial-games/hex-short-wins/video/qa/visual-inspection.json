@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "inspectedUtc": "2026-10-26T16:22:06.229847+00:00",
+  "videoSha256": "ada765a1b963109fd684af5eafb0b86140cccec37a3ca688d78b8f6ba82665ee",
+  "inspected_files": [
+    "qa/beats.png",
+    "qa/boundaries.png",
+    "qa/h11.png",
+    "qa/h28.png",
+    "qa/h29.png",
+    "contact.png",
+    "poster.png",
+    "contact.png"
+  ],
+  "notes": [
+    "Inspected all 35 final beat frames and all 14 scene-boundary frames. Early boundaries capture intentional drawing or fading animations.",
+    "The exact23-move position and six-cell path are legible at full resolution. The counter changes from move number to path cells to Blue stones.",
+    "Certified and search-only six-board path bounds remain visibly separated. The strict first-connection panel states only bounds8 through10.",
+    "The 5-by-5 continued-play and first-connection values, stone budgets, prior work and absence of Lean remain legible. No clipping or unintended overlays observed in inspected settled frames.",
+    "No listening or real-time playback performed.",
+    "Final poster and selected contact sheet also inspected after package closure."
+  ]
+}

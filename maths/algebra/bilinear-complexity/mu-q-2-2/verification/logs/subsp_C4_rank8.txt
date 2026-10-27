@@ -1,0 +1,6 @@
+n=4 dimS=4 m=4 target rank 8
+rank-one inside S: rank <= ... (degenerate)
+FOUND W: rank-ones in W = 8: 1 90 a0a 330 c00c 5050 7770 ffff
+FOUND W: rank-ones in W = 8: 1 90 a0a 330 c00c 5050 7770 ffff
+FOUND W: rank-ones in W = 8: 1 90 a0a 330 c00c 5050 7770 ffff
+RESULT f=17 n=4 rank<=8: YES (independent 4-subsets tested 101235440, hits 55552)

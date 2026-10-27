@@ -1,0 +1,7 @@
+/media/
+/audit/private-cache/
+/audit/intake/
+/audit/layout/
+/.tmp/
+/audio/.stale/
+/__pycache__/

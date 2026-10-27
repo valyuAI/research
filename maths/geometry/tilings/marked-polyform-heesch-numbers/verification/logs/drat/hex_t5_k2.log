@@ -1,0 +1,16 @@
+[12:46:23] build hex_t5_k2 hex [[0, 0], [0, 1], [1, -1], [1, 1]] k=2 
+hex cells=[[0, 0], [0, 1], [1, -1], [1, 1]] k=2 imb=1 radius=12.0: placements 6204 vars 82057 clauses 614375 (2.4s)
+wrote hex_t5_k2.cnf
+f7c57e8ef9a84a072af5290b9f07da4a12f7f935de1b30c1976cdc99cc099656  hex_t5_k2.cnf
+[12:46:26] cadical start
+s UNSATISFIABLE
+[12:46:51] cadical rc=20 (25s) proof bytes 16381964
+de04d77898816d2afdd2067210ac34c1e4634f439b2abe9d0571c951c6464187  hex_t5_k2.drat
+c 42554 of 614375 clauses in core                            
+c 126926 of 254011 lemmas in core using 9286472 resolution steps
+c 0 RAT lemmas in core; 57712 redundant literals in core lemmas
+s VERIFIED
+c verification time: 32.808 seconds
+[12:47:24] drat-trim done (33s)
+DRAT_VERIFIED hex_t5_k2
+[12:47:26] END rc=20

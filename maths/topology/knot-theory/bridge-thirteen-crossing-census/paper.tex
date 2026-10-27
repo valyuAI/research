@@ -1,0 +1,134 @@
+\documentclass[11pt]{amsart}
+\usepackage[a4paper,textwidth=158mm,textheight=250mm,centering]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,mathtools,amssymb,booktabs,float}
+\usepackage[unicode,colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\F}{\mathbb F}
+\newcommand{\GL}{\operatorname{GL}}
+\title{Twenty-five bridge-four knots from eight-point meridian actions}
+\author{Harvey Yorke}
+\address{Valyu AI}
+\author{Valyu DeepResearch}
+\address{Valyu AI}
+\hypersetup{pdftitle={Twenty-five bridge-four knots from eight-point meridian actions},pdfauthor={Harvey Yorke and Valyu DeepResearch}}
+\date{25 October 2026}
+\keywords{Bridge number, meridional rank, knot group, alternating group, Wirtinger number}
+\newcommand{\paperAuthorBlock}[1]{%
+  \begin{minipage}[t]{.44\textwidth}
+    \centering\normalfont\normalsize #1\par\small Valyu AI\par
+  \end{minipage}%
+}
+\makeatletter
+\renewcommand{\@setauthors}{%
+  \begingroup\trivlist\centering\normalfont\normalsize
+  \@topsep30\p@\relax\advance\@topsep by -\baselineskip\item\relax
+  \paperAuthorBlock{Harvey Yorke}\hspace{.06\textwidth}\paperAuthorBlock{Valyu DeepResearch}%
+  \endtrivlist\endgroup
+}
+\renewcommand{\@setaddresses}{}
+\makeatother
+\begin{document}
+\raggedbottom
+\begin{abstract}
+We determine bridge number and meridional rank four for twenty-five thirteen-crossing knots listed as $[3,4]$ in KnotInfo 2026.10.5 and Bhattacharjee's 293-name release 1.3.0 open list. For twenty-four knots, meridians act as double transpositions in $A_8$; for $13n_{4645}$, as $3$-cycles. In the eight-point $\F_2$ permutation module, each meridian has rank difference two and the common fixed space has codimension seven, giving meridional rank at least four. Four-seed Wirtinger colorings give bridge number at most four. Two further cable certificates confirm prior values. Independent standard-library checkers replay all twenty-seven certificates.
+\end{abstract}
+\maketitle
+
+\section{The census claim}
+
+Write $b(K)$ for bridge number and $\mu(K)$ for the minimum number of meridians generating the knot group. The classical inequality $\mu(K)\le b(K)$ is often strict as a bound even when the conjectured equality holds. Blair, Kjuchukova, Velazquez and Villanueva prove that the minimum Wirtinger number over all knot diagrams equals $b(K)$~\cite{BKVV}. We use this to turn four seed arcs into a bridge upper bound.
+
+Blair, Kjuchukova and Morrison surveyed finite Coxeter quotients through sixteen crossings~\cite{BKM}. Bhattacharjee certified 243 of the 536 thirteen-crossing bridge entries $[3,4]$ using four-dimensional transvections and reflections~\cite{Bhattacharjee}. His release 1.3.0 leaves 293 names, all still $[3,4]$ in KnotInfo 2026.10.5~\cite{KnotInfo}. Finite-order meridian quotients predate this work~\cite{JosephPongtanapaisan}; the eight-point certificates below supply the new table determinations.
+
+In Table~\ref{tab:knots}, $\mathsf D$ means that meridians map to double transpositions, and $\mathsf C$ means that they map to $3$-cycles. Every entry has a saved four-seed coloring of its KnotInfo diagram.
+
+\begin{theorem}\label{thm:census}
+For each of the twenty-five knots in Table~\ref{tab:knots}, $b(K)=\mu(K)=4$.
+\end{theorem}
+
+\begin{table}[H]
+\centering\small
+\begin{tabular}{ll@{\hspace{18mm}}ll}
+\toprule
+$K$ & certificate & $K$ & certificate\\
+\midrule
+$13a_{373}$ & $\mathsf D$ & $13n_{1013}$ & $\mathsf D$\\
+$13a_{375}$ & $\mathsf D$ & $13n_{1043}$ & $\mathsf D$\\
+$13a_{391}$ & $\mathsf D$ & $13n_{1044}$ & $\mathsf D$\\
+$13a_{392}$ & $\mathsf D$ & $13n_{1045}$ & $\mathsf D$\\
+$13a_{3264}$ & $\mathsf D$ & $13n_{1046}$ & $\mathsf D$\\
+$13a_{3266}$ & $\mathsf D$ & $13n_{1047}$ & $\mathsf D$\\
+$13a_{3275}$ & $\mathsf D$ & $13n_{1048}$ & $\mathsf D$\\
+$13a_{3276}$ & $\mathsf D$ & $13n_{3842}$ & $\mathsf D$\\
+$13n_{1005}$ & $\mathsf D$ & $13n_{3844}$ & $\mathsf D$\\
+$13n_{1006}$ & $\mathsf D$ & $13n_{3855}$ & $\mathsf D$\\
+$13n_{1007}$ & $\mathsf D$ & $13n_{3856}$ & $\mathsf D$\\
+$13n_{1011}$ & $\mathsf D$ & $13n_{4645}$ & $\mathsf C$\\
+$13n_{1012}$ & $\mathsf D$ & & \\
+\bottomrule
+\end{tabular}
+\caption{Twenty-five exact bridge-number determinations relative to the pinned release 1.3.0 open list.}
+\label{tab:knots}
+\end{table}
+
+\newpage
+KnotInfo calls all twenty-five hyperbolic, and eight are alternating. Its Conway, Montesinos and pretzel notation fields are blank for all $9{,}988$ thirteen-crossing rows in the same CSV, so those fields give no family exclusion. Priority is assessed separately from certificate correctness. The two additional checked knots, $13n_{4587}$ and $13n_{4639}$, are trefoil cables. Corollary~1.6 of Boileau, Jang and Weidmann gives $\mu\ge4$ for prime satellite knots~\cite{BJW}; KnotInfo's upper bound gives $b\le4$. Thus their values were known, and they do not enter Table~\ref{tab:knots}.
+
+\section{A fixed-space rank bound}
+
+\begin{lemma}\label{lem:rank}
+Let $\rho:G(K)\to\GL(V)$ be a representation over any field, and let $r\ge1$. If every meridian $m$ satisfies $\operatorname{rank}(\rho(m)-I)\le r$ and the common fixed space $V^{\rho(G(K))}$ has codimension $c$, then $\mu(K)\ge\lceil c/r\rceil$.
+\end{lemma}
+
+\begin{proof}
+If meridians $m_1,\ldots,m_k$ generate $G(K)$, a vector is fixed by the image of the whole group exactly when it is fixed by all $\rho(m_i)$. Hence
+\[
+  c=\operatorname{codim}\bigcap_{i=1}^k\ker(\rho(m_i)-I)
+  \le\sum_{i=1}^k\operatorname{rank}(\rho(m_i)-I)\le kr.
+\]
+The bound applies to either orientation of a meridian because inversion and conjugation preserve the rank of $g-I$.
+\end{proof}
+
+For a permutation $g$ on $d$ points, the kernel of $P_g-I$ consists of vectors constant on each cycle. Thus $\operatorname{rank}(P_g-I)=d-(\text{number of cycles of }g)$ over every field. This is two for both a $3$-cycle and a double transposition. A transitive permutation image fixes precisely the constant vectors in $\F_2^8$, a subspace of codimension seven. Lemma~\ref{lem:rank} gives $\mu(K)\ge\lceil7/2\rceil=4$. The calculation uses the full permutation module, with no assumption that a seven-dimensional characteristic-two complement exists.
+
+\section{The finite certificates}
+
+The supplementary file \texttt{verification/certificates.json} gives, for each knot, its thirteen-crossing PD code, one permutation per meridian arc, four seed arcs, and nine explicit coloring moves. Points are $0,\ldots,7$; arc $i$ ends at the incoming underedge of PD crossing $i$. A double transposition $[[a,b],[c,d]]$ swaps $a$ with $b$ and $c$ with $d$.
+
+For a PD crossing $[a,b,c,d]$, the oriented underedge $c$ follows $a$, while $b,d$ are on the overarc. With rightmost-first composition, the checked relation is
+\[
+  X_c=\begin{cases}
+  X_b^{-1}X_aX_b,&d=b+1\pmod{26},\\
+  X_bX_aX_b^{-1},&b=d+1\pmod{26}.
+  \end{cases}
+\]
+The indices on $X$ denote arcs containing the indicated edges. For involutive double transpositions, the two cases coincide. At the first crossing $[3,1,4,26]$ of $13n_{1005}$, the incoming underarc, overarc and outgoing underarc have labels $(01)(23)$, $(01)(34)$ and $(01)(24)$. Indeed,
+\[
+  (01)(34)\,(01)(23)\,(01)(34)=(01)(24).
+\]
+This is one of thirteen relations checked for that knot.
+
+The four seed arcs for $13n_{1005}$ are $0,3,7,4$, carrying $(01)(23)$, $(01)(24)$, $(03)(56)$ and $(07)(15)$. Its nine coloring moves, written $(\text{crossing},\text{new arc})$, are
+\[
+  (3,2),(1,1),(2,5),(4,6),(6,11),(7,9),(8,8),(10,10),(11,12).
+\]
+For the $3$-cycle knot $13n_{4645}$, the four seed arcs $3,0,5,4$ carry $(012),(013),(345),(067)$; its full crossing labels and coloring moves are also in the certificate file. At each saved move the overarc and one underarc are already colored, so the other underarc becomes colored. All thirteen arcs are reached from four seeds. The theorem of~\cite{BKVV} gives $b(K)\le4$ in every case. Combining this with Lemma~\ref{lem:rank} and $\mu(K)\le b(K)$ proves Theorem~\ref{thm:census}.
+
+\newpage
+The first checker evaluates all 351 Wirtinger relations, the 243 coloring moves, and the permutation groups generated by the four seeds. Each image is even and has order $20{,}160=|A_8|$, so the recorded homomorphisms are onto $A_8$. The second checker independently reconstructs arcs by joining overedge pairs, replays the relations and coloring moves, and computes $\F_2$ matrix ranks: two for each meridian difference and seven for the stack of all differences in each certificate. Both checkers use only the Python standard library.
+
+\section{Scope and reproducibility}
+
+Run \texttt{sh build.sh} to replay the twenty-seven certificates and compile the paper. The optional \texttt{KNOTINFO\_CSV} environment variable points to the exact \texttt{database\_knotinfo} 2026.10.5 CSV, allowing comparison with the saved twenty-seven source rows, including PD codes and bridge intervals. The archived release 1.3.0 open list is supplied separately. Removing the twenty-five names in Table~\ref{tab:knots} leaves 268 entries of that pinned list, recorded in \texttt{verification/remaining-v1.3.0.json}. This residual list includes the two trefoil cables with prior theoretical values; it is a ledger relative to the pinned release, not a claim that all 268 values are mathematically unknown.
+
+To test overlap with the earlier Coxeter census~\cite{BKM}, a separate optional script exhausts reflection labels in $A_4$, $D_4$ and $H_4$ for each of the twenty-five diagrams. One seed reflection is fixed up to conjugacy; the other three range over $10^3$, $12^3$ or $60^3$ root-line triples. Exact propagation and a rank-four root-span test find no witness for the twenty-five knots, while the known bridge-four knot $13a_{112}$ is a positive control for all three groups. This bounded finite audit excludes the maximal-rank certificates of~\cite{BKM}, but not unrelated family theorems.
+
+The search also tested transitive rank-two meridian actions by $3$-cycles and double transpositions on eight and nine points, four-cycle actions on eleven through thirteen points, and certain five- and six-dimensional binary transvection actions. Only positive certificates enter the theorem; its proof does not assume that the screens found every possible finite quotient. The exact values are proved by the displayed bound and the saved certificates. Their priority relative to uncatalogued earlier determinations remains a separate, bounded literature question.
+
+\bibliographystyle{amsplain}
+\bibliography{references}
+\end{document}

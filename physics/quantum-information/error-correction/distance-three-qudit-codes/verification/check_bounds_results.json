@@ -1,0 +1,187 @@
+{
+ "lemma_3_3_checked": {
+  "prime_powers": [
+   3,
+   4,
+   5,
+   7,
+   8,
+   9,
+   11,
+   13,
+   16,
+   17,
+   19,
+   23,
+   25,
+   27,
+   29,
+   31,
+   32
+  ],
+  "r_range": [
+   4,
+   40
+  ],
+  "violations": []
+ },
+ "theorem_3_4_nmax_equals_mu": true,
+ "upper_bound_improvements": [
+  {
+   "q": 3,
+   "n": 29,
+   "k": 24,
+   "table_lower": 2,
+   "table_upper": 3,
+   "new_upper": 2,
+   "exact_now": true
+  },
+  {
+   "q": 3,
+   "n": 30,
+   "k": 23,
+   "table_lower": 3,
+   "table_upper": 4,
+   "new_upper": 3,
+   "exact_now": true
+  },
+  {
+   "q": 4,
+   "n": 66,
+   "k": 61,
+   "table_lower": 2,
+   "table_upper": 3,
+   "new_upper": 2,
+   "exact_now": true
+  },
+  {
+   "q": 4,
+   "n": 67,
+   "k": 60,
+   "table_lower": 3,
+   "table_upper": 4,
+   "new_upper": 3,
+   "exact_now": true
+  },
+  {
+   "q": 5,
+   "n": 27,
+   "k": 21,
+   "table_lower": 3,
+   "table_upper": 4,
+   "new_upper": 3,
+   "exact_now": true
+  },
+  {
+   "q": 7,
+   "n": 51,
+   "k": 45,
+   "table_lower": 3,
+   "table_upper": 4,
+   "new_upper": 3,
+   "exact_now": true
+  },
+  {
+   "q": 7,
+   "n": 52,
+   "k": 44,
+   "table_lower": 4,
+   "table_upper": 5,
+   "new_upper": 4,
+   "exact_now": true
+  },
+  {
+   "q": 7,
+   "n": 53,
+   "k": 43,
+   "table_lower": 4,
+   "table_upper": 6,
+   "new_upper": 5,
+   "exact_now": false
+  }
+ ],
+ "lower_bound_improvements": [
+  {
+   "q": 4,
+   "n": 59,
+   "k": 54,
+   "table_lower": 2,
+   "table_upper": 3,
+   "new_lower": 3,
+   "exact_now": true,
+   "certificate": "certificates/table/q4_r5_n59.json"
+  },
+  {
+   "q": 4,
+   "n": 61,
+   "k": 56,
+   "table_lower": 2,
+   "table_upper": 3,
+   "new_lower": 3,
+   "exact_now": true,
+   "certificate": "certificates/table/q4_r5_n61.json"
+  },
+  {
+   "q": 4,
+   "n": 62,
+   "k": 57,
+   "table_lower": 2,
+   "table_upper": 3,
+   "new_lower": 3,
+   "exact_now": true,
+   "certificate": "certificates/table/q4_r5_n62.json"
+  },
+  {
+   "q": 4,
+   "n": 65,
+   "k": 60,
+   "table_lower": 2,
+   "table_upper": 3,
+   "new_lower": 3,
+   "exact_now": true,
+   "certificate": "certificates/table/q4_r5_n65.json"
+  }
+ ],
+ "entries_improved": 12,
+ "entries_now_exact": 11,
+ "additive_ququart_prop_5_4": {
+  "[[66,61,3]]_4": {
+   "max_bound": 65,
+   "excluded": true,
+   "terms": [
+    65,
+    36,
+    21,
+    7,
+    9,
+    11,
+    13,
+    14,
+    16,
+    18,
+    20
+   ]
+  },
+  "[[67,60,4]]_4": {
+   "max_bound": 66,
+   "excluded": true,
+   "terms": [
+    66,
+    38,
+    24,
+    11,
+    14,
+    17,
+    20,
+    22,
+    25,
+    28,
+    31,
+    33,
+    36,
+    39,
+    42
+   ]
+  }
+ }
+}

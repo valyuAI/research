@@ -1,0 +1,114 @@
+\begin{thebibliography}{10}
+
+\bibitem{BasicSVG}
+Bojan Ba{\v{s}}i{\'c}.
+\newblock A polygon with {H}eesch number 6 and its coronas, 2020.
+\newblock Wikimedia Commons, File:A\_polygon\_with\_Heesch\_number\_6.svg,
+  dated 23 November 2020, source given as \cite{Basic2021};
+  \url{https://commons.wikimedia.org/wiki/File:A_polygon_with_Heesch_number_6.svg},
+  accessed 26 October 2026.
+
+\bibitem{Basic2021}
+Bojan Ba{\v{s}}i{\'c}.
+\newblock A figure with {H}eesch number 6: pushing a two-decade-old boundary.
+\newblock {\em The Mathematical Intelligencer}, 43(3):50--53, 2021.
+
+\bibitem{Basic2026}
+Bojan Ba{\v{s}}i{\'c}.
+\newblock The {H}eesch number in $\mathbb{E}^3$ is unbounded, 2026.
+\newblock arXiv:2610.24281.
+
+\bibitem{BDS2023}
+Bojan Ba{\v{s}}i{\'c}, Aleksa D{\v{z}}uklevski, and Anna Slivkov{\'a}.
+\newblock Solutions to seven and a half problems on tilings.
+\newblock {\em The Electronic Journal of Combinatorics}, 30(2):P2.50, 2023.
+
+\bibitem{CaDiCaL}
+Armin Biere, Tobias Faller, Katalin Fazekas, Mathias Fleury, Nils Froleyks, and
+  Florian Pollitt.
+\newblock {CaDiCaL} 2.0.
+\newblock In {\em Computer Aided Verification (CAV 2024)}, volume 14681 of {\em
+  Lecture Notes in Computer Science}, pages 133--152. Springer, 2024.
+
+\bibitem{Dzuklevski2026}
+Aleksa D{\v{z}}uklevski.
+\newblock A density method for bounding {H}eesch numbers in $\mathbb{E}^3$,
+  2026.
+\newblock arXiv:2610.02579.
+
+\bibitem{EppsteinJunkyard}
+David Eppstein.
+\newblock Heesch's problem.
+\newblock The Geometry Junkyard,
+  \url{https://ics.uci.edu/~eppstein/junkyard/heesch/}, accessed 26 October
+  2026.
+
+\bibitem{GS1987}
+Branko Gr{\"u}nbaum and G.~C. Shephard.
+\newblock {\em Tilings and Patterns}.
+\newblock W. H. Freeman, New York, 1987.
+
+\bibitem{BakkerAtlas}
+{Heesch Number Atlas}, 2026.
+\newblock Website associated with Anton Bakker, pages
+  \url{https://heesch-atlas.netlify.app/notes} and
+  \url{https://heesch-atlas.netlify.app/inventory}, notes dated 15 August 2026
+  with corrections of 25 September 2026, accessed 26 October 2026; not peer
+  reviewed.
+
+\bibitem{Heesch1968}
+Heinrich Heesch.
+\newblock {\em Regul{\"a}res {P}arkettierungsproblem}.
+\newblock Westdeutscher Verlag, K{\"o}ln and Opladen, 1968.
+
+\bibitem{PySAT}
+Alexey Ignatiev, Antonio Morgado, and Joao Marques-Silva.
+\newblock {PySAT}: a {P}ython toolkit for prototyping with {SAT} oracles.
+\newblock In {\em Theory and Applications of Satisfiability Testing (SAT
+  2018)}, volume 10929 of {\em Lecture Notes in Computer Science}, pages
+  428--437. Springer, 2018.
+
+\bibitem{Kaplan2022}
+Craig~S. Kaplan.
+\newblock Heesch numbers of unmarked polyforms.
+\newblock {\em Contributions to Discrete Mathematics}, 17(2):150--171, 2022.
+\newblock arXiv:2105.09438.
+
+\bibitem{Kaplan2025}
+Craig~S. Kaplan.
+\newblock The path to aperiodic monotiles, 2025.
+\newblock arXiv:2509.12216v1 [math.HO], 2 September 2025.
+
+\bibitem{MannThesis}
+Casey Mann.
+\newblock {\em On {H}eesch's Problem and Other Tiling Problems}.
+\newblock PhD thesis, University of Arkansas, 2001.
+\newblock Title as cited by D{\v{z}}uklevski (arXiv:2610.02579); not read by
+  us.
+
+\bibitem{Mann2004}
+Casey Mann.
+\newblock Heesch's tiling problem.
+\newblock {\em The American Mathematical Monthly}, 111(6):509--517, 2004.
+
+\bibitem{MannThomas2016}
+Casey Mann and B.~Charles Thomas.
+\newblock Heesch numbers of edge-marked polyforms.
+\newblock {\em Experimental Mathematics}, 25(3):281--294, 2016.
+
+\bibitem{SmithBlog2019}
+David Smith.
+\newblock Heesch tiling, 2019.
+\newblock Blog post, hedraweb, 16 May 2019,
+  \url{https://hedraweb.wordpress.com/2019/05/16/heesch-tiling/}, accessed 26
+  October 2026.
+
+\bibitem{DRATtrim}
+Nathan Wetzler, Marijn J.~H. Heule, and Jr. Warren A.~Hunt.
+\newblock {DRAT-trim}: efficient checking and trimming using expressive clausal
+  proofs.
+\newblock In {\em Theory and Applications of Satisfiability Testing (SAT
+  2014)}, volume 8561 of {\em Lecture Notes in Computer Science}, pages
+  422--429. Springer, 2014.
+
+\end{thebibliography}

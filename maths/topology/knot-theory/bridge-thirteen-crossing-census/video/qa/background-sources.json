@@ -1,0 +1,17 @@
+{
+  "retrievedOn": "2026-10-26",
+  "purpose": "Background source citation metadata; scientific claim scope is recorded in sources.md.",
+  "records": [
+    {
+      "title": "[1705.03108v1] Wirtinger systems of generators of knot groups",
+      "url": "https://arxiv.org/abs/1705.03108v1"
+    },
+    {
+      "title": "[1711.08144] Symmetric quotients of knot groups and a filtration of the Gordian graph",
+      "url": "https://arxiv.org/abs/1711.08144"
+    }
+  ],
+  "rawResponseSha256": "bd8c6bb4ebe5757c2a86cadf66b2e69ed3777d47fd7d96657d385b5ad30271fd",
+  "rawResponseRetainedOutsideRepository": true,
+  "curation": "Full third-party text and retrieval-service bookkeeping are omitted."
+}

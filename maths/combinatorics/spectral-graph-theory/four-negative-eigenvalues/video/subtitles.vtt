@@ -1,0 +1,568 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.643 line:2% position:50% size:94% align:center
+Put a number on each end of this line.
+
+2
+00:00:02.643 --> 00:00:06.191 line:2% position:50% size:94% align:center
+Replace each number by the number at its neighbour.
+
+3
+00:00:06.191 --> 00:00:12.104 line:2% position:50% size:94% align:center
+Two numbers simply swap places. This tiny operation will
+lead to a question about how
+
+4
+00:00:12.104 --> 00:00:13.704 line:2% position:50% size:94% align:center
+large a network can be.
+
+5
+00:00:14.100 --> 00:00:17.343 line:2% position:50% size:94% align:center
+A graph is a collection of dots joined by lines.
+
+6
+00:00:17.343 --> 00:00:22.477 line:2% position:50% size:94% align:center
+Its adjacency table has a one when two dots are joined and a
+zero otherwise.
+
+7
+00:00:22.477 --> 00:00:27.612 line:2% position:50% size:94% align:center
+Multiplying by this table means adding the numbers at each
+dot's neighbours.
+
+8
+00:00:28.000 --> 00:00:32.400 line:2% position:50% size:94% align:center
+Start with one at each end. After the swap, nothing changes.
+
+9
+00:00:32.400 --> 00:00:35.920 line:2% position:50% size:94% align:center
+The pattern has been multiplied by positive one.
+
+10
+00:00:35.920 --> 00:00:42.520 line:2% position:50% size:94% align:center
+A pattern that only gets scaled is an eigenvector, and the
+scale factor is its eigenvalue.
+
+11
+00:00:42.900 --> 00:00:47.151 line:2% position:50% size:94% align:center
+Now start with one and minus one. The swap reverses the
+signs.
+
+12
+00:00:47.151 --> 00:00:50.649 line:2% position:50% size:94% align:center
+The new pattern is minus one times the old pattern.
+
+13
+00:00:50.649 --> 00:00:54.900 line:2% position:50% size:94% align:center
+This gives an eigenvalue of negative one: the direction
+flips.
+
+14
+00:00:55.300 --> 00:00:59.135 line:2% position:50% size:94% align:center
+A graph with n dots has n eigenvalues, counting repeats.
+
+15
+00:00:59.135 --> 00:01:03.519 line:2% position:50% size:94% align:center
+Because its adjacency table is symmetric, they are real
+numbers.
+
+16
+00:01:03.519 --> 00:01:06.943 line:2% position:50% size:94% align:center
+We count how many are positive, zero and negative.
+
+17
+00:01:06.943 --> 00:01:09.820 line:2% position:50% size:94% align:center
+These three counts are called the inertia.
+
+18
+00:01:10.200 --> 00:01:14.092 line:2% position:50% size:94% align:center
+A triangle has eigenvalues two, minus one, minus one.
+
+19
+00:01:14.092 --> 00:01:19.820 line:2% position:50% size:94% align:center
+One positive and two negative. A pentagon has three positive
+and two negative.
+
+20
+00:01:19.820 --> 00:01:24.960 line:2% position:50% size:94% align:center
+So the same negative count can coexist with different
+positive counts.
+
+21
+00:01:25.333 --> 00:01:29.748 line:2% position:50% size:94% align:center
+We fix the negative count at four. How many positive values
+are possible?
+
+22
+00:01:29.748 --> 00:01:34.950 line:2% position:50% size:94% align:center
+And how many dots can a network have? Those are different
+questions, because some dots
+
+23
+00:01:34.950 --> 00:01:38.941 line:2% position:50% size:94% align:center
+can add zero eigenvalues without adding positive or negative
+ones.
+
+24
+00:01:39.333 --> 00:01:44.759 line:2% position:50% size:94% align:center
+Copy one endpoint of our original edge, giving the copy
+exactly the same neighbours.
+
+25
+00:01:44.759 --> 00:01:49.345 line:2% position:50% size:94% align:center
+Put one on the original, minus one on the copy, and zero in
+the middle.
+
+26
+00:01:49.345 --> 00:01:53.349 line:2% position:50% size:94% align:center
+Every neighbour sum is zero. The copied difference
+disappears.
+
+27
+00:01:53.733 --> 00:02:00.142 line:2% position:50% size:94% align:center
+Copies leave the positive and negative counts unchanged,
+though the individual eigenvalues
+
+28
+00:02:00.142 --> 00:02:03.276 line:2% position:50% size:94% align:center
+may change. Lonely dots also add only zeros.
+
+29
+00:02:03.276 --> 00:02:08.901 line:2% position:50% size:94% align:center
+To ask a finite size question, remove these easy ways of
+making a graph bigger.
+
+30
+00:02:09.300 --> 00:02:14.667 line:2% position:50% size:94% align:center
+A reduced graph has no lonely dots and no two dots with
+identical sets of neighbours.
+
+31
+00:02:14.667 --> 00:02:17.319 line:2% position:50% size:94% align:center
+Reduced does not mean no zero eigenvalues.
+
+32
+00:02:17.319 --> 00:02:22.812 line:2% position:50% size:94% align:center
+Other linear dependencies can still create zeros, and they
+matter for our size problem.
+
+33
+00:02:23.200 --> 00:02:27.574 line:2% position:50% size:94% align:center
+The answer for four negatives is thirty dots in a reduced
+graph.
+
+34
+00:02:27.574 --> 00:02:30.375 line:2% position:50% size:94% align:center
+Exactly four reduced graphs reach thirty.
+
+35
+00:02:30.375 --> 00:02:35.227 line:2% position:50% size:94% align:center
+Each has four positive, twenty-two zero, and four negative
+eigenvalues.
+
+36
+00:02:35.227 --> 00:02:40.216 line:2% position:50% size:94% align:center
+The zeros explain why thirty dots need not mean thirty
+active directions.
+
+37
+00:02:40.600 --> 00:02:44.471 line:2% position:50% size:94% align:center
+The largest possible positive count is eleven, achieved by
+two reduced graphs with fifteen
+
+38
+00:02:44.471 --> 00:02:48.342 line:2% position:50% size:94% align:center
+dots and no zeros. The numerical bound and these examples
+were already supplied by earlier
+
+39
+00:02:48.342 --> 00:02:51.568 line:2% position:50% size:94% align:center
+work. The classification proves that no other reduced graph
+attains eleven.
+
+40
+00:02:51.967 --> 00:02:55.049 line:2% position:50% size:94% align:center
+How can a finite computation settle all graphs?
+
+41
+00:02:55.049 --> 00:03:01.213 line:2% position:50% size:94% align:center
+First keep an induced core with the same positive and
+negative counts but no zero eigenvalues.
+
+42
+00:03:01.213 --> 00:03:06.919 line:2% position:50% size:94% align:center
+Induced means that, among the dots you keep, you retain
+every original connecting line.
+
+43
+00:03:07.300 --> 00:03:10.265 line:2% position:50% size:94% align:center
+The number of dots in a core is its rank.
+
+44
+00:03:10.265 --> 00:03:17.063 line:2% position:50% size:94% align:center
+With no zero eigenvalues, its table is nonsingular: an
+inverse table can undo the calculation.
+
+45
+00:03:17.063 --> 00:03:23.500 line:2% position:50% size:94% align:center
+Reduced graphs can be larger than their cores, so we must
+add zero directions back later.
+
+46
+00:03:23.867 --> 00:03:29.978 line:2% position:50% size:94% align:center
+The second ingredient says every nonsingular graph can be
+built from a smaller one by
+
+47
+00:03:29.978 --> 00:03:36.088 line:2% position:50% size:94% align:center
+adding one dot, or sometimes two. Two are essential: our
+first edge has a nonsingular
+
+48
+00:03:36.088 --> 00:03:39.971 line:2% position:50% size:94% align:center
+two-by-two table, while a lone dot has the zero table.
+
+49
+00:03:40.367 --> 00:03:45.813 line:2% position:50% size:94% align:center
+Why does the rule cover every case? Jacobi's determinant
+identity examines the inverse
+
+50
+00:03:45.813 --> 00:03:51.260 line:2% position:50% size:94% align:center
+table. Either a nonzero diagonal entry permits one deletion,
+or a nonzero off-diagonal
+
+51
+00:03:51.260 --> 00:03:56.327 line:2% position:50% size:94% align:center
+entry permits two. The paper proves these alternatives leave
+a nonsingular core.
+
+52
+00:03:56.700 --> 00:04:01.819 line:2% position:50% size:94% align:center
+For each core, try every possible zero-or-one list of
+connections to a new dot.
+
+53
+00:04:01.819 --> 00:04:05.578 line:2% position:50% size:94% align:center
+A calculation using the inverse tells which sign is added.
+
+54
+00:04:05.578 --> 00:04:10.956 line:2% position:50% size:94% align:center
+Written with the determinant and adjugate, its sign is
+decided using whole numbers.
+
+55
+00:04:11.333 --> 00:04:16.637 line:2% position:50% size:94% align:center
+Watch a concrete case. Join the new dot to both ends of the
+edge, making a triangle.
+
+56
+00:04:16.637 --> 00:04:22.509 line:2% position:50% size:94% align:center
+The connection list is one, one. The inverse table is the
+same swap table, so the calculation
+
+57
+00:04:22.509 --> 00:04:26.549 line:2% position:50% size:94% align:center
+gives two. Its negative contributes one new negative
+eigenvalue.
+
+58
+00:04:26.933 --> 00:04:32.989 line:2% position:50% size:94% align:center
+The program grows every allowed graph, merges copies made by
+renaming, and discards anything
+
+59
+00:04:32.989 --> 00:04:37.729 line:2% position:50% size:94% align:center
+exceeding four negatives. It also tries the required two-dot
+extensions.
+
+60
+00:04:37.729 --> 00:04:42.797 line:2% position:50% size:94% align:center
+This is exhaustive generation guided by a lemma, rather than
+a random search.
+
+61
+00:04:43.167 --> 00:04:47.944 line:2% position:50% size:94% align:center
+For exactly four negatives, the number of cores rises and
+then falls.
+
+62
+00:04:47.944 --> 00:04:53.759 line:2% position:50% size:94% align:center
+At fifteen dots, just two remain. At sixteen and seventeen,
+none remain even when we
+
+63
+00:04:53.759 --> 00:04:59.367 line:2% position:50% size:94% align:center
+allow fewer than four negatives. These empty levels are the
+stopping certificate.
+
+64
+00:04:59.767 --> 00:05:04.308 line:2% position:50% size:94% align:center
+Why are two empty levels enough? Suppose there were a first
+larger core.
+
+65
+00:05:04.308 --> 00:05:06.767 line:2% position:50% size:94% align:center
+Remove one or two dots using the lemma.
+
+66
+00:05:06.767 --> 00:05:09.857 line:2% position:50% size:94% align:center
+Its parent would have to sit on an earlier level.
+
+67
+00:05:09.857 --> 00:05:13.831 line:2% position:50% size:94% align:center
+Starting from two empty levels, neither route can ever
+restart.
+
+68
+00:05:14.200 --> 00:05:19.704 line:2% position:50% size:94% align:center
+The complete census contains forty-five thousand two hundred
+and forty-two cores with
+
+69
+00:05:19.704 --> 00:05:22.942 line:2% position:50% size:94% align:center
+at most four negatives. Two implementations agree.
+
+70
+00:05:22.942 --> 00:05:28.899 line:2% position:50% size:94% align:center
+Exact replay checks every recorded graph and its sign
+counts, and the mathematical extension
+
+71
+00:05:28.899 --> 00:05:31.360 line:2% position:50% size:94% align:center
+rule is what establishes completeness.
+
+72
+00:05:31.733 --> 00:05:34.951 line:2% position:50% size:94% align:center
+Now reconstruct a larger reduced graph from a core.
+
+73
+00:05:34.951 --> 00:05:38.484 line:2% position:50% size:94% align:center
+Each extra dot gets a nonzero binary connection pattern.
+
+74
+00:05:38.484 --> 00:05:42.079 line:2% position:50% size:94% align:center
+Its self-calculation must be zero to avoid changing rank.
+
+75
+00:05:42.079 --> 00:05:47.189 line:2% position:50% size:94% align:center
+Between two added dots, the corresponding calculation must
+be either zero or one.
+
+76
+00:05:47.567 --> 00:05:52.735 line:2% position:50% size:94% align:center
+Compatible patterns can coexist. An exact search finds the
+largest mutually compatible
+
+77
+00:05:52.735 --> 00:05:57.664 line:2% position:50% size:94% align:center
+collection for every core. This is the method of Akbari,
+Cameron and Khosrovshahi.
+
+78
+00:05:57.664 --> 00:06:01.871 line:2% position:50% size:94% align:center
+Applying it across all relevant ranks supplies the missing
+size bound.
+
+79
+00:06:02.267 --> 00:06:07.004 line:2% position:50% size:94% align:center
+Here are the maximum reduced sizes for ranks five through
+fifteen.
+
+80
+00:06:07.004 --> 00:06:12.891 line:2% position:50% size:94% align:center
+The peak is thirty, at rank eight. Above rank eight, the
+maxima fall below thirty.
+
+81
+00:06:12.891 --> 00:06:18.131 line:2% position:50% size:94% align:center
+Excluding those higher ranks is the central new step in the
+size theorem.
+
+82
+00:06:18.500 --> 00:06:22.038 line:2% position:50% size:94% align:center
+Thirty is actually attainable. Start with one edge.
+
+83
+00:06:22.038 --> 00:06:24.952 line:2% position:50% size:94% align:center
+Copy every dot and its connection pattern.
+
+84
+00:06:24.952 --> 00:06:29.877 line:2% position:50% size:94% align:center
+Join a new dot to all copies, then attach one more dot to
+that new dot.
+
+85
+00:06:29.877 --> 00:06:31.820 line:2% position:50% size:94% align:center
+The old two dots become six.
+
+86
+00:06:32.200 --> 00:06:36.477 line:2% position:50% size:94% align:center
+Repeat the same operation: six becomes fourteen, then
+thirty.
+
+87
+00:06:36.477 --> 00:06:41.946 line:2% position:50% size:94% align:center
+A second version adds connections from the final new dot to
+the original dots.
+
+88
+00:06:41.946 --> 00:06:48.256 line:2% position:50% size:94% align:center
+Using the variant first and the ordinary version afterwards
+gives the four maximum graphs.
+
+89
+00:06:48.633 --> 00:06:53.528 line:2% position:50% size:94% align:center
+Those four rank-eight classes were already known to Akbari,
+Cameron and Khosrovshahi
+
+90
+00:06:53.528 --> 00:06:58.598 line:2% position:50% size:94% align:center
+in two thousand and four. This work proves that allowing
+other ranks with four negative
+
+91
+00:06:58.598 --> 00:07:02.793 line:2% position:50% size:94% align:center
+eigenvalues does not produce a bigger graph or another
+thirty-dot class.
+
+92
+00:07:03.167 --> 00:07:07.384 line:2% position:50% size:94% align:center
+For the eleven-positive record, the first graph is called W
+five.
+
+93
+00:07:07.384 --> 00:07:10.368 line:2% position:50% size:94% align:center
+Start with five mutually connected point dots.
+
+94
+00:07:10.368 --> 00:07:12.834 line:2% position:50% size:94% align:center
+Add a dot for each of their ten pairs.
+
+95
+00:07:12.834 --> 00:07:18.479 line:2% position:50% size:94% align:center
+Join each pair dot to its two points, and join pair dots
+when their pairs are disjoint.
+
+96
+00:07:18.867 --> 00:07:22.315 line:2% position:50% size:94% align:center
+The other graph, X, begins with a three-by-three grid.
+
+97
+00:07:22.315 --> 00:07:27.807 line:2% position:50% size:94% align:center
+Join points sharing a row or column. Add six dots for the
+wrap-around diagonals in the
+
+98
+00:07:27.807 --> 00:07:33.171 line:2% position:50% size:94% align:center
+two directions. Join each to its three points, and join
+parallel line dots together.
+
+99
+00:07:33.567 --> 00:07:37.654 line:2% position:50% size:94% align:center
+Each graph has fifteen eigenvalues: eleven positive and four
+negative.
+
+100
+00:07:37.654 --> 00:07:42.383 line:2% position:50% size:94% align:center
+Their degree patterns differ, so they cannot be the same
+graph with renamed dots.
+
+101
+00:07:42.383 --> 00:07:47.638 line:2% position:50% size:94% align:center
+The completed census and reconstruction checks show that
+these are the only reduced graphs
+
+102
+00:07:47.638 --> 00:07:49.215 line:2% position:50% size:94% align:center
+attaining eleven positives.
+
+103
+00:07:49.600 --> 00:07:54.821 line:2% position:50% size:94% align:center
+Charles, Farber, Johnson and Kennedy-Shaffer supplied both
+examples and the numerical
+
+104
+00:07:54.821 --> 00:07:57.769 line:2% position:50% size:94% align:center
+bound underlying this result in twenty thirteen.
+
+105
+00:07:57.769 --> 00:08:02.929 line:2% position:50% size:94% align:center
+The later inertia identity of Elphick and colleagues makes
+the implication explicit.
+
+106
+00:08:02.929 --> 00:08:07.720 line:2% position:50% size:94% align:center
+The retained increment here is uniqueness, alongside
+independent verification.
+
+107
+00:08:08.100 --> 00:08:13.377 line:2% position:50% size:94% align:center
+Keep the two records separate. Thirty is the maximum number
+of dots after copies and
+
+108
+00:08:13.377 --> 00:08:18.717 line:2% position:50% size:94% align:center
+isolated dots are removed. Eleven is the maximum positive
+count, with four negatives.
+
+109
+00:08:18.717 --> 00:08:23.052 line:2% position:50% size:94% align:center
+The size champions and positive-count champions are
+different graphs.
+
+110
+00:08:23.433 --> 00:08:28.548 line:2% position:50% size:94% align:center
+The proof combines written linear-algebra arguments with
+complete exact computations.
+
+111
+00:08:28.548 --> 00:08:31.076 line:2% position:50% size:94% align:center
+It is not a proof-assistant formalisation.
+
+112
+00:08:31.076 --> 00:08:36.973 line:2% position:50% size:94% align:center
+Integer and rational tests make the decisions; decimal
+eigenvalue pictures are only illustrations.
+
+113
+00:08:36.973 --> 00:08:39.801 line:2% position:50% size:94% align:center
+Both the lemmas and the computation are needed.
+
+114
+00:08:40.200 --> 00:08:45.192 line:2% position:50% size:94% align:center
+For five negative eigenvalues, the corresponding
+maximum-size question remains open.
+
+115
+00:08:45.192 --> 00:08:48.282 line:2% position:50% size:94% align:center
+A pattern in the small cases is a clue, not a proof.
+
+116
+00:08:48.282 --> 00:08:53.392 line:2% position:50% size:94% align:center
+Failed searches through selected examples cannot replace the
+exhaustive generation and
+
+117
+00:08:53.392 --> 00:08:55.056 line:2% position:50% size:94% align:center
+stopping argument used here.
+
+118
+00:08:55.433 --> 00:09:01.174 line:2% position:50% size:94% align:center
+You have seen the whole route: moving numbers gives
+eigenvalues; removing zero directions
+
+119
+00:09:01.174 --> 00:09:06.206 line:2% position:50% size:94% align:center
+gives cores; complete generation and compatible
+reconstruction give the bound.
+
+120
+00:09:06.206 --> 00:09:11.753 line:2% position:50% size:94% align:center
+The paper and verification files contain the full arguments,
+exact census and explicit
+
+121
+00:09:11.753 --> 00:09:12.785 line:2% position:50% size:94% align:center
+extremal graphs.

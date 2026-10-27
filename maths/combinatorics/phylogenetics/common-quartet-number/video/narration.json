@@ -1,0 +1,149 @@
+{
+  "voice": "cedar",
+  "clips": [
+    {
+      "id": "q01",
+      "text": "Take four labels: a, b, c and d. Join them in a branching tree with no root. Its middle edge separates two pairs. Here, a and b are together on one side, while c and d are on the other."
+    },
+    {
+      "id": "q02",
+      "text": "There are only three possible pairings. Another tree might group a with c, or a with d. This four-label relationship is called a quartet. Agreement means the same pairing, not simply using the same four labels."
+    },
+    {
+      "id": "q03",
+      "text": "Now imagine three trees describing the same larger set of species. Must some four species have the same pairing in all three trees? The answer becomes yes at fourteen leaves. At thirteen, agreement can still be avoided."
+    },
+    {
+      "id": "q04",
+      "text": "A leaf is a tip of the tree. Every internal junction has three branches, and no point is designated as an ancestor or root. To inspect four chosen leaves, keep the paths connecting them and erase everything else."
+    },
+    {
+      "id": "q05",
+      "text": "Then straighten any points that merely sit along a path. The remaining shape is one of our three quartets. Edge lengths in these drawings do not matter. The pairing depends only on how the branches connect."
+    },
+    {
+      "id": "q06",
+      "text": "Here is the actual thirteen-leaf example used in the paper. Its labels are one through thirteen. We will keep the branches fixed and move the labels. That preserves the unlabelled shape while changing the relationships between particular species."
+    },
+    {
+      "id": "q07",
+      "text": "Rotate the labels one, two and three around their three positions. Do the same within four, five, six; seven, eight, nine; and ten, eleven, twelve. Thirteen stays fixed. One rotation gives the second tree, and another gives the third."
+    },
+    {
+      "id": "q08",
+      "text": "Look only at labels one, four, seven and thirteen. In the first tree, four and seven form one pair. In the other two trees, one and four form a pair instead. The three answers are not all equal."
+    },
+    {
+      "id": "q09",
+      "text": "Notice that two answers can match. We only need to prevent agreement by all three trees at once. In fact, each pair of these trees agrees on one hundred and thirty-seven quartets. Pairwise agreement is a different question."
+    },
+    {
+      "id": "q10",
+      "text": "Thirteen leaves contain seven hundred and fifteen groups of four. The check examines every group, and finds none with three equal answers. Two methods, using path distances and edge splits, confirm this. It is an exhaustive finite check, not random sampling."
+    },
+    {
+      "id": "q11",
+      "text": "One example is enough to show that thirteen cannot force agreement. But proving that fourteen always works is harder. We must cover every possible triple of trees, not just trees built by our relabelling trick."
+    },
+    {
+      "id": "q12",
+      "text": "The useful object is a separating edge. Cutting it divides the leaves into two sets. Pick two leaves on one side and two on the other. The quartet must pair the two from each side together."
+    },
+    {
+      "id": "q13",
+      "text": "A standard balanced-edge fact says that some edge leaves at least one third of the leaves on either side. With fourteen leaves, each side must therefore contain at least five. Colour the two sides blue and teal."
+    },
+    {
+      "id": "q14",
+      "text": "Carry those same colours into the second tree. An exhaustive check shows that a suitable edge always preserves three leaves of one colour opposite four of the other. Keep those seven leaves. The two colour sets are now separated in both trees."
+    },
+    {
+      "id": "q15",
+      "text": "The finite check covers all one hundred and thirty-five unlabelled shapes, and every colouring with five, six or seven blue leaves. That is one million, one hundred and thirty-eight thousand, nine hundred and ninety-five cases. There are zero failures."
+    },
+    {
+      "id": "q16",
+      "text": "Now restrict the third tree to the seven leaves we kept. A balanced edge has at least three on each side. Put the leaves into a grid: rows are their old colours, and columns are the sides of this new cut."
+    },
+    {
+      "id": "q17",
+      "text": "In this illustrative grid, the top row contains three leaves and the bottom row four. Each column also has at least three. The two diagonal cells contain two blue leaves and three teal leaves. Keep two from each."
+    },
+    {
+      "id": "q18",
+      "text": "They are opposite colours, so the first two trees separate them. They are also on opposite sides of the new cut, so the third tree separates them. All three trees must therefore give the same quartet pairing."
+    },
+    {
+      "id": "q19",
+      "text": "Why must a usable diagonal exist? If both diagonals failed, each would contain a cell with at most one leaf. Those two small cells share a row or a column. That row or column would contain at most two, contradicting our minimum of three."
+    },
+    {
+      "id": "q20",
+      "text": "We have both halves of the threshold. Thirteen admits a counterexample, and fourteen forces agreement. Write h of three for the smallest forcing number: it equals fourteen. Larger sets also work, because you can first restrict to any fourteen leaves."
+    },
+    {
+      "id": "q21",
+      "text": "For many trees, we can repeat the idea: keep two separated sets while processing one tree after another. The challenge is that the sets shrink. We need to track enough information to ensure two leaves survive on each side."
+    },
+    {
+      "id": "q22",
+      "text": "Call their sizes a and d. Define a budget as the smallest of three numbers: a times d, twice a squared, and twice d squared. A budget greater than two forces both integer sizes to be at least two."
+    },
+    {
+      "id": "q23",
+      "text": "Take sixteen blue leaves and thirty-two teal leaves. The three budget candidates are five hundred and twelve, five hundred and twelve, and two thousand and forty-eight. Their minimum is five hundred and twelve. Now cut the next tree, balancing the larger teal set."
+    },
+    {
+      "id": "q24",
+      "text": "Suppose the cut divides blue into seven and nine, and teal into eleven and twenty-one. Either diagonal remains separated in all trees processed so far. The seven and twenty-one choice has budget ninety-eight. The nine and eleven choice has budget ninety-nine."
+    },
+    {
+      "id": "q25",
+      "text": "Choose the larger budget, ninety-nine. The proof guarantees a retained fraction c, about eighteen point eight five eight percent. Multiplying the old budget by c gives about ninety-six point five five three. Our chosen diagonal clears that guarantee."
+    },
+    {
+      "id": "q25a",
+      "text": "Keep naming the smaller retained set X, and the larger Y. On the next tree, balance Y again. For the algebra, x and y mean the fractions of X and Y lying on one side of the cut."
+    },
+    {
+      "id": "q25b",
+      "text": "The proof rescales the sizes so the smaller is one. Larger size ratios can be reduced to two for a worst-case bound. Swapping the cut's sides lets us assume x plus y is at most one."
+    },
+    {
+      "id": "q25c",
+      "text": "The two cases meet where x squared equals one minus x, divided by three. Call that crossing t. Above t the first diagonal works; below t the second works. Checking all three budget terms proves the shared guarantee c equals t squared."
+    },
+    {
+      "id": "q26",
+      "text": "This constant is best possible for this real-number inequality, not for every tree strategy. Its written proof has been independently reviewed. Lean also checks the sharp inequality and its equality example. The tree model, iteration, finite searches and fourteen-leaf theorem are not formalised."
+    },
+    {
+      "id": "q27",
+      "text": "Repeat the budget step for each new tree. The initial budget is at least two ninths of the square of the leaf count. Requiring the final budget to stay above two gives this general upper bound. Its exponential base, beta, is about two point three zero three."
+    },
+    {
+      "id": "q28",
+      "text": "For one through six trees, this formula gives the guarantees shown. They need not be exact: for three trees it gives sixteen, while the sharper argument gives fourteen. Exact finite bookkeeping improves the four-tree upper bound to twenty-eight."
+    },
+    {
+      "id": "q29",
+      "text": "On the lower side, four explicit trees on twenty-two leaves have no common quartet. Checking all seven thousand, three hundred and fifteen groups confirms this. So the four-tree threshold lies between twenty-three and twenty-eight. Its exact value remains unknown here."
+    },
+    {
+      "id": "q30",
+      "text": "For any number k of trees, the lower bound two to the k plus two was already stated by Snir and Yuster. The paper supplies a construction and proof. The contribution here includes the new general upper bound and the exact three-tree threshold."
+    },
+    {
+      "id": "q31",
+      "text": "Keep three ideas. A quartet is a pairing of four leaves. Separated sets preserve that pairing across several trees. And a shrinking budget lets the argument continue through many trees. The result concerns guaranteed local agreement, not overall similarity of evolutionary histories."
+    },
+    {
+      "id": "q32",
+      "text": "Correctness confidence is high. The novelty assessment rests on a bounded literature search, not proof that no earlier work exists. Exploratory searches on twenty-three leaves remain unresolved and provide no evidence for a stronger bound."
+    },
+    {
+      "id": "q33",
+      "text": "The full paper, explicit trees and verification files accompany this explanation. The video shows the mechanism and its limits; it does not reproduce every case of the computational proof. Valyu Research, 2026. Narration uses a synthetic voice."
+    }
+  ]
+}

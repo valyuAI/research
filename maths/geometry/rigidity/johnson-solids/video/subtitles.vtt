@@ -1,0 +1,501 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.611
+Can you change this square without stretching any of its four sides?
+
+2
+00:00:04.611 --> 00:00:08.273
+Push one corner sideways, and you get a diamond shape.
+
+3
+00:00:08.273 --> 00:00:11.664
+The sides stay the same length. The angles change.
+
+4
+00:00:12.033 --> 00:00:17.986
+Now try the same idea with a solid. These bars keep their lengths, and every face must
+
+5
+00:00:17.986 --> 00:00:21.724
+stay perfectly flat. But a flat face can change shape.
+
+6
+00:00:21.724 --> 00:00:23.385
+It is not a rigid plate.
+
+7
+00:00:23.767 --> 00:00:28.171
+Watch the top of this cube move sideways and slightly down.
+
+8
+00:00:28.171 --> 00:00:31.456
+The upright bars tilt instead of stretching.
+
+9
+00:00:31.456 --> 00:00:37.279
+Every face remains flat, so this is an allowed change of shape, called a flex.
+
+10
+00:00:37.667 --> 00:00:40.750
+Which solids can do this, and which are locked?
+
+11
+00:00:40.750 --> 00:00:45.210
+We will explore a family of ninety two shapes called Johnson solids.
+
+12
+00:00:45.210 --> 00:00:49.408
+The answer is forty seven locally rigid and forty five flexible.
+
+13
+00:00:49.408 --> 00:00:51.179
+Here is why that is subtle.
+
+14
+00:00:51.567 --> 00:00:56.352
+Meet our running example, the triangular cupola, also called J three.
+
+15
+00:00:56.352 --> 00:01:02.246
+It has a triangle on top, a hexagon underneath, and a ring of three squares and three
+
+16
+00:01:02.246 --> 00:01:05.367
+triangles. All fifteen edges have length one.
+
+17
+00:01:05.767 --> 00:01:11.607
+Those triangles look like braces. Before we move anything, pause and predict: will this
+
+18
+00:01:11.607 --> 00:01:17.380
+shape lock, or wobble? Remember that the hexagon and squares must stay flat, but their
+
+19
+00:01:17.380 --> 00:01:19.327
+angles are allowed to change.
+
+20
+00:01:19.700 --> 00:01:24.585
+It wobbles. This animation uses the actual construction checked in the research.
+
+21
+00:01:24.585 --> 00:01:29.775
+Every bar keeps its length. The squares become rhombuses, and the hexagon changes its
+
+22
+00:01:29.775 --> 00:01:32.156
+angles while staying in a single plane.
+
+23
+00:01:34.700 --> 00:01:39.058
+The yellow line joins two corners that are not connected by an edge.
+
+24
+00:01:39.058 --> 00:01:44.826
+Its length changes. That proves we are changing the shape itself, rather than just turning
+
+25
+00:01:44.826 --> 00:01:46.556
+the entire object in space.
+
+26
+00:01:47.700 --> 00:01:51.367
+The trick is to build each corner by adding two positions.
+
+27
+00:01:51.367 --> 00:01:55.541
+Start at the origin, follow one blue arrow, then one yellow arrow.
+
+28
+00:01:55.541 --> 00:02:00.852
+The endpoint is their sum. This is ordinary coordinate addition, drawn as a journey.
+
+29
+00:02:01.233 --> 00:02:04.747
+For this cupola, the blue positions form a triangle.
+
+30
+00:02:04.747 --> 00:02:09.883
+The yellow positions form a tetrahedron, a solid with four triangular faces.
+
+31
+00:02:09.883 --> 00:02:13.060
+The outer corners of their sum make our cupola.
+
+32
+00:02:13.060 --> 00:02:16.641
+The colours track which component supplies each edge.
+
+33
+00:02:17.033 --> 00:02:23.448
+Keep the blue triangle fixed. Turn the yellow tetrahedron a little around this vertical
+
+34
+00:02:23.448 --> 00:02:29.715
+axis. Then add the positions again. We have a recipe for every corner, at every small
+
+35
+00:02:29.715 --> 00:02:33.401
+angle, rather than a collection of guessed frames.
+
+36
+00:02:33.800 --> 00:02:37.627
+A blue edge comes entirely from the unchanged triangle.
+
+37
+00:02:37.627 --> 00:02:41.732
+A yellow edge comes entirely from the rotating tetrahedron.
+
+38
+00:02:41.732 --> 00:02:45.628
+Turning a rigid object does not change its edge lengths.
+
+39
+00:02:45.628 --> 00:02:48.968
+That explains why every bar survives the motion.
+
+40
+00:02:49.367 --> 00:02:52.375
+But unchanged edges are only half the rules.
+
+41
+00:02:52.375 --> 00:02:57.230
+Look straight down at the hexagon. Its sides alternate blue and yellow.
+
+42
+00:02:57.230 --> 00:03:03.111
+Each colour supplies a closed triangle of edge directions, so turning one colour still
+
+43
+00:03:03.111 --> 00:03:05.231
+leaves a closed six-sided path.
+
+44
+00:03:05.600 --> 00:03:09.848
+The turn happens inside this plane, so the hexagon stays flat.
+
+45
+00:03:09.848 --> 00:03:16.084
+At a five degree turn, its angles alternate between one hundred and fifteen and one hundred
+
+46
+00:03:16.084 --> 00:03:20.264
+and twenty five degrees. Its six sides still have length one.
+
+47
+00:03:20.633 --> 00:03:24.338
+Each square combines one direction from each component.
+
+48
+00:03:24.338 --> 00:03:29.524
+Two directions span a plane, so its four corners remain a flat parallelogram.
+
+49
+00:03:29.524 --> 00:03:35.653
+The triangular faces stay triangles. The certificate checks these requirements and confirms
+
+50
+00:03:35.653 --> 00:03:37.337
+the motion is nontrivial.
+
+51
+00:03:37.733 --> 00:03:43.903
+Compare a square pyramid, J one. It has four unit bars around the base and four unit
+
+52
+00:03:43.903 --> 00:03:49.411
+bars rising to the tip. Could its base do the same square-to-rhombus trick?
+
+53
+00:03:49.411 --> 00:03:52.349
+Let us try the necessary geometry first.
+
+54
+00:03:52.733 --> 00:03:56.283
+The tip must be equally far from all four base corners.
+
+55
+00:03:56.283 --> 00:04:00.606
+Its shadow on the base must therefore be equally far from them too.
+
+56
+00:04:00.606 --> 00:04:05.381
+For a rhombus, that would put the shadow at the crossing of the diagonals.
+
+57
+00:04:05.767 --> 00:04:09.493
+Call the half-diagonal lengths a and b, and the height h.
+
+58
+00:04:09.493 --> 00:04:15.311
+Pythagoras gives a squared plus h squared equals one, and b squared plus h squared equals
+
+59
+00:04:15.311 --> 00:04:18.319
+one. Subtract: a squared must equal b squared.
+
+60
+00:04:18.700 --> 00:04:21.498
+So the two diagonals must have equal length.
+
+61
+00:04:21.498 --> 00:04:24.233
+A rhombus with equal diagonals is a square.
+
+62
+00:04:24.233 --> 00:04:30.020
+The attempted squash fails. This is a small example of rigidity, already covered by earlier
+
+63
+00:04:30.020 --> 00:04:32.500
+work, rather than a new discovery here.
+
+64
+00:04:32.900 --> 00:04:36.901
+For complicated solids, we start with a simpler question.
+
+65
+00:04:36.901 --> 00:04:39.709
+Give every corner a tiny velocity arrow.
+
+66
+00:04:39.709 --> 00:04:45.816
+Which arrows avoid changing any edge length or face flatness at the very first instant?
+
+67
+00:04:45.816 --> 00:04:47.852
+This is the first-order test.
+
+68
+00:04:48.233 --> 00:04:53.487
+For one horizontal bar, pulling an end along the bar immediately changes its length.
+
+69
+00:04:53.487 --> 00:04:58.053
+Moving that end straight sideways has zero initial rate of length change.
+
+70
+00:04:58.053 --> 00:05:02.681
+The test notices the linear part of a change, before squared terms matter.
+
+71
+00:05:03.067 --> 00:05:07.106
+All these first-instant rules become simultaneous linear equations.
+
+72
+00:05:07.106 --> 00:05:10.001
+Sliding or turning the whole solid always works.
+
+73
+00:05:10.001 --> 00:05:14.583
+In three dimensions, three slides and three turns give six ordinary motions.
+
+74
+00:05:14.583 --> 00:05:17.779
+We remove those because they do not change the shape.
+
+75
+00:05:18.167 --> 00:05:21.953
+For forty one Johnson solids, no other velocity survives.
+
+76
+00:05:21.953 --> 00:05:27.865
+That proves local rigidity. But an extra velocity arrow does not yet prove a real wobble.
+
+77
+00:05:27.865 --> 00:05:32.183
+An apparent escape can disappear when you look at the next order.
+
+78
+00:05:32.567 --> 00:05:38.433
+Here is a simpler model of that trap. Two unit bars lie in a straight line between fixed
+
+79
+00:05:38.433 --> 00:05:44.033
+endpoints, two units apart. The middle joint seems free to move upwards at the first
+
+80
+00:05:44.033 --> 00:05:46.367
+instant. Try to give it a height h.
+
+81
+00:05:46.767 --> 00:05:51.959
+By Pythagoras, each bar would then have squared length one plus h squared.
+
+82
+00:05:51.959 --> 00:05:55.889
+Keeping its length one requires h squared to equal zero.
+
+83
+00:05:55.889 --> 00:06:02.064
+So the joint cannot actually rise. The red drawing is a rejected attempt, not an allowed
+
+84
+00:06:02.064 --> 00:06:02.415
+flex.
+
+85
+00:06:02.800 --> 00:06:08.204
+The six exceptional Johnson solids have this kind of first-order false hope, although
+
+86
+00:06:08.204 --> 00:06:13.545
+their equations are more complicated. Exact second-order certificates rule out every
+
+87
+00:06:13.545 --> 00:06:18.568
+nonzero candidate direction. The only real solution left is no change of shape.
+
+88
+00:06:18.967 --> 00:06:25.122
+Those six are J fifty eight, fifty nine, sixty, eighty one, eighty two and eighty three.
+
+89
+00:06:25.122 --> 00:06:31.418
+For J sixty and J eighty two, one suitable stress pattern blocks all candidate directions.
+
+90
+00:06:31.418 --> 00:06:35.335
+The other four are rigid without that stronger property.
+
+91
+00:06:35.733 --> 00:06:38.507
+Now put all ninety two solids on one board.
+
+92
+00:06:38.507 --> 00:06:43.345
+They begin with regular polygon faces and are convex, with no inward dents.
+
+93
+00:06:43.345 --> 00:06:49.022
+The Johnson family excludes the familiar Platonic and Archimedean solids, and the prisms
+
+94
+00:06:49.022 --> 00:06:49.989
+and antiprisms.
+
+95
+00:06:50.367 --> 00:06:53.407
+Forty one are rigid by the first-order test.
+
+96
+00:06:53.407 --> 00:06:56.239
+Forty five have actual continuous flexes.
+
+97
+00:06:56.239 --> 00:07:02.872
+Thirty eight use a certified rotation of a component; seven use an augmented prism construction.
+
+98
+00:07:02.872 --> 00:07:06.879
+The remaining six are locked by second-order obstructions.
+
+99
+00:07:07.267 --> 00:07:13.955
+So forty one plus six gives forty seven locally rigid solids, alongside forty five flexible
+
+100
+00:07:13.955 --> 00:07:20.496
+ones. Notice the distinction: fifty one have extra first-order directions, but only forty
+
+101
+00:07:20.496 --> 00:07:24.979
+five really flex. A tangent direction is not a motion family.
+
+102
+00:07:25.367 --> 00:07:29.167
+This is not a computer shaking shapes until something happens.
+
+103
+00:07:29.167 --> 00:07:34.133
+Coordinates and certificates use exact algebraic numbers, including square roots.
+
+104
+00:07:34.133 --> 00:07:39.712
+The first-order results are checked in two different formulations, using modular arithmetic
+
+105
+00:07:39.712 --> 00:07:41.735
+and rigorously bounded intervals.
+
+106
+00:07:42.133 --> 00:07:47.344
+For the flexible shapes, the evidence is a formula for an actual motion, together with
+
+107
+00:07:47.344 --> 00:07:50.495
+checks of lengths, flatness and a changing distance.
+
+108
+00:07:50.495 --> 00:07:55.099
+For the six locked shapes, exact algebra rules out the candidate directions.
+
+109
+00:07:55.099 --> 00:07:58.189
+Written arguments connect those checks to rigidity.
+
+110
+00:07:58.567 --> 00:08:02.682
+The research package reports a successful seventeen-stage replay.
+
+111
+00:08:02.682 --> 00:08:08.126
+That is strong computational evidence with explicit assumptions, not a proof assistant
+
+112
+00:08:08.126 --> 00:08:10.532
+formalisation or external peer review.
+
+113
+00:08:10.532 --> 00:08:16.103
+This video checks its displayed cupola motion against the stored certificate; a separate
+
+114
+00:08:16.103 --> 00:08:18.319
+coordinator audit remains separate.
+
+115
+00:08:18.700 --> 00:08:21.412
+Keep three ideas. Flat does not mean rigid.
+
+116
+00:08:21.412 --> 00:08:25.133
+A recipe preserving every constraint proves a genuine flex.
+
+117
+00:08:25.133 --> 00:08:29.421
+And a first-instant permission can still be blocked at second order.
+
+118
+00:08:29.421 --> 00:08:33.268
+Together, those ideas explain the three colours in the table.
+
+119
+00:08:33.667 --> 00:08:37.560
+Locally rigid means no small wobble from the starting shape.
+
+120
+00:08:37.560 --> 00:08:43.530
+We are not claiming there can never be a distant different shape with the same edge lengths.
+
+121
+00:08:43.530 --> 00:08:48.787
+Nor do these constructions classify every possible motion of the flexible solids.
+
+122
+00:08:49.167 --> 00:08:54.943
+The contribution is the complete Johnson table and its certificates, rather than a new
+
+123
+00:08:54.943 --> 00:09:00.585
+general rigidity rule. The documented searches found no earlier full classification,
+
+124
+00:09:00.585 --> 00:09:05.958
+but cannot prove priority. The paper and editable evidence accompany this video.
+
+125
+00:09:05.958 --> 00:09:08.175
+Narration uses a synthetic voice.

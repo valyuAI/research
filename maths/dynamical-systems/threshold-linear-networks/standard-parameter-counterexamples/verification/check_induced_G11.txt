@@ -1,0 +1,2 @@
+{"subsets": 2035, "clique": 90, "not_permitted": 1778, "not_stable": 167, "stable": 0}
+NO PROPER INDUCED SUBGRAPH WORKS

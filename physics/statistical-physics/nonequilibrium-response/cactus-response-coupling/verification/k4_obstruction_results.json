@@ -1,0 +1,14 @@
+{
+  "families": 65536,
+  "distinct_multisets": 5955,
+  "uniquely_constructable_families": 346,
+  "certificate_values": [
+    "-1",
+    "1"
+  ],
+  "min_over_UC_families_of_sum_y": "0",
+  "expected_value_under_root_laws": "-74467043099669441/1314877998480476367",
+  "expected_value_float": -0.05663418445340664,
+  "matches_stored_value": true,
+  "no_coupling_proved": true
+}

@@ -1,0 +1,16 @@
+[11:05:47] build sq_b09_k4 sq [[0, 0], [0, 1], [0, 2], [0, 3], [0, 4]] k=4 
+sq cells=[[0, 0], [0, 1], [0, 2], [0, 3], [0, 4]] k=4 imb=1 radius=31.7: placements 25192 vars 463951 clauses 2960137 (38.2s)
+wrote sq_b09_k4.cnf
+f6fdcbae901e22fd7d776bbfe45e14fd419af0977d5f14c0a31b24c6d6b6ae12  sq_b09_k4.cnf
+[11:06:31] cadical start
+s UNSATISFIABLE
+[11:08:47] cadical rc=20 (136s) proof bytes 58430282
+7ac2cf8c88659713e811ca946d9d08138825d893e149bd0a55024a458015bebf  sq_b09_k4.drat
+c 146395 of 2960137 clauses in core                            
+c 140341 of 657185 lemmas in core using 27726443 resolution steps
+c 0 RAT lemmas in core; 72242 redundant literals in core lemmas
+s VERIFIED
+c verification time: 545.933 seconds
+[11:17:54] drat-trim done (546s)
+DRAT_VERIFIED sq_b09_k4
+[11:18:29] END rc=20

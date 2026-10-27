@@ -1,0 +1,937 @@
+{
+  "record": "Release files changed after the reviewed release record, with their current SHA-256",
+  "releaseCommit": "f09202d87452ba66daae29a399c6d8974fd4ba78",
+  "releaseManifest": "docs/artifact-hashes.json",
+  "rule": "Every difference from the earlier artifact inventory is either an exact-hash change below or a declared omission. Historical execution hashes remain historical; public presentation and path redactions are recorded explicitly.",
+  "reasons": {
+    "presentation": "Front-page and contributor text for the public layout: human-author paper links, 153-root CI replay, agent contributions without product names.",
+    "dated-statement": "A present-tense 'the repository is private' statement replaced by a dated one, so it does not become false on release.",
+    "formal-record": "Records the 153-root six-checker CI replay (docs/verification/formal-library-20261026/ci-replay.json); scope stays the shared Lean library.",
+    "reproduce-note": "Video-environment paragraph and a note explaining historical local paths retained in evidence files.",
+    "portable-paths": "Operational script or instruction made portable: repo-relative paths and VIDEO_STATUS_FILE / VIDEO_RENDER_LOCK / VIDEO_PYTHON instead of local absolute paths. No research content changed.",
+    "third-party-fetch": "States the third-party status of the promoter tables and documents fetch_inputs.py; citations kept.",
+    "source-attribution": "Replace the named coding-tool attribution with generic coding-agent attribution. Derived public LaTeX is byte-identical; mathematical content is unchanged.",
+    "public-presentation": "Public documentation, links, contribution wording, review limits, licences or portable execution instructions. Mathematical claims remain scoped as recorded.",
+    "record-redaction": "Local execution context or research-service identifiers removed from a public record; original/public hashes are listed in path-redactions.json.",
+    "minimal-factual-comparison": "Retain only the twelve numerical database rows used by the paper. Checker arithmetic is unchanged and its results are byte-identical to the full-snapshot run.",
+    "public-checker-docstring": "Scope description reflects the minimal comparison snapshot; executable AST is unchanged."
+  },
+  "changes": {
+    "CONTRIBUTING.md": {
+      "sha256": "411e2274ccb9928f3d40e24949fae131cd9639050a86de592697e0f2bc2b2a7f",
+      "reason": "presentation"
+    },
+    "README.md": {
+      "sha256": "e91719c1197cd052bfa7ba61292086a9f56f03f78d01620a5d2ad8a669d4d46a",
+      "reason": "presentation"
+    },
+    "chemistry/reaction-networks/mass-action/acr-multistability-bounds/README.md": {
+      "sha256": "e32a5d679b0bb0886336cc70eaa206fadcc24b8a43b3fb8540bc94eed93c8034",
+      "reason": "record-redaction"
+    },
+    "chemistry/reaction-networks/mass-action/acr-multistability-bounds/readiness.md": {
+      "sha256": "5672260f609cbf1c20ae1596b119053bc0a0521bbbd47462307b2eb0f54e2eef",
+      "reason": "record-redaction"
+    },
+    "chemistry/reaction-networks/mass-action/acr-multistability-bounds/review.md": {
+      "sha256": "77c7810e2bfb38cf52856fe8998ce728c09128d76e62b2357f385d8e40e33b44",
+      "reason": "public-presentation"
+    },
+    "chemistry/reaction-networks/mass-action/acr-multistability-bounds/verification/results/completion-manifest-20261026.json": {
+      "sha256": "fc04c8eb0235f4e4ee619d9b55c0e06572acceea2134367213a9bd62f122b193",
+      "reason": "record-redaction"
+    },
+    "chemistry/reaction-networks/mass-action/acr-multistability-bounds/verification/results/final-typesetting-20261026.log": {
+      "sha256": "04052b8f5e6215ea0db5c16445405ed72296c6096c74fb96f0520c989c132d15",
+      "reason": "record-redaction"
+    },
+    "chemistry/reaction-networks/mass-action/acr-multistability-bounds/verification/reviews/chem-acr-final-review.md": {
+      "sha256": "1dbaab81cc43883805975703b4c4313cfd4ce4176fca8c9e9474a61b06a9833e",
+      "reason": "record-redaction"
+    },
+    "chemistry/reaction-networks/mass-action/acr-multistability-bounds/verification/reviews/chem-acr-priority.md": {
+      "sha256": "7cde601cf0616b77228cff8e2e722da8c0d1030350b15c8d8a138f8a64a32c5b",
+      "reason": "record-redaction"
+    },
+    "chemistry/reaction-networks/mass-action/acr-multistability-bounds/verification/reviews/chem-acr-review.md": {
+      "sha256": "e2cc9476435e17ba2b2608eef32d275f31f1918b0da202c79a2f4832321ba6e2",
+      "reason": "record-redaction"
+    },
+    "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/README.md": {
+      "sha256": "14b63bf1ddb0431324eea5764eb9f42ec8dc47a19dd4beae904d11276fbd1087",
+      "reason": "portable-paths"
+    },
+    "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/finish_package.py": {
+      "sha256": "59aab5aad3371642e2015daa928a6a19f412c9c58baea5a8af6f4db00f556b64",
+      "reason": "portable-paths"
+    },
+    "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/formal-input-sha256.json": {
+      "sha256": "40165214861a2b50194ab3e2e84b940d2a38ed3d60245d104a4ddf8c67da0bac",
+      "reason": "record-redaction"
+    },
+    "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/production-state.json": {
+      "sha256": "62ea8dd3fb48eab9bc39324518f1ad5f147f2338ea0ef344afc2d0ebc0c906c9",
+      "reason": "record-redaction"
+    },
+    "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/provenance-status.json": {
+      "sha256": "31a327d224eae9159b928c3fb5b1a4ddf177db607d0a0b999e680e90efb22d66",
+      "reason": "record-redaction"
+    },
+    "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/qa-before-spacing-repair/ffprobe.json": {
+      "sha256": "9449f7891c14784612beecf40bbd98d56cea5cf0fba3bd18f4ed1c06793b70bf",
+      "reason": "record-redaction"
+    },
+    "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/qa/ffprobe.json": {
+      "sha256": "41cc37d33d1be95261a4838da8f33621dc7ddb1be33e6b8e7f5cc39a60932ce5",
+      "reason": "record-redaction"
+    },
+    "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/render_patch.py": {
+      "sha256": "b10d5b238a90d1141c943daf3c6b45df1f1d2ad916332f40231125e7f3a57788",
+      "reason": "portable-paths"
+    },
+    "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/run_stage.py": {
+      "sha256": "17425c5907fabc96f0def80864418cc735a10b50c10ba143912fb2b92c2af923",
+      "reason": "portable-paths"
+    },
+    "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/scientific-input-sha256.before-validation-fixes.json": {
+      "sha256": "730717096eeb4afd949d42f4dcdbb2530c9485306c6b45a8957d3d9aeed0bc66",
+      "reason": "record-redaction"
+    },
+    "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/scientific-input-sha256.json": {
+      "sha256": "730717096eeb4afd949d42f4dcdbb2530c9485306c6b45a8957d3d9aeed0bc66",
+      "reason": "record-redaction"
+    },
+    "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/scientific-input-supplement.json": {
+      "sha256": "bec75780b35bc94c5e1c3fdaff54ebb856384e72ff1b30c9d93c454f1b02358b",
+      "reason": "record-redaction"
+    },
+    "chemistry/reaction-networks/mass-action/cubic-equilibrium-sharpness/README.md": {
+      "sha256": "1bdfe37f3ba27db28da5da40ab56f67076c134417ecf76c69469dc9cd3315668",
+      "reason": "public-presentation"
+    },
+    "chemistry/reaction-networks/mass-action/cubic-equilibrium-sharpness/paper.tex": {
+      "sha256": "f3dd03d8e9bd24e4207f305fa0e36365e5d843c0dba77275e98591d93f18e861",
+      "reason": "source-attribution"
+    },
+    "chemistry/reaction-networks/mass-action/cubic-equilibrium-sharpness/readiness.md": {
+      "sha256": "f0013e3707ca606862a32bc8f82594956625e428bed74f7c49328125e09cdf1e",
+      "reason": "public-presentation"
+    },
+    "docs/campaigns/2026-10-17-physics-mechanics.md": {
+      "sha256": "18289965f2d68bdc26f704b5d6862cc1dbe46ad9101e6c73c569ed60df3baef9",
+      "reason": "record-redaction"
+    },
+    "docs/campaigns/2026-10-18-chemistry-biology-physics.md": {
+      "sha256": "a22ba7234bd278174598666d185ecba72174a196b083490d8ee84eec558e686a",
+      "reason": "record-redaction"
+    },
+    "docs/campaigns/2026-10-18-genetics-and-mechanisms.md": {
+      "sha256": "07e067958d136e98d1cbca26dd337bfe5a634b1d1f874005002fe691e532e20e",
+      "reason": "public-presentation"
+    },
+    "docs/campaigns/2026-10-25-discoveries.md": {
+      "sha256": "feb2b6b3f56fb4d6758bf787cae143ce7d0ca763428e93ec2b914cdf73258068",
+      "reason": "public-presentation"
+    },
+    "docs/collection.md": {
+      "sha256": "1e345884e4d412ab06d71035a53deabba2d08bcca21a6e4def54d7f3dc150990",
+      "reason": "public-presentation"
+    },
+    "docs/formal-coverage.md": {
+      "sha256": "f774fe3996b4b7878daca19c1ec89ff1ae853fd58eb95f38d723bc2505a68292",
+      "reason": "formal-record"
+    },
+    "docs/reproduce.md": {
+      "sha256": "07c6ac5a36e8c0649c1910ac0c5dc9beda5368ae603eb84e0bd0d8d6a594bcd2",
+      "reason": "reproduce-note"
+    },
+    "docs/research-provenance.md": {
+      "sha256": "911b022bdbe399c2e7cee1c4ce209b91c4206671db4cec93386d5af4087cf95a",
+      "reason": "record-redaction"
+    },
+    "docs/review-ledger.md": {
+      "sha256": "367ad1d97553647750207fe46cae972f42682df5b93086bfd08cd76ed1bd2a1c",
+      "reason": "formal-record"
+    },
+    "docs/significance.md": {
+      "sha256": "cc9118dcc6ec7fd2ccffe2318c6059158b83ca4194523a7ed61d1a841cb29577",
+      "reason": "public-presentation"
+    },
+    "docs/verification/algebra-input-fixes-20261026/closure-summary.json": {
+      "sha256": "efef2adacaa308903e52ccd7715d2e9a15ba3c58c285fa9ca0c28202d596c6d9",
+      "reason": "record-redaction"
+    },
+    "docs/verification/algebra-input-fixes-20261026/implementation-results.json": {
+      "sha256": "29493d74f6195e8f848bcb01f5ac92ea834a29267e907c71ce567712c7971c1e",
+      "reason": "record-redaction"
+    },
+    "docs/verification/algebra-input-fixes-20261026/resource-controls.json": {
+      "sha256": "fc390e84b54eebf31300d3045fa4727b9272f8ff0d0440c6083a790c4472a3b2",
+      "reason": "record-redaction"
+    },
+    "docs/verification/algebra-input-fixes-20261026/root-results.json": {
+      "sha256": "10cbf01d1598620b804cb7facf64941b639d5fb001b6865b777d9cd44864bd27",
+      "reason": "record-redaction"
+    },
+    "docs/verification/algebra-input-fixes-20261026/valid-differential-controls.json": {
+      "sha256": "07a6f462023c799c903686cbe74619e1a2a9d619f414b44fa9e9df3d520ba2f3",
+      "reason": "record-redaction"
+    },
+    "docs/verification/checker-guards-20261026/after-acr-normal-negative.log": {
+      "sha256": "cf99faf404d457fbbb12740b0ba762115c8384ddc8a679c5e9369aabf478e833",
+      "reason": "record-redaction"
+    },
+    "docs/verification/checker-guards-20261026/after-quartet-normal-negative.log": {
+      "sha256": "bbccdd0535aa01dd047d9e38899b9d801a8b27d0bf178db188414e27c41602fb",
+      "reason": "record-redaction"
+    },
+    "docs/verification/checker-guards-20261026/before-acr-normal-negative.log": {
+      "sha256": "d7cebdacefbb789ed00540f2b86f62332edfda1872d9fde388ba6c3d1fcf228c",
+      "reason": "record-redaction"
+    },
+    "docs/verification/checker-guards-20261026/before-quartet-normal-negative.log": {
+      "sha256": "9b27d5c671ee628a2b4a87a678bfddb6e6ceaab1113310bee603560883e75653",
+      "reason": "record-redaction"
+    },
+    "docs/verification/ci-disk-fix-20261026.json": {
+      "sha256": "207854920b7e8be902de9260b2ee263f80ab5fcabd6c4da604914225db3a2747",
+      "reason": "record-redaction"
+    },
+    "docs/verification/final-fix-closure-20261026/report.md": {
+      "sha256": "7b40bae66c31ac76676f863581a2feda90f42ce3947a45f847dd6abeb8a82a27",
+      "reason": "public-presentation"
+    },
+    "docs/verification/final-fix-closure-20261026/source-hash-snapshot.json": {
+      "sha256": "1eb784eba060ef3a0c1518447bcd971681095c96659fdd190f63153156e0aecb",
+      "reason": "record-redaction"
+    },
+    "docs/verification/release-20261026/README.md": {
+      "sha256": "e5be511ed2025c2bcfb9a5fc16997f052496fd7b880f9d952c9257457d4108b3",
+      "reason": "public-presentation"
+    },
+    "docs/verification/release-20261026/source-scan.json": {
+      "sha256": "becb7de70778fe4d094ae116bcbc4085f92bdb8d6b15a4ca06159548a9bce3d3",
+      "reason": "record-redaction"
+    },
+    "docs/verification/tiling-record-binding-20261026/negative_ledger.log": {
+      "sha256": "db0b0493ecfa11292ab9816b033c6e41419a481c51e64fea267bf0d76517675d",
+      "reason": "record-redaction"
+    },
+    "economics/social-choice/tournament-rules/three-team-manipulation-exact/README.md": {
+      "sha256": "5526204dd9359c907b209f4b8ef52d9b76c1bbac9df247093dfa02167f9440e0",
+      "reason": "record-redaction"
+    },
+    "economics/social-choice/tournament-rules/three-team-manipulation-exact/readiness.md": {
+      "sha256": "7e12296640b0c9318a5b1b150afcc2fc246352d6f4ab7a3a7db649d64304b073",
+      "reason": "record-redaction"
+    },
+    "economics/social-choice/tournament-rules/three-team-manipulation-exact/review.md": {
+      "sha256": "137baefca4828e8bd1abb4fc83ccaba8ecc1a354b8960c4294a83ce8e1513cd1",
+      "reason": "record-redaction"
+    },
+    "economics/social-choice/tournament-rules/three-team-manipulation-exact/video/README.md": {
+      "sha256": "308c07fcc04a14f9cf25d6c44bc36ed9b8685cc84fb925ef82b7ebe0aee31315",
+      "reason": "portable-paths"
+    },
+    "economics/social-choice/tournament-rules/three-team-manipulation-exact/video/package.py": {
+      "sha256": "f38c539a7bf669c82896aa4194596583575710d03653ff733a77dd0d568d3b6d",
+      "reason": "portable-paths"
+    },
+    "economics/social-choice/tournament-rules/three-team-manipulation-exact/video/qa/ffprobe.json": {
+      "sha256": "d85bb4665f733681ebbded6b74755934676ca20db8c480d6872251886a477d6e",
+      "reason": "record-redaction"
+    },
+    "economics/social-choice/tournament-rules/three-team-manipulation-exact/video/run_stage.py": {
+      "sha256": "1023efe86f54fcb665518db0ade961b80bcb304ac4e4d2f0624fb6cac8d3a17c",
+      "reason": "portable-paths"
+    },
+    "economics/social-choice/tournament-rules/three-team-manipulation-exact/video/verify_media.py": {
+      "sha256": "15738d7a6b0acab5c9bffcaf7dd56a7584124cda137e4158eade044222cef8f3",
+      "reason": "portable-paths"
+    },
+    "explorations/README.md": {
+      "sha256": "29141e72414685f624efc8e0ab2aee8f7f84f8a2275408e0db089551bcf5b525",
+      "reason": "public-presentation"
+    },
+    "explorations/biology/gene-switching/README.md": {
+      "sha256": "b079082594295b453fa837fed7029793f62e3b62b715ed6311115f8b8351926e",
+      "reason": "record-redaction"
+    },
+    "explorations/biology/gene-switching/bio-chem/EQUILIBRIUM_SWITCHING_LEAD.md": {
+      "sha256": "57e4c7cd5b0b57717e2e5ea5138b9a5726623832c967afa74d8adda2fdc3920f",
+      "reason": "public-presentation"
+    },
+    "explorations/biology/gene-switching/switching-prior-audit-20261018/AUDIT.md": {
+      "sha256": "a414d7c3a20d3c25ecb42bf1af7c445ea70de5afeec706ca2717ba8e71b3a3af",
+      "reason": "public-presentation"
+    },
+    "explorations/biology/gene-switching/switching-prior-audit-20261018/forward-check/README.md": {
+      "sha256": "c81b5e52db8ad9faeda78d70fefe74383a391ef337a8ce5201ef80825d89b651",
+      "reason": "public-presentation"
+    },
+    "explorations/biology/gene-switching/switching-prior-audit-20261018/forward-check/RESULT.md": {
+      "sha256": "44eff37e50b0dd6505063d0ddc34dd3d8ca8c0fb4442f0c4fa66f6f644756f92",
+      "reason": "public-presentation"
+    },
+    "explorations/biology/promoter-calibration/BOOTSTRAP_REVIEW.md": {
+      "sha256": "cb7ec8a8563d6713b914f30a96de13a7725f166318a41301f00ea066d8b157c6",
+      "reason": "public-presentation"
+    },
+    "explorations/biology/promoter-calibration/FINDINGS.md": {
+      "sha256": "919f52fcbb9e0ea96569cfb62b8b2e0f386479889da00be1a0bc9ec3c0b077da",
+      "reason": "public-presentation"
+    },
+    "explorations/biology/promoter-calibration/INDEPENDENT_REVIEW.md": {
+      "sha256": "2e0bda2fd2afa7ca1e46f3cb56ff370471c2465a1ebf0d08a074fa8987b9f59d",
+      "reason": "public-presentation"
+    },
+    "explorations/biology/promoter-calibration/README.md": {
+      "sha256": "c84f8166dac8f8343069b8bcd265c1ef22a3f6c9f879c0e1b33fe4520fc865c9",
+      "reason": "third-party-fetch"
+    },
+    "maths/algebra/bilinear-complexity/mu-q-2-2/README.md": {
+      "sha256": "ad17266c59aaef7b5e8e2f1ca248c26cff624e5757477b4849503feb07a3b465",
+      "reason": "record-redaction"
+    },
+    "maths/algebra/bilinear-complexity/mu-q-2-2/readiness.md": {
+      "sha256": "a8160a782687171437d14d76acf59ae9385009ecb10ea74908ce9de69da7b49e",
+      "reason": "record-redaction"
+    },
+    "maths/algebra/bilinear-complexity/mu-q-2-2/verification/certificates/sat_A2_rank8.manifest.json": {
+      "sha256": "9a1065bc77d097b5650d86522c740311cd0f2075a88fcf3eb27828e68053442a",
+      "reason": "record-redaction"
+    },
+    "maths/algebra/bilinear-complexity/mu-q-2-2/verification/source-provenance-20261026.md": {
+      "sha256": "82845dbee6787da379f90ba2e3482b1d798086c61ad484b4b7a13adf39996196",
+      "reason": "record-redaction"
+    },
+    "maths/algebra/bilinear-complexity/mu-q-2-2/video/README.md": {
+      "sha256": "2c65c81ba1ec67fb472b4fe26de8e50b7f4f24d6e287a8ecf5b50a3f76a9010f",
+      "reason": "portable-paths"
+    },
+    "maths/algebra/bilinear-complexity/mu-q-2-2/video/finish_package.py": {
+      "sha256": "1e70ac80e848e5d0f025b40252c573e67b5739a9fe9253213967dfb48651072c",
+      "reason": "portable-paths"
+    },
+    "maths/algebra/bilinear-complexity/mu-q-2-2/video/qa/ffprobe.json": {
+      "sha256": "f5df59e20b732797d5ed4501eff1e41d56ab97d6bbc2424db0010d7859753082",
+      "reason": "record-redaction"
+    },
+    "maths/algebra/bilinear-complexity/mu-q-2-2/video/run_stage.py": {
+      "sha256": "0d225ed42ab74e8352e6da9498667174a89768541fb70af846e6ac3f4255284b",
+      "reason": "portable-paths"
+    },
+    "maths/algebra/bilinear-complexity/mu-q-2-2/video/sources.md": {
+      "sha256": "30468676648150a7b95367d9c69bfa159f0ab0f566ab1962adaf59f8e07dac9b",
+      "reason": "public-presentation"
+    },
+    "maths/algebra/bilinear-complexity/mu-q-2-2/video/verify_media.py": {
+      "sha256": "1ec36b60ccfa13d94f87dee9c3f9144b104d214cb316a79e954635fc167c431e",
+      "reason": "portable-paths"
+    },
+    "maths/combinatorics/combinatorial-games/cubic-tic-tac-toe-surplus/README.md": {
+      "sha256": "490bb9519f5c5fae9ea4d2edbf42c2b7470a61924183c9576695b0e6ffbd359e",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/combinatorial-games/cubic-tic-tac-toe-surplus/review.md": {
+      "sha256": "01bf82df5beb256de98fe20a3975d3f26bfa3d4c6dd76ad222c2326a72dc454d",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/combinatorial-games/cubic-tic-tac-toe-surplus/video/README.md": {
+      "sha256": "0d82911724e2a1d25eabe6c4c2e3771c17dfb3784f6fadaa2ee953f92b2eeb55",
+      "reason": "portable-paths"
+    },
+    "maths/combinatorics/combinatorial-games/cubic-tic-tac-toe-surplus/video/finish_package.py": {
+      "sha256": "1e70ac80e848e5d0f025b40252c573e67b5739a9fe9253213967dfb48651072c",
+      "reason": "portable-paths"
+    },
+    "maths/combinatorics/combinatorial-games/cubic-tic-tac-toe-surplus/video/qa/ffprobe.json": {
+      "sha256": "94fc9a7461d0795c8837e498b96d49df05561e7b78165eb2fa1e965ccce32473",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/combinatorial-games/cubic-tic-tac-toe-surplus/video/run_stage.py": {
+      "sha256": "0d225ed42ab74e8352e6da9498667174a89768541fb70af846e6ac3f4255284b",
+      "reason": "portable-paths"
+    },
+    "maths/combinatorics/combinatorial-games/cubic-tic-tac-toe-surplus/video/verify_media.py": {
+      "sha256": "1ec36b60ccfa13d94f87dee9c3f9144b104d214cb316a79e954635fc167c431e",
+      "reason": "portable-paths"
+    },
+    "maths/combinatorics/combinatorial-games/hex-short-wins/README.md": {
+      "sha256": "42f19d333e99847c27a648a78e29509db31bdc975884728b6dca62465b2d60bf",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/combinatorial-games/hex-short-wins/readiness.md": {
+      "sha256": "a90800f497bd6b5ac5273f19fa914945d8d1ccf9f93991ab360d1d40f2cd2d86",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/combinatorial-games/hex-short-wins/verification/review.md": {
+      "sha256": "912ce146fa55cbfcaab97cc55d538300400e827d46e5809263200d77ce15ab39",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/combinatorial-games/hex-short-wins/video/README.md": {
+      "sha256": "41542fa3592bea5f9333a5e6160a5937c45e7ca432d950c23db6238826d50e39",
+      "reason": "portable-paths"
+    },
+    "maths/combinatorics/combinatorial-games/hex-short-wins/video/finish_package.py": {
+      "sha256": "59aab5aad3371642e2015daa928a6a19f412c9c58baea5a8af6f4db00f556b64",
+      "reason": "portable-paths"
+    },
+    "maths/combinatorics/combinatorial-games/hex-short-wins/video/production-state.json": {
+      "sha256": "7305d9aed80a4894274531c60f501e48b406f568aae8e2e8a25d631b7ded55d9",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/combinatorial-games/hex-short-wins/video/qa/ffprobe.json": {
+      "sha256": "bae765b2e0ca50fc5dda31a080db38ae4e819b8bc8b73f8fee0dab1bb47c50c9",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/combinatorial-games/hex-short-wins/video/run_stage.py": {
+      "sha256": "373ee5a99ccfbdb58a557af93e91c4f9d0890e2d9ba3f34480df2bb37c9b5bc2",
+      "reason": "portable-paths"
+    },
+    "maths/combinatorics/combinatorial-games/hex-short-wins/video/scientific-input-sha256.json": {
+      "sha256": "ee65e5b3ebd852e11522671c484a26df304445f2c86e5acdda3c078edadd916a",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/combinatorics-on-words/cartesian-tree-square-free-words/README.md": {
+      "sha256": "0587d9802ff8d13d09b59a87d8d298321c9869274d337e9c738dbe0527544802",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/latin-squares/latin-tableaux-staircase-count/README.md": {
+      "sha256": "065501871aec336714acc9df22a9d167690cb712870523c2aa21c9111d6bb588",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/latin-squares/latin-tableaux-staircase-count/video/README.md": {
+      "sha256": "05d4f580c4bcfc549bbaa84636b51898f99db01eb29bbef0f0b354a10a74f245",
+      "reason": "portable-paths"
+    },
+    "maths/combinatorics/latin-squares/latin-tableaux-staircase-count/video/finish_package.py": {
+      "sha256": "1e70ac80e848e5d0f025b40252c573e67b5739a9fe9253213967dfb48651072c",
+      "reason": "portable-paths"
+    },
+    "maths/combinatorics/latin-squares/latin-tableaux-staircase-count/video/qa/ffprobe.json": {
+      "sha256": "bd6c0cc8f81a85eb5df9694c630fd5bf521a2709a0dae60bac7acf35a95d554a",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/latin-squares/latin-tableaux-staircase-count/video/run_stage.py": {
+      "sha256": "0d225ed42ab74e8352e6da9498667174a89768541fb70af846e6ac3f4255284b",
+      "reason": "portable-paths"
+    },
+    "maths/combinatorics/latin-squares/latin-tableaux-staircase-count/video/sources.md": {
+      "sha256": "add8a37f3fbf22b64843a9ac6ad639d0891b4a994a44698f3b89477629cd5b88",
+      "reason": "public-presentation"
+    },
+    "maths/combinatorics/latin-squares/latin-tableaux-staircase-count/video/verify_media.py": {
+      "sha256": "1ec36b60ccfa13d94f87dee9c3f9144b104d214cb316a79e954635fc167c431e",
+      "reason": "portable-paths"
+    },
+    "maths/combinatorics/phylogenetics/colless-like-integer-weights/README.md": {
+      "sha256": "d11b790f30502c977bd57932f676367c4605572220a7e4c7173a94ccafb6e765",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/phylogenetics/colless-like-integer-weights/readiness.md": {
+      "sha256": "89c2bda45f657ef77aca15956c0180230239b0a09d12f96a37721899a72cace1",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/phylogenetics/colless-like-integer-weights/verification/reviews/phylo-colless-prior.md": {
+      "sha256": "cc5e40e8302d55a1b11aeca8a19179db1421a8fb7686295e45ad8c694f277276",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/phylogenetics/colless-like-integer-weights/video/README.md": {
+      "sha256": "698fdd87ad2c85e288d5d7285d501fe7c8f1a1b9020a56f32428762d0475e6c0",
+      "reason": "portable-paths"
+    },
+    "maths/combinatorics/phylogenetics/colless-like-integer-weights/video/qa/ffprobe.json": {
+      "sha256": "56e9e9104d850612551150baea07c9acf3923ce2384f3b61b1688fce324fab9a",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/phylogenetics/colless-like-integer-weights/video/run_stage.py": {
+      "sha256": "b6bb43cea2f90f3af7ab613741d4564a507a8b4b3c656db76dbbbcf9ec876586",
+      "reason": "portable-paths"
+    },
+    "maths/combinatorics/phylogenetics/colless-like-integer-weights/video/verify_media.py": {
+      "sha256": "4c0871af497e903dd93d8568cf1bcac1d2211aecb752b31b1fb6c904fc9845a3",
+      "reason": "portable-paths"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/README.md": {
+      "sha256": "48b3d03b179ad64eb772ffd93073572d2695fed14377d35befe2a2283a1aa662",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/readiness.md": {
+      "sha256": "ddadabbaa9b9f750ef1283ebb16625d96d38ca1484c82a2499094aa30f743949",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/verification/results/resume-20261026/negative-controls.json": {
+      "sha256": "56a546c1c2a52e4bf138d802271f18ef16c05d9c5cd59595a714a9674dfc8512",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/verification/results/resume-20261026/negative-controls.log": {
+      "sha256": "9adfed28be8b68e937658e151a1c08e627ddde4d84e4c978c9ad68651e3f018d",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/verification/results/resume-20261026/quartet-build.log": {
+      "sha256": "09dd50c23b3c93ef4e3bf629f8cfdef379b632f056b87af01f69e8f7892b4e87",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/verification/results/resume-20261026/quartet-final-typeset.log": {
+      "sha256": "a67cd87c63f69c517a376cc71c3ad04e194c5fb3b01e314086df6918ace0ba79",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/verification/results/sharp-potential-completion-20261026.json": {
+      "sha256": "6482dd49eac67747f0825a6dffa5ac2af167f4794257fda23f4084476972cb33",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/verification/results/sharp-potential-typesetting-20261026.log": {
+      "sha256": "9b72dc8a71df1d3022155d9a8ce1d48f4f0e0a616c2dc40630a6df4cdc0f7d8f",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/verification/results/sharp-potential-typesetting-final-20261026.log": {
+      "sha256": "f58acde578ffb6024b25a4b0780cdf4a63ee3dee9280bc434bac6c4bddd4b35e",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/verification/reviews/phylo-final-review.md": {
+      "sha256": "8e6a943879e37cb792e9d984b6eb359c765b7cc3a437d6f8907d9aa6d14d4285",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/verification/reviews/phylo-game-review.md": {
+      "sha256": "4fd1a6fe2dcaf4bfb32d222b2d7280c9a64a86965a5d839ecd7e8c4a48cfdf42",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/verification/reviews/phylo-h3-review.md": {
+      "sha256": "5fe5e0916ee6ea01f1a45c009517b238fc65abca4ee6c2ea8820828415913267",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/verification/reviews/phylo-hk52-review.md": {
+      "sha256": "eec146fc3d1ba93ead0e52678b6d50b9629bc5139334dd8846d2574dbfa2a44b",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/verification/reviews/phylo-sharp-potential-review.md": {
+      "sha256": "e0f191930ca97877273a1d54a62c29ccf449b48a7a1488bc959dcbfdf1ea4228",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/video-brief.md": {
+      "sha256": "7fc49bf4e1eb8cc4d41db1e42155efa16eb7cfaeee5986d8f3f52ed82a803609",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/video/README.md": {
+      "sha256": "f6e79219f5c5575074956d35bb1bcfd14ac16a9f6e815291e634422874d563ad",
+      "reason": "portable-paths"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/video/qa/ffprobe.json": {
+      "sha256": "de73e12a0260d389c4e2dc25e4aa3038256800ac473d6d12f1d1c5318bb40e1a",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/video/run_stage.py": {
+      "sha256": "a122689a1f23bfa38d1a12e616023fb2a4999975b94d942dc2b1ab7d0440bb0a",
+      "reason": "portable-paths"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/video/scientific-completion-manifest.json": {
+      "sha256": "6482dd49eac67747f0825a6dffa5ac2af167f4794257fda23f4084476972cb33",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/video/sources.md": {
+      "sha256": "81e1c565d449f7d3c945250697138a0f3a7537360bb6f4e507e8ec7a610824eb",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/video/verify_media.py": {
+      "sha256": "4c0871af497e903dd93d8568cf1bcac1d2211aecb752b31b1fb6c904fc9845a3",
+      "reason": "portable-paths"
+    },
+    "maths/combinatorics/ramsey-theory/prime-successor-hales-jewett/README.md": {
+      "sha256": "ff914ab94f116ebf9b846b70145a735bef7e136183589b3b454e524898af24c8",
+      "reason": "public-presentation"
+    },
+    "maths/combinatorics/ramsey-theory/prime-successor-hales-jewett/author-walkthrough.md": {
+      "sha256": "a5a6eaad0044f856eb71e171eefef59c4e9058a1c070eb048616f9109c81ab0f",
+      "reason": "public-presentation"
+    },
+    "maths/combinatorics/ramsey-theory/prime-successor-hales-jewett/readiness.md": {
+      "sha256": "63588dc5f1af267aa0e84d3ff2999bf16e419082091fabac3824f2f5c9544c79",
+      "reason": "public-presentation"
+    },
+    "maths/combinatorics/spectral-graph-theory/four-negative-eigenvalues/README.md": {
+      "sha256": "c761e9b53a668792f29a225f99a5573aa656ec9238c22238851b889ccd76cb9e",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/spectral-graph-theory/four-negative-eigenvalues/readiness.md": {
+      "sha256": "f269831c35feac141843565c5905b001e5165da92c9709d3b19771ff2922729a",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/spectral-graph-theory/four-negative-eigenvalues/review.md": {
+      "sha256": "80761d8ecdcc59836c47093ffea7569754ac75bbca00714a6d0304f3a2fc9c30",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/spectral-graph-theory/four-negative-eigenvalues/video/README.md": {
+      "sha256": "680d17a29b09b2d963b6a1450c8b740a026ea01371318508ac972a3bb67bad92",
+      "reason": "portable-paths"
+    },
+    "maths/combinatorics/spectral-graph-theory/four-negative-eigenvalues/video/package.py": {
+      "sha256": "f38c539a7bf669c82896aa4194596583575710d03653ff733a77dd0d568d3b6d",
+      "reason": "portable-paths"
+    },
+    "maths/combinatorics/spectral-graph-theory/four-negative-eigenvalues/video/qa/ffprobe.json": {
+      "sha256": "f8a4f15445f1e803a9672f472976e8b6dc6dddd164ec1e44a34aae8fea5e1e24",
+      "reason": "record-redaction"
+    },
+    "maths/combinatorics/spectral-graph-theory/four-negative-eigenvalues/video/run_stage.py": {
+      "sha256": "1023efe86f54fcb665518db0ade961b80bcb304ac4e4d2f0624fb6cac8d3a17c",
+      "reason": "portable-paths"
+    },
+    "maths/combinatorics/spectral-graph-theory/four-negative-eigenvalues/video/verify_media.py": {
+      "sha256": "15738d7a6b0acab5c9bffcaf7dd56a7584124cda137e4158eade044222cef8f3",
+      "reason": "portable-paths"
+    },
+    "maths/dynamical-systems/billiards/special-octagon-symplectic-billiards/README.md": {
+      "sha256": "e072137c08794b3ebbb3ee27aab95fca6ea6cc169ba46c46ccadd11bf3716a35",
+      "reason": "record-redaction"
+    },
+    "maths/dynamical-systems/billiards/special-octagon-symplectic-billiards/video/audit/decode-validation.json": {
+      "sha256": "a11ed8254e25cad6e140f19a1785b6ff8d93c5dc613bf2c11076b040e1bb8832",
+      "reason": "record-redaction"
+    },
+    "maths/dynamical-systems/billiards/special-octagon-symplectic-billiards/video/audit/validation.json": {
+      "sha256": "0b588c9599f982e85ceab39cf59597f4c9d9af6a41496f04825e062ae28ff64f",
+      "reason": "record-redaction"
+    },
+    "maths/dynamical-systems/billiards/special-octagon-symplectic-billiards/video/production.md": {
+      "sha256": "a327653f639a4bae9c0b147d170126277858d461901f39ad4724e4b0761aa761",
+      "reason": "portable-paths"
+    },
+    "maths/dynamical-systems/billiards/special-octagon-symplectic-billiards/video/sources.md": {
+      "sha256": "6dcf3ee19e0a1f25573600be3f97f8036b3e7322d1ceed534086ffb177fcc1cd",
+      "reason": "record-redaction"
+    },
+    "maths/dynamical-systems/lotka-volterra/tree-equivalence/README.md": {
+      "sha256": "d80bc73e1095d9466820c9b31d83f872bf2383a971df88a0ea858deb8544ad55",
+      "reason": "public-presentation"
+    },
+    "maths/dynamical-systems/lotka-volterra/tree-equivalence/paper.tex": {
+      "sha256": "b05189179551168722183a0044576942d3724b4ebb433916a876dec727dbe350",
+      "reason": "source-attribution"
+    },
+    "maths/dynamical-systems/lotka-volterra/tree-equivalence/readiness.md": {
+      "sha256": "e6f1fc41f5939e293a215a3d5b22cd8a1405a25cbf653710fa7a93db180970b1",
+      "reason": "public-presentation"
+    },
+    "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/README.md": {
+      "sha256": "c717b86cd77af535cd05377c84ff85f8d912f9b9f7162067e139a8c1f3c454af",
+      "reason": "record-redaction"
+    },
+    "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/readiness.md": {
+      "sha256": "09b31ad6d3f0e09ef879e11a06830563b4ac61741ac7c22ee5cfca2d1f475505",
+      "reason": "record-redaction"
+    },
+    "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/review.md": {
+      "sha256": "f7964e9d34afc9111b0c9c53916c088bad69cad8383243b18a298b4067d59e13",
+      "reason": "record-redaction"
+    },
+    "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/verification/recovery/source-provenance.json": {
+      "sha256": "b16f0bfbebf5a57ade173c7150c9a3c4da8db338287c94c3b6f0c1146e004a83",
+      "reason": "record-redaction"
+    },
+    "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/video/README.md": {
+      "sha256": "efe90fbc435065913b505e9bb18e736017205810a59023cd513af8bd8dcc6e93",
+      "reason": "portable-paths"
+    },
+    "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/video/package.py": {
+      "sha256": "f38c539a7bf669c82896aa4194596583575710d03653ff733a77dd0d568d3b6d",
+      "reason": "portable-paths"
+    },
+    "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/video/qa/completed-resume_render.py.txt": {
+      "sha256": "5aeaac3e4602acc5f80c50e4b2f6f055c567911fdfba43a9f82117dee07fdcf9",
+      "reason": "record-redaction"
+    },
+    "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/video/qa/ffprobe.json": {
+      "sha256": "410e69606037fd2ee0388a1690a88f5752ebb0bcf8e1052a93f537e8c1dc6c0b",
+      "reason": "record-redaction"
+    },
+    "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/video/run_stage.py": {
+      "sha256": "1023efe86f54fcb665518db0ade961b80bcb304ac4e4d2f0624fb6cac8d3a17c",
+      "reason": "portable-paths"
+    },
+    "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/video/verify_media.py": {
+      "sha256": "15738d7a6b0acab5c9bffcaf7dd56a7584124cda137e4158eade044222cef8f3",
+      "reason": "portable-paths"
+    },
+    "maths/geometry/rigidity/johnson-solids/README.md": {
+      "sha256": "3469262aac9466f1c88b03394d8659372e0cd8e20c22fa799a9ec69960526722",
+      "reason": "record-redaction"
+    },
+    "maths/geometry/rigidity/johnson-solids/readiness.md": {
+      "sha256": "1f3ab3d286183488ffb1510adf283ec26c47dbd0a850493718fda26834d2e7a0",
+      "reason": "record-redaction"
+    },
+    "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/14-latex-1.log": {
+      "sha256": "3715ad516a723b939a4cb495f7ae1402be257b1c1d3f4456da1f6f77098dc266",
+      "reason": "record-redaction"
+    },
+    "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/16-latex-2.log": {
+      "sha256": "3715ad516a723b939a4cb495f7ae1402be257b1c1d3f4456da1f6f77098dc266",
+      "reason": "record-redaction"
+    },
+    "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/17-latex-3.log": {
+      "sha256": "3715ad516a723b939a4cb495f7ae1402be257b1c1d3f4456da1f6f77098dc266",
+      "reason": "record-redaction"
+    },
+    "maths/geometry/rigidity/johnson-solids/verification/reviews/geometry-antiprism-review.md": {
+      "sha256": "149c0fdb7f60f13994f92c402e8d6ddd5218bbcb54bc9fe860e749622ed688bd",
+      "reason": "record-redaction"
+    },
+    "maths/geometry/rigidity/johnson-solids/verification/reviews/geometry-johnson-priority.md": {
+      "sha256": "d1c54fa4ce2d0d651c5a5bc7c7d1acdadf89e6ab512fa63b9a487bd6580dc465",
+      "reason": "record-redaction"
+    },
+    "maths/geometry/rigidity/johnson-solids/verification/reviews/geometry-johnson-review.md": {
+      "sha256": "52225f7ca9d47c873e3198a400496e7f4da88ff3548527f6a81020b2186f84e7",
+      "reason": "record-redaction"
+    },
+    "maths/geometry/rigidity/johnson-solids/video/README.md": {
+      "sha256": "5618977299ab45a70b483a369949ecda008b1b05ef69f1ab04c6e5b40340917c",
+      "reason": "portable-paths"
+    },
+    "maths/geometry/rigidity/johnson-solids/video/build.py": {
+      "sha256": "df5785afd3e26e216092bfd37349ed0214fd51a3ee9fabcecb80a4bd6071fa0c",
+      "reason": "portable-paths"
+    },
+    "maths/geometry/rigidity/johnson-solids/video/qa/ffprobe.json": {
+      "sha256": "0b3461b65707351eb9607f748de5a588d443413feaac287e270ab65ef3fd4d56",
+      "reason": "record-redaction"
+    },
+    "maths/geometry/rigidity/truncated-dodecahedron/README.md": {
+      "sha256": "3401ff12feb202f55593de018b0aa0338f5629e434925024b49fc081760ede6f",
+      "reason": "public-presentation"
+    },
+    "maths/geometry/rigidity/truncated-dodecahedron/author-walkthrough.md": {
+      "sha256": "e65d9fe1c4af898fafe44e86c46991da3f01b33d6eae790ab5a42282fac40e63",
+      "reason": "public-presentation"
+    },
+    "maths/geometry/rigidity/truncated-dodecahedron/readiness.md": {
+      "sha256": "6beef63b848c86cf7454b807fcf5268a65b2ef5f0fc9468659a724c02a92dbd1",
+      "reason": "public-presentation"
+    },
+    "maths/geometry/tilings/marked-polyform-heesch-numbers/README.md": {
+      "sha256": "0e1cc4ac05201a16ec84238acf406bc09716561f03aea0913f4e611856423ae1",
+      "reason": "record-redaction"
+    },
+    "maths/geometry/tilings/marked-polyform-heesch-numbers/readiness.md": {
+      "sha256": "75c02aaa7842374e67168ff937b51e80581d479babfe2261df606a79acf281e6",
+      "reason": "record-redaction"
+    },
+    "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/review.md": {
+      "sha256": "eb5e93b6798795c218a8937e3a1bf1ee9ba89443ba125088be706d3eb67ebf9d",
+      "reason": "record-redaction"
+    },
+    "maths/geometry/tilings/marked-polyform-heesch-numbers/video/README.md": {
+      "sha256": "1ba6cc7a65ef632d4aa970d1b1d492bed03af1ad2afe479f67b3f42d39c70a2e",
+      "reason": "portable-paths"
+    },
+    "maths/geometry/tilings/marked-polyform-heesch-numbers/video/finish_package.py": {
+      "sha256": "bd8c630fcc2548657319ed27e6e75bc60b0022137e2c39c4f64b4e7608c9c97d",
+      "reason": "portable-paths"
+    },
+    "maths/geometry/tilings/marked-polyform-heesch-numbers/video/production-state.json": {
+      "sha256": "0436d1de38f8108bac8d2f54a6206715ea092d3076b25ac3fababb55a7721129",
+      "reason": "record-redaction"
+    },
+    "maths/geometry/tilings/marked-polyform-heesch-numbers/video/provenance-status.json": {
+      "sha256": "2c9a9028c9d3f6be7841c5a37c8c392c162e5fb1c8eae3ccc325252b4a32b593",
+      "reason": "record-redaction"
+    },
+    "maths/geometry/tilings/marked-polyform-heesch-numbers/video/qa/ffprobe.json": {
+      "sha256": "bb5c9ce98b8c2ffdef1687438c187aebba3726f652f7a27b667723d41888a7b1",
+      "reason": "record-redaction"
+    },
+    "maths/geometry/tilings/marked-polyform-heesch-numbers/video/run_stage.py": {
+      "sha256": "d595e4cb9c920146ddeb2c32fa699b5b6b2fe0bbf6a5151b919b69f29c793ad7",
+      "reason": "portable-paths"
+    },
+    "maths/geometry/tilings/marked-polyform-heesch-numbers/video/scientific-input-sha256.before-validation-fixes.json": {
+      "sha256": "dc8ee0c1bbcd828e99402fef463f3037f900bf7d86ca5fc74b81fa25d2306ecb",
+      "reason": "record-redaction"
+    },
+    "maths/geometry/tilings/marked-polyform-heesch-numbers/video/scientific-input-sha256.json": {
+      "sha256": "e50cccdb9c44570f3e0d51b4089f6513fe4587c0a69542c3ca1a4aa146016d89",
+      "reason": "record-redaction"
+    },
+    "maths/geometry/tilings/marked-polyform-heesch-numbers/video/scientific-input-supplement.json": {
+      "sha256": "bffc6ec4043551d0c7f98fb23c7e519c30d972cf887a5e3c3b282cb1ba262f48",
+      "reason": "record-redaction"
+    },
+    "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/README.md": {
+      "sha256": "f3abc89f5cb94989c90f875fe6c8e9f2ec7950561c797febc9e9a039b5c144d3",
+      "reason": "record-redaction"
+    },
+    "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/readiness.md": {
+      "sha256": "2f091ae09f17f3f2d84e6f812a5d6bab459cdbf2c45cb14bd8fbf72f510e9845",
+      "reason": "record-redaction"
+    },
+    "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/review.md": {
+      "sha256": "7279f465a28b27d3f4aaf252720e8d6097d4e698f04c9d7d65ea5132dbac6953",
+      "reason": "record-redaction"
+    },
+    "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/verification/logs/finish-build.log": {
+      "sha256": "8d8f1fc5db1c3aec2924d2abe4b52779ab391788a567e62a60f75fbf0013d36f",
+      "reason": "record-redaction"
+    },
+    "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/video/README.md": {
+      "sha256": "321d614b5bddfc09b5f26aaa3c513f626e11c9d5d97ae992635f2d68666b26e6",
+      "reason": "portable-paths"
+    },
+    "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/video/finish_package.py": {
+      "sha256": "59aab5aad3371642e2015daa928a6a19f412c9c58baea5a8af6f4db00f556b64",
+      "reason": "portable-paths"
+    },
+    "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/video/production-state.json": {
+      "sha256": "a30c31b84e10b4b66081755842e1517cfc6c5bf6b97da2c78803065fb9f5c5b2",
+      "reason": "record-redaction"
+    },
+    "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/video/qa/ffprobe.json": {
+      "sha256": "16d856a2bcfa2aeab60de387522aad0fd2b4c5d7a2430eb871b597cf5cd04aad",
+      "reason": "record-redaction"
+    },
+    "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/video/run_stage.py": {
+      "sha256": "ea586c4a25bf499df5597877e6c1c3d4ccafd6a2443d6579760123f94ed10aab",
+      "reason": "portable-paths"
+    },
+    "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/video/scientific-input-sha256.json": {
+      "sha256": "c1601fd12370c6f7ecd88bfa45bba98d7ff6e777248ee7fc0d73f01b4ac4508b",
+      "reason": "record-redaction"
+    },
+    "maths/probability/competing-patterns/rotation-wins-penney/README.md": {
+      "sha256": "9a2c38da754a82f182543d8af8f23e6f2a165b769510461d65da9c5f9bc66451",
+      "reason": "record-redaction"
+    },
+    "maths/probability/competing-patterns/rotation-wins-penney/verification/priority-audit.md": {
+      "sha256": "38232cf8bb07b3b306a0b3e949c28c1bd85c1a4b77583b37286bc36d73b7c7c9",
+      "reason": "record-redaction"
+    },
+    "maths/probability/competing-patterns/rotation-wins-penney/verification/review-record.md": {
+      "sha256": "88d57f7d74b9c3e7296d762f4137df86493f4d3729bc236f0c25665a676bb747",
+      "reason": "record-redaction"
+    },
+    "maths/probability/competing-patterns/rotation-wins-penney/video/README.md": {
+      "sha256": "39ce02e87db60e4d6a84a46aaeb274945e833e601b1c54b5bcaf103bf97f980a",
+      "reason": "portable-paths"
+    },
+    "maths/probability/competing-patterns/rotation-wins-penney/video/qa/ffprobe.json": {
+      "sha256": "255bfcebbb4e5f8bc353fd35c1c98ec7f691b089b033f880a9c6c418ca5fa6de",
+      "reason": "record-redaction"
+    },
+    "maths/probability/competing-patterns/rotation-wins-penney/video/run_stage.py": {
+      "sha256": "d95a3a02d08b048538e302eba1ad2c7d48934b4e275e553e822be0d47c942d11",
+      "reason": "portable-paths"
+    },
+    "maths/probability/competing-patterns/rotation-wins-penney/video/verify_media.py": {
+      "sha256": "4c0871af497e903dd93d8568cf1bcac1d2211aecb752b31b1fb6c904fc9845a3",
+      "reason": "portable-paths"
+    },
+    "maths/topology/knot-theory/bridge-thirteen-crossing-census/README.md": {
+      "sha256": "06fa6ccdf6964d9322d04fae9d7b8e0cefc9f0f50a99b1f0867a160bdd0c2a83",
+      "reason": "record-redaction"
+    },
+    "maths/topology/knot-theory/bridge-thirteen-crossing-census/video/README.md": {
+      "sha256": "55702065df517a0fd60c1ffcef6a94a1daec24728accf0319692a74ceb430039",
+      "reason": "portable-paths"
+    },
+    "maths/topology/knot-theory/bridge-thirteen-crossing-census/video/build.py": {
+      "sha256": "9dde3be249236a99cacc540c1ef744e44b6b8a067ccafde842336f49aefbb513",
+      "reason": "portable-paths"
+    },
+    "maths/topology/knot-theory/bridge-thirteen-crossing-census/video/qa/ffprobe.json": {
+      "sha256": "aaa28b20711403204ea30c6666ad36786e823a0b50e2b35f95be32cc23ce682e",
+      "reason": "record-redaction"
+    },
+    "maths/topology/knot-theory/bridge-thirteen-crossing-census/video/sources.md": {
+      "sha256": "7cf8c920b4d13a3617db00a3f8e788144ae027e676c4dd19251d0412530930a8",
+      "reason": "record-redaction"
+    },
+    "physics/mechanics/elasticity/generic-stiffness-recovery/INTERNAL_REVIEW.md": {
+      "sha256": "c83e532fd23126ce946bdd2b77818ebf01c0f0009e60ef859e83b4aee8684003",
+      "reason": "public-presentation"
+    },
+    "physics/mechanics/elasticity/generic-stiffness-recovery/READINESS.md": {
+      "sha256": "8680da128e3c796c3835671635204a2cd82e54a8a0345798d4c354f8f3275277",
+      "reason": "public-presentation"
+    },
+    "physics/mechanics/elasticity/generic-stiffness-recovery/README.md": {
+      "sha256": "58d6c233b50c60231b6ff95de61104dbac842c9d8b7984479710a6c1b24e490e",
+      "reason": "public-presentation"
+    },
+    "physics/mechanics/elasticity/generic-stiffness-recovery/verification/lean-certificate-checks/README.md": {
+      "sha256": "a1aa0b5f1867abad451cb3b874b43895388114ea596b496e15da8c99f5a79e6e",
+      "reason": "public-presentation"
+    },
+    "physics/quantum-information/error-correction/distance-three-qudit-codes/README.md": {
+      "sha256": "cfbbd0048807749c0208acb6548764606c975fec8f51983490298840950f0fb2",
+      "reason": "record-redaction"
+    },
+    "physics/quantum-information/error-correction/distance-three-qudit-codes/verification/README.md": {
+      "sha256": "0d7ace2c5226e33a46db463f3d7e12191cc706e1d83d816a04dc56503de38e98",
+      "reason": "public-presentation"
+    },
+    "physics/quantum-information/error-correction/distance-three-qudit-codes/verification/check_bounds.py": {
+      "sha256": "b617b2caa0078d013d0017c950800cc4cca18f158e1997f846a2dbe15ec6d6a3",
+      "reason": "public-checker-docstring"
+    },
+    "physics/quantum-information/error-correction/distance-three-qudit-codes/verification/codetables_snapshot_2026-10-25.json": {
+      "sha256": "db6e8f49b5bd71075a34bce040b0b7bccc729372bef89df92401ffd0c16cfef7",
+      "reason": "minimal-factual-comparison"
+    },
+    "physics/statistical-physics/nonequilibrium-response/cactus-response-coupling/README.md": {
+      "sha256": "3ce2ade1febdd298e28d0c7f801e832c9ddc8a1628580d1b06ab100d177b1d9d",
+      "reason": "record-redaction"
+    },
+    "physics/statistical-physics/nonequilibrium-response/cactus-response-coupling/video/audit/decode-validation.json": {
+      "sha256": "f464822576cc07ffdc26db36ac365f7c53b92f7a10ffddd806452af4617a84c4",
+      "reason": "record-redaction"
+    },
+    "physics/statistical-physics/nonequilibrium-response/cactus-response-coupling/video/audit/validation.json": {
+      "sha256": "eff8fa0096fbcc22a4bcf37fc0df304ce7160c118df1a3b951487b4d56247a8a",
+      "reason": "record-redaction"
+    },
+    "physics/statistical-physics/nonequilibrium-response/cactus-response-coupling/video/production.md": {
+      "sha256": "9cc3278bca09ac8e9290fa2cba16189700be2587c87fdd82fab1fdf5262430e5",
+      "reason": "portable-paths"
+    },
+    "physics/statistical-physics/nonequilibrium-response/cactus-response-coupling/video/sources.md": {
+      "sha256": "07b978d53c78839aa71c70cd9b8e6b6d07c712199249ee366497fe9b663bd3c2",
+      "reason": "record-redaction"
+    },
+    "physics/statistical-physics/stochastic-resetting/conjugate-restart/README.md": {
+      "sha256": "d273cc343c329cf8c2d4fb997e63dbc28cf848629f49bd15e9d6bfc0325e387d",
+      "reason": "public-presentation"
+    },
+    "physics/statistical-physics/stochastic-resetting/conjugate-restart/author-walkthrough.md": {
+      "sha256": "a9b06b7d007420679a7ed336ffd06a64d1573676c7e156d7fc51fc8f44fd164a",
+      "reason": "public-presentation"
+    },
+    "physics/statistical-physics/stochastic-resetting/conjugate-restart/paper.tex": {
+      "sha256": "0b0544af2e551da94a2cecce9e562415232e234f079908bcb3bd83a5e9b93fcc",
+      "reason": "source-attribution"
+    },
+    "physics/statistical-physics/stochastic-resetting/conjugate-restart/readiness.md": {
+      "sha256": "7e161c30c10fc30c8d1adb26d2e7b10b3a77054803ee610ca0f9bf81335311af",
+      "reason": "public-presentation"
+    },
+    "physics/statistical-physics/thermodynamic-inference/periodic-waiting-time/README.md": {
+      "sha256": "739ddf5263d97625fc06bfc2da0a4aa88f74baa909d49398eebcff73d03f86c4",
+      "reason": "public-presentation"
+    },
+    "physics/statistical-physics/thermodynamic-inference/periodic-waiting-time/adversarial-review.md": {
+      "sha256": "368efbfe1caddf1467c9b50897aa4904e86355f0c8911d25245b39907a7d3c93",
+      "reason": "record-redaction"
+    },
+    "physics/statistical-physics/thermodynamic-inference/periodic-waiting-time/paper.tex": {
+      "sha256": "334002e60dc368be0052d37c9ebb21df4180ec53c77ce4f347217686136b9a3f",
+      "reason": "source-attribution"
+    },
+    "physics/statistical-physics/thermodynamic-inference/periodic-waiting-time/proof.md": {
+      "sha256": "593ccffefc187964d748a053b7422290a0628700bcbfb71625bc99b4d9e3a0e8",
+      "reason": "record-redaction"
+    },
+    "physics/statistical-physics/thermodynamic-inference/periodic-waiting-time/readiness.md": {
+      "sha256": "ed342341ff3d7e2dca5925a06d102f52091f0537a7f677ea04895b1efd8bbd49",
+      "reason": "public-presentation"
+    }
+  }
+}

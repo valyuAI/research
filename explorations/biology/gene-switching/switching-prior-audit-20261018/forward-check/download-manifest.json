@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://gitlab.pasteur.fr/tglab/liveburstrulepaper/-/raw/main/Deconvolution/OutDeconvGap/DECONV_hb_MS2_INTRON_Nc14_AP16.mat",
+    "file": "DECONV_hb_MS2_INTRON_Nc14_AP16.mat",
+    "bytes": 65053108,
+    "sha256": "dc88af3d7cc3f76899d7ddef444b4bb13172ee881fbb936a12d778053b107fd7"
+  },
+  {
+    "url": "https://gitlab.pasteur.fr/tglab/liveburstrulepaper/-/raw/main/Deconvolution/OutDeconvGap/BPHENO_hb_MS2_INTRON_Nc14_AP16.mat",
+    "file": "BPHENO_hb_MS2_INTRON_Nc14_AP16.mat",
+    "bytes": 1711177,
+    "sha256": "1cd95ef5759d345b7a5d2be2cb589f337bf07c0db27662ac473031e9a8192b6e"
+  },
+  {
+    "url": "https://gitlab.pasteur.fr/tglab/liveburstrulepaper/-/raw/main/Deconvolution/ProbeKernel/Kernel_hb_MS2_INTRON.mat",
+    "file": "Kernel_hb_MS2_INTRON.mat",
+    "bytes": 346,
+    "sha256": "29144304f4c26774e1f185217e0a54fcf482b1a20b558a9ac487af18cd2e47ab"
+  },
+  {
+    "url": "https://gitlab.pasteur.fr/tglab/liveburstrulepaper/-/raw/main/Deconvolution/MeasNoise/MeasNoise2PhotonMS2.mat",
+    "file": "MeasNoise2PhotonMS2.mat",
+    "bytes": 2180,
+    "sha256": "14cd9c20c0dfd6df27a42e8ed40a0475e2fd8ddb3cc3cb91a710461a1d1837ff"
+  },
+  {
+    "url": "https://gitlab.pasteur.fr/tglab/liveburstrulepaper/-/raw/main/Deconvolution/DataGap/hb_MS2_INTRON_NC14_OutDS.mat",
+    "file": "hb_MS2_INTRON_NC14_OutDS.mat",
+    "bytes": 109451728,
+    "sha256": "223ba19215385310b9f7828f432b44ae154f6e5727fed2aa5dc4e3fc2780e736"
+  }
+]

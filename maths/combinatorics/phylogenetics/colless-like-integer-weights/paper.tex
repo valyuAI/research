@@ -1,0 +1,84 @@
+\documentclass[11pt]{amsart}
+\usepackage[a4paper,textwidth=158mm,textheight=237mm,centering]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,mathtools,amssymb,graphicx,flafter,booktabs}
+\usepackage[unicode,colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\title{Integer weights never give a sound Colless-like balance index}
+\author{Harvey Yorke}
+\address{Valyu AI}
+\ifdefined\journalversion\else
+\author{Valyu DeepResearch}
+\address{Valyu AI}
+\fi
+\ifdefined\journalversion
+  \hypersetup{pdftitle={Integer weights never give a sound Colless-like balance index},pdfauthor={Harvey Yorke}}
+\else
+  \hypersetup{pdftitle={Integer weights never give a sound Colless-like balance index},pdfauthor={Harvey Yorke and Valyu DeepResearch}}
+\fi
+\date{25 October 2026}
+\keywords{Tree balance, Colless-like index, fully symmetric trees, multifurcating trees}
+\newcommand{\paperAuthorBlock}[1]{%
+  \begin{minipage}[t]{.44\textwidth}
+    \centering\normalfont\normalsize #1\par\small Valyu AI\par
+  \end{minipage}%
+}
+\makeatletter
+\renewcommand{\@setauthors}{%
+  \begingroup\trivlist\centering\normalfont\normalsize
+  \@topsep30\p@\relax\advance\@topsep by -\baselineskip\item\relax
+  \ifdefined\journalversion
+    \paperAuthorBlock{Harvey Yorke}%
+  \else
+    \paperAuthorBlock{Harvey Yorke}\hspace{.06\textwidth}\paperAuthorBlock{Valyu DeepResearch}%
+  \fi
+  \endtrivlist\endgroup
+}
+\renewcommand{\@setaddresses}{}
+\makeatother
+\begin{document}
+\raggedbottom
+\begin{abstract}
+Mir, Rotger and Rossell\'o introduced Colless-like balance indices $\mathfrak C_{D,f}$ for rooted multifurcating trees, depending on a dissimilarity $D$ and a weight function $f$ on outdegrees, and conjectured that no $f$ with values in the natural numbers makes $\mathfrak C_{D,f}$ sound, that is, zero exactly on fully symmetric trees. We prove the conjecture in a stronger form: soundness fails whenever $f(2),f(3),f(4)$ are rational multiples of one real number, whatever the other values of $f$. The proof counts fully symmetric trees with outdegrees in $\{2,3,4\}$: there are about $27^m$ of them with $24^m$ leaves, while, after removing their common leaf contribution and scaling, the internal $f$-sizes occupy only $O(24^m)$ integer values.
+\end{abstract}
+\maketitle
+
+\section{The conjecture}
+
+All trees are rooted, without vertices of outdegree one. For $f$ mapping outdegrees to non-negative reals, the \emph{$f$-size} of a tree is $\delta_f(T)=\sum_{v}f(\deg^+v)$ over all vertices. For a dissimilarity $D$ (a symmetric function of finite lists of reals that vanishes exactly on constant lists), the Colless-like index is
+\[
+\mathfrak C_{D,f}(T)=\sum_{v\ \text{internal}} D\bigl(\delta_f(T_{v_1}),\dots,\delta_f(T_{v_k})\bigr),
+\]
+where $T_{v_1},\dots,T_{v_k}$ are the subtrees rooted at the children of $v$~\cite{MRR2018}. A tree is \emph{fully symmetric} if at every internal vertex all child subtrees are isomorphic, and $\mathfrak C_{D,f}$ is \emph{sound} if it vanishes exactly on fully symmetric trees. Mir, Rotger and Rossell\'o proved that $\mathfrak C_{D,f}$ is sound if and only if $\delta_f$ separates non-isomorphic fully symmetric trees~\cite[Lemma~10]{MRR2018}, showed soundness for $f(n)=e^n$ and $f(n)=\ln(n+e)$, and ended with: ``Our conjecture is that there is no function $f$ taking values in the set of natural numbers that satisfies this property''~\cite{MRR2018}. The survey of Fischer, Herbst, Kersting, K\"uhn and Wicke lists the conjecture as open~\cite[Sec.~9.7]{FHKKW2023}.
+
+\begin{theorem}\label{thm:main}
+Let $f$ be a weight function and suppose $f(2),f(3),f(4)\in\gamma\mathbb Z$ for some real $\gamma>0$, for instance all rational. Then there are two non-isomorphic fully symmetric trees with the same $f$-size, so $\mathfrak C_{D,f}$ is not sound for any dissimilarity $D$. In particular the conjecture of Mir, Rotger and Rossell\'o holds.
+\end{theorem}
+
+\section{Proof}
+
+A fully symmetric tree is determined by its sequence of outdegrees level by level, $w=(k_1,\dots,k_h)$ with $k_i\ge2$; write $\mathrm{FS}_w$, and note that different words give non-isomorphic trees. With prefix products $p_0=1$ and $p_i=k_1\cdots k_i$, level $i-1$ has $p_{i-1}$ vertices of outdegree $k_i$ and there are $p_h$ leaves, so
+\[
+\delta_f(\mathrm{FS}_w)=\sum_{i=1}^{h}p_{i-1}f(k_i)+p_hf(0).
+\]
+Write $f(j)=\gamma a_j$ with integers $a_j\ge0$ for $j\in\{2,3,4\}$ and let $M=\max_j a_j$. For $m\ge1$ let $W_m$ be the set of words with exactly $m$ letters equal to each of $2,3,4$. Every $w\in W_m$ has $p_h=24^m$, so the leaf term $24^mf(0)$ is the same for all of them, and two words have equal $f$-size exactly when their internal sums $\sum_{i=1}^h p_{i-1}f(k_i)$ agree. Since $1+p_1+\dots+p_{h-1}<p_h$ for words with letters at least $2$~\cite[Lemma~15]{MRR2018}, the internal sum divided by $\gamma$ is one of the $M\cdot24^m+1$ integers in $[0,\,M\cdot24^m]$. On the other hand $|W_m|=(3m)!/(m!)^3$ is the largest of the $\binom{3m+2}{2}$ multinomial coefficients summing to $27^m$, so
+\[
+|W_m|\ \ge\ \frac{27^m}{\binom{3m+2}{2}}\ >\ M\cdot 24^m+1
+\]
+for all large $m$, because $(27/24)^m$ grows exponentially. By pigeonhole two distinct words in $W_m$ have equal $f$-size. If $\mathrm{FS}_w$ and $\mathrm{FS}_{w'}$ are such trees, the tree whose root has exactly these two children has $\mathfrak C_{D,f}=0$ (every internal vertex inside either child is balanced, and the root sees two equal $f$-sizes) but is not fully symmetric. \qed
+
+\section{Remarks}
+
+\emph{Small examples.} The pigeonhole bound guarantees collisions only for enormous trees (for weights up to $50$, at $m\approx 80$), but natural integer weights collide immediately. With $f(n)=n+1$, $\mathrm{FS}_{(2,2)}$ and $\mathrm{FS}_{(6)}$ both have $f$-size $13$; with $f(n)=2^n$, $\mathrm{FS}_{(2,3)}$ and $\mathrm{FS}_{(3,2)}$ have $26$; with $f(n)=n!+1$, $\mathrm{FS}_{(4,3)}$ and $\mathrm{FS}_{(2,2,2,2)}$ have $77$; with $f(n)=n^3+1$, $\mathrm{FS}_{(3)}$ and $\mathrm{FS}_{(2,2)}$ have $31$. A standard-library script checks these by building the trees and evaluating $\mathfrak C_{D,f}$ for the variance, the standard deviation and the mean deviation from the median.
+
+\emph{Where the method stops.} This fixed-alphabet argument does not settle weights in a rank-two group such as $\mathbb Z+\mathbb Z\sqrt2$. If $f(2),f(3),f(4)$ are integer combinations of two fixed generators, the internal sums have integer-coordinate pairs in a box with $O(24^{2m})$ points. This exceeds the approximately $27^m$ words used here, so this comparison no longer forces a collision. It is a limitation of this argument, not a proof that no other counting argument works. Rank-two weights can collide: Mir, Rotger and Rossell\'o give $\delta_f(\mathrm{FS}_{8,10})=\delta_f(\mathrm{FS}_{12,8})=352$ for $f(n)=(\sqrt2)^n$~\cite{MRR2018}. Whether some weight function with values in a rank-two group is sound is not settled here.
+
+\emph{Domain.} The original paper writes $f\colon\mathbb N\to\mathbb R_{>0}$ but uses $f(0)$ and zero values in examples; the survey~\cite{FHKKW2023} takes $f\colon\mathbb N_{\ge0}\to\mathbb R_{\ge0}$. The theorem covers every such convention, since it only uses $f(2),f(3),f(4)$ and neither positivity nor the value $f(0)$.
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

@@ -1,0 +1,16 @@
+[11:52:04] build hex_line3_k5 hex [[0,0],[0,1],[0,2]] k=5 
+hex cells=[[0, 0], [0, 1], [0, 2]] k=5 imb=1 radius=21.0: placements 19380 vars 354150 clauses 2300354 (33.1s)
+wrote hex_line3_k5.cnf
+2499b422f03f4fa0bee8e83cef7a9c86d15e112c9dc61617a4e0de4129bb1b05  hex_line3_k5.cnf
+[11:52:40] cadical start
+s UNSATISFIABLE
+[11:56:49] cadical rc=20 (249s) proof bytes 57151782
+a91f89a2f53e698b42e9cbdb457fb1e20806e17f608282c338ebbe00d655c6e4  hex_line3_k5.drat
+c 199119 of 2300354 clauses in core                            
+c 239060 of 739179 lemmas in core using 59778596 resolution steps
+c 0 RAT lemmas in core; 102726 redundant literals in core lemmas
+s VERIFIED
+c verification time: 679.561 seconds
+[12:08:10] drat-trim done (680s)
+DRAT_VERIFIED hex_line3_k5
+[12:08:27] END rc=20

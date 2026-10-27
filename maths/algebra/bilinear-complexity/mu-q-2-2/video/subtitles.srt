@@ -1,0 +1,459 @@
+1
+00:00:00,000 --> 00:00:03,102
+Multiply two expressions, each with two pieces.
+
+2
+00:00:03,102 --> 00:00:07,788
+You could multiply every piece on the left by every piece on the right.
+
+3
+00:00:07,788 --> 00:00:13,464
+That costs four multiplications. Can you get exactly the same answer using only three?
+
+4
+00:00:13,833 --> 00:00:16,907
+Use two plus three x, and four plus five x.
+
+5
+00:00:16,907 --> 00:00:20,696
+The outside products are eight and fifteen x squared.
+
+6
+00:00:20,696 --> 00:00:23,770
+The middle products are ten x and twelve x.
+
+7
+00:00:23,770 --> 00:00:27,201
+Together, those middle pieces give twenty two x.
+
+8
+00:00:27,600 --> 00:00:30,913
+Now add the two coefficients on each side first.
+
+9
+00:00:30,913 --> 00:00:37,333
+Five times nine is forty five. This single multiplication contains all four earlier products.
+
+10
+00:00:37,333 --> 00:00:42,648
+Subtract eight and fifteen, and the missing middle coefficient is twenty two.
+
+11
+00:00:43,033 --> 00:00:49,470
+That is Karatsuba's trick. We paid for three products, and used additions and subtractions
+
+12
+00:00:49,470 --> 00:00:55,764
+to recover the answer. Our cost model counts multiplications between input coefficients.
+
+13
+00:00:55,764 --> 00:01:00,841
+Additions and multiplication by fixed constants are free in this model.
+
+14
+00:01:01,233 --> 00:01:05,680
+Now change the arithmetic. Our coefficients are only zero and one.
+
+15
+00:01:05,680 --> 00:01:09,319
+After addition, keep the remainder on division by two.
+
+16
+00:01:09,319 --> 00:01:15,114
+So one plus one becomes zero. Two identical contributions cancel, instead of adding up
+
+17
+00:01:15,114 --> 00:01:15,585
+to two.
+
+18
+00:01:15,967 --> 00:01:22,216
+A number in our new system has four slots: constant, x, x squared, and x cubed.
+
+19
+00:01:22,216 --> 00:01:27,199
+For example, one plus x cubed is the list one, zero, zero, one.
+
+20
+00:01:27,199 --> 00:01:31,471
+These are polynomial coefficients, not decimal digits.
+
+21
+00:01:31,867 --> 00:01:34,643
+Multiplication can produce higher powers.
+
+22
+00:01:34,643 --> 00:01:40,060
+We fold them back using a fixed rule: x to the fourth equals x squared plus one.
+
+23
+00:01:40,060 --> 00:01:45,883
+For example, x cubed times x becomes one plus x squared, which fits in our four slots.
+
+24
+00:01:46,267 --> 00:01:51,213
+The ordinary expansion has four times four coefficient products, so sixteen.
+
+25
+00:01:51,213 --> 00:01:54,598
+Group each input into two smaller polynomial pieces.
+
+26
+00:01:54,598 --> 00:02:00,195
+Apply the three-product trick outside, then again inside each of those three products.
+
+27
+00:02:00,195 --> 00:02:02,083
+Three times three gives nine.
+
+28
+00:02:02,467 --> 00:02:05,124
+This proves that nine products suffice.
+
+29
+00:02:05,124 --> 00:02:07,918
+But perhaps a different trick uses eight.
+
+30
+00:02:07,918 --> 00:02:10,644
+Finding one recipe gives an upper bound.
+
+31
+00:02:10,644 --> 00:02:14,733
+Ruling out every possible cheaper recipe is a different job.
+
+32
+00:02:14,733 --> 00:02:17,323
+We need a way to describe all recipes.
+
+33
+00:02:17,700 --> 00:02:23,438
+A permitted product takes a sum from the first input and multiplies it by a sum from
+
+34
+00:02:23,438 --> 00:02:28,151
+the second. For example, a zero plus a two, times b one plus b three.
+
+35
+00:02:28,151 --> 00:02:31,020
+Its expansion marks four places in a grid.
+
+36
+00:02:31,400 --> 00:02:36,709
+Choose any nonempty selection of the four rows, and any nonempty selection of columns.
+
+37
+00:02:36,709 --> 00:02:42,018
+There are fifteen choices each way, giving two hundred and twenty five possible grids.
+
+38
+00:02:42,018 --> 00:02:45,104
+Mathematicians call each of these a rank-one form.
+
+39
+00:02:45,500 --> 00:02:51,823
+Why a grid? Each square represents one coefficient product, such as a two times b one.
+
+40
+00:02:51,823 --> 00:02:55,132
+A coloured square means include that product.
+
+41
+00:02:55,132 --> 00:02:58,882
+Combining grids means adding corresponding squares.
+
+42
+00:02:58,882 --> 00:03:02,852
+In our binary arithmetic, two coloured squares cancel.
+
+43
+00:03:03,233 --> 00:03:08,449
+The actual multiplication has four output coefficients, so four target grids.
+
+44
+00:03:08,449 --> 00:03:11,701
+Here is the target for the constant coefficient.
+
+45
+00:03:11,701 --> 00:03:17,459
+Its marked squares record exactly which input products contribute a constant after we
+
+46
+00:03:17,459 --> 00:03:18,881
+fold the powers back.
+
+47
+00:03:19,267 --> 00:03:23,961
+A multiplication recipe succeeds when every target grid can be made by adding some of
+
+48
+00:03:23,961 --> 00:03:27,330
+its product grids. The same product can help several outputs.
+
+49
+00:03:27,330 --> 00:03:31,915
+This is why counting the coloured squares alone cannot tell us the cheapest recipe.
+
+50
+00:03:32,297 --> 00:03:37,714
+The set of all grids you can make by adding a chosen collection is called its span.
+
+51
+00:03:37,714 --> 00:03:42,479
+Start with two simple grids: you can make zero, either one, or their sum.
+
+52
+00:03:42,479 --> 00:03:46,265
+A new independent grid doubles these binary possibilities.
+
+53
+00:03:46,663 --> 00:03:50,707
+Imagine a container holding all combinations of the chosen grids.
+
+54
+00:03:50,707 --> 00:03:55,621
+This container is a schematic picture of a span, not an ordinary room in space.
+
+55
+00:03:55,621 --> 00:04:00,971
+The four target grids already supply four independent directions that every successful
+
+56
+00:04:00,971 --> 00:04:02,215
+container must hold.
+
+57
+00:04:02,597 --> 00:04:07,705
+The paper proves that an eight-product recipe exists exactly when four extra product
+
+58
+00:04:07,705 --> 00:04:13,178
+grids complete an eight-dimensional container that can itself be built from product grids.
+
+59
+00:04:13,178 --> 00:04:17,861
+That equivalence is what makes the finite search cover every possible recipe.
+
+60
+00:04:18,230 --> 00:04:23,869
+Without using symmetry, a checker examines one hundred and three million, four hundred
+
+61
+00:04:23,869 --> 00:04:28,197
+and six thousand, six hundred and sixteen eligible four-grid sets.
+
+62
+00:04:28,197 --> 00:04:33,902
+None works. A separate symmetry-based search reduces the work to seventy four thousand,
+
+63
+00:04:33,902 --> 00:04:36,590
+three hundred and seventy seven prefixes.
+
+64
+00:04:36,963 --> 00:04:41,133
+The important word is exhaustive. A failed hunt alone proves nothing.
+
+65
+00:04:41,133 --> 00:04:46,269
+Here the written reduction proves that every eight-product recipe would appear in the
+
+66
+00:04:46,269 --> 00:04:51,525
+search. Zero successful cases therefore rules out eight, while our construction already
+
+67
+00:04:51,525 --> 00:04:52,371
+supplies nine.
+
+68
+00:04:52,763 --> 00:04:58,407
+Change the coefficients to zero, one, and two, with arithmetic wrapping around at three.
+
+69
+00:04:58,407 --> 00:05:02,704
+The answer changes to eight. For example, two plus two becomes one.
+
+70
+00:05:02,704 --> 00:05:08,219
+A finite field is a finite arithmetic system where every nonzero number can be divided
+
+71
+00:05:08,219 --> 00:05:08,411
+by.
+
+72
+00:05:08,797 --> 00:05:11,658
+The paper gives the eight products explicitly.
+
+73
+00:05:11,658 --> 00:05:16,944
+Each combines coefficients of the first input and the same combination of the second.
+
+74
+00:05:16,944 --> 00:05:22,230
+This is called a symmetric recipe. Ordinary recipes may use different combinations on
+
+75
+00:05:22,230 --> 00:05:23,101
+the two sides.
+
+76
+00:05:23,497 --> 00:05:29,638
+To verify such a recipe, test the sixteen pairs made from one, x, x squared, and x cubed.
+
+77
+00:05:29,638 --> 00:05:33,157
+Every larger input is built by adding these pieces.
+
+78
+00:05:33,157 --> 00:05:38,953
+Because the recipe distributes over addition in each input, those sixteen identities
+
+79
+00:05:38,953 --> 00:05:39,505
+suffice.
+
+80
+00:05:39,897 --> 00:05:44,989
+For fields with three, four, or five elements, seven products are impossible.
+
+81
+00:05:44,989 --> 00:05:50,742
+For five, two separate exact programs each examined seventy three thousand prefixes and
+
+82
+00:05:50,742 --> 00:05:53,388
+over seventeen million residual buckets.
+
+83
+00:05:53,388 --> 00:05:58,017
+Both found no seven-product recipe, and positive controls did succeed.
+
+84
+00:05:58,397 --> 00:06:04,130
+Here is the complete answer: nine for two elements; eight for three, four, or five; seven
+
+85
+00:06:04,130 --> 00:06:08,188
+for larger finite fields. The field size must be a prime power.
+
+86
+00:06:08,188 --> 00:06:12,053
+A four-element field is not ordinary arithmetic modulo four.
+
+87
+00:06:12,430 --> 00:06:16,729
+A second question uses six coefficients arranged in a circle.
+
+88
+00:06:16,729 --> 00:06:21,521
+Multiply their polynomials, but now wrap x to the sixth back to one.
+
+89
+00:06:21,521 --> 00:06:27,652
+Positions repeat every six steps. This operation is called cyclic convolution of length
+
+90
+00:06:27,652 --> 00:06:27,934
+six.
+
+91
+00:06:28,330 --> 00:06:33,166
+For a concrete example, multiply one plus x to the fifth by one plus x.
+
+92
+00:06:33,166 --> 00:06:37,797
+Before wrapping, you get one, x, x to the fifth, and x to the sixth.
+
+93
+00:06:37,797 --> 00:06:40,930
+The last becomes one, and the two ones cancel.
+
+94
+00:06:41,297 --> 00:06:46,816
+The result is x plus x to the fifth. To calculate arbitrary inputs efficiently, the algebra
+
+95
+00:06:46,816 --> 00:06:51,364
+splits this six-slot problem into a two-slot piece and our four-slot piece.
+
+96
+00:06:51,364 --> 00:06:54,761
+They cost three products and nine products respectively.
+
+97
+00:06:55,130 --> 00:07:00,623
+Adding those costs needs a theorem. Costs of independent pieces do not always add in
+
+98
+00:07:00,623 --> 00:07:06,116
+this subject. The special theorem of Ja'Ja' and Takche applies because one piece has
+
+99
+00:07:06,116 --> 00:07:11,282
+two input and output coordinates. Here it proves three plus nine equals twelve.
+
+100
+00:07:11,663 --> 00:07:15,088
+What is new is narrower than the table might suggest.
+
+101
+00:07:15,088 --> 00:07:20,646
+Rambaud already recorded the symmetric binary value nine in twenty fourteen and in his
+
+102
+00:07:20,646 --> 00:07:26,139
+corrected thesis. The present binary exclusion also permits different combinations on
+
+103
+00:07:26,139 --> 00:07:27,431
+the two input sides.
+
+104
+00:07:27,830 --> 00:07:34,339
+The subspace search methods also build on Barbulescu, Detrey, Estibals, Zimmermann, Covanov,
+
+105
+00:07:34,339 --> 00:07:39,503
+and Rambaud. The four-element value had already been claimed in a survey.
+
+106
+00:07:39,503 --> 00:07:45,870
+The surviving contributions concern unrestricted binary rank, the explicit ternary recipe,
+
+107
+00:07:45,870 --> 00:07:48,134
+and the convolution consequence.
+
+108
+00:07:48,530 --> 00:07:52,244
+Multiple exact checkers and controls support the computations.
+
+109
+00:07:52,244 --> 00:07:56,019
+Twelve compiled checks passed in the accepted research package.
+
+110
+00:07:56,019 --> 00:08:01,351
+A separate logical certificate was verified too; its large proof file is archived outside
+
+111
+00:08:01,351 --> 00:08:04,346
+this repository. No Lean formalization is claimed.
+
+112
+00:08:04,730 --> 00:08:10,423
+Remember the chain: additions can replace products; grids describe every permitted recipe;
+
+113
+00:08:10,423 --> 00:08:14,282
+exhaustive exclusion makes nine optimal in the binary system.
+
+114
+00:08:14,282 --> 00:08:19,596
+Correctness confidence is high. Priority remains moderately confident and bounded by
+
+115
+00:08:19,596 --> 00:08:23,834
+the sources checked. Larger multiplication systems still need work.

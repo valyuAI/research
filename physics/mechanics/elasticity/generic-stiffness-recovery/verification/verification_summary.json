@@ -1,0 +1,194 @@
+{
+  "all_arithmetic_checks_passed": true,
+  "normal_rank_dimension_upper_bounds": [
+    {
+      "rank_bound": 2,
+      "identities_verified": 6,
+      "leading_monomials": [
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "minimum_variable_cover_size": 6,
+      "minimum_variable_covers": [
+        [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          5,
+          6,
+          7
+        ]
+      ],
+      "dimension_upper_bound": 2
+    },
+    {
+      "rank_bound": 3,
+      "identities_verified": 5,
+      "leading_monomials": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2
+        ]
+      ],
+      "minimum_variable_cover_size": 5,
+      "minimum_variable_covers": [
+        [
+          0,
+          1,
+          2,
+          5,
+          6
+        ],
+        [
+          0,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          2,
+          5,
+          6,
+          7
+        ]
+      ],
+      "dimension_upper_bound": 3
+    }
+  ],
+  "certificate_matrix_matches_reconstructed_N2": true,
+  "finite_direction_slice_source_verified": true,
+  "finite_direction_slice_dimension_zero_certified": true,
+  "finite_direction_certificate_hashes": {
+    "source": {
+      "gcd4_slice_n11_input.json": "abe4b784a5adecfb3a280ecb6e6239e9270fdd3ed54102bc8727da4a2dd56a72",
+      "gcd4_slice_n11.sing": "060bde924b3b6d80a4ca4b648122c58fc6130aff535becd5ff88913fb1d18a86"
+    },
+    "identities": {
+      "gcd4_slice_n11.sing": "060bde924b3b6d80a4ca4b648122c58fc6130aff535becd5ff88913fb1d18a86",
+      "gcd4_slice_n11_targets.txt": "45aa81d60d1f445880651be9009e76fef4a5eb91a1f7eb1b34b48f65a4a1ba37",
+      "macaulay_degree3_membership.txt": "bfa4aca4e470eb395ab473b1ed8d57f9743a9bff19ee5463d611d6fd556251a8",
+      "macaulay_degree4_membership.txt": "295a54d58639ec3caf39e8c53041f093dddf0fbd22fb55d256ab9fa756c3108c",
+      "macaulay_degree5_membership.txt": "b026e95637241275eb2bf0a26e2590ca9b8d307b2a014915941740a61b57c519",
+      "macaulay_degree6_membership.txt": "a3a04ab5db43ec01602f9fa7df385510648fcaa34f291887e3124c54c56e19ca",
+      "macaulay_degree7_membership.txt": "c4137bdca7df030d165a0d2fa0e4508cc9963b350912df41bec3e7418fcd44a6"
+    }
+  },
+  "groebner_corroboration_run": false,
+  "optional_groebner_dimensions": [],
+  "geometric_argument": "Written proof; not established by this script alone",
+  "formal_coverage": "Separate Lean proofs cover seven matrix/collision lemmas and eleven N2 determinant identities; not the finite-direction cubic slice or geometric theorem"
+}

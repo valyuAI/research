@@ -1,0 +1,93 @@
+J1 Square Pyramid                                | ext:                                                         | isomorphic: True
+J2 Pentagonal Pyramid                            | ext:                                                         | isomorphic: True
+J3 Triangular Cupola                             | ext: Johnson solid J3: Triangular cupola                     | isomorphic: True
+J4 Square Cupola                                 | ext:                                                         | isomorphic: True
+J5 Pentagonal Cupola                             | ext:                                                         | isomorphic: True
+J6 Pentagonal Rotunda                            | ext:                                                         | isomorphic: True
+J7 Elongated Triangular Pyramid                  | ext:                                                         | isomorphic: True
+J8 Elongated Square Pyramid                      | ext:                                                         | isomorphic: True
+J9 Elongated Pentagonal Pyramid                  | ext:                                                         | isomorphic: True
+J10 Gyroelongated Square Pyramid                  | ext:                                                         | isomorphic: True
+J11 Gyroelongated Pentagonal Pyramid              | ext:                                                         | isomorphic: True
+J12 Triangular Dipyramid J12                      | ext: Johnson solid J12: Triangular bipyramid                 | isomorphic: True
+J13 Pentagonal Dipyramid                          | ext:                                                         | isomorphic: True
+J14 Elongated Triangular Dipyramid                | ext:                                                         | isomorphic: True
+J15 Elongated Square Dipyramid                    | ext:                                                         | isomorphic: True
+J16 Elongated Pentagonal Dipyramid                | ext:                                                         | isomorphic: True
+J17 Gyroelongated Square Dipyramid                | ext:                                                         | isomorphic: True
+J18 Elongated Triangular Cupola                   | ext:                                                         | isomorphic: True
+J19 Elongated Square Cupola                       | ext:                                                         | isomorphic: True
+J20 Elongated Pentagonal Cupola                   | ext:                                                         | isomorphic: True
+J21 Elongated Pentagonal Rotunda                  | ext:                                                         | isomorphic: True
+J22 Gyroelongated Triangular Cupola               | ext:                                                         | isomorphic: True
+J23 Gyroelongated Square Cupola                   | ext:                                                         | isomorphic: True
+J24 Gyroelongated Pentagonal Cupola               | ext:                                                         | isomorphic: True
+J25 Gyroelongated Pentagonal Rotunda              | ext:                                                         | isomorphic: True
+J26 Gyrobifastigium                               | ext:                                                         | isomorphic: True
+J27 Triangular Orthobicupola                      | ext:                                                         | isomorphic: True
+J28 Square Orthobicupola                          | ext:                                                         | isomorphic: True
+J29 Square Gyrobicupola                           | ext:                                                         | isomorphic: True
+J30 Pentagonal Orthobicupola                      | ext:                                                         | isomorphic: True
+J31 Pentagonal Gyrobicupola                       | ext:                                                         | isomorphic: True
+J32 Pentagonal Orthocupolarotunda                 | ext:                                                         | isomorphic: True
+J33 Pentagonal Gyrocupolarotunda                  | ext:                                                         | isomorphic: True
+J34 Pentagonal Orthobirotunda                     | ext:                                                         | isomorphic: True
+J35 Elongated Triangular Orthobicupola            | ext:                                                         | isomorphic: True
+J36 Elongated Triangular Gyrobicupola             | ext:                                                         | isomorphic: True
+J37 Elongated Square Gyrobicupola                 | ext:                                                         | isomorphic: True
+J38 Elongated Pentagonal Orthobicupola            | ext:                                                         | isomorphic: True
+J39 Elongated Pentagonal Gyrobicupola             | ext:                                                         | isomorphic: True
+J40 Elongated Pentagonal Orthocupolarotunda       | ext:                                                         | isomorphic: True
+J41 Elongated Pentagonal Gyrocupolarotunda        | ext:                                                         | isomorphic: True
+J42 Elongated Pentagonal Orthobirotunda           | ext:                                                         | isomorphic: True
+J43 Elongated Pentagonal Gyrobirotunda            | ext:                                                         | isomorphic: True
+J44 Gyroelongated Triangular Bicupola             | ext:                                                         | isomorphic: True
+J45 Gyroelongated Square Bicupola                 | ext:                                                         | isomorphic: True
+J46 Gyroelongated Pentagonal Bicupola             | ext:                                                         | isomorphic: True
+J47 Gyroelongated Pentagonal Cupolarotunda        | ext:                                                         | isomorphic: True
+J48 Gyroelongated Pentagonal Birotunda            | ext:                                                         | isomorphic: True
+J49 Augmented Triangular Prism                    | ext:                                                         | isomorphic: True
+J50 Biaugmented Triangular Prism                  | ext:                                                         | isomorphic: True
+J51 Triaugmented Triangular Prism                 | ext:                                                         | isomorphic: True
+J52 Augmented Pentagonal Prism                    | ext:                                                         | isomorphic: True
+J53 Biaugmented Pentagonal Prism                  | ext:                                                         | isomorphic: True
+J54 Augmented Hexagonal Prism                     | ext:                                                         | isomorphic: True
+J55 Parabiaugmented Hexagonal Prism               | ext:                                                         | isomorphic: True
+J56 Metabiaugmented Hexagonal Prism               | ext:                                                         | isomorphic: True
+J57 Triaugmented Hexagonal Prism                  | ext:                                                         | isomorphic: True
+J58 Augmented Dodecahedron                        | ext:                                                         | isomorphic: True
+J59 Parabiaugmented Dodecahedron                  | ext:                                                         | isomorphic: True
+J60 Metabiaugmented Dodecahedron                  | ext:                                                         | isomorphic: True
+J61 Triaugmented Dodecahedron                     | ext:                                                         | isomorphic: True
+J62 Metabidiminished Icosahedron                  | ext:                                                         | isomorphic: True
+J63 Tridiminished Icosahedron                     | ext:                                                         | isomorphic: True
+J64 Augmented Tridiminished Icosahedron           | ext:                                                         | isomorphic: True
+J65 Augmented Truncated Tetrahedron               | ext: Johnson solid J65: Augmented truncated tetrahedron      | isomorphic: True
+J66 Augmented Truncated Cube                      | ext:                                                         | isomorphic: True
+J67 Biaugmented Truncated Cube                    | ext:                                                         | isomorphic: True
+J68 Augmented Truncated Dodecahedron              | ext:                                                         | isomorphic: True
+J69 Parabiaugmented Truncated Dodecahedron        | ext:                                                         | isomorphic: True
+J70 Metabiaugmented Truncated Dodecahedron        | ext:                                                         | isomorphic: True
+J71 Triaugmented Truncated Dodecahedron           | ext:                                                         | isomorphic: True
+J72 Gyrate Rhombicosidodecahedron                 | ext:                                                         | isomorphic: True
+J73 Parabigyrate Rhombicosidodecahedron           | ext:                                                         | isomorphic: True
+J74 Metabigyrate Rhombicosidodecahedron           | ext:                                                         | isomorphic: True
+J75 Trigyrate Rhombicosidodecahedron              | ext:                                                         | isomorphic: True
+J76 Diminished Rhombicosidodecahedron             | ext:                                                         | isomorphic: True
+J77 Paragyrate Diminished Rhombicosidodecahedron  | ext:                                                         | isomorphic: True
+J78 Metagyrate Diminished Rhombicosidodecahedron  | ext:                                                         | isomorphic: True
+J79: not in external dataset
+J80 Parabidiminished Rhombicosidodecahedron       | ext:                                                         | isomorphic: True
+J81 Metabidiminished Rhombicosidodecahedron       | ext:                                                         | isomorphic: True
+J82 Gyrate Bidiminished Rhombicosidodecahedron    | ext:                                                         | isomorphic: True
+J83 Tridiminished Rhombicosidodecahedron          | ext:                                                         | isomorphic: True
+J84 Snub Disphenoid                               | ext:                                                         | isomorphic: True
+J85 Snub Square Antiprism                         | ext:                                                         | isomorphic: True
+J86 Sphenocorona                                  | ext:                                                         | isomorphic: True
+J87 Augmented Sphenocorona                        | ext:                                                         | isomorphic: True
+J88 Sphenomegacorona                              | ext:                                                         | isomorphic: True
+J89 Hebesphenomegacorona                          | ext:                                                         | isomorphic: True
+J90 Disphenocingulum                              | ext:                                                         | isomorphic: True
+J91 Bilunabirotunda                               | ext:                                                         | isomorphic: True
+J92 Triangular Hebesphenorotunda                  | ext:                                                         | isomorphic: True
+MISMATCHES: []

@@ -1,0 +1,52 @@
+k=2 n=7: 300 random families, all steps within bounds, common quartet found each time
+k=3 n=19: 200 random families, all steps within bounds, common quartet found each time
+k=4 n=55: 50 random families, all steps within bounds, common quartet found each time
+k=5 n=163: 10 random families, all steps within bounds, common quartet found each time
+Lemma 2.6 grid: 1/61 ratios checked
+Lemma 2.6 grid: 11/61 ratios checked
+Lemma 2.6 grid: 21/61 ratios checked
+Lemma 2.6 grid: 31/61 ratios checked
+Lemma 2.6 grid: 41/61 ratios checked
+Lemma 2.6 grid: 51/61 ratios checked
+Lemma 2.6 grid: 61/61 ratios checked
+Lemma 2.6 grid check (N=60): minimum ratio 17/90 at r=2, x=13/30, y=1/3
+weighted, k=1 n=4: starting 50 families
+weighted, k=1: 10/50 families passed
+weighted, k=1: 20/50 families passed
+weighted, k=1: 30/50 families passed
+weighted, k=1: 40/50 families passed
+weighted, k=1: 50/50 families passed
+weighted, k=1 n=4: 50 random families, sharp Psi factor and separation at every step, common quartet found each time
+weighted, k=2 n=7: starting 300 families
+weighted, k=2: 60/300 families passed
+weighted, k=2: 120/300 families passed
+weighted, k=2: 180/300 families passed
+weighted, k=2: 240/300 families passed
+weighted, k=2: 300/300 families passed
+weighted, k=2 n=7: 300 random families, sharp Psi factor and separation at every step, common quartet found each time
+weighted, k=3 n=16: starting 200 families
+weighted, k=3: 40/200 families passed
+weighted, k=3: 80/200 families passed
+weighted, k=3: 120/200 families passed
+weighted, k=3: 160/200 families passed
+weighted, k=3: 200/200 families passed
+weighted, k=3 n=16: 200 random families, sharp Psi factor and separation at every step, common quartet found each time
+weighted, k=4 n=37: starting 50 families
+weighted, k=4: 10/50 families passed
+weighted, k=4: 20/50 families passed
+weighted, k=4: 30/50 families passed
+weighted, k=4: 40/50 families passed
+weighted, k=4: 50/50 families passed
+weighted, k=4 n=37: 50 random families, sharp Psi factor and separation at every step, common quartet found each time
+weighted, k=5 n=85: starting 10 families
+weighted, k=5: 2/10 families passed
+weighted, k=5: 4/10 families passed
+weighted, k=5: 6/10 families passed
+weighted, k=5: 8/10 families passed
+weighted, k=5: 10/10 families passed
+weighted, k=5 n=85: 10 random families, sharp Psi factor and separation at every step, common quartet found each time
+weighted, k=6 n=195: starting 3 families
+weighted, k=6: 1/3 families passed
+weighted, k=6: 2/3 families passed
+weighted, k=6: 3/3 families passed
+weighted, k=6 n=195: 3 random families, sharp Psi factor and separation at every step, common quartet found each time

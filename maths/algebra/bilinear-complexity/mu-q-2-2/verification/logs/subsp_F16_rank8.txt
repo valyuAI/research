@@ -1,0 +1,2 @@
+n=4 dimS=4 m=4 target rank 8
+RESULT f=19 n=4 rank<=8: NO (independent 4-subsets tested 103702725, hits 0)

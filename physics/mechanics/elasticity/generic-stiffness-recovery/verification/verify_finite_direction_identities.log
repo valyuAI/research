@@ -1,0 +1,12 @@
+Direct identity 1/11 and leading power t0^3: PASS
+Direct identity 2/11 and leading power t1^3: PASS
+Direct identity 3/11 and leading power t2^3: PASS
+Direct identity 4/11 and leading power t3^3: PASS
+Direct identity 5/11 and leading power t4^4: PASS
+Direct identity 6/11 and leading power t5^4: PASS
+Direct identity 7/11 and leading power t6^5: PASS
+Direct identity 8/11 and leading power t7^5: PASS
+Direct identity 9/11 and leading power t8^6: PASS
+Direct identity 10/11 and leading power t9^6: PASS
+Direct identity 11/11 and leading power t10^7: PASS
+PASS: zero-dimensionality certificate

@@ -1,0 +1,5 @@
+Built degree 6 slowness coefficients: 28
+Built degree 4 slowness coefficients: 15
+Built degree 2 slowness coefficients: 6
+{'weight': '0', 'eigenspace_dimension': 1, 'basis': [['-3*I', '-3*I', '0', '-5*I', '0', '0', '0', '-1', '2*I', '1']], 'normal_matrix_rank': 6}
+{'weight': '2', 'eigenspace_dimension': 1, 'basis': [['0', '-I', '0', 'I', '0', '0', '0', '1', '0', '0']], 'normal_matrix_rank': 2}

@@ -1,0 +1,14 @@
+[
+  {
+    "mutation": "membership_coefficient",
+    "optimized_python": true,
+    "returncode": 1,
+    "rejection": "ValueError: Identity 1 failed"
+  },
+  {
+    "mutation": "source_cubic_coefficient",
+    "optimized_python": true,
+    "returncode": 1,
+    "rejection": "ValueError: Tensor-to-cubic polynomial identity failed"
+  }
+]

@@ -1,0 +1,187 @@
+{
+  "method": "Central waveform correlation after mono 8kHz decoding; encoding delay allowed. Not listening.",
+  "minimum_correlation": 0.9842262171481683,
+  "maximum_absolute_offset_seconds": 0.021375,
+  "clips": [
+    {
+      "id": "q01",
+      "correlation": 0.9912147838785978,
+      "offset_seconds": 0.021375
+    },
+    {
+      "id": "q02",
+      "correlation": 0.9904501866033948,
+      "offset_seconds": 0.020375
+    },
+    {
+      "id": "q03",
+      "correlation": 0.9875863693837197,
+      "offset_seconds": 0.021375
+    },
+    {
+      "id": "q04",
+      "correlation": 0.9894361227434622,
+      "offset_seconds": 0.021375
+    },
+    {
+      "id": "q05",
+      "correlation": 0.9842262171481683,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "q06",
+      "correlation": 0.9997281155337425,
+      "offset_seconds": 0.021375
+    },
+    {
+      "id": "q07",
+      "correlation": 0.9998361807969812,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "q08",
+      "correlation": 0.9999090001690132,
+      "offset_seconds": 0.020625
+    },
+    {
+      "id": "q09",
+      "correlation": 0.9997815813276008,
+      "offset_seconds": 0.020625
+    },
+    {
+      "id": "q10",
+      "correlation": 0.9997082891950454,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "q11",
+      "correlation": 0.9999121393455241,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "q12",
+      "correlation": 0.9871709783470509,
+      "offset_seconds": 0.021375
+    },
+    {
+      "id": "q13",
+      "correlation": 0.9872428456756807,
+      "offset_seconds": 0.020375
+    },
+    {
+      "id": "q14",
+      "correlation": 0.9905531806890592,
+      "offset_seconds": 0.02075
+    },
+    {
+      "id": "q15",
+      "correlation": 0.9882726682263802,
+      "offset_seconds": 0.021375
+    },
+    {
+      "id": "q16",
+      "correlation": 0.9879845270853753,
+      "offset_seconds": 0.02125
+    },
+    {
+      "id": "q17",
+      "correlation": 0.9865806250441715,
+      "offset_seconds": 0.02025
+    },
+    {
+      "id": "q18",
+      "correlation": 0.9848269734066819,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "q19",
+      "correlation": 0.9918761163174937,
+      "offset_seconds": 0.020625
+    },
+    {
+      "id": "q20",
+      "correlation": 0.9912687687165646,
+      "offset_seconds": 0.02025
+    },
+    {
+      "id": "q21",
+      "correlation": 0.9994133569857516,
+      "offset_seconds": 0.021375
+    },
+    {
+      "id": "q22",
+      "correlation": 0.9997020992190095,
+      "offset_seconds": 0.020375
+    },
+    {
+      "id": "q23",
+      "correlation": 0.9997880898799114,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "q24",
+      "correlation": 0.9996507045409486,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "q25",
+      "correlation": 0.9998207146809478,
+      "offset_seconds": 0.020625
+    },
+    {
+      "id": "q25a",
+      "correlation": 0.9994211553680823,
+      "offset_seconds": 0.020625
+    },
+    {
+      "id": "q25b",
+      "correlation": 0.9997670725159632,
+      "offset_seconds": 0.020375
+    },
+    {
+      "id": "q25c",
+      "correlation": 0.999681940685908,
+      "offset_seconds": 0.020625
+    },
+    {
+      "id": "q26",
+      "correlation": 0.9997800716603019,
+      "offset_seconds": 0.020375
+    },
+    {
+      "id": "q27",
+      "correlation": 0.9863511779172303,
+      "offset_seconds": 0.021375
+    },
+    {
+      "id": "q28",
+      "correlation": 0.98797541492609,
+      "offset_seconds": 0.020375
+    },
+    {
+      "id": "q29",
+      "correlation": 0.9879002579194663,
+      "offset_seconds": 0.021375
+    },
+    {
+      "id": "q30",
+      "correlation": 0.9916732904745489,
+      "offset_seconds": 0.020375
+    },
+    {
+      "id": "q31",
+      "correlation": 0.9886342991298468,
+      "offset_seconds": 0.02125
+    },
+    {
+      "id": "q32",
+      "correlation": 0.9906778297110079,
+      "offset_seconds": 0.02025
+    },
+    {
+      "id": "q33",
+      "correlation": 0.9883057011062186,
+      "offset_seconds": 0.02125
+    }
+  ]
+}

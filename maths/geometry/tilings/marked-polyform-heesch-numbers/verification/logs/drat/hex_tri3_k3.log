@@ -1,0 +1,16 @@
+[11:26:05] build hex_tri3_k3 hex [[0,0],[0,1],[1,0]] k=3 
+hex cells=[[0, 0], [0, 1], [1, 0]] k=3 imb=1 radius=10.0: placements 4404 vars 62216 clauses 380082 (8.1s)
+wrote hex_tri3_k3.cnf
+fb67447cf87acf2a4eb06aeb3da1208c8a4556c0ab85f1d4decac753ebff54aa  hex_tri3_k3.cnf
+[11:26:16] cadical start
+s UNSATISFIABLE
+[11:29:06] cadical rc=20 (170s) proof bytes 13413998
+9c20348f480aa0a2c910284a8654f42bec401b99458543d45a3986beda4d094c  hex_tri3_k3.drat
+c 42016 of 380082 clauses in core                            
+c 109842 of 217893 lemmas in core using 8193151 resolution steps
+c 0 RAT lemmas in core; 34320 redundant literals in core lemmas
+s VERIFIED
+c verification time: 206.138 seconds
+[11:32:33] drat-trim done (206s)
+DRAT_VERIFIED hex_tri3_k3
+[11:32:41] END rc=20

@@ -1,0 +1,76 @@
+{
+  "sympy_version": "1.14.0",
+  "symbolic_checks": [
+    "generator row sums",
+    "stationary normalization",
+    "stationarity",
+    "detailed balance",
+    "ON probability",
+    "OFF to ON flux",
+    "switching timescale from mean dwells",
+    "OFF dwell mean",
+    "OFF dwell squared CV",
+    "ON dwell mean",
+    "ON dwell squared CV",
+    "centered observable generator image",
+    "two-dimensional invariant subspace",
+    "initial normalized covariance derivative",
+    "normalized covariance Laplace transform",
+    "integrated covariance time",
+    "two positive exponential covariance components",
+    "mean bound ligand count",
+    "association-event flux",
+    "mean residence by occupancy over arrival flux",
+    "three-state witness stationarity",
+    "three-state witness detailed balance",
+    "three-state equal-time factorization",
+    "three-state equal times at distinct concentrations",
+    "three-state distinct activities at equal-time points",
+    "OFF inverse-mean affine contrast interval margin",
+    "ON inverse-mean monotonicity interval margin",
+    "ON singleton infeasible for five-percent dwell intervals",
+    "OFF singleton infeasible for five-percent dwell intervals",
+    "OFF affine-line feasibility at sharp interval threshold",
+    "ON affine-line feasibility at monotonicity threshold"
+  ],
+  "symbolic_check_count": 31,
+  "dwell_results": {
+    "OFF": {
+      "mean": "(c + 1)/(c*k)",
+      "cv_squared": "1 + 2*k/(b*(c + 1)**2)"
+    },
+    "ON": {
+      "mean": "(c + 1)/k",
+      "cv_squared": "1 + 2*c*k/(b*(c + 1)**2)"
+    }
+  },
+  "dwell_interval_screen": {
+    "concentrations": [
+      1,
+      2,
+      4
+    ],
+    "mean_targets_k_equals_one": {
+      "ON": [
+        "2",
+        "3",
+        "5"
+      ],
+      "OFF": [
+        "2",
+        "3/2",
+        "5/4"
+      ]
+    },
+    "relative_halfwidth_excluding_both_singletons": "epsilon < 1/19",
+    "OFF_boundary_affine_witness_intercept_slope": [
+      "19/45",
+      "19/180"
+    ],
+    "scope": "Deterministic intervals centered on target means; known concentrations. This is a necessary singleton screen, not a statistical confidence procedure or a complete three-state feasibility test."
+  },
+  "covariance_laplace_transform": "(b*c + b + k + s)/(b*c*k + b*c*s + b*k + b*s + 2*k*s + s**2)",
+  "uniform_bound_grid_samples": 2944,
+  "largest_error_to_bound_ratio_on_grid": 0.9983988804682699,
+  "scope": "Mathematical witness checked; source supplement and novelty audit incomplete."
+}

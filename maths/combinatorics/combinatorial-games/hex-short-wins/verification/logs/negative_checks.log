@@ -1,0 +1,11 @@
+rejected: Blue Hex(5,6) certificate relabelled as Hex(5,5): FAIL: no certificate move for key (0, 135432, 16234888)
+rejected: Blue Hex_7(5) certificate relabelled as Hex_6(5): FAIL: no certificate move for key (5, 4096, 33554430)
+rejected: Red Hex(5,5) certificate relabelled as Hex(5,6): FAIL: no Red move for key (0, 4099, 33554039)
+rejected: Red Hex_6(5) certificate relabelled as Hex_7(5): FAIL: no Red move for key (6, 4096, 33554431)
+rejected: Blue certificate with its first entry deleted: FAIL: no certificate move for key (0, 4096, 33554430)
+rejected: Blue certificate with a move onto a Blue stone: FAIL: illegal or irrelevant move 12 at key (0, 4096, 33554430)
+rejected: Blue certificate with a move off the board: FAIL: illegal or irrelevant move 25 at key (0, 4096, 33554430)
+rejected: Red certificate with its first entry deleted: FAIL: no Red move for key (0, 4096, 33554431)
+rejected: Blue certificate claimed for another opening: FAIL: no certificate move for key (0, 1, 33554429)
+rejected: Empty certificate on a 1x1 board: FAIL: bad header ['#', 'n=1', 'mode=L', 'bound=0', 'first=0']
+ALL 10 CORRUPTED CERTIFICATES REJECTED

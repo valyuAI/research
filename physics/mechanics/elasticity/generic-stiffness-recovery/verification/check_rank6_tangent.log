@@ -1,0 +1,11 @@
+Normal block dimensions: 9 x 15
+Normal linear-map rank=10, affine tangent dimension=5
+{
+  "field": "Q(i)",
+  "basepoint_rank": 6,
+  "left_nullspace_dimension": 9,
+  "right_nullspace_dimension": 15,
+  "normal_linear_map_rank": 10,
+  "affine_rank6_locus_tangent_dimension_at_highest_weight_point": 5,
+  "implication": "Every projective rank<=6 component contains this unique eligible B-fixed point; hence its affine dimension is at most the displayed tangent dimension."
+}

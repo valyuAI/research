@@ -1,0 +1,17 @@
+Lemma 3.3 violations: []
+nmax(q,3,r) == mu_q(r) for all checked q>=3, r>=4: True
+upper  q=3 [[29,24]] table 2-3 -> d <= 2 exact=True
+upper  q=3 [[30,23]] table 3-4 -> d <= 3 exact=True
+upper  q=4 [[66,61]] table 2-3 -> d <= 2 exact=True
+upper  q=4 [[67,60]] table 3-4 -> d <= 3 exact=True
+upper  q=5 [[27,21]] table 3-4 -> d <= 3 exact=True
+upper  q=7 [[51,45]] table 3-4 -> d <= 3 exact=True
+upper  q=7 [[52,44]] table 4-5 -> d <= 4 exact=True
+upper  q=7 [[53,43]] table 4-6 -> d <= 5 exact=False
+lower  q=4 [[59,54]] table 2-3 -> d >= 3 exact=True
+lower  q=4 [[61,56]] table 2-3 -> d >= 3 exact=True
+lower  q=4 [[62,57]] table 2-3 -> d >= 3 exact=True
+lower  q=4 [[65,60]] table 2-3 -> d >= 3 exact=True
+entries improved: 12 now exact: 11
+additive ququart [[66,61,3]]_4 max bound 65 excluded True
+additive ququart [[67,60,4]]_4 max bound 66 excluded True

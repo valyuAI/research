@@ -1,0 +1,182 @@
+[
+  {
+    "label": "h01",
+    "time": 9.3576,
+    "file": "h01.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h02",
+    "time": 24.231999999999992,
+    "file": "h02.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h03",
+    "time": 37.717600000000175,
+    "file": "h03.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h05",
+    "time": 66.9055999999998,
+    "file": "h05.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h06",
+    "time": 81.20978,
+    "file": "h06.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h07",
+    "time": 96.43111333333331,
+    "file": "h07.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h08",
+    "time": 113.609811,
+    "file": "h08.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h09",
+    "time": 129.17461099999997,
+    "file": "h09.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h10",
+    "time": 144.1951443333337,
+    "file": "h10.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h12",
+    "time": 173.59007766666633,
+    "file": "h12.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h13",
+    "time": 189.2170109999994,
+    "file": "h13.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h14",
+    "time": 205.4340776666657,
+    "file": "h14.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h15",
+    "time": 221.578587,
+    "file": "h15.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h16",
+    "time": 237.896987,
+    "file": "h16.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h17",
+    "time": 254.19618700000026,
+    "file": "h17.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h19",
+    "time": 287.483952,
+    "file": "h19.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h20",
+    "time": 303.0367520000002,
+    "file": "h20.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h21",
+    "time": 318.9959519999998,
+    "file": "h21.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h22",
+    "time": 335.6308853333326,
+    "file": "h22.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h23",
+    "time": 350.8690186666656,
+    "file": "h23.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h24",
+    "time": 367.8306569999999,
+    "file": "h24.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h26",
+    "time": 398.7677236666669,
+    "file": "h26.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h27",
+    "time": 416.4743903333331,
+    "file": "h27.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h28",
+    "time": 435.4506569999993,
+    "file": "h28.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h29",
+    "time": 451.1613236666658,
+    "file": "h29.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h30",
+    "time": 468.17741699999993,
+    "file": "h30.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h31",
+    "time": 486.1262169999999,
+    "file": "h31.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h33",
+    "time": 520.8904836666666,
+    "file": "h33.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h34",
+    "time": 535.726750333333,
+    "file": "h34.png",
+    "kind": "beat"
+  },
+  {
+    "label": "h35",
+    "time": 553.2134169999994,
+    "file": "h35.png",
+    "kind": "beat"
+  }
+]

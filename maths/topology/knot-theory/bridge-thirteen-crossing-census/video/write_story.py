@@ -1,0 +1,70 @@
+"""Editable spoken script and storyboard for the bridge census explainer."""
+import json
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parent
+STORY=[
+  ('Humps','Actual PD knot appears; separate height-profile sketch shows four humps, then a 3-or-4 question.','A drawing gives an upper bound; crossing count is a different invariant.',[
+    ('h1','Imagine a closed piece of string. You can bend and stretch it, but never cut it or pass one part through another. A knot diagram shows its shadow, with a small gap wherever one strand passes underneath another.'),
+    ('h2','Now stand the knot in space and count its humps, the local high points. The bridge number is the smallest number of humps you can achieve by reshaping it. This simple height sketch explains the count; it is not our knot diagram.'),
+    ('h3','One arrangement with four humps proves that four are enough. It does not prove that three are impossible. And thirteen crossings in a diagram does not mean thirteen bridges. Crossings and humps count different things.'),
+    ('h4','Our example is the knot labelled thirteen n one thousand and five. The pinned table allowed either three or four bridges. We will see why four suffice, and why every attempt to get down to three must fail.'),
+  ]),
+  ('Loops','Large strand with small meridian loop; concatenate loop journeys; introduce two bounds.','Meridians connect bridge count to an algebraic lower bound.',[
+    ('l1','To rule out every possible drawing, we need something that survives reshaping. Imagine travelling in the space around the string. A tiny loop going once around a strand is called a meridian. You can join loop journeys and run them backwards.'),
+    ('l2','The knot group records how such journeys combine, allowing deformations that never cross the string. Meridional rank means the fewest meridian journeys needed to generate all of them. We will prove that at least four are needed for this knot.'),
+    ('l3','A presentation with b bridges supplies b meridians that generate the group. So meridional rank is at most bridge number. If three meridians are impossible, three bridges are impossible too. The next step turns journeys into an easier test.'),
+  ]),
+  ('Permutations','Eight numbered tokens; two simultaneous swaps; four stationary tokens; simple test-model arrow.','Permutations are a finite test of knot-group relations, not physical dots.',[
+    ('p1','Put eight numbered dots on the screen, zero through seven. They are bookkeeping objects, not points on the knot. Assign a shuffling action to each meridian. A valid assignment must respect every crossing relation in the knot diagram.'),
+    ('p2','Here is one action. Swap zero with one, and at the same time swap two with three. Leave the other four dots alone. This is called a double transposition: two disjoint swaps. Doing it twice returns every dot to its starting place.'),
+    ('p3','The test deliberately forgets some knot information. But any meridians generating the entire knot group must still generate its shuffling actions. That lets a small finite model rule out a proposed generator count for the original knot.'),
+  ]),
+  ('Crossing','Actual first crossing enlarged, under/over labels; conjugation by relabeling endpoints; equality returns to crossing.','The finite labels obey a concrete crossing rule.',[
+    ('x1','Zoom into the first saved crossing. The incoming understrand swaps zero with one and two with three. The overstrand swaps zero with one and three with four. The outgoing understrand must carry the related action shown here.'),
+    ('x2','The rule is called conjugation. You can understand it as renaming the points in an action. Use the overstrand shuffle to rename both ends of every incoming swap. We can do this one pair at a time.'),
+    ('x3','The pair zero, one becomes one, zero: still the same swap. The pair two, three becomes two, four. So the outgoing action swaps zero with one and two with four. That is exactly the label stored in this certificate.'),
+    ('x4','Because this overstrand action is its own inverse, the relation is B, then A, then B. This is one explicit check, not the entire proof. The saved certificate passes the corresponding relation at all thirteen crossings.'),
+  ]),
+  ('FixedValues','Attach binary values to eight fixed positions; demonstrate one failed and one fixed assignment, then impose two equality links.','Each allowed action contributes exactly two independent conditions.',[
+    ('f1','Now put a value, zero or one, at each dot. Ask which assignments stay unchanged when a shuffle acts. If zero and one are swapped, their values must be equal. Otherwise the assignment changes when we perform the swap.'),
+    ('f2','For our double transposition, the values at zero and one must agree, and the values at two and three must agree. These are two independent equality requirements. The other four values remain unrestricted by this one action.'),
+    ('f3','Think of eight switches you can initially set independently. The first equality ties two switches together. The second ties another pair together. Six independent choices remain. Algebra calls this a rank difference of two, but the picture is just paired equality.'),
+    ('f4','Every meridian for this knot gives the same kind of action, possibly with the dots renamed. Reversing a meridian changes nothing for these two-swap actions. So each possible meridian contributes at most two independent requirements, however you choose it.'),
+  ]),
+  ('Connected','Four real seed matchings progressively add graph edges; connected components merge; all dots share one value.','The actual image forces seven independent equalities.',[
+    ('g1','Now apply the four saved seed actions. Draw a connection for each swapped pair. An assignment fixed by all four actions must give equal values across every connection. Watch how the separate groups of dots join together.'),
+    ('g2','After all four actions, every dot is connected to every other by a path. Equality travels along those paths. All eight values must therefore be the same. There are only two fixed assignments: all zeros or all ones.'),
+    ('g3','We began with eight independent choices and ended with just one. That is seven independent equality requirements. The full checked action is transitive, meaning every dot can reach every other. This connectedness is all the lower-bound argument needs.'),
+  ]),
+  ('LowerBound','Six constraint markers from three meridians fail to fill seven required places; derive mu >= 4.','The contradiction applies to every possible meridian generating set.',[
+    ('b1','Suppose three meridians could generate the whole knot group. Their actions would have exactly the same common fixed assignments as the full action. But each supplies at most two requirements, so three supply at most six.'),
+    ('b2','The actual action needs seven. Six cannot reach seven. This contradiction rules out every generating set of three meridians, not just the three most obvious strands in the picture. At least four meridians are necessary.'),
+    ('b3','Since bridge number is at least meridional rank, at least four bridges are necessary too. That is the hard lower bound. We still need the other direction: a certificate that four bridges really are enough.'),
+  ]),
+  ('Colouring','Exact four-seed arc coloring on actual diagram; one local allowed move; all nine stored moves; theorem to b<=4.','A checked constructive upper bound combines with the universal lower bound.',[
+    ('u1','Return to the actual diagram. Mark seed arcs zero, three, seven and four with four colours. Here a colour records information propagated from a seed; it does not represent a physical change to the string or a new crossing.'),
+    ('u2','The local rule is simple. If the overstrand and one understrand are already coloured, you may colour the other understrand with the known understrand colour. The crossing relation explains why its information is now determined.'),
+    ('u3','The saved certificate gives nine such moves. We replay those exact moves here, reaching every one of the thirteen arcs. A published theorem about these colourings turns a four-seed colouring into a bridge-number upper bound of four.'),
+    ('u4','Combine the two directions. Four is at most meridional rank, which is at most bridge number, which is at most four. Every quantity is forced to equal four. We did not infer this by counting diagram crossings.'),
+  ]),
+  ('Census','24 two-swap tiles plus one 3-cycle example, then ledger 293-25=268 and two prior examples.','The census count and certificate count have different meanings.',[
+    ('c1','The same reasoning works for twenty four knots using double transpositions. One more, thirteen n four thousand six hundred and forty five, uses a three-cycle. A three-cycle rotates three dots and imposes two equalities; it is not two disjoint swaps.'),
+    ('c2','That gives twenty five determinations relative to the pinned list of two hundred and ninety three names. Subtracting leaves two hundred and sixty eight entries in that ledger. The release and snapshot dates matter: this is a precisely defined comparison.'),
+    ('c3','There are twenty seven certificates altogether. The extra two confirm values for trefoil cables that already follow from older theorems. They are excluded from the twenty five additions, but remain in the mechanical residual ledger. So that ledger is not a list of proven unknowns.'),
+  ]),
+  ('Ending','Proof recap, independent finite checks, explicit priority limit, final paper card.','Correctness, finite search scope and originality are distinct.',[
+    ('z1','Keep three steps in mind. Check the crossing actions. Use eight connected dots to demand seven equalities. Then combine the four-meridian lower bound with a four-seed colouring. Two independent exact checkers replay all twenty seven certificates, including the upper-bound moves.'),
+    ('z2','The contribution is the twenty five table determinations and their certificates. Finite permutation methods already existed. A separate audit found no overlap with three earlier Coxeter targets, but broader family theorems and uncatalogued earlier determinations remain a priority limitation.'),
+    ('z3','This does not settle every thirteen-crossing knot, or the general conjecture that meridional rank always equals bridge number. It gives exact answers for these named examples, with a replayable chain of reasoning. The paper and editable evidence accompany this video. Narration uses a synthetic voice.'),
+  ]),
+]
+
+clips=[{'id':key,'text':text} for _,_,_,rows in STORY for key,text in rows]
+(ROOT/'narration.json').write_text(json.dumps({'voice':'cedar','clips':clips},indent=2))
+lines=['# Storyboard: why these knots need four bridges','','Audience: GCSE graduate. The real 13n_1005 PD code, permutations and coloring moves are frozen in example.json. The hump sketch is explicitly a schematic, not a four-bridge embedding of the named knot.','','| Scene | Narration | Visual | New understanding |','| --- | --- | --- | --- |']
+for name,visual,understanding,rows in STORY:
+  lines.append('| '+name+' | '+'; '.join(key+': '+text for key,text in rows)+' | '+visual+' | '+understanding+' |')
+lines+=['','Comprehension review: closed strands and humps precede group journeys; concrete swaps precede the word permutation; one crossing is calculated before calling the assignment a certificate. Binary choices and equality links explain rank before any rank notation appears. The distinction between one diagram and a bound over every diagram is repeated at the conclusion. No audience test was performed.','','The full 13-crossing diagram is polygonal and generated from the saved PD rotation system. Local details are enlarged for legibility. The coloring-to-bridge implication is credited as a published theorem; the animation does not pretend to construct a four-bridge spatial embedding.']
+(ROOT/'storyboard.md').write_text('\n'.join(lines)+'\n')
+print(f'{len(clips)} clips, {sum(len(c["text"].split()) for c in clips)} words',flush=True)

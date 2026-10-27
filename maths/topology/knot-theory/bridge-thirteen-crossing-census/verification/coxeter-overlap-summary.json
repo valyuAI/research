@@ -1,0 +1,24 @@
+{
+  "scope": "Twenty-five new certificates; all four seed images up to conjugating the first reflection",
+  "positive_control": "13a_112",
+  "targets": {
+    "A4": {
+      "root_lines": 10,
+      "seed_triples": 1000,
+      "positive_control_valid_assignments": 55,
+      "hit_names": []
+    },
+    "D4": {
+      "root_lines": 12,
+      "seed_triples": 1728,
+      "positive_control_valid_assignments": 129,
+      "hit_names": []
+    },
+    "H4": {
+      "root_lines": 60,
+      "seed_triples": 216000,
+      "positive_control_valid_assignments": 1005,
+      "hit_names": []
+    }
+  }
+}

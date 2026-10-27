@@ -1,0 +1,3 @@
+{"test": "default mode with certificates/base/q3_r4_n5.json removed", "exit_code": 1, "base_case_missing": {"q3_r4": [5]}, "base_cases_complete": false, "rejected": true}
+{"test": "explicit-file mode on certificates/table/q4_r5_n65.json", "exit_code": 0, "accepted": true}
+MISSING-CERTIFICATE CHECK PASSED

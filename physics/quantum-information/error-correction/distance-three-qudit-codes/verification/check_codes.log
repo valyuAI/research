@@ -1,0 +1,24 @@
+{
+ "checked": 255,
+ "valid": 255,
+ "invalid": [],
+ "base_case_missing": {
+  "q3_r4": [],
+  "q3_r5": [],
+  "q4_r4": [],
+  "q4_r5": [],
+  "q5_r4": [],
+  "q5_r5": []
+ },
+ "base_cases_complete": true
+}
+certificates/maximal/q3_r5_n28.json pure [[28,23,>=3]]_3
+certificates/maximal/q4_r5_n65.json pure [[65,60,>=3]]_4
+certificates/maximal/q5_r5_n126.json pure [[126,121,>=3]]_5
+certificates/maximal/q7_r5_n344.json pure [[344,339,>=3]]_7
+certificates/maximal/q8_r5_n513.json pure [[513,508,>=3]]_8
+certificates/maximal/q9_r5_n730.json pure [[730,725,>=3]]_9
+certificates/table/q4_r5_n59.json pure [[59,54,>=3]]_4
+certificates/table/q4_r5_n61.json pure [[61,56,>=3]]_4
+certificates/table/q4_r5_n62.json pure [[62,57,>=3]]_4
+certificates/table/q4_r5_n65.json pure [[65,60,>=3]]_4

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-26T13:27:52+00:00",
+  "input": "video.mp4",
+  "sha256": "76d6ea19ca6542a2fe55c7c7462a3d6b9433d0a1a893ec1aa2dc2d5354e9dca7",
+  "full_video_and_audio_decode_exit_code": 0,
+  "peak_dbfs": [
+    -5.264778,
+    -5.264778,
+    -5.264778
+  ],
+  "rms_dbfs": [
+    -26.668943,
+    -26.669059,
+    -26.669001
+  ],
+  "listening_review_performed": false,
+  "rendered_input": "video-1080p-candidate.mp4",
+  "final_path": "<repo>/maths/dynamical-systems/billiards/special-octagon-symplectic-billiards/video/video.mp4"
+}

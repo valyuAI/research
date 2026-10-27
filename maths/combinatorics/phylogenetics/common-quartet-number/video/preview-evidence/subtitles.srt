@@ -1,0 +1,483 @@
+1
+00:00:00,000 --> 00:00:06,645
+Take four labels: a, b, c and d. Join them in a branching tree with no root.
+
+2
+00:00:06,645 --> 00:00:13,989
+Its middle edge separates two pairs. Here, a and b are together on one side, while c
+
+3
+00:00:13,989 --> 00:00:16,000
+and d are on the other.
+
+4
+00:00:16,333 --> 00:00:19,046
+There are only three possible pairings.
+
+5
+00:00:19,046 --> 00:00:22,316
+Another tree might group a with c, or a with d.
+
+6
+00:00:22,316 --> 00:00:25,725
+This four-label relationship is called a quartet.
+
+7
+00:00:25,725 --> 00:00:30,733
+Agreement means the same pairing, not simply using the same four labels.
+
+8
+00:00:31,133 --> 00:00:35,656
+Now imagine three trees describing the same larger set of species.
+
+9
+00:00:35,656 --> 00:00:40,041
+Must some four species have the same pairing in all three trees?
+
+10
+00:00:40,041 --> 00:00:42,919
+The answer becomes yes at fourteen leaves.
+
+11
+00:00:42,919 --> 00:00:45,933
+At thirteen, agreement can still be avoided.
+
+12
+00:00:46,267 --> 00:00:52,419
+A leaf is a tip of the tree. Every internal junction has three branches, and no point
+
+13
+00:00:52,419 --> 00:00:59,223
+is designated as an ancestor or root. To inspect four chosen leaves, keep the paths connecting
+
+14
+00:00:59,223 --> 00:01:01,467
+them and erase everything else.
+
+15
+00:01:01,800 --> 00:01:05,772
+Then straighten any points that merely sit along a path.
+
+16
+00:01:05,772 --> 00:01:09,248
+The remaining shape is one of our three quartets.
+
+17
+00:01:09,248 --> 00:01:12,440
+Edge lengths in these drawings do not matter.
+
+18
+00:01:12,440 --> 00:01:16,200
+The pairing depends only on how the branches connect.
+
+19
+00:01:16,600 --> 00:01:20,291
+Here is the actual thirteen-leaf example used in the paper.
+
+20
+00:01:20,291 --> 00:01:25,858
+Its labels are one through thirteen. We will keep the branches fixed and move the labels.
+
+21
+00:01:25,858 --> 00:01:31,300
+That preserves the unlabelled shape while changing the relationships between particular
+
+22
+00:01:31,300 --> 00:01:31,800
+species.
+
+23
+00:01:32,133 --> 00:01:36,571
+Rotate the labels one, two and three around their three positions.
+
+24
+00:01:36,571 --> 00:01:41,951
+Do the same within four, five, six; seven, eight, nine; and ten, eleven, twelve.
+
+25
+00:01:41,951 --> 00:01:47,733
+Thirteen stays fixed. One rotation gives the second tree, and another gives the third.
+
+26
+00:01:48,133 --> 00:01:52,112
+Look only at labels one, four, seven and thirteen.
+
+27
+00:01:52,112 --> 00:01:55,932
+In the first tree, four and seven form one pair.
+
+28
+00:01:55,932 --> 00:02:00,468
+In the other two trees, one and four form a pair instead.
+
+29
+00:02:00,468 --> 00:02:03,333
+The three answers are not all equal.
+
+30
+00:02:03,667 --> 00:02:09,650
+Notice that two answers can match. We only need to prevent agreement by all three trees
+
+31
+00:02:09,650 --> 00:02:15,909
+at once. In fact, each pair of these trees agrees on one hundred and thirty-seven quartets.
+
+32
+00:02:15,909 --> 00:02:18,867
+Pairwise agreement is a different question.
+
+33
+00:02:19,200 --> 00:02:23,380
+Thirteen leaves contain seven hundred and fifteen groups of four.
+
+34
+00:02:23,380 --> 00:02:28,011
+The check examines every group, and finds none with three equal answers.
+
+35
+00:02:28,011 --> 00:02:32,127
+Two methods, using path distances and edge splits, confirm this.
+
+36
+00:02:32,127 --> 00:02:35,600
+It is an exhaustive finite check, not random sampling.
+
+37
+00:02:36,000 --> 00:02:40,531
+One example is enough to show that thirteen cannot force agreement.
+
+38
+00:02:40,531 --> 00:02:43,845
+But proving that fourteen always works is harder.
+
+39
+00:02:43,845 --> 00:02:49,594
+We must cover every possible triple of trees, not just trees built by our relabelling
+
+40
+00:02:49,594 --> 00:02:50,000
+trick.
+
+41
+00:02:50,400 --> 00:02:53,419
+The useful object is a separating edge.
+
+42
+00:02:53,419 --> 00:02:56,826
+Cutting it divides the leaves into two sets.
+
+43
+00:02:56,826 --> 00:03:00,619
+Pick two leaves on one side and two on the other.
+
+44
+00:03:00,619 --> 00:03:04,800
+The quartet must pair the two from each side together.
+
+45
+00:03:05,200 --> 00:03:11,502
+A standard balanced-edge fact says that some edge leaves at least one third of the leaves
+
+46
+00:03:11,502 --> 00:03:17,522
+on either side. With fourteen leaves, each side must therefore contain at least five.
+
+47
+00:03:17,522 --> 00:03:20,000
+Colour the two sides blue and teal.
+
+48
+00:03:20,400 --> 00:03:23,620
+Carry those same colours into the second tree.
+
+49
+00:03:23,620 --> 00:03:29,920
+An exhaustive check shows that a suitable edge always preserves three leaves of one colour
+
+50
+00:03:29,920 --> 00:03:33,560
+opposite four of the other. Keep those seven leaves.
+
+51
+00:03:33,560 --> 00:03:37,200
+The two colour sets are now separated in both trees.
+
+52
+00:03:37,533 --> 00:03:42,796
+The finite check covers all one hundred and thirty-five unlabelled shapes, and every
+
+53
+00:03:42,796 --> 00:03:45,678
+colouring with five, six or seven blue leaves.
+
+54
+00:03:45,678 --> 00:03:51,191
+That is one million, one hundred and thirty-eight thousand, nine hundred and ninety-five
+
+55
+00:03:51,191 --> 00:03:53,133
+cases. There are zero failures.
+
+56
+00:03:53,467 --> 00:03:58,036
+Now restrict the third tree to the seven leaves we kept.
+
+57
+00:03:58,036 --> 00:04:01,952
+A balanced edge has at least three on each side.
+
+58
+00:04:01,952 --> 00:04:08,806
+Put the leaves into a grid: rows are their old colours, and columns are the sides of
+
+59
+00:04:08,806 --> 00:04:09,867
+this new cut.
+
+60
+00:04:10,200 --> 00:04:16,352
+In this illustrative grid, the top row contains three leaves and the bottom row four.
+
+61
+00:04:16,352 --> 00:04:22,650
+Each column also has at least three. The two diagonal cells contain two blue leaves and
+
+62
+00:04:22,650 --> 00:04:25,400
+three teal leaves. Keep two from each.
+
+63
+00:04:25,800 --> 00:04:30,398
+They are opposite colours, so the first two trees separate them.
+
+64
+00:04:30,398 --> 00:04:36,217
+They are also on opposite sides of the new cut, so the third tree separates them.
+
+65
+00:04:36,217 --> 00:04:40,600
+All three trees must therefore give the same quartet pairing.
+
+66
+00:04:40,933 --> 00:04:47,299
+Why must a usable diagonal exist? If both diagonals failed, each would contain a cell
+
+67
+00:04:47,299 --> 00:04:52,467
+with at most one leaf. Those two small cells share a row or a column.
+
+68
+00:04:52,467 --> 00:04:58,533
+That row or column would contain at most two, contradicting our minimum of three.
+
+69
+00:04:58,867 --> 00:05:04,286
+We have both halves of the threshold. Thirteen admits a counterexample, and fourteen
+
+70
+00:05:04,286 --> 00:05:09,899
+forces agreement. Write h of three for the smallest forcing number: it equals fourteen.
+
+71
+00:05:09,899 --> 00:05:14,867
+Larger sets also work, because you can first restrict to any fourteen leaves.
+
+72
+00:05:15,267 --> 00:05:21,223
+For many trees, we can repeat the idea: keep two separated sets while processing one
+
+73
+00:05:21,223 --> 00:05:25,336
+tree after another. The challenge is that the sets shrink.
+
+74
+00:05:25,336 --> 00:05:30,867
+We need to track enough information to ensure two leaves survive on each side.
+
+75
+00:05:31,200 --> 00:05:38,115
+Call their sizes a and d. Define a budget as the smallest of three numbers: a times d,
+
+76
+00:05:38,115 --> 00:05:45,272
+twice a squared, and twice d squared. A budget greater than two forces both integer sizes
+
+77
+00:05:45,272 --> 00:05:46,800
+to be at least two.
+
+78
+00:05:47,200 --> 00:05:50,627
+Take sixteen blue leaves and thirty-two teal leaves.
+
+79
+00:05:50,627 --> 00:05:56,228
+The three budget candidates are five hundred and twelve, five hundred and twelve, and
+
+80
+00:05:56,228 --> 00:06:00,907
+two thousand and forty-eight. Their minimum is five hundred and twelve.
+
+81
+00:06:00,907 --> 00:06:04,400
+Now cut the next tree, balancing the larger teal set.
+
+82
+00:06:04,733 --> 00:06:10,243
+Suppose the cut divides blue into seven and nine, and teal into eleven and twenty-one.
+
+83
+00:06:10,243 --> 00:06:14,343
+Either diagonal remains separated in all trees processed so far.
+
+84
+00:06:14,343 --> 00:06:17,930
+The seven and twenty-one choice has budget ninety-eight.
+
+85
+00:06:17,930 --> 00:06:21,133
+The nine and eleven choice has budget ninety-nine.
+
+86
+00:06:21,467 --> 00:06:23,857
+Choose the larger budget, ninety-nine.
+
+87
+00:06:23,857 --> 00:06:29,204
+Three sixteenths of the old budget is ninety-six, so this example preserves more than
+
+88
+00:06:29,204 --> 00:06:35,054
+that fraction. The paper proves that some diagonal always preserves at least three sixteenths
+
+89
+00:06:35,054 --> 00:06:37,067
+when the larger set is balanced.
+
+90
+00:06:37,467 --> 00:06:41,057
+The general inequality has a hand proof and a Lean check.
+
+91
+00:06:41,057 --> 00:06:44,018
+Lean verifies only that real-number inequality.
+
+92
+00:06:44,018 --> 00:06:49,372
+It does not verify the tree arguments, the finite searches, or the full fourteen-leaf
+
+93
+00:06:49,372 --> 00:06:53,467
+theorem. Those have their own written and computational evidence.
+
+94
+00:06:53,867 --> 00:06:56,929
+Repeat the budget step for each new tree.
+
+95
+00:06:56,929 --> 00:07:02,456
+The initial budget is at least two ninths of the square of the leaf count.
+
+96
+00:07:02,456 --> 00:07:08,132
+Requiring the final budget to stay above two gives this general upper bound.
+
+97
+00:07:08,132 --> 00:07:11,867
+Its exponential base is about two point three one.
+
+98
+00:07:12,267 --> 00:07:16,337
+An upper bound is a guarantee, not necessarily the exact answer.
+
+99
+00:07:16,337 --> 00:07:21,679
+The general formula gives seventeen for three trees, while the sharper argument gave
+
+100
+00:07:21,679 --> 00:07:27,085
+fourteen. More exact finite bookkeeping gives an upper bound of twenty-eight for four
+
+101
+00:07:27,085 --> 00:07:27,467
+trees.
+
+102
+00:07:27,867 --> 00:07:32,859
+On the lower side, four explicit trees on twenty-two leaves have no common quartet.
+
+103
+00:07:32,859 --> 00:07:37,431
+Checking all seven thousand, three hundred and fifteen groups confirms this.
+
+104
+00:07:37,431 --> 00:07:41,641
+So the four-tree threshold lies between twenty-three and twenty-eight.
+
+105
+00:07:41,641 --> 00:07:43,867
+Its exact value remains unknown here.
+
+106
+00:07:44,200 --> 00:07:50,338
+For any number k of trees, the lower bound two to the k plus two was already stated by
+
+107
+00:07:50,338 --> 00:07:54,691
+Snir and Yuster. The paper supplies a construction and proof.
+
+108
+00:07:54,691 --> 00:08:01,400
+The contribution here includes the new general upper bound and the exact three-tree threshold.
+
+109
+00:08:01,733 --> 00:08:05,105
+Keep three ideas. A quartet is a pairing of four leaves.
+
+110
+00:08:05,105 --> 00:08:08,598
+Separated sets preserve that pairing across several trees.
+
+111
+00:08:08,598 --> 00:08:12,753
+And a shrinking budget lets the argument continue through many trees.
+
+112
+00:08:12,753 --> 00:08:17,931
+The result concerns guaranteed local agreement, not overall similarity of evolutionary
+
+113
+00:08:17,931 --> 00:08:18,533
+histories.
+
+114
+00:08:18,867 --> 00:08:23,850
+Correctness confidence is high. The novelty assessment rests on a bounded literature
+
+115
+00:08:23,850 --> 00:08:26,579
+search, not proof that no earlier work exists.
+
+116
+00:08:26,579 --> 00:08:31,621
+Exploratory searches on twenty-three leaves remain unresolved and provide no evidence
+
+117
+00:08:31,621 --> 00:08:32,867
+for a stronger bound.
+
+118
+00:08:33,267 --> 00:08:38,241
+The full paper, explicit trees and verification files accompany this explanation.
+
+119
+00:08:38,241 --> 00:08:43,461
+The video shows the mechanism and its limits; it does not reproduce every case of the
+
+120
+00:08:43,461 --> 00:08:46,040
+computational proof. Valyu Research, 2026.
+
+121
+00:08:46,040 --> 00:08:48,067
+Narration uses a synthetic voice.

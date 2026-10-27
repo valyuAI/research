@@ -1,0 +1,24 @@
+{
+  "video": "video.mp4",
+  "duration_seconds": 566.466667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "video_codec": "H.264",
+  "audio_codec": "AAC",
+  "voice": "cedar",
+  "clips": 36,
+  "longest_clip_seconds": 20.856,
+  "smallest_waveform_correlation": 0.999351803987163,
+  "largest_alignment_offset_seconds": 0.021333333333333333,
+  "research_inputs_reverified": 92,
+  "full_decode": "pass",
+  "clip_hashes_and_order": "pass",
+  "browser_playback_and_captions": "pass",
+  "manual_visual_inspection": "see QA.md",
+  "listening_performed": false,
+  "limitations": [
+    "Subjective pronunciation and listening comfort are not assessed.",
+    "Captions are phrase-timed using measured clips, not word-aligned."
+  ]
+}

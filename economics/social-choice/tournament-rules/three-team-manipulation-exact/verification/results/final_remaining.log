@@ -1,0 +1,118 @@
+VERIFY n3_k3
+n=3 k=3 mode=le: 2 classes, 20 manipulations checked, max gain 1/3 <= alpha = 1/3: OK
+3 manipulations attain gain alpha, in 1 classes: 101 (scores [1, 1, 1])
+VERIFY n3_k3_mt
+n=3 k=3 mode=le: 2 classes, 20 manipulations checked, max gain 1/3 <= alpha = 1/3: OK; top-cycle consistent; monotone (6 single-match reversals checked)
+3 manipulations attain gain alpha, in 1 classes: 101 (scores [1, 1, 1])
+VERIFY n4_k3
+n=4 k=3 mode=le: 4 classes, 136 manipulations checked, max gain 1/3 <= alpha = 1/3: OK
+22 manipulations attain gain alpha, in 2 classes: 011011 (scores [2, 2, 2, 0]), 101110 (scores [2, 2, 1, 1])
+VERIFY n4_k3_mt
+n=4 k=3 mode=le: 4 classes, 136 manipulations checked, max gain 1/3 <= alpha = 1/3: OK; top-cycle consistent; monotone (24 single-match reversals checked)
+22 manipulations attain gain alpha, in 2 classes: 011011 (scores [2, 2, 2, 0]), 101110 (scores [2, 2, 1, 1])
+VERIFY n5_k3
+n=5 k=3 mode=le: 12 classes, 960 manipulations checked, max gain 2/5 <= alpha = 2/5: OK
+10 manipulations attain gain alpha, in 1 classes: 0011001000 (scores [2, 2, 2, 2, 2])
+VERIFY n5_k3_mt
+n=5 k=3 mode=le: 12 classes, 960 manipulations checked, max gain 2/5 <= alpha = 2/5: OK; top-cycle consistent; monotone (120 single-match reversals checked)
+12 manipulations attain gain alpha, in 2 classes: 0011001000 (scores [2, 2, 2, 2, 2]), 1011111011 (scores [3, 3, 2, 2, 0])
+VERIFY n6_k3
+n=6 k=3 mode=le: 56 classes, 8680 manipulations checked, max gain 2/5 <= alpha = 2/5: OK
+10 manipulations attain gain alpha, in 1 classes: 001110011001011 (scores [3, 3, 3, 3, 3, 0])
+VERIFY n6_k3_mt
+n=6 k=3 mode=le: 56 classes, 8680 manipulations checked, max gain 2/5 <= alpha = 2/5: OK; top-cycle consistent; monotone (840 single-match reversals checked)
+10 manipulations attain gain alpha, in 1 classes: 001110011001011 (scores [3, 3, 3, 3, 3, 0])
+VERIFY n7_k3
+n=7 k=3 mode=le: 456 classes, 121296 manipulations checked, max gain 2/5 <= alpha = 2/5: OK
+10 manipulations attain gain alpha, in 1 classes: 001111001110011011111 (scores [4, 4, 4, 4, 4, 1, 0])
+VERIFY n7_k3_mt
+n=7 k=3 mode=le: 456 classes, 121296 manipulations checked, max gain 2/5 <= alpha = 2/5: OK; top-cycle consistent; monotone (9576 single-match reversals checked)
+10 manipulations attain gain alpha, in 1 classes: 001111001110011011111 (scores [4, 4, 4, 4, 4, 1, 0])
+VERIFY n5_k3_mt_small
+n=5 k=3 mode=le: 12 classes, 960 manipulations checked, max gain 2/5 <= alpha = 2/5: OK; top-cycle consistent; monotone (120 single-match reversals checked)
+17 manipulations attain gain alpha, in 3 classes: 0011001000 (scores [2, 2, 2, 2, 2]), 0111001101 (scores [3, 2, 2, 2, 1]), 1011111011 (scores [3, 3, 2, 2, 0])
+VERIFY n7_k4
+  manipulations: 88/456 classes, 217448 checked, max gain 3/7
+  manipulations: 166/456 classes, 410186 checked, max gain 3/7
+  manipulations: 257/456 classes, 635047 checked, max gain 3/7
+  manipulations: 335/456 classes, 827785 checked, max gain 3/7
+  manipulations: 437/456 classes, 1079827 checked, max gain 3/7
+n=7 k=4 mode=le: 456 classes, 1126776 manipulations checked, max gain 3/7 <= alpha = 3/7: OK
+168 manipulations attain gain alpha, in 3 classes: 000111000110001000000 (scores [3, 3, 3, 3, 3, 3, 3]), 010011000110101000000 (scores [3, 3, 3, 3, 3, 3, 3]), 010011001011001010000 (scores [3, 3, 3, 3, 3, 3, 3])
+VERIFY n8_k3
+  progress: 500/6880 classes, 210000 manipulations, max gain so far 17921/50000
+  manipulations: 534/6880 classes, 224280 checked, max gain 17921/50000
+  progress: 1000/6880 classes, 420000 manipulations, max gain so far 372543/1000001
+  manipulations: 1125/6880 classes, 472500 checked, max gain 372543/1000001
+  progress: 1500/6880 classes, 630000 manipulations, max gain so far 372543/1000001
+  manipulations: 1644/6880 classes, 690480 checked, max gain 372543/1000001
+  progress: 2000/6880 classes, 840000 manipulations, max gain so far 372543/1000001
+  manipulations: 2216/6880 classes, 930720 checked, max gain 372543/1000001
+  progress: 2500/6880 classes, 1050000 manipulations, max gain so far 36178/90909
+  manipulations: 2807/6880 classes, 1178940 checked, max gain 399335/1000001
+  progress: 3000/6880 classes, 1260000 manipulations, max gain so far 399335/1000001
+  manipulations: 3299/6880 classes, 1385580 checked, max gain 399335/1000001
+  progress: 3500/6880 classes, 1470000 manipulations, max gain so far 399335/1000001
+  manipulations: 3839/6880 classes, 1612380 checked, max gain 399335/1000001
+  progress: 4000/6880 classes, 1680000 manipulations, max gain so far 399335/1000001
+  manipulations: 4345/6880 classes, 1824900 checked, max gain 399335/1000001
+  progress: 4500/6880 classes, 1890000 manipulations, max gain so far 399335/1000001
+  manipulations: 4868/6880 classes, 2044560 checked, max gain 399335/1000001
+  progress: 5000/6880 classes, 2100000 manipulations, max gain so far 399335/1000001
+  manipulations: 5382/6880 classes, 2260440 checked, max gain 2/5
+  progress: 5500/6880 classes, 2310000 manipulations, max gain so far 2/5
+  manipulations: 5769/6880 classes, 2422980 checked, max gain 2/5
+  progress: 6000/6880 classes, 2520000 manipulations, max gain so far 2/5
+  manipulations: 6201/6880 classes, 2604420 checked, max gain 2/5
+  progress: 6500/6880 classes, 2730000 manipulations, max gain so far 2/5
+  manipulations: 6736/6880 classes, 2829120 checked, max gain 2/5
+n=8 k=3 mode=le: 6880 classes, 2889600 manipulations checked, max gain 2/5 <= alpha = 2/5: OK
+20 manipulations attain gain alpha, in 2 classes: 0011111001111001110111111010 (scores [5, 5, 5, 5, 5, 1, 1, 1]), 0011111001111001110111111111 (scores [5, 5, 5, 5, 5, 2, 1, 0])
+LABELLED n3_k3
+n=3 k=3: 8 labelled tournaments, 80 (T, S, T') checked, max gain 1/3 <= alpha = 1/3: OK
+LABELLED n3_k3_mt
+n=3 k=3: 8 labelled tournaments, 80 (T, S, T') checked, max gain 1/3 <= alpha = 1/3: OK; monotone; top-cycle consistent
+LABELLED n4_k3
+n=4 k=3: 64 labelled tournaments, 2176 (T, S, T') checked, max gain 1/3 <= alpha = 1/3: OK
+LABELLED n4_k3_mt
+n=4 k=3: 64 labelled tournaments, 2176 (T, S, T') checked, max gain 1/3 <= alpha = 1/3: OK; monotone; top-cycle consistent
+LABELLED n5_k3
+n=5 k=3: 1024 labelled tournaments, 81920 (T, S, T') checked, max gain 2/5 <= alpha = 2/5: OK
+LABELLED n5_k3_mt
+n=5 k=3: 1024 labelled tournaments, 81920 (T, S, T') checked, max gain 2/5 <= alpha = 2/5: OK; monotone; top-cycle consistent
+LABELLED n6_k3
+  labelled n=6: size 3, coalition (1, 2, 3), 2785280 manipulations checked
+n=6 k=3: 32768 labelled tournaments, 5079040 (T, S, T') checked, max gain 2/5 <= alpha = 2/5: OK
+LABELLED n6_k3_mt
+  labelled n=6: size 3, coalition (0, 3, 4), 2097152 manipulations checked
+n=6 k=3: 32768 labelled tournaments, 5079040 (T, S, T') checked, max gain 2/5 <= alpha = 2/5: OK; monotone; top-cycle consistent
+rejected: alpha decreased by 1e-6: FAIL: violation: gain 2/5 > alpha
+rejected: one class removed: FAIL: expected 56 classes, got 55
+rejected: duplicated class: FAIL: two listed tournaments are isomorphic
+rejected: probability moved inside one class: FAIL: violation: gain 184/333 > alpha
+rejected: Condorcet winner given 1/2: FAIL: Condorcet winner not chosen
+rejected: teams in one automorphism orbit given different probabilities: FAIL: values not constant on automorphism orbits
+rejected: probabilities scaled by 9/10: FAIL: not a lottery
+rejected: monotone and top-cycle flags added to a plain CC rule: FAIL: positive probability outside the top cycle
+rejected: alpha decreased by 1e-6: FAIL: violation: gain 2/5 > alpha
+rejected: one class removed: FAIL: expected 56 classes, got 55
+rejected: duplicated class: FAIL: two listed tournaments are isomorphic
+rejected: probability moved inside one class: FAIL: positive probability outside the top cycle
+rejected: Condorcet winner given 1/2: FAIL: Condorcet winner not chosen
+rejected: teams in one automorphism orbit given different probabilities: FAIL: values not constant on automorphism orbits
+rejected: probabilities scaled by 9/10: FAIL: not a lottery
+n3_k3: certificate hash, exact value, properties and 20 manipulations confirmed
+n3_k3_mt: certificate hash, exact value, properties and 20 manipulations confirmed
+n4_k3: certificate hash, exact value, properties and 136 manipulations confirmed
+n4_k3_mt: certificate hash, exact value, properties and 136 manipulations confirmed
+n5_k3: certificate hash, exact value, properties and 960 manipulations confirmed
+n5_k3_mt: certificate hash, exact value, properties and 960 manipulations confirmed
+n6_k3: certificate hash, exact value, properties and 8680 manipulations confirmed
+n6_k3_mt: certificate hash, exact value, properties and 8680 manipulations confirmed
+n7_k3: certificate hash, exact value, properties and 121296 manipulations confirmed
+n7_k3_mt: certificate hash, exact value, properties and 121296 manipulations confirmed
+n5_k3_mt_small: certificate hash, exact value, properties and 960 manipulations confirmed
+n7_k4: certificate hash, exact value, properties and 1126776 manipulations confirmed
+n8_k3: certificate hash, exact value, properties and 2889600 manipulations confirmed
+n8_k3_mt: certificate hash, exact value, properties and 2889600 manipulations confirmed
+ALL FINAL SOCIAL-CHOICE CHECKS PASS

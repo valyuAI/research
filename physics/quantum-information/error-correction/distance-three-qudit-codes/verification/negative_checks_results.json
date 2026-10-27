@@ -1,0 +1,102 @@
+{
+ "all_rejected": true,
+ "cases": [
+  {
+   "case": "flip one X entry of [[65,60]]_4",
+   "rejected": true,
+   "details": {
+    "q": 4,
+    "n": 65,
+    "r_ambient": 5,
+    "field_ok": true,
+    "gram_zero": false,
+    "single_qudit_syndromes_distinct_nonzero": false,
+    "rank": 5,
+    "valid": false,
+    "conclusion": "INVALID"
+   }
+  },
+  {
+   "case": "duplicate a column pair (two equal lines)",
+   "rejected": true,
+   "details": {
+    "q": 4,
+    "n": 65,
+    "r_ambient": 5,
+    "field_ok": true,
+    "gram_zero": false,
+    "single_qudit_syndromes_distinct_nonzero": false,
+    "rank": 5,
+    "valid": false,
+    "conclusion": "INVALID"
+   }
+  },
+  {
+   "case": "zero column pair (Pauli commuting with S)",
+   "rejected": true,
+   "details": {
+    "q": 4,
+    "n": 65,
+    "r_ambient": 5,
+    "field_ok": true,
+    "gram_zero": false,
+    "single_qudit_syndromes_distinct_nonzero": false,
+    "rank": 5,
+    "valid": false,
+    "conclusion": "INVALID"
+   }
+  },
+  {
+   "case": "reducible modulus X^2+1 over GF(2)",
+   "rejected": true,
+   "details": {
+    "q": 4,
+    "n": 65,
+    "r_ambient": 5,
+    "field_ok": false,
+    "valid": false
+   }
+  },
+  {
+   "case": "entry outside GF(4)",
+   "rejected": true,
+   "details": {
+    "q": 4,
+    "n": 65,
+    "r_ambient": 5,
+    "field_ok": false,
+    "valid": false
+   }
+  },
+  {
+   "case": "rescale one Z column of [[28,23]]_3 by 2 (breaks the Plucker relation)",
+   "rejected": true,
+   "details": {
+    "q": 3,
+    "n": 28,
+    "r_ambient": 5,
+    "field_ok": true,
+    "gram_zero": false,
+    "single_qudit_syndromes_distinct_nonzero": true,
+    "rank": 5,
+    "valid": false,
+    "conclusion": "INVALID"
+   }
+  },
+  {
+   "case": "append a 29th qutrit equal to the first",
+   "rejected": true,
+   "details": {
+    "q": 3,
+    "n": 29,
+    "r_ambient": 5,
+    "field_ok": true,
+    "gram_zero": false,
+    "single_qudit_syndromes_distinct_nonzero": false,
+    "rank": 5,
+    "valid": false,
+    "conclusion": "INVALID"
+   }
+  }
+ ]
+}

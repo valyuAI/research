@@ -1,0 +1,26 @@
+[A1] 66 symmetry classes of one-cell-per-diagonal Breaker sets
+  A1 10/66  (4s)
+  A1 20/66  (6s)
+  A1 30/66  (9s)
+  A1 40/66  (11s)
+  A1 50/66  (13s)
+  A1 60/66  (15s)
+[A1] classes by (lines met, sigma capped at 4): {'met=22,sigma=-1': 9, 'met=25,sigma=2': 24, 'met=26,sigma=4': 15, 'met=27,sigma=4': 18}
+[A1] all classes meeting >= 26 lines have sigma >= 3: True
+[A2] greedy pattern tree: 10627 leaves, 14 distinct final Breaker sets, all one-per-diagonal meeting 27 lines: True
+[A2] direct surplus of the 14 reachable sets >= 3: True
+[B] 144 compatible (a,b) pairs; partners per diagonal cell: [12]; 1158 symmetry classes of (m1,{a,b})
+  B 100/1158  (113s)
+  B 200/1158  (133s)
+  B 300/1158  (160s)
+  B 400/1158  (181s)
+  B 500/1158  (206s)
+  B 600/1158  (231s)
+  B 700/1158  (249s)
+  B 800/1158  (268s)
+  B 900/1158  (287s)
+  B 1000/1158  (306s)
+  B 1100/1158  (327s)
+[B] classes by (lines met, sigma capped at 3): {'met=25,sigma=3': 1158}
+[B] all classes have sigma >= 2: True
+THEOREM_VERIFIED = True (339.6s)

@@ -1,0 +1,2 @@
+Recursive normal dimensions=(7, 13); kernel=2; quotient=8
+{'weight': '0', 'eigenspace_dimension': 2, 'basis': [['0', '1', '0', '1', '0', '0', '0', '0'], ['-3*I', '0', '0', '0', '0', '0', '2*I', '1']]}

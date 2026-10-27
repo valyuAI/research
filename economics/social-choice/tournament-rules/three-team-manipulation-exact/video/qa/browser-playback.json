@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "width": 1920,
+    "height": 1080,
+    "duration": 452.1,
+    "controls": true,
+    "captionLanguage": "en",
+    "transcriptSections": 32
+  },
+  "samples": [
+    {
+      "time": 4.465111,
+      "error": null,
+      "readyState": 4,
+      "cueCount": 107,
+      "activeCaptions": [
+        "Five teams. Everyone plays everyone. Could three of them\nimprove their combined chance"
+      ],
+      "droppedFrames": 0,
+      "requestedTime": 3,
+      "advancedSeconds": 1.4651110000000003
+    },
+    {
+      "time": 227.513543,
+      "error": null,
+      "readyState": 4,
+      "cueCount": 107,
+      "activeCaptions": [
+        "This creates one inequality."
+      ],
+      "droppedFrames": 0,
+      "requestedTime": 226.05,
+      "advancedSeconds": 1.4635429999999872
+    },
+    {
+      "time": 447.563877,
+      "error": null,
+      "readyState": 4,
+      "cueCount": 107,
+      "activeCaptions": [
+        "It does not replace the complete mathematical and\ncomputational proof."
+      ],
+      "droppedFrames": 0,
+      "requestedTime": 446.1,
+      "advancedSeconds": 1.4638769999999681
+    }
+  ],
+  "mode": "Installed Chrome, fresh context, muted headless playback. No listening."
+}

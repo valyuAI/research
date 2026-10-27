@@ -1,0 +1,16 @@
+[11:17:23] build dec_sq18_k2 sq [[0, 0], [0, 1], [1, -1], [1, 0], [2, 0]] k=2 
+sq cells=[[0, 0], [0, 1], [1, -1], [1, 0], [2, 0]] k=2 imb=1 radius=13.8: placements 4744 vars 67521 clauses 416903 (7.3s)
+wrote dec_sq18_k2.cnf
+ed427e5c20a3adaa9201d272097bf7b195a67626dc76a577f0775f96488c4b08  dec_sq18_k2.cnf
+[11:17:33] cadical start
+s UNSATISFIABLE
+[11:17:53] cadical rc=20 (20s) proof bytes 5661266
+acbc07ad4c4bab954bf0b70e78a71b93cd2741dca45a795ae7e8929da1d1eac0  dec_sq18_k2.drat
+c 23218 of 416903 clauses in core                            
+c 24216 of 85897 lemmas in core using 1703703 resolution steps
+c 0 RAT lemmas in core; 7040 redundant literals in core lemmas
+s VERIFIED
+c verification time: 22.095 seconds
+[11:18:16] drat-trim done (22s)
+DRAT_VERIFIED dec_sq18_k2
+[11:18:21] END rc=20

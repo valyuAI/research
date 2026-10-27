@@ -1,0 +1,667 @@
+[
+  {
+    "index1based": 1,
+    "AP": 0.13018822862226614,
+    "nTraces": 0,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 2,
+    "AP": 0.14518822862226616,
+    "nTraces": 21,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 3,
+    "AP": 0.16018822862226617,
+    "nTraces": 56,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 4,
+    "AP": 0.17518822862226616,
+    "nTraces": 75,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 5,
+    "AP": 0.19018822862226614,
+    "nTraces": 83,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 6,
+    "AP": 0.20518822862226616,
+    "nTraces": 112,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 7,
+    "AP": 0.22018822862226617,
+    "nTraces": 131,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 8,
+    "AP": 0.23518822862226615,
+    "nTraces": 139,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 9,
+    "AP": 0.25018822862226614,
+    "nTraces": 174,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 10,
+    "AP": 0.26518822862226615,
+    "nTraces": 170,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 11,
+    "AP": 0.28018822862226617,
+    "nTraces": 185,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 12,
+    "AP": 0.2951882286222661,
+    "nTraces": 195,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 13,
+    "AP": 0.31018822862226614,
+    "nTraces": 202,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 14,
+    "AP": 0.32518822862226615,
+    "nTraces": 205,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 15,
+    "AP": 0.34018822862226616,
+    "nTraces": 211,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 16,
+    "AP": 0.3551882286222661,
+    "nTraces": 196,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 17,
+    "AP": 0.37018822862226614,
+    "nTraces": 209,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 18,
+    "AP": 0.38518822862226615,
+    "nTraces": 199,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 19,
+    "AP": 0.40018822862226616,
+    "nTraces": 205,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 20,
+    "AP": 0.4151882286222661,
+    "nTraces": 201,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 21,
+    "AP": 0.43018822862226613,
+    "nTraces": 217,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 22,
+    "AP": 0.44518822862226615,
+    "nTraces": 201,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 23,
+    "AP": 0.4601882286222661,
+    "nTraces": 211,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 24,
+    "AP": 0.4751882286222661,
+    "nTraces": 174,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 25,
+    "AP": 0.49018822862226613,
+    "nTraces": 150,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 26,
+    "AP": 0.5051882286222661,
+    "nTraces": 127,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 27,
+    "AP": 0.5201882286222661,
+    "nTraces": 121,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 28,
+    "AP": 0.5351882286222661,
+    "nTraces": 98,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 29,
+    "AP": 0.5501882286222661,
+    "nTraces": 68,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 30,
+    "AP": 0.5651882286222661,
+    "nTraces": 42,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 31,
+    "AP": 0.580188228622266,
+    "nTraces": 22,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 32,
+    "AP": 0.5951882286222661,
+    "nTraces": 17,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 33,
+    "AP": 0.6101882286222661,
+    "nTraces": 22,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 34,
+    "AP": 0.6251882286222661,
+    "nTraces": 20,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  },
+  {
+    "index1based": 35,
+    "AP": 0.6401882286222661,
+    "nTraces": 17,
+    "fields": [
+      "Traces",
+      "AP",
+      "Ti",
+      "M1",
+      "S2",
+      "K3",
+      "K4",
+      "WEmb",
+      "M1Emb",
+      "S2Emb",
+      "V1Emb",
+      "Corr"
+    ]
+  }
+]

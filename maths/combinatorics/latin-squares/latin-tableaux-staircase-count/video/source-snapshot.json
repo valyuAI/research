@@ -1,0 +1,10 @@
+{
+  "read_date": "2026-10-26",
+  "sources": {
+    "maths/combinatorics/latin-squares/latin-tableaux-staircase-count/paper.tex": "0cb1b6c08227c73e6ae8b177bf3b7d2707ae8f7da2e3893ee20539810c54bda7",
+    "maths/combinatorics/latin-squares/latin-tableaux-staircase-count/README.md": "f4c337b7979803c74909fb288c8ca5a17d35709278bc8d472da42a8d18713453",
+    "maths/combinatorics/latin-squares/latin-tableaux-staircase-count/video-brief.md": "b9122fe99c573d4cbd8693943258f2ddc58d240661c15838d5946e93fe553659",
+    "maths/combinatorics/latin-squares/latin-tableaux-staircase-count/references.bib": "004d21efe2a34d4ecc82bfce57433f3853baf05e0958399c6a6446dd04320da6",
+    "maths/combinatorics/latin-squares/latin-tableaux-staircase-count/verification/results.json": "7589dd0df33edee8b89494e31526881bc697db0638b9b8cd08091ca714bd279b"
+  }
+}

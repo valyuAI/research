@@ -1,0 +1,3 @@
+q=2 n=4 units=12 proj functionals=15 classes=2 rank-ones=225 quotient dim=12
+F1 representatives: 3
+RESULT q=2 f=1,0,1,0,1 rank<=8: NO (triples 74377, candidate buckets 464776, hits 0)

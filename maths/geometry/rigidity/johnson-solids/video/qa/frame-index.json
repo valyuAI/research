@@ -1,0 +1,182 @@
+[
+  {
+    "scene": "Rules",
+    "kind": "start",
+    "time": 0.35,
+    "file": "qa/frames/01-Rules-start.png"
+  },
+  {
+    "scene": "Rules",
+    "kind": "middle",
+    "time": 25.783,
+    "file": "qa/frames/01-Rules-middle.png"
+  },
+  {
+    "scene": "Rules",
+    "kind": "end",
+    "time": 51.167,
+    "file": "qa/frames/01-Rules-end.png"
+  },
+  {
+    "scene": "Cupola",
+    "kind": "start",
+    "time": 51.917,
+    "file": "qa/frames/02-Cupola-start.png"
+  },
+  {
+    "scene": "Cupola",
+    "kind": "middle",
+    "time": 79.633,
+    "file": "qa/frames/02-Cupola-middle.png"
+  },
+  {
+    "scene": "Cupola",
+    "kind": "end",
+    "time": 107.3,
+    "file": "qa/frames/02-Cupola-end.png"
+  },
+  {
+    "scene": "Addition",
+    "kind": "start",
+    "time": 108.05,
+    "file": "qa/frames/03-Addition-start.png"
+  },
+  {
+    "scene": "Addition",
+    "kind": "middle",
+    "time": 138.533,
+    "file": "qa/frames/03-Addition-middle.png"
+  },
+  {
+    "scene": "Addition",
+    "kind": "end",
+    "time": 168.967,
+    "file": "qa/frames/03-Addition-end.png"
+  },
+  {
+    "scene": "Flatness",
+    "kind": "start",
+    "time": 169.717,
+    "file": "qa/frames/04-Flatness-start.png"
+  },
+  {
+    "scene": "Flatness",
+    "kind": "middle",
+    "time": 193.55,
+    "file": "qa/frames/04-Flatness-middle.png"
+  },
+  {
+    "scene": "Flatness",
+    "kind": "end",
+    "time": 217.333,
+    "file": "qa/frames/04-Flatness-end.png"
+  },
+  {
+    "scene": "Pyramid",
+    "kind": "start",
+    "time": 218.083,
+    "file": "qa/frames/05-Pyramid-start.png"
+  },
+  {
+    "scene": "Pyramid",
+    "kind": "middle",
+    "time": 245.317,
+    "file": "qa/frames/05-Pyramid-middle.png"
+  },
+  {
+    "scene": "Pyramid",
+    "kind": "end",
+    "time": 272.5,
+    "file": "qa/frames/05-Pyramid-end.png"
+  },
+  {
+    "scene": "FirstOrder",
+    "kind": "start",
+    "time": 273.25,
+    "file": "qa/frames/06-FirstOrder-start.png"
+  },
+  {
+    "scene": "FirstOrder",
+    "kind": "middle",
+    "time": 302.733,
+    "file": "qa/frames/06-FirstOrder-middle.png"
+  },
+  {
+    "scene": "FirstOrder",
+    "kind": "end",
+    "time": 332.167,
+    "file": "qa/frames/06-FirstOrder-end.png"
+  },
+  {
+    "scene": "SecondOrder",
+    "kind": "start",
+    "time": 332.917,
+    "file": "qa/frames/07-SecondOrder-start.png"
+  },
+  {
+    "scene": "SecondOrder",
+    "kind": "middle",
+    "time": 364.15,
+    "file": "qa/frames/07-SecondOrder-middle.png"
+  },
+  {
+    "scene": "SecondOrder",
+    "kind": "end",
+    "time": 395.333,
+    "file": "qa/frames/07-SecondOrder-end.png"
+  },
+  {
+    "scene": "Census",
+    "kind": "start",
+    "time": 396.083,
+    "file": "qa/frames/08-Census-start.png"
+  },
+  {
+    "scene": "Census",
+    "kind": "middle",
+    "time": 420.55,
+    "file": "qa/frames/08-Census-middle.png"
+  },
+  {
+    "scene": "Census",
+    "kind": "end",
+    "time": 444.967,
+    "file": "qa/frames/08-Census-end.png"
+  },
+  {
+    "scene": "Evidence",
+    "kind": "start",
+    "time": 445.717,
+    "file": "qa/frames/09-Evidence-start.png"
+  },
+  {
+    "scene": "Evidence",
+    "kind": "middle",
+    "time": 472.033,
+    "file": "qa/frames/09-Evidence-middle.png"
+  },
+  {
+    "scene": "Evidence",
+    "kind": "end",
+    "time": 498.3,
+    "file": "qa/frames/09-Evidence-end.png"
+  },
+  {
+    "scene": "Ending",
+    "kind": "start",
+    "time": 499.05,
+    "file": "qa/frames/10-Ending-start.png"
+  },
+  {
+    "scene": "Ending",
+    "kind": "middle",
+    "time": 523.633,
+    "file": "qa/frames/10-Ending-middle.png"
+  },
+  {
+    "scene": "Ending",
+    "kind": "end",
+    "time": 548.167,
+    "file": "qa/frames/10-Ending-end.png"
+  }
+]

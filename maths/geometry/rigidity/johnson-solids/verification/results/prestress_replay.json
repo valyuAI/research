@@ -1,0 +1,30 @@
+{
+  "58": {
+    "name": "Augmented Dodecahedron",
+    "k": 3,
+    "ok": true,
+    "orthogonal_exact": true,
+    "positive_definite_exact": true
+  },
+  "59": {
+    "name": "Parabiaugmented Dodecahedron",
+    "k": 3,
+    "ok": true,
+    "orthogonal_exact": true,
+    "positive_definite_exact": true
+  },
+  "81": {
+    "name": "Metabidiminished Rhombicosidodecahedron",
+    "k": 4,
+    "ok": true,
+    "orthogonal_exact": true,
+    "positive_definite_exact": true
+  },
+  "83": {
+    "name": "Tridiminished Rhombicosidodecahedron",
+    "k": 2,
+    "ok": true,
+    "orthogonal_exact": true,
+    "positive_definite_exact": true
+  }
+}

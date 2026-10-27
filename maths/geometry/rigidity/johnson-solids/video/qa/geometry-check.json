@@ -1,0 +1,64 @@
+{
+  "exact_J3_certificate_replayed": {
+    "ok": true,
+    "name": "Triangular Cupola",
+    "kinds": {
+      "(2, 2)": 1,
+      "(1, 1)": 3,
+      "(2, 0)": 1,
+      "(0, 2)": 3
+    },
+    "critical_faces": 1,
+    "axis": [
+      [
+        "0",
+        "-3/2"
+      ],
+      [
+        "0",
+        "-3/2"
+      ],
+      [
+        "0",
+        "-3/2"
+      ]
+    ],
+    "witness_pair": [
+      0,
+      1
+    ],
+    "S1_edges": 6,
+    "S2_edges": 9
+  },
+  "display_angles_sampled": 161,
+  "display_angle_range_degrees": [
+    -8,
+    8
+  ],
+  "max_edge_error": 3.3306690738754696e-16,
+  "max_plane_error": 3.3306690738754696e-16,
+  "minimum_convex_margin": 0.6454952429637928,
+  "hexagon_angles_at_five_degrees": [
+    115.0,
+    125.00000000000001,
+    115.00000000000003,
+    124.99999999999999,
+    115.00000000000003,
+    124.99999999999999
+  ],
+  "counts": {
+    "first-order rigid": 41,
+    "first-order flexible, second-order rigid": 6,
+    "flexible": 45
+  },
+  "input_hashes": {
+    "readiness.md": "a64d4d193b6434fff4c39f750b9ce7718decd09bfd8889b0742847a800de2857",
+    "paper.tex": "eedf29479e351a193d0f94e97cad87ff793f0fd8b2e9ea0316a26e5d4e50efb2",
+    "verification/data/J03.json": "c109c5665f043fbd09cc1cbe3d2d49d8f63a8b652d019f5f065f859560671302",
+    "verification/results/flex_finite.json": "04879ecddeb2978c5aea7188dbcb3272085afea459638fdb861d530d874e9759",
+    "verification/results/classification.json": "b932a97ac6d82a38a8ab79cbcc2d51fccd775796f8ae56df0f4161a04fab7934",
+    "verification/results/second_order.json": "ec9fabbbfe340fd30c52e5834e3d5bb3b80c9577a9c7ec823fd704bef13446e6",
+    "verification/results/prestress_replay.json": "5237519c02a066c8a6c24173e20df4d8225f2f127b7a27962f81ac0312083399"
+  },
+  "scope": "Exact certificate replay plus float validation of rendered geometry. Not a new full research audit."
+}

@@ -1,0 +1,80 @@
+{
+ "all_passed": true,
+ "checks": [
+  {
+   "check": "LT(5, 4, 3, 3) = 9*4^2 = 144",
+   "ok": true,
+   "detail": "top-down count 144, bottom-up enumeration 144, 0s"
+  },
+  {
+   "check": "LT(6, 5, 4, 3, 3) = 9*4^3 = 576",
+   "ok": true,
+   "detail": "top-down count 576, bottom-up enumeration 576, 1s"
+  },
+  {
+   "check": "LT(7, 6, 5, 4, 3, 3) = 9*4^4 = 2304",
+   "ok": true,
+   "detail": "top-down count 2304, bottom-up enumeration 2304, 504s"
+  },
+  {
+   "check": "lambda_k is wide (all row subsets) for 5 <= k <= 15",
+   "ok": true,
+   "detail": "wide for k in [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
+  },
+  {
+   "check": "explicit Latin tableau of the wide shape (8, 7, 5, 4, 4, 4)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "explicit Latin tableau of the wide shape (8, 6, 5, 5, 4, 4)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "explicit Latin tableau of the wide shape (7, 6, 6, 5, 4, 4)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "explicit Latin tableau of the wide shape (7, 7, 6, 4, 4, 2, 2)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "explicit Latin tableau of the wide shape (7, 7, 5, 5, 4, 2, 2)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "explicit Latin tableau of the wide shape (7, 7, 6, 5, 3, 3, 2)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "base case: all tableaux of lambda_6 satisfy I1-I5",
+   "ok": true,
+   "detail": "576 tableaux, 0 violations"
+  },
+  {
+   "check": "sanity: all tableaux of lambda_6 satisfy I1-I5",
+   "ok": true,
+   "detail": "576 tableaux"
+  },
+  {
+   "check": "sanity: every tableau of lambda_6 has exactly 4 extensions to lambda_7",
+   "ok": true,
+   "detail": "values [4]"
+  },
+  {
+   "check": "sanity: all tableaux of lambda_7 satisfy I1-I5",
+   "ok": true,
+   "detail": "2304 tableaux"
+  },
+  {
+   "check": "sanity: every tableau of lambda_7 has exactly 4 extensions to lambda_8",
+   "ok": true,
+   "detail": "values [4]"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+\begin{thebibliography}{1}
+
+\bibitem{BBMST2022}
+Paul Balister, B\'ela Bollob\'as, Robert Morris, Julian Sahasrabudhe, and
+  Marius Tiba.
+\newblock On the {E}rd{\H{o}}s covering problem: the density of the uncovered
+  set.
+\newblock {\em Inventiones Mathematicae}, 228:377--414, 2022.
+
+\bibitem{DaltonTrifonov2022}
+Jack Dalton and Ognian Trifonov.
+\newblock Extreme covering systems.
+\newblock {\em Journal of Integer Sequences}, 25, 2022.
+\newblock Article 22.9.1.
+
+\bibitem{Erdos1950}
+Paul Erd\H{o}s.
+\newblock On integers of the form $2^k+p$ and some related problems.
+\newblock {\em Summa Brasiliensis Mathematicae}, 2:113--123, 1950.
+
+\bibitem{HKLT2026}
+Joshua Harrington, Jonah Klein, Joshua Lowrance, and Ognian Trifonov.
+\newblock Covering systems where the prime divisors of all moduli are only $2$,
+  $3$, or $5$.
+\newblock arXiv:2605.18644v1 [math.NT], submitted 18 May 2026, 2026.
+
+\bibitem{Hough2015}
+Robert Hough.
+\newblock Solution of the minimum modulus problem for covering systems.
+\newblock {\em Annals of Mathematics (2)}, 181(1):361--382, 2015.
+
+\bibitem{Klein2025}
+Jonah Klein.
+\newblock On a conjecture of {K}rukenberg and a problem of {D}alton and
+  {T}rifonov.
+\newblock arXiv:2508.18062 [math.NT]; published in Integers 26 (2026), paper
+  A38, 2025.
+
+\bibitem{Krukenberg1971}
+C.~E. Krukenberg.
+\newblock {\em Covering sets of the integers}.
+\newblock PhD thesis, University of Illinois, Urbana-Champaign, 1971.
+
+\end{thebibliography}

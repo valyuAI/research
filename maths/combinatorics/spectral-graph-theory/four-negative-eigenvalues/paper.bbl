@@ -1,0 +1,129 @@
+\begin{thebibliography}{10}
+
+\bibitem{ACK2004}
+Saieed Akbari, Peter~J. Cameron, and Gholamreza~B. Khosrovshahi.
+\newblock Ranks and signatures of adjacency matrices.
+\newblock Unpublished manuscript,
+  \url{https://webspace.maths.qmul.ac.uk/p.j.cameron/preprints/ranksign.pdf},
+  2004.
+
+\bibitem{AEKPT2026}
+Saieed Akbari, Clive Elphick, Hitesh Kumar, Shivaramakrishna Pragada, and
+  Quanyu Tang.
+\newblock A new conjecture on the inertia of graphs.
+\newblock {\em Discrete Mathematics}, 349:114953, 2026.
+\newblock arXiv:2508.01163v3.
+
+\bibitem{Basso2021}
+Giuliano Basso.
+\newblock False-twin-free graphs with a fixed number of negative eigenvalues.
+\newblock {\em Linear Algebra and its Applications}, 618:144--149, 2021.
+
+\bibitem{BDOD2012}
+Richard~A. Brualdi, Louis Deaett, D.~D. Olesky, and P.~van~den Driessche.
+\newblock The principal rank characteristic sequence of a real symmetric
+  matrix.
+\newblock {\em Linear Algebra and its Applications}, 436:2137--2155, 2012.
+
+\bibitem{CFJK2013}
+Zachary~B. Charles, Miriam Farber, Charles~R. Johnson, and Lee Kennedy-Shaffer.
+\newblock Nonpositive eigenvalues of the adjacency matrix and lower bounds for
+  {L}aplacian eigenvalues.
+\newblock {\em Discrete Mathematics}, 313(13):1441--1451, 2013.
+\newblock arXiv:1108.4810v3.
+
+\bibitem{ChenLi2026}
+Hongzhang Chen and Jianxi Li.
+\newblock Counterexamples to a conjecture on graph inertia.
+\newblock arXiv:2605.07196v1, 2026.
+
+\bibitem{Ellingham1993}
+Mark~N. Ellingham.
+\newblock Basic subgraphs and graph spectra.
+\newblock {\em Australasian Journal of Combinatorics}, 8:247--266, 1993.
+
+\bibitem{EKPS2026}
+Clive Elphick, Hitesh Kumar, Shivaramakrishna Pragada, and Thom{\'a}s~Jung
+  Spier.
+\newblock Resolution of a problem of {M}ohar on non-positive inertia.
+\newblock arXiv:2609.06319v1, 2026.
+
+\bibitem{GMT2015}
+Ebrahim Ghorbani, Ali Mohammadian, and Behruz Tayfeh-Rezaie.
+\newblock On order and rank of graphs.
+\newblock {\em Combinatorica}, 35:655--668, 2015.
+\newblock arXiv:1201.3060v2.
+
+\bibitem{networkx}
+Aric~A. Hagberg, Daniel~A. Schult, and Pieter~J. Swart.
+\newblock Exploring network structure, dynamics, and function using {NetworkX}.
+\newblock In {\em Proceedings of the 7th Python in Science Conference (SciPy
+  2008)}, pages 11--15, 2008.
+
+\bibitem{Haynsworth1968}
+Emilie~V. Haynsworth.
+\newblock Determination of the inertia of a partitioned {H}ermitian matrix.
+\newblock {\em Linear Algebra and its Applications}, 1(1):73--81, 1968.
+
+\bibitem{HornJohnson2013}
+Roger~A. Horn and Charles~R. Johnson.
+\newblock {\em Matrix Analysis}.
+\newblock Cambridge University Press, Cambridge, second edition, 2013.
+
+\bibitem{KotlovLovasz1996}
+Andrew Kotlov and L{\'a}szl{\'o} Lov{\'a}sz.
+\newblock The rank and size of graphs.
+\newblock {\em Journal of Graph Theory}, 23(2):185--189, 1996.
+
+\bibitem{McKayPiperno2014}
+Brendan~D. McKay and Adolfo Piperno.
+\newblock Practical graph isomorphism, {II}.
+\newblock {\em Journal of Symbolic Computation}, 60:94--112, 2014.
+
+\bibitem{Mohammadian2022}
+Ali Mohammadian.
+\newblock Real symmetric matrices and their negative eigenvalues.
+\newblock {\em Linear Algebra and its Applications}, 640:6--11, 2022.
+
+\bibitem{Sumner1973}
+David~P. Sumner.
+\newblock Point determination in graphs.
+\newblock {\em Discrete Mathematics}, 5(2):179--187, 1973.
+
+\bibitem{FLINT}
+{The FLINT team}.
+\newblock {FLINT}: {F}ast {L}ibrary for {N}umber {T}heory.
+\newblock Version 3.x via python-flint 0.9.0, \url{https://flintlib.org}, 2025.
+
+\bibitem{Torgasev1985two}
+Aleksandar Torga{\v{s}}ev.
+\newblock Graphs with exactly two negative eigenvalues.
+\newblock {\em Mathematische Nachrichten}, 122:135--140, 1985.
+
+\bibitem{Torgasev1985finite}
+Aleksandar Torga{\v{s}}ev.
+\newblock On graphs with a fixed number of negative eigenvalues.
+\newblock {\em Discrete Mathematics}, 57(3):311--317, 1985.
+
+\bibitem{Torgasev1987}
+Aleksandar Torga{\v{s}}ev.
+\newblock Minimal graphs with four negative eigenvalues.
+\newblock {\em Analele {\c{S}}tiin{\c{t}}ifice ale Universit{\u{a}}{\c{t}}ii
+  ``Al. I. Cuza'' din Ia{\c{s}}i (Ser. Mat.)}, 33:283--287, 1987.
+\newblock Not seen; cited from Torga{\v{s}}ev (1992).
+
+\bibitem{Torgasev1989}
+Aleksandar Torga{\v{s}}ev.
+\newblock Maximal canonical graphs with three negative eigenvalues.
+\newblock {\em Publications de l'Institut Math{\'e}matique (Beograd) (N.S.)},
+  45(59), 1989.
+\newblock Abstract at
+  \url{http://elib.mi.sanu.ac.rs/files/journals/publ/65/2e.htm}.
+
+\bibitem{Torgasev1992}
+Aleksandar Torga{\v{s}}ev.
+\newblock On the numbers of positive and negative eigenvalues of a graph.
+\newblock {\em Publications de l'Institut Math{\'e}matique (Beograd) (N.S.)},
+  51(65):25--28, 1992.
+
+\end{thebibliography}

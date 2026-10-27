@@ -1,0 +1,312 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "case": "compile-rankfq-resources",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "cc",
+        "-O1",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-fsanitize=address,undefined",
+        "-fno-sanitize-recover=all",
+        "<unpublished-record-677291c9c2ce>",
+        "-o",
+        "<unpublished-record-843e334e9b8b>"
+      ],
+      "extra_env": {},
+      "exit": 0
+    },
+    {
+      "case": "compile-subsp-resources",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "cc",
+        "-O1",
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-fsanitize=address,undefined",
+        "-fno-sanitize-recover=all",
+        "<unpublished-record-3f827de4dee9>",
+        "-o",
+        "<unpublished-record-69cd5b9c07ad>"
+      ],
+      "extra_env": {},
+      "exit": 0
+    },
+    {
+      "case": "failed-malloc-1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-843e334e9b8b>",
+        "2",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "extra_env": {
+        "FAIL_AT": "1"
+      },
+      "exit": 2
+    },
+    {
+      "case": "failed-malloc-2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-843e334e9b8b>",
+        "2",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "extra_env": {
+        "FAIL_AT": "2"
+      },
+      "exit": 2
+    },
+    {
+      "case": "failed-malloc-3",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-843e334e9b8b>",
+        "2",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "extra_env": {
+        "FAIL_AT": "3"
+      },
+      "exit": 2
+    },
+    {
+      "case": "failed-malloc-4",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-843e334e9b8b>",
+        "2",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "extra_env": {
+        "FAIL_AT": "4"
+      },
+      "exit": 2
+    },
+    {
+      "case": "failed-malloc-5",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-843e334e9b8b>",
+        "2",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "extra_env": {
+        "FAIL_AT": "5"
+      },
+      "exit": 2
+    },
+    {
+      "case": "failed-malloc-6",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-843e334e9b8b>",
+        "2",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "extra_env": {
+        "FAIL_AT": "6"
+      },
+      "exit": 2
+    },
+    {
+      "case": "failed-malloc-7",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-843e334e9b8b>",
+        "2",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "extra_env": {
+        "FAIL_AT": "7"
+      },
+      "exit": 2
+    },
+    {
+      "case": "failed-malloc-8",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-843e334e9b8b>",
+        "2",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "extra_env": {
+        "FAIL_AT": "8"
+      },
+      "exit": 2
+    },
+    {
+      "case": "failed-malloc-9",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-843e334e9b8b>",
+        "2",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "extra_env": {
+        "FAIL_AT": "9"
+      },
+      "exit": 2
+    },
+    {
+      "case": "failed-malloc-10",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-843e334e9b8b>",
+        "2",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "extra_env": {
+        "FAIL_AT": "10"
+      },
+      "exit": 2
+    },
+    {
+      "case": "failed-calloc",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-69cd5b9c07ad>",
+        "7",
+        "1"
+      ],
+      "extra_env": {},
+      "exit": 2
+    },
+    {
+      "case": "rank-workspace-8192-16",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-843e334e9b8b>"
+      ],
+      "extra_env": {
+        "ROWS": "8192",
+        "LENGTH": "16"
+      },
+      "exit": 0
+    },
+    {
+      "case": "rank-workspace-8193-16",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-843e334e9b8b>"
+      ],
+      "extra_env": {
+        "ROWS": "8193",
+        "LENGTH": "16"
+      },
+      "exit": 2
+    },
+    {
+      "case": "rank-workspace--1-16",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-843e334e9b8b>"
+      ],
+      "extra_env": {
+        "ROWS": "-1",
+        "LENGTH": "16"
+      },
+      "exit": 2
+    },
+    {
+      "case": "rank-workspace-1-0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-843e334e9b8b>"
+      ],
+      "extra_env": {
+        "ROWS": "1",
+        "LENGTH": "0"
+      },
+      "exit": 2
+    },
+    {
+      "case": "rank-workspace-1-17",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-843e334e9b8b>"
+      ],
+      "extra_env": {
+        "ROWS": "1",
+        "LENGTH": "17"
+      },
+      "exit": 2
+    }
+  ],
+  "source_sha256": {
+    "rankfq.c": "02443304367f309555bc504b406235f30056bd11e28418065a5704a3926c291b",
+    "subsp.c": "03f3fd557a4003c1d4748f59908264c23ad7a464466152bf727e2de997f5cebe"
+  }
+}

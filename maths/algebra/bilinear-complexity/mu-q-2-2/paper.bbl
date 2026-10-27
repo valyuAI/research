@@ -1,0 +1,91 @@
+\begin{thebibliography}{10}
+
+\bibitem{AlderStrassen1981}
+Alexander Alder and Volker Strassen.
+\newblock On the algorithmic complexity of associative algebras.
+\newblock {\em Theoretical Computer Science}, 15(2):201--211, 1981.
+
+\bibitem{AGW1988}
+Amir Averbuch, Zvi Galil, and Shmuel Winograd.
+\newblock Classification of all the minimal bilinear algorithms for computing
+  the coefficients of the product of two polynomials modulo a polynomial,
+  {P}art {I}: {T}he algebra ${G}[u]/\langle {Q}(u)^l\rangle$, $l>1$.
+\newblock {\em Theoretical Computer Science}, 58(1--3):17--56, 1988.
+
+\bibitem{BalletSurvey}
+St{\'e}phane Ballet, Jean Chaumine, Julia Pieltant, Matthieu Rambaud, Hugues
+  Randriambololona, and Robert Rolland.
+\newblock On the tensor rank of multiplication in finite extensions of finite
+  fields and related issues in algebraic geometry.
+\newblock \href{https://arxiv.org/abs/1906.07456}{arXiv:1906.07456v2}, 2020.
+\newblock Section 8.2 and Remark 9.3.
+
+\bibitem{BDEZ2012}
+Razvan Barbulescu, J{\'e}r{\'e}mie Detrey, Nicolas Estibals, and Paul
+  Zimmermann.
+\newblock Finding optimal formulae for bilinear maps.
+\newblock In {\em Arithmetic of Finite Fields (WAIFI 2012)}, volume 7369 of
+  {\em Lecture Notes in Computer Science}, pages 168--186. Springer, 2012.
+
+\bibitem{Blaser2005}
+Markus Bl{\"a}ser.
+\newblock A complete characterization of the algebras of minimal bilinear
+  complexity.
+\newblock {\em SIAM Journal on Computing}, 34(2):277--298, 2005.
+
+\bibitem{BPR2019}
+Jaros{\l}aw Buczy{\'n}ski, Elisa Postinghel, and Filip Rupniewski.
+\newblock On {S}trassen's rank additivity for small three-way tensors.
+\newblock {\em SIAM Journal on Matrix Analysis and Applications},
+  41(1):106--133, 2020.
+\newblock \href{https://arxiv.org/abs/1902.06582}{arXiv:1902.06582v2}.
+
+\bibitem{Covanov2019}
+Svyatoslav Covanov.
+\newblock Improved method for finding optimal formulae for bilinear maps in a
+  finite field.
+\newblock {\em Theoretical Computer Science}, 790:41--65, 2019.
+\newblock \href{https://arxiv.org/abs/1705.07728}{arXiv:1705.07728};
+  Propositions 6 and 14.
+
+\bibitem{JaJaTakche1986}
+Joseph Ja'Ja' and Jean Takche.
+\newblock On the validity of the direct sum conjecture.
+\newblock {\em SIAM Journal on Computing}, 15(4):1004--1020, 1986.
+
+\bibitem{RambaudThesis}
+Matthieu Rambaud.
+\newblock Thesis writeup, corrected version.
+\newblock Author-hosted thesis.
+\newblock
+  \href{https://perso.telecom-paristech.fr/rambaud/articles/thesis_final.pdf}{Author-hosted
+  PDF}; Table I.2.1, Section II.3.1 and Chapter VII. Accessed 26 October 2026.
+
+\bibitem{Rambaud2014}
+Matthieu Rambaud.
+\newblock Finding optimal {Chudnovsky--Chudnovsky} multiplication algorithms.
+\newblock WAIFI 2014; author-hosted manuscript, 2014.
+\newblock \url{https://perso.telecom-paristech.fr/rambaud/articles/waifi.pdf};
+  Tables 1--2. The author directs readers to the corrected thesis.
+
+\bibitem{Randriambololona2012}
+Hugues Randriambololona.
+\newblock Bilinear complexity of algebras and the {C}hudnovsky--{C}hudnovsky
+  interpolation method.
+\newblock {\em Journal of Complexity}, 28(4):489--517, 2012.
+\newblock \href{https://arxiv.org/abs/1107.0336}{arXiv:1107.0336v5}; Question
+  4.1 and Example 4.4.
+
+\bibitem{Wang2026}
+Chengu Wang.
+\newblock Automated lower bounds for bilinear complexity over finite fields.
+\newblock \href{https://arxiv.org/abs/2603.07280}{arXiv:2603.07280v11}, 2026.
+\newblock Version 11, 29 August 2026; Tables 5 and 6.
+
+\bibitem{Winograd1977}
+Shmuel Winograd.
+\newblock Some bilinear forms whose multiplicative complexity depends on the
+  field of constants.
+\newblock {\em Mathematical Systems Theory}, 10(1):169--180, 1977.
+
+\end{thebibliography}

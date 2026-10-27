@@ -1,0 +1,15 @@
+{
+  "checked": 116,
+  "changed": [],
+  "approvedChanges": {
+    "verification/check_ledger.py": {
+      "before": "99785d6882936e44304971c396602162dd3988863fdc02cd26f02671b1d5c59c",
+      "after": "9e895ef62a1ffd521187f4721d408abb9f14062e9b87f990802c29e6079f99c7"
+    },
+    "verification/negative_ledger.py": {
+      "before": "14e94c73ab41c759ae3ac8f50561d389ac22cc48b8e003b678ce5fec8d4a6572",
+      "after": "0d688a44e1b8a78dc985e1166d3ea48e0ed31031caa12b1bfd86c4fd31ca4fa8"
+    }
+  },
+  "originalSnapshotPreserved": true
+}

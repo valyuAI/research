@@ -1,0 +1,5 @@
+J58 Augmented Dodecahedron: not prestress stable certified = True (lambda_min ~ 0.12820223190559144)
+J59 Parabiaugmented Dodecahedron: not prestress stable certified = True (lambda_min ~ 0.013833467050166665)
+J81 Metabidiminished Rhombicosidodecahedron: not prestress stable certified = False (lambda_min ~ -0.0006254156241285055)
+J83 Tridiminished Rhombicosidodecahedron: not prestress stable certified = True (lambda_min ~ 0.16046625671983306)
+NOT CERTIFIED: [81]

@@ -1,0 +1,531 @@
+1
+00:00:00,000 --> 00:00:04,898
+You have lost your keys. You walk out from the front door, scanning the path, but no
+
+2
+00:00:04,898 --> 00:00:07,346
+luck, and now you have drifted a long way.
+
+3
+00:00:07,346 --> 00:00:10,320
+Keep going, or go back to the door and start again?
+
+4
+00:00:10,700 --> 00:00:16,246
+Going back sounds like giving up. But in many searches, restarting makes the search faster
+
+5
+00:00:16,246 --> 00:00:21,422
+on average. Today we will see why, and meet a new result about the best possible way
+
+6
+00:00:21,422 --> 00:00:22,100
+to restart.
+
+7
+00:00:23,067 --> 00:00:26,149
+Let's make the search simple enough for maths.
+
+8
+00:00:26,149 --> 00:00:29,298
+Here is a searcher on a line, starting at zero.
+
+9
+00:00:29,298 --> 00:00:34,323
+Every instant it takes a tiny random step, left or right, like a coin flip.
+
+10
+00:00:34,700 --> 00:00:37,434
+Somewhere along the line is the target.
+
+11
+00:00:37,434 --> 00:00:40,868
+The search ends the moment the walker touches it.
+
+12
+00:00:41,267 --> 00:00:48,040
+To see a whole search at once, turn the line upright, so position goes up, and let time
+
+13
+00:00:48,040 --> 00:00:51,465
+run across. Each search draws a jagged path.
+
+14
+00:00:51,465 --> 00:00:54,035
+This one hits the target quickly.
+
+15
+00:00:54,433 --> 00:00:59,493
+This one is unlucky. Its first steps go the wrong way, and it wanders off.
+
+16
+00:00:59,493 --> 00:01:03,937
+It will come back eventually, but that can take a very long time.
+
+17
+00:01:04,933 --> 00:01:08,848
+Run thousands of searches and record how long each one takes.
+
+18
+00:01:08,848 --> 00:01:13,981
+Most are short. But a few are enormously long, and they never quite stop coming.
+
+19
+00:01:14,367 --> 00:01:20,118
+For a walker on a line, those rare long searches are so long that the average search
+
+20
+00:01:20,118 --> 00:01:23,748
+time is infinite. This is a classic fact, long known.
+
+21
+00:01:23,748 --> 00:01:28,815
+The walker always finds the target, but on average you would wait forever.
+
+22
+00:01:29,800 --> 00:01:33,050
+Now add one rule. Every so often, a timer rings.
+
+23
+00:01:33,050 --> 00:01:38,805
+If the walker has not found the target yet, it jumps straight back to zero and starts
+
+24
+00:01:38,805 --> 00:01:40,768
+a fresh, independent attempt.
+
+25
+00:01:41,167 --> 00:01:47,369
+Watch the unlucky walker again. The timer rings, and the long excursion is cut short.
+
+26
+00:01:47,369 --> 00:01:51,967
+On a later attempt it heads the right way and finds the target.
+
+27
+00:01:52,333 --> 00:01:55,177
+Restarting throws away hopeless attempts.
+
+28
+00:01:55,177 --> 00:02:01,349
+With a sensible timer, the average search time drops from infinite to an ordinary, finite
+
+29
+00:02:01,349 --> 00:02:04,885
+number. That is the surprising power of restarting.
+
+30
+00:02:05,867 --> 00:02:11,299
+How should the timer work? The simplest choice is a fixed timer: it rings after exactly
+
+31
+00:02:11,299 --> 00:02:13,235
+the same time on every attempt.
+
+32
+00:02:13,633 --> 00:02:19,208
+Another choice is a random timer. In every moment it has the same small chance of ringing,
+
+33
+00:02:19,208 --> 00:02:22,614
+like a radioactive atom that could decay at any moment.
+
+34
+00:02:22,614 --> 00:02:25,153
+Sometimes it rings early, sometimes late.
+
+35
+00:02:25,533 --> 00:02:32,169
+In general, a restart recipe is any rule for picking the wait before each restart, picked
+
+36
+00:02:32,169 --> 00:02:35,226
+fresh and independently on every attempt.
+
+37
+00:02:35,226 --> 00:02:38,133
+Fixed, random, or any blend of the two.
+
+38
+00:02:39,000 --> 00:02:44,467
+For any recipe, two numbers matter: how long one attempt lasts on average, and the chance
+
+39
+00:02:44,467 --> 00:02:49,749
+that it succeeds. If attempts last two seconds and one in four succeeds, you need four
+
+40
+00:02:49,749 --> 00:02:51,960
+attempts, so eight seconds in total.
+
+41
+00:02:52,333 --> 00:02:58,789
+So the average search time is the average attempt length, divided by the success chance.
+
+42
+00:02:59,767 --> 00:03:02,770
+In real life you do not know where the keys are.
+
+43
+00:03:02,770 --> 00:03:05,711
+You have a hunch: probably close, possibly far.
+
+44
+00:03:05,711 --> 00:03:08,527
+Here is our map of where the target might be.
+
+45
+00:03:08,527 --> 00:03:11,719
+Near is likely, and the chance fades with distance.
+
+46
+00:03:12,600 --> 00:03:16,935
+Average over this map, and try random timers with different rates.
+
+47
+00:03:16,935 --> 00:03:20,153
+Restart too often, and the walker never gets far.
+
+48
+00:03:20,153 --> 00:03:25,998
+Too rarely, and it wanders off. The sweet spot is a rate of one, giving an average search
+
+49
+00:03:25,998 --> 00:03:27,312
+time of exactly one.
+
+50
+00:03:27,700 --> 00:03:31,401
+But that only compares random timers with each other.
+
+51
+00:03:31,401 --> 00:03:35,172
+Could a fixed timer, or some strange blend, do better?
+
+52
+00:03:35,172 --> 00:03:38,244
+Out of every possible recipe, which is best?
+
+53
+00:03:38,244 --> 00:03:42,364
+Pause, and think: how could you ever check infinitely many?
+
+54
+00:03:43,333 --> 00:03:47,280
+In 2025, Evans and Ray turned the question around.
+
+55
+00:03:47,280 --> 00:03:53,437
+Start with a recipe, and ask: for which map is this recipe the natural choice?
+
+56
+00:03:54,233 --> 00:04:00,585
+Take our random timer with rate one. Its success curve shows the chance that a single
+
+57
+00:04:00,585 --> 00:04:03,574
+attempt finds a target at each distance.
+
+58
+00:04:03,574 --> 00:04:07,385
+Close by, it is almost certain. Far away, it fades.
+
+59
+00:04:07,767 --> 00:04:13,975
+Their prescription: square the success curve, then rescale it so the total chance is
+
+60
+00:04:13,975 --> 00:04:17,523
+one. For this timer, that gives exactly our map.
+
+61
+00:04:17,523 --> 00:04:19,815
+It is called the conjugate map.
+
+62
+00:04:20,700 --> 00:04:26,275
+They showed that on its conjugate map, a recipe is balanced: tiny tweaks do not help.
+
+63
+00:04:26,275 --> 00:04:31,849
+But balanced is not the same as best. A flat spot could be a small dip, with a deeper
+
+64
+00:04:31,849 --> 00:04:32,964
+valley elsewhere.
+
+65
+00:04:33,333 --> 00:04:38,365
+Their checks against other recipes were numerical, and stayed inside two families of
+
+66
+00:04:38,365 --> 00:04:40,941
+timers. So the big question was still open.
+
+67
+00:04:41,933 --> 00:04:45,353
+The new result settles it for the walker on a line.
+
+68
+00:04:45,353 --> 00:04:51,185
+Take any restart recipe whose conjugate map makes sense, and whose average time on that
+
+69
+00:04:51,185 --> 00:04:56,951
+map is finite. Then it beats every other recipe on that map, and it is the only recipe
+
+70
+00:04:56,951 --> 00:04:58,493
+that achieves the best.
+
+71
+00:04:58,867 --> 00:05:04,626
+Every other recipe means any positive, finite waits, picked independently each attempt.
+
+72
+00:05:04,626 --> 00:05:10,384
+Smart restarts that react to the walker, and restarts that cost extra time, are outside
+
+73
+00:05:10,384 --> 00:05:11,179
+the theorem.
+
+74
+00:05:12,167 --> 00:05:17,770
+Here is the key idea. The average length of an attempt can be built from the success
+
+75
+00:05:17,770 --> 00:05:21,705
+curve, using a weight for every pair of distances, x and y.
+
+76
+00:05:21,705 --> 00:05:24,640
+The weight is simply the smaller of the two.
+
+77
+00:05:24,640 --> 00:05:27,575
+Swap x and y, and the weight stays the same.
+
+78
+00:05:28,467 --> 00:05:35,007
+Now bring in a rival recipe, and compare its success curve with ours as a ratio, distance
+
+79
+00:05:35,007 --> 00:05:39,636
+by distance. The rival's average time becomes a sum over pairs.
+
+80
+00:05:39,636 --> 00:05:45,808
+The pair x, y carries u over v, and the swapped pair carries v over u, with the same
+
+81
+00:05:45,808 --> 00:05:46,323
+weight.
+
+82
+00:05:46,700 --> 00:05:53,353
+Add the two together. u over v plus v over u always equals two, plus u minus v squared,
+
+83
+00:05:53,353 --> 00:05:54,500
+over u times v.
+
+84
+00:05:54,900 --> 00:06:00,075
+Try u equals two and v equals one. Two plus a half is two and a half.
+
+85
+00:06:00,075 --> 00:06:04,500
+And two, plus one squared over two, is also two and a half.
+
+86
+00:06:04,900 --> 00:06:08,425
+The twos add up to exactly the cost of our recipe.
+
+87
+00:06:08,425 --> 00:06:14,771
+Everything left over is a square divided by positive numbers, so it can never be negative.
+
+88
+00:06:14,771 --> 00:06:16,252
+No rival can beat it.
+
+89
+00:06:17,133 --> 00:06:22,766
+When is the leftover zero? Only when every square is zero, so the rival's success curve
+
+90
+00:06:22,766 --> 00:06:28,205
+matches ours everywhere. And a success curve is like a fingerprint: it pins down the
+
+91
+00:06:28,205 --> 00:06:31,053
+timer exactly. So the best recipe is unique.
+
+92
+00:06:31,933 --> 00:06:37,703
+Credit where it is due. This pairing trick is known, and a closely matching version appears
+
+93
+00:06:37,703 --> 00:06:43,093
+in work by Davila and Topp. What is new is using it here to prove the global best and
+
+94
+00:06:43,093 --> 00:06:47,341
+its uniqueness, even against rivals whose average time is infinite.
+
+95
+00:06:48,333 --> 00:06:54,794
+Back to our map. The theorem says the random timer with rate one is the unique best recipe,
+
+96
+00:06:54,794 --> 00:06:56,853
+with average search time one.
+
+97
+00:06:57,233 --> 00:07:02,981
+A computer check agrees. Random timers with rates one quarter and nine quarters both
+
+98
+00:07:02,981 --> 00:07:07,908
+give four thirds. A blend of two timers gives about one point two seven.
+
+99
+00:07:07,908 --> 00:07:13,793
+Thirty six random blends land between one point zero zero two and one point four five.
+
+100
+00:07:14,167 --> 00:07:20,087
+And every fixed timer is infinitely bad on this map, because a distant target needs an
+
+101
+00:07:20,087 --> 00:07:26,215
+absurdly lucky attempt. That last point is our own quick calculation, not from the paper.
+
+102
+00:07:26,600 --> 00:07:31,377
+No finite list of checks can cover infinitely many recipes.
+
+103
+00:07:31,377 --> 00:07:33,320
+That is the proof's job.
+
+104
+00:07:34,300 --> 00:07:39,443
+The paper also studies a different search: a walker hopping between a few rooms.
+
+105
+00:07:39,443 --> 00:07:43,686
+Each room has an exit, and the search ends when the walker leaves.
+
+106
+00:07:43,686 --> 00:07:46,900
+A restart sends it back to the room it started in.
+
+107
+00:07:47,300 --> 00:07:50,282
+Here the map says which room the walker starts in.
+
+108
+00:07:50,282 --> 00:07:55,292
+The pairing trick now needs the network to be reversible: as much traffic flows from
+
+109
+00:07:55,292 --> 00:08:00,362
+one room to another as flows back. Then the squared success prescription always gives
+
+110
+00:08:00,362 --> 00:08:01,316
+the best recipe.
+
+111
+00:08:01,700 --> 00:08:06,783
+The new part is the converse. Under a technical condition, if the prescription works
+
+112
+00:08:06,783 --> 00:08:10,051
+for every recipe, then the network must be reversible.
+
+113
+00:08:10,051 --> 00:08:12,956
+So the prescription is a test for reversibility.
+
+114
+00:08:13,833 --> 00:08:18,957
+Here is a network that fails: three rooms in a one way loop, with exit rates one, two
+
+115
+00:08:18,957 --> 00:08:22,815
+and three. Apply the prescription to a random timer of rate one.
+
+116
+00:08:22,815 --> 00:08:27,939
+The average time is two thousand three hundred and thirty two over four thousand four
+
+117
+00:08:27,939 --> 00:08:29,385
+hundred and fifty three.
+
+118
+00:08:29,767 --> 00:08:35,043
+Now slow the timer to nine tenths. The average drops, by about one ten-thousandth.
+
+119
+00:08:35,043 --> 00:08:40,448
+Tiny, but exact. The prescribed recipe is not the best, so without reversibility the
+
+120
+00:08:40,448 --> 00:08:41,671
+prescription fails.
+
+121
+00:08:42,667 --> 00:08:48,142
+How sure can we be? The main theorem and the converse have careful written proofs, but
+
+122
+00:08:48,142 --> 00:08:51,325
+they are not formalised in the Lean proof checker.
+
+123
+00:08:51,325 --> 00:08:56,419
+Only the finite pairing algebra and the three room numbers were checked in Lean.
+
+124
+00:08:56,800 --> 00:09:02,247
+The paper has not been peer reviewed. The conjugate map and the pairing trick are earlier
+
+125
+00:09:02,247 --> 00:09:07,816
+work, and whether these exact additions are new still needs a full check of the literature.
+
+126
+00:09:08,700 --> 00:09:14,676
+So, three things. Restarting can turn an infinite average search into a finite one.
+
+127
+00:09:14,676 --> 00:09:20,148
+Squaring a recipe's success curve gives a map where that recipe is balanced.
+
+128
+00:09:20,148 --> 00:09:26,700
+And for a walker on a line, that recipe is the one best recipe, thanks to a hidden symmetry
+
+129
+00:09:26,700 --> 00:09:28,212
+and a sum of squares.
+
+130
+00:09:28,600 --> 00:09:33,430
+What we still don't know: whether the same holds in two or three dimensions; what happens
+
+131
+00:09:33,430 --> 00:09:38,152
+with smart or costly restarts; and the room networks that fail the technical condition.
+
+132
+00:09:39,033 --> 00:09:44,687
+So next time you lose your keys, going back to the door might not be giving up.
+
+133
+00:09:44,687 --> 00:09:46,833
+It might be the smartest move.

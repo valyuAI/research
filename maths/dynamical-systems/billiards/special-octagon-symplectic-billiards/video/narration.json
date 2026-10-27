@@ -1,0 +1,217 @@
+{
+  "voice": "cedar",
+  "clips": [
+    {
+      "id": "s01_hook",
+      "text": "Here is an octagon on squared paper. A point hops around its edge, and every hop follows one simple rule."
+    },
+    {
+      "id": "s01_back",
+      "text": "After ninety two hops, it lands exactly where it started. Is that luck? Or does every path in this octagon come back?"
+    },
+    {
+      "id": "s02_pool",
+      "text": "Start with a ball on a pool table, leaving each cushion at the angle it arrived. Shoot at forty five degrees from here, and after fourteen bounces it is back where it began, heading the same way."
+    },
+    {
+      "id": "s02_open",
+      "text": "With a slope of root two, this rectangular path never repeats. So a simple rule can produce both repeating and non-repeating paths. Now change the rule: use parallel lines instead of equal angles."
+    },
+    {
+      "id": "s03_new",
+      "text": "In 2018, Peter Albers and Serge Tabachnikov introduced a cousin of this game: symplectic billiards. No angles, only parallel lines."
+    },
+    {
+      "id": "s03_setup",
+      "text": "Take a rectangle four wide and three tall. Put a point, x zero, on the bottom at one, zero, and a second point, x one, on the right side at four, two."
+    },
+    {
+      "id": "s03_step",
+      "text": "The rule for the next point: look at the side x one sits on. Draw a line through x zero, parallel to that side. Where it meets the edge again is x two: one, three."
+    },
+    {
+      "id": "s03_again",
+      "text": "Repeat, reaching two steps back. For x three, go through x one, parallel to the top side, where x two sits: zero, two. For x four, through x two, parallel to the left side: back to one, zero."
+    },
+    {
+      "id": "s03_period",
+      "text": "After four hops the path has closed up, and it repeats forever. That is called periodic. In a rectangle, every path is periodic."
+    },
+    {
+      "id": "s03_chains",
+      "text": "Notice: the even points, zero, two and four, form one chain, and the odd points another. Each even hop is steered by the odd point in between."
+    },
+    {
+      "id": "s04_build",
+      "text": "Now the octagon. Take a five by six rectangle. Cut the bottom corners at forty five degrees, two squares in, and the top corners one square in."
+    },
+    {
+      "id": "s04_lines",
+      "text": "Every side is flat, upright, or at forty five degrees, on a line like x plus y equals ten. Every number on the right is whole. Hold on to that."
+    },
+    {
+      "id": "s04_mirror",
+      "text": "The mirror line is x equals two and a half. Special octagons have grid corners, these four side directions, and a mirror parallel to a side. Turning or stretching them gives this shape."
+    },
+    {
+      "id": "s04_conj",
+      "text": "In 2019, Albers, Banhatti, Sadlo, Schwartz and Tabachnikov ran computer experiments. Every path came back, with periods like sixteen, forty four and ninety two."
+    },
+    {
+      "id": "s04_guess",
+      "text": "They conjectured that in every special octagon, every path is periodic, but could only give computer evidence. This finding proves it."
+    },
+    {
+      "id": "s05_corner",
+      "text": "A corner sits on two sides, so the rule breaks there. From now on, every path means every path for which the rule stays defined, forwards and backwards forever."
+    },
+    {
+      "id": "s05_split",
+      "text": "Corners also split paths. These two close points both head straight up, but the corner sends one to the top and the other to the slanted side."
+    },
+    {
+      "id": "s05_red",
+      "text": "So corners are the troublemakers. Start at a corner, try every second point, and mark in red every even point you reach. This path leaves one corner and ends at another, forty six hops later."
+    },
+    {
+      "id": "s05_twenty",
+      "text": "Do this for every corner and every choice, and this octagon has exactly twenty red dots. Twenty, not infinitely many."
+    },
+    {
+      "id": "s06_unroll",
+      "text": "Why does that matter? Unroll the edge into a straight line. The red dots chop it into twenty pieces."
+    },
+    {
+      "id": "s06_square",
+      "text": "A moment of a path is two neighbouring points: where it is, and where it goes next. Plot the first across a square and the second up the side. Each moment is one dot."
+    },
+    {
+      "id": "s06_boxes",
+      "text": "The red dots cut the square into fewer than four hundred usable boxes. Inside each box, no path ever hits a corner, and all starting pairs follow the same sequence of sides."
+    },
+    {
+      "id": "s06_hop",
+      "text": "Watch one box, from a path of period sixteen. Each hop carries the whole box onto another box. After sixteen hops, it is home."
+    },
+    {
+      "id": "s06_pigeon",
+      "text": "In general, group starting pairs by their entire sequence of sides. Each such region contains a box. There are finitely many regions, so a region must come home. Every hop can be undone."
+    },
+    {
+      "id": "s06_stretch",
+      "text": "Take two return laps to keep the two coordinates separate. Repeating forwards and backwards cannot stretch either coordinate without leaving the bounded table. Only flips remain, so four return laps bring every point home."
+    },
+    {
+      "id": "s06_rule",
+      "text": "So if there are finitely many red dots, every path is periodic. This criterion is due to Albers, Lander and Westermann. The question becomes: are the red dots finite?"
+    },
+    {
+      "id": "s07_naive",
+      "text": "The obvious attempt: from the corners, slide in all four directions, again and again. That catches every red dot, so if it stopped, we would be done."
+    },
+    {
+      "id": "s07_fail",
+      "text": "The filled set has not closed after twenty thousand sampled points, with denominators up to sixteen thousand three hundred and eighty four. This does not prove it infinite. We need a different idea."
+    },
+    {
+      "id": "s08_half",
+      "text": "Here is the new idea. Add the half grid: points whose coordinates are whole, or end in a half."
+    },
+    {
+      "id": "s08_kinds",
+      "text": "On the edge, keep three kinds of dots. Green: whole number points. Blue: on a slanted side, both coordinates end in a half. Orange: on the top or bottom, x ends in a half."
+    },
+    {
+      "id": "s08_claim",
+      "text": "Sixteen green, six blue, four orange: twenty six dots. The key lemma: every even point of every path from a corner lands on one of them. Indeed, all twenty red dots do."
+    },
+    {
+      "id": "s09_keep",
+      "text": "Why? Each even hop slides in one of four directions, and each slide keeps one number fixed: upright keeps x, sideways keeps y, and on a slope, x minus y or x plus y."
+    },
+    {
+      "id": "s09_slope",
+      "text": "Follow the red path from the corner two, zero. It slides up a slope with x minus y equal to two, until it meets x equals five. So y is three: whole again."
+    },
+    {
+      "id": "s09_mirror",
+      "text": "Sideways hops are special. Thanks to the mirror, a sideways hop lands on the mirror image: x becomes five minus x. Whole stays whole, and half stays half."
+    },
+    {
+      "id": "s09_halve",
+      "text": "Now the interesting moment. From zero, four, the slide keeps x plus y equal to four, and meets the side where x minus y is three. Add the equations and halve: x is seven halves, y is one half. A blue dot."
+    },
+    {
+      "id": "s09_never",
+      "text": "Two whole numbers, added and halved, give a whole number or a half, never a quarter. Next, an upright hop keeps x at three and a half, up to the top: an orange dot."
+    },
+    {
+      "id": "s09_danger",
+      "text": "Orange dots are the danger. A slanted hop from here would lead to five, four and a half, and then to a point with quarters. The pattern would break."
+    },
+    {
+      "id": "s09_rescue",
+      "text": "But it never happens. We reached the orange dot by an upright hop, steered by an odd point on an upright side. The next odd point comes from a sideways hop, a mirror, so it lands on the other upright side."
+    },
+    {
+      "id": "s09_down",
+      "text": "So the next even hop is upright again, and x stays at three and a half. The mirror blocks the one dangerous move."
+    },
+    {
+      "id": "s10_done",
+      "text": "Here, even points from corners stay on twenty six dots. Other special octagons have different counts, but always finitely many. So every path defined for all time is periodic. The conjecture is true."
+    },
+    {
+      "id": "s10_bound",
+      "text": "Here, the formula guarantees repetition within two thousand six hundred hops. That is a loose bound. The largest period found in the reported samples was ninety two."
+    },
+    {
+      "id": "s11_q",
+      "text": "Was the mirror really needed? Here is a lopsided octagon: corners on the grid, the same four directions, no mirror."
+    },
+    {
+      "id": "s11_loop",
+      "text": "It has a path of period six. Notice the thirds: this loop never touches the half grid."
+    },
+    {
+      "id": "s11_stretch",
+      "text": "Nudge the first point along its side. Each lap doubles the nudge and flips it: a twenty fourth, minus a twelfth, a sixth, minus a third, and then the path is thrown off."
+    },
+    {
+      "id": "s11_squeeze",
+      "text": "Nudge the second point instead. Each lap halves the nudge and flips it: a quarter, minus an eighth, a sixteenth, minus a thirty second."
+    },
+    {
+      "id": "s11_never",
+      "text": "This path approaches the loop forever but never reaches it, so never repeats. A suitable nudge also avoids corners forever backwards, as the paper proves. Not every path is periodic: the mirror matters."
+    },
+    {
+      "id": "s12_proved",
+      "text": "So what is established? The theorem has a short written proof, checked line by line in internal reviews, but not yet refereed by a journal."
+    },
+    {
+      "id": "s12_computer",
+      "text": "Two independent exact programs also checked the dot rule for all one thousand four hundred and eighty four allowed parameter tuples with entries up to fourteen. These include rescaled copies: a check, not the proof."
+    },
+    {
+      "id": "s12_priority",
+      "text": "Confidence in the proof is high; confidence in originality is more limited. The campaign search found no earlier proof of this family result, but a search cannot establish priority."
+    },
+    {
+      "id": "s12_hex",
+      "text": "The same argument settles the companion Hexhouse conjecture in the mirror symmetric case: a square with a symmetric roof. Stretched sideways, its roof turns to forty five degrees."
+    },
+    {
+      "id": "s12_open",
+      "text": "Still open in the paper: lopsided Hexhouses, the Penthouse conjecture, and octagons whose sizes are in no whole number ratio. The general question here concerns symplectic billiards, with this parallel-line rule."
+    },
+    {
+      "id": "s13_recap",
+      "text": "To recap. One: each new point comes from two steps back, by a parallel line. Two: finitely many points from corners means every path repeats. Three: whole number sides and the mirror keep those points on finitely many dots."
+    },
+    {
+      "id": "s13_end",
+      "text": "Still unknown here: whether lopsided Hexhouses always repeat, and whether every convex polygon has even one repeating symplectic billiard path."
+    }
+  ]
+}

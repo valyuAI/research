@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "inspectedUtc": "2026-10-26T16:40:47.279694+00:00",
+  "scope": [
+    "Full eight-scene preview contact",
+    "Four-scene layout recheck including marked seam and full169-piece patch"
+  ],
+  "findings": [
+    "Base thumbnails fit both dimensions and row-maxima captions sit below the displayed shapes.",
+    "Close-up uses retained pieces0 and5 with verified bump/nick mating, not the flat-flat pair.",
+    "The actual row4 and Basic patches are retained geometry; no fake rings.",
+    "Scientific snapshot is unchanged pending root validation of the ledger checker fix. Media input hashes cover scenes, narration, exact geometry and all audio."
+  ]
+}

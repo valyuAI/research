@@ -1,0 +1,23 @@
+{
+  "selected": {
+    "mean_rmse_log2": 0.5743399879046622,
+    "median_rmse_log2": 0.5038363171816207,
+    "p90_rmse_log2": 0.881456217261458,
+    "max_rmse_log2": 1.9362157517223524,
+    "worst_promoter": "chr19:39926534-39926798-promoter"
+  },
+  "full_reference": {
+    "mean_rmse_log2": 0.5570512208997276,
+    "median_rmse_log2": 0.5089028584104587,
+    "p90_rmse_log2": 0.8445914400715407,
+    "max_rmse_log2": 1.9508529175192784,
+    "worst_promoter": "chr19:39926534-39926798-promoter"
+  },
+  "random": {
+    "mean_rmse_log2": 0.614023265661141,
+    "median_rmse_log2": 0.5396029344634818,
+    "p90_rmse_log2": 0.933201218315396,
+    "max_rmse_log2": 1.966848268504596,
+    "worst_promoter": "chr19:39926534-39926798-promoter"
+  }
+}

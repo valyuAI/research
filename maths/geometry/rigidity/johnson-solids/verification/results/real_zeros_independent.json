@@ -1,0 +1,24 @@
+{
+  "58": {
+    "groebner_basis": [
+      "x*(3523/83491 + 6819*sqrt(5)/83491) + z - 30179/83491 - 4546*sqrt(5)/83491",
+      "x**2 + x*(76230463429920/43683105689861 + 35087466175996*sqrt(5)/43683105689861) + 137232562727048*sqrt(5)/43683105689861 + 312699195884780/43683105689861"
+    ],
+    "elimination_discriminant": "-42671953123878883149696695840/1908213722711566472718199321 - 18629510552428832268871840672*sqrt(5)/1908213722711566472718199321",
+    "discriminant_negative_exact": true,
+    "infinity_excluded": true,
+    "no_nonzero_real_zero": true,
+    "complex_projective_zero_exists": true
+  },
+  "59": {
+    "groebner_basis": [
+      "x*(10*sqrt(5)/79 + 37/79) + z - 3/79 + 12*sqrt(5)/79",
+      "x**2 + x*(858/4681 + 3398*sqrt(5)/4681) - 236*sqrt(5)/4681 + 4536/4681"
+    ],
+    "elimination_discriminant": "-26463880/21911761 + 10249832*sqrt(5)/21911761",
+    "discriminant_negative_exact": true,
+    "infinity_excluded": true,
+    "no_nonzero_real_zero": true,
+    "complex_projective_zero_exists": true
+  }
+}

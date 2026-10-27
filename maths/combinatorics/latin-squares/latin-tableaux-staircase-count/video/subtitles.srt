@@ -1,0 +1,447 @@
+1
+00:00:00,000 --> 00:00:05,716
+Here is a filling puzzle. Each row must use the numbers from one up to its length, exactly
+
+2
+00:00:05,716 --> 00:00:11,052
+once. Each column must avoid repeats. If we grow this staircase by one row, how many
+
+3
+00:00:11,052 --> 00:00:13,656
+new fillings can one old filling produce?
+
+4
+00:00:14,033 --> 00:00:19,924
+Begin with a familiar square. In this three by three grid, every row uses one, two, and
+
+5
+00:00:19,924 --> 00:00:24,596
+three, and every column does too. Colours help us follow each number.
+
+6
+00:00:24,596 --> 00:00:28,049
+This is a Latin square, with no extra Sudoku boxes.
+
+7
+00:00:28,433 --> 00:00:33,862
+Now allow shorter rows. Our running shape has row lengths five, four, three, and three.
+
+8
+00:00:33,862 --> 00:00:36,421
+The two bottom rows have the same length.
+
+9
+00:00:36,421 --> 00:00:41,537
+A left-aligned shape filled by our row and column rules is called a Latin tableau.
+
+10
+00:00:41,933 --> 00:00:45,493
+Read the top row: four, five, two, one, three.
+
+11
+00:00:45,493 --> 00:00:48,743
+It uses each number from one to five once.
+
+12
+00:00:48,743 --> 00:00:53,696
+The next row uses one to four. The bottom rows use one to three.
+
+13
+00:00:53,696 --> 00:00:57,797
+Different row lengths mean different allowed numbers.
+
+14
+00:00:58,167 --> 00:01:02,115
+Now read down the first column: four, three, two, one.
+
+15
+00:01:02,115 --> 00:01:06,356
+No repeats. The second column reads five, one, three, two.
+
+16
+00:01:06,356 --> 00:01:13,302
+Again, no repeats. A repeated number would break the rule even when both rows were individually
+
+17
+00:01:13,302 --> 00:01:13,887
+perfect.
+
+18
+00:01:14,267 --> 00:01:16,804
+This is an independent verification note.
+
+19
+00:01:16,804 --> 00:01:22,126
+An earlier public proof, dated the twenty second of October twenty twenty six, already
+
+20
+00:01:22,126 --> 00:01:25,592
+established the same count and four-extension mechanism.
+
+21
+00:01:25,592 --> 00:01:30,419
+We are explaining and checking that mathematics, not claiming a new discovery.
+
+22
+00:01:30,800 --> 00:01:33,389
+Place a row of six cells above our example.
+
+23
+00:01:33,389 --> 00:01:38,447
+The old entries stay fixed. The new row must contain one to six, and each entry must
+
+24
+00:01:38,447 --> 00:01:43,686
+avoid the numbers already below it. We are counting legal extensions of this particular
+
+25
+00:01:43,686 --> 00:01:44,168
+filling.
+
+26
+00:01:44,567 --> 00:01:48,532
+One legal new row is five, four, six, three, one, two.
+
+27
+00:01:48,532 --> 00:01:52,277
+Follow the five down its column, and then the four.
+
+28
+00:01:52,277 --> 00:01:58,079
+Neither clashes with an old entry. The six is new, so it cannot clash anywhere.
+
+29
+00:01:58,467 --> 00:02:02,953
+There are five hundred and seventy six fillings of the six-column shape.
+
+30
+00:02:02,953 --> 00:02:07,939
+Our proof starts with this entire finite family, not just the example on screen.
+
+31
+00:02:07,939 --> 00:02:12,675
+The next step is to show that every one of them has exactly four extensions.
+
+32
+00:02:13,067 --> 00:02:16,535
+Now add a row of seven above this six-column example.
+
+33
+00:02:16,535 --> 00:02:22,098
+Look at the first three old columns. Each already contains one, two, three, and four.
+
+34
+00:02:22,098 --> 00:02:26,483
+None of those numbers can go into any of our first three new cells.
+
+35
+00:02:26,867 --> 00:02:30,245
+So those three cells must contain five, six, and seven.
+
+36
+00:02:30,245 --> 00:02:33,746
+Five already appears in the first and second old columns.
+
+37
+00:02:33,746 --> 00:02:36,940
+Only the third column is available for the new five.
+
+38
+00:02:36,940 --> 00:02:39,275
+Put it there. This position is forced.
+
+39
+00:02:39,667 --> 00:02:42,371
+The old six is also in that third column.
+
+40
+00:02:42,371 --> 00:02:45,472
+But we have just filled its new cell with five.
+
+41
+00:02:45,472 --> 00:02:50,156
+The first two new cells are therefore both available for six and seven.
+
+42
+00:02:50,156 --> 00:02:53,323
+Swap them: two possibilities, with no collision.
+
+43
+00:02:53,700 --> 00:02:57,525
+What about the fourth cell? Below it are three, one, and two.
+
+44
+00:02:57,525 --> 00:03:02,917
+Those numbers are forbidden. After using five, six, and seven on the left, four is the
+
+45
+00:03:02,917 --> 00:03:06,804
+largest remaining number. It is the only possible choice here.
+
+46
+00:03:07,200 --> 00:03:10,715
+In a larger staircase, this forced section continues.
+
+47
+00:03:10,715 --> 00:03:16,353
+The first middle column blocks all smaller remaining values, so the largest remaining
+
+48
+00:03:16,353 --> 00:03:19,537
+value goes there. The next column does the same.
+
+49
+00:03:19,537 --> 00:03:22,920
+Values fall into place like a descending staircase.
+
+50
+00:03:23,300 --> 00:03:29,100
+Return to our seven-cell row. The last three positions must contain one, two, and three.
+
+51
+00:03:29,100 --> 00:03:32,594
+Under the first of these positions sit one and three.
+
+52
+00:03:32,594 --> 00:03:36,812
+So that new cell must be two. Again, the first choice is forced.
+
+53
+00:03:37,200 --> 00:03:41,764
+The next old column contains two, the number we have already placed.
+
+54
+00:03:41,764 --> 00:03:46,194
+That leaves one and three free to swap across the final two cells.
+
+55
+00:03:46,194 --> 00:03:51,899
+This is a second independent choice. Swapping here does not disturb the large numbers
+
+56
+00:03:51,899 --> 00:03:52,704
+on the left.
+
+57
+00:03:53,100 --> 00:03:56,270
+Two choices on the left, and two on the right.
+
+58
+00:03:56,270 --> 00:04:00,266
+Every left choice can be combined with every right choice.
+
+59
+00:04:00,266 --> 00:04:06,123
+So this particular old filling produces exactly two times two, or four, legal new top
+
+60
+00:04:06,123 --> 00:04:06,468
+rows.
+
+61
+00:04:06,867 --> 00:04:12,497
+We have not just found four examples. The column restrictions forced the first block,
+
+62
+00:04:12,497 --> 00:04:16,471
+forced every middle entry, and forced the first small entry.
+
+63
+00:04:16,471 --> 00:04:20,379
+Nothing else can vary. That is why four is the entire list.
+
+64
+00:04:20,767 --> 00:04:25,888
+To make this a proof for every size, we need facts that survive the extension.
+
+65
+00:04:25,888 --> 00:04:31,601
+Such a fact is called an invariant. Here the paper uses five: three describe row blocks
+
+66
+00:04:31,601 --> 00:04:35,935
+and column contents; two prevent clashes between the top two rows.
+
+67
+00:04:36,333 --> 00:04:41,594
+First, the top row always splits into three large numbers, a forced descending middle,
+
+68
+00:04:41,594 --> 00:04:47,038
+and three small numbers. The middle columns contain exactly the smallest possible values.
+
+69
+00:04:47,038 --> 00:04:52,053
+In the first three columns, each smaller number has already appeared in all three.
+
+70
+00:04:52,433 --> 00:04:58,245
+The large-number safeguard says this: the largest entry of the top row is not above the
+
+71
+00:04:58,245 --> 00:05:03,924
+largest entry of the row below. In our example, six is in column three, while the old
+
+72
+00:05:03,924 --> 00:05:05,393
+five is in column two.
+
+73
+00:05:05,767 --> 00:05:09,128
+That safeguard makes both large-number swaps legal.
+
+74
+00:05:09,128 --> 00:05:14,994
+After adding the new row, the seven is in column one or two, while six is below in column
+
+75
+00:05:14,994 --> 00:05:19,279
+three. The same safeguard survives, ready for the next extension.
+
+76
+00:05:19,667 --> 00:05:25,206
+The small-number safeguard compares the last entry of the top row with the last entry
+
+77
+00:05:25,206 --> 00:05:29,638
+of the row below. They differ. Here those entries are two and three.
+
+78
+00:05:29,638 --> 00:05:33,875
+This forces the old last entry to equal the missing small number.
+
+79
+00:05:34,267 --> 00:05:37,414
+After extension, the new last entry is one or three.
+
+80
+00:05:37,414 --> 00:05:40,139
+The old last entry is two. They still differ.
+
+81
+00:05:40,139 --> 00:05:44,800
+Meanwhile each forced middle entry completes the next consecutive column set.
+
+82
+00:05:44,800 --> 00:05:49,219
+All five facts are restored, so the construction can repeat indefinitely.
+
+83
+00:05:49,600 --> 00:05:55,083
+The starting check examines all five hundred and seventy six six-column tableaux, and
+
+84
+00:05:55,083 --> 00:06:00,502
+every one satisfies those five facts. Two different enumeration methods agree on the
+
+85
+00:06:00,502 --> 00:06:05,920
+count. This finite base case is the only exhaustive computation the induction needs.
+
+86
+00:06:06,300 --> 00:06:09,847
+Imagine repeatedly pressing a four-way growth button.
+
+87
+00:06:09,847 --> 00:06:16,004
+Five hundred and seventy six becomes two thousand three hundred and four, then nine thousand
+
+88
+00:06:16,004 --> 00:06:21,692
+two hundred and sixteen. Each old tableau has four children, and deleting the top row
+
+89
+00:06:21,692 --> 00:06:23,700
+identifies exactly one parent.
+
+90
+00:06:24,067 --> 00:06:26,547
+That last point prevents double counting.
+
+91
+00:06:26,547 --> 00:06:31,628
+Two different parents cannot produce the same full tableau, because removing its top
+
+92
+00:06:31,628 --> 00:06:37,375
+row would have to give both parents. And every larger tableau has a smaller tableau underneath,
+
+93
+00:06:37,375 --> 00:06:38,827
+so no filling is missed.
+
+94
+00:06:39,200 --> 00:06:45,571
+Starting at size six, the formula is five hundred and seventy six times four to the power
+
+95
+00:06:45,571 --> 00:06:51,442
+k minus six. The separately checked size-five count is one hundred and forty four.
+
+96
+00:06:51,442 --> 00:06:55,952
+Together these give nine times four to the power k minus three.
+
+97
+00:06:56,333 --> 00:07:02,371
+The retained checks reproduce one hundred and forty four, five hundred and seventy six,
+
+98
+00:07:02,371 --> 00:07:07,298
+and two thousand three hundred and four using both enumeration methods.
+
+99
+00:07:07,298 --> 00:07:11,393
+They also test the invariants and four extensions directly.
+
+100
+00:07:11,393 --> 00:07:16,181
+These checks support the argument; they do not replace the induction.
+
+101
+00:07:16,567 --> 00:07:21,139
+This family also satisfies a broader shape condition called wideness.
+
+102
+00:07:21,139 --> 00:07:25,248
+Roughly, enough width must remain even after rows are removed.
+
+103
+00:07:25,248 --> 00:07:30,814
+The general conjecture asks whether that shape condition guarantees a Latin filling.
+
+104
+00:07:30,814 --> 00:07:34,327
+Our one family does not settle that general question.
+
+105
+00:07:34,700 --> 00:07:39,776
+There are three things to remember. Column exclusions force most of the new row.
+
+106
+00:07:39,776 --> 00:07:42,886
+Two independent swaps leave exactly four choices.
+
+107
+00:07:42,886 --> 00:07:48,787
+An invariant carries the same reasoning from a checked finite base to every larger staircase.
+
+108
+00:07:48,787 --> 00:07:50,564
+That is the proof mechanism.
+
+109
+00:07:50,933 --> 00:07:56,695
+The count is proved in this note by an ordinary induction and finite checks, with high
+
+110
+00:07:56,695 --> 00:08:00,379
+correctness confidence. The earlier proof has priority.
+
+111
+00:08:00,379 --> 00:08:04,064
+No formal build of that earlier work was replayed here.
+
+112
+00:08:04,064 --> 00:08:06,341
+The wider conjectures remain open.

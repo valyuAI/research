@@ -1,0 +1,192 @@
+{
+  "method": "Central waveform correlation after mono 8kHz decoding; encoding delay allowed. Not listening.",
+  "minimum_correlation": 0.9664946243693349,
+  "maximum_absolute_offset_seconds": 0.021375,
+  "clips": [
+    {
+      "id": "a01",
+      "correlation": 0.9870483281066106,
+      "offset_seconds": 0.021375
+    },
+    {
+      "id": "a02",
+      "correlation": 0.985800865845342,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "a03",
+      "correlation": 0.9859535379667728,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "a04",
+      "correlation": 0.9886560939623456,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "a05",
+      "correlation": 0.9835702995292704,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "a06",
+      "correlation": 0.9995147935211192,
+      "offset_seconds": 0.021375
+    },
+    {
+      "id": "a07",
+      "correlation": 0.9996175739712893,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "a08",
+      "correlation": 0.9996757824895363,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "a09",
+      "correlation": 0.9997167354604833,
+      "offset_seconds": 0.020625
+    },
+    {
+      "id": "a10",
+      "correlation": 0.9997686321849498,
+      "offset_seconds": 0.020375
+    },
+    {
+      "id": "a11",
+      "correlation": 0.9957647547624343,
+      "offset_seconds": 0.021375
+    },
+    {
+      "id": "a12",
+      "correlation": 0.9965638601458277,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "a13",
+      "correlation": 0.9961119181778745,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "a14",
+      "correlation": 0.9968091613249753,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "a15",
+      "correlation": 0.9971943663950206,
+      "offset_seconds": 0.02075
+    },
+    {
+      "id": "a16",
+      "correlation": 0.9970257310151759,
+      "offset_seconds": 0.021375
+    },
+    {
+      "id": "a17",
+      "correlation": 0.9965954075770459,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "a18",
+      "correlation": 0.9967969754809995,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "a19",
+      "correlation": 0.9973050185923888,
+      "offset_seconds": 0.02075
+    },
+    {
+      "id": "a20",
+      "correlation": 0.9966375913612704,
+      "offset_seconds": 0.02075
+    },
+    {
+      "id": "a21",
+      "correlation": 0.9965157085908114,
+      "offset_seconds": 0.021375
+    },
+    {
+      "id": "a22",
+      "correlation": 0.997386555351532,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "a23",
+      "correlation": 0.9959507402149522,
+      "offset_seconds": 0.021
+    },
+    {
+      "id": "a24",
+      "correlation": 0.9976936802969965,
+      "offset_seconds": 0.020625
+    },
+    {
+      "id": "a25",
+      "correlation": 0.9975264600211163,
+      "offset_seconds": 0.020625
+    },
+    {
+      "id": "a26",
+      "correlation": 0.9664946243693349,
+      "offset_seconds": 0.02125
+    },
+    {
+      "id": "a27",
+      "correlation": 0.974588648607187,
+      "offset_seconds": 0.020625
+    },
+    {
+      "id": "a28",
+      "correlation": 0.9766407678803676,
+      "offset_seconds": 0.02075
+    },
+    {
+      "id": "a29",
+      "correlation": 0.9795843083014923,
+      "offset_seconds": 0.021125
+    },
+    {
+      "id": "a30",
+      "correlation": 0.9963701646059818,
+      "offset_seconds": 0.021375
+    },
+    {
+      "id": "a31",
+      "correlation": 0.9973640061246529,
+      "offset_seconds": 0.020625
+    },
+    {
+      "id": "a32",
+      "correlation": 0.9947945178664418,
+      "offset_seconds": 0.020625
+    },
+    {
+      "id": "a33",
+      "correlation": 0.995306455101032,
+      "offset_seconds": 0.020375
+    },
+    {
+      "id": "a34",
+      "correlation": 0.9733913842264841,
+      "offset_seconds": 0.02125
+    },
+    {
+      "id": "a35",
+      "correlation": 0.9756049139613782,
+      "offset_seconds": 0.020375
+    },
+    {
+      "id": "a36",
+      "correlation": 0.9729116896758393,
+      "offset_seconds": 0.021375
+    },
+    {
+      "id": "a37",
+      "correlation": 0.9717728938239574,
+      "offset_seconds": 0.021
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "parameters": [
+    3,
+    3,
+    1
+  ],
+  "candidates": 0,
+  "stable": 0,
+  "tags": {},
+  "stable_graphs": [],
+  "float_exact_disagreements": 0,
+  "inputs_sha256": {
+    "n3_std.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "ok": true
+}

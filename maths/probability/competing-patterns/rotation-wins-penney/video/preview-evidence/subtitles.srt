@@ -1,0 +1,523 @@
+1
+00:00:00,000 --> 00:00:05,015
+Look at these four numbers: point two, point four, point six, point one.
+
+2
+00:00:05,015 --> 00:00:09,473
+Ignore their exact sizes and rank them from smallest to largest.
+
+3
+00:00:09,473 --> 00:00:14,000
+In their original positions, the ranks are two, three, four, one.
+
+4
+00:00:14,400 --> 00:00:19,914
+That is an order pattern. Two players choose different patterns, then watch the same
+
+5
+00:00:19,914 --> 00:00:24,706
+stream of random numbers. After each new number, inspect the latest four.
+
+6
+00:00:24,706 --> 00:00:27,200
+Whoever sees their pattern first wins.
+
+7
+00:00:27,600 --> 00:00:31,430
+Suppose the first player chooses two, three, four, one.
+
+8
+00:00:31,430 --> 00:00:37,349
+Move its final symbol to the front. You get one, two, three, four: an increasing run.
+
+9
+00:00:37,349 --> 00:00:43,198
+This right rotation is a winning reply, even though both patterns are equally likely
+
+10
+00:00:43,198 --> 00:00:44,800
+in one isolated window.
+
+11
+00:00:45,133 --> 00:00:51,412
+Here is a concrete stream. The first four values increase, so the rotation wins immediately.
+
+12
+00:00:51,412 --> 00:00:56,326
+If we continued, the next window would have order two, three, four, one.
+
+13
+00:00:56,326 --> 00:00:59,533
+The original pattern arrives one draw too late.
+
+14
+00:00:59,867 --> 00:01:05,177
+The theorem applies to independent observations drawn from one common continuous distribution.
+
+15
+00:01:05,177 --> 00:01:08,679
+Independence means previous draws do not affect the next draw.
+
+16
+00:01:08,679 --> 00:01:11,334
+Continuity rules out ties with probability one.
+
+17
+00:01:11,334 --> 00:01:14,667
+We compare relative order, not particular numerical values.
+
+18
+00:01:15,000 --> 00:01:19,057
+Four distinct independent draws have twenty-four equally likely orders.
+
+19
+00:01:19,057 --> 00:01:23,400
+Each chosen pattern has probability one over twenty-four in a single window.
+
+20
+00:01:23,400 --> 00:01:26,257
+But neighbouring windows share three observations.
+
+21
+00:01:26,257 --> 00:01:29,400
+Equal snapshot probabilities do not make the race fair.
+
+22
+00:01:29,800 --> 00:01:32,705
+Let us examine that shared information.
+
+23
+00:01:32,705 --> 00:01:36,355
+Call our five observations x zero through x four.
+
+24
+00:01:36,355 --> 00:01:42,538
+An increasing window first requires x zero below x one, below x two, below x three.
+
+25
+00:01:42,538 --> 00:01:48,200
+The next window must place x four below x one to match the original pattern.
+
+26
+00:01:48,533 --> 00:01:53,383
+So x zero and x four both lie below the same chain of three values.
+
+27
+00:01:53,383 --> 00:01:57,219
+Only their order relative to each other is undecided.
+
+28
+00:01:57,219 --> 00:02:00,549
+There are exactly two compatible total orders.
+
+29
+00:02:00,549 --> 00:02:03,733
+Watch the two bottom values exchange places.
+
+30
+00:02:04,133 --> 00:02:09,509
+Two increasing windows in a row have only one compatible order: all five values must
+
+31
+00:02:09,509 --> 00:02:14,949
+increase. Starting with the original pattern cannot immediately produce either chosen
+
+32
+00:02:14,949 --> 00:02:20,133
+pattern here, because the shared comparisons would have to rise and fall at once.
+
+33
+00:02:20,467 --> 00:02:26,400
+There are five factorial, or one hundred and twenty, equally likely orders of five draws.
+
+34
+00:02:26,400 --> 00:02:32,067
+The signed overlap comparison gives two minus one, divided by one hundred and twenty.
+
+35
+00:02:32,067 --> 00:02:37,667
+This is one local contribution. It is not the final winning probability or the final
+
+36
+00:02:37,667 --> 00:02:38,867
+winning advantage.
+
+37
+00:02:39,200 --> 00:02:44,779
+For every pattern of length k, the corresponding one-position overlap contributes at
+
+38
+00:02:44,779 --> 00:02:50,424
+least one over k plus one factorial. That gives the proof a positive starting amount.
+
+39
+00:02:50,424 --> 00:02:56,202
+But all longer overlaps still need to be included before we can conclude anything about
+
+40
+00:02:56,202 --> 00:02:56,800
+the race.
+
+41
+00:02:57,200 --> 00:03:00,924
+Why are some contributions added and others subtracted?
+
+42
+00:03:00,924 --> 00:03:06,883
+Start with a counting example. Six objects have one property and five have another, with
+
+43
+00:03:06,883 --> 00:03:12,572
+two objects in both groups. Six plus five counts those two twice, so subtract two to
+
+44
+00:03:12,572 --> 00:03:14,400
+get nine different objects.
+
+45
+00:03:14,733 --> 00:03:20,340
+This is inclusion and exclusion. With more events, subtract double overlaps and add triple
+
+46
+00:03:20,340 --> 00:03:25,635
+overlaps back. For the race, mark possible occurrences along the stream and alternate
+
+47
+00:03:25,635 --> 00:03:29,933
+signs. A chain of overlapping marked occurrences is called a cluster.
+
+48
+00:03:30,333 --> 00:03:33,333
+Here are three consecutive occurrence starts.
+
+49
+00:03:33,333 --> 00:03:37,533
+A cluster can mark only the first and last, giving a plus sign.
+
+50
+00:03:37,533 --> 00:03:40,600
+Or it can mark all three, giving a minus sign.
+
+51
+00:03:40,600 --> 00:03:45,933
+For a sequence satisfying both descriptions, those contributions cancel exactly.
+
+52
+00:03:46,267 --> 00:03:49,705
+The paper proves a recurrence for this cancellation.
+
+53
+00:03:49,705 --> 00:03:55,525
+For each new occurrence, add the earlier surviving coefficients less than k starts away,
+
+54
+00:03:55,525 --> 00:04:01,146
+then change the sign. Starting at minus one, the only possible coefficients are minus
+
+55
+00:04:01,146 --> 00:04:02,667
+one, zero and plus one.
+
+56
+00:04:03,000 --> 00:04:08,458
+For length four with an occurrence at every start, the coefficients begin minus one,
+
+57
+00:04:08,458 --> 00:04:11,188
+plus one, zero, zero, minus one, plus one.
+
+58
+00:04:11,188 --> 00:04:16,776
+Nonzero signs alternate. In any four consecutive start positions, at most two survive.
+
+59
+00:04:16,776 --> 00:04:21,000
+This prevents the number of markings from overwhelming the bound.
+
+60
+00:04:21,400 --> 00:04:24,809
+There is another useful counting trick for short overlaps.
+
+61
+00:04:24,809 --> 00:04:27,571
+Shared observations already have a fixed order.
+
+62
+00:04:27,571 --> 00:04:31,039
+Between them, private observations form two ordered chains.
+
+63
+00:04:31,039 --> 00:04:35,800
+Combining those chains means choosing how their blue and teal entries interleave.
+
+64
+00:04:36,133 --> 00:04:40,110
+With two entries of each colour, there are six interleavings.
+
+65
+00:04:40,110 --> 00:04:44,153
+For a simple illustration, require the first entry to be blue.
+
+66
+00:04:44,153 --> 00:04:49,760
+Three choices remain. Swapping blue and teal sends each allowed choice to a different,
+
+67
+00:04:49,760 --> 00:04:50,933
+disallowed choice.
+
+68
+00:04:51,333 --> 00:04:56,945
+In the proof, differing private ranks impose unequal colour counts at a boundary between
+
+69
+00:04:56,945 --> 00:05:00,899
+shared values. Swapping colours again produces a disjoint set.
+
+70
+00:05:00,899 --> 00:05:04,597
+So at most half of all balanced interleavings are allowed.
+
+71
+00:05:04,597 --> 00:05:08,933
+This bounds the short overlaps that could work against the rotation.
+
+72
+00:05:09,267 --> 00:05:11,861
+What about arbitrarily distant overlaps?
+
+73
+00:05:11,861 --> 00:05:17,764
+Group actual occurrences into a clump whenever consecutive starts are less than k positions
+
+74
+00:05:17,764 --> 00:05:22,045
+apart. Focus on the clump containing the occurrence at start zero.
+
+75
+00:05:22,045 --> 00:05:26,067
+We need a bound on how far this particular clump can continue.
+
+76
+00:05:26,400 --> 00:05:31,658
+For length four, finish observing one anchor window, then look for another occurrence
+
+77
+00:05:31,658 --> 00:05:34,070
+starting at least four positions later.
+
+78
+00:05:34,070 --> 00:05:39,575
+To remain in the same clump, the next anchor must start within three candidate positions.
+
+79
+00:05:39,575 --> 00:05:44,400
+Those candidate windows use observations fresh after the previous anchor ends.
+
+80
+00:05:44,800 --> 00:05:50,409
+Each candidate window has probability two over twenty-four of matching either pattern.
+
+81
+00:05:50,409 --> 00:05:55,757
+Add the three probabilities to bound the chance of any match: at most one quarter.
+
+82
+00:05:55,757 --> 00:05:58,430
+The candidate windows overlap each other.
+
+83
+00:05:58,430 --> 00:06:02,800
+This is a union bound, not an assumption that they are independent.
+
+84
+00:06:03,133 --> 00:06:07,764
+In general, r is twice the quantity k minus one, divided by k factorial.
+
+85
+00:06:07,764 --> 00:06:11,108
+Repeating the necessary condition gives powers of r.
+
+86
+00:06:11,108 --> 00:06:15,096
+One quarter, one sixteenth, one sixty-four: these shrink fast.
+
+87
+00:06:15,096 --> 00:06:19,533
+Adding the geometric series bounds everything beyond a chosen cutoff.
+
+88
+00:06:19,867 --> 00:06:23,757
+Only anchors that remain in the original clump are counted.
+
+89
+00:06:23,757 --> 00:06:28,570
+New occurrences elsewhere in the endless stream do not extend that clump.
+
+90
+00:06:28,570 --> 00:06:34,306
+Combined with the cancellation bound, this gives a rigorous limit on the entire omitted
+
+91
+00:06:34,306 --> 00:06:37,867
+contribution, not just a guess from a long simulation.
+
+92
+00:06:38,267 --> 00:06:40,878
+The proof now separates pattern lengths.
+
+93
+00:06:40,878 --> 00:06:43,880
+Three was already handled by Elizalde and Lin.
+
+94
+00:06:43,880 --> 00:06:49,232
+Lengths four through seven use exact finite calculations with a proven tail bound.
+
+95
+00:06:49,232 --> 00:06:53,867
+Every length at least eight is covered by one uniform written argument.
+
+96
+00:06:54,200 --> 00:07:00,004
+For the infinite range, scale the signed comparison so the initial positive contribution
+
+97
+00:07:00,004 --> 00:07:05,411
+is at least one. Subtract bounds for all adverse short overlaps and the long tail.
+
+98
+00:07:05,411 --> 00:07:11,149
+The remaining guaranteed margin is positive, about zero point zero nine five, for every
+
+99
+00:07:11,149 --> 00:07:12,600
+length at least eight.
+
+100
+00:07:13,000 --> 00:07:18,481
+This margin is a scaled signed comparison, not a universal nine-point-five percent winning
+
+101
+00:07:18,481 --> 00:07:23,901
+advantage. A proved first-occurrence identity turns its positive sign into the conclusion
+
+102
+00:07:23,901 --> 00:07:26,824
+that the rotation wins more than half the races.
+
+103
+00:07:26,824 --> 00:07:30,600
+The conversion factor is positive but depends on the patterns.
+
+104
+00:07:30,933 --> 00:07:36,915
+At the shorter lengths, count all compatible total orders up to a specified span, using
+
+105
+00:07:36,915 --> 00:07:42,827
+integers. Then compare the exact partial sum with a bound on the whole remaining tail.
+
+106
+00:07:42,827 --> 00:07:48,533
+If the positive partial sum is larger, no unseen contribution can reverse its sign.
+
+107
+00:07:48,867 --> 00:07:54,844
+For length four, the scaled partial sum is greater than three quarters, while the absolute
+
+108
+00:07:54,844 --> 00:07:58,695
+tail is at most five twelfths. The gap is safely positive.
+
+109
+00:07:58,695 --> 00:08:01,352
+The other three rows pass the same test.
+
+110
+00:08:01,352 --> 00:08:06,067
+These are exact rational comparisons, not rounded simulation estimates.
+
+111
+00:08:06,467 --> 00:08:11,501
+There are two thousand, nine hundred and fifty-two representatives across lengths four
+
+112
+00:08:11,501 --> 00:08:16,769
+through seven. Reflecting all ranks covers the other half of the patterns without changing
+
+113
+00:08:16,769 --> 00:08:21,862
+the game. Python and C plus plus independently reconstructed every integer coefficient,
+
+114
+00:08:21,862 --> 00:08:23,267
+and their outputs agree.
+
+115
+00:08:23,600 --> 00:08:28,185
+For length three, an extra check counts races through eighteen observations.
+
+116
+00:08:28,185 --> 00:08:33,313
+Give every unresolved race to the original pattern, the worst possible assumption for
+
+117
+00:08:33,313 --> 00:08:38,441
+the rotation. Even then, the original pattern wins with probability below forty-seven
+
+118
+00:08:38,441 --> 00:08:42,000
+percent. This verifies a known case, with no novelty claim.
+
+119
+00:08:42,333 --> 00:08:47,904
+Put the ranges together. For every length at least three, and every starting permutation,
+
+120
+00:08:47,904 --> 00:08:53,288
+moving the last symbol to the front produces a reply with winning probability strictly
+
+121
+00:08:53,288 --> 00:08:58,733
+above one half. The result is specific to the independent continuous observation model.
+
+122
+00:08:59,067 --> 00:09:03,969
+Winning does not mean best. Another reply might have a larger advantage.
+
+123
+00:09:03,969 --> 00:09:09,892
+This work does not find the optimal reply for every pattern or give every exact winning
+
+124
+00:09:09,892 --> 00:09:15,067
+probability. The cluster method itself is prior work, credited in the paper.
+
+125
+00:09:15,467 --> 00:09:20,402
+Remember the mechanism: equal snapshots can have unequal arrival times, overlapping windows
+
+126
+00:09:20,402 --> 00:09:25,012
+create a directional advantage, and cancellation plus tail bounds controls everything
+
+127
+00:09:25,012 --> 00:09:28,321
+the small example leaves out. Correctness confidence is high.
+
+128
+00:09:28,321 --> 00:09:31,467
+Originality confidence is moderate after a bounded search.
+
+129
+00:09:31,800 --> 00:09:36,608
+The paper, exact certificates and independent execution records accompany this video.
+
+130
+00:09:36,608 --> 00:09:39,889
+The argument is computer assisted, not formalised in Lean.
+
+131
+00:09:39,889 --> 00:09:43,000
+Valyu Research, 2026. Narration uses a synthetic voice.

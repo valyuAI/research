@@ -1,0 +1,5 @@
+rep 1/1 F2 100/225 triples 17340 cand 5494 hits 0
+rep 1/1 F2 200/225 triples 24686 cand 7197 hits 0
+q=2 n=4 units=15 proj functionals=15 classes=1 rank-ones=225 quotient dim=12
+F1 representatives: 1
+RESULT q=2 f=1,1,0,0,1 rank<=8: NO (triples 24962, candidate buckets 7322, hits 0)

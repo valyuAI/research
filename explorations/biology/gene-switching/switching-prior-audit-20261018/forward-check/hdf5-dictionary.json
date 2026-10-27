@@ -1,0 +1,766 @@
+{
+  "h5py": "3.16.0",
+  "hdf5": "2.0.0",
+  "files": {
+    "DECONV_hb_MS2_INTRON_Nc14_AP16.mat": [
+      {
+        "path": "OutTr",
+        "type": "Group"
+      },
+      {
+        "path": "OutTr/G",
+        "type": "Dataset",
+        "shape": [
+          217,
+          1
+        ],
+        "dtype": "object"
+      },
+      {
+        "path": "OutTr/Gs",
+        "type": "Dataset",
+        "shape": [
+          217,
+          1
+        ],
+        "dtype": "object"
+      },
+      {
+        "path": "OutTr/I",
+        "type": "Dataset",
+        "shape": [
+          217,
+          1
+        ],
+        "dtype": "object"
+      },
+      {
+        "path": "OutTr/R",
+        "type": "Dataset",
+        "shape": [
+          217,
+          1
+        ],
+        "dtype": "object"
+      },
+      {
+        "path": "OutTr/Rs",
+        "type": "Dataset",
+        "shape": [
+          217,
+          1
+        ],
+        "dtype": "object"
+      },
+      {
+        "path": "OutTr/S",
+        "type": "Dataset",
+        "shape": [
+          217,
+          1
+        ],
+        "dtype": "object"
+      },
+      {
+        "path": "OutTr/Ss",
+        "type": "Dataset",
+        "shape": [
+          217,
+          1
+        ],
+        "dtype": "object"
+      },
+      {
+        "path": "OutTr/int",
+        "type": "Dataset",
+        "shape": [
+          217,
+          1
+        ],
+        "dtype": "object"
+      },
+      {
+        "path": "OutTr/tt",
+        "type": "Dataset",
+        "shape": [
+          217,
+          1
+        ],
+        "dtype": "object"
+      }
+    ],
+    "BPHENO_hb_MS2_INTRON_Nc14_AP16.mat": [
+      {
+        "path": "OutPr",
+        "type": "Group"
+      },
+      {
+        "path": "OutPr/A1",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/A2",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/G1",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/G2",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/Gcorr",
+        "type": "Dataset",
+        "shape": [
+          286,
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/NA1",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/NA2",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/NG1",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/NG2",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/PG",
+        "type": "Dataset",
+        "shape": [
+          286,
+          11
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/PG12",
+        "type": "Dataset",
+        "shape": [
+          286,
+          85
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/PG3",
+        "type": "Dataset",
+        "shape": [
+          286,
+          26
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/PG6",
+        "type": "Dataset",
+        "shape": [
+          286,
+          46
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/PS",
+        "type": "Dataset",
+        "shape": [
+          286,
+          53
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/WF",
+        "type": "Dataset",
+        "shape": [
+          2851,
+          1
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/WG1",
+        "type": "Dataset",
+        "shape": [
+          286,
+          10
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/WG12",
+        "type": "Dataset",
+        "shape": [
+          286,
+          120
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/WG3",
+        "type": "Dataset",
+        "shape": [
+          286,
+          30
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/WG6",
+        "type": "Dataset",
+        "shape": [
+          286,
+          60
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/WR",
+        "type": "Dataset",
+        "shape": [
+          2851,
+          1
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/WT",
+        "type": "Dataset",
+        "shape": [
+          2851,
+          1
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/ZG1",
+        "type": "Dataset",
+        "shape": [
+          286,
+          1
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/ZG12",
+        "type": "Dataset",
+        "shape": [
+          286,
+          1
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/ZG3",
+        "type": "Dataset",
+        "shape": [
+          286,
+          1
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/ZG6",
+        "type": "Dataset",
+        "shape": [
+          286,
+          1
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/ZZ",
+        "type": "Dataset",
+        "shape": [
+          286,
+          1
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/bn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/cb",
+        "type": "Dataset",
+        "shape": [
+          2139,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/cf",
+        "type": "Dataset",
+        "shape": [
+          286,
+          1
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/ct",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/ebn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/ecb",
+        "type": "Dataset",
+        "shape": [
+          2139,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/ecf",
+        "type": "Dataset",
+        "shape": [
+          286,
+          1
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/ect",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/efn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/ekn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/eknb",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/elsr",
+        "type": "Dataset",
+        "shape": [
+          2851,
+          1
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/epn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/ern",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/esbn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/esfn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/eskn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/esknb",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/espn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/esr",
+        "type": "Dataset",
+        "shape": [
+          2851,
+          1
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/esrn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/estn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/etcn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/etn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/ettn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/fn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/kn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/knb",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/lsr",
+        "type": "Dataset",
+        "shape": [
+          2851,
+          1
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/pn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/rn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/sbn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/sfn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/skn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/sknb",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/spn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/sr",
+        "type": "Dataset",
+        "shape": [
+          2851,
+          1
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/srn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/stn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/tcn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/tn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/ttn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/vb",
+        "type": "Dataset",
+        "shape": [
+          2139,
+          1
+        ],
+        "dtype": "float32"
+      },
+      {
+        "path": "OutPr/vt",
+        "type": "Dataset",
+        "shape": [
+          286,
+          1
+        ],
+        "dtype": "float32"
+      },
+      {
+        "path": "OutPr/wb",
+        "type": "Dataset",
+        "shape": [
+          2139,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/wf",
+        "type": "Dataset",
+        "shape": [
+          286,
+          1
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/wt",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "OutPr/zn",
+        "type": "Dataset",
+        "shape": [
+          286,
+          2
+        ],
+        "dtype": "float64"
+      }
+    ]
+  }
+}

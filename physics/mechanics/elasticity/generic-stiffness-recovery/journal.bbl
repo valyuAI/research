@@ -1,0 +1,57 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{1}
+
+\bibitem{aristegui1997}
+Christophe Arist{\'e}gui and St{\'e}phane Baste, \emph{Optimal recovery of the
+  elasticity tensor of general anisotropic materials from ultrasonic velocity
+  data}, The Journal of the Acoustical Society of America \textbf{101} (1997),
+  no.~2, 813--833, \href{https://doi.org/10.1121/1.418040}{Publisher abstract
+  consulted}.
+
+\bibitem{borel1991}
+Armand Borel, \emph{Linear algebraic groups}, 2 ed., Graduate Texts in
+  Mathematics, vol. 126, Springer-Verlag, New York, 1991.
+
+\bibitem{dehoop2025}
+Maarten~V. de~Hoop, Joonas Ilmavirta, Matti Lassas, and Anthony
+  V{\'a}rilly-Alvarado, \emph{Reconstruction of anisotropic stiffness tensors
+  from partial data around one polarization}, 2025,
+  \href{https://arxiv.org/abs/2307.03312v2}{arXiv:2307.03312v2}, revised 30
+  April 2025.
+
+\bibitem{singular}
+Wolfram Decker, Gert-Martin Greuel, Gerhard Pfister, and Hans Sch{\"o}nemann,
+  \emph{{Singular}: A computer algebra system for polynomial computations},
+  \href{https://www.singular.uni-kl.de}{Version 4.4.1p5}.
+
+\bibitem{ditri1994}
+John~J. Ditri, \emph{On the determination of the elastic moduli of anisotropic
+  media from limited acoustical data}, The Journal of the Acoustical Society of
+  America \textbf{95} (1994), no.~4, 1761--1767,
+  \href{https://doi.org/10.1121/1.408695}{Publisher abstract consulted}.
+
+\bibitem{elek2020}
+Bal{\'a}zs Elek, \emph{The {Borel} fixed point theorem and some applications},
+  2020,
+  \href{https://pi.math.cornell.edu/~bazse/borel_fixed_point_theorem.pdf}{Lecture
+  notes}, 10 May 2020.
+
+\bibitem{norris1989}
+Andrew~N. Norris, \emph{On the acoustic determination of the elastic moduli of
+  anisotropic solids and acoustic conditions for the existence of symmetry
+  planes}, The Quarterly Journal of Mechanics and Applied Mathematics
+  \textbf{42} (1989), no.~3, 413--426,
+  \href{https://doi.org/10.1093/qjmam/42.3.413}{Publisher abstract consulted}.
+
+\bibitem{stacks}
+{The Stacks Project Authors}, \emph{The stacks project}, 2026,
+  \href{https://stacks.math.columbia.edu/tag/01WC}{Tag 01WC}, accessed 17
+  October 2026.
+
+\end{thebibliography}

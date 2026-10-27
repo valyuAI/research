@@ -1,0 +1,28 @@
+{
+  "overlap_counts_over_120": {
+    "AA": 0,
+    "AB": 0,
+    "BA": 2,
+    "BB": 1
+  },
+  "recurrence_example": [
+    -1,
+    1,
+    0,
+    0,
+    -1,
+    1
+  ],
+  "interleavings": 6,
+  "first_blue": 3,
+  "uniform_scaled_margin": "218738049/2305503200",
+  "uniform_margin_decimal": 0.09487648900248762,
+  "length_three_worst_original": [
+    1,
+    3,
+    2
+  ],
+  "length_three_worst_bound": "4060535593189/8782405632000",
+  "checks_passed": true,
+  "scope": "Finite teaching examples only; not an independent proof of the universal theorem."
+}

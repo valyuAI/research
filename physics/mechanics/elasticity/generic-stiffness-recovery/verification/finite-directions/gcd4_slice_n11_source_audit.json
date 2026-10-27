@@ -1,0 +1,12 @@
+{
+  "slice_rank_mod_p": 11,
+  "t_unisolvent_points": 286,
+  "p_unisolvent_points": 28,
+  "all_coefficient_identities_verified": true,
+  "pure_powers_in_saved_leading_ideal": {},
+  "sha256": {
+    "gcd4_slice_n11_input.json": "abe4b784a5adecfb3a280ecb6e6239e9270fdd3ed54102bc8727da4a2dd56a72",
+    "gcd4_slice_n11.sing": "060bde924b3b6d80a4ca4b648122c58fc6130aff535becd5ff88913fb1d18a86"
+  },
+  "scope": "Exact tensor-to-cubic assembly on complete unisolvent grids. Ideal membership is checked separately by verify_direct_powers.py."
+}

@@ -1,0 +1,298 @@
+\documentclass[11pt]{amsart}
+\usepackage[a4paper,textwidth=158mm,textheight=237mm,centering]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,mathtools,amssymb,graphicx,flafter,booktabs}
+\usepackage[unicode,colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Prb}{\mathbb P}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Sg}{\mathfrak S}
+\newcommand{\rot}{\operatorname{rot}}
+\title{Right rotation wins Penney's game for permutations}
+\author{Harvey Yorke}
+\address{Valyu AI}
+\ifdefined\journalversion\else
+\author{Valyu DeepResearch}
+\address{Valyu AI}
+\fi
+\ifdefined\journalversion
+  \hypersetup{pdftitle={Right rotation wins Penney's game for permutations},pdfauthor={Harvey Yorke}}
+\else
+  \hypersetup{pdftitle={Right rotation wins Penney's game for permutations},pdfauthor={Harvey Yorke and Valyu DeepResearch}}
+\fi
+\date{25 October 2026}
+\keywords{Consecutive permutation patterns, Penney's game, competing patterns, cluster method, exact computation}
+\newcommand{\paperAuthorBlock}[1]{%
+  \begin{minipage}[t]{.44\textwidth}
+    \centering\normalfont\normalsize #1\par\small Valyu AI\par
+  \end{minipage}%
+}
+\makeatletter
+\renewcommand{\@setauthors}{%
+  \begingroup\trivlist\centering\normalfont\normalsize
+  \@topsep30\p@\relax\advance\@topsep by -\baselineskip\item\relax
+  \ifdefined\journalversion
+    \paperAuthorBlock{Harvey Yorke}%
+  \else
+    \paperAuthorBlock{Harvey Yorke}\hspace{.06\textwidth}\paperAuthorBlock{Valyu DeepResearch}%
+  \fi
+  \endtrivlist\endgroup
+}
+\renewcommand{\@setaddresses}{}
+\makeatother
+\begin{document}
+\raggedbottom
+\begin{abstract}
+Two players choose permutations of the same length, and independent continuous observations are drawn until a consecutive block has one of the chosen relative orders. We prove that moving the last entry of any permutation to the front gives a pattern more likely to appear first. This proves Conjecture~6.1 of Elizalde and Lin. A signed cluster comparison gives a uniform proof for lengths at least eight. A pointwise cancellation recurrence bounds the remaining cluster coefficients by the tail of a clump of overlapping occurrences. Exact linear-extension certificates cover lengths four through seven, with every integer coefficient independently reconstructed by two implementations. The length-three case was previously addressed by Elizalde and Lin; we also give an exact finite-horizon check.
+\end{abstract}
+\maketitle
+
+\section{The winning-strategy conjecture}
+
+For a list of distinct real numbers, its \emph{standardization} replaces its smallest entry by $1$, its next smallest by $2$, and so on. For example, the standardization of $(0.2,0.4,0.6,0.1)$ is $2341$. Let $X_0,X_1,\ldots$ be independent observations with a common atomless distribution. A permutation $a\in\Sg_k$ occurs at start $t$ if the standardization of $(X_t,\ldots,X_{t+k-1})$ is $a$. Write $T_a$ for its first start.
+
+Elizalde and Lin~\cite{ElizaldeLin2026} introduce the permutation analogue of Penney's game and conjecture that the right rotation always gives a winning reply. They compute the length-three probabilities and report numerical evidence at lengths four and five. We prove the conjecture in full.
+
+\begin{theorem}\label{thm:main}
+For every $k\ge3$ and every $a=a_1\cdots a_k\in\Sg_k$, put
+\[
+ b=\rot(a)=a_ka_1\cdots a_{k-1}.
+\]
+Then $\Prb(T_b<T_a)>1/2$.
+\end{theorem}
+
+The observation distribution does not affect the game: each finite relative order is uniform. The theorem concerns an independent sequence of observations, rather than a Markov chain that chooses each new rank uniformly conditional only on the last permutation. It supplies a winning reply, without asserting that the reply maximizes the winning probability.
+
+The advantage begins with a short overlap. For $a=2341$ and $b=1234$, the event that $b$ occurs at $0$ and $a$ at $1$ admits two relative orders on five observations. Two consecutive occurrences of $b$ admit one. The other two one-step pairs are impossible. Among the $5!=120$ equally likely orders this leaves a signed advantage of $1/120$. The proof controls every longer overlap rather than extrapolating from this example.
+
+\section{Signed clusters and first occurrences}
+
+Fix $k\ge3$ and $a,b$ as in Theorem~\ref{thm:main}. We give the generating-function argument explicitly. It is an application of the cluster method for consecutive patterns; see Elizalde and Noy~\cite{ElizaldeNoy2012} for the underlying enumeration by linear extensions.
+
+A \emph{marked cluster} has a marked occurrence at start $0$, a marked occurrence at start $s$, and increasing marked starts between them, with every successive gap strictly smaller than $k$. Each mark has type $a$ or $b$. Its length is $k+s$. Give a cluster with $m$ marks sign $(-1)^m$. For $i\in\{a,b\}$, let
+\[
+ C_i(z)=\sum_{s\ge0} c_i(s)\frac{z^{k+s}}{(k+s)!}
+\]
+be its signed counting series when the final mark has type $i$. Here $c_i(s)$ is an integer: the signed sum of the numbers of relative orders satisfying the marked occurrences. Put $C=C_a+C_b$.
+
+Let $p_n$ be the probability that neither pattern occurs in the first $n$ observations, and let $f_i(n)$ be the probability that the first occurrence of either pattern ends at observation $n-1$ and has type $i$. Define
+\[
+ P(z)=\sum_{n\ge0}p_nz^n,\qquad
+ F_i(z)=\sum_{n\ge0} f_i(n)z^n.
+\]
+Thus the series use normalized permutation counts.
+
+\begin{lemma}\label{lem:series}
+As formal power series,
+\begin{equation}\label{eq:series}
+ P(z)(1-z-C(z))=1,\qquad F_i(z)=-P(z)C_i(z).
+\end{equation}
+If the coefficient series $C_a,C_b$ are absolutely summable at $z=1$, then
+\begin{equation}\label{eq:race}
+ C(1)=-1/P(1)<0,\qquad \Prb(T_i<T_j)=\frac{C_i(1)}{C(1)}.
+\end{equation}
+In particular, it suffices to prove $D=C_a(1)-C_b(1)>0$.
+\end{lemma}
+
+\begin{proof}
+Mark any subset of the actual occurrences in a finite permutation, with one negative sign per mark. Inclusion-exclusion retains precisely the permutations avoiding both patterns. Every marked permutation splits uniquely into unmarked singleton positions and maximal clusters of overlapping marks. Relative orders in disjoint coordinate blocks are independent, so normalized counting series multiply. The series for a sequence of these components is $(1-z-C)^{-1}$.
+
+For the second identity, force a marked occurrence of type $i$ at the end and mark any subset of earlier occurrences, keeping one negative sign per mark. For a fixed permutation this signed sum is $-1$ if the end occurrence is the only occurrence, and zero if any earlier occurrence exists. Its series is therefore $-F_i$. Decomposing the marks gives an arbitrary marked prefix and the ordinary terminal cluster of type $i$, whose series is $PC_i$. Thus $-F_i=PC_i$ coefficient by coefficient.
+
+Set $h=2/k!$. Testing disjoint length-$k$ windows gives
+\[
+ p_n\le(1-h)^{\lfloor n/k\rfloor},\qquad P(1)\le k/h<\infty.
+\]
+It also proves almost sure termination. Absolute summability now permits evaluation of the formal identities at $1$. Since $P(1)>0$, the sign in~\eqref{eq:race} is negative. Finally,
+\[
+ \Prb(T_b<T_a)-\frac12=\frac{D}{2(-C(1))}.
+\]
+\end{proof}
+
+\section{Cancellation and a rigorous tail bound}
+
+\begin{lemma}\label{lem:cancel}
+Fix an observation sequence with an occurrence at $0$, and list its actual occurrence starts $0=t_0<t_1<\cdots$. The total signed weight of marked subsets rooted at $0$ and ending at $t_j$ is
+\begin{equation}\label{eq:cancel}
+ u_0=-1,\qquad u_j=-\sum_{\substack{i<j\\t_j-t_i<k}}u_i.
+\end{equation}
+Every $u_j$ belongs to $\{-1,0,1\}$. Its nonzero terms alternate signs, and successive nonzero terms of the same sign have starts at least $k$ apart. In particular, any $k$ consecutive possible start positions contain at most two nonzero terms.
+\end{lemma}
+
+\begin{proof}
+A cluster ending at $t_j$ has a unique preceding marked occurrence with gap smaller than $k$, proving the recurrence. Write $U_j=\sum_{i\le j}u_i$ and $U_{-1}=0$. If $\ell$ is the first earlier index with $t_j-t_\ell<k$, the recurrence gives $U_j=U_{\ell-1}$. If there is no such earlier index, the same identity reads $U_j=U_{j-1}$. Since $U_0=-1$, induction gives $U_j\in\{0,-1\}$, so $u_j\in\{-1,0,1\}$ and nonzero terms alternate.
+
+For the separation assertion, induct on the nonzero terms. By the induction hypothesis a preceding interval of $k$ start positions contains at most two earlier nonzero terms. If two are present they have opposite signs and sum to zero. A new nonzero term therefore requires exactly one earlier nonzero term in its preceding window and has its opposite sign. The previous term of the new sign cannot also be in that window, proving separation. A gap of at least $k$ between actual occurrence starts makes every subsequent $u_j$ zero.
+\end{proof}
+
+A \emph{clump} is a maximal chain of actual occurrences with successive start gaps smaller than $k$. Lemma~\ref{lem:cancel} concerns cancellation of all marked subsets at each fixed span. We do not need absolute convergence of the contributions of individual marked clusters.
+
+\begin{lemma}\label{lem:tail}
+Put $r=2(k-1)/k!<1$, and define $\gamma_i(s)=c_i(s)/(k+s)!$. Then
+\begin{equation}\label{eq:coarsetail}
+ \sum_{s\ge k}\bigl(|\gamma_a(s)|+|\gamma_b(s)|\bigr)
+ \le \frac{2}{k!}\frac{kr}{1-r}.
+\end{equation}
+More generally, if $q\in\mathbb Z_{\ge0}$ and $S\ge q(2k-2)+k-1$, then
+\begin{equation}\label{eq:finetail}
+ \sum_{s>S}\bigl(|\gamma_a(s)|+|\gamma_b(s)|\bigr)
+ \le \frac{4}{k!}\frac{r^{q+1}}{1-r}.
+\end{equation}
+The coefficient series $C_a,C_b$ are absolutely summable at $1$.
+\end{lemma}
+
+\begin{proof}
+Write $\mathcal F_n=\sigma(X_0,\ldots,X_n)$. Let $H\in\mathcal F_{k-1}$ be the event of a root occurrence at $0$, of probability $h=2/k!$. Conditional on $H$, define global anchors
+\[
+ A_0=0,\qquad A_{j+1}=\min\{t\ge A_j+k:\text{an occurrence starts at }t\}.
+\]
+Their ending times $\tau_j=A_j+k-1$ are stopping times for the observations revealed through time $n$. Conditional on the history through $\tau_j$, all later observations are fresh. The event
+\[
+ E_j=\{A_{j+1}\le A_j+2k-2\}
+\]
+has $k-1$ possible starts, each using only fresh observations. A conditional union bound gives $\Prb(E_j\mid\mathcal F_{\tau_j})\le r$. The events $E_0,\ldots,E_{j-1}$ and $H$ are measurable through $\tau_j$. Applying the tower property to $\Prb(H\cap E_0\cap\cdots\cap E_{m-1})$ yields
+\[
+ \Prb(E_0\cap\cdots\cap E_{m-1}\mid H)\le r^m.
+\]
+
+Only anchors in the root clump are counted. If $A_{j+1}$ lies in that clump, the actual occurrence immediately preceding it starts at most at $A_j+k-1$, by the definition of the next anchor. Clump connectivity therefore requires $E_j$. If $M$ is the number of later anchors in the root clump, then
+\[
+ \Prb(M\ge m\mid H)\le r^m,\qquad \E[M\mid H]\le r/(1-r).
+\]
+The global sequence of anchors is almost surely infinite; this finite bound concerns its initial portion in the root clump.
+
+Every occurrence of this clump belongs to one of the groups $[A_j,A_j+k-1]$, with no occurrence starts in the gaps between groups. Each group contains at most $k$ starts. The root group ends at $k-1$. Applying $|u_j|\le1$, taking expectations and using the triangle inequality proves~\eqref{eq:coarsetail}.
+
+For the finer bound, each group contains at most two nonzero coefficients by Lemma~\ref{lem:cancel}. On root-clump survival, $A_j\le j(2k-2)$. All groups with indices at most $q$ thus end by $S$. The expected number of remaining groups is at most $\sum_{j\ge q+1}r^j$. Multiplication by $2h$ proves~\eqref{eq:finetail}. The finite initial spans and either tail bound imply absolute summability.
+\end{proof}
+
+\section{The advantage of the one-step overlap}
+
+\begin{lemma}\label{lem:half}
+Consider two length-$k$ permutation occurrences with start gap $s<k$. If the orders they impose on common positions disagree, their joint probability is zero. Otherwise their number of compatible relative orders is
+\begin{equation}\label{eq:extensions}
+ L=\prod_j\binom{x_j+y_j}{x_j},\qquad \sum_jx_j=\sum_jy_j=s,
+\end{equation}
+where $x_j,y_j$ count their private positions in each gap of the common ordered positions. Always $L\le\binom{2s}{s}$. If the sets of private ranks in the two patterns differ, then $L\le\frac12\binom{2s}{s}$.
+\end{lemma}
+
+\begin{proof}
+In each gap the private positions form two chains, which can be interleaved independently, proving~\eqref{eq:extensions}. Deleting common positions encodes each extension by a word with $s$ letters of each of two types. At a gap boundary its prefix has prescribed counts $X_j=\sum_{h\le j}x_h$ and $Y_j=\sum_{h\le j}y_h$. The private rank set determines the gap-count vector. If those sets differ, some boundary has $X_j\ne Y_j$. Complementing the two letter types sends every admissible word to a word with a different prescribed count at that boundary. It therefore embeds the admissible words in a disjoint set of the same size among the $\binom{2s}{s}$ balanced words.
+\end{proof}
+
+For $0<s<k$, every subset of intermediate marks has connected gaps. Inclusion-exclusion consequently gives the useful nonnegative interpretation
+\begin{equation}\label{eq:shortspan}
+ \gamma_i(s)=\Prb(\text{an occurrence at }0,\ \text{type }i\text{ at }s,
+       \ \text{no occurrence at }1,\ldots,s-1).
+\end{equation}
+The span-zero coefficients $\gamma_a(0)=\gamma_b(0)=-1/k!$ cancel in $D$.
+
+\begin{lemma}\label{lem:one}
+For every $k\ge3$, $\gamma_a(1)-\gamma_b(1)\ge1/(k+1)!$.
+\end{lemma}
+
+\begin{proof}
+The overlap $b\to a$ has common ranks $a_1,\ldots,a_{k-1}$. Its two private positions both have rank $a_k$, so there are exactly two extensions. A shift-one self-overlap forces all adjacent comparisons to have the same sign, and hence exists only for a monotone pattern; it then has one extension. For $a\to b$, the private ranks $a_1$ and $a_{k-1}$ differ, so Lemma~\ref{lem:half} bounds its extension count by one. If $b$ is monotone, $a\to b$ is incompatible: for increasing $b$, the suffix of $a=23\cdots k1$ contains a descent, while the prefix of $b$ is increasing; the decreasing case follows by complementation. Thus the two negative contributions $a\to b$ and $b\to b$ have sum at most one. The positive contribution $b\to a$ alone is two. Division by $(k+1)!$ proves the claim.
+\end{proof}
+
+\section{A uniform proof for every length at least eight}
+
+For $b\to b$ at shift $s<k$, the private rank sets are the ranks in its first $s$ and last $s$ positions. They differ. For $a\to b$, they are the ranks in positions $1,\ldots,s$ and $k-s,\ldots,k-1$ of $a$. These sets differ for $s\le k-2$. By~\eqref{eq:shortspan} and Lemma~\ref{lem:half},
+\[
+ \gamma_b(s)\le \frac{\binom{2s}{s}}{(k+s)!}\quad(2\le s\le k-2),\qquad
+ \gamma_b(k-1)\le\frac{3\binom{2k-2}{k-1}}{2(2k-1)!}.
+\]
+Discard the other nonnegative short-span contributions to $C_a$ and apply~\eqref{eq:coarsetail}. Lemma~\ref{lem:one} gives
+\begin{equation}\label{eq:uniform}
+ (k+1)!D\ge 1-L_k-R_k,
+\end{equation}
+where
+\begin{align*}
+ B_{k,s}&=\binom{2s}{s}\frac{(k+1)!}{(k+s)!},\\
+ L_k&=\sum_{s=2}^{k-2}B_{k,s}+\tfrac32 B_{k,k-1},\\
+ R_k&=\frac{4k(k-1)(k+1)}{k!-2(k-1)}.
+\end{align*}
+
+For fixed $s\ge2$, $B_{k+1,s}/B_{k,s}=(k+2)/(k+s+1)<1$. The exceptional diagonal terms also decrease, since
+\[
+ \frac{B_{k+1,k}}{B_{k,k-1}}=
+ \frac{(k+2)(2k-1)}{k^2(2k+1)}<1\qquad(k\ge8).
+\]
+It follows that
+\[
+ L_k\le\sum_{s\ge2}B_{8,s}+\tfrac12B_{8,7}.
+\]
+For $s\ge7$,
+\[
+ \frac{B_{8,s+1}}{B_{8,s}}=
+ \frac{2(2s+1)}{(s+1)(s+9)}<\frac14.
+\]
+Therefore $L_k\le L_8+\frac43B_{8,8}=L_8+1/3360$.
+Writing $d_k=k!-2(k-1)$ gives
+$d_{k+1}>(k+1)d_k$ for $k\ge8$. Thus
+\[
+ R_{k+1}/R_k<\frac{k+2}{(k-1)(k+1)}<1.
+\]
+The remaining comparison is exact rational arithmetic:
+\[
+ L_8=\frac{256699}{300300},\quad R_8=\frac{144}{2879},\quad
+ 1-L_8-R_8-\frac1{3360}
+ =\frac{218738049}{2305503200}>0.
+\]
+Equation~\eqref{eq:uniform} proves $D>0$ for every $k\ge8$.
+
+\section{Exact certificates for the remaining lengths}
+
+For $k=4,5,6,7$ we enumerate signed clusters through a span cutoff $S$, compute
+\[
+ D_S=\sum_{s=0}^{S}\frac{c_a(s)-c_b(s)}{(k+s)!},
+\]
+and compare it with the tail in~\eqref{eq:finetail}. We use
+$q=\lfloor(S-k+1)/(2k-2)\rfloor$. The certificate verifies the strict comparisons in Table~\ref{tab:finite}. Complementing every value commutes with rotation and preserves the game, so one representative from each complement pair suffices.
+
+\begin{table}[ht]
+\centering
+\caption{Exact finite certificates. The fourth column is a strict lower bound on the minimum over all representatives. The final column is the scaled absolute tail bound $(k+1)!\frac{4}{k!}\frac{r^{q+1}}{1-r}$.}\label{tab:finite}
+\begin{tabular}{rrrrr}
+\toprule
+$k$ & $S$ & Representatives & $(k+1)!D_S$ & Scaled tail\\
+\midrule
+4 & 15 & 12   & $>3/4$   & $5/12$\\
+5 & 12 & 60   & $>9/10$  & $4/35$\\
+6 & 5  & 360  & $>49/50$ & $28/71$\\
+7 & 6  & 2520 & $>99/100$ & $32/419$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Each marked occurrence imposes a total order on its positions. Every extension step tries both pattern types and every next start gap $1,\ldots,k-1$ that fits the cutoff. Inconsistent orders contribute zero. Compatible marked sequences contribute the number of linear extensions of their combined order, with sign $(-1)^m$. Merging identical orders adds their signed multiplicities and does not change the count. This exhausts every marked cluster exactly once before merging.
+
+The saved certificates contain every integer $c_i(s)$. A standard-library Python implementation maintains transitive predecessor sets and counts extensions by removing minimal elements. An independent C++ implementation reconstructs successor relations by full transitive closure and counts by removing maximal elements. They agree on every coefficient for all $2952$ complement representatives. The largest order has $19$ positions. Exact rational checks establish Table~\ref{tab:finite}; floating-point estimates play no role.
+
+For an additional check on the generating-function signs, direct enumeration of every permutation through length nine for $a=2341,b=1234$ agrees with the first-hit counts reconstructed from~\eqref{eq:series}. At length nine those counts are $7383$ and $9479$. This control does not replace the exhaustive certificates or the general tail proof.
+
+Elizalde and Lin~\cite{ElizaldeLin2026}, Section~4, supply exact recurrences for the known $k=3$ case. We additionally provide an independent finite-horizon certificate, so the strict comparison does not rely on their rounded table. For each of the three complement representatives $123,132,213$, count permutations of length $H=18$ in which $a$ wins by the horizon, $b$ wins, or neither has appeared. Write these counts as $W_a,W_b,R$. Even if every unresolved case eventually favors $a$,
+\[
+ \Prb(T_a<T_b)\le\frac{W_a+R}{18!}.
+\]
+The exact maximum over the three representatives is
+\[
+ \frac{2960130447434781}{6402373705728000}<\frac{47}{100}<\frac12.
+\]
+
+Two integer recurrences reconstruct these horizon counts. The first builds an avoiding prefix by appending a new observation at each of its $n+1$ possible ranks among all observations seen so far. Its state retains the global ranks of the last two positions. Appending a rank uniquely extends a permutation of length $n$ to one of length $n+1$. The first occurrence is classified when it is created; earlier winners receive $n+1$ extensions. The second recurrence counts first hits ending at a fixed length by deleting the first position instead. Its state retains the first two ranks of the full permutation; the removed rank determines the corresponding suffix ranks, and the initial triple must avoid both patterns. At length three its initial state is the single desired terminal pattern. Summing its first-hit counts with the exact number $H!/n!$ of extensions gives the horizon counts. Both recurrences agree at every length through $18$, including the unresolved mass. Their states retain ranks among all observations, rather than only relative ranks within a moving window.
+
+This supplementary check makes no novelty claim for length three. Together with Table~\ref{tab:finite}, the uniform argument for $k\ge8$, and Lemma~\ref{lem:series}, it completes the proof of Theorem~\ref{thm:main}.
+
+\section{Scope and reproducibility}
+
+The theorem settles the right-rotation winning-strategy conjecture in the independent continuous model. It does not identify the best reply or give closed formulas for every pair of patterns. The new infinite-range argument is written mathematics; the short lengths use exact computation. The proof is not formalized in a proof assistant.
+
+The accompanying verification directory provides both enumerators, all coefficient certificates, exact tail and arithmetic checks, and the small direct-enumeration control. The build script replays the independent reconstruction and builds this paper. A separate command replays the Python enumeration. Priority searches and adversarial-review records are listed in the accompanying README, with correctness and originality assessed separately.
+
+\bibliographystyle{amsplain}
+\bibliography{references}
+\end{document}

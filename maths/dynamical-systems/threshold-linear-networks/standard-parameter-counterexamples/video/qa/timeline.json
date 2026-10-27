@@ -1,0 +1,218 @@
+[
+  {
+    "id": "c01",
+    "start": 0.0,
+    "duration": 15.264,
+    "scene": "Rates"
+  },
+  {
+    "id": "c02",
+    "start": 15.63333333333331,
+    "duration": 15.768,
+    "scene": "Rates"
+  },
+  {
+    "id": "c03",
+    "start": 31.80000000000026,
+    "duration": 12.864,
+    "scene": "Rates"
+  },
+  {
+    "id": "c04",
+    "start": 45.03333333333327,
+    "duration": 16.104,
+    "scene": "Rates"
+  },
+  {
+    "id": "c05",
+    "start": 61.533333,
+    "duration": 13.656,
+    "scene": "Balance"
+  },
+  {
+    "id": "c06",
+    "start": 75.56666633333333,
+    "duration": 11.016,
+    "scene": "Balance"
+  },
+  {
+    "id": "c07",
+    "start": 86.96666633333354,
+    "duration": 14.448,
+    "scene": "Balance"
+  },
+  {
+    "id": "c08",
+    "start": 101.79999966666705,
+    "duration": 15.12,
+    "scene": "Balance"
+  },
+  {
+    "id": "c09",
+    "start": 117.3,
+    "duration": 11.664,
+    "scene": "Prediction"
+  },
+  {
+    "id": "c10",
+    "start": 129.33333333333331,
+    "duration": 13.656,
+    "scene": "Prediction"
+  },
+  {
+    "id": "c11",
+    "start": 143.3666666666668,
+    "duration": 14.16,
+    "scene": "Prediction"
+  },
+  {
+    "id": "c12",
+    "start": 157.90000000000032,
+    "duration": 14.4,
+    "scene": "Prediction"
+  },
+  {
+    "id": "c13",
+    "start": 172.7,
+    "duration": 14.448,
+    "scene": "Witness"
+  },
+  {
+    "id": "c14",
+    "start": 187.5333333333333,
+    "duration": 14.568,
+    "scene": "Witness"
+  },
+  {
+    "id": "c15",
+    "start": 202.50000000000023,
+    "duration": 17.208,
+    "scene": "Witness"
+  },
+  {
+    "id": "c16",
+    "start": 220.10000000000022,
+    "duration": 15.36,
+    "scene": "Witness"
+  },
+  {
+    "id": "c17",
+    "start": 235.83333299999998,
+    "duration": 15.36,
+    "scene": "Matrix"
+  },
+  {
+    "id": "c18",
+    "start": 251.5666663333333,
+    "duration": 14.4,
+    "scene": "Matrix"
+  },
+  {
+    "id": "c19",
+    "start": 266.3333330000003,
+    "duration": 17.616,
+    "scene": "Matrix"
+  },
+  {
+    "id": "c20",
+    "start": 284.33333300000004,
+    "duration": 13.8,
+    "scene": "Matrix"
+  },
+  {
+    "id": "c21",
+    "start": 298.53333299999997,
+    "duration": 14.568,
+    "scene": "Stability"
+  },
+  {
+    "id": "c22",
+    "start": 313.4999996666666,
+    "duration": 15.048,
+    "scene": "Stability"
+  },
+  {
+    "id": "c23",
+    "start": 328.9333330000004,
+    "duration": 15.816,
+    "scene": "Stability"
+  },
+  {
+    "id": "c24",
+    "start": 345.1333330000003,
+    "duration": 17.904,
+    "scene": "Stability"
+  },
+  {
+    "id": "c25",
+    "start": 363.43333299999995,
+    "duration": 16.008,
+    "scene": "Nondegenerate"
+  },
+  {
+    "id": "c26",
+    "start": 379.8333329999999,
+    "duration": 13.104,
+    "scene": "Nondegenerate"
+  },
+  {
+    "id": "c27",
+    "start": 393.3333330000002,
+    "duration": 17.712,
+    "scene": "Nondegenerate"
+  },
+  {
+    "id": "c28",
+    "start": 411.4333330000001,
+    "duration": 14.712,
+    "scene": "Nondegenerate"
+  },
+  {
+    "id": "c29",
+    "start": 426.53333299999997,
+    "duration": 16.8,
+    "scene": "Size"
+  },
+  {
+    "id": "c30",
+    "start": 443.73333299999996,
+    "duration": 20.856,
+    "scene": "Size"
+  },
+  {
+    "id": "c31",
+    "start": 464.9666663333337,
+    "duration": 16.8,
+    "scene": "Size"
+  },
+  {
+    "id": "c32",
+    "start": 482.16666633333335,
+    "duration": 14.448,
+    "scene": "Size"
+  },
+  {
+    "id": "c33",
+    "start": 497.0,
+    "duration": 16.008,
+    "scene": "Credit"
+  },
+  {
+    "id": "c34",
+    "start": 513.4,
+    "duration": 17.352,
+    "scene": "Credit"
+  },
+  {
+    "id": "c35",
+    "start": 531.1333333333337,
+    "duration": 18.768,
+    "scene": "Credit"
+  },
+  {
+    "id": "c36",
+    "start": 550.3000000000001,
+    "duration": 15.768,
+    "scene": "Credit"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "negativeControls": [
+    {
+      "control": "zero reaction rate",
+      "rejected": true,
+      "reason": "rate constants must be positive"
+    },
+    {
+      "control": "trimolecular complex",
+      "rejected": true,
+      "reason": ""
+    },
+    {
+      "control": "nonhyperbolic polynomial",
+      "rejected": true,
+      "reason": "neither a strict Hurwitz certificate nor a positive-root certificate"
+    },
+    {
+      "control": "positive-coefficient unstable cubic",
+      "rejected": true,
+      "reason": "neither a strict Hurwitz certificate nor a positive-root certificate"
+    }
+  ],
+  "positiveControls": [
+    "triple root -1 is stable",
+    "roots -1,-1,+1 certify instability"
+  ]
+}

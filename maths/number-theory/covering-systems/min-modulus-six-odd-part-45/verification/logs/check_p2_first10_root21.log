@@ -1,0 +1,4 @@
+selftest: structured cover == exhaustive cover on 300 random instances
+[974s] root 21 (9:0 15:0 45:21) nodes 200024 total 200024 survivors 1560
+DONE roots 21..21: nodes 200024 survivors 1560
+survivor lines: 1560

@@ -1,0 +1,84 @@
+Built degree 6 slowness coefficients: 28
+Built degree 4 slowness coefficients: 15
+Built degree 2 slowness coefficients: 6
+harmonic_degree4: rank=6
+harmonic_degree2_times_norm: rank=11
+norm_squared: rank=15
+{
+  "field": "Q(i), embedded in C",
+  "tracefree_contraction_determinant": "4194304",
+  "raising_operator_rank": 12,
+  "raising_operator_kernel_dimension": 3,
+  "distinct_torus_weights": [
+    4,
+    2,
+    0
+  ],
+  "highest_weight_line_checks": [
+    {
+      "name": "harmonic_degree4",
+      "H_coordinates": [
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-I",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1"
+      ],
+      "incidence_rank": 6
+    },
+    {
+      "name": "harmonic_degree2_times_norm",
+      "H_coordinates": [
+        "0",
+        "5/2",
+        "0",
+        "-5/2",
+        "0",
+        "I/2",
+        "0",
+        "0",
+        "5*I/2",
+        "1",
+        "-I",
+        "0",
+        "-1",
+        "0",
+        "0"
+      ],
+      "incidence_rank": 11
+    },
+    {
+      "name": "norm_squared",
+      "H_coordinates": [
+        "2",
+        "2",
+        "0",
+        "2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1/2",
+        "0",
+        "0",
+        "-1/2",
+        "0",
+        "-1/2"
+      ],
+      "incidence_rank": 15
+    }
+  ],
+  "minimum_rank_lower_bound_using_Borel_fixed_point_theorem": 6,
+  "scope": "Exact algebraic ingredients. Requires the stated SO3 equivariance and Borel fixed-point theorem; not a full injectivity proof."
+}

@@ -1,0 +1,149 @@
+{
+  "voice": "cedar",
+  "clips": [
+    {
+      "id": "r1",
+      "text": "Can you change this square without stretching any of its four sides? Push one corner sideways, and you get a diamond shape. The sides stay the same length. The angles change."
+    },
+    {
+      "id": "r2",
+      "text": "Now try the same idea with a solid. These bars keep their lengths, and every face must stay perfectly flat. But a flat face can change shape. It is not a rigid plate."
+    },
+    {
+      "id": "r3",
+      "text": "Watch the top of this cube move sideways and slightly down. The upright bars tilt instead of stretching. Every face remains flat, so this is an allowed change of shape, called a flex."
+    },
+    {
+      "id": "r4",
+      "text": "Which solids can do this, and which are locked? We will explore a family of ninety two shapes called Johnson solids. The answer is forty seven locally rigid and forty five flexible. Here is why that is subtle."
+    },
+    {
+      "id": "c1",
+      "text": "Meet our running example, the triangular cupola, also called J three. It has a triangle on top, a hexagon underneath, and a ring of three squares and three triangles. All fifteen edges have length one."
+    },
+    {
+      "id": "c2",
+      "text": "Those triangles look like braces. Before we move anything, pause and predict: will this shape lock, or wobble? Remember that the hexagon and squares must stay flat, but their angles are allowed to change."
+    },
+    {
+      "id": "c3",
+      "text": "It wobbles. This animation uses the actual construction checked in the research. Every bar keeps its length. The squares become rhombuses, and the hexagon changes its angles while staying in a single plane."
+    },
+    {
+      "id": "c4",
+      "text": "The yellow line joins two corners that are not connected by an edge. Its length changes. That proves we are changing the shape itself, rather than just turning the entire object in space."
+    },
+    {
+      "id": "a1",
+      "text": "The trick is to build each corner by adding two positions. Start at the origin, follow one blue arrow, then one yellow arrow. The endpoint is their sum. This is ordinary coordinate addition, drawn as a journey."
+    },
+    {
+      "id": "a2",
+      "text": "For this cupola, the blue positions form a triangle. The yellow positions form a tetrahedron, a solid with four triangular faces. The outer corners of their sum make our cupola. The colours track which component supplies each edge."
+    },
+    {
+      "id": "a3",
+      "text": "Keep the blue triangle fixed. Turn the yellow tetrahedron a little around this vertical axis. Then add the positions again. We have a recipe for every corner, at every small angle, rather than a collection of guessed frames."
+    },
+    {
+      "id": "a4",
+      "text": "A blue edge comes entirely from the unchanged triangle. A yellow edge comes entirely from the rotating tetrahedron. Turning a rigid object does not change its edge lengths. That explains why every bar survives the motion."
+    },
+    {
+      "id": "f1",
+      "text": "But unchanged edges are only half the rules. Look straight down at the hexagon. Its sides alternate blue and yellow. Each colour supplies a closed triangle of edge directions, so turning one colour still leaves a closed six-sided path."
+    },
+    {
+      "id": "f2",
+      "text": "The turn happens inside this plane, so the hexagon stays flat. At a five degree turn, its angles alternate between one hundred and fifteen and one hundred and twenty five degrees. Its six sides still have length one."
+    },
+    {
+      "id": "f3",
+      "text": "Each square combines one direction from each component. Two directions span a plane, so its four corners remain a flat parallelogram. The triangular faces stay triangles. The certificate checks these requirements and confirms the motion is nontrivial."
+    },
+    {
+      "id": "p1",
+      "text": "Compare a square pyramid, J one. It has four unit bars around the base and four unit bars rising to the tip. Could its base do the same square-to-rhombus trick? Let us try the necessary geometry first."
+    },
+    {
+      "id": "p2",
+      "text": "The tip must be equally far from all four base corners. Its shadow on the base must therefore be equally far from them too. For a rhombus, that would put the shadow at the crossing of the diagonals."
+    },
+    {
+      "id": "p3",
+      "text": "Call the half-diagonal lengths a and b, and the height h. Pythagoras gives a squared plus h squared equals one, and b squared plus h squared equals one. Subtract: a squared must equal b squared."
+    },
+    {
+      "id": "p4",
+      "text": "So the two diagonals must have equal length. A rhombus with equal diagonals is a square. The attempted squash fails. This is a small example of rigidity, already covered by earlier work, rather than a new discovery here."
+    },
+    {
+      "id": "v1",
+      "text": "For complicated solids, we start with a simpler question. Give every corner a tiny velocity arrow. Which arrows avoid changing any edge length or face flatness at the very first instant? This is the first-order test."
+    },
+    {
+      "id": "v2",
+      "text": "For one horizontal bar, pulling an end along the bar immediately changes its length. Moving that end straight sideways has zero initial rate of length change. The test notices the linear part of a change, before squared terms matter."
+    },
+    {
+      "id": "v3",
+      "text": "All these first-instant rules become simultaneous linear equations. Sliding or turning the whole solid always works. In three dimensions, three slides and three turns give six ordinary motions. We remove those because they do not change the shape."
+    },
+    {
+      "id": "v4",
+      "text": "For forty one Johnson solids, no other velocity survives. That proves local rigidity. But an extra velocity arrow does not yet prove a real wobble. An apparent escape can disappear when you look at the next order."
+    },
+    {
+      "id": "s1",
+      "text": "Here is a simpler model of that trap. Two unit bars lie in a straight line between fixed endpoints, two units apart. The middle joint seems free to move upwards at the first instant. Try to give it a height h."
+    },
+    {
+      "id": "s2",
+      "text": "By Pythagoras, each bar would then have squared length one plus h squared. Keeping its length one requires h squared to equal zero. So the joint cannot actually rise. The red drawing is a rejected attempt, not an allowed flex."
+    },
+    {
+      "id": "s3",
+      "text": "The six exceptional Johnson solids have this kind of first-order false hope, although their equations are more complicated. Exact second-order certificates rule out every nonzero candidate direction. The only real solution left is no change of shape."
+    },
+    {
+      "id": "s4",
+      "text": "Those six are J fifty eight, fifty nine, sixty, eighty one, eighty two and eighty three. For J sixty and J eighty two, one suitable stress pattern blocks all candidate directions. The other four are rigid without that stronger property."
+    },
+    {
+      "id": "n1",
+      "text": "Now put all ninety two solids on one board. They begin with regular polygon faces and are convex, with no inward dents. The Johnson family excludes the familiar Platonic and Archimedean solids, and the prisms and antiprisms."
+    },
+    {
+      "id": "n2",
+      "text": "Forty one are rigid by the first-order test. Forty five have actual continuous flexes. Thirty eight use a certified rotation of a component; seven use an augmented prism construction. The remaining six are locked by second-order obstructions."
+    },
+    {
+      "id": "n3",
+      "text": "So forty one plus six gives forty seven locally rigid solids, alongside forty five flexible ones. Notice the distinction: fifty one have extra first-order directions, but only forty five really flex. A tangent direction is not a motion family."
+    },
+    {
+      "id": "e1",
+      "text": "This is not a computer shaking shapes until something happens. Coordinates and certificates use exact algebraic numbers, including square roots. The first-order results are checked in two different formulations, using modular arithmetic and rigorously bounded intervals."
+    },
+    {
+      "id": "e2",
+      "text": "For the flexible shapes, the evidence is a formula for an actual motion, together with checks of lengths, flatness and a changing distance. For the six locked shapes, exact algebra rules out the candidate directions. Written arguments connect those checks to rigidity."
+    },
+    {
+      "id": "e3",
+      "text": "The research package reports a successful seventeen-stage replay. That is strong computational evidence with explicit assumptions, not a proof assistant formalisation or external peer review. This video checks its displayed cupola motion against the stored certificate; a separate coordinator audit remains separate."
+    },
+    {
+      "id": "z1",
+      "text": "Keep three ideas. Flat does not mean rigid. A recipe preserving every constraint proves a genuine flex. And a first-instant permission can still be blocked at second order. Together, those ideas explain the three colours in the table."
+    },
+    {
+      "id": "z2",
+      "text": "Locally rigid means no small wobble from the starting shape. We are not claiming there can never be a distant different shape with the same edge lengths. Nor do these constructions classify every possible motion of the flexible solids."
+    },
+    {
+      "id": "z3",
+      "text": "The contribution is the complete Johnson table and its certificates, rather than a new general rigidity rule. The documented searches found no earlier full classification, but cannot prove priority. The paper and editable evidence accompany this video. Narration uses a synthetic voice."
+    }
+  ]
+}

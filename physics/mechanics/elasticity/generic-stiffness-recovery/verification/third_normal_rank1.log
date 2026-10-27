@@ -1,0 +1,44 @@
+Computing all rank-one minors of third normal matrix over Q(i)
+Nonzero minor count:
+1081
+Affine dimension:
+1
+Degree:
+// dimension (proj.)  = 0
+// degree (proj.)   = 2
+Standard basis generator count:
+34
+G[1]=w7^2
+G[2]=w6*w7
+G[3]=w5*w7
+G[4]=w4*w7+(ii)*w5*w7
+G[5]=w3*w7
+G[6]=w2*w7+(ii)*w4*w7
+G[7]=2*w1*w7-2*w3*w7-w6*w7+(2*ii)*w7^2
+G[8]=w0*w7+(3*ii)*w7^2
+G[9]=w6^2
+G[10]=w5*w6
+G[11]=w4*w6
+G[12]=w3*w6
+G[13]=w2*w6
+G[14]=w1*w6
+G[15]=w0*w6+(3*ii)*w6*w7
+G[16]=w5^2
+G[17]=w4*w5
+G[18]=w3*w5
+G[19]=w2*w5
+G[20]=w1*w5
+G[21]=w0*w5+(3*ii)*w5*w7
+G[22]=w4^2+2*w2*w5+(-ii)*w4*w5
+G[23]=w2*w4+(-2*ii)*w2*w5
+G[24]=2*w1*w4-2*w3*w4+(-2*ii)*w0*w5+(-2*ii)*w1*w5+(2*ii)*w3*w5+(-2*ii)*w2*w6-w4*w6-4*w2*w7+(2*ii)*w4*w7+6*w5*w7
+G[25]=w0*w4+(-ii)*w0*w5+(3*ii)*w4*w7+3*w5*w7
+G[26]=2*w2*w3+(2*ii)*w3*w4+2*w3*w5+(ii)*w4*w6+2*w4*w7
+G[27]=w1*w3-w3^2-w3*w6+w6^2+(2*ii)*w3*w7+(-3*ii)*w6*w7-2*w7^2
+G[28]=2*w0*w3+w1*w6+(-2*ii)*w1*w7+(6*ii)*w3*w7
+G[29]=2*w2^2+(ii)*w2*w4
+G[30]=w1*w2-w2*w3-w2*w6+(2*ii)*w2*w7
+G[31]=w0*w2+(ii)*w0*w4+(3*ii)*w2*w7-3*w4*w7
+G[32]=3*w1^2+w2^2+2*w0*w3-3*w1*w3+(-2*ii)*w2*w4+3*w4^2+(6*ii)*w3*w7
+G[33]=3*w0*w1-w2^2-2*w0*w3+(-ii)*w2*w4+(9*ii)*w1*w7+(-6*ii)*w3*w7
+G[34]=w0^2+w0*w1-w0*w3+(6*ii)*w0*w7+(3*ii)*w1*w7+(-3*ii)*w3*w7-9*w7^2

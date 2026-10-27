@@ -1,0 +1,268 @@
+\documentclass[11pt]{amsart}
+\usepackage[a4paper,textwidth=158mm,textheight=237mm,centering]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,mathtools,amssymb}
+\usepackage[unicode,colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Pp}{\mathbb P}
+\newcommand{\R}{\mathbb R}
+\newcommand{\one}{\mathbf 1}
+\newcommand{\erf}{\operatorname{erf}}
+\newcommand{\erfc}{\operatorname{erfc}}
+\newcommand{\Exp}{\operatorname{Exp}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\dd}{\,\mathrm d}
+\title[Global optimality of conjugate restart laws]{Global optimality of conjugate restart laws}
+\author{Harvey Yorke}
+\address{Valyu AI}
+\ifdefined\journalversion
+\hypersetup{pdfauthor={Harvey Yorke}}
+\else
+\author{Valyu DeepResearch}
+\address{Valyu AI}
+\hypersetup{pdfauthor={Harvey Yorke and Valyu DeepResearch}}
+\fi
+\hypersetup{pdftitle={Global optimality of conjugate restart laws}}
+\date{17 October 2026}
+\subjclass[2020]{Primary 60J65; Secondary 60J27, 60K05}
+\keywords{Stochastic resetting, first passage, renewal restart, reversible Markov chain, conjugate target distribution}
+% Keep AMS title spacing, with each author's affiliation directly below the name.
+\newcommand{\paperAuthorBlock}[1]{%
+  \begin{minipage}[t]{.44\textwidth}
+    \centering\normalfont\normalsize
+    #1\par
+    \small Valyu AI\par
+  \end{minipage}%
+}
+\makeatletter
+\renewcommand{\@setauthors}{%
+  \begingroup
+  \trivlist
+  \centering\normalfont\normalsize
+  \@topsep30\p@\relax
+  \advance\@topsep by -\baselineskip
+  \item\relax
+  \ifdefined\journalversion
+    \paperAuthorBlock{Harvey Yorke}%
+  \else
+    \paperAuthorBlock{Harvey Yorke}\hspace{.06\textwidth}%
+    \paperAuthorBlock{Valyu DeepResearch}%
+  \fi
+  \endtrivlist
+  \endgroup
+}
+\renewcommand{\@setaddresses}{}
+\makeatother
+\begin{document}
+\begin{abstract}
+Evans and Ray associated a target distribution with each renewal restart law and proved that the law is stationary for the corresponding mean search time. We prove global optimality and uniqueness for one-dimensional Brownian search over all strictly positive, finite iid restart-time laws, subject only to finiteness of the reference objective. The proof combines a Green-kernel representation with the classical symmetric-kernel ratio inequality. For finite killed Markov chains, reversibility gives the same global-optimality prescription. Conversely, if the constant vector is cyclic for the killed generator, optimality of this prescription for every reference law forces reversibility. A three-state example shows that the prescription can fail even to be stationary without reversibility.
+\end{abstract}
+\maketitle
+
+\section{Introduction}
+
+Restarting a search replaces one long attempt by a sequence of shorter ones. The resulting mean completion time is a ratio: the expected duration of an attempt divided by its probability of success \cite{PalReuveni2017}. When the target location is unknown, this ratio must also be averaged over the target distribution. Optimizing that average over all waiting-time laws is a functional problem, rather than an optimization of a single restart rate.
+
+Evans and Ray \cite{EvansRay2025} introduced a useful inverse formulation. Fix a restart law and construct a \emph{conjugate} target distribution for which that law is stationary. For Brownian search, the target density is proportional to the square of the probability of finding the target before the next restart. Their derivation establishes stationarity; the subsequent optimality checks are numerical and confined to two families of waiting-time distributions. Stationarity alone leaves open whether a different renewal law can give a smaller average search time.
+
+We settle this global question in one dimension. Every admissible reference law is the unique optimum for its conjugate target-distance density. The mechanism is a positive symmetric Green kernel: after symmetrization, the excess cost is an integral of a square divided by a positive product. This ratio identity is established variational machinery; a closely matching nonlocal identity appears in D\'avila and Topp \cite[Lemma~4.3, equation~(4.3)]{DavilaTopp2023}. Our use of it identifies the restart-law optimum, including its equality case.
+
+The finite-state counterpart isolates the role of reversibility. A reversible killed chain obeys the same prescription for an ensemble of initial states. Under a cyclicity hypothesis, the converse holds as well: universal optimality of the squared-success prescription characterizes reversibility. The hypothesis makes the success vectors of exponential-mixture restart laws fill an open set. A direct gradient calculation then recovers detailed balance.
+
+\section{Brownian search: the global optimum}
+
+Let a Brownian motion with generator $D\partial_x^2$, $D>0$, start at zero. A target at distance $x>0$ remains fixed throughout the search. Every unsuccessful attempt is followed by an instantaneous return to zero and an independent new attempt. The restart times are iid with law $\psi$ on $(0,\infty)$ and are independent of the motion. Thus the waiting times are positive and finite almost surely, but their mean need not be finite. This admissible class excludes adaptive restarts and reset costs.
+
+The success probability and expected duration of one attempt are
+\begin{align}
+ f_\psi(x)&=\E_\psi\!\left[\erfc\!\left(\frac{x}{\sqrt{4DT}}\right)\right],\label{eq:success}\\
+ h_\psi(x)&=\E_\psi\!\left[\int_0^T\erf\!\left(\frac{x}{\sqrt{4Dt}}\right)\dd t\right].\label{eq:duration}
+\end{align}
+The renewal identity gives $m_\psi(x)=h_\psi(x)/f_\psi(x)$ for the mean completion time, allowing the value $+\infty$ \cite{PalReuveni2017}.
+
+Fix a reference law $\psi_0$ and abbreviate its functions by $f_0,h_0$. Assume
+\begin{equation}\label{eq:finite}
+ 0<Z:=\int_0^\infty f_0(x)^2\dd x<\infty,
+ \qquad B:=\int_0^\infty f_0(x)h_0(x)\dd x<\infty.
+\end{equation}
+Its conjugate target-distance density and the resulting objective are
+\begin{equation}\label{eq:objective}
+ p_0(x)=\frac{f_0(x)^2}{Z},\qquad
+ J(\psi)=\int_0^\infty p_0(x)\frac{h_\psi(x)}{f_\psi(x)}\dd x.
+\end{equation}
+The corresponding symmetric density of target \emph{positions} on $\R$ is $p_0(|x|)/2$.
+
+\begin{theorem}\label{thm:brownian}
+Under \eqref{eq:finite}, $\psi_0$ uniquely minimizes $J$ over all admissible renewal laws. More precisely, set $r=f_\psi/f_0$. Then
+\begin{equation}\label{eq:gap}
+ Z\bigl(J(\psi)-J(\psi_0)\bigr)
+ =\frac1{2D}\int_0^\infty\!\int_0^\infty
+ \min(x,y)f_0(x)f_0(y)
+ \frac{(r(x)-r(y))^2}{r(x)r(y)}\dd x\dd y.
+\end{equation}
+The equality is understood in the extended nonnegative sense if $J(\psi)=+\infty$.
+\end{theorem}
+
+We separate the two facts behind the proof: a Green representation and an injective transform.
+
+\begin{lemma}[Green representation]\label{lem:green}
+For every admissible $\psi$,
+\begin{equation}\label{eq:green}
+ h_\psi(x)=\int_0^\infty K(x,y)f_\psi(y)\dd y,
+ \qquad K(x,y)=\frac{\min(x,y)}D.
+\end{equation}
+\end{lemma}
+\begin{proof}
+For deterministic waiting time $t>0$, differentiation of \eqref{eq:duration} gives
+$-D h_t''=f_t$ and $h_t(0)=0$. Also
+\[
+ h_t'(x)=\int_0^t\frac{e^{-x^2/(4Ds)}}{\sqrt{\pi Ds}}\dd s\longrightarrow0
+ \quad(x\longrightarrow\infty)
+\]
+by dominated convergence. Integrating the differential equation first from $x$ to infinity and then from zero to $x$ proves \eqref{eq:green} for $t$. Tonelli's theorem extends the identity to arbitrary mixtures, including infinite values.
+\end{proof}
+
+\begin{lemma}[Injectivity]\label{lem:injective}
+The function $f_\psi$ determines the probability law $\psi$ on $(0,\infty)$.
+\end{lemma}
+\begin{proof}
+Let $U=(4DT)^{-1}$ have law $\nu$. For $x>0$,
+\begin{equation}\label{eq:laplace}
+ -\frac{\sqrt\pi}{2}f_\psi'(x)
+ =\int_0^\infty \sqrt u\,e^{-x^2u}\nu(\mathrm du).
+\end{equation}
+Local differentiation under the integral is justified because $\sqrt u e^{-cu}$ is bounded for every $c>0$. Equal success functions give equal transforms in \eqref{eq:laplace}. For any fixed $a>0$, the measures $\sqrt u e^{-au}\nu(\mathrm du)$ are finite, and their Laplace transforms agree on $[0,\infty)$. Uniqueness of the Laplace transform identifies these finite measures. Removing the strictly positive weight identifies $\nu$, hence the law of $T$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:brownian}]
+By Lemma~\ref{lem:green},
+\[
+ ZJ(\psi)=\iint K(x,y)f_0(x)f_0(y)\frac{r(y)}{r(x)}\dd x\dd y.
+\]
+The kernel is symmetric and all integrands are nonnegative. Interchanging $x,y$ and averaging, then using
+\[
+ \frac uv+\frac vu=2+\frac{(u-v)^2}{uv}\qquad(u,v>0),
+\]
+proves \eqref{eq:gap}. For infinite competitor cost, the symmetrized integral is first written as the sum of the finite reference integral $B$ and a nonnegative integral; no subtraction of infinities is involved.
+
+If the gap vanishes, positivity of $K,f_0,f_\psi$ implies $r(x)=r(y)$ for almost every pair, so $r$ is almost everywhere constant. The success functions are continuous, and both tend to one as $x\downarrow0$. Consequently $f_\psi=f_0$ everywhere. Lemma~\ref{lem:injective} gives $\psi=\psi_0$.
+\end{proof}
+
+\begin{example}[Exponential target distances]\label{ex:exponential}
+For $\psi_0=\Exp(r_0)$,
+\[
+ f_0(x)=e^{-\sqrt{r_0/D}\,x},\qquad
+ p_0(x)=2\sqrt{r_0/D}\,e^{-2\sqrt{r_0/D}\,x},\qquad
+ J(\psi_0)=r_0^{-1}.
+\]
+Thus, for target distance distributed as $\Exp(\lambda)$, the unique optimal renewal law and its mean search time are
+\[
+ \psi_0=\Exp(D\lambda^2/4),\qquad \min_\psi J(\psi)=\frac4{D\lambda^2}.
+\]
+The exponential conjugate pair is already in Evans and Ray \cite{EvansRay2025}. Theorem~\ref{thm:brownian} supplies global optimality and uniqueness against the full admissible class, including nonexponential competitors.
+\end{example}
+
+\section{Finite chains: a characterization of reversibility}
+
+Let $Q$ be an $n\times n$ killed generator: its off-diagonal entries are nonnegative, its row sums are nonpositive, and every eigenvalue has negative real part. Killing therefore occurs almost surely. Set $G=(-Q)^{-1}$. An attempt started at state $i$ restarts at that same state after each unsuccessful waiting time; the waiting-time law is common to all states. Then
+\begin{equation}\label{eq:finitechain}
+ f_\psi=\one-\E[e^{QT}]\one,\qquad
+ h_\psi=\E\!\left[\int_0^T e^{Qt}\one\dd t\right]=Gf_\psi.
+\end{equation}
+Every component of $f_\psi$ is positive. Let $M=\diag(\mu_1,\ldots,\mu_n)$ with $\mu_i>0$. For a reference success vector $f_0$, define
+\begin{equation}\label{eq:finiteobjective}
+ w_i=\frac{\mu_i f_{0,i}^2}{Z},\qquad
+ Z=f_0^{\mathsf T}Mf_0,\qquad
+ J_{f_0}(\psi)=\sum_i w_i\frac{(Gf_\psi)_i}{f_{\psi,i}}.
+\end{equation}
+Here $w$ is a distribution of \emph{initial states}. Without spatial symmetries, it is not an arbitrary distribution of unknown targets.
+
+\begin{theorem}\label{thm:finite}
+If $MQ$ is symmetric, every reference law minimizes its objective \eqref{eq:finiteobjective} over all admissible renewal laws. Conversely, suppose
+\begin{equation}\label{eq:cyclic}
+ \operatorname{rank}[\one,Q\one,\ldots,Q^{n-1}\one]=n.
+\end{equation}
+If every reference law minimizes its objective, then $MQ$ is symmetric. Thus, under \eqref{eq:cyclic}, universal optimality of the squared-success prescription is equivalent to reversibility with respect to $\mu$.
+\end{theorem}
+
+\begin{proof}
+Suppose first that $MQ=Q^{\mathsf T}M$. Then $MG=G^{\mathsf T}M$, and $G$ is entrywise nonnegative. For $f=f_\psi$ and $r_i=f_i/f_{0,i}$, the same symmetrization gives
+\begin{equation}\label{eq:finitegap}
+ Z\bigl(J_{f_0}(\psi)-J_{f_0}(\psi_0)\bigr)
+ =\frac12\sum_{i,j}\mu_iG_{ij}f_{0,i}f_{0,j}
+ \frac{(r_i-r_j)^2}{r_ir_j}\ge0.
+\end{equation}
+
+For the converse, use exponential waiting times with rate $r>0$. Their success vectors are
+\begin{equation}\label{eq:resolvent}
+ f(r)=\one-r(rI-Q)^{-1}\one=-Q(rI-Q)^{-1}\one.
+\end{equation}
+They have full affine span. Indeed, an affine identity $a^{\mathsf T}f(r)=b$ for every $r>0$ gives $b=0$ by letting $r\to\infty$. The large-$r$ expansion
+\[
+ f(r)=-\sum_{j=1}^\infty r^{-j}Q^j\one
+\]
+then gives $a^{\mathsf T}Q^j\one=0$ for every $j\ge1$. Since $Q$ is invertible, \eqref{eq:cyclic} implies that $Q\one,\ldots,Q^n\one$ span $\R^n$, hence $a=0$.
+
+Choose $n+1$ affinely independent vectors $f(r)$. The interior of their simplex is a nonempty open set, and each of its points is realized by a finite mixture of exponential waiting laws. For a reference vector $f_0$ in this interior, the assumed optimum is therefore a local minimum on an open neighborhood of the differentiable function
+\[
+ F_{f_0}(f)=\sum_i\mu_i f_{0,i}^2\frac{(Gf)_i}{f_i}.
+\]
+At the reference point its gradient is
+\[
+ \nabla F_{f_0}(f_0)=(G^{\mathsf T}M-MG)f_0.
+\]
+It vanishes for every $f_0$ in a nonempty open set. Thus $G^{\mathsf T}M=MG$. Multiplying by $Q^{\mathsf T}$ and $Q$ gives $Q^{\mathsf T}M=MQ$.
+\end{proof}
+
+\begin{remark}[Equality and the role of cyclicity]
+If $G$ is strictly positive, equality in \eqref{eq:finitegap} forces $f_\psi$ to be proportional to $f_0$. This does not identify the waiting-time law; no finite-state analogue of Brownian uniqueness is asserted. In the converse, it is enough to assume optimality for references in the open simplex used in the proof. The all-law formulation states a convenient universal property. Without \eqref{eq:cyclic}, the success vectors may lie in a proper affine subspace, and the argument cannot force symmetry on all of $\R^n$.
+\end{remark}
+
+\begin{example}[A nonreversible obstruction]\label{ex:obstruction}
+Take $M=I$ and
+\[
+ Q=\begin{pmatrix}-2&1&0\\0&-3&1\\1&0&-4\end{pmatrix},
+ \qquad
+ G=\frac1{23}\begin{pmatrix}12&4&1\\1&8&2\\3&1&6\end{pmatrix}.
+\]
+The killing rates are $1,2,3$, so $Q$ is stable. Its Krylov determinant in \eqref{eq:cyclic} is $-5$, but $G$ is not symmetric. For reference law $\Exp(1)$,
+\[
+ f_0=\frac1{59}(33,40,42)^{\mathsf T},\qquad
+ Gf_0=\frac1{59}(26,19,17)^{\mathsf T},\qquad
+ J_{f_0}(\Exp(1))=\frac{2332}{4453}.
+\]
+Keeping this prior fixed and differentiating along the exponential family gives
+\[
+ f'(1)=\frac1{3481}(-902,-759,-676)^{\mathsf T},\qquad
+ \left.\frac{\mathrm d}{\mathrm dr}J_{f_0}(\Exp(r))\right|_{r=1}=\frac5{4453}>0.
+\]
+The reference is not even stationary. As a derivative-free certificate, exact rational arithmetic gives
+\[
+ J_{f_0}(\Exp(9/10))-J_{f_0}(\Exp(1))
+ =-\frac{761111595}{7705213313411}<0.
+\]
+\end{example}
+
+\section{Relation to the kernel inequality and further questions}
+
+The square in \eqref{eq:gap} is not a new variational principle. The corresponding symmetric-kernel calculation is explicit in \cite[Lemma~4.3]{DavilaTopp2023}: set the square root of its density equal to $f_0$, its ratio variable equal to $f/f_0$, and its transport term to zero. The direct proof above also handles the unbounded Brownian Green kernel and infinite-cost competitors without importing additional domain assumptions from that setting. In finite dimension, the connection to the occupation-measure functional is exact: the auxiliary generator $L=G-\diag(G\one)$ changes the objective only by a term independent of the competitor.
+
+The results therefore add a global and unique conclusion to the one-dimensional conjugate construction, together with a finite-state necessity statement. They do not replace the conjugate prescription of Evans and Ray or introduce the symmetric-kernel inequality. Nor do they optimize adaptive, state-dependent, or costly restarts.
+
+Two extensions appear natural. First, the finite-state converse could be refined when $\one$ is not cyclic: the attainable success vectors then constrain only part of the operator. Second, for diffusions beyond the one-dimensional setting, identifying a symmetric representation $h=Kf$ with the correct boundary conditions would make the same global argument available. Almost-sure absorption is essential to the usual killed-semigroup representation; transience by itself is not enough. These questions require additional analysis and are not conclusions of this paper.
+
+\subsection*{Computational materials and research assistance}
+The companion materials provide exact rational checks of Example~\ref{ex:obstruction} and an independent Brownian quadrature check. The finite symmetric-kernel gap and global-minimum inequality, together with the exact rational counterexample, are formalized in Lean~4.35.0. Their axiom dependencies are the standard foundations of mathlib. This formalization does not include the Brownian analysis, the probabilistic interpretation of the matrix equations, or the cyclicity converse. These checks supplement the proofs.
+
+Valyu DeepResearch supported literature retrieval and adversarial review. Coding agents developed and audited the arguments, implemented the verification programs and partial Lean formalization, and drafted and revised the manuscript. Retrieved claims and review suggestions were checked against primary sources and independent calculations; the review record identifies rejected suggestions and unresolved priority questions. These checks do not constitute external peer review.
+
+\bibliographystyle{amsplain}
+\bibliography{references}
+\end{document}

@@ -1,0 +1,65 @@
+{
+  "voice": "cedar",
+  "clips": [
+    {"id": "s01_hook", "text": "You want to send a friend one answer, yes or no, over a crackly radio. You send a one for yes. But static flips it to a zero, and your friend hears no."},
+    {"id": "s01_repeat", "text": "The oldest fix is to say it three times. You send one, one, one. Static flips one of them, your friend hears one, zero, one, takes a majority vote, and the answer survives."},
+    {"id": "s01_question", "text": "But that costs three symbols for every one you meant. So, how little extra can you send and still repair any single error?"},
+
+    {"id": "s02_cube", "text": "Here are all eight messages of three bits, as the corners of a cube. Flipping one bit moves you along one edge. The repetition code only uses two corners, zero zero zero and one one one. They are three edges apart, so we say the code has distance three."},
+    {"id": "s02_balls", "text": "Draw a bubble around each codeword: the codeword plus everything one flip away. The bubbles do not overlap. So after one error you still know which bubble you are in, and you can fix it."},
+
+    {"id": "s03_questions", "text": "There is another way to find the error. Instead of reading the bits, ask questions. Do bits one and two agree? Do bits two and three agree? Write zero for yes and one for no."},
+    {"id": "s03_table", "text": "No error answers zero, zero. An error on bit one gives one, zero. Bit two gives one, one. Bit three gives zero, one. Each position leaves its own fingerprint. And the answers never reveal the message itself."},
+
+    {"id": "s04_count", "text": "Now, efficiency. With r yes-or-no questions there are two to the r answer lists. One must mean all clear, and every position needs a different list of its own."},
+    {"id": "s04_hamming", "text": "Three questions give eight lists: one for all clear, seven for positions. So three questions protect seven bits, leaving four for the message. That is the Hamming code."},
+    {"id": "s04_points", "text": "Think of each fingerprint as a point. The code works exactly when all the points are different. Hold on to that picture."},
+
+    {"id": "s05_fragile", "text": "Quantum computers need this too, with two new problems. First, you may not look: measuring quantum data disturbs it."},
+    {"id": "s05_parity", "text": "But our questions never ask what a value is, only whether values agree, and questions like that can be asked without damage. Second, quantum data can be damaged in two independent ways. Call them a shift and a twist."},
+
+    {"id": "s06_dial", "text": "We will use qudits: quantum dials with q settings. A qutrit has q equal to three, so it reads zero, one or two. Its arithmetic is clock arithmetic: two plus two wraps round to one, and two times two is one as well."},
+    {"id": "s06_errors", "text": "A shift turns the dial by one or two. A twist, the invisible kind, also comes in amounts one or two. That is nine combinations, one of which is no damage at all. So each qutrit has eight possible errors."},
+
+    {"id": "s07_finger", "text": "Let us ask five questions, each answered on the clock. These numbers are from a real code. For qutrit fourteen, a shift by one gives the answers zero, two, one, two, one. A twist by one gives one, zero, one, one, one."},
+    {"id": "s07_sheet", "text": "A shift by s with a twist by t gives s times the first list plus t times the second. That makes nine lists, a flat sheet of answers belonging to this one qutrit. To repair every error, two qutrits' sheets may share only the all-zero list."},
+
+    {"id": "s08_count", "text": "Now count. Five questions give three to the five, two hundred and forty-three, answer lists. One means all clear, and each qutrit uses eight. So one plus eight n is at most two hundred and forty-three, and n is at most thirty."},
+    {"id": "s08_tables", "text": "Public tables record the best codes known. For five questions on qutrits they had a code with twenty-eight. For twenty-nine, the entry said: unknown. So is the limit twenty-eight, twenty-nine or thirty? Pause and guess."},
+
+    {"id": "s09_double", "text": "Here is the key translation. Double an answer list on the clock, and ones become twos. Glue each list to its double, and call the pair a point."},
+    {"id": "s09_count", "text": "The two hundred and forty-two nonzero lists become one hundred and twenty-one points. One qutrit's sheet becomes just four points, and those four form a line. The rule becomes: the lines of different qutrits never meet. Lines like that are called skew."},
+
+    {"id": "s10_bridge", "text": "You have seen skew lines: a road under a bridge. Not parallel, yet never touching, because there is room to pass above."},
+    {"id": "s10_fano", "text": "In a plane there is no such room. This is the smallest finite plane: seven points, seven lines. Any two lines share a point."},
+    {"id": "s10_ten", "text": "With four questions on qutrits there is room: forty points, covered exactly by ten skew lines. That is a ten-qutrit code, right at the counting limit, and codes like it were known."},
+
+    {"id": "s11_setup", "text": "Back to five questions and one hundred and twenty-one points. Suppose twenty-nine skew lines fit. They cover one hundred and sixteen points, leaving five uncovered. Call them holes."},
+    {"id": "s11_slice", "text": "Now take a slice: all the points that obey one fixed equation. Every slice has forty points, and every line either lies inside it or crosses it at exactly one point."},
+    {"id": "s11_mod", "text": "So a slice has forty minus twenty-nine holes, minus three more for each line lying inside it. That is eleven, eight, five or two. Never fewer than two."},
+    {"id": "s11_tally", "text": "One hundred and twenty-one slices, each with at least two holes, need two hundred and forty-two hole-slice pairs. But each hole lies in exactly forty slices, and five times forty is only two hundred."},
+    {"id": "s11_contra", "text": "Contradiction. Twenty-nine cannot fit. The limit is twenty-eight, not thirty. This hole count for skew lines goes back to Beutelspacher in 1975. What is new is applying it to every one of these codes."},
+
+    {"id": "s12_cheat", "text": "Including cheaters. Some codes let two errors give the same answers, when their difference is harmless to the message. We showed this never pays when q is at least three: with one harmless error, five questions protect at most two plus ten, twelve qutrits."},
+
+    {"id": "s13_slopes", "text": "Can twenty-eight be reached? Think of lines y equals a x. Different slopes meet only at the centre, the all-zero list, which does not count."},
+    {"id": "s13_family", "text": "Do the same with five entries. The first two, x and y, are free. The last three are the slope a times x plus y omega, where a comes from a number system with twenty-seven elements. That gives twenty-seven skew lines."},
+    {"id": "s13_27", "text": "None of them touches the leftover plane where x and y are zero, and a plane holds exactly one more line. Twenty-eight."},
+
+    {"id": "s14_rule", "text": "One quantum rule remains: the questions must be askable together. Each line gets a signature of ten clock numbers, and the signatures must add to zero. Relabelling a qutrit's twists doubles its signature. Call that its weight."},
+    {"id": "s14_run", "text": "Watch the running total. The twenty-seven slope lines with weight one add up to zero. The extra line leaves a single one."},
+    {"id": "s14_fix", "text": "The fix: give three slope lines weight two. Now they leave a two in that slot, the extra line adds one, and on the clock two plus one is zero. Twenty-eight qutrits, five questions, every single error repaired."},
+
+    {"id": "s15_theorem", "text": "Here is the full answer, for every dial size q from three up that is a prime or prime power. A code that repairs any single error exists exactly when there are at least four questions, and no more qudits than the most skew lines that fit."},
+    {"id": "s15_five", "text": "For an even number of questions that matches the counting limit. For an odd number it is q minus one lower. With five questions it is q cubed plus one: twenty-eight, sixty-five, one hundred and twenty-six. And every length in between can be built."},
+
+    {"id": "s16_table", "text": "That settles entries in the public tables. There are new codes on four-setting dials with fifty-nine, sixty-one, sixty-two and sixty-five qudits. Twenty-nine qutrits, and sixty-six four-setting dials, are impossible."},
+    {"id": "s16_more", "text": "The same argument also settles some codes with larger distance. Twelve entries improve, and eleven become exact. Some rows rely on a 1971 theorem of Thas."},
+
+    {"id": "s17_proof", "text": "How sure is this? The limit and the constructions are short written proofs. Two hundred and fifty-five explicit codes, the starting cases and the new ones, all pass an independent checker, which rejects seven deliberately broken ones."},
+    {"id": "s17_limits", "text": "A computer search alone could not rule out twenty-nine. But the proofs are not checked in Lean and not yet peer reviewed. They cover stabilizer codes, the standard kind in the tables, and some rows lean on Thas."},
+
+    {"id": "s18_recap", "text": "So: repairing an error means every error leaves a different answer. For quantum codes each qudit becomes a line, and the lines must never meet and must balance. Counting holes gives the limit, and a balanced construction reaches it."},
+    {"id": "s18_open", "text": "Still unknown: codes with distance four and an odd number of questions. For qutrits with seven questions, the longest known to us have sixteen qudits, and the best proven limit is twenty-nine."}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-26T13:15:58+00:00",
+  "unchanged": {
+    "paper.tex": true,
+    "README.md": true,
+    "references.bib": true,
+    "video/check_numbers.py": true
+  }
+}

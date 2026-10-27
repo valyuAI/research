@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "inspectedUtc": "2026-10-26T16:48:33.793704+00:00",
+  "videoSha256": "b47555956c5fef28cedec44049e4b76eca30f726b1303c0b4a4884c61fc5a82c",
+  "inspected_files": [
+    "qa/beats.png",
+    "qa/boundaries.png",
+    "qa/t05.png",
+    "qa/t14.png",
+    "qa/t30.png",
+    "contact.png"
+  ],
+  "notes": [
+    "Inspected all34 final beat frames and all16 scene-boundary frames. Initial boundary samples show intentional FadeIn/Write starts.",
+    "Full-resolution retained bump-nick pair has the intended curved shared seam. Base thumbnail layouts and maximum labels are separated.",
+    "The actual131-piece five-ring row witness and169-piece published six-ring patch are fully visible with legible counts. Their outlines and placements come from the retained exact geometry.",
+    "The hypothetical unmarked fourth-ring diagram is labelled impossible; schematic growth and window illustrations are labelled. No decorative patch is substituted for a witness.",
+    "Prior Mann/Atlas results, possible Mann-Thomas overlap, strict lattice scope, no off-grid upper bound and retained-proof limitations remain explicit. No clipping observed in inspected settled frames.",
+    "Checker/control provenance updates are validated and do not alter the inspected media. No fresh DRAT replay or new170-mutation audit claimed.",
+    "No listening or real-time playback performed.",
+    "Final curated contact sheet inspected, including the bump-nick seam and complete169-piece patch; poster is byte-identical to the inspected t14 frame."
+  ]
+}

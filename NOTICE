@@ -1,0 +1,31 @@
+Valyu Research
+
+This collection contains research manuscripts, explanatory media and
+verification software by the project contributors. See LICENSE for the
+different terms applying to code, content and third-party material.
+
+Third-party attribution is collected in public-release/THIRD_PARTY.md and
+the individual references.bib files. Preserve those notices when reusing
+the corresponding material. Citing a work is not a claim of endorsement.
+
+In particular:
+
+* Bojan Bašić, "A Figure with Heesch Number 6: Pushing a Two-Decade-Old
+  Boundary", The Mathematical Intelligencer (2021),
+  doi:10.1007/s00283-020-10034-w. Patch coordinates were recovered from the
+  CC BY-SA 4.0 Wikimedia Commons illustration A_polygon_with_Heesch_number_6.svg
+  and snapped to a trihexagonal grid. The coordinates and adapted video
+  visuals retain CC BY-SA 4.0. See the package's verification/basic/NOTICE.md.
+* C. Livingston and A. H. Moore, KnotInfo: Table of Knot Invariants,
+  https://knotinfo.org/, database version 2026.10.5.
+* Markus Grassl, Code Tables, https://www.codetables.de/, retrieved
+  25 October 2026. The quantum-code comparison uses recorded numerical bounds.
+* Chen et al., Nature Structural & Molecular Biology 32 (2025), data at
+  https://zenodo.org/records/15396340 (CC BY 4.0); associated author software
+  is MIT-licensed. The gene-switching audit records its derivation.
+* Source Serif 4, Schibsted Grotesk and Spline Sans Mono are SIL OFL 1.1 fonts.
+  The earlier banner contains outlined glyphs; no font files are distributed.
+* Lean 4 and mathlib are Apache-2.0 dependencies fetched at pinned revisions.
+
+Full source-specific details and additional data citations appear in the
+third-party inventory. The project license does not replace those terms.

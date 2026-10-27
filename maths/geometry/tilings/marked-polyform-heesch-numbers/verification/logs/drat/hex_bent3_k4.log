@@ -1,0 +1,16 @@
+[11:32:42] build hex_bent3_k4 hex [[0,0],[0,1],[1,-1]] k=4 
+hex cells=[[0, 0], [0, 1], [1, -1]] k=4 imb=1 radius=16.4: placements 11604 vars 186413 clauses 1215829 (28.4s)
+wrote hex_bent3_k4.cnf
+898a55ba68e830a6b652f10014cf2d4db20926b109b3e7c333bd23e9174b70a3  hex_bent3_k4.cnf
+[11:33:14] cadical start
+s UNSATISFIABLE
+[11:40:37] cadical rc=20 (442s) proof bytes 44567330
+2fb6a5e4852f34a90b6f3b1f53707f29810100a3b394fc5c89509ca1c300e263  hex_bent3_k4.drat
+c 100924 of 1215829 clauses in core                            
+c 188970 of 483852 lemmas in core using 23069395 resolution steps
+c 0 RAT lemmas in core; 112464 redundant literals in core lemmas
+s VERIFIED
+c verification time: 518.871 seconds
+[11:49:18] drat-trim done (519s)
+DRAT_VERIFIED hex_bent3_k4
+[11:49:36] END rc=20

@@ -1,0 +1,54 @@
+{
+  "validated": true,
+  "updatedUtc": "2026-10-26T16:46:56.441083+00:00",
+  "originalSnapshot": "scientific-input-sha256.before-validation-fixes.json",
+  "originalSnapshotSha256": "b16cf4fa326ed5a18e684d29c70c95ca34e134d104b692041275077d5a03a406",
+  "currentSnapshotSha256": "66a34508adef502f0bd609fce14674f9c0d1fccbb8448c676b86964092c01669",
+  "approvedChanges": {
+    "verification/check_ledger.py": {
+      "before": "99785d6882936e44304971c396602162dd3988863fdc02cd26f02671b1d5c59c",
+      "after": "9e895ef62a1ffd521187f4721d408abb9f14062e9b87f990802c29e6079f99c7"
+    },
+    "verification/negative_ledger.py": {
+      "before": "14e94c73ab41c759ae3ac8f50561d389ac22cc48b8e003b678ce5fec8d4a6572",
+      "after": "0d688a44e1b8a78dc985e1166d3ea48e0ed31031caa12b1bfd86c4fd31ca4fa8"
+    }
+  },
+  "reason": "Bind the retained proof log to exactly one fully parsed formula scope; expand negative and equivalent-geometry controls. Root accepted the fix and replayed controls.",
+  "validationEvidence": [
+    {
+      "path": "<unpublished-record-75c9cd4b410c>",
+      "sha256": "b385f50189dd741cfe8b521162e9c2bfaad7cae7b2bf4b7f88706029292c0d8c"
+    },
+    {
+      "path": "<unpublished-record-f5efab516f3f>",
+      "sha256": "9b67418dad071b1b7ff2d26849d4d10143ab6ec41308a3a5b70fc6d698ce5b76"
+    },
+    {
+      "path": "<unpublished-record-06768bda8512>",
+      "sha256": "bb0bdc44c2e4501c91220f2f2ccdaf1045dc05f6e38dc0d25ae50f40b962e140"
+    },
+    {
+      "path": "<unpublished-record-38ee4f60a010>",
+      "sha256": "b7ab9e1e4283e2030285454ab7d15b2fd9a6e8e17b72e2b91b21c61ce1a7a283"
+    },
+    {
+      "path": "<repo>/docs/verification/tiling-record-binding-20261026/README.md",
+      "sha256": "bda4d344ec8c606bd8335b61f7a7d722d6ec030c6f3c597c3752bfad05d22c3e"
+    },
+    {
+      "path": "<repo>/docs/verification/tiling-record-binding-20261026/root-replay.json",
+      "sha256": "5dce1affd6a7d6a909b4c4a79cfdd29d690b294948fa60c9231a1568058dd2c8"
+    },
+    {
+      "path": "<repo>/docs/verification/tiling-record-binding-20261026/source-hashes.json",
+      "sha256": "b385f50189dd741cfe8b521162e9c2bfaad7cae7b2bf4b7f88706029292c0d8c"
+    },
+    {
+      "path": "<repo>/docs/verification/tiling-record-binding-20261026/scope-preservation.json",
+      "sha256": "b7ab9e1e4283e2030285454ab7d15b2fd9a6e8e17b72e2b91b21c61ce1a7a283"
+    }
+  ],
+  "scope": "34 actual entries,34 negative and8 equivalent-geometry controls;64 marked/41 unmarked retained comparisons. Historical proof logs, witnesses, encoders and ledger unchanged. No fresh DRAT verification claimed.",
+  "mediaChangeRequired": false
+}

@@ -1,0 +1,143 @@
+{
+  "closed_findings": [
+    "F2",
+    "F3",
+    "F5"
+  ],
+  "confidence": "high",
+  "modified_repository_files": [
+    "maths/algebra/bilinear-complexity/mu-q-2-2/verification/rankfq.c",
+    "maths/algebra/bilinear-complexity/mu-q-2-2/verification/run_searches.py",
+    "maths/algebra/bilinear-complexity/mu-q-2-2/verification/subsp.c"
+  ],
+  "added_repository_files": [
+    "maths/algebra/bilinear-complexity/mu-q-2-2/verification/test_review_regressions.py",
+    "maths/algebra/bilinear-complexity/mu-q-2-2/verification/source-provenance-20261026.md"
+  ],
+  "before_sources_match_historical_manifest": true,
+  "unchanged_historical_verification_files": 49,
+  "fresh_process_checks": 191,
+  "sanitizer_rejections": 40,
+  "small_valid_differential_matches": 142,
+  "retained_log_fixtures": 12,
+  "rejected_runner_mutants": 13,
+  "fresh_campaign_cases": [
+    {
+      "case": "fresh-rankfq_q2_rank8",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-587ef20a4e76>",
+        "2",
+        "4",
+        "1",
+        "0",
+        "1",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "seconds": 3.425,
+      "results": [
+        "RESULT q=2 f=1,0,1,0,1 rank<=8: NO (prefixes 74377, candidate buckets 464776)"
+      ]
+    },
+    {
+      "case": "fresh-rankfq_T4_rank8",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-587ef20a4e76>",
+        "2",
+        "4",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "seconds": 1.657,
+      "results": [
+        "RESULT q=2 f=0,0,0,0,1 rank<=8: YES (prefixes 24898, candidate buckets 400307)"
+      ]
+    },
+    {
+      "case": "fresh-rankfq_q3_rank7",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-587ef20a4e76>",
+        "3",
+        "3",
+        "1",
+        "0",
+        "2",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "seconds": 1.75,
+      "results": [
+        "RESULT q=3 f=1,0,2,0,1 rank<=7: NO (prefixes 4794, candidate buckets 205980)"
+      ]
+    },
+    {
+      "case": "fresh-rankfq_q4_rank7",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-587ef20a4e76>",
+        "4",
+        "3",
+        "3",
+        "0",
+        "1",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "seconds": 36.875,
+      "results": [
+        "RESULT q=4 f=3,0,1,0,1 rank<=7: NO (prefixes 21668, candidate buckets 1930239)"
+      ]
+    },
+    {
+      "case": "fresh-rankfq_q5_rank7",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d950ae0c7a57>",
+        "5",
+        "3",
+        "4",
+        "0",
+        "4",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "seconds": 313.868,
+      "results": [
+        "RESULT q=5 f=4,0,4,0,1 rank<=7: NO (prefixes 73000, candidate buckets 17417506)"
+      ]
+    }
+  ],
+  "subsp_103406616_repeated": false,
+  "cpp_q5_repeated": false,
+  "video_science_hashes_match": 8,
+  "video_files_edited": false,
+  "report": "report.md",
+  "source_hashes": {
+    "maths/algebra/bilinear-complexity/mu-q-2-2/verification/rankfq.c": "02443304367f309555bc504b406235f30056bd11e28418065a5704a3926c291b",
+    "maths/algebra/bilinear-complexity/mu-q-2-2/verification/subsp.c": "03f3fd557a4003c1d4748f59908264c23ad7a464466152bf727e2de997f5cebe",
+    "maths/algebra/bilinear-complexity/mu-q-2-2/verification/run_searches.py": "b4255760daec0da3f88ef4126d15b127821d0e5365223833db04806298e99d10",
+    "maths/algebra/bilinear-complexity/mu-q-2-2/verification/test_review_regressions.py": "516e81ef5d2580045213a92253d015619da7e1fa8390ad008821989cf25ffac7",
+    "maths/algebra/bilinear-complexity/mu-q-2-2/verification/source-provenance-20261026.md": "491ea7fefd0feb571b015af42cce09051a2700714f99e6f9a0012f5028567ea9"
+  }
+}

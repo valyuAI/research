@@ -1,0 +1,42 @@
+Valyu Research - licensing scope
+
+Except for third-party material and the exceptions below, the project
+contributors license this collection as follows:
+
+1. Software, Lean source, verification programs, build scripts and their
+   executable configuration: Apache License, Version 2.0.
+   Full text: LICENSES/Apache-2.0.txt
+
+2. Papers and manuscript source, documentation, original data and records,
+   illustrations, narration and videos: Creative Commons Attribution 4.0
+   International (CC BY 4.0).
+   Full text: LICENSES/CC-BY-4.0.txt
+
+These grants apply only to rights the contributors hold. Mathematical facts,
+ideas and results are not made proprietary by this notice. The licenses do
+not grant rights to third-party works merely cited in the papers, and they
+do not imply that the cited authors endorse this collection.
+
+Exceptions and third-party terms
+
+* The Bašić-derived patch coordinates in
+  maths/geometry/tilings/marked-polyform-heesch-numbers/verification/basic/
+  (basic_patch.json, basic_patch_grid.json and basic_tile.json) are under
+  CC BY-SA 4.0. The generated video/geometry.json and rendered visual assets in that package's video/ directory,
+  including the complete video.mp4, are also distributed under CC BY-SA 4.0
+  to preserve ShareAlike for the adapted patch illustrations. The package's
+  programming source remains Apache-2.0. Attribution and changes are recorded
+  in verification/basic/NOTICE.md. Full text: LICENSES/CC-BY-SA-4.0.txt
+* Other third-party data and dependencies retain their original terms.
+  See NOTICE and public-release/THIRD_PARTY.md for attribution and scope.
+* The promoter-annotation tables excluded from this release are not licensed
+  or distributed by this project. A retrieval script is supplied separately.
+
+For attribution, cite the author and title of the relevant paper, retain
+third-party notices, link to this repository and the applicable license,
+and indicate your changes. CITATION.cff provides collection metadata.
+
+Official license URLs:
+https://www.apache.org/licenses/LICENSE-2.0
+https://creativecommons.org/licenses/by/4.0/
+https://creativecommons.org/licenses/by-sa/4.0/

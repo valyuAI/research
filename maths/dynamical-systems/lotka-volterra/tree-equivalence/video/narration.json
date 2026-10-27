@@ -1,0 +1,205 @@
+{
+  "voice": "cedar",
+  "clips": [
+    {
+      "id": "s01_cycles",
+      "text": "Rabbits breed. Foxes eat rabbits. When rabbits are plentiful, foxes thrive. Then rabbits get scarce, foxes go hungry, and the rabbits recover. The two populations rise and fall in cycles."
+    },
+    {
+      "id": "s01_question",
+      "text": "Now imagine many species, their interactions organised by a tree-shaped network. Here are two for four species: a chain and a star. Could they secretly behave exactly the same way? Pause and guess."
+    },
+    {
+      "id": "s01_status",
+      "text": "The answer is no, apart from rare special cases. And one thing first: someone else announced this result earlier. What you'll see is an independent check of it, not a first discovery."
+    },
+    {
+      "id": "s02_growth",
+      "text": "Start with rabbits alone, growing by about ten percent a month. A hundred become about a hundred and ten, then about a hundred and twenty-two."
+    },
+    {
+      "id": "s02_rate",
+      "text": "The rate of change is the gradient of this graph, written d r by d t. Here it is nought point one times r: growth proportional to the population."
+    },
+    {
+      "id": "s03_rabbits",
+      "text": "Now add foxes. The more foxes there are, the slower the rabbits grow. The rabbits' rate of change is r, times two minus f."
+    },
+    {
+      "id": "s03_foxes",
+      "text": "And foxes need food. Their rate of change is f, times r minus three."
+    },
+    {
+      "id": "s03_plane",
+      "text": "To see the whole story at once, use a plane: rabbits across, foxes up. Each point is a possible state, and its arrow shows where that state is heading."
+    },
+    {
+      "id": "s03_loop",
+      "text": "Follow the arrows and you go round a loop: the cycle. These are the Lotka-Volterra equations, about a century old."
+    },
+    {
+      "id": "s04_many",
+      "text": "With more species, each follows the same kind of rule: its population, times a weighted sum of all the populations. There are no separate birth or death numbers, so every term is two populations multiplied."
+    },
+    {
+      "id": "s04_table",
+      "text": "The weights fit in a table. Row one says how species one responds to each species. This four-species table is our running example."
+    },
+    {
+      "id": "s04_diag",
+      "text": "The big negative numbers on the diagonal mean that each species crowds itself out."
+    },
+    {
+      "id": "s05_graph",
+      "text": "Now the network. Draw each species as a dot and join some pairs with lines. With no loops, and every dot reachable from every other, it's a tree. Four dots allow just two trees: the chain and the star."
+    },
+    {
+      "id": "s05_warn",
+      "text": "Careful: the tree is not a food web. In these systems every species can affect every other. Instead, the tree is a rule about which effects must be equal."
+    },
+    {
+      "id": "s05_cut",
+      "text": "Here's the rule. Remove species two, and the chain falls into branches: one on one side, three and four on the other. Species two must affect everything in a branch equally."
+    },
+    {
+      "id": "s05_column",
+      "text": "In the table, that's column two: a one for species one, and a two for both three and four. Every column follows this rule, leaving ten free numbers instead of sixteen. All such tables form the chain family."
+    },
+    {
+      "id": "s05_star",
+      "text": "The star gives its own pattern. Removing the centre leaves three branches, so column one has three different numbers."
+    },
+    {
+      "id": "s06_absent",
+      "text": "To picture this, suppose species three and four are absent. They stay absent, since their rate of change is zero times something. So we can watch species one and two on a plane, with arrows."
+    },
+    {
+      "id": "s06_mix",
+      "text": "Now describe the same motion in new variables: mixtures of the old ones. Keep x one, and replace x two by twenty-seven x two minus twenty-six x one. The grid shears, the arrows go with it, but only the description changed."
+    },
+    {
+      "id": "s06_same",
+      "text": "Usually, the new rules look nothing like our equations. But this time they have the same shape again: each variable, times a weighted sum. Only the table changed."
+    },
+    {
+      "id": "s06_equiv",
+      "text": "When mixing turns one system exactly into another, the two are called equivalent: the same system in disguise. So the real question is: can a chain system be disguised as a star system?"
+    },
+    {
+      "id": "s06_conj",
+      "text": "In twenty twenty-five, Peter van der Kamp conjectured no, for any two different trees, and checked it up to eight species."
+    },
+    {
+      "id": "s07_why",
+      "text": "Why did that particular mixture work? Pause and think about it."
+    },
+    {
+      "id": "s07_extinct",
+      "text": "Start simple. An absent species stays absent, because its rate of change is itself times something. Anything with that property, once zero, stays zero."
+    },
+    {
+      "id": "s07_factor",
+      "text": "Our mixture, twenty-seven x two minus twenty-six x one, is one of these. Work out its rate of change, and it factorises: the mixture itself, times minus twenty-five x one minus twenty-six x two."
+    },
+    {
+      "id": "s07_ray",
+      "text": "So on the line where the mixture is zero, the motion stays on that line. Start species one and two in the ratio twenty-seven to twenty-six, and they keep that ratio forever."
+    },
+    {
+      "id": "s07_name",
+      "text": "Quantities like this are called Darboux polynomials: hidden invariants. They aren't conserved themselves, but their zeros are. And our mixing simply turned this hidden line into an axis."
+    },
+    {
+      "id": "s07_list",
+      "text": "A tree system has one for each species, and one for each tree line, mixing just its two ends; the tree rule makes that work. The chain has four plus three: seven. So does the star."
+    },
+    {
+      "id": "s08_carry",
+      "text": "Here's why they matter. Mixing can't create or destroy a hidden invariant; it just rewrites each one. So equivalent systems have matching sets."
+    },
+    {
+      "id": "s08_scramble",
+      "text": "But mixing scrambles the formulas. After this mixing, x three minus x four has become plain y one. You can no longer tell which invariants were single species."
+    },
+    {
+      "id": "s08_linked",
+      "text": "So what survives? Take x one, x two, and twenty-seven x two minus twenty-six x one. The third is built from the other two, and stays so after any mixing. Call three invariants like this a linked triple."
+    },
+    {
+      "id": "s08_triangles",
+      "text": "Each tree line gives one linked triple: its two ends and their mixture. Draw each as a triangle. Mixing can move everything around, but it never changes which triples are linked."
+    },
+    {
+      "id": "s08_count",
+      "text": "Now count. In the chain, two invariants sit in two triangles each. In the star, one sits in three. Mixing can't change that, so a chain system can never be disguised as a star system."
+    },
+    {
+      "id": "s09_hole",
+      "text": "But there's a hole. What if there are hidden invariants we haven't found? Extra ones could form extra triangles and spoil the count."
+    },
+    {
+      "id": "s09_skip",
+      "text": "First, a mixture can't skip a species. Mix species one and three but not two: species two affects one with strength one, but three with strength two, since they're in different branches. That mismatch breaks it."
+    },
+    {
+      "id": "s09_three",
+      "text": "Next, try three in a row: amounts p one, p two and p three of species one, two and three. Writing out the condition gives one equation per pair, with numbers from the table."
+    },
+    {
+      "id": "s09_cancel",
+      "text": "Take the first equation, subtract twenty-six times the second, and add the third. The p two terms cancel. The p three terms cancel. What's left is fifty-five p one equals zero."
+    },
+    {
+      "id": "s09_contra",
+      "text": "But p one isn't zero: species one is in the mixture. Contradiction. Bigger mixtures contain three in a row, so they fail too. The only hidden invariants are single species and the tree's pairs."
+    },
+    {
+      "id": "s09_generic",
+      "text": "That fifty-five comes from column two: one plus twenty-six, plus two plus twenty-six. The proof needs sums like this to be non-zero. Generic means ruling out such rare coincidences."
+    },
+    {
+      "id": "s09_lean",
+      "text": "This cancellation, with letters in place of numbers, was checked line by line in Lean, a program that verifies proofs."
+    },
+    {
+      "id": "s10_rule",
+      "text": "An invariant in two or more triangles is a species with several neighbours. A triangle joining two of those is a line between them; a triangle with one adds an end species."
+    },
+    {
+      "id": "s10_big",
+      "text": "Here it is on a seven-species tree, starting from triangles alone. The rule rebuilds the tree exactly, for any size. So generic systems from different trees are never equivalent."
+    },
+    {
+      "id": "s11_history",
+      "text": "Now the history. These tree families were introduced in twenty twenty-three by Quispel, Tapley, McLaren and van der Kamp. The conjecture followed in twenty twenty-five."
+    },
+    {
+      "id": "s11_zeng",
+      "text": "In September twenty twenty-six, a preprint by Zijian Zeng announced this result. It has since been withdrawn and its text is unavailable, so the arguments can't be compared. Withdrawal doesn't erase the announcement."
+    },
+    {
+      "id": "s11_ours",
+      "text": "This work gives an independent, self-contained proof of a closely matching theorem. It is a verification note, not a first discovery, and it claims no priority."
+    },
+    {
+      "id": "s11_checks",
+      "text": "The written proof covers every size. Exact computer checks passed for all nine hundred and eighty-six trees up to twelve species and, at chosen numbers, the full invariant lists for two hundred trees up to ten. Consistency checks, not a proof."
+    },
+    {
+      "id": "s11_lean",
+      "text": "Lean checks only the three-in-a-row step. The rest is a written proof, reviewed internally, but not yet by outside referees."
+    },
+    {
+      "id": "s11_scope",
+      "text": "There are limits. Special tables are excluded: if every row is the same, every mixture is an invariant and the tree is lost. And the tree is a rule about equal effects, not a food web read from data."
+    },
+    {
+      "id": "s12_recap",
+      "text": "To recap. One: each tree defines a family of population systems. Two: their hidden invariants form linked triples, one per tree line, and mixing can't change how they overlap. Three: the overlaps rebuild the tree, so different trees give genuinely different systems."
+    },
+    {
+      "id": "s12_open",
+      "text": "Still open: what exactly happens at the special tables, where extra invariants appear? And which networks beyond trees can be recovered this way?"
+    }
+  ]
+}

@@ -1,0 +1,2383 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "case": "subsp-f2-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "2",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=2 n=1 rank<=1: YES (independent 0-subsets tested 1, hits 1)"
+      ]
+    },
+    {
+      "case": "subsp-f3-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "3",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=3 n=1 rank<=1: YES (independent 0-subsets tested 1, hits 1)"
+      ]
+    },
+    {
+      "case": "subsp-f4-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "4",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=4 n=2 rank<=2: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f4-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "4",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=4 n=2 rank<=3: YES (independent 1-subsets tested 8, hits 8)"
+      ]
+    },
+    {
+      "case": "rankfq-f4-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,0,1 rank<=3: YES (prefixes 1, candidate buckets 1)"
+      ]
+    },
+    {
+      "case": "subsp-f4-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "4",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=4 n=2 rank<=4: YES (independent 2-subsets tested 20, hits 20)"
+      ]
+    },
+    {
+      "case": "rankfq-f4-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "0",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,0,1 rank<=4: YES (prefixes 1, candidate buckets 1)"
+      ]
+    },
+    {
+      "case": "subsp-f5-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "5",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=5 n=2 rank<=2: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f5-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "5",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=5 n=2 rank<=3: YES (independent 1-subsets tested 8, hits 8)"
+      ]
+    },
+    {
+      "case": "rankfq-f5-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "1",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,0,1 rank<=3: YES (prefixes 1, candidate buckets 1)"
+      ]
+    },
+    {
+      "case": "subsp-f5-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "5",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=5 n=2 rank<=4: YES (independent 2-subsets tested 20, hits 20)"
+      ]
+    },
+    {
+      "case": "rankfq-f5-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "1",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,0,1 rank<=4: YES (prefixes 1, candidate buckets 1)"
+      ]
+    },
+    {
+      "case": "subsp-f6-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "6",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=6 n=2 rank<=2: YES (independent 0-subsets tested 1, hits 1)"
+      ]
+    },
+    {
+      "case": "subsp-f6-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "6",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=6 n=2 rank<=3: YES (independent 1-subsets tested 7, hits 7)"
+      ]
+    },
+    {
+      "case": "rankfq-f6-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "0",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,1,1 rank<=3: YES (prefixes 1, candidate buckets 1)"
+      ]
+    },
+    {
+      "case": "subsp-f6-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "6",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=6 n=2 rank<=4: YES (independent 2-subsets tested 15, hits 15)"
+      ]
+    },
+    {
+      "case": "rankfq-f6-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "0",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,1,1 rank<=4: YES (prefixes 1, candidate buckets 1)"
+      ]
+    },
+    {
+      "case": "subsp-f7-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "7",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=7 n=2 rank<=2: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f7-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "7",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=7 n=2 rank<=3: YES (independent 1-subsets tested 9, hits 9)"
+      ]
+    },
+    {
+      "case": "rankfq-f7-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,1,1 rank<=3: YES (prefixes 1, candidate buckets 1)"
+      ]
+    },
+    {
+      "case": "subsp-f7-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "7",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=7 n=2 rank<=4: YES (independent 2-subsets tested 27, hits 27)"
+      ]
+    },
+    {
+      "case": "rankfq-f7-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "1",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,1,1 rank<=4: YES (prefixes 1, candidate buckets 1)"
+      ]
+    },
+    {
+      "case": "subsp-f8-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "8",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=8 n=3 rank<=3: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f8-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "8",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=8 n=3 rank<=4: NO (independent 1-subsets tested 48, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f8-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,0,0,1 rank<=4: NO (prefixes 1, candidate buckets 1)"
+      ]
+    },
+    {
+      "case": "subsp-f8-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "8",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=8 n=3 rank<=5: YES (independent 2-subsets tested 1116, hits 88)"
+      ]
+    },
+    {
+      "case": "rankfq-f8-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,0,0,1 rank<=5: YES (prefixes 2, candidate buckets 13)"
+      ]
+    },
+    {
+      "case": "subsp-f9-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "9",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=9 n=3 rank<=3: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f9-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "9",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=9 n=3 rank<=4: YES (independent 1-subsets tested 48, hits 9)"
+      ]
+    },
+    {
+      "case": "rankfq-f9-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,0,0,1 rank<=4: YES (prefixes 1, candidate buckets 1)"
+      ]
+    },
+    {
+      "case": "subsp-f9-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "9",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=9 n=3 rank<=5: YES (independent 2-subsets tested 1113, hits 432)"
+      ]
+    },
+    {
+      "case": "rankfq-f9-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,0,0,1 rank<=5: YES (prefixes 1, candidate buckets 2)"
+      ]
+    },
+    {
+      "case": "subsp-f10-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "10",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=10 n=3 rank<=3: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f10-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "10",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=10 n=3 rank<=4: YES (independent 1-subsets tested 47, hits 8)"
+      ]
+    },
+    {
+      "case": "rankfq-f10-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "0",
+        "1",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,1,0,1 rank<=4: YES (prefixes 1, candidate buckets 5)"
+      ]
+    },
+    {
+      "case": "subsp-f10-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "10",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=10 n=3 rank<=5: YES (independent 2-subsets tested 1061, hits 478)"
+      ]
+    },
+    {
+      "case": "rankfq-f10-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "0",
+        "1",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,1,0,1 rank<=5: YES (prefixes 1, candidate buckets 3)"
+      ]
+    },
+    {
+      "case": "subsp-f11-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "11",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=11 n=3 rank<=3: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f11-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "11",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=11 n=3 rank<=4: NO (independent 1-subsets tested 49, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f11-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "1",
+        "1",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,1,0,1 rank<=4: NO (prefixes 1, candidate buckets 0)"
+      ]
+    },
+    {
+      "case": "subsp-f11-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "11",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=11 n=3 rank<=5: NO (independent 2-subsets tested 1176, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f11-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "1",
+        "1",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,1,0,1 rank<=5: NO (prefixes 1, candidate buckets 0)"
+      ]
+    },
+    {
+      "case": "subsp-f12-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "12",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=12 n=3 rank<=3: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f12-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "12",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=12 n=3 rank<=4: YES (independent 1-subsets tested 47, hits 8)"
+      ]
+    },
+    {
+      "case": "rankfq-f12-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "0",
+        "0",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,0,1,1 rank<=4: YES (prefixes 1, candidate buckets 1)"
+      ]
+    },
+    {
+      "case": "subsp-f12-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "12",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=12 n=3 rank<=5: YES (independent 2-subsets tested 1061, hits 478)"
+      ]
+    },
+    {
+      "case": "rankfq-f12-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "0",
+        "0",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,0,1,1 rank<=5: YES (prefixes 1, candidate buckets 1)"
+      ]
+    },
+    {
+      "case": "subsp-f13-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "13",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=13 n=3 rank<=3: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f13-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "13",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=13 n=3 rank<=4: NO (independent 1-subsets tested 49, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f13-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "1",
+        "0",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,0,1,1 rank<=4: NO (prefixes 1, candidate buckets 0)"
+      ]
+    },
+    {
+      "case": "subsp-f13-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "13",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=13 n=3 rank<=5: NO (independent 2-subsets tested 1176, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f13-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "1",
+        "0",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,0,1,1 rank<=5: NO (prefixes 1, candidate buckets 0)"
+      ]
+    },
+    {
+      "case": "subsp-f14-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "14",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=14 n=3 rank<=3: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f14-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "14",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=14 n=3 rank<=4: YES (independent 1-subsets tested 48, hits 9)"
+      ]
+    },
+    {
+      "case": "rankfq-f14-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "0",
+        "1",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,1,1,1 rank<=4: YES (prefixes 1, candidate buckets 1)"
+      ]
+    },
+    {
+      "case": "subsp-f14-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "14",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=14 n=3 rank<=5: YES (independent 2-subsets tested 1113, hits 432)"
+      ]
+    },
+    {
+      "case": "rankfq-f14-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "0",
+        "1",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,1,1,1 rank<=5: YES (prefixes 1, candidate buckets 2)"
+      ]
+    },
+    {
+      "case": "subsp-f15-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "15",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=15 n=3 rank<=3: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f15-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "15",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=15 n=3 rank<=4: NO (independent 1-subsets tested 48, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f15-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,1,1,1 rank<=4: NO (prefixes 1, candidate buckets 1)"
+      ]
+    },
+    {
+      "case": "subsp-f15-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "15",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=15 n=3 rank<=5: YES (independent 2-subsets tested 1116, hits 88)"
+      ]
+    },
+    {
+      "case": "rankfq-f15-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,1,1,1 rank<=5: YES (prefixes 1, candidate buckets 2)"
+      ]
+    },
+    {
+      "case": "subsp-f16-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "16",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=16 n=4 rank<=4: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f16-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "16",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=16 n=4 rank<=5: NO (independent 1-subsets tested 224, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f16-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,0,0,0,1 rank<=5: NO (prefixes 1, candidate buckets 1)"
+      ]
+    },
+    {
+      "case": "subsp-f16-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "16",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=16 n=4 rank<=6: NO (independent 2-subsets tested 24956, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f16-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,0,0,0,1 rank<=6: NO (prefixes 9, candidate buckets 23)"
+      ]
+    },
+    {
+      "case": "subsp-f17-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "17",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=17 n=4 rank<=4: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f17-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "17",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=17 n=4 rank<=5: NO (independent 1-subsets tested 224, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f17-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "1",
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,0,0,0,1 rank<=5: NO (prefixes 1, candidate buckets 1)"
+      ]
+    },
+    {
+      "case": "subsp-f17-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "17",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=17 n=4 rank<=6: NO (independent 2-subsets tested 24956, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f17-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "1",
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,0,0,0,1 rank<=6: NO (prefixes 9, candidate buckets 23)"
+      ]
+    },
+    {
+      "case": "subsp-f18-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "18",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=18 n=4 rank<=4: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f18-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "18",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=18 n=4 rank<=5: YES (independent 1-subsets tested 223, hits 9)"
+      ]
+    },
+    {
+      "case": "rankfq-f18-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "0",
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,1,0,0,1 rank<=5: YES (prefixes 1, candidate buckets 2)"
+      ]
+    },
+    {
+      "case": "subsp-f18-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "18",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=18 n=4 rank<=6: YES (independent 2-subsets tested 24714, hits 2097)"
+      ]
+    },
+    {
+      "case": "rankfq-f18-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "0",
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,1,0,0,1 rank<=6: YES (prefixes 1, candidate buckets 4)"
+      ]
+    },
+    {
+      "case": "subsp-f19-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "19",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=19 n=4 rank<=4: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f19-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "19",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=19 n=4 rank<=5: NO (independent 1-subsets tested 225, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f19-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "1",
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,1,0,0,1 rank<=5: NO (prefixes 1, candidate buckets 0)"
+      ]
+    },
+    {
+      "case": "subsp-f19-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "19",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=19 n=4 rank<=6: NO (independent 2-subsets tested 25200, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f19-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "1",
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,1,0,0,1 rank<=6: NO (prefixes 1, candidate buckets 0)"
+      ]
+    },
+    {
+      "case": "subsp-f20-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "20",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=20 n=4 rank<=4: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f20-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "20",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=20 n=4 rank<=5: NO (independent 1-subsets tested 223, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f20-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "0",
+        "0",
+        "1",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,0,1,0,1 rank<=5: NO (prefixes 1, candidate buckets 4)"
+      ]
+    },
+    {
+      "case": "subsp-f20-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "20",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=20 n=4 rank<=6: YES (independent 2-subsets tested 24711, hits 64)"
+      ]
+    },
+    {
+      "case": "rankfq-f20-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "0",
+        "0",
+        "1",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,0,1,0,1 rank<=6: YES (prefixes 1, candidate buckets 21)"
+      ]
+    },
+    {
+      "case": "subsp-f21-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "21",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=21 n=4 rank<=4: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f21-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "21",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=21 n=4 rank<=5: NO (independent 1-subsets tested 225, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f21-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "1",
+        "0",
+        "1",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,0,1,0,1 rank<=5: NO (prefixes 1, candidate buckets 0)"
+      ]
+    },
+    {
+      "case": "subsp-f21-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "21",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=21 n=4 rank<=6: NO (independent 2-subsets tested 25191, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f21-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "1",
+        "0",
+        "1",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,0,1,0,1 rank<=6: NO (prefixes 3, candidate buckets 1)"
+      ]
+    },
+    {
+      "case": "subsp-f22-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "22",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=22 n=4 rank<=4: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f22-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "22",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=22 n=4 rank<=5: NO (independent 1-subsets tested 224, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f22-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "0",
+        "1",
+        "1",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,1,1,0,1 rank<=5: NO (prefixes 1, candidate buckets 0)"
+      ]
+    },
+    {
+      "case": "subsp-f22-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "22",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=22 n=4 rank<=6: NO (independent 2-subsets tested 24962, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f22-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "0",
+        "1",
+        "1",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,1,1,0,1 rank<=6: NO (prefixes 5, candidate buckets 6)"
+      ]
+    },
+    {
+      "case": "subsp-f23-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "23",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=23 n=4 rank<=4: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f23-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "23",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=23 n=4 rank<=5: NO (independent 1-subsets tested 224, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f23-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "1",
+        "1",
+        "1",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,1,1,0,1 rank<=5: NO (prefixes 1, candidate buckets 0)"
+      ]
+    },
+    {
+      "case": "subsp-f23-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "23",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=23 n=4 rank<=6: NO (independent 2-subsets tested 24962, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f23-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "1",
+        "1",
+        "1",
+        "0",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,1,1,0,1 rank<=6: NO (prefixes 5, candidate buckets 6)"
+      ]
+    },
+    {
+      "case": "subsp-f24-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "24",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=24 n=4 rank<=4: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f24-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "24",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=24 n=4 rank<=5: NO (independent 1-subsets tested 223, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f24-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,0,0,1,1 rank<=5: NO (prefixes 1, candidate buckets 3)"
+      ]
+    },
+    {
+      "case": "subsp-f24-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "24",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=24 n=4 rank<=6: YES (independent 2-subsets tested 24717, hits 88)"
+      ]
+    },
+    {
+      "case": "rankfq-f24-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,0,0,1,1 rank<=6: YES (prefixes 2, candidate buckets 43)"
+      ]
+    },
+    {
+      "case": "subsp-f25-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "25",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=25 n=4 rank<=4: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f25-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "25",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=25 n=4 rank<=5: NO (independent 1-subsets tested 225, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f25-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "1",
+        "0",
+        "0",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,0,0,1,1 rank<=5: NO (prefixes 1, candidate buckets 0)"
+      ]
+    },
+    {
+      "case": "subsp-f25-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "25",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=25 n=4 rank<=6: NO (independent 2-subsets tested 25200, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f25-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "1",
+        "0",
+        "0",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,0,0,1,1 rank<=6: NO (prefixes 1, candidate buckets 0)"
+      ]
+    },
+    {
+      "case": "subsp-f26-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "26",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=26 n=4 rank<=4: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f26-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "26",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=26 n=4 rank<=5: NO (independent 1-subsets tested 224, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f26-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "0",
+        "1",
+        "0",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,1,0,1,1 rank<=5: NO (prefixes 1, candidate buckets 0)"
+      ]
+    },
+    {
+      "case": "subsp-f26-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "26",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=26 n=4 rank<=6: NO (independent 2-subsets tested 24962, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f26-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "0",
+        "1",
+        "0",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,1,0,1,1 rank<=6: NO (prefixes 5, candidate buckets 6)"
+      ]
+    },
+    {
+      "case": "subsp-f27-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "27",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=27 n=4 rank<=4: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f27-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "27",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=27 n=4 rank<=5: NO (independent 1-subsets tested 224, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f27-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "1",
+        "1",
+        "0",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,1,0,1,1 rank<=5: NO (prefixes 1, candidate buckets 1)"
+      ]
+    },
+    {
+      "case": "subsp-f27-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "27",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=27 n=4 rank<=6: YES (independent 2-subsets tested 24947, hits 72)"
+      ]
+    },
+    {
+      "case": "rankfq-f27-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "1",
+        "1",
+        "0",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,1,0,1,1 rank<=6: YES (prefixes 10, candidate buckets 24)"
+      ]
+    },
+    {
+      "case": "subsp-f28-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "28",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=28 n=4 rank<=4: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f28-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "28",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=28 n=4 rank<=5: NO (independent 1-subsets tested 224, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f28-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "0",
+        "0",
+        "1",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,0,1,1,1 rank<=5: NO (prefixes 1, candidate buckets 1)"
+      ]
+    },
+    {
+      "case": "subsp-f28-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "28",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=28 n=4 rank<=6: YES (independent 2-subsets tested 24947, hits 72)"
+      ]
+    },
+    {
+      "case": "rankfq-f28-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "0",
+        "0",
+        "1",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,0,1,1,1 rank<=6: YES (prefixes 1, candidate buckets 6)"
+      ]
+    },
+    {
+      "case": "subsp-f29-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "29",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=29 n=4 rank<=4: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f29-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "29",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=29 n=4 rank<=5: NO (independent 1-subsets tested 224, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f29-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "1",
+        "0",
+        "1",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,0,1,1,1 rank<=5: NO (prefixes 1, candidate buckets 0)"
+      ]
+    },
+    {
+      "case": "subsp-f29-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "29",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=29 n=4 rank<=6: NO (independent 2-subsets tested 24962, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f29-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "1",
+        "0",
+        "1",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,0,1,1,1 rank<=6: NO (prefixes 5, candidate buckets 6)"
+      ]
+    },
+    {
+      "case": "subsp-f30-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "30",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=30 n=4 rank<=4: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f30-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "30",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=30 n=4 rank<=5: NO (independent 1-subsets tested 223, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f30-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "0",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,1,1,1,1 rank<=5: NO (prefixes 1, candidate buckets 3)"
+      ]
+    },
+    {
+      "case": "subsp-f30-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "30",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=30 n=4 rank<=6: YES (independent 2-subsets tested 24717, hits 88)"
+      ]
+    },
+    {
+      "case": "rankfq-f30-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "0",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=0,1,1,1,1 rank<=6: YES (prefixes 13, candidate buckets 91)"
+      ]
+    },
+    {
+      "case": "subsp-f31-m0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "31",
+        "0"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=31 n=4 rank<=4: NO (independent 0-subsets tested 1, hits 0)"
+      ]
+    },
+    {
+      "case": "subsp-f31-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "31",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=31 n=4 rank<=5: NO (independent 1-subsets tested 225, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f31-m1",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,1,1,1,1 rank<=5: NO (prefixes 1, candidate buckets 0)"
+      ]
+    },
+    {
+      "case": "subsp-f31-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-2c0ace776e46>",
+        "31",
+        "2"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT f=31 n=4 rank<=6: NO (independent 2-subsets tested 25200, hits 0)"
+      ]
+    },
+    {
+      "case": "rankfq-f31-m2",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "<unpublished-record-d97b040c5738>",
+        "2",
+        "2",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "exit": 0,
+      "before_and_after_results": [
+        "RESULT q=2 f=1,1,1,1,1 rank<=6: NO (prefixes 1, candidate buckets 0)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "beta": 3,
+  "t": 3,
+  "den": 1,
+  "total": 16,
+  "nonzero": 15,
+  "permitted": 5,
+  "coefpos": 0,
+  "hits": 0,
+  "undecided": 0,
+  "floatrej": 0,
+  "prefilter_disabled": true
+}

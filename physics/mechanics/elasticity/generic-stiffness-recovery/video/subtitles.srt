@@ -1,0 +1,527 @@
+1
+00:00:00,000 --> 00:00:03,382
+Tap a crystal, and a ripple of sound races through it.
+
+2
+00:00:03,382 --> 00:00:06,513
+But in many materials, that ripple isn't a circle.
+
+3
+00:00:06,513 --> 00:00:11,837
+Sound runs faster along the grain of wood than across it, and earthquake waves change
+
+4
+00:00:11,837 --> 00:00:15,720
+speed with direction through some rocks deep inside the Earth.
+
+5
+00:00:16,100 --> 00:00:21,804
+So here's the question. If you measured how fast waves travel in every direction, could
+
+6
+00:00:21,804 --> 00:00:25,344
+you work out exactly what the material is like inside?
+
+7
+00:00:25,344 --> 00:00:26,852
+Pause and make a guess.
+
+8
+00:00:27,833 --> 00:00:34,470
+Start with a spring. Squash it, and it pushes back: a stiff spring hard, a soft one gently.
+
+9
+00:00:34,470 --> 00:00:39,137
+How hard it pushes back for each bit of squash is its stiffness.
+
+10
+00:00:39,533 --> 00:00:43,402
+A solid is like a grid of balls joined by springs.
+
+11
+00:00:43,402 --> 00:00:47,580
+Push one end, and the squash passes from ball to ball.
+
+12
+00:00:47,580 --> 00:00:50,597
+That travelling squash is a sound wave.
+
+13
+00:00:50,967 --> 00:00:56,255
+Stiffer springs pass it on faster, and heavier balls slow it down.
+
+14
+00:00:56,255 --> 00:01:03,065
+In fact, speed squared equals stiffness divided by density, so waves only reveal that
+
+15
+00:01:03,065 --> 00:01:06,831
+ratio. From now on, stiffness means that ratio.
+
+16
+00:01:07,600 --> 00:01:13,592
+A wave can push and pull the balls along its path, or shake them sideways, in either
+
+17
+00:01:13,592 --> 00:01:16,945
+of two directions. Each kind has its own speed.
+
+18
+00:01:16,945 --> 00:01:20,512
+So in any one direction, you measure three speeds.
+
+19
+00:01:20,900 --> 00:01:25,539
+Now make the springs stiffer one way, like the grain in wood.
+
+20
+00:01:25,539 --> 00:01:30,482
+A flat wave runs faster along the stiff springs than across them.
+
+21
+00:01:30,482 --> 00:01:37,174
+Draw an arrow in each direction, as long as the speed there, and the tips trace a curve.
+
+22
+00:01:37,174 --> 00:01:41,204
+That's called anisotropy: speed depends on direction.
+
+23
+00:01:42,000 --> 00:01:44,630
+In three dimensions, the tips trace a surface.
+
+24
+00:01:44,630 --> 00:01:49,432
+Here's the fastest wave's surface for our running example: an imaginary crystal with
+
+25
+00:01:49,432 --> 00:01:52,176
+no symmetry at all, from the paper's test files.
+
+26
+00:01:52,176 --> 00:01:55,320
+It's lumpy, because it's stiffer some ways than others.
+
+27
+00:01:56,500 --> 00:02:00,543
+Each kind of wave has its own surface, nested inside one another.
+
+28
+00:02:00,543 --> 00:02:05,955
+Here's a slice through all three. One over speed is called slowness, and it carries the
+
+29
+00:02:05,955 --> 00:02:07,012
+same information.
+
+30
+00:02:07,800 --> 00:02:11,012
+How many numbers describe a material's stiffness?
+
+31
+00:02:11,012 --> 00:02:16,780
+A tiny cube can be deformed in six basic ways: stretched along each of three directions,
+
+32
+00:02:16,780 --> 00:02:19,008
+or skewed in each of three planes.
+
+33
+00:02:19,400 --> 00:02:25,988
+Deform the cube in any of these ways, and it can push back in all six: a six by six table.
+
+34
+00:02:25,988 --> 00:02:32,356
+Physics makes it a mirror image across its diagonal, so only six, plus five, plus four,
+
+35
+00:02:32,356 --> 00:02:35,869
+plus three, plus two, plus one numbers are free.
+
+36
+00:02:35,869 --> 00:02:39,968
+Twenty-one unknowns, like twenty-one dials you can turn.
+
+37
+00:02:40,767 --> 00:02:46,118
+Now the measurements. Straight up, our crystal's three speeds are one point one two,
+
+38
+00:02:46,118 --> 00:02:48,858
+one point four two, and one point six nine.
+
+39
+00:02:48,858 --> 00:02:54,273
+Square them, and take three summaries: the sum, the sum of products in pairs, and the
+
+40
+00:02:54,273 --> 00:02:54,783
+product.
+
+41
+00:02:55,167 --> 00:03:00,911
+Knowing the three summaries is the same as knowing the three numbers, just as two numbers
+
+42
+00:03:00,911 --> 00:03:04,719
+that add to five and multiply to six must be two and three.
+
+43
+00:03:05,100 --> 00:03:09,198
+The summaries also change with direction in a tidy way.
+
+44
+00:03:09,198 --> 00:03:15,605
+Write the direction as x, y and z. The sum is always a formula like this, fixed by six
+
+45
+00:03:15,605 --> 00:03:22,013
+numbers. Put in straight up, so x and y are zero and z is one, and out comes six point
+
+46
+00:03:22,013 --> 00:03:23,652
+one, just as measured.
+
+47
+00:03:24,033 --> 00:03:29,344
+The sum of pair products follows a formula fixed by fifteen numbers, and the product
+
+48
+00:03:29,344 --> 00:03:34,718
+needs twenty-eight. That's forty-nine numbers in all, every one set by the twenty-one
+
+49
+00:03:34,718 --> 00:03:35,793
+stiffness values.
+
+50
+00:03:36,566 --> 00:03:39,914
+Forty-nine measurements, twenty-one unknowns.
+
+51
+00:03:39,914 --> 00:03:42,889
+Surely that settles it? Not necessarily.
+
+52
+00:03:42,889 --> 00:03:49,286
+x squared equals four is one equation in one unknown, and it has two answers: two, and
+
+53
+00:03:49,286 --> 00:03:50,030
+minus two.
+
+54
+00:03:50,400 --> 00:03:56,007
+Materials can do this too. These two tables describe different materials with a neat,
+
+55
+00:03:56,007 --> 00:03:58,910
+box-like symmetry, differing in two entries.
+
+56
+00:03:58,910 --> 00:04:02,274
+Yet in every direction, their speeds are identical.
+
+57
+00:04:02,274 --> 00:04:03,264
+They are twins.
+
+58
+00:04:03,633 --> 00:04:09,807
+Four mathematicians, de Hoop, Ilmavirta, Lassas and Várilly-Alvarado, proved that in
+
+59
+00:04:09,807 --> 00:04:13,262
+two dimensions, a typical material has no twin.
+
+60
+00:04:13,262 --> 00:04:19,583
+In three dimensions, they left it as Conjecture E: a typical material, with no special
+
+61
+00:04:19,583 --> 00:04:22,449
+symmetry, is pinned down by its speeds.
+
+62
+00:04:23,233 --> 00:04:28,900
+This paper proves Conjecture E. A typical three-dimensional material has no twin, not
+
+63
+00:04:28,900 --> 00:04:34,700
+even a physically impossible one. And twenty-two numbers are enough: the six of the sum
+
+64
+00:04:34,700 --> 00:04:40,033
+formula, the fifteen of the pair formula, and the product in just one direction.
+
+65
+00:04:40,433 --> 00:04:45,883
+Typical means this. The materials that might have twins form a thinner set, with fewer
+
+66
+00:04:45,883 --> 00:04:48,798
+dials, like a curve drawn on a sheet of paper.
+
+67
+00:04:48,798 --> 00:04:53,297
+Throw a dart at the paper, and you miss the curve with probability one.
+
+68
+00:04:54,066 --> 00:04:59,737
+Here's the proof idea. Suppose two tables, A and B, give the same measurements.
+
+69
+00:04:59,737 --> 00:05:05,982
+Describe them by their midpoint, M, and half-gap, D, so A is M plus D, and B is M minus
+
+70
+00:05:05,982 --> 00:05:09,930
+D. That's twenty-one dials for M, and twenty-one for D.
+
+71
+00:05:10,300 --> 00:05:13,179
+Test one: the sum formulas must match.
+
+72
+00:05:13,179 --> 00:05:19,468
+That fixes six of D's numbers in terms of the others, leaving D with fifteen dials.
+
+73
+00:05:19,866 --> 00:05:22,754
+Test two: the pair formulas must match.
+
+74
+00:05:22,754 --> 00:05:29,046
+Once D is chosen, that's fifteen simultaneous equations for M, the straight-line kind
+
+75
+00:05:29,046 --> 00:05:35,413
+from school. If all fifteen are genuinely different, they use up fifteen of M's dials,
+
+76
+00:05:35,413 --> 00:05:39,114
+leaving six. So far, fifteen plus six: twenty-one.
+
+77
+00:05:39,500 --> 00:05:42,739
+Test three: the product in one direction must match.
+
+78
+00:05:42,739 --> 00:05:47,036
+One more equation takes us to twenty, unless it's automatically true.
+
+79
+00:05:47,036 --> 00:05:49,964
+The paper rules that out with an exact example.
+
+80
+00:05:50,333 --> 00:05:55,179
+Take M as zero, and D a table that treats every direction the same.
+
+81
+00:05:55,179 --> 00:05:59,447
+Straight up, D's numbers are minus one, minus one, and two.
+
+82
+00:05:59,447 --> 00:06:02,196
+Minus D's are one, one, and minus two.
+
+83
+00:06:02,196 --> 00:06:05,379
+The sums match, and so do the pair products.
+
+84
+00:06:05,379 --> 00:06:08,489
+But the products, two and minus two, don't.
+
+85
+00:06:08,489 --> 00:06:11,093
+So test three really removes a dial.
+
+86
+00:06:11,866 --> 00:06:17,994
+But there's a catch. Some equations might secretly repeat others, like x plus y equals
+
+87
+00:06:17,994 --> 00:06:20,701
+two, and two x plus two y equals four.
+
+88
+00:06:20,701 --> 00:06:26,757
+That's really one equation. If only r of the fifteen are genuinely different, M keeps
+
+89
+00:06:26,757 --> 00:06:30,034
+twenty-one minus r dials. More room for twins.
+
+90
+00:06:30,433 --> 00:06:33,488
+The heart of the paper is a balancing act.
+
+91
+00:06:33,488 --> 00:06:39,599
+It proves that half-gaps with only r genuine equations are rare: they have at most r
+
+92
+00:06:39,599 --> 00:06:44,545
+minus one dials. Whenever M gains freedom, D loses at least as much.
+
+93
+00:06:44,933 --> 00:06:48,763
+Add them up: r minus one, plus twenty-one minus r.
+
+94
+00:06:48,763 --> 00:06:52,133
+The r's cancel, and you're left with twenty.
+
+95
+00:06:52,533 --> 00:06:55,881
+Here it is for every r, from fifteen down to six.
+
+96
+00:06:55,881 --> 00:06:59,366
+Every bar stops at twenty, one short of twenty-one.
+
+97
+00:06:59,366 --> 00:07:04,149
+And apart from zero, no half-gap has fewer than six genuine equations.
+
+98
+00:07:04,533 --> 00:07:10,070
+So every possible twin pair fits in a family of at most twenty dials, while materials
+
+99
+00:07:10,070 --> 00:07:15,282
+have twenty-one. Like the curve on the paper, it's too thin to cover everything.
+
+100
+00:07:15,282 --> 00:07:17,301
+A typical material has no twin.
+
+101
+00:07:18,100 --> 00:07:21,616
+Proving 'at most r minus one' is where the computer comes in.
+
+102
+00:07:21,616 --> 00:07:26,574
+A symmetry argument about rotations shows that every family of bad half-gaps must pass
+
+103
+00:07:26,574 --> 00:07:30,782
+through one of two special tables, with six and eleven genuine equations.
+
+104
+00:07:30,782 --> 00:07:35,164
+So the computer only has to look closely there, and check a few flat slices.
+
+105
+00:07:35,533 --> 00:07:41,178
+All this uses exact whole-number arithmetic, with no rounding, partly on a clock with
+
+106
+00:07:41,178 --> 00:07:46,823
+thirty-two thousand and three hours. The paper explains why a miss on that clock is a
+
+107
+00:07:46,823 --> 00:07:52,867
+miss for ordinary numbers too. The results are certificates: identities anyone can multiply
+
+108
+00:07:52,867 --> 00:07:53,797
+out and check.
+
+109
+00:07:54,566 --> 00:07:57,633
+Real experiments measure only a few directions.
+
+110
+00:07:57,633 --> 00:08:03,114
+Seven or fewer can never work. The sums give at most six useful numbers, since their
+
+111
+00:08:03,114 --> 00:08:07,552
+formula has six, and the other two summaries give two per direction.
+
+112
+00:08:07,552 --> 00:08:10,814
+Six, plus seven, plus seven, is twenty: one short.
+
+113
+00:08:11,200 --> 00:08:14,761
+Eleven random directions are enough, with probability one.
+
+114
+00:08:14,761 --> 00:08:20,104
+A material plus eleven directions has forty-three dials, and every way of having a twin
+
+115
+00:08:20,104 --> 00:08:25,324
+fits in forty-two. The paper also gives fifteen specific directions that work for any
+
+116
+00:08:25,324 --> 00:08:26,368
+typical material.
+
+117
+00:08:26,766 --> 00:08:32,814
+What about eight, nine or ten? Counting doesn't rule them out, and nobody knows yet.
+
+118
+00:08:33,600 --> 00:08:36,538
+So what's proved? A typical material has no twin.
+
+119
+00:08:36,538 --> 00:08:41,274
+The proof is computer-assisted: written reasoning joined to exact certificates.
+
+120
+00:08:41,274 --> 00:08:46,311
+Lean, a proof-checking program, has checked eleven key identities, but not the whole
+
+121
+00:08:46,311 --> 00:08:50,448
+argument. It's been reviewed internally, not yet by outside referees.
+
+122
+00:08:50,833 --> 00:08:53,443
+And what isn't? Unique doesn't mean stable.
+
+123
+00:08:53,443 --> 00:08:58,664
+In one simulated test, noise of one part in a thousand in the speeds left the best fit
+
+124
+00:08:58,664 --> 00:09:02,003
+to the twenty-two numbers about forty-five percent off.
+
+125
+00:09:02,003 --> 00:09:07,345
+Symmetric materials can still have twins, and density is never separated from stiffness.
+
+126
+00:09:08,133 --> 00:09:13,858
+To recap. One: stiffness takes twenty-one numbers, and counting measurements can't rule
+
+127
+00:09:13,858 --> 00:09:19,452
+out twins. Two: split a twin pair into midpoint and half-gap, and all such pairs fill
+
+128
+00:09:19,452 --> 00:09:22,940
+at most twenty dials, so a typical material has none.
+
+129
+00:09:22,940 --> 00:09:27,876
+Three: twenty-two summary numbers, or eleven random directions, are enough.
+
+130
+00:09:27,876 --> 00:09:28,797
+Seven are not.
+
+131
+00:09:29,166 --> 00:09:34,788
+Still unknown: whether eight, nine or ten directions are enough, exactly which special
+
+132
+00:09:34,788 --> 00:09:40,278
+materials have twins, and how to recover stiffness reliably from noisy measurements.

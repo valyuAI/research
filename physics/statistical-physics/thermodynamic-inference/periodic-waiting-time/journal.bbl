@@ -1,0 +1,28 @@
+\begin{thebibliography}{1}
+
+\bibitem{hartich2021}
+David Hartich and Alja{\v z} Godec.
+\newblock Comment on ``inferring broken detailed balance in the absence of
+  observable currents''.
+\newblock \href{https://arxiv.org/abs/2112.08978}{arXiv:2112.08978}, 2021.
+\newblock Preprint consulted. A comment with the same title and authors was
+  published in Nature Communications 15, 8678 (2024),
+  \href{https://doi.org/10.1038/s41467-024-52602-0}{doi:10.1038/s41467-024-52602-0}.
+
+\bibitem{harunari2024}
+Pedro~E. Harunari, Carlos~E. Fiore, and Andre~C. Barato.
+\newblock Inference of entropy production for periodically driven systems.
+\newblock {\em Physical Review E}, 110:064126, 2024.
+\newblock \href{https://arxiv.org/abs/2406.12792v2}{arXiv:2406.12792v2}.
+
+\bibitem{maier2024}
+Alexander~M. Maier, Julius Deg{\"u}nther, Jann van~der Meer, and Udo Seifert.
+\newblock Inferring kinetics and entropy production from observable transitions
+  in partially accessible, periodically driven {Markov} networks.
+\newblock {\em Journal of Statistical Physics}, 191:104, 2024.
+\newblock
+  \href{https://doi.org/10.1007/s10955-024-03315-7}{doi:10.1007/s10955-024-03315-7}.
+  Published text consulted; numbering also given for
+  \href{https://arxiv.org/abs/2406.12657v1}{arXiv:2406.12657v1}.
+
+\end{thebibliography}

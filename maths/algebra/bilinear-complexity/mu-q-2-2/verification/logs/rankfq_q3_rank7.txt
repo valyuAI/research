@@ -1,0 +1,5 @@
+q=3 n=4 m=3 target rank 7: units 72, proj functionals 40, classes 2, F1 reps 3, rank-ones 1600
+rep 1/3 done: prefixes 1599 cand 6570 hits 0
+rep 2/3 done: prefixes 3198 cand 22572 hits 0
+rep 3/3 done: prefixes 4794 cand 205980 hits 0
+RESULT q=3 f=1,0,2,0,1 rank<=7: NO (prefixes 4794, candidate buckets 205980)

@@ -1,0 +1,13 @@
+{
+  "scope": "Detector-stage reproduction on real posterior initiation samples, not a forward model fit",
+  "nTraces": 217,
+  "posteriorSamplesPerTrace": 1000,
+  "nTimepoints": 286,
+  "windowSeconds": 50.0,
+  "thresholdInitiationsPerWindow": 2,
+  "maximumAbsoluteOnProbabilityDifference": 6.8833827526759706e-15,
+  "rmsOnProbabilityDifference": 2.0890432236936727e-15,
+  "elapsedSeconds": 0.7917826250049984,
+  "numpyVersion": "2.3.3",
+  "h5pyVersion": "3.16.0"
+}

@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-10-17T21:23:33.209117+00:00",
+  "source_matrix_matches_exactly": true,
+  "bound_scope": "Affine dimension upper bounds 2 and 3 for supplied N2 only",
+  "portable_required": [
+    "minor_dimension_certificates.json",
+    "verify_certificates.py"
+  ],
+  "optional_documentation": [
+    "README.md",
+    "independent_verification.json",
+    "independent_verification.log",
+    "certificate_manifest.json"
+  ],
+  "checks": [
+    {
+      "name": "changed minor coefficient",
+      "result": "REJECTED",
+      "exit_code": 1
+    },
+    {
+      "name": "assertions-disabled execution",
+      "result": "REJECTED",
+      "exit_code": 1
+    }
+  ],
+  "artifacts": {
+    "README.md": "f7dd39868b39aee38b0794988491b4cf20ea0b18a7e875631e6b513f2ae9391c",
+    "minor_dimension_certificates.json": "54e6d4467405a6c5e33892369cbce7e9cd0d9a2ae5c41110df5c2aa8a177b11a",
+    "verify_certificates.py": "a2de92102f6598edfe274baf9a8aaf6f31268e61738980459379f31478d9d8ef",
+    "independent_verification.json": "a42fa7c9f3a49d9b17c10223da763d2e95a63999a7644125cab876c2090f1438",
+    "independent_verification.log": "02d4e792418a9b8e2aaa9678b5726492306f6021219f0757940502d86a994c39",
+    "build_certificates.py": "666e9eb455ea30565e74856874089c94d2d681f483d00a828604a48ecea1da51",
+    "build_quintic.py": "f82698fc3fc37846a7421ed845f74112f7867e44b139deff8ca58ecaa3ce7e83"
+  },
+  "source_hashes": {
+    "../recursive_normal_borel_checks.json": "47a4940101cb63831d5c1acfe17d7766aab54cebc21c16a925db51a06729b2c2",
+    "../recursive_normal_rank2_basis.txt": "51706905a069de92c00131ff17a59058e998deaa9d40e9501871cf80fd3627c7",
+    "../recursive_normal_rank3_basis.txt": "322d265dc9fb397d983f308ee0125f6e1762fb7921cb82ab0ea90f7c91d7636b"
+  }
+}

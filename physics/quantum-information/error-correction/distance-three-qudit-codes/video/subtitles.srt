@@ -1,0 +1,515 @@
+1
+00:00:00,000 --> 00:00:05,320
+You want to send a friend one answer, yes or no, over a crackly radio.
+
+2
+00:00:05,320 --> 00:00:11,400
+You send a one for yes. But static flips it to a zero, and your friend hears no.
+
+3
+00:00:11,800 --> 00:00:14,674
+The oldest fix is to say it three times.
+
+4
+00:00:14,674 --> 00:00:21,070
+You send one, one, one. Static flips one of them, your friend hears one, zero, one, takes
+
+5
+00:00:21,070 --> 00:00:24,016
+a majority vote, and the answer survives.
+
+6
+00:00:24,400 --> 00:00:27,869
+But that costs three symbols for every one you meant.
+
+7
+00:00:27,869 --> 00:00:32,320
+So, how little extra can you send and still repair any single error?
+
+8
+00:00:33,299 --> 00:00:37,843
+Here are all eight messages of three bits, as the corners of a cube.
+
+9
+00:00:37,843 --> 00:00:40,649
+Flipping one bit moves you along one edge.
+
+10
+00:00:40,649 --> 00:00:45,593
+The repetition code only uses two corners, zero zero zero and one one one.
+
+11
+00:00:45,593 --> 00:00:50,003
+They are three edges apart, so we say the code has distance three.
+
+12
+00:00:50,399 --> 00:00:55,747
+Draw a bubble around each codeword: the codeword plus everything one flip away.
+
+13
+00:00:55,747 --> 00:01:01,569
+The bubbles do not overlap. So after one error you still know which bubble you are in,
+
+14
+00:01:01,569 --> 00:01:02,855
+and you can fix it.
+
+15
+00:01:03,699 --> 00:01:06,392
+There is another way to find the error.
+
+16
+00:01:06,392 --> 00:01:09,362
+Instead of reading the bits, ask questions.
+
+17
+00:01:09,362 --> 00:01:13,160
+Do bits one and two agree? Do bits two and three agree?
+
+18
+00:01:13,160 --> 00:01:15,507
+Write zero for yes and one for no.
+
+19
+00:01:15,899 --> 00:01:20,396
+No error answers zero, zero. An error on bit one gives one, zero.
+
+20
+00:01:20,396 --> 00:01:23,855
+Bit two gives one, one. Bit three gives zero, one.
+
+21
+00:01:23,855 --> 00:01:26,691
+Each position leaves its own fingerprint.
+
+22
+00:01:26,691 --> 00:01:30,011
+And the answers never reveal the message itself.
+
+23
+00:01:30,866 --> 00:01:36,140
+Now, efficiency. With r yes-or-no questions there are two to the r answer lists.
+
+24
+00:01:36,140 --> 00:01:41,282
+One must mean all clear, and every position needs a different list of its own.
+
+25
+00:01:41,666 --> 00:01:46,310
+Three questions give eight lists: one for all clear, seven for positions.
+
+26
+00:01:46,310 --> 00:01:50,636
+So three questions protect seven bits, leaving four for the message.
+
+27
+00:01:50,636 --> 00:01:52,226
+That is the Hamming code.
+
+28
+00:01:52,599 --> 00:01:57,868
+Think of each fingerprint as a point. The code works exactly when all the points are
+
+29
+00:01:57,868 --> 00:02:00,063
+different. Hold on to that picture.
+
+30
+00:02:00,899 --> 00:02:04,492
+Quantum computers need this too, with two new problems.
+
+31
+00:02:04,492 --> 00:02:08,411
+First, you may not look: measuring quantum data disturbs it.
+
+32
+00:02:08,799 --> 00:02:14,709
+But our questions never ask what a value is, only whether values agree, and questions
+
+33
+00:02:14,709 --> 00:02:17,350
+like that can be asked without damage.
+
+34
+00:02:17,350 --> 00:02:21,522
+Second, quantum data can be damaged in two independent ways.
+
+35
+00:02:21,522 --> 00:02:23,607
+Call them a shift and a twist.
+
+36
+00:02:24,466 --> 00:02:28,487
+We will use qudits: quantum dials with q settings.
+
+37
+00:02:28,487 --> 00:02:33,312
+A qutrit has q equal to three, so it reads zero, one or two.
+
+38
+00:02:33,312 --> 00:02:40,228
+Its arithmetic is clock arithmetic: two plus two wraps round to one, and two times two
+
+39
+00:02:40,228 --> 00:02:41,434
+is one as well.
+
+40
+00:02:41,833 --> 00:02:48,379
+A shift turns the dial by one or two. A twist, the invisible kind, also comes in amounts
+
+41
+00:02:48,379 --> 00:02:53,735
+one or two. That is nine combinations, one of which is no damage at all.
+
+42
+00:02:53,735 --> 00:02:56,785
+So each qutrit has eight possible errors.
+
+43
+00:02:57,633 --> 00:03:02,256
+Let us ask five questions, each answered on the clock.
+
+44
+00:03:02,256 --> 00:03:09,876
+These numbers are from a real code. For qutrit fourteen, a shift by one gives the answers
+
+45
+00:03:09,876 --> 00:03:16,041
+zero, two, one, two, one. A twist by one gives one, zero, one, one, one.
+
+46
+00:03:16,433 --> 00:03:22,558
+A shift by s with a twist by t gives s times the first list plus t times the second.
+
+47
+00:03:22,558 --> 00:03:28,099
+That makes nine lists, a flat sheet of answers belonging to this one qutrit.
+
+48
+00:03:28,099 --> 00:03:33,641
+To repair every error, two qutrits' sheets may share only the all-zero list.
+
+49
+00:03:34,499 --> 00:03:40,173
+Now count. Five questions give three to the five, two hundred and forty-three, answer
+
+50
+00:03:40,173 --> 00:03:43,844
+lists. One means all clear, and each qutrit uses eight.
+
+51
+00:03:43,844 --> 00:03:49,451
+So one plus eight n is at most two hundred and forty-three, and n is at most thirty.
+
+52
+00:03:49,833 --> 00:03:52,950
+Public tables record the best codes known.
+
+53
+00:03:52,950 --> 00:03:57,701
+For five questions on qutrits they had a code with twenty-eight.
+
+54
+00:03:57,701 --> 00:04:00,745
+For twenty-nine, the entry said: unknown.
+
+55
+00:04:00,745 --> 00:04:04,605
+So is the limit twenty-eight, twenty-nine or thirty?
+
+56
+00:04:04,605 --> 00:04:05,793
+Pause and guess.
+
+57
+00:04:07,833 --> 00:04:13,254
+Here is the key translation. Double an answer list on the clock, and ones become twos.
+
+58
+00:04:13,254 --> 00:04:16,785
+Glue each list to its double, and call the pair a point.
+
+59
+00:04:17,166 --> 00:04:22,868
+The two hundred and forty-two nonzero lists become one hundred and twenty-one points.
+
+60
+00:04:22,868 --> 00:04:27,698
+One qutrit's sheet becomes just four points, and those four form a line.
+
+61
+00:04:27,698 --> 00:04:31,723
+The rule becomes: the lines of different qutrits never meet.
+
+62
+00:04:31,723 --> 00:04:33,870
+Lines like that are called skew.
+
+63
+00:04:36,966 --> 00:04:40,510
+You have seen skew lines: a road under a bridge.
+
+64
+00:04:40,510 --> 00:04:45,678
+Not parallel, yet never touching, because there is room to pass above.
+
+65
+00:04:46,866 --> 00:04:53,734
+In a plane there is no such room. This is the smallest finite plane: seven points, seven
+
+66
+00:04:53,734 --> 00:04:56,466
+lines. Any two lines share a point.
+
+67
+00:04:56,866 --> 00:05:02,790
+With four questions on qutrits there is room: forty points, covered exactly by ten skew
+
+68
+00:05:02,790 --> 00:05:08,577
+lines. That is a ten-qutrit code, right at the counting limit, and codes like it were
+
+69
+00:05:08,577 --> 00:05:08,986
+known.
+
+70
+00:05:09,833 --> 00:05:14,535
+Back to five questions and one hundred and twenty-one points.
+
+71
+00:05:14,535 --> 00:05:21,166
+Suppose twenty-nine skew lines fit. They cover one hundred and sixteen points, leaving
+
+72
+00:05:21,166 --> 00:05:23,633
+five uncovered. Call them holes.
+
+73
+00:05:24,033 --> 00:05:27,876
+Now take a slice: all the points that obey one fixed equation.
+
+74
+00:05:27,876 --> 00:05:33,517
+Every slice has forty points, and every line either lies inside it or crosses it at exactly
+
+75
+00:05:33,517 --> 00:05:34,137
+one point.
+
+76
+00:05:34,533 --> 00:05:40,812
+So a slice has forty minus twenty-nine holes, minus three more for each line lying inside
+
+77
+00:05:40,812 --> 00:05:43,563
+it. That is eleven, eight, five or two.
+
+78
+00:05:43,563 --> 00:05:45,045
+Never fewer than two.
+
+79
+00:05:45,433 --> 00:05:51,045
+One hundred and twenty-one slices, each with at least two holes, need two hundred and
+
+80
+00:05:51,045 --> 00:05:56,724
+forty-two hole-slice pairs. But each hole lies in exactly forty slices, and five times
+
+81
+00:05:56,724 --> 00:05:58,441
+forty is only two hundred.
+
+82
+00:05:58,833 --> 00:06:01,564
+Contradiction. Twenty-nine cannot fit.
+
+83
+00:06:01,564 --> 00:06:04,295
+The limit is twenty-eight, not thirty.
+
+84
+00:06:04,295 --> 00:06:09,039
+This hole count for skew lines goes back to Beutelspacher in 1975.
+
+85
+00:06:09,039 --> 00:06:12,993
+What is new is applying it to every one of these codes.
+
+86
+00:06:13,832 --> 00:06:20,125
+Including cheaters. Some codes let two errors give the same answers, when their difference
+
+87
+00:06:20,125 --> 00:06:25,999
+is harmless to the message. We showed this never pays when q is at least three: with
+
+88
+00:06:25,999 --> 00:06:31,592
+one harmless error, five questions protect at most two plus ten, twelve qutrits.
+
+89
+00:06:32,432 --> 00:06:37,127
+Can twenty-eight be reached? Think of lines y equals a x.
+
+90
+00:06:37,127 --> 00:06:43,880
+Different slopes meet only at the centre, the all-zero list, which does not count.
+
+91
+00:06:44,266 --> 00:06:49,096
+Do the same with five entries. The first two, x and y, are free.
+
+92
+00:06:49,096 --> 00:06:55,663
+The last three are the slope a times x plus y omega, where a comes from a number system
+
+93
+00:06:55,663 --> 00:07:00,418
+with twenty-seven elements. That gives twenty-seven skew lines.
+
+94
+00:07:00,799 --> 00:07:07,499
+None of them touches the leftover plane where x and y are zero, and a plane holds exactly
+
+95
+00:07:07,499 --> 00:07:09,607
+one more line. Twenty-eight.
+
+96
+00:07:10,466 --> 00:07:14,915
+One quantum rule remains: the questions must be askable together.
+
+97
+00:07:14,915 --> 00:07:20,733
+Each line gets a signature of ten clock numbers, and the signatures must add to zero.
+
+98
+00:07:20,733 --> 00:07:24,292
+Relabelling a qutrit's twists doubles its signature.
+
+99
+00:07:24,292 --> 00:07:25,730
+Call that its weight.
+
+100
+00:07:26,099 --> 00:07:31,743
+Watch the running total. The twenty-seven slope lines with weight one add up to zero.
+
+101
+00:07:31,743 --> 00:07:34,067
+The extra line leaves a single one.
+
+102
+00:07:34,466 --> 00:07:37,512
+The fix: give three slope lines weight two.
+
+103
+00:07:37,512 --> 00:07:43,533
+Now they leave a two in that slot, the extra line adds one, and on the clock two plus
+
+104
+00:07:43,533 --> 00:07:49,130
+one is zero. Twenty-eight qutrits, five questions, every single error repaired.
+
+105
+00:07:49,965 --> 00:07:55,895
+Here is the full answer, for every dial size q from three up that is a prime or prime
+
+106
+00:07:55,895 --> 00:08:01,964
+power. A code that repairs any single error exists exactly when there are at least four
+
+107
+00:08:01,964 --> 00:08:06,429
+questions, and no more qudits than the most skew lines that fit.
+
+108
+00:08:06,798 --> 00:08:10,934
+For an even number of questions that matches the counting limit.
+
+109
+00:08:10,934 --> 00:08:13,648
+For an odd number it is q minus one lower.
+
+110
+00:08:13,648 --> 00:08:19,141
+With five questions it is q cubed plus one: twenty-eight, sixty-five, one hundred and
+
+111
+00:08:19,141 --> 00:08:22,566
+twenty-six. And every length in between can be built.
+
+112
+00:08:23,432 --> 00:08:26,437
+That settles entries in the public tables.
+
+113
+00:08:26,437 --> 00:08:33,163
+There are new codes on four-setting dials with fifty-nine, sixty-one, sixty-two and sixty-five
+
+114
+00:08:33,163 --> 00:08:38,744
+qudits. Twenty-nine qutrits, and sixty-six four-setting dials, are impossible.
+
+115
+00:08:39,132 --> 00:08:44,046
+The same argument also settles some codes with larger distance.
+
+116
+00:08:44,046 --> 00:08:47,790
+Twelve entries improve, and eleven become exact.
+
+117
+00:08:47,790 --> 00:08:50,988
+Some rows rely on a 1971 theorem of Thas.
+
+118
+00:08:51,832 --> 00:08:56,572
+How sure is this? The limit and the constructions are short written proofs.
+
+119
+00:08:56,572 --> 00:09:02,134
+Two hundred and fifty-five explicit codes, the starting cases and the new ones, all pass
+
+120
+00:09:02,134 --> 00:09:06,496
+an independent checker, which rejects seven deliberately broken ones.
+
+121
+00:09:06,865 --> 00:09:10,484
+A computer search alone could not rule out twenty-nine.
+
+122
+00:09:10,484 --> 00:09:14,761
+But the proofs are not checked in Lean and not yet peer reviewed.
+
+123
+00:09:14,761 --> 00:09:20,617
+They cover stabilizer codes, the standard kind in the tables, and some rows lean on Thas.
+
+124
+00:09:21,465 --> 00:09:25,345
+So: repairing an error means every error leaves a different answer.
+
+125
+00:09:25,345 --> 00:09:30,673
+For quantum codes each qudit becomes a line, and the lines must never meet and must balance.
+
+126
+00:09:30,673 --> 00:09:34,785
+Counting holes gives the limit, and a balanced construction reaches it.
+
+127
+00:09:35,165 --> 00:09:40,008
+Still unknown: codes with distance four and an odd number of questions.
+
+128
+00:09:40,008 --> 00:09:45,874
+For qutrits with seven questions, the longest known to us have sixteen qudits, and the
+
+129
+00:09:45,874 --> 00:09:48,125
+best proven limit is twenty-nine.

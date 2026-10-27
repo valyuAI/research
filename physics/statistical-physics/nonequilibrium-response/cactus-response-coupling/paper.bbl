@@ -1,0 +1,70 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{10}
+
+\bibitem{Diestel2017}
+Reinhard Diestel, \emph{Graph theory}, fifth ed., Graduate Texts in
+  Mathematics, vol. 173, Springer, Berlin, 2017.
+
+\bibitem{FH2026}
+Sean Fancher and Jordan~M. Horowitz, \emph{Topological building blocks of
+  nonequilibrium response}, arXiv:2607.12096v1 [cond-mat.stat-mech], 2026,
+  Submitted 13 July 2026.
+
+\bibitem{HazanJaakkola2012}
+Tamir Hazan and Tommi Jaakkola, \emph{On the partition function and random
+  maximum a-posteriori perturbations}, Proceedings of the 29th International
+  Conference on Machine Learning (ICML), 2012, arXiv:1206.6410.
+
+\bibitem{Hill1966}
+Terrell~L. Hill, \emph{Studies in irreversible thermodynamics {IV}.
+  diagrammatic representation of steady state fluxes for unimolecular systems},
+  Journal of Theoretical Biology \textbf{10} (1966), no.~3, 442--459.
+
+\bibitem{Maddison2014}
+Chris~J. Maddison, Daniel Tarlow, and Tom Minka, \emph{A* sampling}, Advances
+  in Neural Information Processing Systems 27, 2014, arXiv:1411.0030.
+
+\bibitem{OwenHorowitz2023}
+Jeremy~A. Owen and Jordan~M. Horowitz, \emph{Size limits the sensitivity of
+  kinetic schemes}, Nature Communications \textbf{14} (2023), 1280.
+
+\bibitem{PapandreouYuille2011}
+George Papandreou and Alan~L. Yuille, \emph{Perturb-and-{MAP} random fields:
+  using discrete optimization to learn and sample from energy models},
+  Proceedings of the 2011 International Conference on Computer Vision (ICCV),
+  2011, pp.~193--200.
+
+\bibitem{Paulus2020}
+Max~B. Paulus, Dami Choi, Daniel Tarlow, Andreas Krause, and Chris~J. Maddison,
+  \emph{Gradient estimation with stochastic softmax tricks}, Advances in Neural
+  Information Processing Systems 33, 2020, arXiv:2006.08063v3.
+
+\bibitem{ProppWilson1998}
+James~Gary Propp and David~Bruce Wilson, \emph{How to get a perfectly random
+  sample from a generic {M}arkov chain and generate a random spanning tree of a
+  directed graph}, Journal of Algorithms \textbf{27} (1998), no.~2, 170--217.
+
+\bibitem{Schnakenberg1976}
+J.~Schnakenberg, \emph{Network theory of microscopic and macroscopic behavior
+  of master equation systems}, Reviews of Modern Physics \textbf{48} (1976),
+  571--585.
+
+\bibitem{Struminsky2021}
+Kirill Struminsky, Artyom Gadetsky, Denis Rakitin, Danil Karpushkin, and Dmitry
+  Vetrov, \emph{Leveraging recursive {G}umbel-max trick for approximate
+  inference in combinatorial spaces}, Advances in Neural Information Processing
+  Systems 34, 2021, arXiv:2110.15072v1.
+
+\bibitem{Yellott1977}
+John~I. Yellott, Jr., \emph{The relationship between {L}uce's choice axiom,
+  {T}hurstone's theory of comparative judgment, and the double exponential
+  distribution}, Journal of Mathematical Psychology \textbf{15} (1977), no.~2,
+  109--144.
+
+\end{thebibliography}

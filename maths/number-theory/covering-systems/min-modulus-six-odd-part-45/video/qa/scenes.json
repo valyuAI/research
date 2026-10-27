@@ -1,0 +1,37 @@
+[
+  {
+    "scene": "ClockCover",
+    "start": 0.0,
+    "end": 77.797396
+  },
+  {
+    "scene": "RemainderBoards",
+    "start": 77.797396,
+    "end": 143.660807
+  },
+  {
+    "scene": "Doubling",
+    "start": 143.660807,
+    "end": 190.825521
+  },
+  {
+    "scene": "Prices",
+    "start": 190.825521,
+    "end": 254.42356800000002
+  },
+  {
+    "scene": "TheTrap",
+    "start": 254.42356800000002,
+    "end": 312.588282
+  },
+  {
+    "scene": "ExactEnumeration",
+    "start": 312.588282,
+    "end": 433.017058
+  },
+  {
+    "scene": "FiniteAndInfinite",
+    "start": 433.017058,
+    "end": 535.213803
+  }
+]

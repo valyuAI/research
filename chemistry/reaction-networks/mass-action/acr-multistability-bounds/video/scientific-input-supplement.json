@@ -1,0 +1,49 @@
+{
+  "validated": true,
+  "updatedUtc": "2026-10-26T16:37:22.405104+00:00",
+  "reason": "Root validated a fail-closed guard rejecting disabled Python assertions. Removing only the guard from the current file reproduces the historical frozen source hash. No vector field, equation, theorem, scene or narration changed.",
+  "originalSnapshotSha256": "54f4b53c2e08268660e8d75df3fa0fc76f28a63bfd03739d900e88f8df7a7428",
+  "approvedChanges": {
+    "verification/independent_check.py": {
+      "before": "48bf4367be52dfa486e86bc877d804bf9d706a2c24a2e755222dad9e5e125512",
+      "after": "60f2440261db2d09671f05261d0d5f8e21c8b0e65de00c61f28cac5abd4c3bd2"
+    }
+  },
+  "validationEvidence": [
+    {
+      "path": "<unpublished-record-637a013d1b9f>",
+      "sha256": "87c9fbd7a028dcda81c0c240fb8a7fac7d875e57b2c417199f3cfe0aa2881776"
+    },
+    {
+      "path": "<unpublished-record-fa1d3aaf05f8>",
+      "sha256": "f4efed957a2827374ba4395aab001431260b4278445e9129abdec76572a44dd3"
+    }
+  ],
+  "checks": [
+    {
+      "label": "acr-normal-negative",
+      "exit": 1,
+      "log": "<unpublished-record-1d6215b5ed13>",
+      "sha256": "a5431059c06f7abea5852d093c28f287ff5195949193aaad06bc92118a896a43"
+    },
+    {
+      "label": "acr-optimized-negative",
+      "exit": 1,
+      "log": "<unpublished-record-c6b736b45c83>",
+      "sha256": "a7a633dc205552cea3aaf26594d47e9affb8baba0d6f7139f0ad89040882621c"
+    },
+    {
+      "label": "acr-env-optimization",
+      "exit": 1,
+      "log": "<unpublished-record-556382bfa479>",
+      "sha256": "a7a633dc205552cea3aaf26594d47e9affb8baba0d6f7139f0ad89040882621c"
+    },
+    {
+      "label": "acr-full-independent",
+      "exit": 0,
+      "log": "<unpublished-record-97ba218968f3>",
+      "sha256": "bf67c132f6f70d130a29fbcb66d8a2e04b130333fc286f429b5f419d0140eb2a"
+    }
+  ],
+  "mediaChangeRequired": false
+}

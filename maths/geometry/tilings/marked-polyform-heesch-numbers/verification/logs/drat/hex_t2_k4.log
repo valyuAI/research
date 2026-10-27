@@ -1,0 +1,16 @@
+[12:22:15] build hex_t2_k4 hex [[0, 0], [0, 1], [0, 2], [1, 0]] k=4 
+hex cells=[[0, 0], [0, 1], [0, 2], [1, 0]] k=4 imb=1 radius=18.0: placements 13980 vars 241059 clauses 1665581 (13.5s)
+wrote hex_t2_k4.cnf
+bdeff318c32a5c51dec2646bab0a5e076b2d5f9ca66086ce3d56f8d389422762  hex_t2_k4.cnf
+[12:22:30] cadical start
+s UNSATISFIABLE
+[12:26:22] cadical rc=20 (232s) proof bytes 49884244
+8755ad8382e303e1c1dd4d82beff96c9f7bc522ccb27f74a026ecf39d5da6e94  hex_t2_k4.drat
+c 115955 of 1665581 clauses in core                            
+c 225989 of 601551 lemmas in core using 24237785 resolution steps
+c 0 RAT lemmas in core; 103408 redundant literals in core lemmas
+s VERIFIED
+c verification time: 280.710 seconds
+[12:31:03] drat-trim done (280s)
+DRAT_VERIFIED hex_t2_k4
+[12:31:12] END rc=20

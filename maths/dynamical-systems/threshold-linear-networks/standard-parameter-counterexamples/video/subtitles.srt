@@ -1,0 +1,503 @@
+1
+00:00:00,000 --> 00:00:04,623
+Imagine two neurons whose activity settles to a steady pattern.
+
+2
+00:00:04,623 --> 00:00:10,861
+Give the pattern a small nudge. If it returns, the model can hold that pattern like a
+
+3
+00:00:10,861 --> 00:00:15,264
+memory. Can you predict these memories just from the wiring?
+
+4
+00:00:15,633 --> 00:00:19,575
+A firing rate is a nonnegative number describing activity.
+
+5
+00:00:19,575 --> 00:00:24,537
+We are studying a mathematical network model, not measuring a real brain.
+
+6
+00:00:24,537 --> 00:00:30,246
+Its rate changes by balancing natural decay against input from the other neurons and
+
+7
+00:00:30,246 --> 00:00:31,401
+a constant drive.
+
+8
+00:00:31,800 --> 00:00:36,524
+The threshold is simple. If the total input is positive, keep it.
+
+9
+00:00:36,524 --> 00:00:39,286
+If it is negative, replace it by zero.
+
+10
+00:00:39,286 --> 00:00:44,664
+Draw the output against input: flat on the left, then rising on the right.
+
+11
+00:00:45,033 --> 00:00:50,889
+At the settings used here, an arrow means weaker inhibition, with weight minus three
+
+12
+00:00:50,889 --> 00:00:55,142
+quarters. Without an arrow, the weight is minus three halves.
+
+13
+00:00:55,142 --> 00:01:01,137
+Both interactions suppress activity. An arrow is not a positive excitatory connection.
+
+14
+00:01:01,533 --> 00:01:04,322
+Take two neurons with arrows both ways.
+
+15
+00:01:04,322 --> 00:01:09,613
+If both fire at rate x, each receives input one minus three quarters of x.
+
+16
+00:01:09,613 --> 00:01:15,189
+At equilibrium, the firing rate equals that input, so the rate stops changing.
+
+17
+00:01:15,567 --> 00:01:18,321
+Move the three quarters of x to the left.
+
+18
+00:01:18,321 --> 00:01:20,940
+One and three quarters of x equals one.
+
+19
+00:01:20,940 --> 00:01:23,560
+Multiply by four, then divide by seven.
+
+20
+00:01:23,560 --> 00:01:26,583
+Each neuron settles at exactly four sevenths.
+
+21
+00:01:26,967 --> 00:01:31,697
+Now raise the first rate a little. It suppresses the second more strongly.
+
+22
+00:01:31,697 --> 00:01:35,086
+That drop then releases some inhibition on the first.
+
+23
+00:01:35,086 --> 00:01:40,520
+This is positive feedback through two negative connections, even though neither arrow
+
+24
+00:01:40,520 --> 00:01:41,415
+is excitatory.
+
+25
+00:01:41,800 --> 00:01:44,464
+But feedback does not automatically win.
+
+26
+00:01:44,464 --> 00:01:48,661
+Here the natural decay is strong enough to damp the difference.
+
+27
+00:01:48,661 --> 00:01:52,857
+One rate falls while the other rises back toward four sevenths.
+
+28
+00:01:52,857 --> 00:01:56,920
+Returning after sufficiently small nudges is local stability.
+
+29
+00:01:57,300 --> 00:01:59,892
+The active neurons are called the support.
+
+30
+00:01:59,892 --> 00:02:04,212
+A clique is a group with arrows in both directions between every pair.
+
+31
+00:02:04,212 --> 00:02:08,964
+Our two-neuron example is a clique. Here is the same idea with three neurons.
+
+32
+00:02:09,333 --> 00:02:13,714
+A target is an outside neuron receiving arrows from the whole group.
+
+33
+00:02:13,714 --> 00:02:18,416
+Remove one of those arrows and that outside neuron is no longer a target.
+
+34
+00:02:18,416 --> 00:02:22,989
+A clique is target-free when no outside neuron receives from all of it.
+
+35
+00:02:23,367 --> 00:02:28,699
+Curto, Geneson and Morrison conjectured that only target-free cliques could support stable
+
+36
+00:02:28,699 --> 00:02:32,254
+memories. The direction saying these cliques work is proved.
+
+37
+00:02:32,254 --> 00:02:37,527
+The converse is the vulnerable part: could a stable pattern use a group missing an arrow?
+
+38
+00:02:37,900 --> 00:02:44,259
+We will examine an eleven-neuron example at the standard settings: epsilon one quarter,
+
+39
+00:02:44,259 --> 00:02:50,692
+delta one half, and drive one. All eleven neurons stay active and stable, although their
+
+40
+00:02:50,692 --> 00:02:52,300
+group is not a clique.
+
+41
+00:02:52,700 --> 00:02:56,392
+Start with every possible arrow between different neurons.
+
+42
+00:02:56,392 --> 00:03:00,210
+There are a hundred and ten. Delete these twenty-one arrows.
+
+43
+00:03:00,210 --> 00:03:05,557
+The red dashed arrows show absences. Every connection still acts; the missing arrows
+
+44
+00:03:05,557 --> 00:03:07,148
+mean stronger inhibition.
+
+45
+00:03:07,533 --> 00:03:13,413
+Here is the actual equilibrium. The bars show exact numerators, all divided by two hundred
+
+46
+00:03:13,413 --> 00:03:19,227
+and ninety-two. Every bar is positive, so the support really contains all eleven neurons.
+
+47
+00:03:19,227 --> 00:03:22,101
+The unequal heights are part of the pattern.
+
+48
+00:03:22,500 --> 00:03:28,148
+Check neuron zero. Its stronger inhibitors are neurons five and eight, with numerators
+
+49
+00:03:28,148 --> 00:03:34,060
+thirty-seven and ten. The other ten rates have total numerator three hundred and thirteen.
+
+50
+00:03:34,060 --> 00:03:39,708
+Start with weak inhibition from all ten, then add the extra inhibition from those two.
+
+51
+00:03:40,100 --> 00:03:45,680
+The input becomes one minus three quarters times three hundred and sixty over two hundred
+
+52
+00:03:45,680 --> 00:03:51,071
+and ninety-two. That equals twenty-two over two hundred and ninety-two, exactly neuron
+
+53
+00:03:51,071 --> 00:03:55,460
+zero's rate. The certificate verifies the same balance for all eleven.
+
+54
+00:03:55,833 --> 00:04:00,659
+A matrix is just a rectangular table that records a linear calculation.
+
+55
+00:04:00,659 --> 00:04:05,620
+For this network, collect the equilibrium equations and multiply by four.
+
+56
+00:04:05,620 --> 00:04:11,193
+The diagonal entries become four. An arrow gives three; a missing arrow gives six.
+
+57
+00:04:11,567 --> 00:04:17,299
+Reading one row means multiplying its entries by the corresponding rates and adding.
+
+58
+00:04:17,299 --> 00:04:21,667
+The whole table times the rate list must give four in every row.
+
+59
+00:04:21,667 --> 00:04:25,967
+Our exact rate list passes this test, with no decimal rounding.
+
+60
+00:04:26,333 --> 00:04:32,902
+Balance alone is not enough. A pencil balanced on its tip is at rest, but a nudge grows.
+
+61
+00:04:32,902 --> 00:04:36,485
+Here we examine deviations from the equilibrium.
+
+62
+00:04:36,485 --> 00:04:43,054
+Since every rate stays positive nearby, the threshold does not interfere with this local
+
+63
+00:04:43,054 --> 00:04:43,949
+calculation.
+
+64
+00:04:44,333 --> 00:04:49,853
+For one changing number, a negative multiplier in its rate-of-change equation pulls it
+
+65
+00:04:49,853 --> 00:04:54,218
+back toward zero. In several dimensions a deviation can also rotate.
+
+66
+00:04:54,218 --> 00:04:58,133
+What matters is whether the rotating motion shrinks or grows.
+
+67
+00:04:58,533 --> 00:05:01,999
+Eigenvalues describe these basic modes of change.
+
+68
+00:05:01,999 --> 00:05:05,817
+A complex pair combines rotation with growth or decay.
+
+69
+00:05:05,817 --> 00:05:11,970
+Its real part controls the envelope. Here the deviation equation uses minus one quarter
+
+70
+00:05:11,970 --> 00:05:13,101
+of the matrix K.
+
+71
+00:05:13,500 --> 00:05:17,892
+So we need every eigenvalue of K to lie to the right of zero.
+
+72
+00:05:17,892 --> 00:05:24,084
+Numerically they do. The closest real part is about zero point zero three seven seven.
+
+73
+00:05:24,084 --> 00:05:28,548
+That thin margin warns us that a picture alone is not a proof.
+
+74
+00:05:28,933 --> 00:05:31,992
+The exact test works with a polynomial instead.
+
+75
+00:05:31,992 --> 00:05:37,785
+Even for a quadratic, coefficients can tell you whether all roots lie on the stable side.
+
+76
+00:05:37,785 --> 00:05:43,317
+The Hurwitz criterion generalises this idea using determinants, precise numbers built
+
+77
+00:05:43,317 --> 00:05:44,749
+from the coefficients.
+
+78
+00:05:45,133 --> 00:05:50,744
+For this degree-eleven polynomial, all eleven required Hurwitz determinants are positive.
+
+79
+00:05:50,744 --> 00:05:56,355
+The first three are forty-four, seven thousand five hundred and fourteen, and one million
+
+80
+00:05:56,355 --> 00:06:00,327
+eight hundred and sixty-seven thousand nine hundred and twenty.
+
+81
+00:06:00,327 --> 00:06:03,037
+Exact arithmetic certifies local stability.
+
+82
+00:06:03,433 --> 00:06:09,292
+One more technical issue matters. The conjecture assumes certain equation systems have
+
+83
+00:06:09,292 --> 00:06:15,354
+no accidental zero determinants. A determinant tells us whether a linear system collapses
+
+84
+00:06:15,354 --> 00:06:19,441
+a direction. Nonzero means its square table can be inverted.
+
+85
+00:06:19,833 --> 00:06:23,295
+At these settings there is a neat whole-number argument.
+
+86
+00:06:23,295 --> 00:06:26,262
+Look only at remainders after division by three.
+
+87
+00:06:26,262 --> 00:06:29,476
+Four leaves remainder one. Three and six leave zero.
+
+88
+00:06:29,476 --> 00:06:32,937
+So every such network matrix becomes the identity table.
+
+89
+00:06:33,333 --> 00:06:39,451
+The identity has determinant one. Therefore each principal determinant of the original
+
+90
+00:06:39,451 --> 00:06:43,363
+integer table has remainder one, and cannot equal zero.
+
+91
+00:06:43,363 --> 00:06:47,916
+For the other required determinants, replace one column by ones.
+
+92
+00:06:47,916 --> 00:06:51,045
+The same remainder argument still gives one.
+
+93
+00:06:51,433 --> 00:06:56,864
+This works for every graph at the standard parameters, not just eleven neurons.
+
+94
+00:06:56,864 --> 00:06:59,546
+It proves nondegeneracy, not stability.
+
+95
+00:06:59,546 --> 00:07:05,320
+Stability still needs the positive equilibrium and the separate exact Hurwitz checks
+
+96
+00:07:05,320 --> 00:07:06,145
+we just saw.
+
+97
+00:07:06,533 --> 00:07:13,312
+How small can a counterexample be? For this particular graph, every proper induced nonclique
+
+98
+00:07:13,312 --> 00:07:19,207
+subgraph fails. That means keep a subset of neurons and all arrows between them.
+
+99
+00:07:19,207 --> 00:07:23,333
+It does not mean every smaller graph in the world fails.
+
+100
+00:07:23,733 --> 00:07:29,603
+A separate exhaustive enumeration covers all seven-neuron directed graph shapes, over
+
+101
+00:07:29,603 --> 00:07:33,540
+eight hundred and eighty-two million, plus smaller sizes.
+
+102
+00:07:33,540 --> 00:07:37,062
+Certified rejection bounds remove impossible cases.
+
+103
+00:07:37,062 --> 00:07:43,070
+All thirty-five thousand eight hundred and forty-two saved seven-neuron candidates fail
+
+104
+00:07:43,070 --> 00:07:44,589
+exact stability tests.
+
+105
+00:07:44,967 --> 00:07:51,183
+The result brackets the smallest possible nonclique support between eight and eleven
+
+106
+00:07:51,183 --> 00:07:55,328
+neurons. Eight, nine and ten remain unresolved globally.
+
+107
+00:07:55,328 --> 00:08:01,767
+Eleven is minimal under vertex deletion, but it is not proved to be the global minimum.
+
+108
+00:08:02,167 --> 00:08:07,232
+A numerical trajectory shows one small perturbation returning to the actual equilibrium.
+
+109
+00:08:07,232 --> 00:08:11,261
+This illustrates the behaviour, while the algebra proves local return.
+
+110
+00:08:11,261 --> 00:08:16,269
+It does not show that every starting state returns, or certify a fixed percentage-sized
+
+111
+00:08:16,269 --> 00:08:16,615
+basin.
+
+112
+00:08:17,000 --> 00:08:22,316
+This is not the first counterexample. Geneson disproved the general conjecture with six
+
+113
+00:08:22,316 --> 00:08:27,509
+neurons at different settings. The public repository hturcotte1 slash C L T N already
+
+114
+00:08:27,509 --> 00:08:33,008
+implied counterexamples at the standard settings, including one with twenty-three neurons.
+
+115
+00:08:33,400 --> 00:08:38,324
+Those repository results were present in commit three seven four four two zero zero,
+
+116
+00:08:38,324 --> 00:08:41,255
+dated the fifteenth of October, twenty twenty-six.
+
+117
+00:08:41,255 --> 00:08:46,473
+Our eleven-neuron graph came from shrinking its twenty-three-neuron example and modifying
+
+118
+00:08:46,473 --> 00:08:50,752
+arrows. Its parameter map also already implied the small-order exclusion.
+
+119
+00:08:51,133 --> 00:08:57,432
+The retained contribution is this smaller explicit witness, exact checks of its vertex-minimality,
+
+120
+00:08:57,432 --> 00:09:02,446
+the universal remainder argument, and an independently certified size bracket.
+
+121
+00:09:02,446 --> 00:09:08,166
+Remember: equilibrium means balanced rates; stability means local return; the full active
+
+122
+00:09:08,166 --> 00:09:09,901
+group need not be a clique.
+
+123
+00:09:10,300 --> 00:09:16,006
+The companion paper and certificates provide the complete graph, rational rates and stability
+
+124
+00:09:16,006 --> 00:09:20,239
+calculations. This film develops their mechanism and proof structure.
+
+125
+00:09:20,239 --> 00:09:25,393
+The exact minimum at the standard parameters is still an open question between eight
+
+126
+00:09:25,393 --> 00:09:26,068
+and eleven.

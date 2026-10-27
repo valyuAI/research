@@ -1,0 +1,23 @@
+{
+  "retrievedOn": "2026-10-26",
+  "purpose": "Background source citation metadata; scientific claim scope is recorded in sources.md.",
+  "records": [
+    {
+      "title": "On Agreement Subtrees in Multiple Pylogenetic Trees",
+      "url": "https://arxiv.org/html/2607.12778v2",
+      "authors": [
+        "Bryan Currie",
+        "Éva Czabarka",
+        "Mareike Fischer",
+        "Henry Simmons",
+        "László Székely",
+        "Kristina Wicke"
+      ],
+      "doi": "https://doi.org/10.48550/arxiv.2607.12778",
+      "publication_date": "2026-07-14"
+    }
+  ],
+  "rawResponseSha256": "9edfbcdbffa9d07f3b255d4a32f3a161638177343a5fa36e6cc69f84ea658675",
+  "rawResponseRetainedOutsideRepository": true,
+  "curation": "Full third-party text, temporary image URLs and retrieval-service bookkeeping are omitted from the research package."
+}

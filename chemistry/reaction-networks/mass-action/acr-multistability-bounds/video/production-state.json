@@ -1,0 +1,8 @@
+{
+  "stage": "complete",
+  "status": "complete",
+  "activePids": [],
+  "updatedUtc": "2026-10-26T16:16:13.076306+00:00",
+  "log": "<repo>/chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/alignment.log",
+  "note": "9:44, native 1080p30 H.264/AAC; 37 Cedar clips all under 25s. Full decode, timing, caption and waveform checks pass; representative/boundary frames inspected. No listening performed. Final: <repo>/chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/video.mp4"
+}

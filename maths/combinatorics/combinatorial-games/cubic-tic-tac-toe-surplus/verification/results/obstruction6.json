@@ -1,0 +1,129 @@
+{
+ "6^3": {
+  "cells": 216,
+  "lines": 148,
+  "degree_histogram": {
+   "7": 24,
+   "4": 144,
+   "3": 48
+  },
+  "max_non_space_lines_per_cell": 6,
+  "rounds": [
+   {
+    "k": 1,
+    "lines_needed": 41,
+    "upper_bound_lines_met": 7,
+    "pairing_possible_by_counting": false
+   },
+   {
+    "k": 2,
+    "lines_needed": 42,
+    "upper_bound_lines_met": 14,
+    "pairing_possible_by_counting": false
+   },
+   {
+    "k": 3,
+    "lines_needed": 43,
+    "upper_bound_lines_met": 21,
+    "pairing_possible_by_counting": false
+   },
+   {
+    "k": 4,
+    "lines_needed": 44,
+    "upper_bound_lines_met": 28,
+    "pairing_possible_by_counting": false
+   },
+   {
+    "k": 5,
+    "lines_needed": 45,
+    "upper_bound_lines_met": 34,
+    "pairing_possible_by_counting": false
+   },
+   {
+    "k": 6,
+    "lines_needed": 46,
+    "upper_bound_lines_met": 40,
+    "pairing_possible_by_counting": false
+   },
+   {
+    "k": 7,
+    "lines_needed": 47,
+    "upper_bound_lines_met": 46,
+    "pairing_possible_by_counting": false
+   },
+   {
+    "k": 8,
+    "lines_needed": 48,
+    "upper_bound_lines_met": 52,
+    "pairing_possible_by_counting": true
+   },
+   {
+    "k": 9,
+    "lines_needed": 49,
+    "upper_bound_lines_met": 58,
+    "pairing_possible_by_counting": true
+   },
+   {
+    "k": 10,
+    "lines_needed": 50,
+    "upper_bound_lines_met": 64,
+    "pairing_possible_by_counting": true
+   },
+   {
+    "k": 11,
+    "lines_needed": 51,
+    "upper_bound_lines_met": 70,
+    "pairing_possible_by_counting": true
+   },
+   {
+    "k": 12,
+    "lines_needed": 52,
+    "upper_bound_lines_met": 76,
+    "pairing_possible_by_counting": true
+   }
+  ],
+  "first_round_not_excluded": 8,
+  "single_line_surplus_ceiling": {
+   "0": 4,
+   "1": 3,
+   "2": 2,
+   "3": 1,
+   "4": 0
+  }
+ },
+ "7^3": {
+  "centre_opening": [
+   {
+    "k": 2,
+    "need": 24,
+    "max_met": 14,
+    "possible": false
+   },
+   {
+    "k": 3,
+    "need": 25,
+    "max_met": 21,
+    "possible": false
+   },
+   {
+    "k": 4,
+    "need": 26,
+    "max_met": 28,
+    "possible": true
+   }
+  ],
+  "noncentre_opening": [
+   {
+    "k": 2,
+    "need": 24,
+    "max_met_upper_bound": 20,
+    "possible": false
+   },
+   {
+    "k": 3,
+    "need": 25,
+    "achieved": 25
+   }
+  ]
+ }
+}

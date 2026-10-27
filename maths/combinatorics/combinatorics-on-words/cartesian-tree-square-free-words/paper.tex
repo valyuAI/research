@@ -1,0 +1,194 @@
+\documentclass[11pt]{amsart}
+\usepackage[a4paper,textwidth=158mm,textheight=237mm,centering]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,mathtools,amssymb,graphicx,flafter,booktabs}
+\usepackage[unicode,colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\PD}{\operatorname{PD}}
+\newcommand{\tw}{\mathtt}
+\title{Infinite words avoiding long Cartesian-tree squares}
+\author{Harvey Yorke}
+\address{Valyu AI}
+\ifdefined\journalversion\else
+\author{Valyu DeepResearch}
+\address{Valyu AI}
+\fi
+\ifdefined\journalversion
+  \hypersetup{pdftitle={Infinite words avoiding long Cartesian-tree squares},pdfauthor={Harvey Yorke}}
+\else
+  \hypersetup{pdftitle={Infinite words avoiding long Cartesian-tree squares},pdfauthor={Harvey Yorke and Valyu DeepResearch}}
+\fi
+\date{25 October 2026}
+\keywords{Square-free words, Cartesian-tree matching, uniform morphisms, Dejean's theorem, computer-assisted proof}
+\newcommand{\paperAuthorBlock}[1]{%
+  \begin{minipage}[t]{.44\textwidth}
+    \centering\normalfont\normalsize #1\par\small Valyu AI\par
+  \end{minipage}%
+}
+\makeatletter
+\renewcommand{\@setauthors}{%
+  \begingroup\trivlist\centering\normalfont\normalsize
+  \@topsep30\p@\relax\advance\@topsep by -\baselineskip\item\relax
+  \ifdefined\journalversion
+    \paperAuthorBlock{Harvey Yorke}%
+  \else
+    \paperAuthorBlock{Harvey Yorke}\hspace{.06\textwidth}\paperAuthorBlock{Valyu DeepResearch}%
+  \fi
+  \endtrivlist\endgroup
+}
+\renewcommand{\@setaddresses}{}
+\makeatother
+\begin{document}
+\raggedbottom
+\begin{abstract}
+Two words are Cartesian-tree equivalent if they have the same Cartesian tree, and an $\ell^+$-Cartesian-tree square is a factor $uv$ with $|u|=|v|\ge\ell$ and $u,v$ equivalent. Shibata, Mieno, K\"oppl and Inenaga (2026) determined the longest $\ell^+$-square-free words under several equivalence relations and left two cases open for Cartesian-tree equivalence: binary words with $\ell=4$ and ternary words with $\ell=3$. They conjectured from experiments that infinite words exist in both cases. We prove both conjectures. The images of every infinite ternary word without factors of exponent greater than $7/4$ under the $5$-uniform morphism $a\mapsto \tw{00101}$, $b\mapsto\tw{00111}$, $c\mapsto\tw{01100}$ contain no $4^+$-Cartesian-tree square. The same holds for $3^+$-Cartesian-tree squares under the $6$-uniform ternary morphism $a\mapsto\tw{000101}$, $b\mapsto\tw{000221}$, $c\mapsto\tw{022211}$. By Dejean's theorem such base words exist. Every open entry of their table is therefore infinite. The proof combines a synchronization argument, a local decoding property of parent-distance encodings and an exhaustive check of 4{,}596 and 3{,}654 base words, which two independent programs confirm.
+\end{abstract}
+\maketitle
+
+\section{The question}
+
+A word is square-free if it has no nonempty factor of the form $uu$. Thue showed that infinite square-free words exist over three letters but not over two. One way to weaken equality is to declare the two halves of a square equal only up to an equivalence relation on words of the same length; another is to forbid only long squares. Shibata, Mieno, K\"oppl and Inenaga~\cite{SMKI2026} combine both. For an equivalence relation and an integer $\ell\ge1$ they call a word $\ell^+$-square-free if it contains no factor $uv$ with $|u|=|v|\ge\ell$ and $u$ equivalent to $v$. Their Table~1 lists, for strict, parameterized, order-preserving and Cartesian-tree equivalence and for alphabet sizes $\sigma=2,\dots,5$ and $\ell=1,\dots,4$, the length of the longest $\ell^+$-square-free word, or $\infty$.
+
+For Cartesian-tree equivalence their table is incomplete. It gives the values $1,5,29$ for $\sigma=2$ and $\ell=1,2,3$ and the value $9$ for $\sigma\ge3$ and $\ell=2$, and marks the entry $(\sigma,\ell)=(2,4)$ and the entries $\sigma\in\{3,4,5\}$, $\ell\in\{3,4\}$ with a question mark, ``a case that remains open''~\cite[Table~1]{SMKI2026}. Their Table~2 marks $(2,4)$ and $(3,3)$ as ``a conjectured result based on experimental results'', namely $\infty$; the version in the PSC 2026 proceedings keeps this caption. We prove these conjectures.
+
+\begin{theorem}\label{thm:main}
+\begin{enumerate}
+\item There is an infinite binary word with no Cartesian-tree square $uv$ such that $|u|=|v|\ge4$.
+\item There is an infinite ternary word with no Cartesian-tree square $uv$ such that $|u|=|v|\ge3$.
+\end{enumerate}
+Consequently every entry marked with a question mark in Table~1 of~\cite{SMKI2026} equals $\infty$.
+\end{theorem}
+
+The consequence holds because a binary word is also a word over any larger ordered alphabet, with the same Cartesian trees, and because an $\ell^+$-square-free word is $(\ell+1)^+$-square-free. Part~(1) covers $\ell=4$ for every $\sigma\ge2$ and part~(2) covers $\ell=3$ for every $\sigma\ge3$.
+
+The words are explicit. Let $w$ be any infinite ternary word with no factor of exponent greater than $7/4$; Dejean proved that such words exist~\cite{Dejean1972}. Then $h_2(w)$ and $h_3(w)$ witness parts~(1) and~(2), where
+\[
+h_2:\ a\mapsto\tw{00101},\ b\mapsto\tw{00111},\ c\mapsto\tw{01100},\qquad
+h_3:\ a\mapsto\tw{000101},\ b\mapsto\tw{000221},\ c\mapsto\tw{022211},
+\]
+with output alphabets ordered $\tw0<\tw1$ and $\tw0<\tw1<\tw2$. Section~\ref{sec:reduction} reduces the claim for a uniform morphism to three finite properties, and Section~\ref{sec:computation} records their verification.
+
+\section{Definitions}
+
+Words are indexed from $0$. For a word $x$ over a totally ordered alphabet, the parent-distance encoding of Park, Amir, Landau and Park~\cite[Definition~2]{PALP2019} is
+\[
+\PD(x)[i]=\begin{cases} i-\max\{j<i : x[j]\le x[i]\}, & \text{if such } j \text{ exists},\\ 0, & \text{otherwise.}\end{cases}
+\]
+Two words of the same length have the same Cartesian tree if and only if they have the same parent-distance encoding~\cite{PALP2019}. This is also the encoding used by the software with which the entries of~\cite[Table~1]{SMKI2026} were computed. We say that $u$ and $v$ are \emph{CT-equivalent} if $|u|=|v|$ and $\PD(u)=\PD(v)$, and call a factor $uv$ of a word with $u,v$ CT-equivalent a \emph{CT-square} of half-length $|u|$.
+
+A word $z$ has period $p\ge1$ if $z[i]=z[i+p]$ whenever both sides are defined; its exponent with respect to $p$ is $|z|/p$. A word is \emph{$7/4^+$-free} if none of its factors has exponent greater than $7/4$ with respect to any of its periods. Dejean's theorem~\cite{Dejean1972} provides infinite $7/4^+$-free ternary words, for example the fixed point of $a\mapsto\tw{abcacbcabcbacbcacba}$, $b\mapsto\tw{bcabacabcacbacabacb}$, $c\mapsto\tw{cabcbabcabacbabcbac}$.
+
+A morphism $h$ from $\{a,b,c\}^*$ is \emph{$q$-uniform} if $|h(a)|=|h(b)|=|h(c)|=q$. It is \emph{synchronizing} if for all letters $s,t,c$ and every offset $1\le o<q$ the word $h(c)$ does not occur in $h(st)$ at position $o$.
+
+\section{A reduction to finite checks}\label{sec:reduction}
+
+Throughout this section $h$ is a $q$-uniform morphism from $\{a,b,c\}^*$ into words over an ordered alphabet, and $w$ is an infinite $7/4^+$-free ternary word with $x=h(w)$. We consider three properties, each depending on parameters $\ell\ge1$ and $r\ge0$.
+\begin{enumerate}
+\item[(S)] $h$ is injective on letters and synchronizing.
+\item[(D)] For every two $7/4^+$-free ternary words $f,g$ of length $\lceil 2r/q\rceil+1$ and all factors $y$ of $h(f)$ and $y'$ of $h(g)$ of length $2r+1$, the equality $\PD(y)=\PD(y')$ implies $y[r]=y'[r]$.
+\item[(F)] Put $M=4(2r+2q-2)$ and $K=\lceil(2M-1)/q\rceil+1$. For every $7/4^+$-free ternary word $f$ of length $K$, the word $h(f)$ contains no CT-square of half-length $m$ with $\ell\le m\le M$.
+\end{enumerate}
+
+\begin{proposition}\label{prop:reduction}
+If $h$ satisfies (S), (D) and (F), then $h(w)$ contains no CT-square of half-length at least $\ell$, for every infinite $7/4^+$-free ternary word $w$.
+\end{proposition}
+
+The proof uses three lemmas.
+
+\begin{lemma}[factor coverage]\label{lem:coverage}
+Every factor of $x$ of length $n\ge1$ is a factor of $h(f)$ for some factor $f$ of $w$ of length $\lceil(n-1)/q\rceil+1$.
+\end{lemma}
+
+\begin{proof}
+Write the starting position as $iq+o$ with $0\le o<q$. The factor ends at position $iq+o+n-1$, which lies in block number $i+\lfloor(o+n-1)/q\rfloor\le i+\lfloor(n+q-2)/q\rfloor=i+\lceil(n-1)/q\rceil$. Take $f=w[i..i+\lceil(n-1)/q\rceil]$.
+\end{proof}
+
+Every factor of $w$ is $7/4^+$-free, so (D) and (F) apply to every factor of $x$ of length $2r+1$ and to every factor of length at most $2M$.
+
+\begin{lemma}[restriction of encodings]\label{lem:window}
+Let $u$ be a word and $0\le a\le i<b\le|u|$. Then $\PD(u[a..b))[i-a]$ equals $\PD(u)[i]$ if $0<\PD(u)[i]\le i-a$, and equals $0$ otherwise. In particular, if $\PD(u)=\PD(v)$ then $\PD(u[a..b))=\PD(v[a..b))$.
+\end{lemma}
+
+\begin{proof}
+Let $j$ be the largest index below $i$ with $u[j]\le u[i]$. If $j$ exists and $j\ge a$, then $j$ is also the largest such index inside the window, and the distance $i-j=\PD(u)[i]$ is unchanged. If $j<a$ or $j$ does not exist, no index of the window below $i$ qualifies, and the value is $0$. The second statement follows because the first expresses $\PD(u[a..b))$ as a function of $\PD(u)$, $a$ and $b$.
+\end{proof}
+
+Lemma~\ref{lem:window} is a known observation; it appears, in $1$-based form, as Fact~16 of~\cite{CEM2026}.
+
+\begin{lemma}[CT-squares are near-squares]\label{lem:near}
+Assume (D), and let $uv$ be a CT-square of $x$ of half-length $m\ge2r+1$. Then $u[t]=v[t]$ for every $t$ with $r\le t<m-r$.
+\end{lemma}
+
+\begin{proof}
+For such $t$ the windows $u[t-r..t+r]$ and $v[t-r..t+r]$ lie inside $u$ and $v$. They are factors of $x$ of length $2r+1$, and by Lemma~\ref{lem:window} they have equal encodings. By Lemma~\ref{lem:coverage} and (D) their middle letters $u[t]$ and $v[t]$ coincide.
+\end{proof}
+
+\begin{proof}[Proof of Proposition~\ref{prop:reduction}]
+Let $uv$ be a CT-square of $x$ of half-length $m\ge\ell$ starting at position $p$. If $m\le M$, the factor $uv$ has length at most $2M$, so by Lemma~\ref{lem:coverage} it lies inside $h(f)$ for a factor $f$ of $w$ of length at most $K$; extending $f$ inside $w$ to length exactly $K$ contradicts (F).
+
+Suppose $m>M$. Since $M\ge 2r+1$, Lemma~\ref{lem:near} shows that the word $z=x[p+r..p+m-r)$ also occurs at position $p+m+r$. Its length $\lambda=m-2r$ exceeds $2q-1$, so $z$ contains a full block: a factor $x[Bq..Bq+q)=h(w[B])$ with $p+r\le Bq$ and $Bq+q\le p+m-r$. The copy of this block at position $Bq+m$ is an occurrence of $h(w[B])$ in $h(w)$. By (S) every occurrence of a block image starts at a multiple of $q$, for otherwise it would occur inside the image of two consecutive letters at an offset between $1$ and $q-1$. Hence $q$ divides $m$; write $P=m/q$.
+
+Let $B,B+1,\dots,B+k-1$ be the indices of all blocks contained in the interval $[p+r,p+m-r)$. The first such block starts at most $q-1$ positions after $p+r$, so $k\ge\lfloor(\lambda-q+1)/q\rfloor\ge(\lambda-2q+2)/q$, which is positive. For each of these indices $j$, the block images $h(w[j])$ and $h(w[j+P])$ coincide, so $w[j]=w[j+P]$ by injectivity. Hence the factor $w[B..B+P+k)$ has period $P$ and exponent
+\[
+\frac{P+k}{P}\ \ge\ 1+\frac{m-2r-2q+2}{m}\ =\ 2-\frac{2r+2q-2}{m}\ >\ 2-\frac14\ =\ \frac74,
+\]
+because $m>M=4(2r+2q-2)$. This contradicts the choice of $w$.
+\end{proof}
+
+The bound equals $7/4$ exactly at $m=M$, which is why the case $m=M$ is included in the finite check (F).
+
+\section{The two morphisms}\label{sec:computation}
+
+\begin{theorem}\label{thm:computation}
+\begin{enumerate}
+\item The morphism $h_2$ satisfies (S), (D) with $r=3$, and (F) with $\ell=4$; here $q=5$, $M=56$ and $K=24$.
+\item The morphism $h_3$ satisfies (S), (D) with $r=3$, and (F) with $\ell=3$; here $q=6$, $M=64$ and $K=23$.
+\end{enumerate}
+\end{theorem}
+
+This is a computational theorem. The checks are finite and elementary. Property (S) compares the three images with the $q-1$ interior windows of each of the nine two-letter images. For (D) we list all factors of length $7$ of $h(f)$ for $7/4^+$-free $f$ of length $3$ (for $h_2$) or $2$ (for $h_3$), group them by encoding, and confirm that each of the $23$, respectively $21$, encoding classes has a single middle letter. For (F) we enumerate all $4{,}596$ $7/4^+$-free ternary words of length $24$ for $h_2$ and all $3{,}654$ of length $23$ for $h_3$, and test every candidate pair of halves of every half-length from $\ell$ to $M$ in their images. No CT-square occurs. Radius $r=2$ does not satisfy (D) for either morphism, so the decoding radius is not slack.
+
+Proposition~\ref{prop:reduction} and Theorem~\ref{thm:computation} give the explicit words promised in Section~1 and prove Theorem~\ref{thm:main}.
+
+\begin{corollary}
+For every infinite $7/4^+$-free ternary word $w$, the binary word $h_2(w)$ has no CT-square of half-length at least $4$, and the ternary word $h_3(w)$ has no CT-square of half-length at least $3$.
+\end{corollary}
+
+For illustration, the image of the Dejean word under $h_2$ begins
+\[
+\tw{00101\,00111\,01100\,00101\,01100\,00111\,01100\,00101\,00111\,01100\cdots}
+\]
+which already contains short CT-squares of half-length $3$, as it must: no binary word longer than $29$ avoids them~\cite{SMKI2026}.
+
+\begin{remark}[why decoding works for binary words]\label{rem:binary}
+For binary words a direct description explains property (D). Call $i\ge1$ a descent of $u$ if $u[i-1]=\tw1$ and $u[i]=\tw0$. The entry $\PD(u)[i]$ equals $1$ exactly at non-descents $i\ge1$. At a descent $i$ preceded by a maximal run of $t$ ones, $\PD(u)[i]=t+1$ if a zero precedes that run, and $\PD(u)[i]=0$ if the run starts the word; for example $\PD(\tw{010})=(0,1,2)$ and $\PD(\tw{10})=(0,0)$. It follows that two binary words of the same length are CT-equivalent if and only if either both lie in $\tw0^*\tw1^*$, or they have the same last descent $d$, agree before $d$, and both continue with a word of $\tw0^+\tw1^*$ from position $d$. A computer check over all binary words of length at most $16$ agrees with this description. Binary CT-squares are therefore squares whose final run pair may be redistributed; in $h_2(w)$ such run pairs are short.
+\end{remark}
+
+\section{How the morphisms were found, and verification}\label{sec:search}
+
+The images were found by an exhaustive backtracking search over triples of blocks. The search keeps only blocks that are themselves free of the relevant CT-squares, keeps only triples that are injective and synchronizing in the sense of (S), and tests the images of all $7/4^+$-free words of length at most $8$. For binary output and $\ell=4$ it finds no $4$-uniform triple, while $5$-uniform triples exist; for ternary output and $\ell=3$ it finds no $5$-uniform triple, while $6$-uniform triples exist. These negative statements concern only injective synchronizing uniform morphisms applied to $7/4^+$-free ternary words, tested on source words of length at most $8$. They say nothing about non-synchronizing uniform morphisms or other constructions. A random search over unrestricted ternary images of lengths $4$ to $16$, with up to $2\times10^6$ trials per length, found no suitable morphism. The exhaustive search was therefore needed for part~(2).
+
+The finite checks of Theorem~\ref{thm:computation} were carried out by two programs written separately. The first is in C and computes encodings from a global table of nearest smaller-or-equal positions. The second uses only the Python standard library and recomputes the encoding of every suffix with a monotone stack. Both enumerate the base words independently and agree on the counts $4{,}596$ and $3{,}654$. The Python program also records a SHA-256 hash of each list of base words. A separate control script checks the following. Our encoding agrees with the encoding in the authors' software on their unit tests and on $20{,}000$ random words. The finite Cartesian-tree entries $1,5,29$ and $9$ of~\cite[Table~1]{SMKI2026} are reproduced. A weakened claim and corrupted morphisms are rejected. Each check runs in about half a minute. An adversarial review (Section~\ref{sec:review}) repeated (F) with a third method that tests Cartesian-tree equivalence through the leftmost minimum of every interval instead of parent distances, and also found no CT-square.
+
+The argument is computer-assisted but short: the only computational inputs are (S), (D) and (F), and the deduction from them is the written Proposition~\ref{prop:reduction}. The general strategy, a synchronizing uniform morphism applied to words of bounded exponent with an exhaustive check of short factors, is standard in the avoidability literature; compare Ochem~\cite{Ochem2006}. The new ingredient is Lemma~\ref{lem:near}, which turns long CT-squares into ordinary repetitions of exponent close to $2$. There is no Lean formalization of these statements.
+
+\section{Review}\label{sec:review}
+
+A separate adversarial review re-derived each step, recomputed (D) and (F) in its own code, and checked the definitions against the source. It found no error. It noted that (F) must range over words of all lengths up to $K$ if one wants the statement for finite base words; Proposition~\ref{prop:reduction} is stated for infinite base words, which is what Theorem~\ref{thm:main} needs. Both of our programs in fact run (D) and (F) over all source lengths from $1$ to $K$ ($21{,}801$ words for $h_2$ and $17{,}205$ for $h_3$), and a second, independent referee repeated this all-lengths check with its own implementation and found no CT-square. With that check the argument of Proposition~\ref{prop:reduction} also covers finite base words, but we state our results only for infinite ones. It also found that the images of all $7/4^+$-free words of length $K$ contain CT-squares of half-length $3$ for $h_2$ and $2$ for $h_3$, so these constructions are sharp in $\ell$, as the finite entries $29$ and $9$ require. A priority search covering arXiv, the PSC 2026 proceedings, the authors' pages and repository, aggregator sites and an AI-research issue tracker found no earlier resolution of either entry. The authors' repository contains an unpublished, commented-out ternary candidate $a\mapsto\tw{bac}$, $b\mapsto\tw{ccb}$, $c\mapsto\tw{a}$; applied to a square-free word it avoids $4^+$- but not $3^+$-Cartesian-tree squares on the prefixes we tested, and no proof accompanies it. The second referee confirmed the reduction and both computations and prompted three corrections, incorporated here: the abstract now states the infinite hypothesis, the description of parent distances at descents in Remark~\ref{rem:binary} was corrected, and the negative search results of Section~\ref{sec:search} are restricted to synchronizing morphisms.
+
+\section{Context and questions}
+
+We recall the related results as summarized in~\cite{SMKI2026}. Strict $3^+$-squares are avoidable over two letters~\cite{EJS1974}. Kociumaka, Radoszewski, Rytter and Wale\'n showed that an infinite ternary word avoids $2^+$-order-preserving squares, while no infinite word avoids all parameterized squares of length greater than two~\cite{KRRW2016}. Ng, Ochem, Rampersad and Shallit constructed binary words avoiding squares and antisquares of length at least $6$~\cite{NORS2019}, which settles the binary $3^+$ parameterized and order-preserving cases, and~\cite{SMKI2026} gave short morphic proofs of these cases. Order-preserving equivalence implies Cartesian-tree equivalence, so avoiding CT-squares is the strongest of these requirements, and our words also avoid the corresponding order-preserving squares.
+
+The thresholds in Theorem~\ref{thm:main} are optimal because of the finite entries $29$ and $9$ of~\cite[Table~1]{SMKI2026}. Natural next questions, suggested in~\cite{SMKI2026}, concern repetition thresholds and the minimum density of CT-squares under these relaxed equivalences. The reduction of Section~\ref{sec:reduction} applies to any equivalence for which a local decoding property such as (D) holds, and may help there.
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

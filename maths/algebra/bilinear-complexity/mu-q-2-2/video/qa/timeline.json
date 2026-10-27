@@ -1,0 +1,194 @@
+[
+  {
+    "id": "a01",
+    "start": 0.0,
+    "duration": 13.464,
+    "scene": "ThreeProducts"
+  },
+  {
+    "id": "a02",
+    "start": 13.833333333333325,
+    "duration": 13.368,
+    "scene": "ThreeProducts"
+  },
+  {
+    "id": "a03",
+    "start": 27.600000000000254,
+    "duration": 15.048,
+    "scene": "ThreeProducts"
+  },
+  {
+    "id": "a04",
+    "start": 43.03333333333374,
+    "duration": 17.808,
+    "scene": "ThreeProducts"
+  },
+  {
+    "id": "a05",
+    "start": 61.233333,
+    "duration": 14.352,
+    "scene": "TinyArithmetic"
+  },
+  {
+    "id": "a06",
+    "start": 75.96666633333332,
+    "duration": 15.504,
+    "scene": "TinyArithmetic"
+  },
+  {
+    "id": "a07",
+    "start": 91.86666633333354,
+    "duration": 14.016,
+    "scene": "TinyArithmetic"
+  },
+  {
+    "id": "a08",
+    "start": 106.26666633333342,
+    "duration": 15.816,
+    "scene": "TinyArithmetic"
+  },
+  {
+    "id": "a09",
+    "start": 122.46666633333305,
+    "duration": 14.856,
+    "scene": "TinyArithmetic"
+  },
+  {
+    "id": "a10",
+    "start": 137.7,
+    "duration": 13.32,
+    "scene": "ProductGrids"
+  },
+  {
+    "id": "a11",
+    "start": 151.39999999999998,
+    "duration": 13.704,
+    "scene": "ProductGrids"
+  },
+  {
+    "id": "a12",
+    "start": 165.5,
+    "duration": 17.352,
+    "scene": "ProductGrids"
+  },
+  {
+    "id": "a13",
+    "start": 183.23333333333335,
+    "duration": 15.648,
+    "scene": "ProductGrids"
+  },
+  {
+    "id": "a14",
+    "start": 199.26666666666637,
+    "duration": 12.648,
+    "scene": "ProductGrids"
+  },
+  {
+    "id": "a15",
+    "start": 212.296745,
+    "duration": 13.968,
+    "scene": "SearchSpace"
+  },
+  {
+    "id": "a16",
+    "start": 226.66341166666663,
+    "duration": 15.552,
+    "scene": "SearchSpace"
+  },
+  {
+    "id": "a17",
+    "start": 242.59674500000014,
+    "duration": 15.264,
+    "scene": "SearchSpace"
+  },
+  {
+    "id": "a18",
+    "start": 258.2300783333333,
+    "duration": 18.36,
+    "scene": "SearchSpace"
+  },
+  {
+    "id": "a19",
+    "start": 276.9634116666663,
+    "duration": 15.408,
+    "scene": "SearchSpace"
+  },
+  {
+    "id": "a20",
+    "start": 292.763412,
+    "duration": 15.648,
+    "scene": "OtherFields"
+  },
+  {
+    "id": "a21",
+    "start": 308.7967453333333,
+    "duration": 14.304,
+    "scene": "OtherFields"
+  },
+  {
+    "id": "a22",
+    "start": 323.49674533333354,
+    "duration": 16.008,
+    "scene": "OtherFields"
+  },
+  {
+    "id": "a23",
+    "start": 339.8967453333333,
+    "duration": 18.12,
+    "scene": "OtherFields"
+  },
+  {
+    "id": "a24",
+    "start": 358.396745333333,
+    "duration": 13.656,
+    "scene": "OtherFields"
+  },
+  {
+    "id": "a25",
+    "start": 372.43007900000003,
+    "duration": 15.504,
+    "scene": "Convolution"
+  },
+  {
+    "id": "a26",
+    "start": 388.330079,
+    "duration": 12.6,
+    "scene": "Convolution"
+  },
+  {
+    "id": "a27",
+    "start": 401.296745666667,
+    "duration": 13.464,
+    "scene": "Convolution"
+  },
+  {
+    "id": "a28",
+    "start": 415.13007900000036,
+    "duration": 16.152,
+    "scene": "Convolution"
+  },
+  {
+    "id": "a29",
+    "start": 431.66341200000005,
+    "duration": 15.768,
+    "scene": "Evidence"
+  },
+  {
+    "id": "a30",
+    "start": 447.83007866666674,
+    "duration": 20.304,
+    "scene": "Evidence"
+  },
+  {
+    "id": "a31",
+    "start": 468.530078666667,
+    "duration": 15.816,
+    "scene": "Evidence"
+  },
+  {
+    "id": "a32",
+    "start": 484.7300786666667,
+    "duration": 19.104,
+    "scene": "Evidence"
+  }
+]

@@ -1,0 +1,52 @@
+\begin{thebibliography}{1}
+
+\bibitem{CEM2026}
+Panagiotis Charalampopoulos, Jonas Ellert, and Manal Mohamed.
+\newblock Approximate {C}artesian tree matching with substitutions.
+\newblock arXiv:2602.08570v1, 2026.
+\newblock Fact 16.
+
+\bibitem{Dejean1972}
+Fran{\c{c}}oise Dejean.
+\newblock Sur un th{\'e}or{\`e}me de {T}hue.
+\newblock {\em Journal of Combinatorial Theory, Series A}, 13(1):90--99, 1972.
+
+\bibitem{EJS1974}
+R.~C. Entringer, D.~E. Jackson, and J.~A. Schatz.
+\newblock On nonrepetitive sequences.
+\newblock {\em Journal of Combinatorial Theory, Series A}, 16:159--164, 1974.
+
+\bibitem{KRRW2016}
+Tomasz Kociumaka, Jakub Radoszewski, Wojciech Rytter, and Tomasz Wale{\'n}.
+\newblock Maximum number of distinct and nonequivalent nonstandard squares in a
+  word.
+\newblock arXiv:1604.02238, 2016.
+
+\bibitem{NORS2019}
+Tim Ng, Pascal Ochem, Narad Rampersad, and Jeffrey Shallit.
+\newblock New results on pseudosquare avoidance.
+\newblock arXiv:1904.09157, 2019.
+
+\bibitem{Ochem2006}
+Pascal Ochem.
+\newblock A generator of morphisms for infinite words.
+\newblock {\em RAIRO -- Theoretical Informatics and Applications},
+  40(3):427--441, 2006.
+
+\bibitem{PALP2019}
+Sung~Gwan Park, Amihood Amir, Gad~M. Landau, and Kunsoo Park.
+\newblock Cartesian tree matching and indexing.
+\newblock In {\em 30th Annual Symposium on Combinatorial Pattern Matching (CPM
+  2019)}, volume 128 of {\em LIPIcs}, 2019.
+\newblock arXiv:1905.08974, Definition 2.
+
+\bibitem{SMKI2026}
+Hiroki Shibata, Takuya Mieno, Dominik K{\"o}ppl, and Shunsuke Inenaga.
+\newblock Relaxation of square-freeness.
+\newblock arXiv:2607.00674v2 (14 July 2026); also in Proceedings of the Prague
+  Stringology Conference 2026 (J. Holub and J. {\v{Z}}{\v{d}}{\'a}rek, eds.),
+  Czech Technical University in Prague, August 2026, 2026.
+\newblock Table 1 and Table 2; software at
+  \url{https://github.com/koeppl/squarechecker}.
+
+\end{thebibliography}

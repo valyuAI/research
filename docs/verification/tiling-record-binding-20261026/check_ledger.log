@@ -1,0 +1,1 @@
+ledger: 12 polyhexes (<= 4 cells) + straight 5-row, 21 polyominoes (<= 5 cells); every value has a freshly checked witness and a retained DRAT verification record; max h: polyhex 5, polyomino 3

@@ -1,0 +1,6 @@
+verification/output/
+*.aux
+*.log
+*.blg
+*.out
+!verification/*.log

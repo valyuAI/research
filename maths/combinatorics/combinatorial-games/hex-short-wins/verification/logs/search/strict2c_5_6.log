@@ -1,0 +1,4 @@
+winning sets: 106
+certificate cert/strict5_6_12.txt: 875938 lines
+strict n=5 bound=6 first=(3,3) result=BLUE nodes=1242565774 time=1040.28s
+SUMMARY strict n=5 bound=6 blue_wins=1

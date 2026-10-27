@@ -1,0 +1,19 @@
+{
+ "n": 7,
+ "k": 4,
+ "mode": "le",
+ "alpha": "3/7",
+ "classes": 456,
+ "manipulations": 1126776,
+ "max_gain": "3/7",
+ "tight_manipulations": 168,
+ "tight_classes": [
+  "000111000110001000000",
+  "010011000110101000000",
+  "010011001011001010000"
+ ],
+ "properties": [],
+ "shard": "0/1",
+ "certificate_sha256": "05004298598c4e6ba4f5ab3074a7fbc21197ba2d882183a16808046593f21ef4",
+ "ok": true
+}

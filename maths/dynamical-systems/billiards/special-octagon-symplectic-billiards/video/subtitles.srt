@@ -1,0 +1,539 @@
+1
+00:00:00,000 --> 00:00:06,275
+Here is an octagon on squared paper. A point hops around its edge, and every hop follows
+
+2
+00:00:06,275 --> 00:00:07,416
+one simple rule.
+
+3
+00:00:07,700 --> 00:00:11,934
+After ninety two hops, it lands exactly where it started.
+
+4
+00:00:11,934 --> 00:00:16,316
+Is that luck? Or does every path in this octagon come back?
+
+5
+00:00:17,200 --> 00:00:22,303
+Start with a ball on a pool table, leaving each cushion at the angle it arrived.
+
+6
+00:00:22,303 --> 00:00:27,726
+Shoot at forty five degrees from here, and after fourteen bounces it is back where it
+
+7
+00:00:27,726 --> 00:00:29,512
+began, heading the same way.
+
+8
+00:00:29,800 --> 00:00:34,195
+With a slope of root two, this rectangular path never repeats.
+
+9
+00:00:34,195 --> 00:00:39,015
+So a simple rule can produce both repeating and non-repeating paths.
+
+10
+00:00:39,015 --> 00:00:43,552
+Now change the rule: use parallel lines instead of equal angles.
+
+11
+00:00:44,433 --> 00:00:50,899
+In 2018, Peter Albers and Serge Tabachnikov introduced a cousin of this game: symplectic
+
+12
+00:00:50,899 --> 00:00:53,985
+billiards. No angles, only parallel lines.
+
+13
+00:00:54,266 --> 00:00:57,719
+Take a rectangle four wide and three tall.
+
+14
+00:00:57,719 --> 00:01:04,954
+Put a point, x zero, on the bottom at one, zero, and a second point, x one, on the right
+
+15
+00:01:04,954 --> 00:01:06,434
+side at four, two.
+
+16
+00:01:06,733 --> 00:01:10,910
+The rule for the next point: look at the side x one sits on.
+
+17
+00:01:10,910 --> 00:01:14,391
+Draw a line through x zero, parallel to that side.
+
+18
+00:01:14,391 --> 00:01:17,941
+Where it meets the edge again is x two: one, three.
+
+19
+00:01:18,233 --> 00:01:24,686
+Repeat, reaching two steps back. For x three, go through x one, parallel to the top side,
+
+20
+00:01:24,686 --> 00:01:30,994
+where x two sits: zero, two. For x four, through x two, parallel to the left side: back
+
+21
+00:01:30,994 --> 00:01:31,937
+to one, zero.
+
+22
+00:01:32,233 --> 00:01:36,757
+After four hops the path has closed up, and it repeats forever.
+
+23
+00:01:36,757 --> 00:01:41,353
+That is called periodic. In a rectangle, every path is periodic.
+
+24
+00:01:41,633 --> 00:01:47,624
+Notice: the even points, zero, two and four, form one chain, and the odd points another.
+
+25
+00:01:47,624 --> 00:01:51,233
+Each even hop is steered by the odd point in between.
+
+26
+00:01:52,133 --> 00:01:55,594
+Now the octagon. Take a five by six rectangle.
+
+27
+00:01:55,594 --> 00:02:01,989
+Cut the bottom corners at forty five degrees, two squares in, and the top corners one
+
+28
+00:02:01,989 --> 00:02:02,741
+square in.
+
+29
+00:02:03,033 --> 00:02:10,571
+Every side is flat, upright, or at forty five degrees, on a line like x plus y equals
+
+30
+00:02:10,571 --> 00:02:14,118
+ten. Every number on the right is whole.
+
+31
+00:02:14,118 --> 00:02:15,537
+Hold on to that.
+
+32
+00:02:15,833 --> 00:02:19,115
+The mirror line is x equals two and a half.
+
+33
+00:02:19,115 --> 00:02:25,603
+Special octagons have grid corners, these four side directions, and a mirror parallel
+
+34
+00:02:25,603 --> 00:02:29,801
+to a side. Turning or stretching them gives this shape.
+
+35
+00:02:30,600 --> 00:02:38,055
+In 2019, Albers, Banhatti, Sadlo, Schwartz and Tabachnikov ran computer experiments.
+
+36
+00:02:38,055 --> 00:02:44,712
+Every path came back, with periods like sixteen, forty four and ninety two.
+
+37
+00:02:45,000 --> 00:02:51,440
+They conjectured that in every special octagon, every path is periodic, but could only
+
+38
+00:02:51,440 --> 00:02:54,960
+give computer evidence. This finding proves it.
+
+39
+00:02:55,833 --> 00:02:59,730
+A corner sits on two sides, so the rule breaks there.
+
+40
+00:02:59,730 --> 00:03:06,126
+From now on, every path means every path for which the rule stays defined, forwards and
+
+41
+00:03:06,126 --> 00:03:07,449
+backwards forever.
+
+42
+00:03:07,733 --> 00:03:14,115
+Corners also split paths. These two close points both head straight up, but the corner
+
+43
+00:03:14,115 --> 00:03:18,197
+sends one to the top and the other to the slanted side.
+
+44
+00:03:18,466 --> 00:03:24,003
+So corners are the troublemakers. Start at a corner, try every second point, and mark
+
+45
+00:03:24,003 --> 00:03:29,801
+in red every even point you reach. This path leaves one corner and ends at another, forty
+
+46
+00:03:29,801 --> 00:03:30,778
+six hops later.
+
+47
+00:03:31,066 --> 00:03:38,058
+Do this for every corner and every choice, and this octagon has exactly twenty red dots.
+
+48
+00:03:38,058 --> 00:03:40,282
+Twenty, not infinitely many.
+
+49
+00:03:41,166 --> 00:03:45,200
+Why does that matter? Unroll the edge into a straight line.
+
+50
+00:03:45,200 --> 00:03:47,934
+The red dots chop it into twenty pieces.
+
+51
+00:03:48,233 --> 00:03:54,464
+A moment of a path is two neighbouring points: where it is, and where it goes next.
+
+52
+00:03:54,464 --> 00:03:58,818
+Plot the first across a square and the second up the side.
+
+53
+00:03:58,818 --> 00:04:00,545
+Each moment is one dot.
+
+54
+00:04:00,833 --> 00:04:05,519
+The red dots cut the square into fewer than four hundred usable boxes.
+
+55
+00:04:05,519 --> 00:04:11,678
+Inside each box, no path ever hits a corner, and all starting pairs follow the same sequence
+
+56
+00:04:11,678 --> 00:04:12,281
+of sides.
+
+57
+00:04:12,566 --> 00:04:15,998
+Watch one box, from a path of period sixteen.
+
+58
+00:04:15,998 --> 00:04:19,658
+Each hop carries the whole box onto another box.
+
+59
+00:04:19,658 --> 00:04:22,022
+After sixteen hops, it is home.
+
+60
+00:04:22,300 --> 00:04:27,272
+In general, group starting pairs by their entire sequence of sides.
+
+61
+00:04:27,272 --> 00:04:33,729
+Each such region contains a box. There are finitely many regions, so a region must come
+
+62
+00:04:33,729 --> 00:04:35,956
+home. Every hop can be undone.
+
+63
+00:04:36,233 --> 00:04:40,257
+Take two return laps to keep the two coordinates separate.
+
+64
+00:04:40,257 --> 00:04:46,155
+Repeating forwards and backwards cannot stretch either coordinate without leaving the
+
+65
+00:04:46,155 --> 00:04:51,497
+bounded table. Only flips remain, so four return laps bring every point home.
+
+66
+00:04:52,266 --> 00:04:57,051
+So if there are finitely many red dots, every path is periodic.
+
+67
+00:04:57,051 --> 00:05:01,229
+This criterion is due to Albers, Lander and Westermann.
+
+68
+00:05:01,229 --> 00:05:04,722
+The question becomes: are the red dots finite?
+
+69
+00:05:05,596 --> 00:05:11,082
+The obvious attempt: from the corners, slide in all four directions, again and again.
+
+70
+00:05:11,082 --> 00:05:15,148
+That catches every red dot, so if it stopped, we would be done.
+
+71
+00:05:15,429 --> 00:05:20,946
+The filled set has not closed after twenty thousand sampled points, with denominators
+
+72
+00:05:20,946 --> 00:05:24,385
+up to sixteen thousand three hundred and eighty four.
+
+73
+00:05:24,385 --> 00:05:28,149
+This does not prove it infinite. We need a different idea.
+
+74
+00:05:29,029 --> 00:05:34,911
+Here is the new idea. Add the half grid: points whose coordinates are whole, or end in
+
+75
+00:05:34,911 --> 00:05:35,389
+a half.
+
+76
+00:05:35,663 --> 00:05:38,701
+On the edge, keep three kinds of dots.
+
+77
+00:05:38,701 --> 00:05:45,417
+Green: whole number points. Blue: on a slanted side, both coordinates end in a half.
+
+78
+00:05:45,417 --> 00:05:49,175
+Orange: on the top or bottom, x ends in a half.
+
+79
+00:05:49,463 --> 00:05:53,889
+Sixteen green, six blue, four orange: twenty six dots.
+
+80
+00:05:53,889 --> 00:06:00,530
+The key lemma: every even point of every path from a corner lands on one of them.
+
+81
+00:06:00,530 --> 00:06:03,071
+Indeed, all twenty red dots do.
+
+82
+00:06:03,963 --> 00:06:11,240
+Why? Each even hop slides in one of four directions, and each slide keeps one number
+
+83
+00:06:11,240 --> 00:06:18,171
+fixed: upright keeps x, sideways keeps y, and on a slope, x minus y or x plus y.
+
+84
+00:06:18,463 --> 00:06:22,327
+Follow the red path from the corner two, zero.
+
+85
+00:06:22,327 --> 00:06:28,963
+It slides up a slope with x minus y equal to two, until it meets x equals five.
+
+86
+00:06:28,963 --> 00:06:31,231
+So y is three: whole again.
+
+87
+00:06:31,529 --> 00:06:38,588
+Sideways hops are special. Thanks to the mirror, a sideways hop lands on the mirror image:
+
+88
+00:06:38,588 --> 00:06:43,529
+x becomes five minus x. Whole stays whole, and half stays half.
+
+89
+00:06:43,829 --> 00:06:50,309
+Now the interesting moment. From zero, four, the slide keeps x plus y equal to four,
+
+90
+00:06:50,309 --> 00:06:53,703
+and meets the side where x minus y is three.
+
+91
+00:06:53,703 --> 00:06:58,485
+Add the equations and halve: x is seven halves, y is one half.
+
+92
+00:06:58,485 --> 00:06:59,333
+A blue dot.
+
+93
+00:06:59,629 --> 00:07:05,455
+Two whole numbers, added and halved, give a whole number or a half, never a quarter.
+
+94
+00:07:05,455 --> 00:07:10,933
+Next, an upright hop keeps x at three and a half, up to the top: an orange dot.
+
+95
+00:07:11,229 --> 00:07:17,163
+Orange dots are the danger. A slanted hop from here would lead to five, four and a half,
+
+96
+00:07:17,163 --> 00:07:21,141
+and then to a point with quarters. The pattern would break.
+
+97
+00:07:21,429 --> 00:07:26,792
+But it never happens. We reached the orange dot by an upright hop, steered by an odd
+
+98
+00:07:26,792 --> 00:07:32,155
+point on an upright side. The next odd point comes from a sideways hop, a mirror, so
+
+99
+00:07:32,155 --> 00:07:34,389
+it lands on the other upright side.
+
+100
+00:07:34,663 --> 00:07:39,303
+So the next even hop is upright again, and x stays at three and a half.
+
+101
+00:07:39,303 --> 00:07:41,983
+The mirror blocks the one dangerous move.
+
+102
+00:07:42,863 --> 00:07:46,681
+Here, even points from corners stay on twenty six dots.
+
+103
+00:07:46,681 --> 00:07:51,611
+Other special octagons have different counts, but always finitely many.
+
+104
+00:07:51,611 --> 00:07:54,874
+So every path defined for all time is periodic.
+
+105
+00:07:54,874 --> 00:07:56,471
+The conjecture is true.
+
+106
+00:07:56,763 --> 00:08:01,833
+Here, the formula guarantees repetition within two thousand six hundred hops.
+
+107
+00:08:01,833 --> 00:08:07,563
+That is a loose bound. The largest period found in the reported samples was ninety two.
+
+108
+00:08:08,429 --> 00:08:14,052
+Was the mirror really needed? Here is a lopsided octagon: corners on the grid, the same
+
+109
+00:08:14,052 --> 00:08:15,797
+four directions, no mirror.
+
+110
+00:08:16,096 --> 00:08:22,048
+It has a path of period six. Notice the thirds: this loop never touches the half grid.
+
+111
+00:08:22,329 --> 00:08:28,295
+Nudge the first point along its side. Each lap doubles the nudge and flips it: a twenty
+
+112
+00:08:28,295 --> 00:08:33,849
+fourth, minus a twelfth, a sixth, minus a third, and then the path is thrown off.
+
+113
+00:08:34,129 --> 00:08:40,639
+Nudge the second point instead. Each lap halves the nudge and flips it: a quarter, minus
+
+114
+00:08:40,639 --> 00:08:44,041
+an eighth, a sixteenth, minus a thirty second.
+
+115
+00:08:44,329 --> 00:08:49,264
+This path approaches the loop forever but never reaches it, so never repeats.
+
+116
+00:08:49,264 --> 00:08:54,134
+A suitable nudge also avoids corners forever backwards, as the paper proves.
+
+117
+00:08:54,134 --> 00:08:57,145
+Not every path is periodic: the mirror matters.
+
+118
+00:08:58,029 --> 00:09:03,668
+So what is established? The theorem has a short written proof, checked line by line in
+
+119
+00:09:03,668 --> 00:09:07,077
+internal reviews, but not yet refereed by a journal.
+
+120
+00:09:07,363 --> 00:09:13,620
+Two independent exact programs also checked the dot rule for all one thousand four hundred
+
+121
+00:09:13,620 --> 00:09:18,417
+and eighty four allowed parameter tuples with entries up to fourteen.
+
+122
+00:09:18,417 --> 00:09:22,171
+These include rescaled copies: a check, not the proof.
+
+123
+00:09:22,463 --> 00:09:27,139
+Confidence in the proof is high; confidence in originality is more limited.
+
+124
+00:09:27,139 --> 00:09:32,438
+The campaign search found no earlier proof of this family result, but a search cannot
+
+125
+00:09:32,438 --> 00:09:33,623
+establish priority.
+
+126
+00:09:33,896 --> 00:09:39,404
+The same argument settles the companion Hexhouse conjecture in the mirror symmetric case:
+
+127
+00:09:39,404 --> 00:09:44,912
+a square with a symmetric roof. Stretched sideways, its roof turns to forty five degrees.
+
+128
+00:09:45,196 --> 00:09:51,513
+Still open in the paper: lopsided Hexhouses, the Penthouse conjecture, and octagons whose
+
+129
+00:09:51,513 --> 00:09:58,042
+sizes are in no whole number ratio. The general question here concerns symplectic billiards,
+
+130
+00:09:58,042 --> 00:10:00,100
+with this parallel-line rule.
+
+131
+00:10:00,996 --> 00:10:06,724
+To recap. One: each new point comes from two steps back, by a parallel line.
+
+132
+00:10:06,724 --> 00:10:11,547
+Two: finitely many points from corners means every path repeats.
+
+133
+00:10:11,547 --> 00:10:17,652
+Three: whole number sides and the mirror keep those points on finitely many dots.
+
+134
+00:10:17,929 --> 00:10:23,656
+Still unknown here: whether lopsided Hexhouses always repeat, and whether every convex
+
+135
+00:10:23,656 --> 00:10:27,385
+polygon has even one repeating symplectic billiard path.

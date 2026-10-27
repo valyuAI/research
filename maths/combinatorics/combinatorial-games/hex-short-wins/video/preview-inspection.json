@@ -1,0 +1,10 @@
+{
+  "inspectedUtc": "2026-10-26T16:14:32.834133+00:00",
+  "file": "contact.png from 480p15 preview",
+  "findings": [
+    "All seven scenes rendered successfully after renaming the board coordinate dictionary to avoid Manim points.",
+    "Inspected full-game cells, both tiny-board response branches, checker diagram and certified/search-only panels.",
+    "Final counter labels improved after preview: Move, Path cells and Blue stones. Final full-resolution inspection must verify those changes."
+  ],
+  "finalQaPending": true
+}

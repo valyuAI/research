@@ -1,0 +1,14 @@
+Rank<=2, identity 19: exact original-minor reconstruction passed
+Rank<=2, identity 32: exact original-minor reconstruction passed
+Rank<=2, identity 58: exact original-minor reconstruction passed
+Rank<=2, identity 92: exact original-minor reconstruction passed
+Rank<=2, identity 98: exact original-minor reconstruction passed
+Rank<=2, identity 101: exact original-minor reconstruction passed
+Rank<=2: independently verified dimension upper bound 2
+Rank<=3, identity 68: exact original-minor reconstruction passed
+Rank<=3, identity 135: exact original-minor reconstruction passed
+Rank<=3, identity 198: exact original-minor reconstruction passed
+Rank<=3, identity 210: exact original-minor reconstruction passed
+Rank<=3, identity 213: exact original-minor reconstruction passed
+Rank<=3: independently verified dimension upper bound 3
+All identities and dimension bounds passed in 0.58s

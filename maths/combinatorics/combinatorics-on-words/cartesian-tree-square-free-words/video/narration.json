@@ -1,0 +1,193 @@
+{
+ "voice": "cedar",
+ "clips": [
+  {
+   "id": "s01_banana",
+   "text": "Here is a word: banana. In the middle, the little block A N appears twice in a row. A block followed straight away by an exact copy of itself is called a square."
+  },
+  {
+   "id": "s01_more",
+   "text": "Squares can be tiny, like two A's side by side, or long, like A B C, A B C."
+  },
+  {
+   "id": "s01_question",
+   "text": "So here is a puzzle. Can you write an endless string of letters with no square anywhere in it? The answer depends on how many letters you may use."
+  },
+  {
+   "id": "s02_try",
+   "text": "Try it with two letters, A and B. Start with A. The next letter can't be A, that would make a square, so write B. Then A again. So far, so good."
+  },
+  {
+   "id": "s02_stuck",
+   "text": "Now add a fourth letter. If you add A, the word ends A, A: a square. If you add B, the whole word is A B, A B: also a square. Starting with B just swaps the letters."
+  },
+  {
+   "id": "s02_ponder",
+   "text": "So with two letters, three is as long as you can go. Squares are unavoidable."
+  },
+  {
+   "id": "s03_thue",
+   "text": "With three letters, everything changes. Over a hundred years ago, the Norwegian mathematician Axel Thue proved that you can go on forever without a single square. Here is the start of one endless square-free word."
+  },
+  {
+   "id": "s03_period",
+   "text": "Some blocks nearly repeat. A B C A B starts its pattern again but stops early. It is five letters long and repeats every three, so its exponent is five thirds. A square has exponent exactly 2."
+  },
+  {
+   "id": "s03_dejean",
+   "text": "In 1972, Francoise Dejean showed that three letters can do even better: there are endless words where no block has exponent above seven quarters. The word on screen is one. Its most repetitive blocks, like this one, reach exactly seven quarters, and no further."
+  },
+  {
+   "id": "s03_keep",
+   "text": "Keep this word in mind. It is the raw material for everything that follows."
+  },
+  {
+   "id": "s04_heights",
+   "text": "Now a twist. Think of numbers, and draw each one as the height of a column. 3, 1, 4, 1, 5 gives a little mountain range. So does 2, 0, 7, 0, 9."
+  },
+  {
+   "id": "s04_same",
+   "text": "The numbers are different, but the ups and downs look alike. To say precisely that they have the same shape, every column gets a code number."
+  },
+  {
+   "id": "s04_rule",
+   "text": "Stand on a column and walk left, hopping over every column taller than you. Stop at the first one that is the same height or shorter, and write down how many steps back it was. If you never stop, write zero."
+  },
+  {
+   "id": "s04_code",
+   "text": "For 3, 1, 4, 1, 5 the code is 0, 0, 1, 2, 1. The second range gives exactly the same code. Same code, same shape."
+  },
+  {
+   "id": "s04_name",
+   "text": "Computer scientists call this shape a Cartesian tree, and use it to search prices or sensor data for a pattern of rises and falls, whatever the actual values."
+  },
+  {
+   "id": "s05_binary",
+   "text": "Back to letters, now 0 and 1, with 0 lower than 1. Zero zero, zero one and one one all get the code 0, 1. Nothing steps down, so they share a shape. One zero, which steps down, is different."
+  },
+  {
+   "id": "s05_0110",
+   "text": "Longer blocks have more interesting codes. In zero one one zero, the last zero hops over both ones and lands three steps back."
+  },
+  {
+   "id": "s05_square",
+   "text": "A shape square is a block followed straight away by a block of the same shape. Zero one one one, then zero zero one one. The letters differ, but both codes read 0, 1, 1, 1. A shape square with halves of length 4."
+  },
+  {
+   "id": "s05_harder",
+   "text": "Every ordinary square is also a shape square, so shape squares are harder to avoid. Tiny ones can't be avoided at all, since any two single letters have the same shape. So we only forbid long ones."
+  },
+  {
+   "id": "s06_table",
+   "text": "In 2026, Shibata, Mieno, Koeppl and Inenaga made a table. Each row is a number of letters, each column a minimum half length, and each entry is the longest word with no such shape square. Infinity means forever."
+  },
+  {
+   "id": "s06_finite",
+   "text": "With two letters and halves of at least 3, the longest possible word has 29 letters. With three letters and halves of at least 2, only 9."
+  },
+  {
+   "id": "s06_open",
+   "text": "But some entries were question marks. From experiments, the authors guessed infinity in two cells: two letters with halves of at least 4, and three letters with halves of at least 3. Those two cells would fill in all the rest."
+  },
+  {
+   "id": "s06_result",
+   "text": "This finding proves both guesses. Every question mark becomes infinity."
+  },
+  {
+   "id": "s07_idea",
+   "text": "How do you build such a word? Start from Dejean's word over A, B and C, and replace each letter by a fixed block of five zeros and ones."
+  },
+  {
+   "id": "s07_rule",
+   "text": "Every A becomes this block. Every B becomes this one. Every C becomes this one."
+  },
+  {
+   "id": "s07_grow",
+   "text": "Apply the rule letter by letter, and the endless three letter word turns into an endless word of zeros and ones."
+  },
+  {
+   "id": "s07_ternary",
+   "text": "For three letters there is a similar rule, with blocks of six built from 0, 1 and 2. We follow the two letter case; the other works the same way."
+  },
+  {
+   "id": "s07_short",
+   "text": "Short shape squares still appear. One one one, then zero one one: both have code 0, 1, 1. That is allowed, since these halves have only three letters, and the table says it must happen. The claim is about halves of 4 or more."
+  },
+  {
+   "id": "s08_window",
+   "text": "Why should that be true? The key is a sliding window. Look at a few letters at a time, and work out the code of what you see."
+  },
+  {
+   "id": "s08_fail5",
+   "text": "First try five letters. Zero zero one one one, and zero zero zero zero one, have the same code but different middle letters. Five is not enough."
+  },
+  {
+   "id": "s08_seven",
+   "text": "So try seven. A computer listed every seven letter window that can occur. There are 23 different codes, and each always comes with the same middle letter. Here, the shape of seven letters tells you the letter in the middle."
+  },
+  {
+   "id": "s09_suppose",
+   "text": "Now suppose our word did contain a long shape square: two neighbouring blocks with the same code. Call the length of each half m."
+  },
+  {
+   "id": "s09_slide",
+   "text": "Put the second half under the first, and slide a seven letter window along both at once. Matching pieces of matching halves have matching codes, so each pair of windows has the same middle letter."
+  },
+  {
+   "id": "s09_equal",
+   "text": "Do this all the way along. Apart from three letters at each end, where the window doesn't fit, the two halves are equal letter for letter. A long shape square is really an ordinary square with blurry edges."
+  },
+  {
+   "id": "s10_sync",
+   "text": "Now the blocks matter. They were chosen so that a block never appears straddling two others. Slide zero zero one zero one across a pair of blocks: it only fits at the real boundary. Every block you see came from a real letter."
+  },
+  {
+   "id": "s10_align",
+   "text": "The equal stretch is long, so it contains whole blocks. Their copies in the second half must be real blocks too, so the two halves are shifted by a whole number of blocks."
+  },
+  {
+   "id": "s10_up",
+   "text": "Now read each block back as its letter. Matching blocks mean matching letters, so Dejean's word would contain a stretch that repeats itself."
+  },
+  {
+   "id": "s10_count",
+   "text": "How much does it repeat? At most 14 letters are lost: 3 at each end, plus up to 4 more at each end to reach a whole block. That gives an exponent of at least 2, minus 14 over m."
+  },
+  {
+   "id": "s10_contra",
+   "text": "When m is bigger than 56, that is more than seven quarters. But Dejean's word never goes above seven quarters. Contradiction. So there is no shape square with halves longer than 56."
+  },
+  {
+   "id": "s11_short",
+   "text": "That leaves halves from 4 to 56 letters. Any such square sits inside the blocks of just 24 consecutive letters of the starting word."
+  },
+  {
+   "id": "s11_count",
+   "text": "So the computer took every 24 letter word over A, B and C with no block of exponent above seven quarters. There are 4,596 of them. In each one's zeros and ones it searched for shape squares with halves from 4 to 56. It found none."
+  },
+  {
+   "id": "s11_ternary",
+   "text": "For the three letter rule, the same kind of check covers 3,654 words, with halves from 3 to 64. Again, none."
+  },
+  {
+   "id": "s11_two",
+   "text": "Two separately written programs agree on every count, and both reject rules that were deliberately broken."
+  },
+  {
+   "id": "s12_status",
+   "text": "So what kind of proof is this? The endless part is the written argument you just watched. The computer only checks a finite list of short cases. Together they make a proof, but a computer assisted one. It has not been checked in a proof assistant like Lean, and it has not yet been peer reviewed."
+  },
+  {
+   "id": "s12_scope",
+   "text": "It is also modest. It answers two questions left open in a recent paper and completes its table. And the thresholds can't be lowered: the table's 29 and 9 already show that."
+  },
+  {
+   "id": "s13_recap",
+   "text": "To recap. One: two letters can go on forever avoiding shape squares with halves of 4 or more, and three letters, those with halves of 3 or more. Two: the words come from Dejean's word by swapping letters for blocks. Three: a seven letter window turns long shape squares into near-exact squares, which Dejean's word forbids, and a computer clears the short ones."
+  },
+  {
+   "id": "s13_open",
+   "text": "What we still don't know: how close to a shape square an endless word must come, and how rare shape squares can be made when they can't be avoided. Those are the next questions the original authors suggest."
+  }
+ ]
+}

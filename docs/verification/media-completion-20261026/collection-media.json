@@ -1,0 +1,241 @@
+{
+  "checkedAt": "2026-10-26T16:50:27.229561+00:00",
+  "scope": "Retained artifact hash replay and current ffprobe metadata; no new decode, frame inspection or listening review.",
+  "videos": [
+    {
+      "id": "quartets",
+      "path": "maths/combinatorics/phylogenetics/common-quartet-number/video/video.mp4",
+      "durationSeconds": 565.266667,
+      "sha256": "46f5535f8db2d49cf1ff4208b33d99ccd3cad7a7a4a19ee5e78163e73e1af33b",
+      "artifactManifest": "qa/artifact-sha256.json",
+      "artifactHashesChecked": 61,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "johnson",
+      "path": "maths/geometry/rigidity/johnson-solids/video/video.mp4",
+      "durationSeconds": 548.566667,
+      "sha256": "b415a68876606c0647d15e61c8abeef14b86d75d90014105aaff0b6621996cb7",
+      "artifactManifest": "qa/media-check.json",
+      "artifactHashesChecked": 44,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "qudit",
+      "path": "physics/quantum-information/error-correction/distance-three-qudit-codes/video/video.mp4",
+      "durationSeconds": 593.466667,
+      "sha256": "ff3591f1b4ca152d14200dab4b76cde6beffb8fe3e4eba25cdf61874aed4ffb7",
+      "artifactManifest": null,
+      "artifactHashesChecked": 0,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "acr",
+      "path": "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/video.mp4",
+      "durationSeconds": 583.566667,
+      "sha256": "1b739682343570c92a4d6b807d5ce29af884c7718757c2802759dfa0394229ac",
+      "artifactManifest": "qa/artifact-sha256.json",
+      "artifactHashesChecked": 42,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "covering",
+      "path": "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/video/video.mp4",
+      "durationSeconds": 535.233333,
+      "sha256": "fcf8f49da6e479701dcad3233e53349de3d31b783a43be8822bab54de9314c4b",
+      "artifactManifest": "qa/artifact-sha256.json",
+      "artifactHashesChecked": 38,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "penney",
+      "path": "maths/probability/competing-patterns/rotation-wins-penney/video/video.mp4",
+      "durationSeconds": 590.366667,
+      "sha256": "b78de4e118d9af6ed9351c002036f385d61aace686ddad12696c128f306e27c0",
+      "artifactManifest": "qa/artifact-sha256.json",
+      "artifactHashesChecked": 44,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "colless",
+      "path": "maths/combinatorics/phylogenetics/colless-like-integer-weights/video/video.mp4",
+      "durationSeconds": 460.4,
+      "sha256": "f33275715492ccd52662740a18c425af5f2b876384290d6dc17ec81d08e2e575",
+      "artifactManifest": "qa/artifact-sha256.json",
+      "artifactHashesChecked": 40,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "octagon",
+      "path": "maths/dynamical-systems/billiards/special-octagon-symplectic-billiards/video/video.mp4",
+      "durationSeconds": 634.266667,
+      "sha256": "76d6ea19ca6542a2fe55c7c7462a3d6b9433d0a1a893ec1aa2dc2d5354e9dca7",
+      "artifactManifest": "audit/package-files.json",
+      "artifactHashesChecked": 69,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "ctwords",
+      "path": "maths/combinatorics/combinatorics-on-words/cartesian-tree-square-free-words/video/video.mp4",
+      "durationSeconds": 586.5,
+      "sha256": "839e633ff8f25538a8efa7dd1b26a1a18c1e7a8c5d378a74b2962e5d18422acb",
+      "artifactManifest": null,
+      "artifactHashesChecked": 0,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "graphs",
+      "path": "maths/combinatorics/spectral-graph-theory/four-negative-eigenvalues/video/video.mp4",
+      "durationSeconds": 553.166667,
+      "sha256": "a8fab8606094139c0b6cf215196c971271aad05e918cd2cdfcc898db1fe50233",
+      "artifactManifest": "qa/artifact-sha256.json",
+      "artifactHashesChecked": 350,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "hex",
+      "path": "maths/combinatorics/combinatorial-games/hex-short-wins/video/video.mp4",
+      "durationSeconds": 559.166667,
+      "sha256": "ada765a1b963109fd684af5eafb0b86140cccec37a3ca688d78b8f6ba82665ee",
+      "artifactManifest": "qa/artifact-sha256.json",
+      "artifactHashesChecked": 40,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "knots",
+      "path": "maths/topology/knot-theory/bridge-thirteen-crossing-census/video/video.mp4",
+      "durationSeconds": 526.9,
+      "sha256": "bd730ce5796a24747db4ccda67819660bb47f69d226ff09af618e8dcca065ab0",
+      "artifactManifest": "qa/media-check.json",
+      "artifactHashesChecked": 42,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "social",
+      "path": "economics/social-choice/tournament-rules/three-team-manipulation-exact/video/video.mp4",
+      "durationSeconds": 452.1,
+      "sha256": "954f36ff156d9d61c2a097334b7cb3fc7da0312deb367492d1cce6a6b6bbc200",
+      "artifactManifest": "qa/artifact-sha256.json",
+      "artifactHashesChecked": 312,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "cactus",
+      "path": "physics/statistical-physics/nonequilibrium-response/cactus-response-coupling/video/video.mp4",
+      "durationSeconds": 641.3,
+      "sha256": "f48c550bdbf28ddbb0506ff02a4bf4ba586099480eb1e0daff3121453a8ae73c",
+      "artifactManifest": "audit/package-files.json",
+      "artifactHashesChecked": 69,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "algebra",
+      "path": "maths/algebra/bilinear-complexity/mu-q-2-2/video/video.mp4",
+      "durationSeconds": 504.233333,
+      "sha256": "e9af7f1000e7885f79bde45e8a5407fc4f8c0e231626959655e95d09de7e3267",
+      "artifactManifest": "qa/artifact-sha256.json",
+      "artifactHashesChecked": 55,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "ctln",
+      "path": "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/video/video.mp4",
+      "durationSeconds": 566.466667,
+      "sha256": "0f23c3800bc99430c1c4af812cc3158403ce58ba71fb89f0ed432248c1e8e5f8",
+      "artifactManifest": "qa/artifact-sha256.json",
+      "artifactHashesChecked": 350,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "tilings",
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/video/video.mp4",
+      "durationSeconds": 572.433333,
+      "sha256": "b47555956c5fef28cedec44049e4b76eca30f726b1303c0b4a4884c61fc5a82c",
+      "artifactManifest": "qa/artifact-sha256.json",
+      "artifactHashesChecked": 39,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "tictactoe",
+      "path": "maths/combinatorics/combinatorial-games/cubic-tic-tac-toe-surplus/video/video.mp4",
+      "durationSeconds": 542.433333,
+      "sha256": "e1914c01ab17c314ef9c230bc9bee0a41fe935e32ac1f57437ffe30795386589",
+      "artifactManifest": "qa/artifact-sha256.json",
+      "artifactHashesChecked": 57,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "latin",
+      "path": "maths/combinatorics/latin-squares/latin-tableaux-staircase-count/video/video.mp4",
+      "durationSeconds": 486.733333,
+      "sha256": "4da5a443bd64523d812a48dd823d04842caad39ef69accf6eae040b668377c2e",
+      "artifactManifest": "qa/artifact-sha256.json",
+      "artifactHashesChecked": 55,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "elasticity",
+      "path": "physics/mechanics/elasticity/generic-stiffness-recovery/video/video.mp4",
+      "durationSeconds": 588.266667,
+      "sha256": "cf28272afbfa2b4f549694fa1d84cb65a5322fe981e694b554b51448255ac0c8",
+      "artifactManifest": null,
+      "artifactHashesChecked": 0,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "halesjewett",
+      "path": "maths/combinatorics/ramsey-theory/prime-successor-hales-jewett/video/video.mp4",
+      "durationSeconds": 580.633333,
+      "sha256": "a8e09e033fe473fdab1d583456e846203376cc57006f18cf0c3c6ad294c37c2d",
+      "artifactManifest": null,
+      "artifactHashesChecked": 0,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "dodecahedron",
+      "path": "maths/geometry/rigidity/truncated-dodecahedron/video/video.mp4",
+      "durationSeconds": 581.2,
+      "sha256": "8698208440a352ecab58701aae1e8b6d0e04be1c30bc607f982c97e55531546b",
+      "artifactManifest": null,
+      "artifactHashesChecked": 0,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "entropy",
+      "path": "physics/statistical-physics/thermodynamic-inference/periodic-waiting-time/video/video.mp4",
+      "durationSeconds": 583.766667,
+      "sha256": "0bfdfc7fcedddfcddeb8100129069abdc9f5745b322cca8df41169140f4988a6",
+      "artifactManifest": null,
+      "artifactHashesChecked": 0,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "cubicchem",
+      "path": "chemistry/reaction-networks/mass-action/cubic-equilibrium-sharpness/video/video.mp4",
+      "durationSeconds": 596.366667,
+      "sha256": "b2fdf71affc2c8f5f43b0a3efbfc0102eb5592e9b03f37bdd6f5c0652ba1468c",
+      "artifactManifest": null,
+      "artifactHashesChecked": 0,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "restart",
+      "path": "physics/statistical-physics/stochastic-resetting/conjugate-restart/video/video.mp4",
+      "durationSeconds": 590.233333,
+      "sha256": "06ec4273342e2b8a0ecea56dd650f10335ca8c77be5d7e250479d37f7c738176",
+      "artifactManifest": null,
+      "artifactHashesChecked": 0,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    },
+    {
+      "id": "lv",
+      "path": "maths/dynamical-systems/lotka-volterra/tree-equivalence/video/video.mp4",
+      "durationSeconds": 593.966667,
+      "sha256": "0aeba5d0e7042a52fdf30d7355850fecb205c4310f7580412d9c8e17f82e082d",
+      "artifactManifest": null,
+      "artifactHashesChecked": 0,
+      "nativeFormat": "1920x1080 H.264 30fps, AAC"
+    }
+  ],
+  "errors": []
+}

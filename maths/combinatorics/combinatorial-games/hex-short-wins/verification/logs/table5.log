@@ -1,0 +1,65 @@
+D bound=13 opening=0: VERIFIED: Red stops Blue after first move (1,1); Red-to-move positions checked=17127
+D bound=13 opening=1: VERIFIED: Red stops Blue after first move (1,2); Red-to-move positions checked=16144
+D bound=13 opening=2: VERIFIED: Red stops Blue after first move (1,3); Red-to-move positions checked=17534
+D bound=13 opening=3: VERIFIED: Red stops Blue after first move (1,4); Red-to-move positions checked=12871
+D bound=8 opening=4: VERIFIED: Blue wins with first move (1,5); Blue-to-move positions checked=65161, max Blue stones=8
+D bound=7 opening=4: VERIFIED: Red stops Blue after first move (1,5); Red-to-move positions checked=1555
+L bound=7 opening=4: VERIFIED: Blue wins with first move (1,5); Blue-to-move positions checked=302872, max Blue stones=12
+L bound=6 opening=4: VERIFIED: Red stops Blue after first move (1,5); Red-to-move positions checked=33060
+D bound=13 opening=5: VERIFIED: Red stops Blue after first move (2,1); Red-to-move positions checked=53431
+D bound=8 opening=6: VERIFIED: Blue wins with first move (2,2); Blue-to-move positions checked=96837, max Blue stones=8
+D bound=7 opening=6: VERIFIED: Red stops Blue after first move (2,2); Red-to-move positions checked=1015
+L bound=8 opening=6: VERIFIED: Blue wins with first move (2,2); Blue-to-move positions checked=767800, max Blue stones=12
+L bound=7 opening=6: VERIFIED: Red stops Blue after first move (2,2); Red-to-move positions checked=11497
+D bound=9 opening=7: VERIFIED: Blue wins with first move (2,3); Blue-to-move positions checked=124812, max Blue stones=9
+D bound=8 opening=7: VERIFIED: Red stops Blue after first move (2,3); Red-to-move positions checked=5492
+L bound=8 opening=7: VERIFIED: Blue wins with first move (2,3); Blue-to-move positions checked=345428, max Blue stones=12
+L bound=7 opening=7: VERIFIED: Red stops Blue after first move (2,3); Red-to-move positions checked=11599
+D bound=7 opening=8: VERIFIED: Blue wins with first move (2,4); Blue-to-move positions checked=12358, max Blue stones=7
+D bound=6 opening=8: VERIFIED: Red stops Blue after first move (2,4); Red-to-move positions checked=238
+L bound=7 opening=8: VERIFIED: Blue wins with first move (2,4); Blue-to-move positions checked=176577, max Blue stones=12
+L bound=6 opening=8: VERIFIED: Red stops Blue after first move (2,4); Red-to-move positions checked=35441
+D bound=10 opening=9: VERIFIED: Blue wins with first move (2,5); Blue-to-move positions checked=820155, max Blue stones=10
+D bound=9 opening=9: VERIFIED: Red stops Blue after first move (2,5); Red-to-move positions checked=13516
+L bound=8 opening=9: VERIFIED: Blue wins with first move (2,5); Blue-to-move positions checked=1198235, max Blue stones=13
+L bound=7 opening=9: VERIFIED: Red stops Blue after first move (2,5); Red-to-move positions checked=24259
+D bound=13 opening=10: VERIFIED: Red stops Blue after first move (3,1); Red-to-move positions checked=22369
+D bound=9 opening=11: VERIFIED: Blue wins with first move (3,2); Blue-to-move positions checked=216967, max Blue stones=9
+D bound=8 opening=11: VERIFIED: Red stops Blue after first move (3,2); Red-to-move positions checked=5219
+L bound=9 opening=11: VERIFIED: Blue wins with first move (3,2); Blue-to-move positions checked=642431, max Blue stones=12
+L bound=8 opening=11: VERIFIED: Red stops Blue after first move (3,2); Red-to-move positions checked=24422
+D bound=7 opening=12: VERIFIED: Blue wins with first move (3,3); Blue-to-move positions checked=12651, max Blue stones=7
+D bound=6 opening=12: VERIFIED: Red stops Blue after first move (3,3); Red-to-move positions checked=366
+L bound=6 opening=12: VERIFIED: Blue wins with first move (3,3); Blue-to-move positions checked=106826, max Blue stones=12
+L bound=5 opening=12: VERIFIED: Red stops Blue after first move (3,3); Red-to-move positions checked=2733
+D bound=9 opening=13: VERIFIED: Blue wins with first move (3,4); Blue-to-move positions checked=213617, max Blue stones=9
+D bound=8 opening=13: VERIFIED: Red stops Blue after first move (3,4); Red-to-move positions checked=5152
+L bound=9 opening=13: VERIFIED: Blue wins with first move (3,4); Blue-to-move positions checked=642598, max Blue stones=13
+L bound=8 opening=13: VERIFIED: Red stops Blue after first move (3,4); Red-to-move positions checked=24386
+D bound=13 opening=14: VERIFIED: Red stops Blue after first move (3,5); Red-to-move positions checked=21942
+D bound=10 opening=15: VERIFIED: Blue wins with first move (4,1); Blue-to-move positions checked=818362, max Blue stones=10
+D bound=9 opening=15: VERIFIED: Red stops Blue after first move (4,1); Red-to-move positions checked=13797
+L bound=8 opening=15: VERIFIED: Blue wins with first move (4,1); Blue-to-move positions checked=1150884, max Blue stones=13
+L bound=7 opening=15: VERIFIED: Red stops Blue after first move (4,1); Red-to-move positions checked=26761
+D bound=7 opening=16: VERIFIED: Blue wins with first move (4,2); Blue-to-move positions checked=12190, max Blue stones=7
+D bound=6 opening=16: VERIFIED: Red stops Blue after first move (4,2); Red-to-move positions checked=252
+L bound=7 opening=16: VERIFIED: Blue wins with first move (4,2); Blue-to-move positions checked=175525, max Blue stones=12
+L bound=6 opening=16: VERIFIED: Red stops Blue after first move (4,2); Red-to-move positions checked=34896
+D bound=9 opening=17: VERIFIED: Blue wins with first move (4,3); Blue-to-move positions checked=124898, max Blue stones=9
+D bound=8 opening=17: VERIFIED: Red stops Blue after first move (4,3); Red-to-move positions checked=5604
+L bound=8 opening=17: VERIFIED: Blue wins with first move (4,3); Blue-to-move positions checked=344068, max Blue stones=12
+L bound=7 opening=17: VERIFIED [n=5 mode=L bound=7 first=17 side=red]: Red stops Blue after first move (4,3); Red-to-move positions checked=11883
+D bound=8 opening=18: VERIFIED [n=5 mode=D bound=8 first=18 side=blue]: Blue wins with first move (4,4); Blue-to-move positions checked=98476, max Blue stones=8
+D bound=7 opening=18: VERIFIED [n=5 mode=D bound=7 first=18 side=red]: Red stops Blue after first move (4,4); Red-to-move positions checked=984
+L bound=8 opening=18: VERIFIED [n=5 mode=L bound=8 first=18 side=blue]: Blue wins with first move (4,4); Blue-to-move positions checked=759689, max Blue stones=12
+L bound=7 opening=18: VERIFIED [n=5 mode=L bound=7 first=18 side=red]: Red stops Blue after first move (4,4); Red-to-move positions checked=11210
+D bound=13 opening=19: VERIFIED [n=5 mode=D bound=13 first=19 side=red]: Red stops Blue after first move (4,5); Red-to-move positions checked=53907
+D bound=8 opening=20: VERIFIED [n=5 mode=D bound=8 first=20 side=blue]: Blue wins with first move (5,1); Blue-to-move positions checked=63291, max Blue stones=8
+D bound=7 opening=20: VERIFIED [n=5 mode=D bound=7 first=20 side=red]: Red stops Blue after first move (5,1); Red-to-move positions checked=1500
+L bound=7 opening=20: VERIFIED [n=5 mode=L bound=7 first=20 side=blue]: Blue wins with first move (5,1); Blue-to-move positions checked=321381, max Blue stones=12
+L bound=6 opening=20: VERIFIED [n=5 mode=L bound=6 first=20 side=red]: Red stops Blue after first move (5,1); Red-to-move positions checked=32788
+D bound=13 opening=21: VERIFIED [n=5 mode=D bound=13 first=21 side=red]: Red stops Blue after first move (5,2); Red-to-move positions checked=11219
+D bound=13 opening=22: VERIFIED [n=5 mode=D bound=13 first=22 side=red]: Red stops Blue after first move (5,3); Red-to-move positions checked=17350
+D bound=13 opening=23: VERIFIED [n=5 mode=D bound=13 first=23 side=red]: Red stops Blue after first move (5,4); Red-to-move positions checked=16138
+D bound=13 opening=24: VERIFIED [n=5 mode=D bound=13 first=24 side=red]: Red stops Blue after first move (5,5); Red-to-move positions checked=17260
+TABLE CERTIFIED: 64/64 expected entries VERIFIED (12 Red Hex_13(5) for losing openings; for each of 13 winning openings Blue at the value and Red one below, modes D and L). The run's own summary line was lost because the driver script was edited while it ran; the 64 lines above were checked against the expected table by a separate comparison script.

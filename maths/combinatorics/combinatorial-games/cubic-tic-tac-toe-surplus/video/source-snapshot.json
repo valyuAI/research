@@ -1,0 +1,12 @@
+{
+  "read_date": "2026-10-26",
+  "sources": {
+    "maths/combinatorics/combinatorial-games/cubic-tic-tac-toe-surplus/paper.tex": "9641cb27526efb0ff72d3f50d9187f19a2ff6ea7e23926ad3db42350e372496f",
+    "maths/combinatorics/combinatorial-games/cubic-tic-tac-toe-surplus/README.md": "b1133148f67a4051410070d2c021f647ba66b7e6225599a2c3a5a3c531032515",
+    "maths/combinatorics/combinatorial-games/cubic-tic-tac-toe-surplus/video-brief.md": "7248110a28aeb9b8931e3fbf0c70d3a56984c437d00184b7ed2ae4f9ab391e65",
+    "maths/combinatorics/combinatorial-games/cubic-tic-tac-toe-surplus/references.bib": "cbb60f41b199e36b2df11e235a0918da9780e12bd17cf066e78b8926e6566389",
+    "maths/combinatorics/combinatorial-games/cubic-tic-tac-toe-surplus/verification/README.md": "5fe3dcd0abeb3bb0d4bb85e1049a5a22fe7548d65a34c6fe45d90ae8189a8696",
+    "maths/combinatorics/combinatorial-games/cubic-tic-tac-toe-surplus/verification/independent_check.md": "589af720d67592c9ebed2210d4bd0d337ba4ddaec37fe00ca23c6f2fa76685f7",
+    "maths/combinatorics/combinatorial-games/cubic-tic-tac-toe-surplus/verification/results/surplus_python.json": "8c10a520bef31febe7e2063a3ac2838f000e7efebdc201d9ab5965814b5ce660"
+  }
+}

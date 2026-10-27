@@ -1,0 +1,41 @@
+2026-10-26T13:17:10.827635+00:00 START ['check_family.py', '--expect-common', '0', '<unpublished-record-22b8c3b36eee>']
+<unpublished-record-878f6aec5bb3> 3 trees on 13 leaves, common quartets: 715 e.g. (1, 2, 3, 4)
+Traceback (most recent call last):
+  File "<repo>/maths/combinatorics/phylogenetics/common-quartet-number/verification/check_family.py", line 70, in <module>
+    raise ValueError(f'expected {args.expect_common} common quartets, got {len(common)}')
+ValueError: expected 0 common quartets, got 715
+EXPECTED REJECTION
+2026-10-26T13:17:10.896301+00:00 START ['check_family_edges.py', '<unpublished-record-22b8c3b36eee>']
+<unpublished-record-878f6aec5bb3> 3 trees, 13 leaves, 715 four-sets, 715 common (edge splits)
+Traceback (most recent call last):
+  File "<repo>/maths/combinatorics/phylogenetics/common-quartet-number/verification/check_family_edges.py", line 76, in <module>
+    main()
+    ~~~~^^
+  File "<repo>/maths/combinatorics/phylogenetics/common-quartet-number/verification/check_family_edges.py", line 72, in main
+    need(common == 0, 'family must have no common quartet')
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/maths/combinatorics/phylogenetics/common-quartet-number/verification/check_family_edges.py", line 15, in need
+    raise ValueError(message)
+ValueError: family must have no common quartet
+EXPECTED REJECTION
+2026-10-26T13:17:10.971732+00:00 START ['bipartition_check.py', '5', '2', '--expect-shapes', '1', '--expect-bad', '0']
+n=5 |X|=2: 1/1 shapes done, bad=10
+n=5 |X|=2 |Y|=3: 1 shapes, 10 (shape, X) pairs with no good edge
+Traceback (most recent call last):
+  File "<repo>/maths/combinatorics/phylogenetics/common-quartet-number/verification/bipartition_check.py", line 57, in <module>
+    raise ValueError(f'expected {args.expect_bad} bad colourings, got {bad}')
+ValueError: expected 0 bad colourings, got 10
+EXPECTED REJECTION
+2026-10-26T13:17:11.036907+00:00 START ['game/verify_exact_game.py', '<unpublished-record-18526cb4dc73>', '4']
+k=2: verified that every 2 trees on 7 leaves have a common quartet (h(2) <= 7)
+k=3: verified that every 3 trees on 14 leaves have a common quartet (h(3) <= 14)
+Traceback (most recent call last):
+  File "<repo>/maths/combinatorics/phylogenetics/common-quartet-number/verification/game/verify_exact_game.py", line 76, in <module>
+    main(sys.argv[1], int(sys.argv[2]))
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/maths/combinatorics/phylogenetics/common-quartet-number/verification/game/verify_exact_game.py", line 71, in main
+    assert not adversary, (k, n)
+           ^^^^^^^^^^^^^
+AssertionError: (4, 27)
+EXPECTED REJECTION
+ALL FOUR NEGATIVE CONTROLS REJECTED

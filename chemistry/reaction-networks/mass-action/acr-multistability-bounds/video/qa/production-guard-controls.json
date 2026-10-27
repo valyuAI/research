@@ -1,0 +1,26 @@
+[
+  {
+    "target": "run_stage.py",
+    "mode": "-O",
+    "exitCode": 1,
+    "message": "Video production requires Python assertions enabled."
+  },
+  {
+    "target": "run_stage.py",
+    "mode": "PYTHONOPTIMIZE=1",
+    "exitCode": 1,
+    "message": "Video production requires Python assertions enabled."
+  },
+  {
+    "target": "verify_media.py",
+    "mode": "-O",
+    "exitCode": 1,
+    "message": "Media verification requires Python assertions enabled."
+  },
+  {
+    "target": "verify_media.py",
+    "mode": "PYTHONOPTIMIZE=1",
+    "exitCode": 1,
+    "message": "Media verification requires Python assertions enabled."
+  }
+]

@@ -1,0 +1,5 @@
+{"file": "examples/G11.json", "n": 11, "permitted": true, "min_y": "7/1168", "all_hurwitz_determinants_positive": true, "nonclique": true}
+{"file": "examples/W4.json", "n": 23, "permitted": true, "min_y": "7/4273", "all_hurwitz_determinants_positive": true, "nonclique": true}
+{"file": "examples/G27.json", "n": 27, "permitted": true, "min_y": "1/151", "all_hurwitz_determinants_positive": true, "nonclique": true}
+{"file": "examples/G100.json", "n": 100, "permitted": true, "min_y": "1/1009", "all_hurwitz_determinants_positive": true, "nonclique": true}
+ALL PASS

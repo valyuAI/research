@@ -1,0 +1,261 @@
+[
+  {
+    "id": "a01",
+    "scene": "OneReaction",
+    "start": 0.0,
+    "duration": 12.216,
+    "end": 12.216
+  },
+  {
+    "id": "a02",
+    "scene": "OneReaction",
+    "start": 12.733333333333324,
+    "duration": 13.464,
+    "end": 26.197333333333326
+  },
+  {
+    "id": "a03",
+    "scene": "OneReaction",
+    "start": 26.73333333333335,
+    "duration": 13.968,
+    "end": 40.70133333333335
+  },
+  {
+    "id": "a04",
+    "scene": "OneReaction",
+    "start": 41.23333333333353,
+    "duration": 13.752,
+    "end": 54.985333333333536
+  },
+  {
+    "id": "a05",
+    "scene": "OneReaction",
+    "start": 55.53333333333319,
+    "duration": 15.504,
+    "end": 71.0373333333332
+  },
+  {
+    "id": "a06",
+    "scene": "Robustness",
+    "start": 71.566667,
+    "duration": 14.016,
+    "end": 85.582667
+  },
+  {
+    "id": "a07",
+    "scene": "Robustness",
+    "start": 86.10000033333333,
+    "duration": 14.76,
+    "end": 100.86000033333332
+  },
+  {
+    "id": "a08",
+    "scene": "Robustness",
+    "start": 101.4000003333336,
+    "duration": 12.504,
+    "end": 113.90400033333358
+  },
+  {
+    "id": "a09",
+    "scene": "Robustness",
+    "start": 114.433333666667,
+    "duration": 13.512,
+    "end": 127.945333666667
+  },
+  {
+    "id": "a10",
+    "scene": "Robustness",
+    "start": 128.4666669999998,
+    "duration": 14.568,
+    "end": 143.03466699999979
+  },
+  {
+    "id": "a11",
+    "scene": "ThreeRestingStates",
+    "start": 143.566016,
+    "duration": 14.112,
+    "end": 157.67801599999999
+  },
+  {
+    "id": "a12",
+    "scene": "ThreeRestingStates",
+    "start": 158.19934933333332,
+    "duration": 13.056,
+    "end": 171.2553493333333
+  },
+  {
+    "id": "a13",
+    "scene": "ThreeRestingStates",
+    "start": 171.79934933333368,
+    "duration": 13.968,
+    "end": 185.76734933333367
+  },
+  {
+    "id": "a14",
+    "scene": "ThreeRestingStates",
+    "start": 186.2993493333337,
+    "duration": 14.616,
+    "end": 200.91534933333372
+  },
+  {
+    "id": "a15",
+    "scene": "ThreeRestingStates",
+    "start": 201.43268266666658,
+    "duration": 17.904,
+    "end": 219.33668266666658
+  },
+  {
+    "id": "a16",
+    "scene": "TwoDimensions",
+    "start": 219.866016,
+    "duration": 14.016,
+    "end": 233.882016
+  },
+  {
+    "id": "a17",
+    "scene": "TwoDimensions",
+    "start": 234.3993493333333,
+    "duration": 15.552,
+    "end": 249.95134933333333
+  },
+  {
+    "id": "a18",
+    "scene": "TwoDimensions",
+    "start": 250.4993493333337,
+    "duration": 16.008,
+    "end": 266.5073493333337
+  },
+  {
+    "id": "a19",
+    "scene": "TwoDimensions",
+    "start": 267.03268266666686,
+    "duration": 17.064,
+    "end": 284.0966826666669
+  },
+  {
+    "id": "a20",
+    "scene": "TwoDimensions",
+    "start": 284.6326826666664,
+    "duration": 13.368,
+    "end": 298.0006826666664
+  },
+  {
+    "id": "a21",
+    "scene": "OppositeSlopes",
+    "start": 298.532683,
+    "duration": 15.504,
+    "end": 314.03668300000004
+  },
+  {
+    "id": "a22",
+    "scene": "OppositeSlopes",
+    "start": 314.5660163333333,
+    "duration": 14.952,
+    "end": 329.5180163333333
+  },
+  {
+    "id": "a23",
+    "scene": "OppositeSlopes",
+    "start": 330.0660163333336,
+    "duration": 15.216,
+    "end": 345.2820163333336
+  },
+  {
+    "id": "a24",
+    "scene": "OppositeSlopes",
+    "start": 345.79934966666656,
+    "duration": 17.064,
+    "end": 362.8633496666665
+  },
+  {
+    "id": "a25",
+    "scene": "OppositeSlopes",
+    "start": 363.39934966666624,
+    "duration": 15.264,
+    "end": 378.66334966666625
+  },
+  {
+    "id": "a26",
+    "scene": "BendingRule",
+    "start": 379.19935000000004,
+    "duration": 14.52,
+    "end": 393.71935
+  },
+  {
+    "id": "a27",
+    "scene": "BendingRule",
+    "start": 394.2660166666667,
+    "duration": 15.864,
+    "end": 410.1300166666667
+  },
+  {
+    "id": "a28",
+    "scene": "BendingRule",
+    "start": 410.6660166666672,
+    "duration": 15.648,
+    "end": 426.3140166666672
+  },
+  {
+    "id": "a29",
+    "scene": "BendingRule",
+    "start": 426.8326833333336,
+    "duration": 14.568,
+    "end": 441.4006833333336
+  },
+  {
+    "id": "a30",
+    "scene": "SharpSizes",
+    "start": 441.93268300000005,
+    "duration": 15.048,
+    "end": 456.98068300000006
+  },
+  {
+    "id": "a31",
+    "scene": "SharpSizes",
+    "start": 457.4993496666667,
+    "duration": 17.064,
+    "end": 474.5633496666667
+  },
+  {
+    "id": "a32",
+    "scene": "SharpSizes",
+    "start": 475.09934966666697,
+    "duration": 18.6,
+    "end": 493.699349666667
+  },
+  {
+    "id": "a33",
+    "scene": "SharpSizes",
+    "start": 494.232683,
+    "duration": 17.448,
+    "end": 511.68068300000004
+  },
+  {
+    "id": "a34",
+    "scene": "Evidence",
+    "start": 512.1993500000001,
+    "duration": 17.568,
+    "end": 529.7673500000001
+  },
+  {
+    "id": "a35",
+    "scene": "Evidence",
+    "start": 530.2993500000001,
+    "duration": 15.552,
+    "end": 545.8513500000001
+  },
+  {
+    "id": "a36",
+    "scene": "Evidence",
+    "start": 546.3993500000004,
+    "duration": 18.216,
+    "end": 564.6153500000004
+  },
+  {
+    "id": "a37",
+    "scene": "Evidence",
+    "start": 565.1326833333335,
+    "duration": 17.904,
+    "end": 583.0366833333335
+  }
+]

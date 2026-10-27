@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-18",
+  "symbolic_checks_passed": 36,
+  "checks": [
+    "four-state stationary generator equation",
+    "four-state detailed balance",
+    "OFF entry mean derived from killed generator",
+    "ON entry mean derived from killed generator",
+    "mean-dwell invariant",
+    "old three-state witness stationarity",
+    "old three-state witness detailed balance",
+    "three equal Td values factorization",
+    "three equal Td values",
+    "three differing activity values",
+    "general sharp target-box threshold",
+    "contrast sign threshold",
+    "OFF chord at interior dose",
+    "optimal interior dose derivative",
+    "fixed-span placement derivative",
+    "optimized dose triple threshold",
+    "ON endpoint threshold for symmetric triple",
+    "fitting three-state generator stationarity",
+    "fitting three-state detailed balance",
+    "fitting three-state ON mean",
+    "fitting three-state OFF mean",
+    "three-state exact two-dose fit at x",
+    "three-state exact two-dose fit at z",
+    "full three-state boundary-box fit at x",
+    "full three-state boundary-box fit at y",
+    "full three-state boundary-box fit at z",
+    "boundary intercept nonnegative at (1, 2, 4)",
+    "boundary slope nonnegative at (1, 2, 4)",
+    "boundary intercept nonnegative at (1/2, 1, 2)",
+    "boundary slope nonnegative at (1/2, 1, 2)",
+    "boundary intercept nonnegative at (1/4, 1, 4)",
+    "boundary slope nonnegative at (1/4, 1, 4)",
+    "boundary intercept nonnegative at (1/10, 1, 10)",
+    "boundary slope nonnegative at (1/10, 1, 10)",
+    "practical 10-percent OFF contrast is strictly negative",
+    "practical 10-percent ON monotonicity gap positive"
+  ],
+  "designs": [
+    {
+      "concentrations": [
+        "1",
+        "2",
+        "4"
+      ],
+      "relative_halfwidth_threshold": "1/19",
+      "relative_halfwidth_decimal": 0.05263157894736842,
+      "ON_means_k1": [
+        "2",
+        "3",
+        "5"
+      ],
+      "OFF_means_k1": [
+        "2",
+        "3/2",
+        "5/4"
+      ],
+      "boundary_OFF_exit_rate_k1": "19*(c + 4)/180"
+    },
+    {
+      "concentrations": [
+        "1/2",
+        "1",
+        "2"
+      ],
+      "relative_halfwidth_threshold": "1/17",
+      "relative_halfwidth_decimal": 0.058823529411764705,
+      "ON_means_k1": [
+        "3/2",
+        "2",
+        "3"
+      ],
+      "OFF_means_k1": [
+        "3",
+        "2",
+        "3/2"
+      ],
+      "boundary_OFF_exit_rate_k1": "17*(c + 1)/72"
+    },
+    {
+      "concentrations": [
+        "1/4",
+        "1",
+        "4"
+      ],
+      "relative_halfwidth_threshold": "9/41",
+      "relative_halfwidth_decimal": 0.21951219512195122,
+      "ON_means_k1": [
+        "5/4",
+        "2",
+        "5"
+      ],
+      "OFF_means_k1": [
+        "5",
+        "2",
+        "5/4"
+      ],
+      "boundary_OFF_exit_rate_k1": "41*(c + 1)/200"
+    },
+    {
+      "concentrations": [
+        "1/10",
+        "1",
+        "10"
+      ],
+      "relative_halfwidth_threshold": "81/161",
+      "relative_halfwidth_decimal": 0.5031055900621118,
+      "ON_means_k1": [
+        "11/10",
+        "2",
+        "11"
+      ],
+      "OFF_means_k1": [
+        "11",
+        "2",
+        "11/10"
+      ],
+      "boundary_OFF_exit_rate_k1": "161*(c + 1)/968"
+    }
+  ],
+  "scope": "Exact mathematical checks of target-centered deterministic mean intervals. No biological data, statistical coverage claim, or novelty claim.",
+  "three_state_fit_scope": "Reversible nonnegative-affine rates at each dose; mixed A+B*c edge does not assert elementary mass-action ligand kinetics."
+}

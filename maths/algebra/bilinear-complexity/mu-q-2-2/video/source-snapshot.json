@@ -1,0 +1,13 @@
+{
+  "read_date": "2026-10-26",
+  "sources": {
+    "maths/algebra/bilinear-complexity/mu-q-2-2/paper.tex": "ed1da6fa06f6f72b623d86d7378b52934f1b2286ff5805fe0c0d70de3a191372",
+    "maths/algebra/bilinear-complexity/mu-q-2-2/README.md": "012cbf87387cb57966dcb2be9b291e2b6e136de606da6e54f9c9602a1adbb020",
+    "maths/algebra/bilinear-complexity/mu-q-2-2/video-brief.md": "6d604c09818bbf69705245ef8984fb3d6a3776a6126eb9384c24fc9e9536bbe5",
+    "maths/algebra/bilinear-complexity/mu-q-2-2/references.bib": "25efc6e6615a7a31a6e4591146ed7343a19531ddd4e6b1d8f73f6cd2c4d573ab",
+    "maths/algebra/bilinear-complexity/mu-q-2-2/readiness.md": "8761af5418928fd0fd33036f91b80908ac006cd0c8dfa0cae6659bb2f15b288c",
+    "maths/algebra/bilinear-complexity/mu-q-2-2/verification/README.md": "287135c7006e727a110e3434e49f1285421a1ae2414dc689cf05d53bc18a56e5",
+    "maths/algebra/bilinear-complexity/mu-q-2-2/verification/results.json": "24742f86660147fbe60f3a4540bb1dfb5e4422f0080a0db34fc4db6431144a9e",
+    "maths/algebra/bilinear-complexity/mu-q-2-2/verification/logs/replay-20261026T134435172402Z/results.json": "4dab941845a04ca68e7758df2117d9785d6448e0f365be63041a60200d08effe"
+  }
+}

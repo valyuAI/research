@@ -1,0 +1,2 @@
+q=5 basis=1,t,u,tu u^2=u forms=156 rank-ones=24336
+RESULT rank<=7: YES prefixes=1 candidates=38

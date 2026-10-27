@@ -1,0 +1,57 @@
+{
+ "graphs": [
+  {
+   "order": 30,
+   "edges": 155,
+   "inertia": [
+    4,
+    22,
+    4
+   ],
+   "reduced": true,
+   "connected": true
+  },
+  {
+   "order": 30,
+   "edges": 187,
+   "inertia": [
+    4,
+    22,
+    4
+   ],
+   "reduced": true,
+   "connected": true
+  },
+  {
+   "order": 30,
+   "edges": 211,
+   "inertia": [
+    4,
+    22,
+    4
+   ],
+   "reduced": true,
+   "connected": true
+  },
+  {
+   "order": 30,
+   "edges": 225,
+   "inertia": [
+    4,
+    22,
+    4
+   ],
+   "reduced": true,
+   "connected": true
+  }
+ ],
+ "constructions_match_graph_index": {
+  "a: x~V, y~V'": [
+   3
+  ],
+  "b: y~V' only": [
+   0
+  ]
+ },
+ "all_checks_passed": true
+}

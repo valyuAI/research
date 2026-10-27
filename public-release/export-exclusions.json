@@ -1,0 +1,282 @@
+{
+  "record": "Paths a clean public export omits from the release inventory (docs/artifact-hashes.json)",
+  "status": "These files are absent from the public snapshot. Their earlier release hashes are retained; the original working record is preserved separately.",
+  "categories": {
+    "third-party-data": "Required omission. Third-party table from github.com/yj-tan/ExP-MPRA (no license file at commit d73ad23); the source preprint is CC BY-NC-ND 4.0.",
+    "non-final-media": "Optional omission (owner decision). Non-final video renders; the final video.mp4, poster and subtitles are kept.",
+    "superseded-presentation": "Earlier paper presentation; use the current human-author PDF in public-release/papers/.",
+    "administrative-record": "Administrative planning or process telemetry, not mathematical evidence."
+  },
+  "omit": {
+    "chemistry/reaction-networks/mass-action/acr-multistability-bounds/paper.pdf": {
+      "sha256": "3ee7d4e4c6d0fea1a346bdf376ca616f9cc34a258d8d9024189077ce45238494",
+      "category": "superseded-presentation"
+    },
+    "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/preview.mp4": {
+      "sha256": "39fa01b1ef2c7d0c558f4b209e7e00a5bd1c7f74ca245b43630f025aa40e6f76",
+      "category": "non-final-media"
+    },
+    "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/repaired-sections.mp4": {
+      "sha256": "c1875d8cc3d98ab03b4f4b02df53806049dd98ce1b6edceadf707066d7e61817",
+      "category": "non-final-media"
+    },
+    "chemistry/reaction-networks/mass-action/cubic-equilibrium-sharpness/journal.pdf": {
+      "sha256": "d5953dd6b5b113591efe0895bb654119c21d2ccdcdf1ba697855da1a14206481",
+      "category": "superseded-presentation"
+    },
+    "chemistry/reaction-networks/mass-action/cubic-equilibrium-sharpness/paper.pdf": {
+      "sha256": "f900642ed90c343c3455b0894ac8002c7d8db4db9c43b572124dfe99cdfcb84d",
+      "category": "superseded-presentation"
+    },
+    "docs/campaigns/2026-10-18-wrap-up.md": {
+      "sha256": "ba297b13751ea49f6523a4e0bbb37aaa4c4b8daee60efd1067c7baf2c550b2be",
+      "category": "administrative-record"
+    },
+    "docs/submission/README.md": {
+      "sha256": "daf80394d689b39d5c88cf9b304411a2de818276393086a1a99ea0b26967bd19",
+      "category": "administrative-record"
+    },
+    "docs/submission/journal_profile.yaml": {
+      "sha256": "8652e043734d444eaef536b69c7a6213b74364a990de60414a536df131968c71",
+      "category": "administrative-record"
+    },
+    "docs/submission/journal_profile_summary.md": {
+      "sha256": "0af94a366f5338dae4f8575df6fec38adbcc2ce2f1d7a5628e26f58cc92bc1c4",
+      "category": "administrative-record"
+    },
+    "docs/submission/validation.json": {
+      "sha256": "b6bb697f154639d44d23e1a0414223b45323883f64a2b62055b02719cbfd54bb",
+      "category": "administrative-record"
+    },
+    "economics/social-choice/tournament-rules/three-team-manipulation-exact/paper.pdf": {
+      "sha256": "0efa36a1b5a9504caf67fe76fb312ab9eaec0e90b43bb1c0770bd4cf2ebc80fc",
+      "category": "superseded-presentation"
+    },
+    "economics/social-choice/tournament-rules/three-team-manipulation-exact/video/active-job.json": {
+      "sha256": "9d9b2e9b4f4654f914fc252b2fa1ff90e4a0befe805e322b4de3125e1a6522d2",
+      "category": "administrative-record"
+    },
+    "economics/social-choice/tournament-rules/three-team-manipulation-exact/video/preview.mp4": {
+      "sha256": "e082391ed56c7107a29e650ea249a110fafc3e833c072c43ee7648a0e2aed3d4",
+      "category": "non-final-media"
+    },
+    "explorations/biology/promoter-calibration/500P_annotations.txt": {
+      "sha256": "3e24ea1856ec0e957e3096ed799bbe99c769dc27b920a60c401c99836037b117",
+      "category": "third-party-data",
+      "restore": "python3 explorations/biology/promoter-calibration/fetch_inputs.py (pinned upstream commit d73ad23, SHA-256 verified)"
+    },
+    "explorations/biology/promoter-calibration/78P_annotations.txt": {
+      "sha256": "56fea65b72d557afc2fcd5e1d641f3691941f382d4d82ebf2fbf6ac94a09aa47",
+      "category": "third-party-data",
+      "restore": "python3 explorations/biology/promoter-calibration/fetch_inputs.py (pinned upstream commit d73ad23, SHA-256 verified)"
+    },
+    "maths/algebra/bilinear-complexity/mu-q-2-2/paper.pdf": {
+      "sha256": "29852e0b22e51fead74cdb1ccc8377ef4038473dfa5dbd206ed212603dc29c3e",
+      "category": "superseded-presentation"
+    },
+    "maths/algebra/bilinear-complexity/mu-q-2-2/video/preview.mp4": {
+      "sha256": "fb60ccb816fd0221ffd0de9751f197a06c586b7d8c9c9dff67d093893c678d44",
+      "category": "non-final-media"
+    },
+    "maths/combinatorics/combinatorial-games/cubic-tic-tac-toe-surplus/paper.pdf": {
+      "sha256": "bdefbfd48d9d476173235ca8e521c0949ddcded817ea9d9ff3153626db626707",
+      "category": "superseded-presentation"
+    },
+    "maths/combinatorics/combinatorial-games/cubic-tic-tac-toe-surplus/video/preview.mp4": {
+      "sha256": "910426c099146e0ab9cb9567b81c9f1ebcd22f81a8c617c32288480343464246",
+      "category": "non-final-media"
+    },
+    "maths/combinatorics/combinatorial-games/hex-short-wins/paper.pdf": {
+      "sha256": "81ad7927b375d8ab2098801e2cfe3f6cca817013152ccc66a7c7b450e4dd0ac0",
+      "category": "superseded-presentation"
+    },
+    "maths/combinatorics/combinatorial-games/hex-short-wins/video/preview.mp4": {
+      "sha256": "b61b9fb971dcf0dfff1efa43640660605025fdcbb46962f81d1c9c48dba0a84e",
+      "category": "non-final-media"
+    },
+    "maths/combinatorics/combinatorics-on-words/cartesian-tree-square-free-words/paper.pdf": {
+      "sha256": "8676e91ac40056aa0f41c42db3599deebf89595361472a9c2f54f1d6f754bc3a",
+      "category": "superseded-presentation"
+    },
+    "maths/combinatorics/latin-squares/latin-tableaux-staircase-count/paper.pdf": {
+      "sha256": "0b4ae215d85ff9468dd552116094a6cb741672eaa3590f32ee457ae178265f44",
+      "category": "superseded-presentation"
+    },
+    "maths/combinatorics/latin-squares/latin-tableaux-staircase-count/video/preview.mp4": {
+      "sha256": "dfbd23f6572a217b762f45f2a9dda2d984dae6e240446d22dc515d25e2f6f752",
+      "category": "non-final-media"
+    },
+    "maths/combinatorics/phylogenetics/colless-like-integer-weights/paper.pdf": {
+      "sha256": "622efc22a5582849305ea725682c25f3414988f5d415abef008e96670d308563",
+      "category": "superseded-presentation"
+    },
+    "maths/combinatorics/phylogenetics/colless-like-integer-weights/video/preview.mp4": {
+      "sha256": "142f763094b93d65b1f82a952789e25aea7a20e276d23a2b12b9e3726d520764",
+      "category": "non-final-media"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/paper.pdf": {
+      "sha256": "d06c144dd41e070bac10759296e6a13c24a960b7f9f4821ba13c6f3d53ee6cee",
+      "category": "superseded-presentation"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/video/draft-before-sharp-update/preview.mp4": {
+      "sha256": "1642d9c816928a4d033441dcfd1f4c4a6f4b4e5d958e3f8072a1e46bfad403fc",
+      "category": "non-final-media"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/video/preview.mp4": {
+      "sha256": "1642d9c816928a4d033441dcfd1f4c4a6f4b4e5d958e3f8072a1e46bfad403fc",
+      "category": "non-final-media"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/video/sharp-preview.mp4": {
+      "sha256": "23df3d60e042c86ae5081f71bd030d66c295e6de548196968932c5f50dd6bc9f",
+      "category": "non-final-media"
+    },
+    "maths/combinatorics/phylogenetics/common-quartet-number/video/witness-restriction-preview.mp4": {
+      "sha256": "af3d5776d76600069369bbcc07fb16e1c46618e1926c1ae076f5507e69587704",
+      "category": "non-final-media"
+    },
+    "maths/combinatorics/ramsey-theory/prime-successor-hales-jewett/journal.pdf": {
+      "sha256": "989bfbe0c8c5de4b9bfea25970051daa32fdf785ab0cc410f2e546a3bea7fcbf",
+      "category": "superseded-presentation"
+    },
+    "maths/combinatorics/ramsey-theory/prime-successor-hales-jewett/paper.pdf": {
+      "sha256": "5d42943108fd2e7e0bf594868bb7b9fd391a1bba2fb742a91e120d8a578b70e9",
+      "category": "superseded-presentation"
+    },
+    "maths/combinatorics/spectral-graph-theory/four-negative-eigenvalues/paper.pdf": {
+      "sha256": "4b392e3652fadbeafd0b73972ef425a30006cbebbc8a941ac9e6a946c72e57b9",
+      "category": "superseded-presentation"
+    },
+    "maths/combinatorics/spectral-graph-theory/four-negative-eigenvalues/video/active-job.json": {
+      "sha256": "95cec2df3a86bdb99c82e97a0ab679a5b814f3519e035af72b34b639a8c7cfd5",
+      "category": "administrative-record"
+    },
+    "maths/combinatorics/spectral-graph-theory/four-negative-eigenvalues/video/preview.mp4": {
+      "sha256": "c9ee0e7981be34ce427df1b57b59a7811e7e0d4e8ba155b77046bed552a910e1",
+      "category": "non-final-media"
+    },
+    "maths/dynamical-systems/billiards/special-octagon-symplectic-billiards/paper.pdf": {
+      "sha256": "8737a5bb178f7fc5b7f68b90a85486797b293d0716ae823d637511041e9f8870",
+      "category": "superseded-presentation"
+    },
+    "maths/dynamical-systems/lotka-volterra/tree-equivalence/journal.pdf": {
+      "sha256": "ac95e501202dfaac477dfe524617225112d2327f195883335968e896353644db",
+      "category": "superseded-presentation"
+    },
+    "maths/dynamical-systems/lotka-volterra/tree-equivalence/paper.pdf": {
+      "sha256": "440a68a6b462714e21c1d22b1cd0004d603c085add6e603099ca4a7172b4eba0",
+      "category": "superseded-presentation"
+    },
+    "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/paper.pdf": {
+      "sha256": "9465f455dec9dfa9f8ac3a3eef2eba864956f5086e90a8650eee49793f566726",
+      "category": "superseded-presentation"
+    },
+    "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/video/active-job.json": {
+      "sha256": "d4931927e5e1c44584f47b061dc07f64724a9346b209cbf3e60d3eed8a31a9e6",
+      "category": "administrative-record"
+    },
+    "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/video/preview.mp4": {
+      "sha256": "6353bdd00f16081cffe35ed2f845a2d6a376f8a525c9d1b3574e75bc908682f3",
+      "category": "non-final-media"
+    },
+    "maths/geometry/rigidity/johnson-solids/paper.pdf": {
+      "sha256": "6d7687d4835efb62d6b367a5e22ad02d1a07bc4ea775b686caf4ee396849f111",
+      "category": "superseded-presentation"
+    },
+    "maths/geometry/rigidity/johnson-solids/video/preview.mp4": {
+      "sha256": "42278d5242652f098deb6fb937eeb7736313cea59d3d7a5218bd95eb8f56a3cf",
+      "category": "non-final-media"
+    },
+    "maths/geometry/rigidity/truncated-dodecahedron/journal.pdf": {
+      "sha256": "1023a3051773ed6791cd0c06105edb4397098112edbf95c6988ddeb6376e1e2c",
+      "category": "superseded-presentation"
+    },
+    "maths/geometry/rigidity/truncated-dodecahedron/paper.pdf": {
+      "sha256": "f891f0167a15ad097ede4c7426b9d9448b314d744cb46ed50007f16308762873",
+      "category": "superseded-presentation"
+    },
+    "maths/geometry/tilings/marked-polyform-heesch-numbers/paper.pdf": {
+      "sha256": "52783ae8e8d2f8e1a7f47c56fb893f26460b369d4b02df9f0cddff1a47f126c6",
+      "category": "superseded-presentation"
+    },
+    "maths/geometry/tilings/marked-polyform-heesch-numbers/video/layout-preview.mp4": {
+      "sha256": "7d93a67fb26be1672ba00111b7b42beaba71469522d4539d68edf6c3173ae8e8",
+      "category": "non-final-media"
+    },
+    "maths/geometry/tilings/marked-polyform-heesch-numbers/video/preview.mp4": {
+      "sha256": "57b6ca1923993a48645781a04765dc3f182c5bcc34f418b526c9f98065e2e49c",
+      "category": "non-final-media"
+    },
+    "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/paper.pdf": {
+      "sha256": "57f58ed0573788393c82b91ea189dac8961463b635d382bfcca473a31a76703c",
+      "category": "superseded-presentation"
+    },
+    "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/video/layout-preview.mp4": {
+      "sha256": "d12d83a6dd542943311706ba19d069564d7d2fb5e4d0ebc6eade5348d881469b",
+      "category": "non-final-media"
+    },
+    "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/video/preview.mp4": {
+      "sha256": "c3b68accb45338851166681cdbff83547d117945c654f1611b1b08e5790bd3e0",
+      "category": "non-final-media"
+    },
+    "maths/probability/competing-patterns/rotation-wins-penney/paper.pdf": {
+      "sha256": "a5f0ea816428c3abed1cc62a15ceae17dd171e14ae996d842d58b9ade3aedbd0",
+      "category": "superseded-presentation"
+    },
+    "maths/probability/competing-patterns/rotation-wins-penney/video/preview.mp4": {
+      "sha256": "58b95ed85bc4f319a6fd19ec42a007441ffc7d1b7ca094361b0513ea0534fd44",
+      "category": "non-final-media"
+    },
+    "maths/topology/knot-theory/bridge-thirteen-crossing-census/paper.pdf": {
+      "sha256": "570a5e4cf0ca37b692505e3da6bfde24611f9ee833dfd7bd0697c61047127503",
+      "category": "superseded-presentation"
+    },
+    "maths/topology/knot-theory/bridge-thirteen-crossing-census/video/preview.mp4": {
+      "sha256": "8c7206fab9fa065f1528df23dd89a2afc7050a3fa5245090e0bc29062728b87a",
+      "category": "non-final-media"
+    },
+    "physics/mechanics/elasticity/generic-stiffness-recovery/journal.pdf": {
+      "sha256": "0e8924a13e7a59aa22a4aed0d55ddd40e0048957d06e5fbdbc4ee8acbead7881",
+      "category": "superseded-presentation"
+    },
+    "physics/mechanics/elasticity/generic-stiffness-recovery/paper.pdf": {
+      "sha256": "12039a70ff100023cc34bbdf0a8f71ba14b429f271570d4ae40ed4ee7d0cf843",
+      "category": "superseded-presentation"
+    },
+    "physics/quantum-information/error-correction/distance-three-qudit-codes/journal.pdf": {
+      "sha256": "dcb1d61e07d8321717c2c6c31d0ea8f989e7ad76da373cf4b75f6c2b8ff127fd",
+      "category": "superseded-presentation"
+    },
+    "physics/quantum-information/error-correction/distance-three-qudit-codes/paper.pdf": {
+      "sha256": "8584ba307fedfb1f763158b94b4e045434bf18de3d24fbe1b0b6ef101183c2ea",
+      "category": "superseded-presentation"
+    },
+    "physics/statistical-physics/nonequilibrium-response/cactus-response-coupling/paper.pdf": {
+      "sha256": "909960ec6fad41f8ac2e719b486a9c1f72e734f87a6bc01a947f6099f9d0ab87",
+      "category": "superseded-presentation"
+    },
+    "physics/statistical-physics/stochastic-resetting/conjugate-restart/journal.pdf": {
+      "sha256": "6cdd0d68ee65b4d579d434f2a4aa4ad7d53aabc70128359539cf36c5cdafa541",
+      "category": "superseded-presentation"
+    },
+    "physics/statistical-physics/stochastic-resetting/conjugate-restart/paper.pdf": {
+      "sha256": "2e72e5754012c63c0e89c24f0450bd42f6af93c8ee1939fbf20d030d37845330",
+      "category": "superseded-presentation"
+    },
+    "physics/statistical-physics/thermodynamic-inference/periodic-waiting-time/journal.pdf": {
+      "sha256": "85fc920726f9154fd6c666635a9fbff6cbc3828064d867e063ad8ab591150c89",
+      "category": "superseded-presentation"
+    },
+    "physics/statistical-physics/thermodynamic-inference/periodic-waiting-time/paper.pdf": {
+      "sha256": "c34d0d3dc53eb12bedb992c46bdd4286f74f539b066b9120e13d39113632deab",
+      "category": "superseded-presentation"
+    },
+    "tools/package_papers.py": {
+      "sha256": "6407e124d2c2e0ba13f3c76e7a26974d2454ab9cb2445442846d6ac1b6f84d86",
+      "category": "administrative-record"
+    }
+  },
+  "neverExport": [
+    "Untracked or gitignored files, including */video/audit/private-cache/ (build exports from git archive or git ls-files only, never a directory copy)",
+    "Local Git refs other than the exported commit"
+  ]
+}

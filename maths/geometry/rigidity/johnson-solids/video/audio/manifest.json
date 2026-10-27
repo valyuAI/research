@@ -1,0 +1,182 @@
+{
+  "r1": {
+    "hash": "69e6deaa620ad9e0",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "r2": {
+    "hash": "9c7505854cdd735d",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "r3": {
+    "hash": "70f72e75d6e8ba6e",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "r4": {
+    "hash": "06c0d8b3347bf5a8",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "c1": {
+    "hash": "f588ba18bcaa6c75",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "c2": {
+    "hash": "d6c4e9fd33064dcf",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "c3": {
+    "hash": "930a83c5caef8f67",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "c4": {
+    "hash": "98647e0422c08ff4",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "a1": {
+    "hash": "b433c43d83befc63",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "a2": {
+    "hash": "4c28afdfac6fcc3e",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "a3": {
+    "hash": "aef4c11cd1ad3fe7",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "a4": {
+    "hash": "bb7fed9ec295abdb",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "f1": {
+    "hash": "82131ffe198cc59b",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "f2": {
+    "hash": "0f95cff23a9a4375",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "f3": {
+    "hash": "c0909ae1bd952cc4",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "p1": {
+    "hash": "50403ddb80a5dbae",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "p2": {
+    "hash": "63c5458c36a7e1b7",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "p3": {
+    "hash": "6042e1fb332436bf",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "p4": {
+    "hash": "0cab885721fe6089",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "v1": {
+    "hash": "4604dbaae0ef3092",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "v2": {
+    "hash": "482f3c47db1a1bdf",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "v3": {
+    "hash": "74f8fd57d57ce8a4",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "v4": {
+    "hash": "d19b2879505ca458",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "s1": {
+    "hash": "efa0730192e84e42",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "s2": {
+    "hash": "d00d25acf183dfc4",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "s3": {
+    "hash": "04edc368c8242948",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "s4": {
+    "hash": "6ac8b58bc8bd3a90",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "n1": {
+    "hash": "ae767f162dc2543e",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "n2": {
+    "hash": "7f0b27dbfab8104f",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "n3": {
+    "hash": "d722179e7b2f63be",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "e1": {
+    "hash": "ed09ffbb559a656b",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "e2": {
+    "hash": "cb2425430a9c3615",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "e3": {
+    "hash": "59bfa0bfbfcf337a",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "z1": {
+    "hash": "1cb979942f166b02",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "z2": {
+    "hash": "e8d032efb2a3d4f6",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  },
+  "z3": {
+    "hash": "15fa87fe45ece053",
+    "model": "gpt-4o-mini-tts-2025-12-15",
+    "voice": "cedar"
+  }
+}

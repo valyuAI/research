@@ -1,0 +1,504 @@
+promoter	gene	modification_of	in_counts	strict_tss	overlapping_promoter	overlapping_gene	edited_training_promoter	same_training_sequence	eligible	cpm_covered	cpm_calibration_measured	cpm_evaluation_measured	raw_covered	raw_calibration_measured	raw_evaluation_measured
+chr1:182360875-182361139-promoter	GLUL		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr15:45003490-45003754-promoter	B2M		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr15:64673608-64673872-promoter	PCLAF		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr19:18496730-18496994-promoter	GDF15		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr19:12912588-12912852-promoter	PRDX2	chr19:12912588-12912852-promoter	True	True	True	True	True	True	False						
+chrX:12993011-12993275-promoter	TMSB4X		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr19:11649427-11649691-promoter	CNN1		True	True	False	False	False	False	True	False	4.0	1.0	True	4.0	6.0
+chr2:85132563-85132827-promoter	TMSB10		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	5.0
+chr1:32801784-32802048-promoter	MARCKSL1		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr5:151066449-151066713-promoter	SPARC		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	5.0
+chr11:5275990-5276254-promoter	HBG2	chr11:5275990-5276254-promoter	True	True	True	True	True	True	False						
+chr2:220118597-220118861-promoter	TUBA4A		True	True	False	False	False	False	True	False	4.0	0.0	True	4.0	4.0
+chr21:33031765-33032029-promoter	SOD1		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr6:27799304-27799568-promoter	HIST1H4K		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr11:9025525-9025789-promoter	NRIP3		True	True	False	False	False	False	True	False	4.0	0.0	True	4.0	4.0
+chr2:47403601-47403865-promoter	CALM2		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr8:128748255-128748519-promoter	MYC	chr8:128748255-128748519-promoter	True	True	True	True	True	True	False						
+chr16:88717416-88717680-promoter	CYBA		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	4.0
+chr11:67351046-67351310-promoter	GSTP1		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	5.0
+chr7:100770155-100770419-promoter	SERPINE1		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr1:159895245-159895509-promoter	TAGLN2		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr11:61735076-61735340-promoter	FTH1	chr11:61735076-61735340-promoter	True	True	True	True	True	True	False						
+chr17:17740269-17740533-promoter	SREBF1		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	6.0
+chr8:128748255-128748519-promoter+YY1(TSS+1)	MYC+YY1rc	chr8:128748255-128748519-promoter	True	True	False	False	True	False	False						
+chr17:47841457-47841721-promoter	FAM117A		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	5.0
+chr19:14247354-14247618-promoter	ASF1B		True	True	False	False	False	False	True	False	4.0	1.0	True	4.0	5.0
+chr6:44214620-44214884-promoter	HSP90AB1		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr11:10830447-10830711-promoter	EIF4G2		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr11:819351-819615-promoter	PNPLA2		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	6.0
+chr1:55352835-55353099-promoter	DHCR24		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	5.0
+chr17:73975189-73975453-promoter	ACOX1		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	5.0
+chrX:48776281-48776545-promoter	PIM2	chrX:48776281-48776545-promoter	True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr19:49256897-49257161-promoter	FUT1		True	True	True	True	False	True	False						
+chr17:74667830-74668094-promoter	LOC105274304		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr16:57278938-57279202-promoter	ARL2BP		True	True	False	False	False	False	True	False	3.0	0.0	True	4.0	4.0
+chr6:31704265-31704529-promoter	CLIC1		True	True	False	False	False	False	True	False	4.0	1.0	True	4.0	6.0
+chr6:109703619-109703883-promoter	CD164	chr6:109703619-109703883-promoter	True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr16:30076919-30077183-promoter	ALDOA		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	5.0
+chr9:2015124-2015388-promoter	SMARCA2		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr1:155948305-155948569-promoter	ARHGEF2		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr5:114880340-114880604-promoter	FEM1C		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr19:12902065-12902329-promoter	JUNB	chr19:12902065-12902329-promoter	True	True	True	True	True	True	False						
+chr12:9913461-9913725-promoter	CD69		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr6:112194614-112194878-promoter	FYN		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	6.0
+chr1:167905208-167905472-promoter	MPC2		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr11:64879106-64879370-promoter	TM7SF2		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr16:771352-771616-promoter	FAM173A		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	6.0
+chr11:313806-314070-promoter	IFITM1		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr19:17448156-17448420-promoter	GTPBP3		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr9:35814976-35815240-promoter	HINT2		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	5.0
+chr16:88752861-88753125-promoter	SNAI3		True	True	False	False	False	False	True	False	4.0	1.0	True	4.0	3.0
+chr7:5570181-5570445-promoter	ACTB		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr1:243419137-243419401-promoter	SDCCAG8		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	5.0
+chr19:12997991-12998255-promoter	KLF1		True	True	True	True	False	True	False						
+chr21:34914369-34914633-promoter	GART		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr19:17414186-17414450-promoter	ABHD8		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	6.0
+chr7:16685316-16685580-promoter	ANKMY2		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	5.0
+chr5:159848634-159848898-promoter	PTTG1		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr5:140998516-140998780-promoter	DIAPH1		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	5.0
+chr8:62627068-62627332-promoter	ASPH		True	True	False	False	False	False	True	False	4.0	1.0	True	4.0	4.0
+chr1:149814267-149814531-promoter	HIST2H2AA4		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr12:53661843-53662107-promoter	ESPL1		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	5.0
+chr12:54674287-54674551-promoter	HNRNPA1		True	True	True	True	False	True	False						
+chr11:105948039-105948303-promoter	KBTBD3		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	5.0
+chr13:31040026-31040290-promoter	HMGB1		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr1:45987534-45987798-promoter	PRDX1		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr15:40857190-40857454-promoter	C15orf57		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr5:162887427-162887691-promoter	HMMR		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr1:207818253-207818517-promoter	CR1L		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	6.0
+chr1:29213388-29213652-promoter	EPB41		True	True	False	False	False	False	True	False	4.0	1.0	True	4.0	3.0
+chr16:58163230-58163494-promoter	CFAP20		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr11:61584278-61584542-promoter+YY1(TSS+1)	FADS1+YY1rc	chr11:61584278-61584542-promoter	True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	5.0
+chr11:122932807-122933071-promoter	HSPA8		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr17:79995537-79995801-promoter	DCXR		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	6.0
+chrX:118602178-118602442-promoter	SLC25A5		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	4.0
+chr1:26232882-26233146-promoter	STMN1		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr5:175788744-175789008-promoter	KIAA1191		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr11:2323133-2323397-promoter	TSPAN32		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	4.0
+chr6:30687908-30688172-promoter	TUBB		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr5:43313490-43313754-promoter	HMGCS1		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	5.0
+chr16:67281349-67281613-promoter	FHOD1		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr11:77790864-77791128-promoter	NDUFC2		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chrX:48754984-48755248-promoter	PQBP1		True	True	True	True	False	True	False						
+chr12:49658647-49658911-promoter	TUBA1C		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chrX:13707035-13707299-promoter	RAB9A		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	4.0
+chr19:21512143-21512407-promoter	ZNF708		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr5:110848189-110848453-promoter	STARD4		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr22:30163138-30163402-promoter	UQCR10		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+CMV-promoter	CMV-promoter		True	True	True	True	False	True	False						
+chr12:49463722-49463986-promoter	RHEBL1		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr1:184723955-184724219-promoter	EDEM3		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	5.0
+chr2:198364891-198365155-promoter	HSPE1		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr4:6674951-6675215-promoter	LOC93622		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr6:26659919-26660183-promoter	ZNF322		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr5:27472169-27472433-promoter	LINC01021		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr2:120980933-120981197-promoter	TMEM185B		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	5.0
+chr7:26240342-26240606-promoter	HNRNPA2B1		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chrX:49028029-49028293-promoter+GABPA(TSS-10,TSS-31)	PLP2+2xGABPA	chrX:49028029-49028293-promoter	True	True	False	False	True	False	False						
+chr12:27175270-27175534-promoter	MED21		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr2:61108540-61108804-promoter	REL		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	5.0
+chr15:75932513-75932777-promoter	IMP3		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr19:40971629-40971893-promoter	BLVRB		True	True	False	False	False	False	True	False	4.0	1.0	True	4.0	5.0
+chr1:12079324-12079588-promoter	MIIP		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	5.0
+chr1:153517536-153517800-promoter	S100A4		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr14:94547487-94547751-promoter	DDX24		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	6.0
+chr12:56390857-56391121-promoter	SUOX	chr12:56390857-56391121-promoter	True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr8:92082329-92082593-promoter	OTUD6B		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chrX:119763799-119764063-promoter	C1GALT1C1		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr19:41082557-41082821-promoter	SHKBP1		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	6.0
+chr19:13049199-13049463-promoter	CALR		True	True	True	True	False	True	False						
+chr14:78082969-78083233-promoter	SPTLC2		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	5.0
+chr17:7475904-7476168-promoter	EIF4A1		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr8:124084724-124084988-promoter	TBC1D31		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr22:31063811-31064075-promoter	DUSP18		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr16:12897693-12897957-promoter	CPPED1		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr11:61735076-61735340-promoter+YY1(TSS+1)	FTH1+YY1rc	chr11:61735076-61735340-promoter	True	True	False	False	True	False	False						
+chr11:125462535-125462799-promoter	STT3A		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	6.0
+chr1:3773736-3774000-promoter	CEP104		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	5.0
+chr22:24236350-24236614-promoter	MIF		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	5.0
+chr11:5275990-5276254-promoter+YY1(TSS+1)	HBG2+YY1rc	chr11:5275990-5276254-promoter	True	True	False	False	True	False	False						
+chr19:12902065-12902329-promoter+YY1(TSS+1)	JUNB+YY1rc	chr19:12902065-12902329-promoter	True	True	False	False	True	False	False						
+chr19:49375444-49375708-promoter_reverse_TYY1-at-220-222	PPP1R15A-revYY1	chr19:49375444-49375708-promoter	True	True	False	False	True	False	False						
+chr12:110434128-110434392-promoter	GIT2		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr3:197025472-197025736-promoter	DLG1		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	5.0
+chr6:88182473-88182737-promoter	SLC35A1		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr17:26903885-26904149-promoter	ALDOC		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	6.0
+chr12:76742121-76742385-promoter	BBS10		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr8:128748255-128748519-promoter+GABPA(TSS-10,TSS-31)	MYC+2xGABPA	chr8:128748255-128748519-promoter	True	True	False	False	True	False	False						
+chr1:179923703-179923967-promoter	CEP350		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr6:150067647-150067911-promoter	NUP43		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr3:51705031-51705295-promoter	TEX264		True	True	False	False	False	False	True	False	4.0	1.0	True	4.0	4.0
+chr3:42845938-42846202-promoter	HIGD1A		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr17:55927377-55927641-promoter_reverse_GABPA-at-230-232_GABPA-at-224-226	MRPS23-revGABPA12	chr17:55927377-55927641-promoter	True	True	False	False	True	False	False						
+chr1:165738073-165738337-promoter	TMCO1		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr19:49375444-49375708-promoter	PPP1R15A	chr19:49375444-49375708-promoter	True	True	True	True	True	True	False						
+chrX:149736837-149737101-promoter	MTM1		True	True	False	False	False	False	True	False	4.0	1.0	True	4.0	6.0
+chr12:54069838-54070102-promoter	ATP5G2		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr5:170814638-170814902-promoter	NPM1		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr19:49403357-49403621-promoter	NUCB1	chr19:49403357-49403621-promoter	True	True	True	True	True	True	False						
+chr22:42084827-42085091-promoter	SNU13		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr17:79479791-79480055-promoter	ACTG1		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	5.0
+chr19:13213508-13213772-promoter_reverse_GABPA-at-158-160	LYL1-revGABPA	chr19:13213508-13213772-promoter	True	True	False	False	True	False	False						
+chr4:145061798-145062062-promoter	GYPA		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr15:72766447-72766711-promoter	ARIH1		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	5.0
+chr9:101017887-101018151-promoter	TBC1D2		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	5.0
+chrX:48776281-48776545-promoter+YY1(TSS+1)	PIM2+YY1rc	chrX:48776281-48776545-promoter	True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr7:66767378-66767642-promoter	PMS2P4		True	True	False	False	False	False	True	False	4.0	0.0	True	4.0	5.0
+chr12:117628244-117628508-promoter	FBXO21		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr4:53003-53267-promoter	ZNF718		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr17:40985219-40985483-promoter	PSME3		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr12:57081905-57082169-promoter	PTGES3		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr4:177240910-177241174-promoter	SPCS3		True	True	False	False	False	False	True	False	4.0	0.0	True	4.0	4.0
+chr17:79604083-79604347-promoter	NPLOC4		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+9443	GTSF1		True	True	True	True	False	True	False						
+chr1:93297384-93297648-promoter	RPL5		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr16:2509885-2510149-promoter	C16orf59		True	True	False	False	False	False	True	False	4.0	1.0	True	4.0	4.0
+chr11:65625623-65625887-promoter	CFL1		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	5.0
+chr6:110012269-110012533-promoter_reverse_GABPA-at-220-222	FIG4-revGABPA	chr6:110012269-110012533-promoter	True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr6:109703619-109703883-promoter+GABPA(TSS-10,TSS-31)	CD164+2xGABPA	chr6:109703619-109703883-promoter	True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	5.0
+chr19:12917198-12917462-promoter_reverse_GABPA-at-194-196	RNASEH2A-revGABPA1	chr19:12917198-12917462-promoter	True	True	False	False	True	False	False						
+chr6:117996407-117996671-promoter	NUS1		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr6:109703619-109703883-promoter+YY1(TSS+1)	CD164+YY1rc	chr6:109703619-109703883-promoter	True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr5:68513418-68513682-promoter	MRPS36		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	5.0
+chr11:126081454-126081718-promoter	FAM118B		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr2:217363335-217363599-promoter_reverse_GABPA-at-187-189_GABPA-at-229-231	RPL37A-revGABPA12	chr2:217363335-217363599-promoter	True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr15:44084299-44084563-promoter	SERF2		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr7:128502697-128502961-promoter	ATP6V1F		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr6:31707545-31707809-promoter	MSH5		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr11:5275990-5276254-promoter+GABPA(TSS-10,TSS-31)	HBG2+2xGABPA	chr11:5275990-5276254-promoter	True	True	False	False	True	False	False						
+chr3:39447985-39448249-promoter	RPSA		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr1:26496178-26496442-promoter	ZNF593		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr12:56615677-56615941-promoter	RNF41		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr5:172386227-172386491-promoter	RPL26L1		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr7:1543977-1544241-promoter	INTS1		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr2:152684943-152685207-promoter	ARL5A		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr7:132937608-132937872-promoter	EXOC4		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr10:103578151-103578415-promoter	MGEA5		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr7:99006351-99006615-promoter	BUD31		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr17:26662388-26662652-promoter	TNFAIP1		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr19:49468321-49468585-promoter+YY1(TSS+1)	FTL+YY1rc	chr19:49468321-49468585-promoter	True	True	False	False	True	False	False						
+chr14:50087292-50087556-promoter	RPL36AL		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr7:99517112-99517376-promoter	TRIM4		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr19:49457907-49458171-promoter	BAX		True	True	True	True	False	True	False						
+chr10:103815911-103816175-promoter	C10orf76		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	6.0
+chr1:33116110-33116374-promoter	ZBTB8OS		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr14:21737547-21737811-promoter	HNRNPC		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr5:140027174-140027438-promoter	NDUFA2		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr15:69744944-69745208-promoter	RPLP1		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr1:3713027-3713291-promoter_reverse_GABPA-at-187-189	LRRC47-revGABPA2	chr1:3713027-3713291-promoter	True	True	False	False	True	False	False						
+chr2:242641229-242641493-promoter	ING5		True	True	False	False	False	False	True	False	3.0	0.0	False	4.0	2.0
+chr3:128444783-128445047-promoter_reverse_GABPA-at-223-225	RAB7A-revGABPA	chr3:128444783-128445047-promoter	True	True	False	False	True	False	False						
+chr10:99161051-99161315-promoter	RRP12		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr17:55927377-55927641-promoter_reverse_GABPA-at-224-226	MRPS23-revGABPA2	chr17:55927377-55927641-promoter	True	True	False	False	True	False	False						
+chr17:55038365-55038629-promoter	COIL		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr3:23958388-23958652-promoter	RPL15		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr17:55927377-55927641-promoter_reverse_GABPA-at-230-232	MRPS23-revGABPA1	chr17:55927377-55927641-promoter	True	True	False	False	True	False	False						
+chr19:5690062-5690326-promoter	RPL36		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr19:3185715-3185979-promoter	NCLN		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr3:100119881-100120145-promoter	TOMM70		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr20:1447451-1447715-promoter	NSFL1C		True	True	False	False	False	False	True	False	4.0	1.0	True	4.0	5.0
+chr6:31865442-31865706-promoter	EHMT2		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	5.0
+chr1:22378970-22379234-promoter	CDC42		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr12:50135122-50135386-promoter	TMBIM6		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr22:39715599-39715863-promoter	RPL3		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr7:25164849-25165113-promoter	CYCS		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr3:15106773-15107037-promoter	MRPS25		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr5:110427825-110428089-promoter	WDR36		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr14:75643273-75643537-promoter	TMED10		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr2:217363335-217363599-promoter_reverse_GABPA-at-229-231	RPL37A-revGABPA2	chr2:217363335-217363599-promoter	True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr19:7694466-7694730-promoter	PET100		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr2:176046385-176046649-promoter	ATP5G3		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr3:140660467-140660731-promoter	SLC25A36		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr22:21921781-21922045-promoter	UBE2L3		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	5.0
+chr19:12917198-12917462-promoter_reverse_GABPA-at-221-223	RNASEH2A-revGABPA2	chr19:12917198-12917462-promoter	True	True	False	False	True	False	False						
+chr1:38478174-38478438-promoter	UTP11		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr2:153573899-153574163-promoter	PRPF40A		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	5.0
+chr19:49403357-49403621-promoter+YY1(TSS+1)	NUCB1+YY1rc	chr19:49403357-49403621-promoter	True	True	False	False	True	False	False						
+chr19:13213508-13213772-promoter	LYL1	chr19:13213508-13213772-promoter	True	True	True	True	True	True	False						
+chr6:75953473-75953737-promoter	COX7A2		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr4:2845387-2845651-promoter	ADD1		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	6.0
+chr6:88411899-88412163-promoter	AKIRIN2		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr15:34394042-34394306-promoter	EMC7		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr3:10157138-10157402-promoter	BRK1		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr7:140179128-140179392-promoter	MKRN1		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr6:110012269-110012533-promoter	FIG4	chr6:110012269-110012533-promoter	True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr14:76618048-76618312-promoter	GPATCH2L		True	True	False	False	False	False	True	False	4.0	1.0	True	4.0	4.0
+chr3:101405517-101405781-promoter	RPL24		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr16:27561195-27561459-promoter	GTF3C1		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr19:12917198-12917462-promoter_reverse_GABPA-at-194-196_GABPA-at-221-223	RNASEH2A-revGABPA12	chr19:12917198-12917462-promoter	True	True	False	False	True	False	False						
+chr1:17380499-17380763-promoter	SDHB		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr12:120875683-120875947-promoter	COX6A1		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr1:3713027-3713291-promoter_reverse_GABPA-at-173-175	LRRC47-revGABPA1	chr1:3713027-3713291-promoter	True	True	False	False	True	False	False						
+chr11:61560034-61560298-promoter	TMEM258		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chrX:85302518-85302782-promoter	CHM		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr1:3713027-3713291-promoter_reverse_TYY1-at-250-252	LRRC47-revYY1-1	chr1:3713027-3713291-promoter	True	True	False	False	True	False	False						
+chr16:67906756-67907020-promoter	EDC4		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr1:28415082-28415346-promoter	EYA3		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chrX:48776281-48776545-promoter+GABPA(TSS-10,TSS-31)	PIM2+2xGABPA	chrX:48776281-48776545-promoter	True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	6.0
+chr12:98987253-98987517-promoter	SLC25A3		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr12:56390857-56391121-promoter+GABPA(TSS-10,TSS-31)	SUOX+2xGABPA	chr12:56390857-56391121-promoter	True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr1:3713027-3713291-promoter_reverse_TYY1-at-252-254	LRRC47-revYY1-2	chr1:3713027-3713291-promoter	True	True	False	False	True	False	False						
+chr2:264714-264978-promoter	ACP1		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	6.0
+chr16:67840414-67840678-promoter	RANBP10		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr2:27632404-27632668-promoter	PPM1G		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr16:74402007-74402271-promoter	LOC283922		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr8:124780469-124780733-promoter	FAM91A1		True	True	False	False	False	False	True	False	4.0	0.0	True	4.0	5.0
+chr1:3713027-3713291-promoter	LRRC47	chr1:3713027-3713291-promoter	True	True	True	True	True	True	False						
+chr14:78227456-78227720-promoter	SNW1		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr7:916006-916270-promoter	GET4		True	True	False	False	False	False	True	False	4.0	1.0	True	4.0	5.0
+chr7:157129480-157129744-promoter	DNAJB6		True	True	False	False	False	False	True	False	4.0	1.0	True	4.0	6.0
+chr19:9250856-9251120-promoter	ZNF317		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr6:34725061-34725325-promoter	SNRPC		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr3:156272868-156273132-promoter	SSR3		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr5:177580845-177581109-promoter	NHP2		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr6:41755181-41755445-promoter	TOMM6		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr2:217363335-217363599-promoter	RPL37A	chr2:217363335-217363599-promoter	True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr1:52870087-52870351-promoter	ORC1		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr15:40453025-40453289-promoter	BUB1B		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr19:38865185-38865449-promoter	PSMD8		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr12:105501297-105501561-promoter	WASHC4		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	4.0
+chr18:11851179-11851443-promoter	CHMP1B		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	6.0
+chr1:3713027-3713291-promoter_reverse_GABPA-at-208-210	LRRC47-revGABPA3	chr1:3713027-3713291-promoter	True	True	False	False	True	False	False						
+chr10:72163666-72163930-promoter	EIF4EBP2		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	5.0
+chr6:116989902-116990166-promoter	ZUFSP		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	5.0
+chr11:94706690-94706954-promoter	CWC15		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr11:809756-810020-promoter	RPLP2		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr3:64009115-64009379-promoter	PSMD6		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr11:64084980-64085244-promoter	TRMT112		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr9:19380194-19380458-promoter	RPS6		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chrX:64754615-64754879-promoter	LAS1L		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr19:12917198-12917462-promoter	RNASEH2A	chr19:12917198-12917462-promoter	True	True	True	True	True	True	False						
+chr5:149829268-149829532-promoter	RPS14		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr8:146017755-146018019-promoter	MIR6850		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	4.0
+chr19:49403357-49403621-promoter+GABPA(TSS-10,TSS-31)	NUCB1+2xGABPA	chr19:49403357-49403621-promoter	True	True	False	False	True	False	False						
+chr19:49468321-49468585-promoter+GABPA(TSS-10,TSS-31)	FTL+2xGABPA	chr19:49468321-49468585-promoter	True	True	False	False	True	False	False						
+chr14:104387822-104388086-promoter	C14orf2		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr3:128902694-128902958-promoter	CNBP		True	True	True	True	False	True	False						
+chr1:154155629-154155893-promoter	TPM3		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr4:2965082-2965346-promoter	NOP14		True	True	False	False	False	False	True	False	4.0	0.0	True	4.0	6.0
+chr9:127624189-127624453-promoter	RPL35		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	6.0
+chr20:16710454-16710718-promoter	SNRPB2		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr19:48248563-48248827-promoter	NOP53		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr17:55927377-55927641-promoter	MRPS23	chr17:55927377-55927641-promoter	True	True	True	True	True	True	False						
+chr3:20227674-20227938-promoter	SGO1		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr7:42971739-42972003-promoter	PSMA2		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr22:20861659-20861923-promoter	MED15		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr8:125551178-125551442-promoter	NDUFB9		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr10:103911908-103912172-promoter	NOLC1		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr4:109541510-109541774-promoter	RPL34		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr10:88281500-88281764-promoter	WAPL		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	4.0
+chr3:128444783-128445047-promoter	RAB7A	chr3:128444783-128445047-promoter	True	True	True	True	True	True	False						
+chr8:9413205-9413469-promoter	TNKS		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr21:35288052-35288316-promoter	ATP5O		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr11:32605158-32605422-promoter	EIF3M		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	5.0
+chr12:93861056-93861320-promoter	MRPL42		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr6:170862341-170862605-promoter	PSMB1		True	True	False	False	False	False	True	True	4.0	5.0	True	4.0	6.0
+chr10:102027372-102027636-promoter	CWF19L1		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr19:47633935-47634199-promoter	SAE1		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	5.0
+chr11:111957383-111957647-promoter	SDHD		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr19:39926534-39926798-promoter	RPS16		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	6.0
+chr7:151038692-151038956-promoter	NUB1		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	4.0
+chr19:12902065-12902329-promoter+GABPA(TSS-10,TSS-31)	JUNB+2xGABPA	chr19:12902065-12902329-promoter	True	True	False	False	True	False	False						
+chr4:668021-668285-promoter	ATP5I		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	6.0
+chr21:30445932-30446196-promoter	CCT8		True	True	False	False	False	False	True	True	4.0	6.0	True	4.0	6.0
+chr10:7829912-7830176-promoter	ATP5C1		True	True	False	False	False	False	True	True	4.0	4.0	True	4.0	5.0
+chrX:35317187-35317451-promoter			True	False	False	False	False	False	False						
+chr11:109006434-109006698-promoter			True	False	False	False	False	False	False						
+chr20:31100142-31100406-promoter			True	False	False	False	False	False	False						
+chr19:41087369-41087633-promoter			True	False	False	False	False	False	False						
+chr1:186235923-186236187-promoter			True	False	False	False	False	False	False						
+chr18:49066161-49066425-promoter			True	False	False	False	False	False	False						
+chr5:57272181-57272445-promoter			True	False	False	False	False	False	False						
+chr17:39740967-39741231-promoter			True	False	False	False	False	False	False						
+chr1:101183311-101183575-promoter			True	False	False	False	False	False	False						
+chr18:36179873-36180137-promoter			True	False	False	False	False	False	False						
+chr19:1605407-1605671-promoter	UQCR11		True	False	False	False	False	False	False						
+chr11:14541875-14542139-promoter	PSMA1		True	False	False	False	False	False	False						
+chr11:62528821-62529085-promoter	POLR2G		True	True	False	False	False	False	True	False	0.0	2.0	False	0.0	2.0
+chr17:31318942-31319206-promoter	SPACA3		True	False	False	False	False	False	False						
+chr11:5255672-5255936-promoter	HBD		True	False	True	True	False	True	False						
+chrM:1458-1722-promoter	RNR2		True	False	False	False	False	False	False						
+chr7:94285392-94285656-promoter	PEG10		False	False	False	False	False	False	False						
+chr7:33168937-33169201-promoter	BBS9		True	False	False	False	False	False	False						
+chrX:55209654-55209918-promoter	SNORA109		True	False	False	False	False	False	False						
+chr10:50323516-50323780-promoter	VSTM4		True	False	False	False	False	False	False						
+chr7:20256955-20257219-promoter	LOC100506098		True	False	False	False	False	False	False						
+chr6:149887299-149887563-promoter	GINM1		False	False	False	False	False	False	False						
+chr3:47620323-47620587-promoter	CSPG5		True	False	False	False	False	False	False						
+chr8:1711740-1712004-promoter	CLN8		False	False	False	False	False	False	False						
+chr1:113249702-113249966-promoter	RHOC		False	False	False	False	False	False	False						
+chr22:42319280-42319544-promoter	MIR378I		True	False	False	False	False	False	False						
+chr6:30710412-30710676-promoter	FLOT1		True	False	False	False	False	False	False						
+chr15:72523509-72523773-promoter	PKM		True	True	False	False	False	False	True	False	4.0	1.0	True	4.0	5.0
+chrX:41193176-41193440-promoter	DDX3X		True	False	False	False	False	False	False						
+chr5:130500930-130501194-promoter	HINT1		True	False	False	False	False	False	False						
+chr16:88851577-88851841-promoter	PIEZO1		True	False	False	False	False	False	False						
+chr10:46089983-46090247-promoter	8-Mar		False	False	False	False	False	False	False						
+chr4:159593001-159593265-promoter	C4orf46		True	False	False	False	False	False	False						
+chr17:30263814-30264078-promoter	SUZ12		True	True	False	False	False	False	True	False	3.0	1.0	True	4.0	4.0
+chr12:53342660-53342924-promoter	KRT18		True	True	False	False	False	False	True	False	4.0	1.0	True	4.0	3.0
+chr1:17338396-17338660-promoter	ATP13A2		True	False	False	False	False	False	False						
+chr2:25475219-25475483-promoter	DNMT3A		True	False	False	False	False	False	False						
+chrX:21958616-21958880-promoter	SMS		True	False	False	False	False	False	False						
+chr1:36023178-36023442-promoter	NCDN		True	False	False	False	False	False	False						
+chr4:40517949-40518213-promoter	RBM47		True	False	False	False	False	False	False						
+chr11:74178574-74178838-promoter	KCNE3		True	False	False	False	False	False	False						
+chr15:89456589-89456853-promoter	MFGE8		True	False	False	False	False	False	False						
+chr17:6927124-6927388-promoter	BCL6B		True	False	False	False	False	False	False						
+chrX:47077901-47078165-promoter	CDK16		True	False	False	False	False	False	False						
+chr12:6643446-6643710-promoter	GAPDH		True	False	False	False	False	False	False						
+chr9:136857425-136857689-promoter	VAV2		True	False	False	False	False	False	False						
+chr11:64794725-64794989-promoter	SNX15		True	False	False	False	False	False	False						
+chr12:106641692-106641956-promoter	CKAP4		True	False	False	False	False	False	False						
+chr16:25026638-25026902-promoter	ARHGAP17		True	False	False	False	False	False	False						
+chr12:7261788-7262052-promoter	C1RL		True	False	False	False	False	False	False						
+chr3:129035110-129035374-promoter	H1FX		True	False	True	True	False	True	False						
+chr4:184425963-184426227-promoter	ING2		True	False	False	False	False	False	False						
+chr20:35169687-35169951-promoter	MYL9		True	False	False	False	False	False	False						
+chr5:176873586-176873850-promoter	PRR7		True	False	False	False	False	False	False						
+chr9:4985031-4985295-promoter	JAK2		True	False	False	False	False	False	False						
+chr1:38397377-38397641-promoter	INPP5B		True	True	False	False	False	False	True	False	4.0	1.0	False	4.0	2.0
+chr11:5291147-5291411-promoter	HBE1		True	False	True	True	False	True	False						
+chr3:191046969-191047233-promoter	CCDC50		True	False	False	False	False	False	False						
+chr19:1026384-1026648-promoter	CNN2		True	False	False	False	False	False	False						
+chr17:61699556-61699820-promoter	MAP3K3		True	False	False	False	False	False	False						
+chr19:8455534-8455798-promoter	RAB11B-AS1		True	False	False	False	False	False	False						
+chr20:62710819-62711083-promoter	RGS19		True	False	False	False	False	False	False						
+chr10:17271973-17272237-promoter	VIM-AS1		True	False	False	False	False	False	False						
+chr7:104654022-104654286-promoter	KMT2E-AS1		True	True	False	False	False	False	True	False	0.0	0.0	False	0.0	0.0
+chr17:4851805-4852069-promoter	PFN1		True	False	False	False	False	False	False						
+chr17:7531133-7531397-promoter	SAT2		True	True	False	False	False	False	True	False	0.0	0.0	False	0.0	1.0
+chr12:93771496-93771760-promoter	NUDT4P1		True	False	False	False	False	False	False						
+chr7:44163106-44163370-promoter	POLD2		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	4.0
+chr7:154794948-154795212-promoter	PAXIP1-AS1		True	False	False	False	False	False	False						
+chr3:49967189-49967453-promoter	MON1A		True	False	False	False	False	False	False						
+chr15:60690154-60690418-promoter	ANXA2		False	False	False	False	False	False	False						
+chr18:56338373-56338637-promoter	MALT1		True	False	False	False	False	False	False						
+chr19:14142367-14142631-promoter	IL27RA		True	False	False	False	False	False	False						
+chr1:109940491-109940755-promoter	SORT1		True	True	False	False	False	False	True	False	4.0	0.0	False	4.0	2.0
+chrX:19002179-19002443-promoter	PHKA2		True	False	False	False	False	False	False						
+chr19:35645417-35645681-promoter	FXYD5		True	False	False	False	False	False	False						
+chr15:64455163-64455427-promoter	PPIB		True	False	False	False	False	False	False						
+chr4:75480391-75480655-promoter	AREG		True	False	False	False	False	False	False						
+chr4:76862115-76862379-promoter	NAAA		True	False	False	False	False	False	False						
+chr1:32665982-32666246-promoter	CCDC28B		True	False	False	False	False	False	False						
+chr7:16685549-16685813-promoter	BZW2		True	False	False	False	False	False	False						
+chr2:238600812-238601076-promoter	LRRFIP1		True	False	False	False	False	False	False						
+chr2:208394496-208394760-promoter	CREB1		True	False	False	False	False	False	False						
+chr19:48828599-48828863-promoter	EMP3		True	True	False	False	False	False	True	False	4.0	1.0	True	4.0	4.0
+chr4:56502414-56502678-promoter	NMU		True	False	False	False	False	False	False						
+chr5:112257895-112258159-promoter	REEP5		True	False	False	False	False	False	False						
+chr10:127511791-127512055-promoter	UROS		True	False	False	False	False	False	False						
+chr15:52472141-52472405-promoter	GNB5		True	False	False	False	False	False	False						
+chr17:42976895-42977159-promoter	CCDC103		True	False	False	False	False	False	False						
+chr1:202113820-202114084-promoter	ARL8A		True	False	False	False	False	False	False						
+chr1:27560932-27561196-promoter	WDTC1		True	False	False	False	False	False	False						
+chr4:84406215-84406479-promoter	FAM175A		True	False	False	False	False	False	False						
+chr11:5271066-5271330-promoter	HBG1		True	True	True	True	False	True	False						
+chr17:40811021-40811285-promoter	TUBG2		True	False	False	False	False	False	False						
+chr6:37137677-37137941-promoter	PIM1		False	False	False	False	False	False	False						
+chr1:117113619-117113883-promoter	CD58		True	False	False	False	False	False	False						
+chr15:90777136-90777400-promoter	CIB1		False	False	False	False	False	False	False						
+chr5:138940741-138941005-promoter	UBE2D2		True	True	False	False	False	False	True	False	1.0	0.0	False	4.0	1.0
+chr16:764898-765162-promoter	METRN		True	True	False	False	False	False	True	False	2.0	0.0	False	4.0	2.0
+chrX:153707210-153707474-promoter	LAGE3		True	True	False	False	False	False	True	False	4.0	1.0	True	4.0	3.0
+chr17:7479884-7480148-promoter	SNORD10		True	False	False	False	False	False	False						
+chr14:102553331-102553595-promoter	HSP90AA1		True	False	False	False	False	False	False						
+chr19:1383673-1383937-promoter	NDUFS7		True	False	False	False	False	False	False						
+chr3:179322360-179322624-promoter	NDUFB5		True	False	False	False	False	False	False						
+chr9:128003570-128003834-promoter	HSPA5		True	True	False	False	False	False	True	True	4.0	3.0	True	4.0	4.0
+chr17:40897018-40897282-promoter	EZH1		True	False	False	False	False	False	False						
+chr3:119187600-119187864-promoter	POGLUT1		True	False	False	False	False	False	False						
+chr22:20104837-20105101-promoter	RANBP1		True	False	False	False	False	False	False						
+chr7:99063753-99064017-promoter	ATP5J2		True	False	False	False	False	False	False						
+chr3:185000484-185000748-promoter	MAP3K13		True	False	False	False	False	False	False						
+chr5:65017828-65018092-promoter	NLN		True	True	False	False	False	False	True	False	4.0	0.0	True	4.0	4.0
+chr11:126173732-126173996-promoter	DCPS		True	False	False	False	False	False	False						
+chr2:84686365-84686629-promoter	SUCLG1		True	False	False	False	False	False	False						
+chr11:62341309-62341573-promoter	EEF1G		True	False	False	False	False	False	False						
+chr19:12845448-12845712-promoter	C19orf43		True	True	True	True	False	True	False						
+chr1:113162220-113162484-promoter	CAPZA1		True	False	False	False	False	False	False						
+chr15:40331317-40331581-promoter	SRP14		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	5.0
+chr18:3261922-3262186-promoter	MYL12B		True	False	False	False	False	False	False						
+chr1:46769140-46769404-promoter	UQCRH		True	False	False	False	False	False	False						
+chr2:232329174-232329438-promoter	NCL		True	True	False	False	False	False	True	False	0.0	0.0	False	0.0	0.0
+chr17:79849396-79849660-promoter	ANAPC11		True	True	False	False	False	False	True	False	4.0	1.0	True	4.0	3.0
+chr1:45477685-45477949-promoter	UROD		True	False	False	False	False	False	False						
+chr1:39491807-39492071-promoter	NDUFS5		True	False	False	False	False	False	False						
+chrX:14047984-14048248-promoter	GEMIN8		True	True	False	False	False	False	True	False	4.0	0.0	True	4.0	4.0
+chr17:76975985-76976249-promoter	LGALS3BP		True	False	False	False	False	False	False						
+chr4:44728520-44728784-promoter	GNPDA2		True	False	False	False	False	False	False						
+chr2:677373-677637-promoter	TMEM18		True	False	False	False	False	False	False						
+chr12:56415049-56415313-promoter	IKZF4		True	False	False	False	False	False	False						
+chr17:73512394-73512658-promoter	TSEN54		True	True	False	False	False	False	True	False	1.0	0.0	False	4.0	2.0
+chr2:178077302-178077566-promoter	HNRNPA3		True	True	False	False	False	False	True	False	0.0	0.0	False	0.0	1.0
+chr8:42911247-42911511-promoter	FNTA		True	False	False	False	False	False	False						
+chr9:132815970-132816234-promoter	GPR107		True	False	False	False	False	False	False						
+chr1:205601084-205601348-promoter	ELK4		True	False	False	False	False	False	False						
+chr9:135753508-135753772-promoter	SPACA9		True	False	False	False	False	False	False						
+chr16:27214611-27214875-promoter	KDM8		True	False	False	False	False	False	False						
+chrX:1710286-1710550-promoter	AKAP17A		True	True	False	False	False	False	True	False	4.0	1.0	True	4.0	4.0
+chr8:102217849-102218113-promoter	ZNF706		True	False	False	False	False	False	False						
+chr10:13628734-13628998-promoter	PRPF18		True	False	False	False	False	False	False						
+chr17:66243990-66244254-promoter	AMZ2		True	True	False	False	False	False	True	False	4.0	2.0	True	4.0	4.0
+chr14:78174325-78174589-promoter	ALKBH1		True	False	False	False	False	False	False						
+chr13:77565999-77566263-promoter	CLN5		True	False	False	False	False	False	False						
+chr2:241525677-241525941-promoter	CAPN10-AS1		True	False	False	False	False	False	False						
+chr16:2301551-2301815-promoter	ECI1		True	False	False	False	False	False	False						
+chr10:103347871-103348135-promoter	POLL		True	False	False	False	False	False	False						
+chr16:28891216-28891480-promoter	ATP2A1-AS1		True	False	False	False	False	False	False						
+chr2:176032873-176033137-promoter	ATF2		True	False	False	False	False	False	False						
+chr1:111682633-111682897-promoter	CEPT1		True	False	False	False	False	False	False						
+chr1:762851-763115-promoter	LINC00115		True	False	False	False	False	False	False						
+chr3:37217785-37218049-promoter	LRRFIP2		True	False	False	False	False	False	False						
+chrX:103401647-103401911-promoter	SLC25A53		True	True	False	False	False	False	True	False	1.0	2.0	False	3.0	2.0
+scramble952-promoter	scramble952		True	False	True	True	False	True	False						
+chr16:78807434-78807698-promoter	nonDHS-WWOX-intron		True	False	True	True	False	True	False						
+scramble985-promoter	scramble985		True	False	True	True	False	True	False						
+chr4:12278529-12278793-promoter	nonDHS-nearLINC02270		True	False	True	True	False	True	False						
+chr10:38491946-38492210-promoter	nonDHS-CCNYL4-intron		True	False	True	True	False	True	False						
+SMF_minCMV_264bp	SMF_minCMV_264bp		True	False	True	True	False	True	False						
+noTFBS	noTFBS		True	False	True	True	False	True	False						
+SV40	SV40		True	False	True	True	False	True	False						
+minP	minP		True	False	True	True	False	True	False						
+SCP1	SCP1		True	False	True	True	False	True	False						
+9060	RPS9		True	True	False	True	False	False	False						
+10409	ESM1		True	False	True	True	False	True	False						
+9473	LINC01088		True	False	True	True	False	True	False						
+chrX:48660353-48660617-promoter+GABPA(TSS-10,TSS-31)	HDAC6+2xGABPA	chrX:48660353-48660617-promoter	True	True	False	False	True	False	False						
+chrX:48660353-48660617-promoter+YY1(TSS+1)	HDAC6+YY1rc	chrX:48660353-48660617-promoter	True	False	False	False	True	False	False						
+chrX:49028029-49028293-promoter+YY1(TSS+1)	PLP2+YY1rc	chrX:49028029-49028293-promoter	True	False	False	False	True	False	False						
+chr11:61584278-61584542-promoter+GABPA(TSS-10,TSS-31)	FADS1+2xGABPA	chr11:61584278-61584542-promoter	True	False	False	False	False	False	False						
+chr7:106684923-106685187-promoter+GABPA(TSS-10,TSS-31)	PRKAR2B+2xGABPA	chr7:106684923-106685187-promoter	True	False	False	False	False	False	False						
+chr7:106684923-106685187-promoter+YY1(TSS+1)	PRKAR2B+YY1rc	chr7:106684923-106685187-promoter	True	False	False	False	False	False	False						
+chr12:56390857-56391121-promoter+YY1(TSS+1)	SUOX+YY1rc	chr12:56390857-56391121-promoter	True	False	False	False	False	False	False						
+chr19:49314249-49314513-promoter+GABPA(TSS-10,TSS-31)	BCAT2+2xGABPA	chr19:49314249-49314513-promoter	True	False	False	False	True	False	False						
+chr19:49314249-49314513-promoter+YY1(TSS+1)	BCAT2+YY1rc	chr19:49314249-49314513-promoter	True	False	False	False	True	False	False						
+chr19:12912588-12912852-promoter+GABPA(TSS-10,TSS-31)	PRDX2+2xGABPA	chr19:12912588-12912852-promoter	True	False	False	False	True	False	False						
+chr19:12912588-12912852-promoter+YY1(TSS+1)	PRDX2+YY1rc	chr19:12912588-12912852-promoter	True	False	False	False	True	False	False						
+chr11:61735076-61735340-promoter+GABPA(TSS-10,TSS-31)	FTH1+2xGABPA	chr11:61735076-61735340-promoter	True	True	False	False	True	False	False						
+chrX:48644757-48645021-promoter+GABPA(TSS-10,TSS-31)	GATA1+2xGABPA	chrX:48644757-48645021-promoter	True	False	False	False	True	False	False						
+chrX:48644757-48645021-promoter+YY1(TSS+1)	GATA1+YY1rc	chrX:48644757-48645021-promoter	True	False	False	False	True	False	False						
+chr12:54718679-54718943-promoter+GABPA(TSS-10,TSS-31)	COPZ1+2xGABPA	chr12:54718679-54718943-promoter	True	True	False	False	True	False	False						
+chr12:54718679-54718943-promoter+YY1(TSS+1)	COPZ1+YY1rc	chr12:54718679-54718943-promoter	True	True	False	False	True	False	False						
+chr2:217363335-217363599-promoter_reverse_GABPA-at-187-189	RPL37A-revGABPA1	chr2:217363335-217363599-promoter	True	False	False	False	False	False	False						
+chr17:57287156-57287420-promoter_reverse_GABPA-at-229-231	SMG8-revGABPA	chr17:57287156-57287420-promoter	True	False	False	False	False	False	False						
+chr17:57287156-57287420-promoter_reverse_TYY1-at-257-259	SMG8-revYY1	chr17:57287156-57287420-promoter	True	False	False	False	False	False	False						
+chr17:57287156-57287420-promoter_reverse_GABPA-at-229-231_TYY1-at-257-259	SMG8-revGABPA-YY1	chr17:57287156-57287420-promoter	True	False	False	False	False	False	False						
+chr20:55926075-55926339-promoter_reverse_GABPA-at-194-196	RAE1-revGABPA1	chr20:55926075-55926339-promoter	True	False	False	False	True	False	False						
+chr20:55926075-55926339-promoter_reverse_GABPA-at-208-210	RAE1-revGABPA2	chr20:55926075-55926339-promoter	True	False	False	False	True	False	False						
+chr20:55926075-55926339-promoter_reverse_GABPA-at-238-240	RAE1-revGABPA3	chr20:55926075-55926339-promoter	True	False	False	False	True	False	False						
+chr20:55926075-55926339-promoter_reverse_GABPA-at-194-196_GABPA-at-208-210_GABPA-at-238-240	RAE1-revGABPA123	chr20:55926075-55926339-promoter	True	False	False	False	True	False	False						
+chr1:3713027-3713291-promoter_reverse_GABPA-at-187-189_TYY1-at-250-252_TYY1-at-252-254_GABPA-at-208-210_GABPA-at-173-175	LRRC47-revGABPA123-YY1-12	chr1:3713027-3713291-promoter	True	False	False	False	True	False	False						
+chrX:48660353-48660617-promoter	HDAC6	chrX:48660353-48660617-promoter	True	False	True	True	True	True	False						
+chrX:49028029-49028293-promoter	PLP2	chrX:49028029-49028293-promoter	True	False	True	True	True	True	False						
+chr11:61584278-61584542-promoter	FADS1	chr11:61584278-61584542-promoter	True	False	False	False	False	False	False						
+chr7:106684923-106685187-promoter	PRKAR2B	chr7:106684923-106685187-promoter	True	False	False	False	False	False	False						
+chr19:49314249-49314513-promoter	BCAT2	chr19:49314249-49314513-promoter	True	False	True	True	True	True	False						
+chr19:49468321-49468585-promoter	FTL	chr19:49468321-49468585-promoter	True	True	True	True	True	True	False						
+chrX:48644757-48645021-promoter	GATA1	chrX:48644757-48645021-promoter	True	False	True	True	True	True	False						
+chr12:54718679-54718943-promoter	COPZ1	chr12:54718679-54718943-promoter	True	False	True	True	True	True	False						
+chr17:57287156-57287420-promoter	SMG8	chr17:57287156-57287420-promoter	True	False	False	False	False	False	False						
+chr20:55926075-55926339-promoter	RAE1	chr20:55926075-55926339-promoter	True	False	True	True	True	True	False						

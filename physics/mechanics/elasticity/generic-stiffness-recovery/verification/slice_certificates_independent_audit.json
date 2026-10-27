@@ -1,0 +1,24 @@
+[
+  {
+    "rank_threshold": 13,
+    "slice_vector_rank": 3,
+    "prime": 32003,
+    "minors": 6,
+    "bezout_identity_verified": true,
+    "determinant_degree_bound": 14,
+    "unisolvent_grid_points": 120,
+    "all_saved_minors_identical_to_original_determinants": true,
+    "software": "Python integer arithmetic and SymPy parsing; no Singular call"
+  },
+  {
+    "rank_threshold": 12,
+    "slice_vector_rank": 4,
+    "prime": 32003,
+    "minors": 6,
+    "bezout_identity_verified": true,
+    "determinant_degree_bound": 13,
+    "unisolvent_grid_points": 560,
+    "all_saved_minors_identical_to_original_determinants": true,
+    "software": "Python integer arithmetic and SymPy parsing; no Singular call"
+  }
+]

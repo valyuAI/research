@@ -1,0 +1,190 @@
+{
+  "date": "2026-10-26",
+  "scope": "Shared inventory, formal integration, submission-packager regression and final Hex/tiling records. Package-level proof reviews remain separately scoped.",
+  "checks": {
+    "collectionEntries": 26,
+    "completedVideosAtSnapshot": 16,
+    "categoryIndexes": 38,
+    "sharedMarkdownDocumentsChecked": 10,
+    "brokenLocalLinks": 0,
+    "formalSourceAndLogHashesMatched": 13,
+    "leanBuildExitCode": 0,
+    "axiomAuditExitCode": 0,
+    "theoremDeclarations": 153,
+    "submissionArchivesRebuilt": 7,
+    "submissionPdfTextMatches": 7,
+    "formalArchiveProjectImportsPresent": 7,
+    "videoFoldersExcludedFromSubmissionArchives": true,
+    "hexReplayRecordCheck": "Passed: L7 and D9 36/36 openings, 100 shipped hashes, 64 table records. Large strategy replay not repeated.",
+    "tilingLedgerCheck": "Passed: 34 entries with witnesses and retained DRAT records. Large DRAT replay not repeated.",
+    "tilingCrosschecks": "64 marked and 41 unmarked saved agreements reconciled."
+  },
+  "limitations": [
+    "No new six-checker Lean replay.",
+    "Ten videos still in production at this snapshot.",
+    "Pre-commit independent code-simplifier and final integration review are pending.",
+    "The global artifact hash inventory will be refreshed after all deliverables are locked."
+  ],
+  "packagerSha256": "6407e124d2c2e0ba13f3c76e7a26974d2454ab9cb2445442846d6ac1b6f84d86",
+  "submissionReplayManifest": [
+    {
+      "paper": "chemistry/reaction-networks/mass-action/cubic-equilibrium-sharpness",
+      "entrypoint": "main.tex",
+      "sourceInputs": {
+        "main.tex": "f992d704b601bf1e35e06ecf4f42c5f6ece8ff4f4e844040e27edf3366272d20"
+      },
+      "canonicalPaperSha256": "cfe450404f97b14b805822f583e7db540c825a51914fce8a45cddfffc0a3dc61",
+      "canonicalBibliographySha256": "9c0218c8a39bf8c89b319e6a913cb454b2354d2c9bdccaafebb209ad8bb713db",
+      "artifacts": {
+        "source.zip": "1261c576e9d8b37fb4f922e5a40e0790d6c507a6ce335121471e05400894a7b2",
+        "manuscript.pdf": "5fcfc8d16f073153c5df5b0dd9d22513c78a21f3429eb7c5f6b987a9a01e46a6",
+        "verification.zip": "2d724c253d5d5509705fc35bdc6aabc0720de2c2fda96684ed36b71cb6c04a32"
+      },
+      "checks": {
+        "cleanArchiveCompile": true,
+        "texWarnings": [],
+        "expectedShellEscapeNotices": [
+          "Package epstopdf Warning: Shell escape feature is not enabled."
+        ],
+        "matchesReviewedPdfText": true
+      },
+      "status": "Prepared for author review; not submitted or certified journal-compliant."
+    },
+    {
+      "paper": "maths/combinatorics/ramsey-theory/prime-successor-hales-jewett",
+      "entrypoint": "main.tex",
+      "sourceInputs": {
+        "main.tex": "196589d2006ac5483747477ac90179d24951b89c64e06d4ca44b9e7b0c6497d4"
+      },
+      "canonicalPaperSha256": "a62b40099cb4f7062370a77d7e3dcf2bbf40c3ad1ea0bfba5c8dc67184597cec",
+      "canonicalBibliographySha256": "2c16537441a977c5ea55bc9adf6727846f65f397ad6bdc77fa1514113b28c753",
+      "artifacts": {
+        "source.zip": "c04f9a3db0f960c2c7ba3bdb8bb678e0940656dfc16384efe0e93504df515fec",
+        "manuscript.pdf": "d901bff4d889b6b52314ab45eb0cb3b43bcb194d95bd8eb5b1bc5929a3562069",
+        "verification.zip": "0e6f50ae0a0b383077c8fd1c7cb07e549682fa09454f3170c964e6f34c07ed76"
+      },
+      "checks": {
+        "cleanArchiveCompile": true,
+        "texWarnings": [],
+        "expectedShellEscapeNotices": [],
+        "matchesReviewedPdfText": true
+      },
+      "status": "Prepared for author review; not submitted or certified journal-compliant."
+    },
+    {
+      "paper": "maths/dynamical-systems/lotka-volterra/tree-equivalence",
+      "entrypoint": "main.tex",
+      "sourceInputs": {
+        "main.tex": "5ce335d6b53d08bd21f1f2127f3ea372e200e75bc1e9500a635bfba9946d60e2"
+      },
+      "canonicalPaperSha256": "e8f9a1a078c2199ae6600a5d19078d88c08fd769afaabe9d806105a46aa53573",
+      "canonicalBibliographySha256": "eb0f89a193f6797bcd6ea1d1e35557ef3efc68a2c563d3f0a139040ef61cba9b",
+      "artifacts": {
+        "source.zip": "82b8cee06571f66af01d9533fda8da948ea72f8f22254dd7692ce764885121ba",
+        "manuscript.pdf": "35b562629bcc8251293be9f8dad8d5ca1c29cc2773025112e4707869e6c73a91",
+        "verification.zip": "7a023b4ac4214815e9d841090888c3324f8700580717227f77d1ddcd9c836f5e"
+      },
+      "checks": {
+        "cleanArchiveCompile": true,
+        "texWarnings": [],
+        "expectedShellEscapeNotices": [],
+        "matchesReviewedPdfText": true
+      },
+      "status": "Prepared for author review; not submitted or certified journal-compliant."
+    },
+    {
+      "paper": "maths/geometry/rigidity/truncated-dodecahedron",
+      "entrypoint": "main.tex",
+      "sourceInputs": {
+        "main.tex": "b96bfd360bc0c98f9767b1454ad69cccb43c4e10e169a14e1eb2e31da86838a3",
+        "truncated-dodecahedron.pdf": "c1f64130e24ef0a76f2c7d60d01f25f3e7be0661c7e48cdc6654d33ea2c9cc6d"
+      },
+      "canonicalPaperSha256": "309f86085d0d6671da55354e4013e8d666ad167fa0e61855211aa09db9af67ce",
+      "canonicalBibliographySha256": "309d76107ed58471a9cfebd0a340bd3b3554e52c754b36b31fcd6209eb510332",
+      "artifacts": {
+        "source.zip": "fdbb54699172f17b686b38b5971ceb6dbe56c1f171a6d7d76a2acfced8792407",
+        "manuscript.pdf": "23c1fbfea0356c6dee2181a1cd0efdf815c0ffac0d1f5c41fac98043d3c4ddfe",
+        "verification.zip": "e06390d7b16d2b4bd96405c1d177c4cb92d00498220d8d0efc77b967028603aa"
+      },
+      "checks": {
+        "cleanArchiveCompile": true,
+        "texWarnings": [],
+        "expectedShellEscapeNotices": [
+          "Package epstopdf Warning: Shell escape feature is not enabled."
+        ],
+        "matchesReviewedPdfText": true
+      },
+      "status": "Prepared for author review; not submitted or certified journal-compliant."
+    },
+    {
+      "paper": "physics/mechanics/elasticity/generic-stiffness-recovery",
+      "entrypoint": "main.tex",
+      "sourceInputs": {
+        "main.tex": "84233b9b844d53dc99532a28e768e0bec1d5ebb26d1bba5580264d968a672b42"
+      },
+      "canonicalPaperSha256": "cb380c63393db3e0df30d61097736406dc54c0b9d956c213072cdb1cf4b43234",
+      "canonicalBibliographySha256": "b82f6bbfcd8ad0c1120db7ff7339405f5098025d73b4ffaf904cefbc786c72a6",
+      "artifacts": {
+        "source.zip": "8a7f97bd172690e49c76ddbf4ef68ae9dc32c47c054ad823ab2d3d888e2fffa1",
+        "manuscript.pdf": "5705ba5d730827f3c747a4795fde05b344be5921efd4ebf987a45a6e0f930500",
+        "verification.zip": "d3f1a80e845f2636601e23e5a0ce7bd78dc55095832c5a37fd7badeba7def68b"
+      },
+      "checks": {
+        "cleanArchiveCompile": true,
+        "texWarnings": [],
+        "expectedShellEscapeNotices": [
+          "Package epstopdf Warning: Shell escape feature is not enabled."
+        ],
+        "matchesReviewedPdfText": true
+      },
+      "status": "Prepared for author review; not submitted or certified journal-compliant."
+    },
+    {
+      "paper": "physics/statistical-physics/stochastic-resetting/conjugate-restart",
+      "entrypoint": "main.tex",
+      "sourceInputs": {
+        "main.tex": "5647d0b5914802623bd889b124b4467cd2bbe88ffbc532f700957fdc57b983fe"
+      },
+      "canonicalPaperSha256": "768be592d6f2a41ae648c0e1d011c80a86deba215491727316dd51a1b45a82f4",
+      "canonicalBibliographySha256": "8612514c8eae16815475d4e7510fdce8002a54a1092e215654d6b2b229790134",
+      "artifacts": {
+        "source.zip": "f73d40eab4a505033b456a5f72a976f499845571ce790c3224c0873027d2af09",
+        "manuscript.pdf": "d501c22d7d414e8dbed6895865e9a6e47d205a9ea7787c276d4363a68cc241fa",
+        "verification.zip": "9269451afb5d9a627a8f95317ca14c8012fcb5315cc80db358ff88b713fc4420"
+      },
+      "checks": {
+        "cleanArchiveCompile": true,
+        "texWarnings": [],
+        "expectedShellEscapeNotices": [
+          "Package epstopdf Warning: Shell escape feature is not enabled."
+        ],
+        "matchesReviewedPdfText": true
+      },
+      "status": "Prepared for author review; not submitted or certified journal-compliant."
+    },
+    {
+      "paper": "physics/statistical-physics/thermodynamic-inference/periodic-waiting-time",
+      "entrypoint": "main.tex",
+      "sourceInputs": {
+        "main.tex": "f60a8288b2df897ee98b44baac2d81de102e244e5731f7eaa56aee8be3105bc6",
+        "counterexample.pdf": "ee60bb16bc21af48caf858081ede3d9d31c92b1287b51d49c7265b70cbc77eb6"
+      },
+      "canonicalPaperSha256": "704d73b011eb90cf548ecaefcb00c48344f11b7132b38e09b16403984e4f5d73",
+      "canonicalBibliographySha256": "f0064d7ddf4d1f280c8ab43c513db2ef7a64e8bd294e12b34bc04d63f7198ba7",
+      "artifacts": {
+        "source.zip": "a74f82fe77d72a167662d1a71de6ea6584b416058f0b49504518c2823eef409a",
+        "manuscript.pdf": "b729a68858be29cdc01992982943b05e9b2e9eb5c89d2e885eb7c756259d63bf",
+        "verification.zip": "4124d6751ae2df5dc937bb27d7fcb91a68bd84fda828d52d6168bec936300fb7"
+      },
+      "checks": {
+        "cleanArchiveCompile": true,
+        "texWarnings": [],
+        "expectedShellEscapeNotices": [
+          "Package epstopdf Warning: Shell escape feature is not enabled."
+        ],
+        "matchesReviewedPdfText": true
+      },
+      "status": "Prepared for author review; not submitted or certified journal-compliant."
+    }
+  ]
+}

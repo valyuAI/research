@@ -1,0 +1,63 @@
+{
+  "completedUtc": "2026-10-26T15:04:28.696864+00:00",
+  "status": "research complete; video pending",
+  "checks": {
+    "fullBuildExit": 0,
+    "exactCheckerImplementations": 2,
+    "qualifyingExponentSets": 922,
+    "allExponentSets": 1365,
+    "maximumDistinctExponents": 3,
+    "negativeControlsRejected": 4,
+    "pdfPagesInspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "typesettingIssues": []
+  },
+  "sha256": {
+    "README.md": "c5e382588fdef0d77061db3b0487e8f92652b0d6dab860456f8ea6eea27d0dc3",
+    "build.sh": "afc998a29dbe94427056854bb5e363491cf6e25a4086d8f379a69128366c49bd",
+    "paper.pdf": "3ee7d4e4c6d0fea1a346bdf376ca616f9cc34a258d8d9024189077ce45238494",
+    "paper.tex": "15cab6a54eeaeefe2cc355ebb49b1535bf725ec43e423397d3ef8c538ec914b5",
+    "readiness.md": "e2e9be63f92c8ccfa137363ec3d4c4e4bc2ce8f862018a704bfebe2e113146af",
+    "references.bib": "8b7efd05b13fe4252562ede1d9ef809a953046b9cea490c864386d9af93b24a2",
+    "review.md": "bb97550139d63c760f28a86f89f62ba8420a5a85374a1aa11845194e23e9f430",
+    "verification/README.md": "0b85a8ae5c326cd9f8981fd1bf8ade9a51023f2adb420a1f65f79683afafe2a2",
+    "verification/examples-certificate.json": "85346d84938a1f87aa8a922a6518a183c2f0fb19f54a246fdba3be898f279e65",
+    "verification/four_reactant_exponents.log": "a62800cf3c1a11a27eeaf85327dbfd1f405d6bfe0967636adf65dfe04b2549bf",
+    "verification/four_reactant_exponents.py": "40ce265841f3ddca8860094738ad15a3524b4b2792432c1f9a541a17a1e2891a",
+    "verification/independent_check.log": "bf67c132f6f70d130a29fbcb66d8a2e04b130333fc286f429b5f419d0140eb2a",
+    "verification/independent_check.py": "48bf4367be52dfa486e86bc877d804bf9d706a2c24a2e755222dad9e5e125512",
+    "verification/lean_check.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "verification/results/final-typesetting-20261026.log": "aa67646a33fadad9d8646112160b540cf0d5e9c681042f04c67632fa5e4ddd6f",
+    "verification/results/negative-controls-20261026.json": "ff042388de4efef9b68f04aef236b46aefd7808f8ef891745cb325dd5adb323e",
+    "verification/results/resume-build-20261026.log": "8aca1efe422eaa26b8866940db8c4073c9fae02d620b14e318c32149b6a99dcc",
+    "verification/reviews/chem-acr-final-review.md": "12ee08e9ee75bb98e867c57e4b589c353a7c6a90d4cda7c228136719043a7625",
+    "verification/reviews/chem-acr-priority.md": "6734acb78c8b955640cb1c0946332fd886e53569719e0472bb4f3eccfa5ad4de",
+    "verification/reviews/chem-acr-review.md": "7b9284014de056a86bd4bb847ad13a72444964abd7234964734ec72ced7217a3",
+    "verification/verify_examples.log": "7d57c3c155eb201769a653e3e5a339b52987aebef6d0cf16e01c09442a9865cc",
+    "verification/verify_examples.py": "b482a3b298aee08775ad29cfb05117cedb6c7633a14e91355add56a94affa45f",
+    "video-brief.md": "a882af35e6160666b84d377f1032ef38ca8943660a7008441e0c9ea7f7f359ed"
+  },
+  "formalSourceSha256": "d7989b5162e05335ad5dddfdb568ff12da7f23bc33c6a5eae5a8540d7a52fac7",
+  "pdfInspection": {
+    "directory": "<unpublished-record-daf5bab2ad40>",
+    "dpi": 110,
+    "sha256": {
+      "page-1.png": "e5d3bb8b7fc824e768c1dc70224861dc25c0e4df1e115ff797aa70d7998dc7f2",
+      "page-2.png": "c7091b34a889eb9991aa71f3e31272b69bcfd240477ea00b251cd84fff8bd18c",
+      "page-3.png": "ae610adb45b1932ced4890da5c239d2371937c8e7663d22d51afe568ff3b3bbc",
+      "page-4.png": "32e9283636faf3fe3a536ca7fcda69fe78f26585e777a639c3cc7f95df68984d",
+      "page-5.png": "07621887a8bee9982a7b0e9e0a40ccb39d3b9b1cc28425f03ff25f3859c9cc26",
+      "page-6.png": "9431498b832069432088a5537cb333dec9d0862faf58e6a6d70cdf061fbc920d",
+      "page-7.png": "f202d68738f9d19562ea9c7a3b7ac57c0bf48a645709fb0257da2201be986477",
+      "page-8.png": "f400edebdf6a255d33ec605a0f6e146b5e4a4592c06202bf889311e4aa6ef99c"
+    }
+  }
+}

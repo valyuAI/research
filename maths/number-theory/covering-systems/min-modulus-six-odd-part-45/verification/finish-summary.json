@@ -1,0 +1,40 @@
+{
+  "python_replay": "retained original, completeness and totals reconciled",
+  "roots": 135,
+  "nodes": 4684432,
+  "survivors": 0,
+  "slices": [
+    {
+      "log": "check_p2_roots_0-44.log",
+      "lo": 0,
+      "hi": 44,
+      "nodes": 1418536,
+      "survivors": 0,
+      "sha256": "e855e58f4c7e4ed6bd5d308e32abf19bf1fd98483d70cc8ea47df868343169a7"
+    },
+    {
+      "log": "check_p2_roots_45-89.log",
+      "lo": 45,
+      "hi": 89,
+      "nodes": 1632948,
+      "survivors": 0,
+      "sha256": "abcc6a024c5cffcbf56996dfd5db103915a3ad2c9b4c22a62d722aeb802db9af"
+    },
+    {
+      "log": "check_p2_roots_90-134.log",
+      "lo": 90,
+      "hi": 134,
+      "nodes": 1632948,
+      "survivors": 0,
+      "sha256": "72fcd737849578f7471d4f8ae76ee303a276466de80928587785c5132adb76b0"
+    }
+  ],
+  "fresh_c_checks": {
+    "dfs2_nodes": 498464,
+    "generic_nodes": 66821,
+    "survivors": 0,
+    "first10_control_nodes": 708955,
+    "first10_control_survivors": 1704
+  },
+  "optional_odd_part_135": "excluded; not independently verified"
+}

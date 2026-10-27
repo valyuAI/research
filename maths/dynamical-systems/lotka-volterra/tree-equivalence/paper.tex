@@ -1,0 +1,208 @@
+\documentclass{amsart}
+\usepackage{amssymb}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\PP}{\mathbb P}
+\newcommand{\DD}{\mathcal D}
+\numberwithin{equation}{section}
+\title{Linear equivalence of Lotka--Volterra tree systems}
+\author{Harvey Yorke}
+\address[Harvey Yorke]{Valyu AI}
+\ifdefined\journalversion
+\hypersetup{pdfauthor={Harvey Yorke}}
+\else
+\author{Valyu DeepResearch}
+\address[Valyu DeepResearch]{Valyu AI}
+\hypersetup{pdfauthor={Harvey Yorke and Valyu DeepResearch}}
+\fi
+\hypersetup{pdftitle={Linear equivalence of Lotka-Volterra tree systems}}
+\date{17 October 2026}
+\keywords{Lotka--Volterra system, Darboux polynomial, linear equivalence, tree reconstruction}
+% Keep AMS title spacing, with each author's affiliation directly below the name.
+\newcommand{\paperAuthorBlock}[1]{%
+  \begin{minipage}[t]{.44\textwidth}
+    \centering\normalfont\normalsize
+    #1\par
+    \small Valyu AI\par
+  \end{minipage}%
+}
+\makeatletter
+\renewcommand{\@setauthors}{%
+  \begingroup
+  \trivlist
+  \centering\normalfont\normalsize
+  \@topsep30\p@\relax
+  \advance\@topsep by -\baselineskip
+  \item\relax
+  \ifdefined\journalversion
+    \paperAuthorBlock{Harvey Yorke}%
+  \else
+    \paperAuthorBlock{Harvey Yorke}\hspace{.06\textwidth}%
+    \paperAuthorBlock{Valyu DeepResearch}%
+  \fi
+  \endtrivlist
+  \endgroup
+}
+\renewcommand{\@setaddresses}{}
+\makeatother
+\begin{document}
+\begin{abstract}
+We give a self-contained reconstruction proof that generic homogeneous Lotka--Volterra tree systems associated with nonisomorphic trees are not equivalent under invertible linear changes of variables. The proof uses the complete projective set of homogeneous linear Darboux polynomials. Its dependent triples correspond exactly to the tree edges, and their incidence reconstructs the tree without identifying the original coordinate forms. We give explicit sufficient genericity conditions. Exceptional parameter specializations, where distinct tree families may intersect, are not covered. An earlier withdrawn preprint announces tree determination; no claim of priority is made here.
+\end{abstract}
+\maketitle
+
+\section{Introduction and main result}
+Linear Darboux polynomials provide both first integrals and coordinate changes for polynomial differential equations. For homogeneous Lotka--Volterra systems, Quispel, Tapley, McLaren and van der Kamp~\cite{construction} introduced families indexed by trees, with $3n-2$ free parameters and one additional two-variable Darboux polynomial for each tree edge. Van der Kamp, Quispel and McLaren~\cite{trees} proved that these families are generically superintegrable.
+
+The indexing tree is defined by supports in a particular coordinate system. An invertible linear change preserves Darboux polynomials but need not preserve their supports. Consequently, the original construction alone does not establish that different trees yield inequivalent families. Van der Kamp~\cite[Conjecture~12]{hypergraphs} conjectured this inequivalence and verified it for orders below nine. We prove it for every order by recovering the tree from the linear dependence relations among \emph{all} homogeneous linear Darboux forms. The result concerns this algebraic classification; the support tree is not the nonzero interaction graph of the generally dense coefficient matrix.
+
+\paragraph{Prior announcement.}
+Zeng's earlier preprint, \emph{Generic Lotka--Volterra Tree Systems Determine Their Trees}~\cite{zeng}, was posted on 2 September 2026 and is now marked withdrawn. Its surviving SSRN record lists projective configurations and exact certification among its keywords, but replaces the abstract with a withdrawal notice and provides no download. We have not obtained its mathematical text, so cannot compare its hypotheses, argument or validity with the proof below. We cite this directly overlapping announcement and make no claim to the first proof of the conjecture; withdrawal alone does not settle priority.
+
+For a matrix $A\in\mathbb K^{n\times n}$, where $\mathbb K$ is $\mathbb R$ or $\mathbb C$, let
+\begin{equation}\label{eq:lv}
+ F_A(x)_i=x_i\sum_{j=1}^n A_{ij}x_j.
+\end{equation}
+A nonzero homogeneous linear form $L$ is a Darboux polynomial if
+$\nabla L\cdot F_A=LC$ for a linear form $C$; the zero cofactor is allowed.
+Write $\DD(A)\subset\PP((\mathbb K^n)^*)$ for the set of such forms modulo nonzero scalar multiplication.
+Two systems are linearly equivalent if $F_B(Mx)=MF_A(x)$ for some $M\in\operatorname{GL}_n(\mathbb K)$.
+
+Let $T$ be a tree with vertex set $\{1,\ldots,n\}$. Its tree family is the linear parameter space of matrices satisfying
+\begin{equation}\label{eq:tree}
+ A_{uj}=A_{vj}\qquad(uv\in E(T),\ j\notin\{u,v\}).
+\end{equation}
+Following~\cite{hypergraphs}, statements about these families concern generic parameters, rather than every exceptional specialization. We make a sufficient open set explicit.
+
+For each vertex $j$, choose a parameter $a_j$ and one parameter $c_{j,C}$ for every connected component $C$ of $T-j$. Equation~\eqref{eq:tree} is equivalent to
+\begin{equation}\label{eq:columns}
+ A_{jj}=a_j,\qquad A_{ij}=c_{j,C}\quad(i\in C).
+\end{equation}
+Indeed, the edges of $T-j$ force precisely the equalities within its connected components. There are $n+\sum_j\deg(j)=3n-2$ parameters.
+Let $U_T$ be the subset on which, for each $j$,
+\begin{align}\label{eq:generic}
+ c_{j,C}&\ne a_j, &&\text{for every component }C,\notag\\
+ c_{j,C}&\ne c_{j,D}, &
+ c_{j,C}+c_{j,D}&\ne 2a_j\quad(C\ne D).
+\end{align}
+This is a nonempty Zariski-open subset: choose negative $a_j$ and distinct positive $c_{j,C}$ in each column.
+
+\begin{theorem}\label{thm:main}
+Let $T,T'$ be trees of the same order, with $A\in U_T$ and $B\in U_{T'}$. If the systems $F_A$ and $F_B$ are linearly equivalent, then $T$ and $T'$ are isomorphic.
+More generally, the conclusion holds whenever the complete projective Darboux sets of the two systems consist of their coordinate forms and exactly one form with both coefficients nonzero for each edge of their respective trees.
+\end{theorem}
+
+The theorem separates the general tree families in the sense of~\cite{hypergraphs}. It is not a classification of equivalence among parameter choices within a fixed family. The proof has two parts: a complete description of $\DD(A)$ on $U_T$, followed by reconstruction of $T$ from its dependent triples.
+
+\section{Completeness of the generic Darboux set}
+We first verify the complete set, rather than merely exhibiting some Darboux polynomials.
+
+\begin{lemma}\label{lem:complete}
+For $A\in U_T$,
+\[
+ \DD(A)=\{[x_i]:1\le i\le n\}\ \cup\
+ \{[P_{uv}]:uv\in E(T)\},
+\]
+where each $P_{uv}$ has support exactly $\{u,v\}$ and is unique up to scalar multiplication.
+\end{lemma}
+\begin{proof}
+Write $L=\sum_{i\in I}p_ix_i$, where every $p_i$ is nonzero.
+Writing $C=\sum_j q_jx_j$, comparison of the $x_i^2$ coefficients gives $q_i=A_{ii}$ for $i\in I$. The remaining coefficients give the necessary and sufficient conditions
+\begin{align}
+ A_{ij}&=A_{kj} &&(i,k\in I,\ j\notin I),\label{eq:outside}\\
+ p_i(A_{jj}-A_{ij})&=p_j(A_{ji}-A_{ii}) &&(i,j\in I).\label{eq:pairs}
+\end{align}
+Indeed, for $j\notin I$ the common value in~\eqref{eq:outside} defines $q_j$, after which~\eqref{eq:pairs} gives every remaining coefficient identity. These are also the homogeneous case of~\cite[Lemma~2]{hypergraphs}.
+
+Condition~\eqref{eq:outside} forces $T[I]$ to be connected. Otherwise an omitted vertex $j$ on a path joining two vertices of $I$ separates those vertices into distinct components of $T-j$. The corresponding entries in column $j$ are distinct by~\eqref{eq:generic}, contradicting~\eqref{eq:outside}.
+
+If $|I|\ge3$, the induced subtree contains a path $u-v-w$. Set
+\[
+ \alpha=A_{vu}-a_u=A_{wu}-a_u,\qquad
+ \beta=A_{uw}-a_w=A_{vw}-a_w,
+\]
+and $B_0=A_{uv}-a_v$, $C_0=A_{wv}-a_v$.
+The equalities follow from the column parameterization, and $\alpha\beta\ne0$ by~\eqref{eq:generic}.
+The three instances of~\eqref{eq:pairs} become
+\[
+ p_uB_0+p_v\alpha=0,\qquad
+ p_v\beta+p_wC_0=0,\qquad
+ p_u\beta+p_w\alpha=0.
+\]
+Multiply these equations by $\beta$, $-\alpha$ and $C_0$, respectively, and add. This gives $p_u\beta(B_0+C_0)=0$. Since $p_u\beta\ne0$,
+\[
+ A_{uv}+A_{wv}=2a_v.
+\]
+But $u$ and $w$ lie in different components of $T-v$, so this contradicts~\eqref{eq:generic}.
+
+Therefore $|I|\le2$. Connected supports of size two are exactly the edges. For $uv\in E(T)$, equation~\eqref{eq:pairs} uniquely fixes the coefficient ratio, with both coefficients nonzero; one choice is
+\[
+ P_{uv}=(A_{vu}-a_u)x_u+(a_v-A_{uv})x_v.
+\]
+The outside-column conditions hold by~\eqref{eq:tree}. Finally, every coordinate form is a Darboux polynomial.
+\end{proof}
+
+\section{Reconstruction from dependent triples}
+The essential invariant is independent of the differential equation.
+
+\begin{lemma}\label{lem:triangles}
+Let $e_1,\ldots,e_n$ be a basis, and for every edge $uv$ of a tree $T$ let $p_{uv}=b_{uv}e_u+d_{uv}e_v$, with $b_{uv}d_{uv}\ne0$.
+Among the projective points $[e_i]$ and $[p_{uv}]$, the dependent three-element subsets are exactly
+\[
+ C_{uv}=\{[e_u],[e_v],[p_{uv}]\},\qquad uv\in E(T).
+\]
+The incidence relation of these triples determines $T$ up to isomorphism.
+\end{lemma}
+\begin{proof}
+All the projective points are distinct. Three basis points are independent. A triple with one edge point and two basis points is dependent exactly when the two basis points are its endpoints.
+
+A triple with two edge points and one basis point is independent. For disjoint edges, at least one endpoint of each edge is different from the basis point, so its coordinate forces that edge's coefficient to vanish. For adjacent edges, their union is a three-vertex path. If the basis point is the middle vertex or is outside the path, the endpoint coordinates first eliminate both edge points. If it is an endpoint, eliminate the edge at the other endpoint and then the remaining edge using the middle coordinate. In all cases the basis coefficient also vanishes.
+
+Three edge points are independent by leaf elimination: their edges form a forest, and a leaf coordinate forces the coefficient of its sole incident edge to vanish. Repeat for the remaining edges. This proves the assertion about triples.
+
+For reconstruction, a point belongs to at least two triples if and only if it is $[e_v]$ for an internal vertex $v$ of $T$. Make one reconstructed vertex for each such point. A triple containing two such points joins their vertices by an edge. A triple containing one such point attaches a new leaf to that vertex. For $n>2$, every tree edge has an internal endpoint, so these rules recover all vertices and edges exactly. A triple with no shared point occurs only when $n=2$, for which the tree is unique; the case $n=1$ is also unique.
+\end{proof}
+
+The intersection graph of the triples $C_{uv}$ is also the line graph of $T$. Reconstruction from line graphs is classical; see, for example,~\cite[Theorem~1.1]{cuypers}. The direct argument above uses only the tree case and keeps the proof independent of a separate reconstruction theorem.
+
+For a small example, a four-vertex path has two projective points that each lie in two dependent triples. A four-vertex star has one point lying in three triples. Thus even though both Darboux sets contain seven points, their triple incidences distinguish the two trees. The reconstruction lemma applies equally when degree counts alone fail to distinguish trees.
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+An invertible linear conjugacy induces a bijection of the complete projective Darboux sets by pullback. Suppose $\dot L(y)=L(y)C(y)$. Substitution of $y=Mx$ gives
+\[
+ \frac{d}{dt}L(Mx)=L(Mx)C(Mx),
+\]
+and $M^{-1}$ provides the inverse correspondence. Pullback preserves linear dependence, hence the dependent triples and their incidences. Lemma~\ref{lem:triangles} recovers isomorphic trees from these incidences. Lemma~\ref{lem:complete} verifies its hypotheses on $U_T$ and $U_{T'}$.
+\end{proof}
+
+\begin{corollary}
+Nonisomorphic trees give inequivalent generic tree families under invertible linear changes of variables.
+\end{corollary}
+
+\begin{remark}[What is excluded]
+The generic qualifier is essential. Exceptional matrices can belong to different tree families. For instance, when all rows of $A$ are equal, every linear form is a Darboux polynomial, and~\eqref{eq:tree} holds for every tree. Such systems do not have the finite complete Darboux set required above. No assertion of inequivalence is made for arbitrary specializations.
+\end{remark}
+
+\begin{remark}[Common linear growth]
+The argument is unchanged for $F_A(x)+b x$, with a common scalar growth rate $b$. Linear Darboux cofactors acquire the constant term $b$; this is the degree-one case of the preservation result in~\cite[Theorem~1]{homogeneous}. Conversely, subtracting $b x$ restores the original cofactors, so the complete projective Darboux set is unchanged. The pair-support conditions on a connected tree force equality of the growth rates. Thus common linear growth does not change the reconstruction invariant.
+\end{remark}
+
+\section{Scope and verification}
+The proof uses the projective arrangement of Darboux forms, not the cofactors or the first integrals. In particular, it does not require computing a conjugating matrix. For more general admissible hypergraphs, dependent subsets can arise from several support patterns, and the reconstruction argument above need not apply. Determining which support hypergraphs can be recovered from the complete Darboux arrangement is a natural extension. A separate question is to describe the exceptional parameter loci on which additional forms appear or edge forms degenerate.
+
+The all-order proof is independent of computation. The accompanying verifier checks dependent triples and reconstruction for all 986 unlabelled trees of orders 2 through 12, using integer determinants. It also enumerates every nonempty support for all 200 trees of orders 2 through 10 and checks the Darboux coefficient equations with rational arithmetic at explicit parameters satisfying~\eqref{eq:generic}. All checks pass. These are consistency checks at specified parameter choices, not an enumeration of every parameter specialization. The source and retained results are included in the companion reproducibility package.
+
+The package also contains a Lean~4 formalization of the three-equation path cancellation, its implication for the middle-column sum, and the resulting algebraic obstruction under the stated nondegeneracy conditions. These lemmas compile against mathlib~4.35.0 without proof placeholders or additional axioms. This is a partial formalization: support connectivity, dependent-triple classification, tree reconstruction and the full equivalence theorem have not been formalized.
+
+\subsection*{Research process}
+Valyu DeepResearch supported literature retrieval and adversarial review of the proof and its publication priority. Coding agents developed and audited the reconstruction argument, implemented the exact-arithmetic verifier and partial Lean formalization, and drafted and revised the manuscript. The review identified the overlapping prior announcement discussed in the introduction. These checks and reports do not constitute external peer review.
+
+\bibliographystyle{amsplain}
+\bibliography{references}
+\end{document}

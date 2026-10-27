@@ -1,0 +1,297 @@
+{
+  "method": "Normalized waveform cross-correlation of a high-energy two-second window from every source clip against its expected location in the final AAC soundtrack. No subjective listening performed.",
+  "all_passed": true,
+  "sample_rate": 12000,
+  "min_correlation": 0.9921095419253586,
+  "max_absolute_lag_seconds": 0.021333333333333333,
+  "clips": [
+    {
+      "id": "s01",
+      "scene": "Matches",
+      "expected_start": 0.0,
+      "sample_offset": 2.998,
+      "correlation": 0.9998265980900584,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "bcaf9abbedff473e8cc2176dc7f5aa91dad469d6bd79b6334e62718d0badf39d"
+    },
+    {
+      "id": "s02",
+      "scene": "Matches",
+      "expected_start": 13.699999999999992,
+      "sample_offset": 2.1955833333333334,
+      "correlation": 0.9998475968550884,
+      "lag_seconds": 0.02033333333333333,
+      "sha256": "b73228574de08536527ef3c920c7f21c4afa8b77b90677e08595945472cb8d52"
+    },
+    {
+      "id": "s03",
+      "scene": "Matches",
+      "expected_start": 25.400000000000205,
+      "sample_offset": 3.318,
+      "correlation": 0.9999374969843362,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "ae010bb8b73701371d1573702563b45a4beaa6f0fe97f78487fff9deddae3fd9"
+    },
+    {
+      "id": "s04",
+      "scene": "Matches",
+      "expected_start": 37.90000000000051,
+      "sample_offset": 3.5123333333333333,
+      "correlation": 0.999833642553575,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "685e5de921bf80fe3ced3ccc420298f37478c6708ce207bc35251955846e7221"
+    },
+    {
+      "id": "s05",
+      "scene": "Cheat",
+      "expected_start": 51.699349,
+      "sample_offset": 1.62,
+      "correlation": 0.9951831378686834,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "49411f95e3fbbecc7bbae66208b0c1e226633f500133440e3e290f6434859ea7"
+    },
+    {
+      "id": "s06",
+      "scene": "Cheat",
+      "expected_start": 62.89934899999999,
+      "sample_offset": 7.221166666666667,
+      "correlation": 0.9959538109973044,
+      "lag_seconds": 0.02033333333333333,
+      "sha256": "61b7e936fa8e0bce4e2ba78e42c298b4bba481819cebbaa671bbacf55a34b975"
+    },
+    {
+      "id": "s07",
+      "scene": "Cheat",
+      "expected_start": 78.09934899999998,
+      "sample_offset": 3.02675,
+      "correlation": 0.9967794083847942,
+      "lag_seconds": 0.02033333333333333,
+      "sha256": "ba86a8ceb322114da18fb6665d7e84e3417dcb7ef2a9085aaf44bef50a868439"
+    },
+    {
+      "id": "s08",
+      "scene": "Cheat",
+      "expected_start": 91.99934900000014,
+      "sample_offset": 3.332333333333333,
+      "correlation": 0.992163621482275,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "f9c0e3644d65b37ce533ed0c7dd92d33493fe8103407152b61855b88f740029f"
+    },
+    {
+      "id": "s09",
+      "scene": "Unavoidable",
+      "expected_start": 104.59934899999999,
+      "sample_offset": 5.915166666666667,
+      "correlation": 0.9970677936583708,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "38487a1a115b56e04fec6df26f4818bd937634e83ed3b3a33dd546eee8e5dab7"
+    },
+    {
+      "id": "s10",
+      "scene": "Unavoidable",
+      "expected_start": 117.76601566666665,
+      "sample_offset": 7.415166666666667,
+      "correlation": 0.9970345814011534,
+      "lag_seconds": 0.020666666666666667,
+      "sha256": "16d75167fb53bccdd9934dbed701b4b4fb1ef4c4e148a405efba7975a25f03a7"
+    },
+    {
+      "id": "s11",
+      "scene": "Unavoidable",
+      "expected_start": 130.93268233333342,
+      "sample_offset": 2.4151666666666665,
+      "correlation": 0.9940434264764332,
+      "lag_seconds": 0.021,
+      "sha256": "8f8c59f07df8c65039e801451d34cbb9e118dd4877dd86e6272f039ac6c3f4db"
+    },
+    {
+      "id": "s12",
+      "scene": "Unavoidable",
+      "expected_start": 144.09934900000007,
+      "sample_offset": 7.7283333333333335,
+      "correlation": 0.9972637536996509,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "a9afe46de3564670ddc4e57f68c405634cd3b7b42937af8377680267cd3d54c1"
+    },
+    {
+      "id": "s13",
+      "scene": "Search",
+      "expected_start": 159.33268199999998,
+      "sample_offset": 3.041166666666667,
+      "correlation": 0.9969936957499135,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "70b323fee691c5bafaa2e6b36ae7b1ca0c8619d34d8e895b752a428ddc636829"
+    },
+    {
+      "id": "s14",
+      "scene": "Search",
+      "expected_start": 173.33268199999998,
+      "sample_offset": 2.3971666666666667,
+      "correlation": 0.9959607277334136,
+      "lag_seconds": 0.02033333333333333,
+      "sha256": "df932f018ce00849b332a3f7a1e0697ec74b99d066e4acfa56cefcb3e37212ab"
+    },
+    {
+      "id": "s15",
+      "scene": "Search",
+      "expected_start": 186.3660153333335,
+      "sample_offset": 2.5555833333333333,
+      "correlation": 0.9971414506204064,
+      "lag_seconds": 0.021,
+      "sha256": "573d2c959e813279c85b5b4b946be7f755e3fb3394e7ee3191f12987174b9a75"
+    },
+    {
+      "id": "s16",
+      "scene": "Search",
+      "expected_start": 200.46601533333373,
+      "sample_offset": 8.199583333333333,
+      "correlation": 0.9943213780256995,
+      "lag_seconds": 0.021,
+      "sha256": "00d261d2b539de6e8f1b3d913efd5d158a99582e935fc6cafca9577395cc7753"
+    },
+    {
+      "id": "s17",
+      "scene": "Constraints",
+      "expected_start": 215.49934899999997,
+      "sample_offset": 8.041166666666667,
+      "correlation": 0.995350596114901,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "54676dee079484085882b482f87bc15bc0718b35bd1b7a242456e85fc5171ddf"
+    },
+    {
+      "id": "s18",
+      "scene": "Constraints",
+      "expected_start": 229.49934899999994,
+      "sample_offset": 7.609583333333333,
+      "correlation": 0.9974112537875882,
+      "lag_seconds": 0.02033333333333333,
+      "sha256": "f42ddcff32d5a3ae09a93fa64be5a4dc4cc5935e333354a018873a8f186e35d0"
+    },
+    {
+      "id": "s19",
+      "scene": "Constraints",
+      "expected_start": 243.93268233333367,
+      "sample_offset": 7.534,
+      "correlation": 0.9959936907322335,
+      "lag_seconds": 0.021,
+      "sha256": "cebbd5c674ca6194e5dafe81922d1ea524594c379f90408445d1f80ac7720d6c"
+    },
+    {
+      "id": "s20",
+      "scene": "Constraints",
+      "expected_start": 257.866015666667,
+      "sample_offset": 2.65275,
+      "correlation": 0.9948784449457804,
+      "lag_seconds": 0.020666666666666667,
+      "sha256": "542330bd1dc00a985488abe029cff7bd55cdaffafb29c459d1e0f02456a9f07d"
+    },
+    {
+      "id": "s21",
+      "scene": "Certificate",
+      "expected_start": 272.59934899999996,
+      "sample_offset": 8.088,
+      "correlation": 0.996610518755083,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "d734e67f5345412b5888ae7a9c3fd137b05326bba5563c7e6b615d6b6b51e2ea"
+    },
+    {
+      "id": "s22",
+      "scene": "Certificate",
+      "expected_start": 286.899349,
+      "sample_offset": 3.66,
+      "correlation": 0.9937783023486072,
+      "lag_seconds": 0.02033333333333333,
+      "sha256": "c958465e5a0ffa3ccef47145b0048150fdd0c230d478a747bdcdb251447050a3"
+    },
+    {
+      "id": "s23",
+      "scene": "Certificate",
+      "expected_start": 301.6660156666669,
+      "sample_offset": 8.728333333333333,
+      "correlation": 0.9921095419253586,
+      "lag_seconds": 0.020666666666666667,
+      "sha256": "697e2617933d93691b55805e0046e2dfb7529ec56d3993e845104e78001ab9f4"
+    },
+    {
+      "id": "s24",
+      "scene": "Certificate",
+      "expected_start": 316.8993490000001,
+      "sample_offset": 5.47275,
+      "correlation": 0.9968687223852599,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "f403ab62d30203160522980c55e0f0168b6963f8a6df7810450eaa5e6082e72e"
+    },
+    {
+      "id": "s25",
+      "scene": "GoodRules",
+      "expected_start": 330.43268199999994,
+      "sample_offset": 5.088,
+      "correlation": 0.9967741591621994,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "740e63f9ae53e3105153b8e830c9c78ef915a28769f23b0d90c5a4fb845c5c3d"
+    },
+    {
+      "id": "s26",
+      "scene": "GoodRules",
+      "expected_start": 344.73268199999995,
+      "sample_offset": 8.145583333333333,
+      "correlation": 0.9953242920606135,
+      "lag_seconds": 0.02033333333333333,
+      "sha256": "ceb250058a47f1ffdfefa5ff1798695ae7662d7c16d198dfb790bf00b76e3fc2"
+    },
+    {
+      "id": "s27",
+      "scene": "GoodRules",
+      "expected_start": 359.4326820000001,
+      "sample_offset": 2.908333333333333,
+      "correlation": 0.993987493667758,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "5171beed25996957f72ba26dab74912e87a491beba75f2bbb925c4a597d7e0ee"
+    },
+    {
+      "id": "s28",
+      "scene": "Scope",
+      "expected_start": 375.86601499999995,
+      "sample_offset": 1.998,
+      "correlation": 0.9975108426257004,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "171f0796aad3577a086dd501da149f6678f47aee14ab83a3906f6ed0f0a3e261"
+    },
+    {
+      "id": "s29",
+      "scene": "Scope",
+      "expected_start": 389.56601499999994,
+      "sample_offset": 7.167166666666667,
+      "correlation": 0.9966457039658577,
+      "lag_seconds": 0.02033333333333333,
+      "sha256": "7ba8aaf4ac3e6dba2ed51e8553187c15b2f8e9b44d0ddf8f95976e83bbe5f841"
+    },
+    {
+      "id": "s30",
+      "scene": "Scope",
+      "expected_start": 404.3993483333335,
+      "sample_offset": 8.167166666666667,
+      "correlation": 0.9974395720752067,
+      "lag_seconds": 0.021,
+      "sha256": "c45e47166c49c2682800b15019490087a2e12adb5fe45d7d5b7ed40b26b39148"
+    },
+    {
+      "id": "s31",
+      "scene": "Scope",
+      "expected_start": 419.23268166666674,
+      "sample_offset": 11.207166666666666,
+      "correlation": 0.9975853027408944,
+      "lag_seconds": 0.020666666666666667,
+      "sha256": "16aa287d1a888036bb3eb893e8cbd5cb408ceb71a2ee2e1d95f4cb5da9822c75"
+    },
+    {
+      "id": "s32",
+      "scene": "Scope",
+      "expected_start": 437.6660149999998,
+      "sample_offset": 5.609583333333333,
+      "correlation": 0.9961749820628951,
+      "lag_seconds": 0.02033333333333333,
+      "sha256": "eabba457f2e5286019af0fef63332e6923c79b5ce47de9c683ba07dfc34cab97"
+    }
+  ]
+}

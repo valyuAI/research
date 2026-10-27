@@ -1,0 +1,671 @@
+1
+00:00:00,000 --> 00:00:03,075
+Blue wants a chain from the top to the
+bottom.
+
+2
+00:00:03,075 --> 00:00:06,082
+Red wants a chain from the left to the
+right.
+
+3
+00:00:06,082 --> 00:00:08,556
+They take turns claiming empty cells.
+
+4
+00:00:08,556 --> 00:00:13,368
+The question is not just who wins, but how
+cheaply Blue can force a win.
+
+5
+00:00:13,900 --> 00:00:16,705
+Two cells connect when they share an edge.
+
+6
+00:00:16,705 --> 00:00:19,310
+An interior hexagon has six neighbours.
+
+7
+00:00:19,310 --> 00:00:23,584
+We use ordinary alternating play, Blue
+first, with no swap rule.
+
+8
+00:00:23,584 --> 00:00:28,660
+A strategy must work against every legal
+reply, not just a helpful opponent.
+
+9
+00:00:29,200 --> 00:00:33,449
+Start with this two by two board. Blue
+takes the upper-right cell.
+
+10
+00:00:33,449 --> 00:00:37,763
+It touches the top, and it is adjacent to
+both cells on the bottom.
+
+11
+00:00:37,763 --> 00:00:41,368
+Blue now has two possible ways to complete
+a connection.
+
+12
+00:00:41,900 --> 00:00:46,362
+If Red takes the lower-left cell, Blue
+takes the lower-right.
+
+13
+00:00:46,362 --> 00:00:50,458
+If Red takes the lower-right, Blue takes
+the lower-left.
+
+14
+00:00:50,458 --> 00:00:54,115
+A reply somewhere else also leaves a
+winning move.
+
+15
+00:00:54,115 --> 00:00:57,260
+Red cannot occupy both threats in one turn.
+
+16
+00:00:57,800 --> 00:01:01,715
+Notice what Blue did not need: a path
+chosen before Red moved.
+
+17
+00:01:01,715 --> 00:01:04,872
+Blue chose the final route after seeing the
+reply.
+
+18
+00:01:04,872 --> 00:01:09,735
+That difference between a fixed route and
+an adaptive strategy will matter on
+
+19
+00:01:09,735 --> 00:01:10,808
+the larger board.
+
+20
+00:01:11,331 --> 00:01:17,098
+Move to five by five. Any top-to-bottom
+path must visit all five rows, so it
+
+21
+00:01:17,098 --> 00:01:23,016
+needs at least five cells. But a geometric
+path on an empty board is not yet a
+
+22
+00:01:23,016 --> 00:01:25,443
+path Blue can force against Red.
+
+23
+00:01:25,965 --> 00:01:31,201
+There are two different costs. Count the
+cells in the final connecting path,
+
+24
+00:01:31,201 --> 00:01:36,369
+or count every stone Blue placed. We call
+the best forced path cost lambda,
+
+25
+00:01:36,369 --> 00:01:38,919
+and the best forced stone cost delta.
+
+26
+00:01:38,919 --> 00:01:40,917
+On five by five, they differ.
+
+27
+00:01:41,463 --> 00:01:46,189
+Here is an actual branch of the certified
+five-by-five strategy.
+
+28
+00:01:46,189 --> 00:01:50,915
+Blue opens in the centre. We will follow
+all twenty-three moves.
+
+29
+00:01:50,915 --> 00:01:54,164
+Odd move numbers are Blue, even numbers
+Red.
+
+30
+00:01:54,164 --> 00:01:58,815
+For this branch, Red delays the connection
+as long as possible.
+
+31
+00:01:59,363 --> 00:02:01,603
+The stones spread across the board.
+
+32
+00:02:01,603 --> 00:02:06,339
+A stone that is not on the eventual winning
+route can still matter: it may
+
+33
+00:02:06,339 --> 00:02:09,027
+create another threat or answer a defence.
+
+34
+00:02:09,027 --> 00:02:13,379
+Keep watching which cells remain available
+as the players alternate.
+
+35
+00:02:13,897 --> 00:02:16,984
+Now the last seven moves complete the
+position.
+
+36
+00:02:16,984 --> 00:02:19,676
+Blue first connects on move twenty-three.
+
+37
+00:02:19,676 --> 00:02:24,668
+This is one legal game from the strategy,
+not the universal proof by itself.
+
+38
+00:02:24,668 --> 00:02:28,609
+The proof must account for Red's other
+possible replies too.
+
+39
+00:02:29,130 --> 00:02:34,103
+Trace this winning route. Start in the
+top-right cell, move down-left, then
+
+40
+00:02:34,103 --> 00:02:37,286
+down, across, down, and down-left to the
+bottom.
+
+41
+00:02:37,286 --> 00:02:40,601
+Count the cells: one, two, three, four,
+five, six.
+
+42
+00:02:40,601 --> 00:02:43,386
+That is the shortest Blue connection here.
+
+43
+00:02:43,930 --> 00:02:46,312
+But Blue has placed twelve stones.
+
+44
+00:02:46,312 --> 00:02:50,024
+Six are on this shortest path, and six are
+elsewhere.
+
+45
+00:02:50,024 --> 00:02:55,488
+This one position makes the distinction
+visible: path length six does not mean
+
+46
+00:02:55,488 --> 00:02:57,730
+Blue won on the sixth Blue move.
+
+47
+00:02:58,263 --> 00:03:03,593
+The full certificate proves that Blue can
+always produce a path of at most six
+
+48
+00:03:03,593 --> 00:03:08,718
+cells. Separate Red certificates prevent a
+path of at most five after every
+
+49
+00:03:08,718 --> 00:03:13,911
+opening. Together, these two directions
+establish lambda of five equals six.
+
+50
+00:03:14,430 --> 00:03:18,961
+A different pair of bounds establishes
+delta of five equals seven.
+
+51
+00:03:18,961 --> 00:03:24,315
+Red can stop a win made with six Blue
+stones, while another Blue strategy wins
+
+52
+00:03:24,315 --> 00:03:29,532
+using at most seven. Our twelve-stone
+illustration is not a stone-minimising
+
+53
+00:03:29,532 --> 00:03:30,150
+strategy.
+
+54
+00:03:30,692 --> 00:03:34,848
+Why can a seemingly convincing argument
+miss the shorter path?
+
+55
+00:03:34,848 --> 00:03:37,396
+Suppose you first commit to one route.
+
+56
+00:03:37,396 --> 00:03:40,747
+Red only needs one cell on that route to
+block it.
+
+57
+00:03:40,747 --> 00:03:45,842
+That proves the chosen route is vulnerable,
+not that every adaptive strategy
+
+58
+00:03:45,842 --> 00:03:46,244
+fails.
+
+59
+00:03:46,792 --> 00:03:51,988
+Return to the tiny board. Either bottom
+cell blocks one proposed route, but
+
+60
+00:03:51,988 --> 00:03:56,006
+leaves the other. The winning route depends
+on Red's move.
+
+61
+00:03:56,006 --> 00:04:01,201
+This is the quantifier order: Blue chooses
+a strategy, Red replies, and the
+
+62
+00:04:01,201 --> 00:04:02,656
+route can then adapt.
+
+63
+00:04:03,192 --> 00:04:08,156
+A game tree expresses that order. At a Blue
+turn, one successful move is
+
+64
+00:04:08,156 --> 00:04:12,086
+enough. At a Red turn, every legal reply
+must be handled.
+
+65
+00:04:12,086 --> 00:04:17,257
+A single successful branch is evidence for
+a possibility; a strategy covers
+
+66
+00:04:17,257 --> 00:04:18,912
+the whole relevant tree.
+
+67
+00:04:19,458 --> 00:04:23,764
+The search writes down a proposed move at
+each position it needs.
+
+68
+00:04:23,764 --> 00:04:28,865
+An independent checker reads those moves
+and examines the opponent's replies.
+
+69
+00:04:28,865 --> 00:04:32,642
+It does not assume that the search's
+shortcuts were safe.
+
+70
+00:04:32,642 --> 00:04:35,226
+It checks the proposed strategy itself.
+
+71
+00:04:35,758 --> 00:04:40,471
+For each position, the checker verifies
+that the prescribed move is legal.
+
+72
+00:04:40,471 --> 00:04:44,866
+Then it tries every empty cell as the
+opponent's reply and continues.
+
+73
+00:04:44,866 --> 00:04:48,815
+Terminal connections are checked on the
+actual occupied cells.
+
+74
+00:04:48,815 --> 00:04:52,510
+This turns a strategy table into a
+replayable certificate.
+
+75
+00:04:53,058 --> 00:04:57,243
+The search can also view the problem as a
+family of target sets.
+
+76
+00:04:57,243 --> 00:05:02,147
+On five by five, there are one hundred and
+six inclusion-minimal connecting
+
+77
+00:05:02,147 --> 00:05:06,921
+cell sets of size at most six. Red kills a
+target by occupying any of its
+
+78
+00:05:06,921 --> 00:05:07,314
+cells.
+
+79
+00:05:07,858 --> 00:05:12,304
+The certified central six-cell strategy was
+replayed through one hundred and
+
+80
+00:05:12,304 --> 00:05:15,872
+six thousand, eight hundred and twenty-six
+checked positions.
+
+81
+00:05:15,872 --> 00:05:18,505
+This counter summarises that retained
+replay.
+
+82
+00:05:18,505 --> 00:05:22,834
+It is not a live search, and the number
+counts positions where a certified
+
+83
+00:05:22,834 --> 00:05:23,770
+move was tested.
+
+84
+00:05:24,291 --> 00:05:26,506
+There is one rule detail to settle.
+
+85
+00:05:26,506 --> 00:05:31,252
+Under the continued-play definition, a long
+Blue connection does not finish
+
+86
+00:05:31,252 --> 00:05:36,061
+the short-path task. Play may continue
+until Blue makes a sufficiently short
+
+87
+00:05:36,061 --> 00:05:40,491
+path. Under the strict definition, the
+first connection ends the game.
+
+88
+00:05:41,024 --> 00:05:43,793
+The five-by-five value is six under both
+readings.
+
+89
+00:05:43,793 --> 00:05:47,336
+A separate strict certificate handles the
+first-connection rule.
+
+90
+00:05:47,336 --> 00:05:51,323
+So the correction is not explained away by
+choosing a different stopping
+
+91
+00:05:51,323 --> 00:05:55,088
+convention. The two definitions could still
+differ on larger boards.
+
+92
+00:05:55,617 --> 00:05:59,431
+On six by six, the stone budget is exactly
+ten.
+
+93
+00:05:59,431 --> 00:06:05,274
+Red can prevent a connection using nine or
+fewer Blue stones after every
+
+94
+00:06:05,274 --> 00:06:10,955
+opening. A certified Blue strategy, opening
+at row three, column four,
+
+95
+00:06:10,955 --> 00:06:13,065
+succeeds with at most ten.
+
+96
+00:06:13,584 --> 00:06:18,922
+Ten Blue moves mean at most nineteen moves
+altogether: Blue makes ten, and Red
+
+97
+00:06:18,922 --> 00:06:24,055
+moves in the nine gaps. The lower-bound
+defence shows why fewer Blue stones
+
+98
+00:06:24,055 --> 00:06:29,051
+cannot be guaranteed. This is a
+stone-budget statement, not a path-length
+
+99
+00:06:29,051 --> 00:06:29,736
+statement.
+
+100
+00:06:30,284 --> 00:06:34,860
+For path length on six by six, the
+certified statement is a lower bound of
+
+101
+00:06:34,860 --> 00:06:39,436
+eight. Every one of the thirty-six possible
+openings has a Red certificate
+
+102
+00:06:39,436 --> 00:06:42,404
+stopping all Blue paths of seven cells or
+fewer.
+
+103
+00:06:42,950 --> 00:06:47,697
+Those thirty-six seven-cell defence
+certificates account for twenty-two
+
+104
+00:06:47,697 --> 00:06:52,243
+million, seven hundred and eighty thousand,
+and ninety-seven checked
+
+105
+00:06:52,243 --> 00:06:57,056
+positions. Their completed replay records
+were recovered and reconciled.
+
+106
+00:06:57,056 --> 00:07:01,535
+This video does not claim that the large
+searches were rerun during
+
+107
+00:07:01,535 --> 00:07:02,270
+production.
+
+108
+00:07:02,817 --> 00:07:08,338
+A separate exhaustive search found a Blue
+strategy for a path of at most eight
+
+109
+00:07:08,338 --> 00:07:13,292
+cells. But that upper bound has no
+independently replayed certificate.
+
+110
+00:07:13,292 --> 00:07:18,671
+We therefore keep it visibly labelled
+search-only, rather than presenting an
+
+111
+00:07:18,671 --> 00:07:20,865
+exact certified value of eight.
+
+112
+00:07:21,384 --> 00:07:24,876
+Nor does that search settle the strict
+six-by-six value.
+
+113
+00:07:24,876 --> 00:07:29,241
+The retained bounds for the
+first-connection reading are eight through
+
+114
+00:07:29,241 --> 00:07:29,490
+ten.
+
+115
+00:07:29,490 --> 00:07:34,042
+On five by five both readings are resolved;
+on six by six an exact strict
+
+116
+00:07:34,042 --> 00:07:35,352
+value is not claimed.
+
+117
+00:07:35,880 --> 00:07:40,565
+Campbell introduced these measures and
+conjectured the small-board values in
+
+118
+00:07:40,565 --> 00:07:45,126
+two thousand and four. The certified
+five-by-five path value is six rather
+
+119
+00:07:45,126 --> 00:07:49,626
+than the proposed seven. It also
+contradicts the seven claimed in the two
+
+120
+00:07:49,626 --> 00:07:53,448
+thousand and twenty-six Casco, Pacifico and
+Sanhueza preprint.
+
+121
+00:07:53,980 --> 00:07:58,231
+The six-by-six stone value ten contradicts
+the proposed nine.
+
+122
+00:07:58,231 --> 00:08:03,666
+But it agrees with an earlier nineteen-move
+estimate from H Z Y's KataHex work
+
+123
+00:08:03,666 --> 00:08:09,032
+in two thousand and twenty-four. That prior
+estimate deserves credit; the new
+
+124
+00:08:09,032 --> 00:08:11,332
+evidence is the replayable proof.
+
+125
+00:08:11,880 --> 00:08:16,816
+The verification includes corrupted
+certificates that the checkers reject, as
+
+126
+00:08:16,816 --> 00:08:20,342
+well as valid controls. There is no Lean
+formalisation.
+
+127
+00:08:20,342 --> 00:08:25,215
+Confidence is high for the certified
+claims, conditional on the written game
+
+128
+00:08:25,215 --> 00:08:30,151
+reduction and independent checker, and more
+limited for the unreplayed search
+
+129
+00:08:30,151 --> 00:08:30,600
+result.
+
+130
+00:08:31,146 --> 00:08:34,705
+The lesson is threefold. A strategy can
+change its route.
+
+131
+00:08:34,705 --> 00:08:37,451
+A short final path can require extra
+stones.
+
+132
+00:08:37,451 --> 00:08:42,320
+And a search result becomes stronger
+evidence when a separate checker verifies
+
+133
+00:08:42,320 --> 00:08:45,066
+the strategy against every possible
+defence.
+
+134
+00:08:45,613 --> 00:08:50,246
+The certified results are six for the
+five-by-five path, seven for its stone
+
+135
+00:08:50,246 --> 00:08:54,940
+budget, ten for the six-by-six stone
+budget, and at least eight for its path.
+
+136
+00:08:54,940 --> 00:08:59,330
+Larger boards and the exact strict
+six-by-six value remain outside these
+
+137
+00:08:59,330 --> 00:09:00,061
+conclusions.
+
+138
+00:09:00,580 --> 00:09:05,647
+The paper, strategy evidence and editable
+animation accompany this video.
+
+139
+00:09:05,647 --> 00:09:10,714
+The prior-work search was bounded, so
+originality is stated with moderate
+
+140
+00:09:10,714 --> 00:09:15,851
+confidence. The diagrams replay retained
+examples and explain the checking
+
+141
+00:09:15,851 --> 00:09:18,628
+logic. Narration uses a synthetic voice.

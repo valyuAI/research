@@ -1,0 +1,9 @@
+random 0 9 pairing: alive=97 free=198
+random 1 9 pairing: alive=99 free=198
+random 2 9 pairing: alive=99 free=198
+steal 0 10 pairing: alive=96 free=196
+steal 1 9 pairing: alive=98 free=198
+steal 2 10 pairing: alive=96 free=196
+danger 0 11 pairing: alive=95 free=194
+danger 1 10 pairing: alive=96 free=196
+danger 2 10 pairing: alive=97 free=196

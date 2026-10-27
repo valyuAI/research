@@ -1,0 +1,13 @@
+{
+  "inspectedUtc": "2026-10-26T16:26:20.337455+00:00",
+  "passed": true,
+  "scope": [
+    "Full seven-scene480p preview contact sheet",
+    "ExactEnumeration layout preview contact sheet after spacing adjustment"
+  ],
+  "findings": [
+    "Clock covering, CRT shapes, binary copying, price inequality and finite/infinite scope are readable.",
+    "Four retained boards now have count labels separated from adjacent grid edges.",
+    "Exact counts and Q=32>=30 calculation preserved. Final full-resolution QA remains required."
+  ]
+}

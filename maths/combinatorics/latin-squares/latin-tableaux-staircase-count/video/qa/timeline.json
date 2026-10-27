@@ -1,0 +1,194 @@
+[
+  {
+    "id": "l01",
+    "start": 0.0,
+    "duration": 13.656,
+    "scene": "Rules"
+  },
+  {
+    "id": "l02",
+    "start": 14.033333333333331,
+    "duration": 14.016,
+    "scene": "Rules"
+  },
+  {
+    "id": "l03",
+    "start": 28.433333333333554,
+    "duration": 13.104,
+    "scene": "Rules"
+  },
+  {
+    "id": "l04",
+    "start": 41.933333333333636,
+    "duration": 15.864,
+    "scene": "Rules"
+  },
+  {
+    "id": "l05",
+    "start": 58.16666666666664,
+    "duration": 15.72,
+    "scene": "Rules"
+  },
+  {
+    "id": "l06",
+    "start": 74.26666666666628,
+    "duration": 16.152,
+    "scene": "Rules"
+  },
+  {
+    "id": "l07",
+    "start": 90.8,
+    "duration": 13.368,
+    "scene": "Grow"
+  },
+  {
+    "id": "l08",
+    "start": 104.56666666666666,
+    "duration": 13.512,
+    "scene": "Grow"
+  },
+  {
+    "id": "l09",
+    "start": 118.46666666666687,
+    "duration": 14.208,
+    "scene": "Grow"
+  },
+  {
+    "id": "l10",
+    "start": 133.0666666666671,
+    "duration": 13.416,
+    "scene": "Grow"
+  },
+  {
+    "id": "l11",
+    "start": 146.8666666666668,
+    "duration": 12.408,
+    "scene": "Grow"
+  },
+  {
+    "id": "l12",
+    "start": 159.66666666666657,
+    "duration": 13.656,
+    "scene": "Grow"
+  },
+  {
+    "id": "l13",
+    "start": 173.7,
+    "duration": 13.104,
+    "scene": "ForcedMiddle"
+  },
+  {
+    "id": "l14",
+    "start": 187.2,
+    "duration": 15.72,
+    "scene": "ForcedMiddle"
+  },
+  {
+    "id": "l15",
+    "start": 203.30000000000027,
+    "duration": 13.512,
+    "scene": "ForcedMiddle"
+  },
+  {
+    "id": "l16",
+    "start": 217.20000000000024,
+    "duration": 15.504,
+    "scene": "ForcedMiddle"
+  },
+  {
+    "id": "l17",
+    "start": 233.1,
+    "duration": 13.368,
+    "scene": "FourWays"
+  },
+  {
+    "id": "l18",
+    "start": 246.86666666666665,
+    "duration": 13.512,
+    "scene": "FourWays"
+  },
+  {
+    "id": "l19",
+    "start": 260.7666666666667,
+    "duration": 15.168,
+    "scene": "FourWays"
+  },
+  {
+    "id": "l20",
+    "start": 276.33333333333354,
+    "duration": 15.72,
+    "scene": "FourWays"
+  },
+  {
+    "id": "l21",
+    "start": 292.433333,
+    "duration": 12.96,
+    "scene": "Invariants"
+  },
+  {
+    "id": "l22",
+    "start": 305.7666663333333,
+    "duration": 13.512,
+    "scene": "Invariants"
+  },
+  {
+    "id": "l23",
+    "start": 319.66666633333347,
+    "duration": 14.208,
+    "scene": "Invariants"
+  },
+  {
+    "id": "l24",
+    "start": 334.26666633333355,
+    "duration": 14.952,
+    "scene": "Invariants"
+  },
+  {
+    "id": "l25",
+    "start": 349.6,
+    "duration": 16.32,
+    "scene": "Induction"
+  },
+  {
+    "id": "l26",
+    "start": 366.3,
+    "duration": 17.4,
+    "scene": "Induction"
+  },
+  {
+    "id": "l27",
+    "start": 384.066666666667,
+    "duration": 14.76,
+    "scene": "Induction"
+  },
+  {
+    "id": "l28",
+    "start": 399.19999999999993,
+    "duration": 16.752,
+    "scene": "Induction"
+  },
+  {
+    "id": "l29",
+    "start": 416.33333300000004,
+    "duration": 19.848,
+    "scene": "Scope"
+  },
+  {
+    "id": "l30",
+    "start": 436.5666663333334,
+    "duration": 17.76,
+    "scene": "Scope"
+  },
+  {
+    "id": "l31",
+    "start": 454.69999966666705,
+    "duration": 15.864,
+    "scene": "Scope"
+  },
+  {
+    "id": "l32",
+    "start": 470.93333300000006,
+    "duration": 15.408,
+    "scene": "Scope"
+  }
+]

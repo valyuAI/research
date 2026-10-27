@@ -1,0 +1,45 @@
+{
+  "verification": "PASS",
+  "arithmetic": "Exact Q(sqrt5) geometry and F1009 arithmetic; standard library only",
+  "geometry": {
+    "vertices": 60,
+    "edges": 90,
+    "facets": 32,
+    "strict_supporting_inequalities": 1740,
+    "exact_regular_faces": {
+      "triangles": 20,
+      "decagons": 12
+    },
+    "original_regular_pentagons": 12,
+    "identification": "phi*a+(phi-1)*b for each directed edge a->b of the standard dodecahedron; normalized truncation fraction1/(phi+2)"
+  },
+  "linear_and_obstruction": {
+    "gauge_coordinate_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "gauge_determinant_Qphi": [
+      "-4",
+      "0"
+    ],
+    "gauge_determinant_mod_p": 1005,
+    "jacobian_rank": 272,
+    "kernel_dimension": 4,
+    "left_nullspace_dimension": 4,
+    "quadratic_obstruction_coefficients_zero": 40,
+    "cubic_coefficients_reconstructed": 80
+  },
+  "direct_power_identities": 4,
+  "source_hashes": {
+    "modular-obstruction.json": "9a123fcbee80fd44ba706cbb757950956593a64a30af31e7ffdda2649ec6b3f1",
+    "pure-power-certificate.json": "b078221553b7a4f84f70a5fed156da8c5f782ef0023330c5af1433ce495fa1e6",
+    "cubic-obstruction.sing": "8532650d71c993ca8e739d8d90ed6021a7d76e0bb22a7d0ce3a3d4267f5885d5",
+    "independent_verification.py": "e1e687cd127a959cd1aebf66c4995956426d7810adff2c7e756f93bf6f152396"
+  },
+  "elapsed_seconds": 0.206,
+  "scope": "Source reconstruction and certificate arithmetic. Local-rigidity and characteristic-zero transfer are separate written deductions, not formalized here."
+}

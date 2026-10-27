@@ -1,0 +1,181 @@
+{
+  "about": "Presentation overlay for docs/collection.json. Adds plain-language summaries and formal-proof links; paths, titles, results and boundaries come from docs/collection.json. Rendered by tools/catalog.py.",
+  "releaseSnapshot": {
+    "manifest": "docs/artifact-hashes.json",
+    "commit": "f09202d87452ba66daae29a399c6d8974fd4ba78",
+    "changes": "public-release/release-changes.json",
+    "exclusions": "public-release/export-exclusions.json",
+    "publicPapers": "public-release/papers/manifest.json"
+  },
+  "findings": [
+    {
+      "id": "quartets",
+      "plain": "Evolutionary trees can be compared by how they arrange every group of four species. Any three fully resolved (binary) unrooted trees on 14 species must arrange some group of four identically, and 13 species are not enough. For any number of trees, the proven upper bound drops from a tower of four exponentials to a single exponential.",
+      "formal": [
+        {
+          "path": "formal/ValyuResearch/CommonQuartetPotential.lean",
+          "scope": "Sharp potential inequality and equality witness only"
+        }
+      ]
+    },
+    {
+      "id": "johnson",
+      "plain": "The 92 Johnson solids are the convex solids with regular polygon faces that are not Platonic, Archimedean, prisms or antiprisms. If every edge keeps its length and every face stays flat, which of them can still flex? All 92 are classified: 47 are locally rigid and 45 flex.",
+      "formal": []
+    },
+    {
+      "id": "qudit",
+      "plain": "Quantum error-correcting codes protect information stored in multi-level quantum systems. For linear stabilizer codes that correct any single error over a field with at least three elements, this determines exactly which code lengths are possible.",
+      "formal": []
+    },
+    {
+      "id": "acr",
+      "plain": "In some chemical networks one concentration takes the same value at every steady state, whatever the starting mixture. For networks whose reactions involve at most two molecules on each side, this finds the smallest networks, by dimension and by number of complexes, that combine that robustness with more than one stable state, and shows that three species already suffice.",
+      "formal": [
+        {
+          "path": "formal/ValyuResearch/AcrMultistability.lean",
+          "scope": "The two example networks, their steady states and robustness; not stability or the general lower bounds"
+        }
+      ]
+    },
+    {
+      "id": "covering",
+      "plain": "A covering system is a finite list of congruences that together catch every integer. None exists when the moduli are distinct, all at least 6, and all divide 2^a * 45. This answers a problem posed in a May 2026 preprint.",
+      "formal": []
+    },
+    {
+      "id": "penney",
+      "plain": "In Penney's game, each player picks a pattern and whoever's pattern appears first in a random sequence wins. For patterns of relative order in random numbers, moving the last symbol of any pattern of length three or more to the front gives a reply that wins more than half the time.",
+      "formal": []
+    },
+    {
+      "id": "colless",
+      "plain": "Colless-like indices measure how lopsided an evolutionary tree is. A 2018 conjecture said no whole-number weighting can make such an index zero exactly on perfectly symmetric trees. A short counting argument proves it.",
+      "formal": []
+    },
+    {
+      "id": "octagon",
+      "plain": "Symplectic billiards is a variant of billiards whose moves preserve area. Computer experiments suggested that every trajectory in a family of special octagons eventually repeats. This proves it, with an explicit bound on the period, and extends it to mirror-symmetric Hexhouses.",
+      "formal": []
+    },
+    {
+      "id": "ctwords",
+      "plain": "A square is a block written twice in a row. Relaxing 'the same block' to 'the same Cartesian-tree shape', explicit infinite binary and ternary words avoid all long squares of this kind, settling the remaining open entries of a 2026 table.",
+      "formal": []
+    },
+    {
+      "id": "graphs",
+      "plain": "The number of negative eigenvalues of a graph limits how large it can be once duplicate and isolated vertices are removed. With four negative eigenvalues the maximum is 30 vertices, the first open case of a conjectured bound.",
+      "formal": []
+    },
+    {
+      "id": "hex",
+      "plain": "In Hex, how short a winning path can the first player force, and with how few stones? Exhaustive search with replayable certificates settles several values on the 5x5 and 6x6 boards, including a shortest forced path of six cells on 5x5, below the conjectured seven.",
+      "formal": []
+    },
+    {
+      "id": "knots",
+      "plain": "The bridge number measures how simply a knot can be laid out in space. For 25 thirteen-crossing knots whose value was listed only as 3 or 4, finite certificates show it is exactly 4.",
+      "formal": []
+    },
+    {
+      "id": "social",
+      "plain": "A tournament rule picks a champion from round-robin results. How much can up to three teams gain by fixing the matches among themselves? For five to eight teams, the best rules that always crown an unbeaten team cap that gain at exactly 2/5.",
+      "formal": []
+    },
+    {
+      "id": "cactus",
+      "plain": "In a network of random jumps between states, how sensitive is long-run behaviour to a change in the rates? A conjectured topological bound holds for every cactus-shaped network, and a stronger proof method provably fails on more connected graphs.",
+      "formal": []
+    },
+    {
+      "id": "algebra",
+      "plain": "How many multiplications does it take to multiply in a small algebra over a finite field? For one basic algebra the exact count is found over every finite field. As a corollary, length-6 cyclic convolution over two elements needs exactly 12.",
+      "formal": []
+    },
+    {
+      "id": "ctln",
+      "plain": "Threshold-linear networks are simple models of neural circuits. A conjecture said stable activity can only sit on a special kind of clique. An exact 11-neuron counterexample works at the standard parameters used across the literature and is minimal under deleting neurons.",
+      "formal": []
+    },
+    {
+      "id": "tilings",
+      "plain": "The Heesch number counts how many complete rings of copies can surround a shape that cannot tile the plane. For small hexagon and square shapes with marked edges, 34 exact maxima are computed, with witnesses and checked proofs that no marking does better.",
+      "formal": []
+    },
+    {
+      "id": "tictactoe",
+      "plain": "In Maker-Breaker tic-tac-toe on a 7x7x7 cube, the second player can always stop the first from claiming a full line. That was already proved. This gives a shorter certificate based on matching theory and repairs omissions in the published case analysis.",
+      "formal": [
+        {
+          "path": "formal/ValyuResearch/CubicTicTacToe.lean",
+          "scope": "Abstract matching lemmas only; not the board enumeration or the game conclusion"
+        }
+      ]
+    },
+    {
+      "id": "latin",
+      "plain": "A Latin tableau fills a staircase-like shape so that each row uses each number once and no column repeats. This independently checks the count 9*4^(k-3) for one family. The same formula was already proved publicly, so no priority is claimed.",
+      "formal": []
+    },
+    {
+      "id": "elasticity",
+      "plain": "Can the full stiffness of an anisotropic material be recovered from how fast waves travel through it? For generic materials, wave speeds in eleven generic directions determine all 21 stiffness parameters, resolving a published conjecture.",
+      "formal": [
+        {
+          "path": "formal/ValyuResearch/Elasticity.lean",
+          "scope": "Seven 3x3 matrix lemmas used in the proof"
+        },
+        {
+          "path": "physics/mechanics/elasticity/generic-stiffness-recovery/verification/lean-certificate-checks/",
+          "scope": "Eleven minor determinant identities, in a separate package"
+        }
+      ]
+    },
+    {
+      "id": "halesjewett",
+      "plain": "Hales-Jewett numbers measure how large a grid of words must be before every two-colouring contains a forced line pattern. For an off-diagonal version, the answer is p+1 whenever p is prime, and the complete main theorem is checked in Lean.",
+      "formal": [
+        {
+          "path": "formal/ValyuResearch/HalesJewett.lean",
+          "scope": "Complete prime-successor theorem"
+        }
+      ]
+    },
+    {
+      "id": "dodecahedron",
+      "plain": "If the truncated dodecahedron keeps every edge length and every face flat, can it wobble? Exact finite-field certificates prove that it cannot, settling a case left open in a 2026 study of polytope deformations.",
+      "formal": []
+    },
+    {
+      "id": "entropy",
+      "plain": "Entropy production measures how far a system is from equilibrium. A published conjecture proposed bounding it from waiting times under a forward protocol. A smooth three-state example has zero entropy production but a strictly positive estimate, so the conjectured bound fails as stated.",
+      "formal": []
+    },
+    {
+      "id": "cubicchem",
+      "plain": "How many equilibria can a chemical reaction network have on one conservation class? An explicit family with n species attains the sharp maximum of n for every n of at least 2, using reactions whose inputs involve at most three molecules, the minimum possible.",
+      "formal": []
+    },
+    {
+      "id": "restart",
+      "plain": "Restarting a random search can make it faster. For one-dimensional Brownian search, conjugate restart schedules are globally optimal and unique, with a converse for finite Markov chains. The kernel inequality and the exponential conjugate pair are prior work.",
+      "formal": [
+        {
+          "path": "formal/ValyuResearch/Resetting.lean",
+          "scope": "Finite symmetric-kernel identity and minimum, and an exact three-state counterexample"
+        }
+      ]
+    },
+    {
+      "id": "lv",
+      "plain": "Lotka-Volterra equations model interacting species. This is a self-contained proof that generic tree-shaped systems are determined up to linear equivalence. An earlier withdrawn preprint announced a closely matching result, so it is a verification note, not a priority claim.",
+      "formal": [
+        {
+          "path": "formal/ValyuResearch/LotkaVolterra.lean",
+          "scope": "Three-vertex path obstruction only"
+        }
+      ]
+    }
+  ]
+}

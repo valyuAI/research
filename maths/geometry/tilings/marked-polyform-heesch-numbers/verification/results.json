@@ -1,0 +1,2067 @@
+{
+ "definition": "h(P) = max over single-slot markings with #b != #n of the lattice Heesch number (strict coronas, grid-aligned copies)",
+ "tiles": [
+  {
+   "grid": "hex",
+   "name": "monohex",
+   "cells": [
+    [
+     0,
+     0
+    ]
+   ],
+   "h": 3,
+   "witness": "witnesses/hex1_k3.json",
+   "upper_bound": {
+    "name": "hex_mono_k4",
+    "grid": "hex",
+    "cells": [
+     [
+      0,
+      0
+     ]
+    ],
+    "k": 4,
+    "placements": 1524,
+    "nvars": 21147,
+    "nclauses": 97591,
+    "cnf_sha256": "a6bf4b96295652aa3fd1da358048039358702afc5e892efa52a4ac68f22f5ed2",
+    "cadical_rc": 20,
+    "cadical_seconds": 4,
+    "proof_bytes": 909037,
+    "solver_unsat": true,
+    "proof_sha256": "5a8bec172f60c2c3ff08fc52df08d9f1b7feb48405a37ea446a7d36aea23059c",
+    "drat_trim_seconds": 3,
+    "drat_trim_verification_time": 2.558,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/hex_mono_k4.log",
+    "encoder_command": "marked_syn.py hex '[[0, 0]]' --k 4 --imb 1 --atleast --dimacs hex_mono_k4.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "hex",
+   "name": "dihex",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "h": 4,
+   "witness": "witnesses/hex2_k4.json",
+   "upper_bound": {
+    "name": "hex_di_k5",
+    "grid": "hex",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "k": 5,
+    "placements": 8652,
+    "nvars": 148738,
+    "nclauses": 842676,
+    "cnf_sha256": "871080aeede6b5ac1580bc5f88bb01c440bb8bfb699bfb78cc0157a6add1f5e5",
+    "cadical_rc": 20,
+    "cadical_seconds": 41,
+    "proof_bytes": 15821091,
+    "solver_unsat": true,
+    "proof_sha256": "2728c4b7c81990f0b5b1fa616d8a41d42fa0da0896e801aafebba3adaa41087b",
+    "drat_trim_seconds": 80,
+    "drat_trim_verification_time": 80.154,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/hex_di_k5.log",
+    "encoder_command": "marked_syn.py hex '[[0, 0], [1, 0]]' --k 5 --imb 1 --atleast --dimacs hex_di_k5.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "hex",
+   "name": "straight trihex",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "h": 4,
+   "witness": "witnesses/hex3_line_k4.json",
+   "upper_bound": {
+    "name": "hex_line3_k5",
+    "grid": "hex",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ]
+    ],
+    "k": 5,
+    "placements": 19380,
+    "nvars": 354150,
+    "nclauses": 2300354,
+    "cnf_sha256": "2499b422f03f4fa0bee8e83cef7a9c86d15e112c9dc61617a4e0de4129bb1b05",
+    "cadical_rc": 20,
+    "cadical_seconds": 249,
+    "proof_bytes": 57151782,
+    "solver_unsat": true,
+    "proof_sha256": "a91f89a2f53e698b42e9cbdb457fb1e20806e17f608282c338ebbe00d655c6e4",
+    "drat_trim_seconds": 680,
+    "drat_trim_verification_time": 679.561,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/hex_line3_k5.log",
+    "encoder_command": "marked_syn.py hex '[[0, 0], [0, 1], [0, 2]]' --k 5 --imb 1 --atleast --dimacs hex_line3_k5.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "hex",
+   "name": "bent trihex",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     -1
+    ]
+   ],
+   "h": 3,
+   "witness": "witnesses/hex3_bent.json",
+   "upper_bound": {
+    "name": "hex_bent3_k4",
+    "grid": "hex",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      -1
+     ]
+    ],
+    "k": 4,
+    "placements": 11604,
+    "nvars": 186413,
+    "nclauses": 1215829,
+    "cnf_sha256": "898a55ba68e830a6b652f10014cf2d4db20926b109b3e7c333bd23e9174b70a3",
+    "cadical_rc": 20,
+    "cadical_seconds": 442,
+    "proof_bytes": 44567330,
+    "solver_unsat": true,
+    "proof_sha256": "2fb6a5e4852f34a90b6f3b1f53707f29810100a3b394fc5c89509ca1c300e263",
+    "drat_trim_seconds": 519,
+    "drat_trim_verification_time": 518.871,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/hex_bent3_k4.log",
+    "encoder_command": "marked_syn.py hex '[[0, 0], [0, 1], [1, -1]]' --k 4 --imb 1 --atleast --dimacs hex_bent3_k4.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "hex",
+   "name": "triangle trihex",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "h": 2,
+   "witness": "witnesses/hex3_triangle.json",
+   "upper_bound": {
+    "name": "hex_tri3_k3",
+    "grid": "hex",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "k": 3,
+    "placements": 4404,
+    "nvars": 62216,
+    "nclauses": 380082,
+    "cnf_sha256": "fb67447cf87acf2a4eb06aeb3da1208c8a4556c0ab85f1d4decac753ebff54aa",
+    "cadical_rc": 20,
+    "cadical_seconds": 170,
+    "proof_bytes": 13413998,
+    "solver_unsat": true,
+    "proof_sha256": "9c20348f480aa0a2c910284a8654f42bec401b99458543d45a3986beda4d094c",
+    "drat_trim_seconds": 206,
+    "drat_trim_verification_time": 206.138,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/hex_tri3_k3.log",
+    "encoder_command": "marked_syn.py hex '[[0, 0], [0, 1], [1, 0]]' --k 3 --imb 1 --atleast --dimacs hex_tri3_k3.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "hex",
+   "name": "straight tetrahex",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "h": 5,
+   "witness": "witnesses/hex4_line_k5.json",
+   "upper_bound": {
+    "name": "line4_k6",
+    "grid": "hex",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      3,
+      0
+     ]
+    ],
+    "k": 6,
+    "placements": 44364,
+    "nvars": 947735,
+    "nclauses": 6895353,
+    "cnf_sha256": "dab49e8762d1bcb441b6257a81803efa8855e99d76327376e8ce56a39a06660f",
+    "proof_bytes": 257547287,
+    "cadical_seconds": 3920,
+    "cadical_time_basis": "wall time between logged start and watcher observation of exit",
+    "solver_unsat": true,
+    "proof_sha256": "a40c68a34a7d7f90006c72d3e94467c1292007aa2fe071bc368ad586c9c3d434",
+    "drat_trim_seconds": 3446,
+    "drat_trim_verification_time": 3445.971,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/line4_k6.log",
+    "encoder_command": "marked_syn.py hex '[[0, 0], [1, 0], [2, 0], [3, 0]]' --k 6 --imb 1 --atleast --dimacs line4_k6.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "hex",
+   "name": "tetrahex 1",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     -1
+    ]
+   ],
+   "h": 2,
+   "witness": "witnesses/hex4_t1.json",
+   "upper_bound": {
+    "name": "hex_t1_k3",
+    "grid": "hex",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      -1
+     ]
+    ],
+    "k": 3,
+    "placements": 14412,
+    "nvars": 218300,
+    "nclauses": 1606698,
+    "cnf_sha256": "6caac3d1fdd7229f573ef9f7cac5765a90cf0571836786caff684c76e5c23446",
+    "cadical_rc": 20,
+    "cadical_seconds": 381,
+    "proof_bytes": 81622257,
+    "solver_unsat": true,
+    "proof_sha256": "76decd8a02299f77f28d7bea3a581b4cc47290405f34d64892cc7592f82938a4",
+    "drat_trim_seconds": 413,
+    "drat_trim_verification_time": 412.379,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/hex_t1_k3.log",
+    "encoder_command": "marked_syn.py hex '[[0, 0], [0, 1], [0, 2], [1, -1]]' --k 3 --imb 1 --atleast --dimacs hex_t1_k3.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "hex",
+   "name": "tetrahex 2",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "h": 3,
+   "witness": "witnesses/hex4_t2.json",
+   "upper_bound": {
+    "name": "hex_t2_k4",
+    "grid": "hex",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "k": 4,
+    "placements": 13980,
+    "nvars": 241059,
+    "nclauses": 1665581,
+    "cnf_sha256": "bdeff318c32a5c51dec2646bab0a5e076b2d5f9ca66086ce3d56f8d389422762",
+    "cadical_rc": 20,
+    "cadical_seconds": 232,
+    "proof_bytes": 49884244,
+    "solver_unsat": true,
+    "proof_sha256": "8755ad8382e303e1c1dd4d82beff96c9f7bc522ccb27f74a026ecf39d5da6e94",
+    "drat_trim_seconds": 280,
+    "drat_trim_verification_time": 280.71,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/hex_t2_k4.log",
+    "encoder_command": "marked_syn.py hex '[[0, 0], [0, 1], [0, 2], [1, 0]]' --k 4 --imb 1 --atleast --dimacs hex_t2_k4.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "hex",
+   "name": "tetrahex 3",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     -2
+    ],
+    [
+     1,
+     -1
+    ]
+   ],
+   "h": 2,
+   "witness": "witnesses/hex4_t3.json",
+   "upper_bound": {
+    "name": "hex_t3_k3",
+    "grid": "hex",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      -2
+     ],
+     [
+      1,
+      -1
+     ]
+    ],
+    "k": 3,
+    "placements": 14412,
+    "nvars": 217718,
+    "nclauses": 1605756,
+    "cnf_sha256": "fbec1f7104b644929bed586b7aaeb6058330b00a9c93f4b557a1eeb765eb0abf",
+    "cadical_rc": 20,
+    "cadical_seconds": 345,
+    "proof_bytes": 64916624,
+    "solver_unsat": true,
+    "proof_sha256": "f5d87e169757bc424dd3ce88de1cb55b91096afbc1d7fea26c20f284ce10e679",
+    "drat_trim_seconds": 440,
+    "drat_trim_verification_time": 440.537,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/hex_t3_k3.log",
+    "encoder_command": "marked_syn.py hex '[[0, 0], [0, 1], [1, -2], [1, -1]]' --k 3 --imb 1 --atleast --dimacs hex_t3_k3.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "hex",
+   "name": "tetrahex 4",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     -1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "h": 2,
+   "witness": "witnesses/hex4_t4.json",
+   "upper_bound": {
+    "name": "hex_t4_k3",
+    "grid": "hex",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "k": 3,
+    "placements": 8076,
+    "nvars": 121330,
+    "nclauses": 801306,
+    "cnf_sha256": "cf9e57bb0c6f9cee545b0387d5a56e3a68505b60b49d2206e4e3eb455c5809cf",
+    "cadical_rc": 20,
+    "cadical_seconds": 41,
+    "proof_bytes": 30986180,
+    "solver_unsat": true,
+    "proof_sha256": "89afd06d271548bb541d1fd809ccca3bc2b58370a9de25ce58c352bf251cf306",
+    "drat_trim_seconds": 61,
+    "drat_trim_verification_time": 60.766,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/hex_t4_k3.log",
+    "encoder_command": "marked_syn.py hex '[[0, 0], [0, 1], [1, -1], [1, 0]]' --k 3 --imb 1 --atleast --dimacs hex_t4_k3.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "hex",
+   "name": "tetrahex 5",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     -1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "h": 1,
+   "witness": "witnesses/hex4_t5.json",
+   "upper_bound": {
+    "name": "hex_t5_k2",
+    "grid": "hex",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "k": 2,
+    "placements": 6204,
+    "nvars": 82057,
+    "nclauses": 614375,
+    "cnf_sha256": "f7c57e8ef9a84a072af5290b9f07da4a12f7f935de1b30c1976cdc99cc099656",
+    "cadical_rc": 20,
+    "cadical_seconds": 25,
+    "proof_bytes": 16381964,
+    "solver_unsat": true,
+    "proof_sha256": "de04d77898816d2afdd2067210ac34c1e4634f439b2abe9d0571c951c6464187",
+    "drat_trim_seconds": 33,
+    "drat_trim_verification_time": 32.808,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/hex_t5_k2.log",
+    "encoder_command": "marked_syn.py hex '[[0, 0], [0, 1], [1, -1], [1, 1]]' --k 2 --imb 1 --atleast --dimacs hex_t5_k2.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "hex",
+   "name": "tetrahex 6",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     -2
+    ],
+    [
+     1,
+     -1
+    ],
+    [
+     2,
+     -1
+    ]
+   ],
+   "h": 1,
+   "witness": "witnesses/hex4_t6.json",
+   "upper_bound": {
+    "name": "hex_t6_k2",
+    "grid": "hex",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      -2
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      2,
+      -1
+     ]
+    ],
+    "k": 2,
+    "placements": 5196,
+    "nvars": 68989,
+    "nclauses": 514805,
+    "cnf_sha256": "a8975e7c6d8ea4e837100f73b5c8345e0476c5f497bc2ce85e5cc8f86608adb5",
+    "cadical_rc": 20,
+    "cadical_seconds": 56,
+    "proof_bytes": 26529810,
+    "solver_unsat": true,
+    "proof_sha256": "88d8bcc83ff6403512c09e89e454d466204c06ecd4bf239401a228c3334314c2",
+    "drat_trim_seconds": 70,
+    "drat_trim_verification_time": 70.257,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/hex_t6_k2.log",
+    "encoder_command": "marked_syn.py hex '[[0, 0], [1, -2], [1, -1], [2, -1]]' --k 2 --imb 1 --atleast --dimacs hex_t6_k2.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "hex",
+   "name": "straight pentahex",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "h": 5,
+   "witness": "witnesses/hex5_line_k5.json",
+   "upper_bound": {
+    "name": "line5_k6",
+    "grid": "hex",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      4,
+      0
+     ]
+    ],
+    "k": 6,
+    "placements": 69780,
+    "nvars": 1562333,
+    "nclauses": 12387835,
+    "cnf_sha256": "d3f64fab08cbb0bd7e3d4bba14ac73bb4fa4a6a09688812682b5e509ff7fa171",
+    "proof_bytes": 743985765,
+    "cadical_seconds": 8597,
+    "cadical_time_basis": "wall time between logged start and watcher observation of exit",
+    "solver_unsat": true,
+    "proof_sha256": "610841aa36c7fa8a76ec6e9e7e6af670bebaae2198f14b08ee2d0c2fb393006c",
+    "drat_trim_seconds": 4379,
+    "drat_trim_verification_time": 4378.861,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/line5_k6.log",
+    "encoder_command": "marked_syn.py hex '[[0, 0], [1, 0], [2, 0], [3, 0], [4, 0]]' --k 6 --imb 1 --atleast --dimacs line5_k6.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "sq",
+   "name": "1-omino sq00",
+   "cells": [
+    [
+     0,
+     0
+    ]
+   ],
+   "h": 1,
+   "witness": "witnesses/sq00_k1.json",
+   "upper_bound": {
+    "name": "dec_sq00_k2",
+    "grid": "sq",
+    "cells": [
+     [
+      0,
+      0
+     ]
+    ],
+    "k": 2,
+    "placements": 552,
+    "nvars": 5417,
+    "nclauses": 21243,
+    "cnf_sha256": "dca29234e5e756637efb74ba1a5238862813f3cb97bda7f1141adb31aa40c33e",
+    "cadical_rc": 20,
+    "cadical_seconds": 0,
+    "proof_bytes": 161714,
+    "solver_unsat": true,
+    "proof_sha256": "443f521bc808e6c4585347ab641979d7b4c30f82df99af4141d8e91d896ef233",
+    "drat_trim_seconds": 1,
+    "drat_trim_verification_time": 0.448,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/dec_sq00_k2.log",
+    "encoder_command": "marked_syn.py sq '[[0, 0]]' --k 2 --imb 1 --atleast --dimacs dec_sq00_k2.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "sq",
+   "name": "2-omino sq01",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "h": 2,
+   "witness": "witnesses/sq01_k2.json",
+   "upper_bound": {
+    "name": "dec_sq01_k3",
+    "grid": "sq",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ]
+    ],
+    "k": 3,
+    "placements": 3208,
+    "nvars": 42184,
+    "nclauses": 200356,
+    "cnf_sha256": "38d471e067b7565e590e72d73e54db55603aaaf3a9605f092af37ca2409e5646",
+    "cadical_rc": 20,
+    "cadical_seconds": 2,
+    "proof_bytes": 2033274,
+    "solver_unsat": true,
+    "proof_sha256": "74b688ac42fffa5fe43c69f6024323c7b2190c065e612886938a7f6616eb78b9",
+    "drat_trim_seconds": 3,
+    "drat_trim_verification_time": 2.958,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/dec_sq01_k3.log",
+    "encoder_command": "marked_syn.py sq '[[0, 0], [0, 1]]' --k 3 --imb 1 --atleast --dimacs dec_sq01_k3.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "sq",
+   "name": "3-omino sq02",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ]
+   ],
+   "h": 2,
+   "witness": "witnesses/sq02_k2.json",
+   "upper_bound": {
+    "name": "dec_sq02_k3",
+    "grid": "sq",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ]
+    ],
+    "k": 3,
+    "placements": 6632,
+    "nvars": 94530,
+    "nclauses": 503460,
+    "cnf_sha256": "626845fca36ec6c9274e62e0c867f4f3f76e2a997beb4822482354362f2ffe7d",
+    "cadical_rc": 20,
+    "cadical_seconds": 11,
+    "proof_bytes": 6659115,
+    "solver_unsat": true,
+    "proof_sha256": "03f187940312ced9488db81c97ae9c2ac25825af9d5c16c47478f6a6fe36d4a2",
+    "drat_trim_seconds": 19,
+    "drat_trim_verification_time": 19.196,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/dec_sq02_k3.log",
+    "encoder_command": "marked_syn.py sq '[[0, 0], [0, 1], [0, 2]]' --k 3 --imb 1 --atleast --dimacs dec_sq02_k3.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "sq",
+   "name": "3-omino sq03",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "h": 1,
+   "witness": "witnesses/sq03_k1.json",
+   "upper_bound": {
+    "name": "dec_sq03_k2",
+    "grid": "sq",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "k": 2,
+    "placements": 2792,
+    "nvars": 33641,
+    "nclauses": 177031,
+    "cnf_sha256": "05dbc1d09e9128cbe641a83b47a6cc06a4d51271ecc50eb8f94cce4b4660ddde",
+    "cadical_rc": 20,
+    "cadical_seconds": 2,
+    "proof_bytes": 1948729,
+    "solver_unsat": true,
+    "proof_sha256": "160678de8a622a5d9ab5d3e26fd031b9b55ad410a76f702d499130d8c4e11f0c",
+    "drat_trim_seconds": 4,
+    "drat_trim_verification_time": 3.016,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/dec_sq03_k2.log",
+    "encoder_command": "marked_syn.py sq '[[0, 0], [0, 1], [1, 0]]' --k 2 --imb 1 --atleast --dimacs dec_sq03_k2.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "sq",
+   "name": "4-omino sq04",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "h": 3,
+   "witness": "witnesses/sq04_k3.json",
+   "upper_bound": {
+    "name": "sq_b04_k4",
+    "grid": "sq",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ]
+    ],
+    "k": 4,
+    "placements": 16616,
+    "nvars": 288869,
+    "nclauses": 1717113,
+    "cnf_sha256": "9ea9e0f2380678998f7c7713298067b27585aa8577b29aa8c2d3766f9f52be28",
+    "cadical_rc": 20,
+    "cadical_seconds": 62,
+    "proof_bytes": 30033011,
+    "solver_unsat": true,
+    "proof_sha256": "0a86bd95e1bd537f43e648a731f140864c5c1e5376b5dadd367be8412670d9bd",
+    "drat_trim_seconds": 212,
+    "drat_trim_verification_time": 212.094,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/sq_b04_k4.log",
+    "encoder_command": "marked_syn.py sq '[[0, 0], [0, 1], [0, 2], [0, 3]]' --k 4 --imb 1 --atleast --dimacs sq_b04_k4.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "sq",
+   "name": "4-omino sq05",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "h": 2,
+   "witness": "witnesses/sq05_k2.json",
+   "upper_bound": {
+    "name": "dec_sq05_k3",
+    "grid": "sq",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "k": 3,
+    "placements": 7592,
+    "nvars": 115664,
+    "nclauses": 674996,
+    "cnf_sha256": "7baa8cb115cbdad0e53159128615c9c5e48a73f6e7404d053152ac260a0e8980",
+    "cadical_rc": 20,
+    "cadical_seconds": 12,
+    "proof_bytes": 9959686,
+    "solver_unsat": true,
+    "proof_sha256": "30f508a916427e4d4cc4be3bd3faeaec08cb77ba18658f7ea3278f74c4a15af8",
+    "drat_trim_seconds": 27,
+    "drat_trim_verification_time": 26.99,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/dec_sq05_k3.log",
+    "encoder_command": "marked_syn.py sq '[[0, 0], [0, 1], [0, 2], [1, 0]]' --k 3 --imb 1 --atleast --dimacs dec_sq05_k3.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "sq",
+   "name": "4-omino sq06",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "h": 1,
+   "witness": "witnesses/sq06_k1.json",
+   "upper_bound": {
+    "name": "dec_sq06_k2",
+    "grid": "sq",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "k": 2,
+    "placements": 4136,
+    "nvars": 54859,
+    "nclauses": 313963,
+    "cnf_sha256": "afd8911947d713ce5ecb3c54133b7bc85b5310e13bc99e2942795830ca064701",
+    "cadical_rc": 20,
+    "cadical_seconds": 6,
+    "proof_bytes": 4100694,
+    "solver_unsat": true,
+    "proof_sha256": "cdd77e246d26daaae12e7857f392026b521e1456e49a153c7a0c224c6c48beb5",
+    "drat_trim_seconds": 8,
+    "drat_trim_verification_time": 8.004,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/dec_sq06_k2.log",
+    "encoder_command": "marked_syn.py sq '[[0, 0], [0, 1], [0, 2], [1, 1]]' --k 2 --imb 1 --atleast --dimacs dec_sq06_k2.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "sq",
+   "name": "4-omino sq07",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     -1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "h": 1,
+   "witness": "witnesses/sq07_k1.json",
+   "upper_bound": {
+    "name": "dec_sq07_k2",
+    "grid": "sq",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "k": 2,
+    "placements": 4744,
+    "nvars": 62171,
+    "nclauses": 358935,
+    "cnf_sha256": "ed547572afe80f2d802ce5a9e43babb4aa44e5c94b8e8144714983af2b3bc724",
+    "cadical_rc": 20,
+    "cadical_seconds": 6,
+    "proof_bytes": 4496284,
+    "solver_unsat": true,
+    "proof_sha256": "a8e0ffb2617b3f8b3d797506a50f01de77983da2a7abe5192c64dea667d82c34",
+    "drat_trim_seconds": 10,
+    "drat_trim_verification_time": 9.603,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/dec_sq07_k2.log",
+    "encoder_command": "marked_syn.py sq '[[0, 0], [0, 1], [1, -1], [1, 0]]' --k 2 --imb 1 --atleast --dimacs dec_sq07_k2.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "sq",
+   "name": "4-omino sq08",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "h": 1,
+   "witness": "witnesses/sq08_k1.json",
+   "upper_bound": {
+    "name": "dec_sq08_k2",
+    "grid": "sq",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "k": 2,
+    "placements": 2792,
+    "nvars": 36629,
+    "nclauses": 194175,
+    "cnf_sha256": "f946a4b3e638f8edad140b16d650164ae130cb9f19ae525e97b07ff68de619e7",
+    "cadical_rc": 20,
+    "cadical_seconds": 3,
+    "proof_bytes": 2529246,
+    "solver_unsat": true,
+    "proof_sha256": "61d86a4cd2ec624d29f29d1966f1622a3c48d730f88c3b341329b6c52bb54656",
+    "drat_trim_seconds": 5,
+    "drat_trim_verification_time": 4.718,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/dec_sq08_k2.log",
+    "encoder_command": "marked_syn.py sq '[[0, 0], [0, 1], [1, 0], [1, 1]]' --k 2 --imb 1 --atleast --dimacs dec_sq08_k2.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "sq",
+   "name": "5-omino sq09",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     4
+    ]
+   ],
+   "h": 3,
+   "witness": "witnesses/sq09_k3.json",
+   "upper_bound": {
+    "name": "sq_b09_k4",
+    "grid": "sq",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      4
+     ]
+    ],
+    "k": 4,
+    "placements": 25192,
+    "nvars": 463951,
+    "nclauses": 2960137,
+    "cnf_sha256": "f6fdcbae901e22fd7d776bbfe45e14fd419af0977d5f14c0a31b24c6d6b6ae12",
+    "cadical_rc": 20,
+    "cadical_seconds": 136,
+    "proof_bytes": 58430282,
+    "solver_unsat": true,
+    "proof_sha256": "7ac2cf8c88659713e811ca946d9d08138825d893e149bd0a55024a458015bebf",
+    "drat_trim_seconds": 546,
+    "drat_trim_verification_time": 545.933,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/sq_b09_k4.log",
+    "encoder_command": "marked_syn.py sq '[[0, 0], [0, 1], [0, 2], [0, 3], [0, 4]]' --k 4 --imb 1 --atleast --dimacs sq_b09_k4.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "sq",
+   "name": "5-omino sq10",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "h": 1,
+   "witness": "witnesses/sq10_k1.json",
+   "upper_bound": {
+    "name": "dec_sq10_k2",
+    "grid": "sq",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "k": 2,
+    "placements": 7720,
+    "nvars": 110009,
+    "nclauses": 679287,
+    "cnf_sha256": "4a3bffb4c5ddd9c522050f748dfa21a2d8e6760a16bea79096c6562266989155",
+    "cadical_rc": 20,
+    "cadical_seconds": 20,
+    "proof_bytes": 9702752,
+    "solver_unsat": true,
+    "proof_sha256": "1ca580645783bd2bf639594414c3c046b44685b79de6a8dc5d8a3d8571567698",
+    "drat_trim_seconds": 30,
+    "drat_trim_verification_time": 29.222,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/dec_sq10_k2.log",
+    "encoder_command": "marked_syn.py sq '[[0, 0], [0, 1], [0, 2], [0, 3], [1, 0]]' --k 2 --imb 1 --atleast --dimacs dec_sq10_k2.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "sq",
+   "name": "5-omino sq11",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "h": 1,
+   "witness": "witnesses/sq11_k1.json",
+   "upper_bound": {
+    "name": "dec_sq11_k2",
+    "grid": "sq",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "k": 2,
+    "placements": 7080,
+    "nvars": 101205,
+    "nclauses": 623499,
+    "cnf_sha256": "449ff3c74ad9830c0903c75b39eb7676cef36ba6f8ef1c2d5f3e761d2a64d41d",
+    "cadical_rc": 20,
+    "cadical_seconds": 14,
+    "proof_bytes": 8325652,
+    "solver_unsat": true,
+    "proof_sha256": "ee7a05aa5c5296f298e14e633527a77865001255d5ee3be42613dd7e5c8c384f",
+    "drat_trim_seconds": 20,
+    "drat_trim_verification_time": 19.991,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/dec_sq11_k2.log",
+    "encoder_command": "marked_syn.py sq '[[0, 0], [0, 1], [0, 2], [0, 3], [1, 1]]' --k 2 --imb 1 --atleast --dimacs dec_sq11_k2.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "sq",
+   "name": "5-omino sq12",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     -1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "h": 1,
+   "witness": "witnesses/sq12_k1.json",
+   "upper_bound": {
+    "name": "dec_sq12_k2",
+    "grid": "sq",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "k": 2,
+    "placements": 7720,
+    "nvars": 108969,
+    "nclauses": 677411,
+    "cnf_sha256": "47c2f6b634e935fdeffcd170240e45edd1f8cefbcce1592e4ce6fa2228b7349f",
+    "cadical_rc": 20,
+    "cadical_seconds": 20,
+    "proof_bytes": 9532458,
+    "solver_unsat": true,
+    "proof_sha256": "92c66e6b0d9c83971c7c5bf5807c94955d3d6cfd2a502b81df92478e31a4d7a6",
+    "drat_trim_seconds": 55,
+    "drat_trim_verification_time": 54.451,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/dec_sq12_k2.log",
+    "encoder_command": "marked_syn.py sq '[[0, 0], [0, 1], [0, 2], [1, -1], [1, 0]]' --k 2 --imb 1 --atleast --dimacs dec_sq12_k2.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "sq",
+   "name": "5-omino sq13",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "h": 1,
+   "witness": "witnesses/sq13_k1.json",
+   "upper_bound": {
+    "name": "dec_sq13_k2",
+    "grid": "sq",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "k": 2,
+    "placements": 4744,
+    "nvars": 67287,
+    "nclauses": 387975,
+    "cnf_sha256": "201908068809e2f1c201edbcf86a205f3d0c95d194d8661f6905cdccbb842a63",
+    "cadical_rc": 20,
+    "cadical_seconds": 10,
+    "proof_bytes": 5522567,
+    "solver_unsat": true,
+    "proof_sha256": "3d80ad1eacccc387f9de2360f4b9e837afe4ffe16179c03bad6c51ac1bad9176",
+    "drat_trim_seconds": 14,
+    "drat_trim_verification_time": 13.845,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/dec_sq13_k2.log",
+    "encoder_command": "marked_syn.py sq '[[0, 0], [0, 1], [0, 2], [1, 0], [1, 1]]' --k 2 --imb 1 --atleast --dimacs dec_sq13_k2.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "sq",
+   "name": "5-omino sq14",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "h": 1,
+   "witness": "witnesses/sq14_k1.json",
+   "upper_bound": {
+    "name": "dec_sq14_k2",
+    "grid": "sq",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "k": 2,
+    "placements": 4744,
+    "nvars": 68149,
+    "nclauses": 418107,
+    "cnf_sha256": "7a12862e389c2af243532c1d4f7eebc9ef427b30ae4002bb0a9506eb39ffc32c",
+    "cadical_rc": 20,
+    "cadical_seconds": 6,
+    "proof_bytes": 4732693,
+    "solver_unsat": true,
+    "proof_sha256": "ccfc8005b2728ac4b981f1f1bf67260fcfd3605f75685483ff2b0edcef7f4b99",
+    "drat_trim_seconds": 9,
+    "drat_trim_verification_time": 9.552,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/dec_sq14_k2.log",
+    "encoder_command": "marked_syn.py sq '[[0, 0], [0, 1], [0, 2], [1, 0], [1, 2]]' --k 2 --imb 1 --atleast --dimacs dec_sq14_k2.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "sq",
+   "name": "5-omino sq15",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "h": 1,
+   "witness": "witnesses/sq15_k1.json",
+   "upper_bound": {
+    "name": "dec_sq15_k2",
+    "grid": "sq",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "k": 2,
+    "placements": 6568,
+    "nvars": 92809,
+    "nclauses": 576207,
+    "cnf_sha256": "9d19c061d3643c5fce621e9f22c2ec3468f61db03097ff4587ebceccbcb137d5",
+    "cadical_rc": 20,
+    "cadical_seconds": 13,
+    "proof_bytes": 7507792,
+    "solver_unsat": true,
+    "proof_sha256": "5d227f0cca9b1c7b0b273ab1e785713a92ceb9dd22cfa9bbfcbc6e62833bb137",
+    "drat_trim_seconds": 26,
+    "drat_trim_verification_time": 25.082,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/dec_sq15_k2.log",
+    "encoder_command": "marked_syn.py sq '[[0, 0], [0, 1], [0, 2], [1, 0], [2, 0]]' --k 2 --imb 1 --atleast --dimacs dec_sq15_k2.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "sq",
+   "name": "5-omino sq16",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "h": 1,
+   "witness": "witnesses/sq16_k1.json",
+   "upper_bound": {
+    "name": "dec_sq16_k2",
+    "grid": "sq",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      1
+     ]
+    ],
+    "k": 2,
+    "placements": 4744,
+    "nvars": 68041,
+    "nclauses": 417891,
+    "cnf_sha256": "73c5c66e199111b6ff2ed97ce492e270fc2ceb4ef5c900bf2016b3bace0713df",
+    "cadical_rc": 20,
+    "cadical_seconds": 12,
+    "proof_bytes": 5214871,
+    "solver_unsat": true,
+    "proof_sha256": "c66c95b332d6725ccc09941e0376409e678be355137db90803203e923a04a32a",
+    "drat_trim_seconds": 18,
+    "drat_trim_verification_time": 17.595,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/dec_sq16_k2.log",
+    "encoder_command": "marked_syn.py sq '[[0, 0], [0, 1], [0, 2], [1, 1], [2, 1]]' --k 2 --imb 1 --atleast --dimacs dec_sq16_k2.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "sq",
+   "name": "5-omino sq17",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     -1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     -1
+    ]
+   ],
+   "h": 1,
+   "witness": "witnesses/sq17_k1.json",
+   "upper_bound": {
+    "name": "dec_sq17_k2",
+    "grid": "sq",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      -1
+     ]
+    ],
+    "k": 2,
+    "placements": 6568,
+    "nvars": 93601,
+    "nclauses": 577827,
+    "cnf_sha256": "33520eea04b0cd5495b834796f1e1713d23af6b61cbe3bd51810c95dbc1a6ccc",
+    "cadical_rc": 20,
+    "cadical_seconds": 32,
+    "proof_bytes": 8327135,
+    "solver_unsat": true,
+    "proof_sha256": "02f5469fccc33b6ed60898ac8975c1ea73f44fd3e0ec42907a937d40a5d8cbb4",
+    "drat_trim_seconds": 47,
+    "drat_trim_verification_time": 45.937,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/dec_sq17_k2.log",
+    "encoder_command": "marked_syn.py sq '[[0, 0], [0, 1], [1, -1], [1, 0], [2, -1]]' --k 2 --imb 1 --atleast --dimacs dec_sq17_k2.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "sq",
+   "name": "5-omino sq18",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     -1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "h": 1,
+   "witness": "witnesses/sq18_k1.json",
+   "upper_bound": {
+    "name": "dec_sq18_k2",
+    "grid": "sq",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "k": 2,
+    "placements": 4744,
+    "nvars": 67521,
+    "nclauses": 416903,
+    "cnf_sha256": "ed427e5c20a3adaa9201d272097bf7b195a67626dc76a577f0775f96488c4b08",
+    "cadical_rc": 20,
+    "cadical_seconds": 20,
+    "proof_bytes": 5661266,
+    "solver_unsat": true,
+    "proof_sha256": "acbc07ad4c4bab954bf0b70e78a71b93cd2741dca45a795ae7e8929da1d1eac0",
+    "drat_trim_seconds": 22,
+    "drat_trim_verification_time": 22.095,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/dec_sq18_k2.log",
+    "encoder_command": "marked_syn.py sq '[[0, 0], [0, 1], [1, -1], [1, 0], [2, 0]]' --k 2 --imb 1 --atleast --dimacs dec_sq18_k2.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "sq",
+   "name": "5-omino sq19",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     2,
+     -1
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "h": 1,
+   "witness": "witnesses/sq19_k1.json",
+   "upper_bound": {
+    "name": "dec_sq19_k2",
+    "grid": "sq",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      2,
+      -1
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "k": 2,
+    "placements": 6568,
+    "nvars": 93721,
+    "nclauses": 578031,
+    "cnf_sha256": "d8078c35cf7237c74908871b3b889cbccd5f8cc3369cf46a121dd23b343cfc33",
+    "cadical_rc": 20,
+    "cadical_seconds": 16,
+    "proof_bytes": 7108522,
+    "solver_unsat": true,
+    "proof_sha256": "63e71bf507b0b9dd1031354aa2a3a5abd9f11054c64fb71114bf91b9572b39df",
+    "drat_trim_seconds": 36,
+    "drat_trim_verification_time": 35.629,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/dec_sq19_k2.log",
+    "encoder_command": "marked_syn.py sq '[[0, 0], [0, 1], [1, 0], [2, -1], [2, 0]]' --k 2 --imb 1 --atleast --dimacs dec_sq19_k2.cnf --cnf-only"
+   }
+  },
+  {
+   "grid": "sq",
+   "name": "5-omino sq20",
+   "cells": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     -1
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "h": 1,
+   "witness": "witnesses/sq20_k1.json",
+   "upper_bound": {
+    "name": "dec_sq20_k2",
+    "grid": "sq",
+    "cells": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      0
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "k": 2,
+    "placements": 4136,
+    "nvars": 59049,
+    "nclauses": 363699,
+    "cnf_sha256": "e3e0ad641e28ab7efba3d23ebc4e2af050cb69684f7a1ee56e109a86aa378c24",
+    "cadical_rc": 20,
+    "cadical_seconds": 14,
+    "proof_bytes": 5630910,
+    "solver_unsat": true,
+    "proof_sha256": "dcb7cee3a895402d1e9166d7aeb90483e2d66f7972c00d29d9f77e852f0b0843",
+    "drat_trim_seconds": 14,
+    "drat_trim_verification_time": 14.397,
+    "drat_verified": true,
+    "evidence_log": "logs/drat/dec_sq20_k2.log",
+    "encoder_command": "marked_syn.py sq '[[0, 0], [1, -1], [1, 0], [1, 1], [2, 0]]' --k 2 --imb 1 --atleast --dimacs dec_sq20_k2.cnf --cnf-only"
+   }
+  }
+ ],
+ "max": {
+  "hex": 5,
+  "sq": 3
+ }
+}

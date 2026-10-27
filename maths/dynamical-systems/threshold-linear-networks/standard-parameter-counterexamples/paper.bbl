@@ -1,0 +1,57 @@
+\begin{thebibliography}{1}
+
+\bibitem{SixIsMinimal2026}
+Anonymous.
+\newblock Six is minimal: Exact certification and infinite families of stable
+  nonclique {CTLNs}.
+\newblock Zenodo record 23089682, version 1.1 (candidate), 1 October 2026,
+  2026.
+\newblock Unrefereed preprint.
+
+\bibitem{Berkowitz1984}
+Stuart~J. Berkowitz.
+\newblock On computing the determinant in small parallel time using a small
+  number of processors.
+\newblock {\em Information Processing Letters}, 18(3):147--150, 1984.
+
+\bibitem{CGM2019}
+Carina Curto, Jesse Geneson, and Katherine Morrison.
+\newblock Fixed points of competitive threshold-linear networks.
+\newblock {\em Neural Computation}, 31(1):94--155, 2019.
+
+\bibitem{CGM2024}
+Carina Curto, Jesse Geneson, and Katherine Morrison.
+\newblock Stable fixed points of combinatorial threshold-linear networks.
+\newblock {\em Advances in Applied Mathematics}, 154:102652, 2024.
+\newblock arXiv:1909.02947.
+
+\bibitem{CurtoMorrison2023}
+Carina Curto and Katherine Morrison.
+\newblock Graph rules for recurrent neural network dynamics.
+\newblock {\em Notices of the American Mathematical Society}, 70(4):536--551,
+  2023.
+\newblock Extended version arXiv:2301.12638.
+
+\bibitem{Gantmacher1959}
+F.~R. Gantmacher.
+\newblock {\em The Theory of Matrices}, volume~2.
+\newblock Chelsea, New York, 1959.
+
+\bibitem{Geneson2026}
+Jesse Geneson.
+\newblock A six-neuron counterexample to the target-free clique conjecture,
+  2026.
+\newblock Version 1, submitted 23 July 2026.
+
+\bibitem{CLTNrepo}
+{hturcotte1}.
+\newblock {CTLN} target-free clique project ({GitHub} repository
+  {hturcotte1/CLTN}, branch claude/compassionate-maxwell-mtoyeb).
+\newblock \url{https://github.com/hturcotte1/CLTN}, 2026.
+\newblock Unrefereed. Family $W_k$ (``Theorem Q2''):
+  notes/research\_wf3/theory/family\_Q2\_certificate.json (commit 9a4ab7f, 15
+  October 2026); stable $t$-intervals at $\beta=3$ (Tk\_extra.json) and
+  ``Theorem B'' (notes\_fixed.md) under notes/theorem\_A\_fixed/ (commit
+  3744200, 15 October 2026); branch head f061cd5 accessed 26 October 2026.
+
+\end{thebibliography}

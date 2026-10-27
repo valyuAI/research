@@ -1,0 +1,341 @@
+{
+  "scenes": [
+    {
+      "scene": "Hook",
+      "start": 0.0,
+      "duration": 36.291211
+    },
+    {
+      "scene": "Hopping",
+      "start": 36.291211,
+      "duration": 43.663411
+    },
+    {
+      "scene": "Trees",
+      "start": 79.954622,
+      "duration": 36.6
+    },
+    {
+      "scene": "TreeTheorem",
+      "start": 116.554622,
+      "duration": 32.5
+    },
+    {
+      "scene": "Knob",
+      "start": 149.054622,
+      "duration": 45.833333
+    },
+    {
+      "scene": "Families",
+      "start": 194.887955,
+      "duration": 49.266667
+    },
+    {
+      "scene": "Conjecture",
+      "start": 244.15462200000002,
+      "duration": 47.1
+    },
+    {
+      "scene": "Reframe",
+      "start": 291.25462200000004,
+      "duration": 33.2
+    },
+    {
+      "scene": "Staircase",
+      "start": 324.45462200000003,
+      "duration": 35.666667
+    },
+    {
+      "scene": "Tokens",
+      "start": 360.12128900000005,
+      "duration": 63.4
+    },
+    {
+      "scene": "WhyUC",
+      "start": 423.521289,
+      "duration": 50.466667
+    },
+    {
+      "scene": "Cactus",
+      "start": 473.98795600000005,
+      "duration": 26.466667
+    },
+    {
+      "scene": "K4",
+      "start": 500.4546230000001,
+      "duration": 68.3
+    },
+    {
+      "scene": "Status",
+      "start": 568.754623,
+      "duration": 30.633333
+    },
+    {
+      "scene": "Ending",
+      "start": 599.387956,
+      "duration": 41.9
+    }
+  ],
+  "clips": {
+    "s01_machine": {
+      "scene": "Hook",
+      "start": 0.0,
+      "duration": 10.92
+    },
+    "s01_knob": {
+      "scene": "Hook",
+      "start": 11.299999999999974,
+      "duration": 9.912
+    },
+    "s01_why": {
+      "scene": "Hook",
+      "start": 21.60000000000003,
+      "duration": 13.704
+    },
+    "s02_rates": {
+      "scene": "Hopping",
+      "start": 36.291211,
+      "duration": 12.912
+    },
+    "s02_sim": {
+      "scene": "Hopping",
+      "start": 49.59121099999997,
+      "duration": 9.216
+    },
+    "s02_fractions": {
+      "scene": "Hopping",
+      "start": 59.19121100000018,
+      "duration": 13.2
+    },
+    "s02_current": {
+      "scene": "Hopping",
+      "start": 72.75787766666714,
+      "duration": 6.216
+    },
+    "s03_def": {
+      "scene": "Trees",
+      "start": 79.954622,
+      "duration": 14.016
+    },
+    "s03_ring": {
+      "scene": "Trees",
+      "start": 94.35462199999996,
+      "duration": 9.0
+    },
+    "s03_weights": {
+      "scene": "Trees",
+      "start": 103.72128866666688,
+      "duration": 11.856
+    },
+    "s04_theorem": {
+      "scene": "TreeTheorem",
+      "start": 116.554622,
+      "duration": 8.4
+    },
+    "s04_check": {
+      "scene": "TreeTheorem",
+      "start": 125.35462199999998,
+      "duration": 11.352
+    },
+    "s04_lottery": {
+      "scene": "TreeTheorem",
+      "start": 137.08795533333347,
+      "duration": 10.968
+    },
+    "s05_nudge": {
+      "scene": "Knob",
+      "start": 149.054622,
+      "duration": 11.4
+    },
+    "s05_totals": {
+      "scene": "Knob",
+      "start": 160.85462199999998,
+      "duration": 18.816
+    },
+    "s05_rule": {
+      "scene": "Knob",
+      "start": 180.0546220000005,
+      "duration": 13.848
+    },
+    "s06_family": {
+      "scene": "Families",
+      "start": 194.887955,
+      "duration": 12.168
+    },
+    "s06_score": {
+      "scene": "Families",
+      "start": 207.45462166666664,
+      "duration": 13.512
+    },
+    "s06_average": {
+      "scene": "Families",
+      "start": 221.35462166666707,
+      "duration": 7.968
+    },
+    "s06_hull": {
+      "scene": "Families",
+      "start": 230.22128833333397,
+      "duration": 13.56
+    },
+    "s07_bags": {
+      "scene": "Conjecture",
+      "start": 244.15462200000002,
+      "duration": 9.912
+    },
+    "s07_uc": {
+      "scene": "Conjecture",
+      "start": 254.454622,
+      "duration": 10.704
+    },
+    "s07_guess": {
+      "scene": "Conjecture",
+      "start": 265.5546220000001,
+      "duration": 12.504
+    },
+    "s07_tighter": {
+      "scene": "Conjecture",
+      "start": 278.45462200000037,
+      "duration": 11.808
+    },
+    "s08_naive": {
+      "scene": "Reframe",
+      "start": 291.25462200000004,
+      "duration": 7.656
+    },
+    "s08_insight": {
+      "scene": "Reframe",
+      "start": 299.28795533333334,
+      "duration": 11.448
+    },
+    "s08_goal": {
+      "scene": "Reframe",
+      "start": 311.12128866666666,
+      "duration": 11.16
+    },
+    "s09_cut": {
+      "scene": "Staircase",
+      "start": 324.45462200000003,
+      "duration": 10.848
+    },
+    "s09_stair": {
+      "scene": "Staircase",
+      "start": 335.6879553333333,
+      "duration": 14.112
+    },
+    "s09_turn": {
+      "scene": "Staircase",
+      "start": 350.1879553333337,
+      "duration": 8.952
+    },
+    "s10_trick": {
+      "scene": "Tokens",
+      "start": 360.12128900000005,
+      "duration": 12.72
+    },
+    "s10_hist": {
+      "scene": "Tokens",
+      "start": 373.221289,
+      "duration": 9.048
+    },
+    "s10_share": {
+      "scene": "Tokens",
+      "start": 383.15462233333363,
+      "duration": 8.616
+    },
+    "s10_draw": {
+      "scene": "Tokens",
+      "start": 392.154622333334,
+      "duration": 9.648
+    },
+    "s10_seven": {
+      "scene": "Tokens",
+      "start": 402.68795566666677,
+      "duration": 8.352
+    },
+    "s10_balance": {
+      "scene": "Tokens",
+      "start": 411.9212889999996,
+      "duration": 10.608
+    },
+    "s11_factors": {
+      "scene": "WhyUC",
+      "start": 423.521289,
+      "duration": 11.52
+    },
+    "s11_cancel": {
+      "scene": "WhyUC",
+      "start": 435.421289,
+      "duration": 12.216
+    },
+    "s11_rates": {
+      "scene": "WhyUC",
+      "start": 448.42128900000034,
+      "duration": 12.36
+    },
+    "s11_bag": {
+      "scene": "WhyUC",
+      "start": 461.15462233333386,
+      "duration": 11.856
+    },
+    "s12_cactus": {
+      "scene": "Cactus",
+      "start": 473.98795600000005,
+      "duration": 10.512
+    },
+    "s12_glue": {
+      "scene": "Cactus",
+      "start": 484.88795600000003,
+      "duration": 14.568
+    },
+    "s13_k4": {
+      "scene": "K4",
+      "start": 500.4546230000001,
+      "duration": 12.312
+    },
+    "s13_cert": {
+      "scene": "K4",
+      "start": 513.154623,
+      "duration": 11.304
+    },
+    "s13_contra": {
+      "scene": "K4",
+      "start": 524.8546230000004,
+      "duration": 16.8
+    },
+    "s13_minor": {
+      "scene": "K4",
+      "start": 542.0212896666671,
+      "duration": 11.808
+    },
+    "s13_not": {
+      "scene": "K4",
+      "start": 554.2212896666666,
+      "duration": 13.56
+    },
+    "s14_proved": {
+      "scene": "Status",
+      "start": 568.754623,
+      "duration": 13.104
+    },
+    "s14_caveat": {
+      "scene": "Status",
+      "start": 582.254623,
+      "duration": 16.152
+    },
+    "s15_recap1": {
+      "scene": "Ending",
+      "start": 599.387956,
+      "duration": 8.256
+    },
+    "s15_recap2": {
+      "scene": "Ending",
+      "start": 608.0212893333334,
+      "duration": 11.256
+    },
+    "s15_open": {
+      "scene": "Ending",
+      "start": 619.6546226666667,
+      "duration": 14.664
+    }
+  }
+}

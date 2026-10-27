@@ -1,0 +1,2 @@
+strict n=5 l=6 first=(3,3) short sets=106 certificate keys=875938
+VERIFIED (strict reading): Blue opening (3,3) forces its first connection to contain a path of <= 6 cells; keys checked=875938, max Blue stones=13

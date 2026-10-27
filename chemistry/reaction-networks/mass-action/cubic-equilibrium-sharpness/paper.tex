@@ -1,0 +1,327 @@
+\documentclass[11pt]{amsart}
+\usepackage[a4paper,textwidth=158mm,textheight=237mm,centering]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,mathtools,amssymb,booktabs}
+\usepackage[unicode,colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newcommand{\Rpos}{\mathbb R_{>0}}
+\newcommand{\one}{\mathbf 1}
+\newcommand{\diag}{\operatorname{diag}}
+\title[Sharp equilibrium counts with cubic sources]{Sharp equilibrium counts with cubic sources}
+\author{Harvey Yorke}\address{Valyu AI}
+\ifdefined\journalversion
+\hypersetup{pdfauthor={Harvey Yorke}}
+\else
+\author{Valyu DeepResearch}\address{Valyu AI}
+\hypersetup{pdfauthor={Harvey Yorke and Valyu DeepResearch}}
+\fi
+\hypersetup{pdftitle={Sharp equilibrium counts with cubic sources}}
+\date{18 October 2026}
+\newcommand{\paperAuthorBlock}[1]{%
+  \begin{minipage}[t]{.44\textwidth}\centering\normalfont\normalsize
+  #1\par\small Valyu AI\par\end{minipage}}
+\makeatletter
+\renewcommand{\@setauthors}{%
+  \begingroup\trivlist\centering\normalfont\normalsize
+  \@topsep30\p@\relax\advance\@topsep by -\baselineskip\item\relax
+  \ifdefined\journalversion\paperAuthorBlock{Harvey Yorke}%
+  \else\paperAuthorBlock{Harvey Yorke}\hspace{.06\textwidth}%
+  \paperAuthorBlock{Valyu DeepResearch}\fi\endtrivlist\endgroup}
+\renewcommand{\@setaddresses}{}
+\makeatother
+\begin{document}
+\raggedbottom
+\begin{abstract}
+A mass action network with $n$ species, $n$ reactions and stoichiometric
+rank $n-1$ has at most $n$ positive nondegenerate equilibria on a
+stoichiometric class. We construct a family attaining this bound for every
+$n\ge2$, with positive rational rate constants and maximum source
+molecularity three. The construction answers the sharpness question of
+Banaji and Feliu; their quadratic obstruction then proves that source
+molecularity three is minimal. The equilibrium set is an explicit
+monomial curve. Sparse polynomial interpolation gives exactly $n$ simple
+intersections with one class, and transversality proves nondegeneracy.
+The count persists under small changes of rates and class level.
+The classes are unbounded, product molecularities may exceed three,
+and simultaneous stability is not asserted.
+\end{abstract}
+\maketitle
+\begin{center}\small
+Research draft. Exact checks and internal proof reviews are available;
+author approval, priority assessment and external review remain open.
+\end{center}
+
+\section{The sharpness question}
+An $(n,m,r)$ mass action network has $n$ species, $m$ reactions and
+stoichiometric rank $r$. Banaji and Feliu prove that every $(n,n,n-1)$
+network has at most $n$ positive nondegenerate equilibria on a
+stoichiometric class \cite[Corollary~4.21(i)]{banajiFeliu2026}.
+Their Remark~4.23 asks whether the bound is achieved for general $n$
+and, if so, what minimum source molecularity is needed.
+We answer both questions with a family whose sources have molecularity
+at most three. Attainment for $n=2$ is already established in their
+Remark~4.23; the contribution is a uniform construction for all $n\ge3$
+and the resulting sharp source-molecularity threshold.
+
+The monomial parametrisation of equilibria and the upper bound are part
+of the existing theory. The construction below combines a fixed cubic
+source matrix, sparse interpolation, and a choice of valid reaction
+products to attain the bound. The source degree stays three as $n$ grows,
+although the degree of the scalar polynomial used in the construction
+does not stay bounded.
+
+An anonymous, unrefereed manuscript \cite{anonymous2026} presents a quadratic
+$(n,n+2,n)$ family attaining $n+1$ positive nondegenerate equilibria,
+addressing the full-rank question in Banaji and Feliu's Remark~5.8.
+The present construction addresses their separate one-conservation-law
+question in Remark~4.23 and its minimum source molecularity.
+
+Write reaction $i$ as $y_i\to y_i+\gamma_i$, with nonnegative integral
+source and product vectors. Let $A$ have rows $y_i^\top$ and $\Gamma$
+have columns $\gamma_i$. The mass action vector field is
+\begin{equation}\label{eq:field}
+ \dot x=\Gamma v(x),\qquad v_i(x)=\kappa_i x^{y_i},\qquad x\in\Rpos^n.
+\end{equation}
+Its positive stoichiometric class through $x$ is
+$(x+\operatorname{im}\Gamma)\cap\Rpos^n$. An equilibrium is
+nondegenerate when the Jacobian restricted to
+$\operatorname{im}\Gamma$ is invertible. The full Jacobian is singular
+when a conservation law is present.
+
+\begin{theorem}\label{thm:main}
+For every integer $n\ge2$, there exists an $(n,n,n-1)$ mass action
+network with positive rational rate constants and exactly $n$ positive
+equilibria on one stoichiometric class, all nondegenerate. Its maximum
+source molecularity is three, the least possible for attaining this
+count. Its product molecularities are at most $2n$. The class is unbounded
+and its conservation vector has both signs.
+\end{theorem}
+
+\section{Cubic sources and a sparse interpolation polynomial}
+Let $e_1,\ldots,e_n$ be the standard basis, and fix the sources
+\begin{equation}\label{eq:sources}
+ y_i=2e_i+e_{i+1}\quad(1\le i<n),\qquad y_n=2e_n.
+\end{equation}
+The source matrix $A$ is upper bidiagonal with diagonal entries two and
+superdiagonal entries one, so $\det A=2^n$. Put
+\begin{equation}\label{eq:powers}
+ M=2^n,\qquad
+ p_i=\frac{2^n+(-1)^{n-i}2^{i-1}}3\quad(1\le i\le n).
+\end{equation}
+These are distinct positive integers: the two terms in the numerator
+cancel modulo three, its value is positive, and the signed powers
+$(-1)^{n-i}2^{i-1}$ are distinct. They satisfy
+\begin{equation}\label{eq:weighted}
+ 2p_i+p_{i+1}=M\ (i<n),\qquad 2p_n=M,
+ \qquad Ap=M\one.
+\end{equation}
+
+Fix distinct positive rational numbers $r_1<\cdots<r_n$; taking $r_j=j$
+gives a concrete family for every $n$. Form the rational matrix
+\begin{equation}\label{eq:interpolation}
+ B_{j0}=1,\qquad B_{ji}=r_j^{p_i}\quad(1\le i\le n).
+\end{equation}
+Choose a primitive integer vector $\alpha=(\alpha_0,\ldots,\alpha_n)$
+in its kernel, with the coefficient of the largest exponent positive.
+The next lemma shows that this choice is unique. It can be computed
+explicitly from the signed maximal minors of $B$, followed by division
+by their greatest common divisor.
+
+\begin{lemma}\label{lem:interpolation}
+The polynomial
+\begin{equation}\label{eq:polynomial}
+ P(t)=\alpha_0+\sum_{i=1}^n\alpha_i t^{p_i}
+\end{equation}
+has all $n+1$ coefficients nonzero. Its positive roots are exactly
+$r_1,\ldots,r_n$, each simple. The coefficients alternate in sign when
+ordered by increasing exponent.
+\end{lemma}
+\begin{proof}
+Any $n$ columns of $B$ are independent. Otherwise their dependence
+would define a nonzero polynomial with at most $n$ monomials and with
+$n$ distinct positive roots, contrary to Descartes' rule of signs.
+Thus $B$ has rank $n$ and its one-dimensional kernel contains no vector
+with a zero coordinate. The polynomial \eqref{eq:polynomial} has
+$n+1$ nonzero monomials and already has $n$ distinct positive roots.
+Descartes' rule bounds its positive roots, counted with multiplicity,
+by $n$. There are therefore no further positive roots, each prescribed
+root is simple, and all $n$ possible coefficient sign changes occur.
+\end{proof}
+
+Define
+\begin{equation}\label{eq:signs}
+ c_i=|\alpha_i|>0,\qquad z_i=\operatorname{sign}(\alpha_i),
+ \qquad \rho_i=z_i z_{i+1}\in\{-1,1\}\quad(i<n).
+\end{equation}
+The $n$ nonconstant coefficients alternate in their exponent order,
+so $z$ has both signs for $n\ge2$.
+
+\section{Valid products and the complete equilibrium set}
+Choose the stoichiometric reaction vectors
+\begin{equation}\label{eq:reactionvectors}
+ \gamma_i=-e_i+\rho_i e_{i+1}\quad(i<n),\qquad
+ \gamma_n=-\sum_{i=1}^{n-1}\gamma_i.
+\end{equation}
+For $i<n$ the product is $e_i+(1+\rho_i)e_{i+1}$, a nonnegative
+integral vector of molecularity one or three. The final product is
+\begin{equation}\label{eq:lastproduct}
+ y_n+\gamma_n=e_1+\sum_{j=2}^{n-1}(1-\rho_{j-1})e_j
+                   +(2-\rho_{n-1})e_n.
+\end{equation}
+It is also nonnegative and integral, with molecularity at most $2n$.
+All source and product complexes are therefore valid, and the maximum
+source molecularity is three. The sources are pairwise distinct and
+every $\gamma_i$ is nonzero: its $i$th entry is $-1$ for $i<n$, while
+the first entry of $\gamma_n$ is $1$. Thus there are exactly $n$
+distinct, nontrivial reactions.
+
+The first $n-1$ columns of $\Gamma$ are independent, as their first
+$n-1$ rows form a triangular matrix with diagonal $-1$.
+By construction $\Gamma\one=0$ and $z^\top\Gamma=0$. Hence
+\begin{equation}\label{eq:stoichiometry}
+ \operatorname{rank}\Gamma=n-1,\qquad
+ \ker\Gamma=\mathbb R\one,\qquad
+ \operatorname{im}\Gamma=\ker z^\top.
+\end{equation}
+Choose the positive rational rate constants
+\begin{equation}\label{eq:rates}
+ \kappa_i=c^{-y_i}=\prod_{j=1}^n c_j^{-A_{ij}}.
+\end{equation}
+At a positive equilibrium, \eqref{eq:stoichiometry} implies
+$v(x)=\lambda\one$ for some $\lambda>0$. Taking componentwise
+logarithms gives
+\[
+ A\log(x/c)=(\log\lambda)\one.
+\]
+Since $A^{-1}\one=p/M$, this is equivalent to
+\begin{equation}\label{eq:curve}
+ x_i(t)=c_i t^{p_i}\quad(1\le i\le n),\qquad t=\lambda^{1/M}>0.
+\end{equation}
+Conversely, every point on \eqref{eq:curve} has all reaction fluxes
+equal to $t^M$ and is an equilibrium. This is the full positive
+equilibrium set, not merely a collection of selected solutions.
+
+Take the nonempty positive stoichiometric class
+\begin{equation}\label{eq:class}
+ \mathcal S=\{x\in\Rpos^n:z^\top x=-\alpha_0\}.
+\end{equation}
+It contains $x(r_1)$, and \eqref{eq:stoichiometry} shows that it is
+exactly one class. Along the equilibrium curve,
+\begin{equation}\label{eq:intersection}
+ z^\top x(t)+\alpha_0=P(t).
+\end{equation}
+Lemma~\ref{lem:interpolation} therefore gives precisely the $n$
+positive equilibria $x(r_1),\ldots,x(r_n)$ on $\mathcal S$.
+
+\section{Nondegeneracy and minimal source molecularity}
+At $x(t)$ the Jacobian of \eqref{eq:field} is
+\begin{equation}\label{eq:jacobian}
+ J(t)=t^M\Gamma A\diag\bigl(x_1(t)^{-1},\ldots,x_n(t)^{-1}\bigr).
+\end{equation}
+The factors to the right of $\Gamma$ are invertible, so this matrix has
+rank $n-1$. Differentiating $\Gamma v(x(t))=0$ gives $J(t)x'(t)=0$.
+Since $x'(t)\ne0$, its kernel is exactly $\mathbb R x'(t)$.
+At each prescribed root,
+\begin{equation}\label{eq:transverse}
+ z^\top x'(r_j)=P'(r_j)\ne0.
+\end{equation}
+Thus the kernel of $J(r_j)$ meets $\ker z^\top$ only at zero.
+The image of $J(r_j)$ lies in that same $(n-1)$-dimensional space,
+so its restriction is invertible. All $n$ equilibria are nondegenerate.
+
+Because $z$ has both signs, there exists $w>0$ with $z^\top w=0$.
+For example, give each positive-sign coordinate the number of negative
+signs, and each negative-sign coordinate the number of positive signs.
+Then $x(r_1)+sw\in\mathcal S$ for all $s\ge0$, proving unboundedness.
+
+The construction has maximum source molecularity three. Conversely,
+\cite[Corollary~5.16]{banajiFeliu2026} proves that quadratic
+$(n,n,n-1)$ networks have at most two positive nondegenerate equilibria
+on a class, which rules out the count $n$ for $n\ge3$. The same
+corollary explicitly states that the smallest $n$ for which two are
+attained by a quadratic network is three, ruling out attainment for
+$n=2$ as well. Therefore no network in the specified class with
+maximum source molecularity at most two attains $n$. This proves
+the minimality assertion and completes Theorem~\ref{thm:main}.
+
+\smallskip\noindent\emph{Persistence under parameter perturbations.}
+The count is not confined to the chosen rational rate vector. Keep the
+reaction network fixed and let $\kappa>0$ vary. Its full positive
+equilibrium curve is still $x_i(t)=c_i(\kappa)t^{p_i}$, where
+\[
+ c(\kappa)=\exp\bigl(-A^{-1}\log\kappa\bigr).
+\]
+On the class $z^\top x=K$, the scalar equation is
+$\sum_i z_i c_i(\kappa)t^{p_i}-K=0$.
+The implicit function theorem preserves the $n$ simple positive roots
+for all $(\kappa,K)$ sufficiently close to the constructed pair.
+This polynomial has at most $n+1$ monomials, so Descartes' rule excludes
+any additional positive root, including a degenerate one. Thus exactly
+$n$ positive nondegenerate equilibria persist on an open neighbourhood
+in rate-constant and class-level space. No quantitative neighbourhood
+size or dynamical stability assertion is needed.
+
+\section{A three-species example and the scope of the result}
+For $n=3$, the powers are $(p_1,p_2,p_3)=(3,2,4)$. Choosing roots
+$1,2,3$ yields
+\begin{equation}\label{eq:examplepoly}
+ P(t)=11t^4-60t^3+85t^2-36
+     =(t-1)(t-2)(t-3)(11t+6).
+\end{equation}
+Thus $c=(60,85,11)$ and $z=(-1,1,1)$. The reactions and rates are
+\begin{align}\label{eq:example}
+ 2X+Y&\xrightarrow{\ 1/306000\ }X,\nonumber\\
+ 2Y+Z&\xrightarrow{\ 1/79475\ }Y+2Z,\\
+ 2Z&\xrightarrow{\ 1/121\ }X+2Y+Z.\nonumber
+\end{align}
+The full positive equilibrium curve is
+$(X,Y,Z)=(60t^3,85t^2,11t^4)$, with common reaction flux $t^8$.
+The class $-X+Y+Z=36$ has exactly the three equilibria below.
+\begin{center}
+\begin{tabular}{@{}ccccc@{}}
+\toprule
+$t$ & $X$ & $Y$ & $Z$ & $P'(t)$\\
+\midrule
+1 & 60 & 85 & 11 & 34\\
+2 & 480 & 340 & 176 & $-28$\\
+3 & 1620 & 765 & 891 & 78\\
+\bottomrule
+\end{tabular}
+\end{center}
+The final column certifies transversality and nondegeneracy, not stability.
+The last product has molecularity four, illustrating why a bound on source
+molecularity is different from a bound on every reaction complex.
+
+The conserved linear quantity has mixed signs, so it is not a conserved
+positive total mass. Our family is consistent with the upper bound two
+for bounded classes in \cite[Corollary~4.21(ii)]{banajiFeliu2026};
+for $n>2$, unboundedness is necessary to attain $n$. The result counts
+equilibria and does not assert $n$ stable states, a closed mass-balanced
+chemical mechanism, or an experimental implementation.
+
+As separate finite checks, run from this directory:
+\begin{quote}\small\ttfamily
+python3 -B verification/verify\_cubic\_sharpness.py\par
+python3 -B -O verification/independent\_cubic\_check.py
+\end{quote}
+The first reconstructs the sources, products, rational rates and
+restricted Jacobians for $2\le n\le8$, checking all 35 prescribed
+equilibria with exact integer and rational arithmetic. The second
+independently differentiates the mass action equations using only
+standard-library rational arithmetic. Results are recorded in
+\texttt{verification/cubic-sharpness-certificate.json}. These checks
+corroborate the formulas; the all-$n$ theorem rests on the proof above.
+
+\ifdefined\journalversion
+\section*{Research assistance}
+Valyu DeepResearch supported literature retrieval and source comparison.
+Coding agents developed the construction and analytic
+argument, implemented the exact verification programs, and drafted and
+revised the manuscript. The supplied finite checks corroborate the formulas;
+they do not replace the all-$n$ proof or constitute external peer review.
+\fi
+
+\bibliographystyle{amsplain}
+\bibliography{references}
+\end{document}

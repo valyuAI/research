@@ -1,0 +1,41 @@
+{
+  "seed": 180104,
+  "linear_program_cases": 500,
+  "linear_program_feasible": 181,
+  "direct_ctmc_checks": [
+    {
+      "dose": 0.25,
+      "orientation": "ON",
+      "episodes_per_sum": 3,
+      "replicates": 5000,
+      "direct_mean": 3.789913302123478,
+      "mixture_mean": 3.7919268208498047,
+      "exact_mean": 3.75,
+      "two_sample_ks_distance": 0.0114,
+      "jump_simulation_iterations": 885
+    },
+    {
+      "dose": 4,
+      "orientation": "OFF",
+      "episodes_per_sum": 3,
+      "replicates": 5000,
+      "direct_mean": 3.7304552480723827,
+      "mixture_mean": 3.7776537155420495,
+      "exact_mean": 3.75,
+      "two_sample_ks_distance": 0.0202,
+      "jump_simulation_iterations": 3561
+    },
+    {
+      "dose": 1,
+      "orientation": "ON",
+      "episodes_per_sum": 3,
+      "replicates": 5000,
+      "direct_mean": 5.980488595180705,
+      "mixture_mean": 6.05460581761719,
+      "exact_mean": 6.0,
+      "two_sample_ks_distance": 0.0168,
+      "jump_simulation_iterations": 3149
+    }
+  ],
+  "scope": "Independent numerical cross-checks. They are not the proof of type-I error control."
+}

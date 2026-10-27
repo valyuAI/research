@@ -1,0 +1,4 @@
+winning sets: 1301
+certificate cert/n6D10_15.txt: 5222871 lines
+n=6 mode=D bound=10 first=(3,4) result=BLUE nodes=11926515 time=63.55s
+SUMMARY n=6 mode=D bound=10 blue_wins=1

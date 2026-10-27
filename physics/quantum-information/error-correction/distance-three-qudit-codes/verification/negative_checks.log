@@ -1,0 +1,7 @@
+REJECTED  flip one X entry of [[65,60]]_4
+REJECTED  duplicate a column pair (two equal lines)
+REJECTED  zero column pair (Pauli commuting with S)
+REJECTED  reducible modulus X^2+1 over GF(2)
+REJECTED  entry outside GF(4)
+REJECTED  rescale one Z column of [[28,23]]_3 by 2 (breaks the Plucker relation)
+REJECTED  append a 29th qutrit equal to the first

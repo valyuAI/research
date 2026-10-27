@@ -1,0 +1,21 @@
+{
+ "n": 4,
+ "k": 3,
+ "mode": "le",
+ "alpha": "1/3",
+ "classes": 4,
+ "manipulations": 136,
+ "max_gain": "1/3",
+ "tight_manipulations": 22,
+ "tight_classes": [
+  "011011",
+  "101110"
+ ],
+ "properties": [
+  "top-cycle consistent",
+  "monotone (24 single-match reversals checked)"
+ ],
+ "shard": "0/1",
+ "certificate_sha256": "bf1dad35216da43d1f43169345a51d5583a4db32b8f5da2bfecc8d61ddd353ab",
+ "ok": true
+}

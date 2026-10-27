@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "n7_digraphs": 882033440,
+  "n7_exact_candidates": 35842,
+  "n7_exact_stable": 0,
+  "n7_permitted": 14157577,
+  "n7_residual_bound_rejections": 867875862,
+  "n2_to_n6": {
+    "2": 3,
+    "3": 16,
+    "4": 218,
+    "5": 9608,
+    "6": 1540944
+  },
+  "positive_control_stable": 2
+}

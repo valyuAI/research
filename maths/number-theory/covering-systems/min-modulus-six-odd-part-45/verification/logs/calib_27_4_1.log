@@ -1,0 +1,5 @@
+D=27 m=4 L0=1 divisors=[1, 3, 9, 27] items=[(0, 9), (0, 27), (1, 3), (1, 9), (1, 27)]
+[3s] round 0: survivor killed, LP 0.3500, add [34, 11, 4, 1] (11 nodes)
+[5s] round 1: survivor killed, LP 0.1613, add [12, 6, 2, 1] (30 nodes)
+[5s] round 2: survivor killed, LP 0.0909, add [11, 5, 3, 1] (28 nodes)
+[6s] round 3: ALIVE survivor (LP value -0.0270); method cannot certify. columns sizes [12, 24]

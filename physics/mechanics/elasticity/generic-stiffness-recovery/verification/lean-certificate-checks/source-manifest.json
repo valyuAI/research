@@ -1,0 +1,219 @@
+{
+  "format_version": 1,
+  "status": "All eleven N2 determinant identities compiled and passed the complete module axiom audit in run 39114539272 at commit 351b43b71bb22f3e36cfc7f585729a522891f9a4. The finite-direction cubic-slice identities and geometric proof are not formalized here.",
+  "lean_version": "4.35.0",
+  "expected_certificates": [
+    "ValyuResearch.ElasticityMinorCertificates.certificate_2_19",
+    "ValyuResearch.ElasticityMinorCertificates.certificate_2_32",
+    "ValyuResearch.ElasticityMinorCertificates.certificate_2_58",
+    "ValyuResearch.ElasticityMinorCertificates.certificate_2_92",
+    "ValyuResearch.ElasticityMinorCertificates.certificate_2_98",
+    "ValyuResearch.ElasticityMinorCertificates.certificate_2_101",
+    "ValyuResearch.ElasticityMinorCertificates.certificate_3_68",
+    "ValyuResearch.ElasticityMinorCertificates.certificate_3_135",
+    "ValyuResearch.ElasticityMinorCertificates.certificate_3_198",
+    "ValyuResearch.ElasticityMinorCertificates.certificate_3_210",
+    "ValyuResearch.ElasticityMinorCertificates.certificate_3_213"
+  ],
+  "files": [
+    {
+      "path": "lean/MinorCore.lean",
+      "bytes": 7893,
+      "sha256": "3b8145882ddd244b2f220e42d697f2ab83e34b2e9706d84fcaaa389923aece5e",
+      "original_sha256": "3b8145882ddd244b2f220e42d697f2ab83e34b2e9706d84fcaaa389923aece5e"
+    },
+    {
+      "path": "lean/MinorBatch01.lean",
+      "bytes": 29268,
+      "sha256": "dfc0a0b74dda20ee36e26e8d5318c8b1b63b88a79fe31d89fd70b78dc970c9cd",
+      "original_sha256": "dfc0a0b74dda20ee36e26e8d5318c8b1b63b88a79fe31d89fd70b78dc970c9cd"
+    },
+    {
+      "path": "lean/MinorBatch02.lean",
+      "bytes": 34857,
+      "sha256": "69067b601690f0149ee7d856a04c4bf1ff658efd44bb043f363114fe3b273119",
+      "original_sha256": "69067b601690f0149ee7d856a04c4bf1ff658efd44bb043f363114fe3b273119"
+    },
+    {
+      "path": "lean/MinorBatch03.lean",
+      "bytes": 31128,
+      "sha256": "2298dd5c6912b44b4fef14e352e06ad599819dab27d44ff7fda64845559b6eef",
+      "original_sha256": "2298dd5c6912b44b4fef14e352e06ad599819dab27d44ff7fda64845559b6eef"
+    },
+    {
+      "path": "lean/MinorBatch04.lean",
+      "bytes": 31695,
+      "sha256": "cfc6c4782e96c40f9705a6f03ed16a0ef8f47cfb567208124620eb1f0fd23636",
+      "original_sha256": "cfc6c4782e96c40f9705a6f03ed16a0ef8f47cfb567208124620eb1f0fd23636"
+    },
+    {
+      "path": "lean/MinorBatch05.lean",
+      "bytes": 62076,
+      "sha256": "782dccb4b29fb0c255d7e47d4acfe50753f57078eb860d642393e571123f19f3",
+      "original_sha256": "782dccb4b29fb0c255d7e47d4acfe50753f57078eb860d642393e571123f19f3"
+    },
+    {
+      "path": "lean/MinorBatch06.lean",
+      "bytes": 100101,
+      "sha256": "9f02b5cf34edb9b7ed9b8cb12d5b32521b07a20c012b0ba9560f7bfb56485384",
+      "original_sha256": "9f02b5cf34edb9b7ed9b8cb12d5b32521b07a20c012b0ba9560f7bfb56485384"
+    },
+    {
+      "path": "lean/MinorBatch07.lean",
+      "bytes": 100410,
+      "sha256": "8f17ce8ac94a71f763c9d54f2517c302079ce473ee95b5f3cbef8d6afad58a0c",
+      "original_sha256": "8f17ce8ac94a71f763c9d54f2517c302079ce473ee95b5f3cbef8d6afad58a0c"
+    },
+    {
+      "path": "lean/MinorBatch08.lean",
+      "bytes": 72665,
+      "sha256": "1b47724eb82b4e93d032e20df8b5a0083086b25949e58d2d3216cc73fe0f8648",
+      "original_sha256": "1b47724eb82b4e93d032e20df8b5a0083086b25949e58d2d3216cc73fe0f8648"
+    },
+    {
+      "path": "lean/MinorBatch09.lean",
+      "bytes": 65521,
+      "sha256": "3c1842dc96f3d63aed097e59190280406dfd1c01365803b5f8ec378731ba1cd7",
+      "original_sha256": "3c1842dc96f3d63aed097e59190280406dfd1c01365803b5f8ec378731ba1cd7"
+    },
+    {
+      "path": "lean/MinorBatch10.lean",
+      "bytes": 44923,
+      "sha256": "7f7af8114b160d01aad86fa0f55639a490c0e3e1af86ff8ce7835cef643aaec4",
+      "original_sha256": "7f7af8114b160d01aad86fa0f55639a490c0e3e1af86ff8ce7835cef643aaec4"
+    },
+    {
+      "path": "lean/MinorBatch11.lean",
+      "bytes": 71532,
+      "sha256": "517c674d5fc0093a376733323ccf57c179968b5ebe138e228ec4bb15f2a39505",
+      "original_sha256": "517c674d5fc0093a376733323ccf57c179968b5ebe138e228ec4bb15f2a39505"
+    },
+    {
+      "path": "lean/MinorBatch12.lean",
+      "bytes": 42159,
+      "sha256": "055fb6d655abe1d1b867469a1500f699e7fea5f175ea72450ef22c4a6af24281",
+      "original_sha256": "055fb6d655abe1d1b867469a1500f699e7fea5f175ea72450ef22c4a6af24281"
+    },
+    {
+      "path": "lean/MinorBatch13.lean",
+      "bytes": 42413,
+      "sha256": "70f0d49d585338a53b2b8d2a69338692195a66bb3ffe914c5057cedecabac28f",
+      "original_sha256": "70f0d49d585338a53b2b8d2a69338692195a66bb3ffe914c5057cedecabac28f"
+    },
+    {
+      "path": "lean/MinorBatch14.lean",
+      "bytes": 182060,
+      "sha256": "c251730b761cf82d017c2a36468ced1f10621864905d9a8eb917e0ddcaa12f58",
+      "original_sha256": "c251730b761cf82d017c2a36468ced1f10621864905d9a8eb917e0ddcaa12f58"
+    },
+    {
+      "path": "lean/MinorBatch15.lean",
+      "bytes": 125002,
+      "sha256": "76953e1c07e260e4151c7f694c7e104455d8459312d1939b9f8648e2524f4e81",
+      "original_sha256": "4a1706df580ecd767e07dae717b99ee7afdc11e58700ead26f5107c80670c0bb"
+    },
+    {
+      "path": "lean/MinorBatch16.lean",
+      "bytes": 110361,
+      "sha256": "d1bc37d253fedadbe380014bed531656be130c19d99c69bbcf7e4698c7504810",
+      "original_sha256": "d10a03006c500340a0561ed88bbc31a9fefda6592b38316f072a0ef1d5d23689"
+    },
+    {
+      "path": "lean/MinorBatch17.lean",
+      "bytes": 98567,
+      "sha256": "514050a34620869a1e663c061a670eb14dd4756f318949b7d6e3df5b54d0bc3b",
+      "repartitioned_from": [
+        "lean/MinorBatch15.lean",
+        "lean/MinorBatch16.lean"
+      ]
+    },
+    {
+      "path": "lean/MinorBatch18.lean",
+      "bytes": 83062,
+      "sha256": "8d327556c2a3d41d99296723ec5d38f84a5a1832d170b664726b13ba4e5d7f66",
+      "repartitioned_from": [
+        "lean/MinorBatch15.lean",
+        "lean/MinorBatch16.lean"
+      ]
+    },
+    {
+      "path": "lean/MinorBatch19.lean",
+      "bytes": 82216,
+      "sha256": "c635c4bb8ba03bae316c240b8b1a38c7d6d40e6c8656873a9faba46fbf639073",
+      "repartitioned_from": [
+        "lean/MinorBatch15.lean",
+        "lean/MinorBatch16.lean"
+      ]
+    },
+    {
+      "path": "lean/MinorBatch20.lean",
+      "bytes": 49985,
+      "sha256": "48a613ed7fab9f1ff89462c8541ea8450556cde546d87f1aff87392012eb8f48",
+      "repartitioned_from": [
+        "lean/MinorBatch15.lean",
+        "lean/MinorBatch16.lean"
+      ]
+    },
+    {
+      "path": "lean/MinorBatch21.lean",
+      "bytes": 4217,
+      "sha256": "e94a6c056e4400c02ce1faa68f7abe408e98adffd7f19e14b0409f055f9709d7",
+      "repartitioned_from": [
+        "lean/MinorBatch15.lean",
+        "lean/MinorBatch16.lean"
+      ]
+    },
+    {
+      "path": "lean/SplitMinorIdentities.lean",
+      "bytes": 20,
+      "sha256": "5c57605f0b65e9a70a632523caa705cec9cc748c961e06e101102724d1e3e0f9",
+      "original_sha256": "ca5250b31bd3d1e26575ff2f91fed7ae23fd62556a67e289898b623f0f3be951"
+    },
+    {
+      "path": "lean/SplitMinorAudit.lean",
+      "bytes": 2175,
+      "sha256": "f470a6386beba721cb737fcd0f97d9e72cb08654be60e878f94d57f5e44f61ac",
+      "original_sha256": "d9ca4170774b4cc15444d368d623a465ea829f07dce5f4bee322d4d0de4199ef"
+    },
+    {
+      "path": "lean/verify_lean_translation.py",
+      "bytes": 4014,
+      "sha256": "50931281cae9a89f7c431b87966f58e84dcd56978f557986e48da37fe6644c6e",
+      "original_sha256": "e108a8803ac9c0f6d17f82ee4c40130b84f87a7186319b368d77a65ab886c95e"
+    },
+    {
+      "path": "minor_dimension_certificates.json",
+      "bytes": 204455,
+      "sha256": "54e6d4467405a6c5e33892369cbce7e9cd0d9a2ae5c41110df5c2aa8a177b11a",
+      "original_sha256": "54e6d4467405a6c5e33892369cbce7e9cd0d9a2ae5c41110df5c2aa8a177b11a"
+    },
+    {
+      "path": "verify_certificates.py",
+      "bytes": 7069,
+      "sha256": "a2de92102f6598edfe274baf9a8aaf6f31268e61738980459379f31478d9d8ef",
+      "original_sha256": "a2de92102f6598edfe274baf9a8aaf6f31268e61738980459379f31478d9d8ef"
+    }
+  ],
+  "translation_bridge_change": "Optional output path argument and extended sequential batch inventory; expression checking unchanged.",
+  "repartition": {
+    "reason": "Run39112686026 exceeded the unchanged6GB process RSS guard in MinorBatch15.",
+    "old_modules_sha256": {
+      "MinorBatch15": "4a1706df580ecd767e07dae717b99ee7afdc11e58700ead26f5107c80670c0bb",
+      "MinorBatch16": "d10a03006c500340a0561ed88bbc31a9fefda6592b38316f072a0ef1d5d23689"
+    },
+    "new_modules": [
+      "MinorBatch15",
+      "MinorBatch16",
+      "MinorBatch17",
+      "MinorBatch18",
+      "MinorBatch19",
+      "MinorBatch20",
+      "MinorBatch21"
+    ],
+    "declarations_preserved": 88,
+    "declaration_text_sha256": "e7076262a954c1e4c9e18c9dd149d3d4a78bbf43b9e8396480337e5caa4bfdb4",
+    "preservation": "Every definition and theorem, including its statement and proof, is byte-identical after removing inter-declaration whitespace; only module boundaries/imports differ.",
+    "chunk_group_size": 5,
+    "final_identity_separate_module": true
+  }
+}

@@ -1,0 +1,7 @@
+progress 20000000 permitted 461073 hits 0 undecided 0
+progress 40000000 permitted 786760 hits 0 undecided 0
+progress 60000000 permitted 1072044 hits 0 undecided 0
+progress 80000000 permitted 1248618 hits 0 undecided 0
+progress 100000000 permitted 1452937 hits 0 undecided 0
+progress 120000000 permitted 1594418 hits 0 undecided 0
+beta=3 t=3 den=1 total=139411110 nonzero=139411109 permitted=1832304 coefpos=3979 hits=0 undecided=0 floatrej=137578805

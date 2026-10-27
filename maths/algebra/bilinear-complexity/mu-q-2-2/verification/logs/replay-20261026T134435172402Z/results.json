@@ -1,0 +1,192 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "case": "subsp_A2_rank8",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "build/subsp",
+        "21",
+        "4"
+      ],
+      "result": "RESULT f=21 n=4 rank<=8: NO (independent 4-subsets tested 103406616, hits 0)",
+      "seconds": 23.622
+    },
+    {
+      "case": "bucket_A2_rank8",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "build/bucket",
+        "2",
+        "1",
+        "0",
+        "1",
+        "0",
+        "1"
+      ],
+      "result": "RESULT q=2 f=1,0,1,0,1 rank<=8: NO (triples 74377, candidate buckets 464776, hits 0)",
+      "seconds": 1.674
+    },
+    {
+      "case": "rankfq_q2_rank8",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "build/rankfq",
+        "2",
+        "4",
+        "1",
+        "0",
+        "1",
+        "0",
+        "1"
+      ],
+      "result": "RESULT q=2 f=1,0,1,0,1 rank<=8: NO (prefixes 74377, candidate buckets 464776)",
+      "seconds": 1.481
+    },
+    {
+      "case": "bucket_F16_rank8",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "build/bucket",
+        "2",
+        "1",
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "result": "RESULT q=2 f=1,1,0,0,1 rank<=8: NO (triples 24962, candidate buckets 7322, hits 0)",
+      "seconds": 0.38
+    },
+    {
+      "case": "rankfq_T4_rank8",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "build/rankfq",
+        "2",
+        "4",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      "result": "RESULT q=2 f=0,0,0,0,1 rank<=8: YES (prefixes 24898, candidate buckets 400307)",
+      "seconds": 0.554
+    },
+    {
+      "case": "rankfq_q3_rank7",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "build/rankfq",
+        "3",
+        "3",
+        "1",
+        "0",
+        "2",
+        "0",
+        "1"
+      ],
+      "result": "RESULT q=3 f=1,0,2,0,1 rank<=7: NO (prefixes 4794, candidate buckets 205980)",
+      "seconds": 0.61
+    },
+    {
+      "case": "rankfq_q4_rank7",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "build/rankfq",
+        "4",
+        "3",
+        "3",
+        "0",
+        "1",
+        "0",
+        "1"
+      ],
+      "result": "RESULT q=4 f=3,0,1,0,1 rank<=7: NO (prefixes 21668, candidate buckets 1930239)",
+      "seconds": 14.521
+    },
+    {
+      "case": "rankfq_q5_rank7",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "build/rankfq",
+        "5",
+        "3",
+        "4",
+        "0",
+        "4",
+        "0",
+        "1"
+      ],
+      "result": "RESULT q=5 f=4,0,4,0,1 rank<=7: NO (prefixes 73000, candidate buckets 17417506)",
+      "seconds": 375.145
+    },
+    {
+      "case": "local_q3_split",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "build/check_local_rank7",
+        "3",
+        "--split"
+      ],
+      "result": "RESULT rank<=7: YES prefixes=1 candidates=18",
+      "seconds": 0.403
+    },
+    {
+      "case": "local_q5_split",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "build/check_local_rank7",
+        "5",
+        "--split"
+      ],
+      "result": "RESULT rank<=7: YES prefixes=1 candidates=38",
+      "seconds": 0.028
+    },
+    {
+      "case": "local_q3",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "build/check_local_rank7",
+        "3"
+      ],
+      "result": "RESULT rank<=7: NO prefixes=4794 candidates=205980",
+      "seconds": 0.989
+    },
+    {
+      "case": "local_q5",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "build/check_local_rank7",
+        "5"
+      ],
+      "result": "RESULT rank<=7: NO prefixes=73000 candidates=17417506",
+      "seconds": 272.473
+    }
+  ]
+}

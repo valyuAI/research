@@ -1,0 +1,206 @@
+[
+  {
+    "id": "t01",
+    "start": 0.0,
+    "duration": 14.256,
+    "scene": "Pairing"
+  },
+  {
+    "id": "t02",
+    "start": 14.63333333333333,
+    "duration": 15.6,
+    "scene": "Pairing"
+  },
+  {
+    "id": "t03",
+    "start": 30.600000000000204,
+    "duration": 14.952,
+    "scene": "Pairing"
+  },
+  {
+    "id": "t04",
+    "start": 45.93333333333333,
+    "duration": 15.648,
+    "scene": "Pairing"
+  },
+  {
+    "id": "t05",
+    "start": 61.966667,
+    "duration": 14.856,
+    "scene": "Cube"
+  },
+  {
+    "id": "t06",
+    "start": 77.20000033333332,
+    "duration": 15.408,
+    "scene": "Cube"
+  },
+  {
+    "id": "t07",
+    "start": 93.00000033333356,
+    "duration": 16.848,
+    "scene": "Cube"
+  },
+  {
+    "id": "t08",
+    "start": 110.233334,
+    "duration": 14.112,
+    "scene": "Matching"
+  },
+  {
+    "id": "t09",
+    "start": 124.73333399999999,
+    "duration": 13.704,
+    "scene": "Matching"
+  },
+  {
+    "id": "t10",
+    "start": 138.83333400000006,
+    "duration": 14.208,
+    "scene": "Matching"
+  },
+  {
+    "id": "t11",
+    "start": 153.433334,
+    "duration": 15.552,
+    "scene": "Surplus"
+  },
+  {
+    "id": "t12",
+    "start": 169.36666733333334,
+    "duration": 14.856,
+    "scene": "Surplus"
+  },
+  {
+    "id": "t13",
+    "start": 184.60000066666706,
+    "duration": 13.752,
+    "scene": "Surplus"
+  },
+  {
+    "id": "t14",
+    "start": 198.7333340000003,
+    "duration": 13.656,
+    "scene": "Surplus"
+  },
+  {
+    "id": "t15",
+    "start": 212.76666733333323,
+    "duration": 14.616,
+    "scene": "Surplus"
+  },
+  {
+    "id": "t16",
+    "start": 227.76666699999998,
+    "duration": 3.216,
+    "scene": "Central"
+  },
+  {
+    "id": "t17",
+    "start": 235.16666699999996,
+    "duration": 18.312,
+    "scene": "Central"
+  },
+  {
+    "id": "t18",
+    "start": 253.86666699999995,
+    "duration": 15.72,
+    "scene": "Central"
+  },
+  {
+    "id": "t19",
+    "start": 269.9666670000002,
+    "duration": 15.312,
+    "scene": "Central"
+  },
+  {
+    "id": "t20",
+    "start": 285.66666699999985,
+    "duration": 15.768,
+    "scene": "Central"
+  },
+  {
+    "id": "t21",
+    "start": 301.83333366666625,
+    "duration": 14.52,
+    "scene": "Central"
+  },
+  {
+    "id": "t22",
+    "start": 316.733334,
+    "duration": 18.0,
+    "scene": "Noncentral"
+  },
+  {
+    "id": "t23",
+    "start": 335.133334,
+    "duration": 20.904,
+    "scene": "Noncentral"
+  },
+  {
+    "id": "t24",
+    "start": 356.4333340000003,
+    "duration": 18.408,
+    "scene": "Noncentral"
+  },
+  {
+    "id": "t25",
+    "start": 375.233334,
+    "duration": 15.36,
+    "scene": "Correction"
+  },
+  {
+    "id": "t26",
+    "start": 390.96666733333336,
+    "duration": 17.352,
+    "scene": "Correction"
+  },
+  {
+    "id": "t27",
+    "start": 408.7000006666669,
+    "duration": 16.848,
+    "scene": "Correction"
+  },
+  {
+    "id": "t28",
+    "start": 425.9333339999999,
+    "duration": 17.808,
+    "scene": "Correction"
+  },
+  {
+    "id": "t29",
+    "start": 444.133334,
+    "duration": 14.808,
+    "scene": "SixCube"
+  },
+  {
+    "id": "t30",
+    "start": 459.333334,
+    "duration": 14.52,
+    "scene": "SixCube"
+  },
+  {
+    "id": "t31",
+    "start": 474.2333340000002,
+    "duration": 14.664,
+    "scene": "SixCube"
+  },
+  {
+    "id": "t32",
+    "start": 489.266667,
+    "duration": 15.816,
+    "scene": "Scope"
+  },
+  {
+    "id": "t33",
+    "start": 505.466667,
+    "duration": 16.656,
+    "scene": "Scope"
+  },
+  {
+    "id": "t34",
+    "start": 522.5000003333336,
+    "duration": 19.56,
+    "scene": "Scope"
+  }
+]

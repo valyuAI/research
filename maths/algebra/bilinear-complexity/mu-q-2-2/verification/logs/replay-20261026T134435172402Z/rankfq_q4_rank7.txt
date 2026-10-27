@@ -1,0 +1,28 @@
+q=4 n=4 m=3 target rank 7: units 240, proj functionals 85, classes 2, F1 reps 3, rank-ones 7225
+rep 1/3 a 1000/7225 prefixes 1000
+rep 1/3 a 2000/7225 prefixes 2000
+rep 1/3 a 3000/7225 prefixes 3000
+rep 1/3 a 4000/7225 prefixes 4000
+rep 1/3 a 5000/7225 prefixes 5000
+rep 1/3 a 6000/7225 prefixes 6000
+rep 1/3 a 7000/7225 prefixes 7000
+rep 1/3 done: prefixes 7224 cand 57547 hits 0
+rep 2/3 a 0/7225 prefixes 7225
+rep 2/3 a 1000/7225 prefixes 8224
+rep 2/3 a 2000/7225 prefixes 9224
+rep 2/3 a 3000/7225 prefixes 10224
+rep 2/3 a 4000/7225 prefixes 11224
+rep 2/3 a 5000/7225 prefixes 12224
+rep 2/3 a 6000/7225 prefixes 13224
+rep 2/3 a 7000/7225 prefixes 14224
+rep 2/3 done: prefixes 14448 cand 139639 hits 0
+rep 3/3 a 0/7225 prefixes 14449
+rep 3/3 a 1000/7225 prefixes 15448
+rep 3/3 a 2000/7225 prefixes 16448
+rep 3/3 a 3000/7225 prefixes 17448
+rep 3/3 a 4000/7225 prefixes 18447
+rep 3/3 a 5000/7225 prefixes 19446
+rep 3/3 a 6000/7225 prefixes 20445
+rep 3/3 a 7000/7225 prefixes 21444
+rep 3/3 done: prefixes 21668 cand 1930239 hits 0
+RESULT q=4 f=3,0,1,0,1 rank<=7: NO (prefixes 21668, candidate buckets 1930239)

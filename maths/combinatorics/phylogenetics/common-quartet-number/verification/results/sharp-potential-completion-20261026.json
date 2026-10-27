@@ -1,0 +1,81 @@
+{
+  "completedUtc": "2026-10-26T14:49:29.905198+00:00",
+  "status": "sharp update complete",
+  "claim": "h(k) <= floor(3*((1+sqrt(13))/2)^(k-1))+1",
+  "thresholdsK1to8": [
+    4,
+    7,
+    16,
+    37,
+    85,
+    195,
+    448,
+    1031
+  ],
+  "reviewTaskId": "DR-017",
+  "checks": {
+    "sharpIterationFamilies": 613,
+    "weightedK": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "rationalGridMinimum": "17/90",
+    "leanTheorems": [
+      "ValyuResearch.CommonQuartet.potential_step_sharp",
+      "ValyuResearch.CommonQuartet.potential_step_sharp_witness"
+    ],
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "pdfPagesVisuallyInspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "typesettingIssues": []
+  },
+  "scope": "Only the real-variable inequality and equality witness are Lean formalized. Unchanged finite computations retain their prior full replay; this update does not claim a fresh SAT/DP enumeration.",
+  "sha256": {
+    "paper.tex": "64b6ecf5bb2c285fce0bd117b1e914913cae2c0e5ad77528b1a4482a3a0cd1a3",
+    "paper.pdf": "d06c144dd41e070bac10759296e6a13c24a960b7f9f4821ba13c6f3d53ee6cee",
+    "README.md": "c075620ffdfd5df1d4807b16092cc0020c18aa0b395300030a59a152ff533575",
+    "readiness.md": "0cd29d872e5b12ae8a2fccad7162294967c890bd2a0433c89919ab6bf8287171",
+    "video-brief.md": "10efe6ed75c6b7da6dc0c434f16d63abfdc65f603947e8c65f7c2f9ea376e5c5",
+    "verification/README.md": "ade241990feda3a855ce2ff3f3a7e4fe58e9e9c25f3e435b1e935f0673912bd3",
+    "verification/iterate_check.py": "65083b7aa5b54f17c932f89e9cc5352a253d7e97a440f25deba2d282e2dd42a1",
+    "verification/lean/CommonQuartetPotential.lean": "a85234aa55d40aa5772ad74dbd2f708595494383beb69717d46bd9ce5a16115e",
+    "verification/reviews/phylo-sharp-potential-review.md": "33bccdba6dbd1f8a10010496690e7bf9ce61410e1ea385d9402fb7b38cbd2b5f",
+    "verification/results/sharp-potential-iteration-20261026.log": "dc5ed7dc3900dc0d1f0752aec2cef196f16effe131a247b552a225b8c15e92e1",
+    "verification/results/sharp-potential-lean-20261026.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "verification/results/sharp-potential-axioms-20261026.log": "e5346ba624fcb484189b9140cf152ea70f7f076f9dba54e31261320009f9be37",
+    "verification/results/sharp-potential-typesetting-final-20261026.log": "fab0b0791d582d6f68d1936db20f9e8a37500146c97db28925ee9e331f8fee67"
+  },
+  "formalSourceSha256": "a85234aa55d40aa5772ad74dbd2f708595494383beb69717d46bd9ce5a16115e",
+  "pdfInspection": {
+    "renderDirectory": "<unpublished-record-17682b34a597>",
+    "dpi": 110,
+    "sha256": {
+      "page-1.png": "4b9583aab74067fad01100dfea54e6a56c3c937449619e04ad85e321695000e3",
+      "page-2.png": "4814e97250d7bf260e5ea31375298fedf3ef414fa8a59a2c3100a67bb161263a",
+      "page-3.png": "f7fab3b1c6bd68ecfd0419fe741759c0849811e736cb60e9eece71189d4e2740",
+      "page-4.png": "702be135acd030c41e1a034d0fb11877f6929d9641cf80a5db376946855249b3",
+      "page-5.png": "e18309ca937efa76c5a7b74afd616a2d6a70c3d1f086051d13a57b7733f24804",
+      "page-6.png": "15abdf7bc050360ce1e351b54c2ccf7a67172eb4e7b967ffedf107a27624395f",
+      "page-7.png": "e66564af12767bfca2ba144a3cb3ad96537eceb1e93e83af86a51f8c29a0d3c4",
+      "page-8.png": "0a9c454110a857299ce1cfc6b545654d95f50c1add5f82a9ba799b743e7e7aea",
+      "page-9.png": "f5f2f0679ab9b018213c3bec6b81dcf66fd0045fc70ba1171e583cc17fe617eb"
+    }
+  }
+}

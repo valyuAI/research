@@ -1,0 +1,30 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{1}
+
+\bibitem{DavilaTopp2023}
+Gonzalo D{\'a}vila and Erwin Topp, \emph{The nonlocal inverse problem of
+  {Donsker} and {Varadhan}}, Journal of Functional Analysis \textbf{284}
+  (2023), no.~9, 109885,
+  \href{https://doi.org/10.1016/j.jfa.2023.109885}{doi:10.1016/j.jfa.2023.109885}.
+  Full text consulted: arXiv:2011.13295v1; lemma and equation numbering refers
+  to that version.
+
+\bibitem{EvansRay2025}
+Martin~R. Evans and Somrita Ray, \emph{Stochastic resetting prevails over sharp
+  restart for broad target distributions}, Physical Review Letters \textbf{134}
+  (2025), no.~24, 247102,
+  \href{https://doi.org/10.1103/2wpq-gl2j}{doi:10.1103/2wpq-gl2j}; arXiv
+  version 2, revised 19 May 2025.
+
+\bibitem{PalReuveni2017}
+Arnab Pal and Shlomi Reuveni, \emph{First passage under restart}, Physical
+  Review Letters \textbf{118} (2017), no.~3, 030603,
+  \href{https://doi.org/10.1103/PhysRevLett.118.030603}{doi:10.1103/PhysRevLett.118.030603}.
+
+\end{thebibliography}

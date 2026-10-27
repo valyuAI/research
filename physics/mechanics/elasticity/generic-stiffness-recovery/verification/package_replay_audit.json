@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-17",
+  "default_verifier_exit_code": 0,
+  "default_requires_Singular": false,
+  "isolated_archive_optional_verifier_exit_code": 0,
+  "isolated_archive_initial_hashed_files_verified": 81,
+  "standalone_python_S_exit_code": 0,
+  "optimized_default_execution_rejected": true,
+  "portable_checker_and_input_byte_identical_to_independent_sources": true,
+  "pdf_pages": {
+    "paper.pdf": 7,
+    "journal_version.pdf": 7
+  },
+  "visual_review": "All seven main-paper pages and alternate author first page checked after rebuild; no clipping or overlap.",
+  "source_hashes": {
+    "verify_all.py": "1eec9359d60b29297c2fc3d728c3dee947a3866a73281d3a499f27239c7a7612",
+    "linear-certificates/verify_certificates.py": "a2de92102f6598edfe274baf9a8aaf6f31268e61738980459379f31478d9d8ef",
+    "linear-certificates/minor_dimension_certificates.json": "54e6d4467405a6c5e33892369cbce7e9cd0d9a2ae5c41110df5c2aa8a177b11a"
+  },
+  "scope": "Arithmetic and portability checks; the algebraic-geometric deductions remain a written proof."
+}

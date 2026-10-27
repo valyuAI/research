@@ -1,0 +1,16 @@
+[11:25:53] build hex_mono_k4 hex [[0,0]] k=4 
+hex cells=[[0, 0]] k=4 imb=1 radius=6.0: placements 1524 vars 21147 clauses 97591 (2.2s)
+wrote hex_mono_k4.cnf
+a6bf4b96295652aa3fd1da358048039358702afc5e892efa52a4ac68f22f5ed2  hex_mono_k4.cnf
+[11:25:56] cadical start
+s UNSATISFIABLE
+[11:26:00] cadical rc=20 (4s) proof bytes 909037
+5a8bec172f60c2c3ff08fc52df08d9f1b7feb48405a37ea446a7d36aea23059c  hex_mono_k4.drat
+c 12299 of 97591 clauses in core                            
+c 2555 of 20971 lemmas in core using 507493 resolution steps
+c 0 RAT lemmas in core; 189 redundant literals in core lemmas
+s VERIFIED
+c verification time: 2.558 seconds
+[11:26:04] drat-trim done (3s)
+DRAT_VERIFIED hex_mono_k4
+[11:26:05] END rc=20

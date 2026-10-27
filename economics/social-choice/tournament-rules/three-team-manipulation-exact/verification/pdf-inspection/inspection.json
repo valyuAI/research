@@ -1,0 +1,16 @@
+{
+  "pdf": "paper.pdf",
+  "pdf_sha256": "0efa36a1b5a9504caf67fe76fb312ab9eaec0e90b43bb1c0770bd4cf2ebc80fc",
+  "pages": 6,
+  "render_dpi": 100,
+  "visual_review": "All pages inspected individually; no clipping, overlap, illegible tables or unresolved references.",
+  "recorded_utc": "2026-10-26T14:28:36+00:00",
+  "page_images_sha256": {
+    "page-1.png": "72096e98c74ec31ff878a95b25d10abfc11c654b178cffcf127fc595701300f7",
+    "page-2.png": "a72ffe863617d2a0759cf8d06f17353fc5fc3920d81259666911c0a9c967fdc8",
+    "page-3.png": "7ba051045de506ff5657d16b845929b88690e22472cf4a4affaa086309c262b0",
+    "page-4.png": "5ebd8c13e77a1d6f6df927851ab582a603a5a32d2b4649a93485cd736b49d209",
+    "page-5.png": "a95ca5f0d2f3515f38a3009faa3c90bca111902162cf0eaaef7bb0e77e1eae5e",
+    "page-6.png": "3972ffe7eedb7e4db16724f1d2d2e39719527bba2dd91e25802654e95cc78ea5"
+  }
+}

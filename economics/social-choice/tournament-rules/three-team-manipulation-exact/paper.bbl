@@ -1,0 +1,61 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{10}
+
+\bibitem{AK10}
+Alon Altman and Robert Kleinberg, \emph{Nonmanipulable randomized tournament
+  selections}, Proceedings of the Twenty-Fourth AAAI Conference on Artificial
+  Intelligence (AAAI 2010), 2010.
+
+\bibitem{DW22}
+Atanas Dinev and S.~Matthew Weinberg, \emph{Tight bounds on 3-team
+  manipulations in randomized death match}, Web and Internet Economics (WINE
+  2022), Lecture Notes in Computer Science, vol. 13778, 2022,
+  arXiv:2301.07862v1.
+
+\bibitem{DLW26}
+Ke~Ding, Bo~Li, and Fangxiao Wang, \emph{How well can strategyproof tournament
+  rules resist pairwise manipulation?}, 2026, arXiv:2609.07062v1.
+
+\bibitem{HuangfuHall18}
+Q.~Huangfu and J.~A.~J. Hall, \emph{Parallelizing the dual revised simplex
+  method}, Mathematical Programming Computation \textbf{10} (2018), 119--142.
+
+\bibitem{McKayPiperno14}
+Brendan~D. McKay and Adolfo Piperno, \emph{Practical graph isomorphism, {II}},
+  Journal of Symbolic Computation \textbf{60} (2014), 94--112.
+
+\bibitem{MSS24}
+David Mik{\v{s}}an{\'\i}k, Ariel Schvartzman, and Jan Soukup, \emph{On
+  approximately strategy-proof tournament rules for collusions of size at least
+  three}, 2024, arXiv:2407.17569v1.
+
+\bibitem{OEIS568}
+{OEIS Foundation Inc.}, \emph{Sequence {A000568}: Number of outcomes of
+  unlabeled $n$-node tournaments}, The On-Line Encyclopedia of Integer
+  Sequences, \url{https://oeis.org/A000568}, 2026.
+
+\bibitem{PSW25}
+David Pennock, Daniel Schoepflin, and Kangning Wang, \emph{Strategyproof
+  tournament rules for teams with a constant degree of selfishness}, 2025,
+  arXiv:2512.05235v1.
+
+\bibitem{SSW17}
+Jon Schneider, Ariel Schvartzman, and S.~Matthew Weinberg,
+  \emph{Condorcet-consistent and approximately strategyproof tournament rules},
+  8th Innovations in Theoretical Computer Science Conference (ITCS 2017),
+  LIPIcs, vol.~67, 2017, arXiv:1605.09733v1, pp.~35:1--35:20.
+
+\bibitem{SWZZ20}
+Ariel Schvartzman, S.~Matthew Weinberg, Eitan Zlatin, and Albert Zuo,
+  \emph{Approximately strategyproof tournament rules: On large manipulating
+  sets and cover-consistence}, 11th Innovations in Theoretical Computer Science
+  Conference (ITCS 2020), LIPIcs, vol. 151, 2020, Article 3;
+  arXiv:1906.03324v2.
+
+\end{thebibliography}

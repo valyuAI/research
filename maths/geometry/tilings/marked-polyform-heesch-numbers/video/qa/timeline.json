@@ -1,0 +1,240 @@
+[
+  {
+    "id": "t01",
+    "scene": "Surrounding",
+    "start": 0.0,
+    "duration": 14.76,
+    "end": 14.76
+  },
+  {
+    "id": "t02",
+    "scene": "Surrounding",
+    "start": 15.299999999999986,
+    "duration": 16.152,
+    "end": 31.451999999999988
+  },
+  {
+    "id": "t03",
+    "scene": "Surrounding",
+    "start": 32.000000000000234,
+    "duration": 15.816,
+    "end": 47.81600000000024
+  },
+  {
+    "id": "t04",
+    "scene": "Surrounding",
+    "start": 48.333333333333336,
+    "duration": 18.456,
+    "end": 66.78933333333333
+  },
+  {
+    "id": "t05",
+    "scene": "Surplus",
+    "start": 67.33138,
+    "duration": 13.2,
+    "end": 80.53138
+  },
+  {
+    "id": "t06",
+    "scene": "Surplus",
+    "start": 81.06471333333332,
+    "duration": 14.064,
+    "end": 95.12871333333331
+  },
+  {
+    "id": "t07",
+    "scene": "Surplus",
+    "start": 95.6647133333334,
+    "duration": 13.104,
+    "end": 108.7687133333334
+  },
+  {
+    "id": "t08",
+    "scene": "Surplus",
+    "start": 109.29804666666682,
+    "duration": 16.752,
+    "end": 126.05004666666682
+  },
+  {
+    "id": "t09",
+    "scene": "ThreeRings",
+    "start": 126.59544299999999,
+    "duration": 18.36,
+    "end": 144.955443
+  },
+  {
+    "id": "t10",
+    "scene": "ThreeRings",
+    "start": 145.49544299999997,
+    "duration": 14.064,
+    "end": 159.559443
+  },
+  {
+    "id": "t11",
+    "scene": "ThreeRings",
+    "start": 160.09544300000027,
+    "duration": 18.312,
+    "end": 178.40744300000028
+  },
+  {
+    "id": "t12",
+    "scene": "FourHexagons",
+    "start": 178.92682299999998,
+    "duration": 15.96,
+    "end": 194.886823
+  },
+  {
+    "id": "t13",
+    "scene": "FourHexagons",
+    "start": 195.42682299999998,
+    "duration": 16.704,
+    "end": 212.13082299999996
+  },
+  {
+    "id": "t14",
+    "scene": "FourHexagons",
+    "start": 212.66015633333362,
+    "duration": 13.152,
+    "end": 225.8121563333336
+  },
+  {
+    "id": "t15",
+    "scene": "FourHexagons",
+    "start": 226.36015633333324,
+    "duration": 13.512,
+    "end": 239.87215633333324
+  },
+  {
+    "id": "t16",
+    "scene": "EveryMarking",
+    "start": 240.390886,
+    "duration": 14.616,
+    "end": 255.006886
+  },
+  {
+    "id": "t17",
+    "scene": "EveryMarking",
+    "start": 255.52421933333332,
+    "duration": 16.608,
+    "end": 272.1322193333333
+  },
+  {
+    "id": "t18",
+    "scene": "EveryMarking",
+    "start": 272.6575526666669,
+    "duration": 16.152,
+    "end": 288.8095526666669
+  },
+  {
+    "id": "t19",
+    "scene": "EveryMarking",
+    "start": 289.35755266666683,
+    "duration": 16.056,
+    "end": 305.4135526666668
+  },
+  {
+    "id": "t20",
+    "scene": "EveryMarking",
+    "start": 305.9575526666665,
+    "duration": 16.248,
+    "end": 322.2055526666665
+  },
+  {
+    "id": "t21",
+    "scene": "EveryMarking",
+    "start": 322.7242193333328,
+    "duration": 17.064,
+    "end": 339.78821933333285
+  },
+  {
+    "id": "t22",
+    "scene": "CertifiedMaxima",
+    "start": 340.320964,
+    "duration": 16.608,
+    "end": 356.928964
+  },
+  {
+    "id": "t23",
+    "scene": "CertifiedMaxima",
+    "start": 357.45429733333333,
+    "duration": 16.368,
+    "end": 373.8222973333333
+  },
+  {
+    "id": "t24",
+    "scene": "CertifiedMaxima",
+    "start": 374.3542973333336,
+    "duration": 16.008,
+    "end": 390.3622973333336
+  },
+  {
+    "id": "t25",
+    "scene": "CertifiedMaxima",
+    "start": 390.8876306666665,
+    "duration": 16.512,
+    "end": 407.39963066666655
+  },
+  {
+    "id": "t26",
+    "scene": "CertifiedMaxima",
+    "start": 407.9209639999997,
+    "duration": 19.92,
+    "end": 427.84096399999964
+  },
+  {
+    "id": "t27",
+    "scene": "PriorAndRecord",
+    "start": 428.384375,
+    "duration": 16.368,
+    "end": 444.752375
+  },
+  {
+    "id": "t28",
+    "scene": "PriorAndRecord",
+    "start": 445.28437499999995,
+    "duration": 16.92,
+    "end": 462.20437499999997
+  },
+  {
+    "id": "t29",
+    "scene": "PriorAndRecord",
+    "start": 462.7510416666669,
+    "duration": 19.512,
+    "end": 482.2630416666669
+  },
+  {
+    "id": "t30",
+    "scene": "PriorAndRecord",
+    "start": 482.784375,
+    "duration": 16.248,
+    "end": 499.032375
+  },
+  {
+    "id": "t31",
+    "scene": "PriorAndRecord",
+    "start": 499.55104166666615,
+    "duration": 17.856,
+    "end": 517.4070416666661
+  },
+  {
+    "id": "t32",
+    "scene": "Scope",
+    "start": 517.947786,
+    "duration": 19.464,
+    "end": 537.4117859999999
+  },
+  {
+    "id": "t33",
+    "scene": "Scope",
+    "start": 537.947786,
+    "duration": 16.104,
+    "end": 554.051786
+  },
+  {
+    "id": "t34",
+    "scene": "Scope",
+    "start": 554.5811193333336,
+    "duration": 17.304,
+    "end": 571.8851193333336
+  }
+]

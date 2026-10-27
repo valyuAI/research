@@ -1,0 +1,218 @@
+[
+  {
+    "id": "g01",
+    "start": 0.0,
+    "duration": 15.2,
+    "scene": "Movement"
+  },
+  {
+    "id": "g02",
+    "start": 15.6,
+    "duration": 14.8,
+    "scene": "Movement"
+  },
+  {
+    "id": "g03",
+    "start": 30.799999999999976,
+    "duration": 14.0,
+    "scene": "Movement"
+  },
+  {
+    "id": "g04",
+    "start": 45.13333333333355,
+    "duration": 12.8,
+    "scene": "Movement"
+  },
+  {
+    "id": "g05",
+    "start": 58.26569,
+    "duration": 14.4,
+    "scene": "Signs"
+  },
+  {
+    "id": "g06",
+    "start": 72.99902333333334,
+    "duration": 13.2,
+    "scene": "Signs"
+  },
+  {
+    "id": "g07",
+    "start": 86.59902333333332,
+    "duration": 15.2,
+    "scene": "Signs"
+  },
+  {
+    "id": "g08",
+    "start": 102.13235666666675,
+    "duration": 15.2,
+    "scene": "Signs"
+  },
+  {
+    "id": "g09",
+    "start": 117.66503900000001,
+    "duration": 14.0,
+    "scene": "Reduced"
+  },
+  {
+    "id": "g10",
+    "start": 131.99837233333335,
+    "duration": 14.8,
+    "scene": "Reduced"
+  },
+  {
+    "id": "g11",
+    "start": 147.19837233333334,
+    "duration": 16.0,
+    "scene": "Reduced"
+  },
+  {
+    "id": "g12",
+    "start": 163.53170566666682,
+    "duration": 16.0,
+    "scene": "Reduced"
+  },
+  {
+    "id": "g13",
+    "start": 179.86373700000001,
+    "duration": 15.2,
+    "scene": "Cores"
+  },
+  {
+    "id": "g14",
+    "start": 195.463737,
+    "duration": 16.4,
+    "scene": "Cores"
+  },
+  {
+    "id": "g15",
+    "start": 212.263737,
+    "duration": 16.0,
+    "scene": "Cores"
+  },
+  {
+    "id": "g16",
+    "start": 228.59707033333385,
+    "duration": 15.2,
+    "scene": "Cores"
+  },
+  {
+    "id": "g17",
+    "start": 244.12942700000002,
+    "duration": 14.8,
+    "scene": "Enumeration"
+  },
+  {
+    "id": "g18",
+    "start": 259.329427,
+    "duration": 17.2,
+    "scene": "Enumeration"
+  },
+  {
+    "id": "g19",
+    "start": 276.929427,
+    "duration": 14.8,
+    "scene": "Enumeration"
+  },
+  {
+    "id": "g20",
+    "start": 292.06276033333364,
+    "duration": 15.6,
+    "scene": "Enumeration"
+  },
+  {
+    "id": "g21",
+    "start": 307.99511700000005,
+    "duration": 16.4,
+    "scene": "Termination"
+  },
+  {
+    "id": "g22",
+    "start": 324.79511700000006,
+    "duration": 15.2,
+    "scene": "Termination"
+  },
+  {
+    "id": "g23",
+    "start": 340.395117,
+    "duration": 16.0,
+    "scene": "Termination"
+  },
+  {
+    "id": "g24",
+    "start": 356.72845033333374,
+    "duration": 14.4,
+    "scene": "Termination"
+  },
+  {
+    "id": "g25",
+    "start": 371.46048200000007,
+    "duration": 15.6,
+    "scene": "Thirty"
+  },
+  {
+    "id": "g26",
+    "start": 387.3938153333334,
+    "duration": 14.8,
+    "scene": "Thirty"
+  },
+  {
+    "id": "g27",
+    "start": 402.5938153333334,
+    "duration": 14.8,
+    "scene": "Thirty"
+  },
+  {
+    "id": "g28",
+    "start": 417.7271486666671,
+    "duration": 15.2,
+    "scene": "Thirty"
+  },
+  {
+    "id": "g29",
+    "start": 433.25950500000005,
+    "duration": 17.6,
+    "scene": "Extremal"
+  },
+  {
+    "id": "g30",
+    "start": 451.25950500000005,
+    "duration": 15.6,
+    "scene": "Extremal"
+  },
+  {
+    "id": "g31",
+    "start": 467.259505,
+    "duration": 16.4,
+    "scene": "Extremal"
+  },
+  {
+    "id": "g32",
+    "start": 483.99283833333357,
+    "duration": 15.6,
+    "scene": "Extremal"
+  },
+  {
+    "id": "g33",
+    "start": 499.92519500000003,
+    "duration": 14.8,
+    "scene": "Scope"
+  },
+  {
+    "id": "g34",
+    "start": 515.0585283333334,
+    "duration": 14.8,
+    "scene": "Scope"
+  },
+  {
+    "id": "g35",
+    "start": 530.2585283333333,
+    "duration": 14.8,
+    "scene": "Scope"
+  },
+  {
+    "id": "g36",
+    "start": 545.3918616666668,
+    "duration": 15.2,
+    "scene": "Scope"
+  }
+]

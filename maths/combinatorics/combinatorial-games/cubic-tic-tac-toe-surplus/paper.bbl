@@ -1,0 +1,67 @@
+\begin{thebibliography}{10}
+
+\bibitem{Beck2002}
+J{\'o}zsef Beck.
+\newblock Ramsey games.
+\newblock {\em Discrete Mathematics}, 249:3--30, 2002.
+
+\bibitem{Beck2008}
+J{\'o}zsef Beck.
+\newblock {\em Combinatorial Games: Tic-Tac-Toe Theory}, volume 114 of {\em
+  Encyclopedia of Mathematics and its Applications}.
+\newblock Cambridge University Press, Cambridge, 2008.
+
+\bibitem{CRKcode}
+John~W. Cain.
+\newblock tic-tac-toe-code.tar.gz: code for the $7^3$ case with central
+  opening.
+\newblock
+  \url{https://people.math.harvard.edu/~jcain2/tic-tac-toe-code.tar.gz}, 2025.
+\newblock Accessed 26 October 2026.
+
+\bibitem{CRK2025}
+John~W. Cain, Ioannis~M. Raymond, and Nora~C. K{\"a}llersj{\"o}.
+\newblock Cubic tic-tac-toe: A matching-based approach.
+\newblock arXiv:2509.21494v1 [math.CO], 2025.
+\newblock Submitted 25 September 2025.
+
+\bibitem{ErdosSelfridge1973}
+Paul Erd{\H{o}}s and John~L. Selfridge.
+\newblock On a combinatorial game.
+\newblock {\em Journal of Combinatorial Theory, Series A}, 14:298--301, 1973.
+
+\bibitem{GolombHales2002}
+Solomon~W. Golomb and Alfred~W. Hales.
+\newblock Hypercube tic-tac-toe.
+\newblock In {\em More Games of No Chance}, volume~42 of {\em MSRI
+  Publications}, pages 167--182. Cambridge University Press, 2002.
+
+\bibitem{HalesJewett1963}
+Alfred~W. Hales and Robert~I. Jewett.
+\newblock Regularity and positional games.
+\newblock {\em Transactions of the American Mathematical Society},
+  106:222--229, 1963.
+
+\bibitem{Hall1935}
+Philip Hall.
+\newblock On representatives of subsets.
+\newblock {\em Journal of the London Mathematical Society}, 10:26--30, 1935.
+
+\bibitem{LovaszPlummer1986}
+L{\'a}szl{\'o} Lov{\'a}sz and Michael~D. Plummer.
+\newblock {\em Matching Theory}.
+\newblock Annals of Discrete Mathematics 29 (North-Holland Mathematics Studies
+  121). North-Holland, Amsterdam, 1986.
+
+\bibitem{Patashnik1980}
+Oren Patashnik.
+\newblock Qubic: $4\times4\times4$ tic-tac-toe.
+\newblock {\em Mathematics Magazine}, 53:202--216, 1980.
+
+\bibitem{Uiterwijk2017}
+Jos Uiterwijk.
+\newblock Set matching: An enhancement of the {Hales-Jewett} pairing strategy.
+\newblock arXiv:1703.10678v1 [math.CO]; journal version in ICGA Journal 40(3)
+  (2018) 129--148, 2017.
+
+\end{thebibliography}

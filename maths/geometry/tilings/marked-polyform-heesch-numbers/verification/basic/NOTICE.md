@@ -1,0 +1,5 @@
+# Attribution and license of the recovered patch
+
+`basic_patch.json`, `basic_patch_grid.json` and `basic_tile.json` record grid coordinates recovered from the Wikimedia Commons file [A polygon with Heesch number 6.svg](https://commons.wikimedia.org/wiki/File:A_polygon_with_Heesch_number_6.svg) by Bojan Bašić, from Bašić, "A Figure with Heesch Number 6: Pushing a Two-Decade-Old Boundary", *The Mathematical Intelligencer* (2021), doi:10.1007/s00283-020-10034-w.
+
+The Commons file is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Changes: the 169 drawn polygons were snapped to exact positions on the trihexagonal grid and stored as tile placements (`svg_to_grid.py`); no drawing is reproduced, and the SVG itself is not redistributed. If the coordinates are an adaptation of the drawing, CC BY-SA 4.0 requires them to be shared under the same or a compatible license with this attribution, so a different license chosen for the rest of the repository would not cover these three files.

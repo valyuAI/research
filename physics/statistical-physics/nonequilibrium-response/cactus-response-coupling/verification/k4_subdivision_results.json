@@ -1,0 +1,24 @@
+{
+  "subdivided_edge": [
+    0,
+    1
+  ],
+  "arborescences_per_root": [
+    24,
+    24,
+    24,
+    24,
+    24
+  ],
+  "families": 7962624,
+  "distinct_multisets": 86150,
+  "uniquely_constructable_families": 984,
+  "pushforward_equals_k4_laws": true,
+  "k4_distinct_multisets": 5955,
+  "contraction_maps_UC_to_UC": true,
+  "min_over_UC_families_of_sum_lifted_y": 0,
+  "expected_value_under_root_laws": "-74467043099669441/1314877998480476367",
+  "equals_k4_value": true,
+  "no_coupling_proved": true,
+  "seconds": 80.2
+}

@@ -1,0 +1,228 @@
+{
+  "frozen_design_sha256": "27eaa79797267e616c5a8f2f8e57b2430f4427c2a47fce1281ee2987008111f7",
+  "target_data_sha256": "9e311cb5560905beca4478973ed84dfdaf0227a33f633896f891b8d14ef65dff",
+  "barcode_records": 2175043,
+  "target_counts_promoters": 761,
+  "target_counts_enhancers": 169,
+  "target_dna_reads": 65598429,
+  "target_rna_reads": 64627580,
+  "cohort_counts": {
+    "clean_TSS": 337,
+    "in_counts": 495,
+    "has_tss": 484,
+    "strict_tss": 337,
+    "overlapping_promoter": 45,
+    "overlapping_gene": 46,
+    "edited_training_promoter": 62,
+    "same_training_sequence": 45,
+    "eligible": 282
+  },
+  "primary": "CPM >=1 DNA, RNA pseudocount 0.1 CPM; independent promoters with >=1000 TSS reads and >=90% promoter-local starts",
+  "mode_details": {
+    "cpm": {
+      "evaluation_enhancers": [
+        "SV40-promoter",
+        "chr19:12995828-12996092-enhancer_rc",
+        "chr1:9777689-9777953-enhancer",
+        "chr3:128399440-128399704-enhancer",
+        "chr3:128399440-128399704-enhancer_rc",
+        "scramble952-promoter"
+      ],
+      "available_enhancers": [
+        "CTCF",
+        "SV40-promoter",
+        "chr19:12907390-12907654-enhancer_rc",
+        "chr19:12995828-12996092-enhancer",
+        "chr19:12995828-12996092-enhancer_rc",
+        "chr19:49395399-49395663-enhancer_rc",
+        "chr1:9777689-9777953-enhancer",
+        "chr3:128134842-128135106-enhancer_rc",
+        "chr3:128399440-128399704-enhancer",
+        "chr3:128399440-128399704-enhancer_rc",
+        "noTFBS",
+        "scramble952-promoter",
+        "seq10228",
+        "seq11242",
+        "seq25289",
+        "seq5999",
+        "tCMV-enhancer"
+      ],
+      "candidate_enhancers": [
+        "chr19:12907390-12907654-enhancer_rc",
+        "seq25289",
+        "chr19:49395399-49395663-enhancer_rc",
+        "seq11242",
+        "chr19:12995828-12996092-enhancer",
+        "tCMV-enhancer",
+        "seq10228",
+        "chr3:128134842-128135106-enhancer_rc"
+      ],
+      "calibration_pairs_required": 4,
+      "minimum_common_evaluation_pairs": 3
+    },
+    "raw": {
+      "evaluation_enhancers": [
+        "SV40-promoter",
+        "chr19:12995828-12996092-enhancer_rc",
+        "chr1:9777689-9777953-enhancer",
+        "chr3:128399440-128399704-enhancer",
+        "chr3:128399440-128399704-enhancer_rc",
+        "scramble952-promoter"
+      ],
+      "available_enhancers": [
+        "CTCF",
+        "SV40-promoter",
+        "chr19:12907390-12907654-enhancer_rc",
+        "chr19:12995828-12996092-enhancer",
+        "chr19:12995828-12996092-enhancer_rc",
+        "chr19:49395399-49395663-enhancer_rc",
+        "chr1:9777689-9777953-enhancer",
+        "chr3:128134842-128135106-enhancer_rc",
+        "chr3:128399440-128399704-enhancer",
+        "chr3:128399440-128399704-enhancer_rc",
+        "noTFBS",
+        "scramble952-promoter",
+        "seq10228",
+        "seq11242",
+        "seq25289",
+        "seq5999",
+        "tCMV-enhancer"
+      ],
+      "candidate_enhancers": [
+        "chr19:12907390-12907654-enhancer_rc",
+        "seq25289",
+        "chr19:49395399-49395663-enhancer_rc",
+        "seq11242",
+        "chr19:12995828-12996092-enhancer",
+        "tCMV-enhancer",
+        "seq10228",
+        "chr3:128134842-128135106-enhancer_rc"
+      ],
+      "calibration_pairs_required": 4,
+      "minimum_common_evaluation_pairs": 3,
+      "evaluation_note": "Same frozen CPM panels/evaluation IDs; raw measurements and training activity."
+    }
+  },
+  "summary": [
+    {
+      "mode": "cpm",
+      "method": "equal_compatibility",
+      "rmse_log2": 0.5982093492163546,
+      "full_rmse_log2": 0.5089028584104587,
+      "rmse_ratio": 1.1368345369516568,
+      "absolute_error": 0.5024286671536073,
+      "promoters": 202,
+      "coverage": 0.7163120567375887
+    },
+    {
+      "mode": "cpm",
+      "method": "even_activity",
+      "rmse_log2": 0.5038363171816207,
+      "full_rmse_log2": 0.5089028584104587,
+      "rmse_ratio": 0.9985428471942777,
+      "absolute_error": 0.44448671834278,
+      "promoters": 202,
+      "coverage": 0.7163120567375887
+    },
+    {
+      "mode": "cpm",
+      "method": "mean_only",
+      "rmse_log2": 0.5964367214251525,
+      "full_rmse_log2": 0.5089028584104587,
+      "rmse_ratio": 1.1483176000231583,
+      "absolute_error": 0.4704884846105036,
+      "promoters": 202,
+      "coverage": 0.7163120567375887
+    },
+    {
+      "mode": "cpm",
+      "method": "random",
+      "rmse_log2": 0.5396029344634818,
+      "full_rmse_log2": 0.5089028584104587,
+      "rmse_ratio": 1.0899400814999436,
+      "absolute_error": 0.4514404574467006,
+      "promoters": 202,
+      "coverage": 0.7112411347517731
+    },
+    {
+      "mode": "cpm",
+      "method": "strongest_only",
+      "rmse_log2": 0.5163780782724005,
+      "full_rmse_log2": 0.5088153732484774,
+      "rmse_ratio": 1.0160129913539615,
+      "absolute_error": 0.4405111108978332,
+      "promoters": 201,
+      "coverage": 0.7127659574468085
+    },
+    {
+      "mode": "cpm",
+      "method": "strongest_plus_controls",
+      "rmse_log2": 0.531770036368524,
+      "full_rmse_log2": 0.49864048441741043,
+      "rmse_ratio": 1.02771171780246,
+      "absolute_error": 0.4531562075014448,
+      "promoters": 177,
+      "coverage": 0.6276595744680851
+    },
+    {
+      "mode": "raw",
+      "method": "equal_compatibility",
+      "rmse_log2": 0.5451667149303107,
+      "full_rmse_log2": 0.39209708920898523,
+      "rmse_ratio": 1.304144295269745,
+      "absolute_error": 0.4642411449102422,
+      "promoters": 270,
+      "coverage": 0.9574468085106383
+    },
+    {
+      "mode": "raw",
+      "method": "even_activity",
+      "rmse_log2": 0.4188908378928456,
+      "full_rmse_log2": 0.39209708920898523,
+      "rmse_ratio": 1.0153852130521863,
+      "absolute_error": 0.3471891857687811,
+      "promoters": 270,
+      "coverage": 0.9574468085106383
+    },
+    {
+      "mode": "raw",
+      "method": "mean_only",
+      "rmse_log2": 0.5259964212135498,
+      "full_rmse_log2": 0.39209708920898523,
+      "rmse_ratio": 1.2363308053808342,
+      "absolute_error": 0.43760278049210843,
+      "promoters": 270,
+      "coverage": 0.9574468085106383
+    },
+    {
+      "mode": "raw",
+      "method": "random",
+      "rmse_log2": 0.437093632152995,
+      "full_rmse_log2": 0.3920970892089852,
+      "rmse_ratio": 1.077830984923481,
+      "absolute_error": 0.3603011678173297,
+      "promoters": 270,
+      "coverage": 0.9554964539007093
+    },
+    {
+      "mode": "raw",
+      "method": "strongest_only",
+      "rmse_log2": 0.4307773514052407,
+      "full_rmse_log2": 0.38907898466133867,
+      "rmse_ratio": 1.0398368174837098,
+      "absolute_error": 0.35946615835894385,
+      "promoters": 269,
+      "coverage": 0.9539007092198581
+    },
+    {
+      "mode": "raw",
+      "method": "strongest_plus_controls",
+      "rmse_log2": 0.43019879548552975,
+      "full_rmse_log2": 0.38881102775176213,
+      "rmse_ratio": 1.0600209897532809,
+      "absolute_error": 0.3557620539538233,
+      "promoters": 268,
+      "coverage": 0.950354609929078
+    }
+  ]
+}

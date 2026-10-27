@@ -1,0 +1,336 @@
+{
+  "scenes": [
+    {
+      "scene": "Hook",
+      "start": 0.0,
+      "duration": 17.2
+    },
+    {
+      "scene": "Billiards",
+      "start": 17.2,
+      "duration": 27.233008
+    },
+    {
+      "scene": "Rule",
+      "start": 44.433008,
+      "duration": 67.7
+    },
+    {
+      "scene": "Octagon",
+      "start": 112.133008,
+      "duration": 63.7
+    },
+    {
+      "scene": "Corners",
+      "start": 175.833008,
+      "duration": 45.333333
+    },
+    {
+      "scene": "Boxes",
+      "start": 221.16634100000002,
+      "duration": 84.429753
+    },
+    {
+      "scene": "Naive",
+      "start": 305.596094,
+      "duration": 23.433333
+    },
+    {
+      "scene": "Dots",
+      "start": 329.029427,
+      "duration": 34.933333
+    },
+    {
+      "scene": "Why",
+      "start": 363.96276,
+      "duration": 98.9
+    },
+    {
+      "scene": "Conclude",
+      "start": 462.86276,
+      "duration": 25.566667
+    },
+    {
+      "scene": "Lopsided",
+      "start": 488.429427,
+      "duration": 49.6
+    },
+    {
+      "scene": "Status",
+      "start": 538.0294269999999,
+      "duration": 62.966667
+    },
+    {
+      "scene": "Ending",
+      "start": 600.996094,
+      "duration": 33.266667
+    }
+  ],
+  "clips": {
+    "s01_hook": {
+      "scene": "Hook",
+      "start": 0.0,
+      "duration": 7.416
+    },
+    "s01_back": {
+      "scene": "Hook",
+      "start": 7.699999999999985,
+      "duration": 8.616
+    },
+    "s02_pool": {
+      "scene": "Billiards",
+      "start": 17.2,
+      "duration": 12.312
+    },
+    "s02_open": {
+      "scene": "Billiards",
+      "start": 29.79999999999997,
+      "duration": 13.752
+    },
+    "s03_new": {
+      "scene": "Rule",
+      "start": 44.433008,
+      "duration": 9.552
+    },
+    "s03_setup": {
+      "scene": "Rule",
+      "start": 54.26634133333332,
+      "duration": 12.168
+    },
+    "s03_step": {
+      "scene": "Rule",
+      "start": 66.73300800000013,
+      "duration": 11.208
+    },
+    "s03_again": {
+      "scene": "Rule",
+      "start": 78.23300800000057,
+      "duration": 13.704
+    },
+    "s03_period": {
+      "scene": "Rule",
+      "start": 92.23300799999984,
+      "duration": 9.12
+    },
+    "s03_chains": {
+      "scene": "Rule",
+      "start": 101.63300799999942,
+      "duration": 9.6
+    },
+    "s04_build": {
+      "scene": "Octagon",
+      "start": 112.133008,
+      "duration": 10.608
+    },
+    "s04_lines": {
+      "scene": "Octagon",
+      "start": 123.03300799999998,
+      "duration": 12.504
+    },
+    "s04_mirror": {
+      "scene": "Octagon",
+      "start": 135.8330080000002,
+      "duration": 13.968
+    },
+    "s04_conj": {
+      "scene": "Octagon",
+      "start": 150.59967466666703,
+      "duration": 14.112
+    },
+    "s04_guess": {
+      "scene": "Octagon",
+      "start": 164.99967466666635,
+      "duration": 9.96
+    },
+    "s05_corner": {
+      "scene": "Corners",
+      "start": 175.833008,
+      "duration": 11.616
+    },
+    "s05_split": {
+      "scene": "Corners",
+      "start": 187.73300799999998,
+      "duration": 10.464
+    },
+    "s05_red": {
+      "scene": "Corners",
+      "start": 198.4663413333335,
+      "duration": 12.312
+    },
+    "s05_twenty": {
+      "scene": "Corners",
+      "start": 211.06634133333384,
+      "duration": 9.216
+    },
+    "s06_unroll": {
+      "scene": "Boxes",
+      "start": 221.16634100000002,
+      "duration": 6.768
+    },
+    "s06_square": {
+      "scene": "Boxes",
+      "start": 228.23300766666668,
+      "duration": 12.312
+    },
+    "s06_boxes": {
+      "scene": "Boxes",
+      "start": 240.83300766666673,
+      "duration": 11.448
+    },
+    "s06_hop": {
+      "scene": "Boxes",
+      "start": 252.56634100000048,
+      "duration": 9.456
+    },
+    "s06_pigeon": {
+      "scene": "Boxes",
+      "start": 262.29967433333337,
+      "duration": 13.656
+    },
+    "s06_stretch": {
+      "scene": "Boxes",
+      "start": 276.23300766666625,
+      "duration": 15.264
+    },
+    "s06_rule": {
+      "scene": "Boxes",
+      "start": 292.26634099999876,
+      "duration": 12.456
+    },
+    "s07_naive": {
+      "scene": "Naive",
+      "start": 305.596094,
+      "duration": 9.552
+    },
+    "s07_fail": {
+      "scene": "Naive",
+      "start": 315.4294273333333,
+      "duration": 12.72
+    },
+    "s08_half": {
+      "scene": "Dots",
+      "start": 329.029427,
+      "duration": 6.36
+    },
+    "s08_kinds": {
+      "scene": "Dots",
+      "start": 335.6627603333333,
+      "duration": 13.512
+    },
+    "s08_claim": {
+      "scene": "Dots",
+      "start": 349.46276033333345,
+      "duration": 13.608
+    },
+    "s09_keep": {
+      "scene": "Why",
+      "start": 363.96276,
+      "duration": 14.208
+    },
+    "s09_slope": {
+      "scene": "Why",
+      "start": 378.46275999999995,
+      "duration": 12.768
+    },
+    "s09_mirror": {
+      "scene": "Why",
+      "start": 391.5294266666671,
+      "duration": 12.0
+    },
+    "s09_halve": {
+      "scene": "Why",
+      "start": 403.829426666667,
+      "duration": 15.504
+    },
+    "s09_never": {
+      "scene": "Why",
+      "start": 419.6294266666662,
+      "duration": 11.304
+    },
+    "s09_danger": {
+      "scene": "Why",
+      "start": 431.2294266666657,
+      "duration": 9.912
+    },
+    "s09_rescue": {
+      "scene": "Why",
+      "start": 441.4294266666652,
+      "duration": 12.96
+    },
+    "s09_down": {
+      "scene": "Why",
+      "start": 454.6627599999979,
+      "duration": 7.32
+    },
+    "s10_done": {
+      "scene": "Conclude",
+      "start": 462.86276,
+      "duration": 13.608
+    },
+    "s10_bound": {
+      "scene": "Conclude",
+      "start": 476.76275999999996,
+      "duration": 10.8
+    },
+    "s11_q": {
+      "scene": "Lopsided",
+      "start": 488.429427,
+      "duration": 7.368
+    },
+    "s11_loop": {
+      "scene": "Lopsided",
+      "start": 496.0960936666666,
+      "duration": 5.952
+    },
+    "s11_stretch": {
+      "scene": "Lopsided",
+      "start": 502.32942699999995,
+      "duration": 11.52
+    },
+    "s11_squeeze": {
+      "scene": "Lopsided",
+      "start": 514.1294270000004,
+      "duration": 9.912
+    },
+    "s11_never": {
+      "scene": "Lopsided",
+      "start": 524.3294270000006,
+      "duration": 12.816
+    },
+    "s12_proved": {
+      "scene": "Status",
+      "start": 538.0294269999999,
+      "duration": 9.048
+    },
+    "s12_computer": {
+      "scene": "Status",
+      "start": 547.3627603333333,
+      "duration": 14.808
+    },
+    "s12_priority": {
+      "scene": "Status",
+      "start": 562.4627603333334,
+      "duration": 11.16
+    },
+    "s12_hex": {
+      "scene": "Status",
+      "start": 573.896093666667,
+      "duration": 11.016
+    },
+    "s12_open": {
+      "scene": "Status",
+      "start": 585.1960936666663,
+      "duration": 14.904
+    },
+    "s13_recap": {
+      "scene": "Ending",
+      "start": 600.996094,
+      "duration": 16.656
+    },
+    "s13_end": {
+      "scene": "Ending",
+      "start": 617.9294273333333,
+      "duration": 9.456
+    }
+  }
+}

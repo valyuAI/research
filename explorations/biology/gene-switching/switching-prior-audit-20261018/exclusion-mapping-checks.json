@@ -1,0 +1,7 @@
+{
+  "exact_generator_mapping": true,
+  "stationarity": true,
+  "detailed_balance": true,
+  "flux": true,
+  "switching_invariant": true
+}

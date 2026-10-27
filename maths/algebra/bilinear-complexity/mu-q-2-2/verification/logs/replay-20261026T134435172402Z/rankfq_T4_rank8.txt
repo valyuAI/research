@@ -1,0 +1,10 @@
+q=2 n=4 m=4 target rank 8: units 8, proj functionals 15, classes 4, F1 reps 10, rank-ones 225
+rep 1/10 a 200/225 prefixes 0 cand 0
+rep 1/10 done: prefixes 0 cand 0 hits 0
+rep 2/10 a 0/225 prefixes 0 cand 0
+rep 2/10 a 200/225 prefixes 23748 cand 382041
+rep 2/10 done: prefixes 24024 cand 385976 hits 0
+rep 3/10 a 0/225 prefixes 24024 cand 385976
+HIT prefix: 3 7 20 | W rank-ones (a;b): [1000;1000] [1000;0010] [1000;1010] [1000;0001] [1000;1001] [1000;0011] [1000;1011] [0100;0110] [1100;1110] [0010;0100] [1110;1100] [0011;1000] [1011;1000]
+rep 3/10 done: prefixes 24898 cand 400307 hits 1
+RESULT q=2 f=0,0,0,0,1 rank<=8: YES (prefixes 24898, candidate buckets 400307)

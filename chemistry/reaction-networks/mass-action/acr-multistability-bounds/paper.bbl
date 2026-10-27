@@ -1,0 +1,75 @@
+\begin{thebibliography}{10}
+
+\bibitem{bcr1998}
+Jacek Bochnak, Michel Coste, and Marie-Fran{\c{c}}oise Roy.
+\newblock {\em Real Algebraic Geometry}, volume~36 of {\em Ergebnisse der
+  Mathematik und ihrer Grenzgebiete}.
+\newblock Springer, 1998.
+
+\bibitem{feinberg1987}
+Martin Feinberg.
+\newblock Chemical reaction network structure and the stability of complex
+  isothermal reactors. {I}. {T}he deficiency zero and deficiency one theorems.
+\newblock {\em Chemical Engineering Science}, 42(10):2229--2268, 1987.
+\newblock
+  \href{https://doi.org/10.1016/0009-2509(87)80099-4}{doi:10.1016/0009-2509(87)80099-4}.
+
+\bibitem{feinberg1995}
+Martin Feinberg.
+\newblock The existence and uniqueness of steady states for a class of chemical
+  reaction networks.
+\newblock {\em Archive for Rational Mechanics and Analysis}, 132:311--370,
+  1995.
+\newblock \href{https://doi.org/10.1007/BF00375614}{doi:10.1007/BF00375614}.
+
+\bibitem{feinberg2019}
+Martin Feinberg.
+\newblock {\em Foundations of Chemical Reaction Network Theory}, volume 202 of
+  {\em Applied Mathematical Sciences}.
+\newblock Springer, 2019.
+\newblock
+  \href{https://doi.org/10.1007/978-3-030-03858-8}{doi:10.1007/978-3-030-03858-8}.
+
+\bibitem{horn1972}
+Friedrich Horn and Roy Jackson.
+\newblock General mass action kinetics.
+\newblock {\em Archive for Rational Mechanics and Analysis}, 47:81--116, 1972.
+\newblock \href{https://doi.org/10.1007/BF00251225}{doi:10.1007/BF00251225}.
+
+\bibitem{jtz2024}
+Yue Jiao, Xiaoxian Tang, and Xiaowei Zeng.
+\newblock Multistability of small zero-one reaction networks.
+\newblock {\em Journal of Mathematical Biology}, 91(6):82, 2025.
+\newblock arXiv:2406.11586.
+  \href{https://doi.org/10.1007/s00285-025-02306-w}{doi:10.1007/s00285-025-02306-w}.
+
+\bibitem{jnj2026}
+Badal Joshi, Tung~D. Nguyen, and Matthew~D. Johnston.
+\newblock Bistability, absolute concentration robustness, and hysteresis in
+  dual-site futile cycles with bifunctional enzymes.
+\newblock arXiv:2605.11389v1, 2026.
+\newblock \href{https://arxiv.org/abs/2605.11389}{arXiv:2605.11389}.
+
+\bibitem{kns2024}
+Nidhi Kaihnsa, Tung~D. Nguyen, and Anne Shiu.
+\newblock Absolute concentration robustness and multistationarity in reaction
+  networks: conditions for coexistence.
+\newblock {\em European Journal of Applied Mathematics}, 35(4):566--600, 2024.
+\newblock arXiv:2307.04186v1.
+  \href{https://doi.org/10.1017/S0956792523000335}{doi:10.1017/S0956792523000335}.
+
+\bibitem{shinarFeinberg2010}
+Guy Shinar and Martin Feinberg.
+\newblock Structural sources of robustness in biochemical reaction networks.
+\newblock {\em Science}, 327(5971):1389--1391, 2010.
+\newblock
+  \href{https://doi.org/10.1126/science.1183372}{doi:10.1126/science.1183372}.
+
+\bibitem{tangZhang2026}
+Xiaoxian Tang and Jiandong Zhang.
+\newblock The ubiquity of three steady states: minimal multistable zero-one
+  reaction networks.
+\newblock arXiv:2608.01116, 2026.
+\newblock \href{https://arxiv.org/abs/2608.01116}{arXiv:2608.01116}.
+
+\end{thebibliography}

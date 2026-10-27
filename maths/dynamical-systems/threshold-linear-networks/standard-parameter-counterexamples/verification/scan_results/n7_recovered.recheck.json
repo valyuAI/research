@@ -1,0 +1,20 @@
+{
+  "parameters": [
+    3,
+    3,
+    1
+  ],
+  "candidates": 35842,
+  "stable": 0,
+  "tags": {
+    "REJ": 35842
+  },
+  "stable_graphs": [],
+  "float_exact_disagreements": 0,
+  "inputs_sha256": {
+    "n7_std_0.txt": "d7525d9cb2fd07b4b632c75aa0f17e696289b04943cf4a05d995853cd5259402",
+    "n7_std_1.txt": "c9479c17aacf26ac5ee18b54ea0434179a16aeb3f4bd3c755d10ae06fbb55b0d",
+    "n7_std_2.txt": "0f2949f0962e08cc83770c0c729122c53673023f077c5a9c8c7389a7d1e07014"
+  },
+  "ok": true
+}

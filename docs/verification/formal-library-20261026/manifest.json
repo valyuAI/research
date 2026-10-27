@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-26",
+  "buildExitCode": 0,
+  "auditExitCode": 0,
+  "projectTheoremDeclarations": 153,
+  "mathematicalModules": 7,
+  "allowedAxioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "independentSixCheckerReplay": "Not run on this expanded library; the earlier 121-theorem replay is documented separately.",
+  "sha256": {
+    "formal/ValyuResearch.lean": "63429b8101750a34c1d97400dd49d196b1b7d6077dcc7ff83cd0ce49878206c0",
+    "formal/Audit.lean": "da2183ebbe83490d9a6e1850c64d535b42e89f4ca0f78528921546e756f0a3eb",
+    "formal/lake-manifest.json": "a7410fb178083ed016826edae52e31c08647ae68cc88d2fc25a215e86bd2b882",
+    "formal/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "formal/ValyuResearch/AcrMultistability.lean": "d7989b5162e05335ad5dddfdb568ff12da7f23bc33c6a5eae5a8540d7a52fac7",
+    "formal/ValyuResearch/CommonQuartetPotential.lean": "a85234aa55d40aa5772ad74dbd2f708595494383beb69717d46bd9ce5a16115e",
+    "formal/ValyuResearch/CubicTicTacToe.lean": "d5053cbceeda85edc0d75182c4a062faf50b0232fcbbb71ee948b7a73df63683",
+    "formal/ValyuResearch/Elasticity.lean": "3616a1b04f20f38890d4b109fbb2d9552ad77a3175ddbc2013f1af99e748ee79",
+    "formal/ValyuResearch/HalesJewett.lean": "dac198f4fff3bbe6437170575bf4ff7cd8cc2860949eb0c28800628f44df862e",
+    "formal/ValyuResearch/LotkaVolterra.lean": "71aa8761c909eecf91173279552a058f888482acfcd888bfd40d561ddc179fc5",
+    "formal/ValyuResearch/Resetting.lean": "387e3106f8f57cc3d08468d5c00c68e877bc7ef5dbb76449f8486c1fa9c7574d",
+    "docs/verification/formal-library-20261026/build.log": "1dc9f78882b618a05f2135d0e61937fde95135138e722b007a8c23da61d15895",
+    "docs/verification/formal-library-20261026/axiom-audit.log": "3c954c91e010a976bb077ba708a0cc1b573c362e5c697cb897aef2cca2e2b4bc"
+  }
+}

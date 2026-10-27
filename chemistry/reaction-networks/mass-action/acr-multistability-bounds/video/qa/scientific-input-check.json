@@ -1,0 +1,12 @@
+{
+  "checked": 30,
+  "changed": [],
+  "approvedChanges": {
+    "verification/independent_check.py": {
+      "before": "48bf4367be52dfa486e86bc877d804bf9d706a2c24a2e755222dad9e5e125512",
+      "after": "60f2440261db2d09671f05261d0d5f8e21c8b0e65de00c61f28cac5abd4c3bd2"
+    }
+  },
+  "originalSnapshotPreserved": true,
+  "supplement": "scientific-input-supplement.json"
+}

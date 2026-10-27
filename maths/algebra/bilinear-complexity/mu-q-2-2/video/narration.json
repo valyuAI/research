@@ -1,0 +1,133 @@
+{
+  "voice": "cedar",
+  "clips": [
+    {
+      "id": "a01",
+      "text": "Multiply two expressions, each with two pieces. You could multiply every piece on the left by every piece on the right. That costs four multiplications. Can you get exactly the same answer using only three?"
+    },
+    {
+      "id": "a02",
+      "text": "Use two plus three x, and four plus five x. The outside products are eight and fifteen x squared. The middle products are ten x and twelve x. Together, those middle pieces give twenty two x."
+    },
+    {
+      "id": "a03",
+      "text": "Now add the two coefficients on each side first. Five times nine is forty five. This single multiplication contains all four earlier products. Subtract eight and fifteen, and the missing middle coefficient is twenty two."
+    },
+    {
+      "id": "a04",
+      "text": "That is Karatsuba's trick. We paid for three products, and used additions and subtractions to recover the answer. Our cost model counts multiplications between input coefficients. Additions and multiplication by fixed constants are free in this model."
+    },
+    {
+      "id": "a05",
+      "text": "Now change the arithmetic. Our coefficients are only zero and one. After addition, keep the remainder on division by two. So one plus one becomes zero. Two identical contributions cancel, instead of adding up to two."
+    },
+    {
+      "id": "a06",
+      "text": "A number in our new system has four slots: constant, x, x squared, and x cubed. For example, one plus x cubed is the list one, zero, zero, one. These are polynomial coefficients, not decimal digits."
+    },
+    {
+      "id": "a07",
+      "text": "Multiplication can produce higher powers. We fold them back using a fixed rule: x to the fourth equals x squared plus one. For example, x cubed times x becomes one plus x squared, which fits in our four slots."
+    },
+    {
+      "id": "a08",
+      "text": "The ordinary expansion has four times four coefficient products, so sixteen. Group each input into two smaller polynomial pieces. Apply the three-product trick outside, then again inside each of those three products. Three times three gives nine."
+    },
+    {
+      "id": "a09",
+      "text": "This proves that nine products suffice. But perhaps a different trick uses eight. Finding one recipe gives an upper bound. Ruling out every possible cheaper recipe is a different job. We need a way to describe all recipes."
+    },
+    {
+      "id": "a10",
+      "text": "A permitted product takes a sum from the first input and multiplies it by a sum from the second. For example, a zero plus a two, times b one plus b three. Its expansion marks four places in a grid."
+    },
+    {
+      "id": "a11",
+      "text": "Choose any nonempty selection of the four rows, and any nonempty selection of columns. There are fifteen choices each way, giving two hundred and twenty five possible grids. Mathematicians call each of these a rank-one form."
+    },
+    {
+      "id": "a12",
+      "text": "Why a grid? Each square represents one coefficient product, such as a two times b one. A coloured square means include that product. Combining grids means adding corresponding squares. In our binary arithmetic, two coloured squares cancel."
+    },
+    {
+      "id": "a13",
+      "text": "The actual multiplication has four output coefficients, so four target grids. Here is the target for the constant coefficient. Its marked squares record exactly which input products contribute a constant after we fold the powers back."
+    },
+    {
+      "id": "a14",
+      "text": "A multiplication recipe succeeds when every target grid can be made by adding some of its product grids. The same product can help several outputs. This is why counting the coloured squares alone cannot tell us the cheapest recipe."
+    },
+    {
+      "id": "a15",
+      "text": "The set of all grids you can make by adding a chosen collection is called its span. Start with two simple grids: you can make zero, either one, or their sum. A new independent grid doubles these binary possibilities."
+    },
+    {
+      "id": "a16",
+      "text": "Imagine a container holding all combinations of the chosen grids. This container is a schematic picture of a span, not an ordinary room in space. The four target grids already supply four independent directions that every successful container must hold."
+    },
+    {
+      "id": "a17",
+      "text": "The paper proves that an eight-product recipe exists exactly when four extra product grids complete an eight-dimensional container that can itself be built from product grids. That equivalence is what makes the finite search cover every possible recipe."
+    },
+    {
+      "id": "a18",
+      "text": "Without using symmetry, a checker examines one hundred and three million, four hundred and six thousand, six hundred and sixteen eligible four-grid sets. None works. A separate symmetry-based search reduces the work to seventy four thousand, three hundred and seventy seven prefixes."
+    },
+    {
+      "id": "a19",
+      "text": "The important word is exhaustive. A failed hunt alone proves nothing. Here the written reduction proves that every eight-product recipe would appear in the search. Zero successful cases therefore rules out eight, while our construction already supplies nine."
+    },
+    {
+      "id": "a20",
+      "text": "Change the coefficients to zero, one, and two, with arithmetic wrapping around at three. The answer changes to eight. For example, two plus two becomes one. A finite field is a finite arithmetic system where every nonzero number can be divided by."
+    },
+    {
+      "id": "a21",
+      "text": "The paper gives the eight products explicitly. Each combines coefficients of the first input and the same combination of the second. This is called a symmetric recipe. Ordinary recipes may use different combinations on the two sides."
+    },
+    {
+      "id": "a22",
+      "text": "To verify such a recipe, test the sixteen pairs made from one, x, x squared, and x cubed. Every larger input is built by adding these pieces. Because the recipe distributes over addition in each input, those sixteen identities suffice."
+    },
+    {
+      "id": "a23",
+      "text": "For fields with three, four, or five elements, seven products are impossible. For five, two separate exact programs each examined seventy three thousand prefixes and over seventeen million residual buckets. Both found no seven-product recipe, and positive controls did succeed."
+    },
+    {
+      "id": "a24",
+      "text": "Here is the complete answer: nine for two elements; eight for three, four, or five; seven for larger finite fields. The field size must be a prime power. A four-element field is not ordinary arithmetic modulo four."
+    },
+    {
+      "id": "a25",
+      "text": "A second question uses six coefficients arranged in a circle. Multiply their polynomials, but now wrap x to the sixth back to one. Positions repeat every six steps. This operation is called cyclic convolution of length six."
+    },
+    {
+      "id": "a26",
+      "text": "For a concrete example, multiply one plus x to the fifth by one plus x. Before wrapping, you get one, x, x to the fifth, and x to the sixth. The last becomes one, and the two ones cancel."
+    },
+    {
+      "id": "a27",
+      "text": "The result is x plus x to the fifth. To calculate arbitrary inputs efficiently, the algebra splits this six-slot problem into a two-slot piece and our four-slot piece. They cost three products and nine products respectively."
+    },
+    {
+      "id": "a28",
+      "text": "Adding those costs needs a theorem. Costs of independent pieces do not always add in this subject. The special theorem of Ja'Ja' and Takche applies because one piece has two input and output coordinates. Here it proves three plus nine equals twelve."
+    },
+    {
+      "id": "a29",
+      "text": "What is new is narrower than the table might suggest. Rambaud already recorded the symmetric binary value nine in twenty fourteen and in his corrected thesis. The present binary exclusion also permits different combinations on the two input sides."
+    },
+    {
+      "id": "a30",
+      "text": "The subspace search methods also build on Barbulescu, Detrey, Estibals, Zimmermann, Covanov, and Rambaud. The four-element value had already been claimed in a survey. The surviving contributions concern unrestricted binary rank, the explicit ternary recipe, and the convolution consequence."
+    },
+    {
+      "id": "a31",
+      "text": "Multiple exact checkers and controls support the computations. Twelve compiled checks passed in the accepted research package. A separate logical certificate was verified too; its large proof file is archived outside this repository. No Lean formalization is claimed."
+    },
+    {
+      "id": "a32",
+      "text": "Remember the chain: additions can replace products; grids describe every permitted recipe; exhaustive exclusion makes nine optimal in the binary system. Correctness confidence is high. Priority remains moderately confident and bounded by the sources checked. Larger multiplication systems still need work."
+    }
+  ]
+}

@@ -1,0 +1,1506 @@
+{
+ "description": "Independent encoding (verification/sat/indep/indep_twotree.py, shapes by leaf insertion, direct 228-pattern clauses) of Lemma 3.3 at n=14 (sizes 3,4), solved by Kissat 4.0.4 without proof output. Two runners: forward (shapes 0..134 ascending, 3 workers) and reverse (134..80 descending, 1 worker); merged when the union covered all 135 shapes; shapes solved by both runners agree on status and CNF hash. Run 26 Oct 2026 09:04-11:00 UTC on a shared laptop (times are wall-clock under heavy load).",
+ "n": 14,
+ "sizes": [
+  3,
+  4
+ ],
+ "shapes": 135,
+ "summary": {
+  "UNSAT": 135,
+  "SAT": 0
+ },
+ "results": [
+  {
+   "shape": 0,
+   "status": "UNSAT",
+   "cnf_sha256": "b926444c922c4ad4da45a99bee3d211ceda8b7b3cc6eba90e64f3319b5fb0f3e",
+   "kissat_secs": [
+    104.7
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 1,
+   "status": "UNSAT",
+   "cnf_sha256": "4be7c01a7f1ffd7fc799aa2299547b6b2fb1e1609dcc1a590be1d7c223bc6fde",
+   "kissat_secs": [
+    105.0
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 2,
+   "status": "UNSAT",
+   "cnf_sha256": "5aa70633e430ece049a0a8d70530679f639dff0ae97a7accb1c51eff7065ffe4",
+   "kissat_secs": [
+    103.1
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 3,
+   "status": "UNSAT",
+   "cnf_sha256": "ea52ae3eccd1ebc0e273cfc24b5036f81dba7392a5e21e102d095039e73471f9",
+   "kissat_secs": [
+    58.6
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 4,
+   "status": "UNSAT",
+   "cnf_sha256": "0955e2b0591b3e02a2b18f21a2699f7ad1b5bf566b68e35650a671a2e950479e",
+   "kissat_secs": [
+    63.0
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 5,
+   "status": "UNSAT",
+   "cnf_sha256": "414095506fae18d5a766ed5d5bdf8fd13148ddb0f34caabfebcdb18281bbfd0e",
+   "kissat_secs": [
+    61.7
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 6,
+   "status": "UNSAT",
+   "cnf_sha256": "b55e0adba8705a53bf847bb07ea812f7759d1c7f7cdc0e21fdaff075ce04b99d",
+   "kissat_secs": [
+    72.8
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 7,
+   "status": "UNSAT",
+   "cnf_sha256": "4aa1bf2b2df156ef086703987f713d66a1ffe287ddf2a286fd58d98cc2b91249",
+   "kissat_secs": [
+    97.8
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 8,
+   "status": "UNSAT",
+   "cnf_sha256": "9afbe5c5608ef0b684a4acce4c6d7a0b542c9374e54ff9767cc54246c319d3f3",
+   "kissat_secs": [
+    75.0
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 9,
+   "status": "UNSAT",
+   "cnf_sha256": "e408e87820abd6188bd9976232a08aad09e0810f13d39aa7a575ddb18f65be68",
+   "kissat_secs": [
+    140.5
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 10,
+   "status": "UNSAT",
+   "cnf_sha256": "1b6e0b17e53c93a19805ec609cf9bf1d6ad870ce521e85f9a72b401e22ea9f74",
+   "kissat_secs": [
+    134.2
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 11,
+   "status": "UNSAT",
+   "cnf_sha256": "d1faa10f35009c9c47cf5df73e4437736b43791e11c5e38cd7f7a44c19cafec8",
+   "kissat_secs": [
+    111.1
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 12,
+   "status": "UNSAT",
+   "cnf_sha256": "c1b70e2b54a907f7823f056238d19e9fa7ee4e8bd8991bfe77f5792f0705db5a",
+   "kissat_secs": [
+    122.0
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 13,
+   "status": "UNSAT",
+   "cnf_sha256": "a41c7bddcb6a5997cbd644f72d23e4a5a6e6e389b39433c52e1db36a2046a334",
+   "kissat_secs": [
+    112.3
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 14,
+   "status": "UNSAT",
+   "cnf_sha256": "241e83ad1bd4f0894f2879985dba3e43625a77e65460988e4e127dfdc57131cf",
+   "kissat_secs": [
+    117.2
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 15,
+   "status": "UNSAT",
+   "cnf_sha256": "bd77e90127abc64f5a2e33e4dbffd2a700d0fd890789b4da1a31071397857e9c",
+   "kissat_secs": [
+    92.3
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 16,
+   "status": "UNSAT",
+   "cnf_sha256": "ceadea74193b8f31585db163185e41c925431b4bb5e8e5506e837a16f6f6a176",
+   "kissat_secs": [
+    99.3
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 17,
+   "status": "UNSAT",
+   "cnf_sha256": "ddca5ae0da2461a1dd76ca0c1f4d968a104d2fa96e554fb8a1941a6c95dbc443",
+   "kissat_secs": [
+    104.9
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 18,
+   "status": "UNSAT",
+   "cnf_sha256": "060d0fc25e83e82f93ed953477bb1b746ce7860eb51f04d8230d0140f7e0ca03",
+   "kissat_secs": [
+    128.6
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 19,
+   "status": "UNSAT",
+   "cnf_sha256": "a218fba18a1fb8f1d310c26e9213734fc5177d2e3b726fd7a48678c9d1754de8",
+   "kissat_secs": [
+    159.4
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 20,
+   "status": "UNSAT",
+   "cnf_sha256": "8512514c07b11a8d4483ed768c3418b1d95474d150f71ac5d462f682753c905b",
+   "kissat_secs": [
+    164.2
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 21,
+   "status": "UNSAT",
+   "cnf_sha256": "67f433ae13306d3dba830ceb97e861f43443067b55a2bacc90c79fb823c7d417",
+   "kissat_secs": [
+    395.9
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 22,
+   "status": "UNSAT",
+   "cnf_sha256": "ddb92cf75328939590ae58ffe3f0460e0de2bd0458fea8ceb9128aac8db3309f",
+   "kissat_secs": [
+    344.4
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 23,
+   "status": "UNSAT",
+   "cnf_sha256": "b5ef20950ac2e1afab5583c0bd9425ae8d66e9cdac4dcdc64c164c24e2e263b9",
+   "kissat_secs": [
+    337.5
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 24,
+   "status": "UNSAT",
+   "cnf_sha256": "c31d91f848d1e85826225e32a37ca1167c93db5ed573472e07d924b01e0a8dab",
+   "kissat_secs": [
+    281.3
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 25,
+   "status": "UNSAT",
+   "cnf_sha256": "6d8065def57bc9cf7907ca896c11312ffc2c98c72251bcad739c60ea11a86243",
+   "kissat_secs": [
+    312.2
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 26,
+   "status": "UNSAT",
+   "cnf_sha256": "f0dbb57c65277ee5ee302a7b139e24faa16ba52321aefb303fa8b52e4491df09",
+   "kissat_secs": [
+    446.7
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 27,
+   "status": "UNSAT",
+   "cnf_sha256": "b4596ff8e93481d5cb76c1451420b21a743eae60aa14e666e1d81b4682e96df6",
+   "kissat_secs": [
+    252.0
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 28,
+   "status": "UNSAT",
+   "cnf_sha256": "818385ce37978a85200befd65152ff9878eb6bded6d4e3f3fd1a559029d3e369",
+   "kissat_secs": [
+    402.0
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 29,
+   "status": "UNSAT",
+   "cnf_sha256": "ed4d123e76b0311f506c0ccb88420c8f71350e89ac3aaefeae3032d146a61a57",
+   "kissat_secs": [
+    220.6
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 30,
+   "status": "UNSAT",
+   "cnf_sha256": "d0b1fa3ca0f59007f6e2f80cf268bb836f30fde5f36db0912ae88c9446cbd132",
+   "kissat_secs": [
+    224.2
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 31,
+   "status": "UNSAT",
+   "cnf_sha256": "fb8c9f5e486531da4630bdeb6db2d1c560a347e16854e66c700c953ca10ea45e",
+   "kissat_secs": [
+    214.7
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 32,
+   "status": "UNSAT",
+   "cnf_sha256": "9efbe6d9f3436baaed752dfc1bb4c1182427747308ce1534a15f65b1d1cca17e",
+   "kissat_secs": [
+    238.1
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 33,
+   "status": "UNSAT",
+   "cnf_sha256": "332fb81e298d5708b91f6219d84d5ed08b628c935c9e4e3a0f493e581a89da64",
+   "kissat_secs": [
+    234.8
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 34,
+   "status": "UNSAT",
+   "cnf_sha256": "1e3db85d0a61bac011f6e518c83fc68db2dc438b9ce7a6b72800a22d139177b8",
+   "kissat_secs": [
+    281.2
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 35,
+   "status": "UNSAT",
+   "cnf_sha256": "c56706e39ce60b43c1f5bcd1946b3e185c6c5bc6bb2a4053670fb3e9c3435b95",
+   "kissat_secs": [
+    298.0
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 36,
+   "status": "UNSAT",
+   "cnf_sha256": "4df27c4e37599fb0fbc1c901742dd34e60a3915a84f2eccddfe3748fdbd817f3",
+   "kissat_secs": [
+    173.6
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 37,
+   "status": "UNSAT",
+   "cnf_sha256": "4aae15bf6b4d6d6331b3504f67caae9747ab13ada98e5516361b0e33b53f920b",
+   "kissat_secs": [
+    269.2
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 38,
+   "status": "UNSAT",
+   "cnf_sha256": "3dffe19fa26c16a0073c69204ec6436c685eb553afd614963ae658ec09378a65",
+   "kissat_secs": [
+    241.0
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 39,
+   "status": "UNSAT",
+   "cnf_sha256": "82c10920d66f694c9e354497db6dc051cb8f864a218e4032ccd490da80b48dbf",
+   "kissat_secs": [
+    230.0
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 40,
+   "status": "UNSAT",
+   "cnf_sha256": "8baa14ee4cff0cfb8a0ddee56a567995149463ad2585b09cce1898f2727b7b85",
+   "kissat_secs": [
+    247.4
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 41,
+   "status": "UNSAT",
+   "cnf_sha256": "469171cff6faa48970c512699d7b56eb1c70598a7cf9778df4da5c9916b7ce61",
+   "kissat_secs": [
+    312.1
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 42,
+   "status": "UNSAT",
+   "cnf_sha256": "0e25a04fc1ad4c4060a995a6e9f37e41f5964fa388a2b7acf870c51d4a613a5f",
+   "kissat_secs": [
+    575.1
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 43,
+   "status": "UNSAT",
+   "cnf_sha256": "8e4bde07d2f405d052a8a21e5debf0487e362ae3909828c200e5cc0e3b53880c",
+   "kissat_secs": [
+    211.8
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 44,
+   "status": "UNSAT",
+   "cnf_sha256": "c368e7d9ad94f394fe8a829da68e9fcdca90dd840861777eb411aed70371eaee",
+   "kissat_secs": [
+    298.5
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 45,
+   "status": "UNSAT",
+   "cnf_sha256": "6dfe1a7c826a6b26a7f3c01c68bc4b58760c395fafdbad3cbfb457f060d0495a",
+   "kissat_secs": [
+    302.3
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 46,
+   "status": "UNSAT",
+   "cnf_sha256": "7f7a4eb93bfe0c0d4d997e960d5a73b3cd7ccacbb434eaa26f6eca620c5876b1",
+   "kissat_secs": [
+    210.3
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 47,
+   "status": "UNSAT",
+   "cnf_sha256": "8f41c6023de5884bcb79c92d73655ac8e649c399d5aa1024acdf9dd70c1b0ef9",
+   "kissat_secs": [
+    222.0
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 48,
+   "status": "UNSAT",
+   "cnf_sha256": "31a26aeb626a4edfc518228ccc29c60d52b78ed1843437fc71a903f87f38cf8b",
+   "kissat_secs": [
+    185.5
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 49,
+   "status": "UNSAT",
+   "cnf_sha256": "4cc5481c9cba7d60041f8bd3e9e96d67f5fd9751c6804347e3089fc046ef86c9",
+   "kissat_secs": [
+    193.6
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 50,
+   "status": "UNSAT",
+   "cnf_sha256": "b8bf6351c4ed4cdcf2dd3842a7f4cb7702d60507e6ad7a864fc139ce98e147c0",
+   "kissat_secs": [
+    183.5
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 51,
+   "status": "UNSAT",
+   "cnf_sha256": "338ed0f413c1a8fb83217eefe32c3452df5475dcd35ccb6d9c799bc00c2dae98",
+   "kissat_secs": [
+    157.6
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 52,
+   "status": "UNSAT",
+   "cnf_sha256": "5fdef62bc0de68be674043b09a12942fd3c4a4be6798c8ee4eb1fa71e8339cad",
+   "kissat_secs": [
+    266.3
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 53,
+   "status": "UNSAT",
+   "cnf_sha256": "7813620d60773852ca89f6add8474142ae9a642d1939927e04f709d2d4e99159",
+   "kissat_secs": [
+    199.0
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 54,
+   "status": "UNSAT",
+   "cnf_sha256": "419ec628b1bc60f6cf6da117b0eae6cc119ed595784ecde47c2706f01db73297",
+   "kissat_secs": [
+    242.4
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 55,
+   "status": "UNSAT",
+   "cnf_sha256": "bcd42862e1d07c7a32f96cf8a4e6a868a7f323a1b5649f32afad7666913ce409",
+   "kissat_secs": [
+    206.4
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 56,
+   "status": "UNSAT",
+   "cnf_sha256": "ebe89f92803504d9b19a474bb9170f258a818939e10ba1cabaf55b77160f6a02",
+   "kissat_secs": [
+    153.9
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 57,
+   "status": "UNSAT",
+   "cnf_sha256": "a3c6e8953f80f4a5461bf51455ddf3970a677d6f91bbf709952f6efa0ca9e687",
+   "kissat_secs": [
+    182.8
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 58,
+   "status": "UNSAT",
+   "cnf_sha256": "dc204e5151d04c235df82ef3929e80d5eeb880cbf5cd2a90afe657a547ae51b0",
+   "kissat_secs": [
+    153.5
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 59,
+   "status": "UNSAT",
+   "cnf_sha256": "2b98dca7df24e40271aed368c9cd4614baf982ad7aae615c479fcd89fc76e8e7",
+   "kissat_secs": [
+    159.0
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 60,
+   "status": "UNSAT",
+   "cnf_sha256": "38a98ded7ea69dd7d1248549c38c4444bab7ccc5cd6de31928c0b2c537a9364b",
+   "kissat_secs": [
+    141.3
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 61,
+   "status": "UNSAT",
+   "cnf_sha256": "305a67036933260db1e411f68439153b0ff04c91fef71d824a92fc1f43953d92",
+   "kissat_secs": [
+    170.5
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 62,
+   "status": "UNSAT",
+   "cnf_sha256": "632371a7ea05c71dd653c67d7d560582eb33ff508406a5b42a567e68953a5495",
+   "kissat_secs": [
+    222.3
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 63,
+   "status": "UNSAT",
+   "cnf_sha256": "aa3395fc82455d50693163c0aa4edb9b14374f45733e5e414a919ae0e5240ab8",
+   "kissat_secs": [
+    166.6
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 64,
+   "status": "UNSAT",
+   "cnf_sha256": "a2af3ef5189c6dc6e7a797cea2473912d6e6cec4182a6a4f6e4c5397e1199f10",
+   "kissat_secs": [
+    205.2
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 65,
+   "status": "UNSAT",
+   "cnf_sha256": "97d6a256ddfdd4f35dc51b7fac69d5aaa0a70f053a0ee1cf4947c1f7f458b574",
+   "kissat_secs": [
+    176.5
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 66,
+   "status": "UNSAT",
+   "cnf_sha256": "749f982342a505a574e6427e2a811003c0ad3cf653211f1af9eaf412f9ea1605",
+   "kissat_secs": [
+    133.1
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 67,
+   "status": "UNSAT",
+   "cnf_sha256": "42e93d23c528fd459e73c184628b98691b37013448bf84e08f143e1396d836b8",
+   "kissat_secs": [
+    132.5
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 68,
+   "status": "UNSAT",
+   "cnf_sha256": "6d1b182c1b71d3d4d963f78f296e4a05ffeeca5103024b3d0503aae8f581e4d8",
+   "kissat_secs": [
+    107.9
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 69,
+   "status": "UNSAT",
+   "cnf_sha256": "c3f9e2dcd4ae2c21d7131ecbac5f641311759d736bbd747a276a943023bba01a",
+   "kissat_secs": [
+    111.9
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 70,
+   "status": "UNSAT",
+   "cnf_sha256": "5596b39c2d34c3a4c63d7ddbb4c730f307714be545b7a63a3af83ade0d65e9b8",
+   "kissat_secs": [
+    79.8
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 71,
+   "status": "UNSAT",
+   "cnf_sha256": "e3b00b7ff4b97f589e8997538a4ed974e36cb19bbd15870a3e14062727b22a35",
+   "kissat_secs": [
+    86.9
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 72,
+   "status": "UNSAT",
+   "cnf_sha256": "6e0990bc20dcfb9a75cb57ee87951b60fafd8530dd5d7681fef1addfa17a3045",
+   "kissat_secs": [
+    100.9
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 73,
+   "status": "UNSAT",
+   "cnf_sha256": "0ce616c594403898a966e2e40960414d6af0829ccca3093d0ef8ca8a40a148aa",
+   "kissat_secs": [
+    91.2
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 74,
+   "status": "UNSAT",
+   "cnf_sha256": "50241a923a8f24a2af637ff70533f307f4520af6b5ba68278d28ed23a1b6d6fe",
+   "kissat_secs": [
+    103.9
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 75,
+   "status": "UNSAT",
+   "cnf_sha256": "eb4366f057919c19575a8ff80cc36b10133b9571af8bb7ed07b3b3632f5070c7",
+   "kissat_secs": [
+    75.4
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 76,
+   "status": "UNSAT",
+   "cnf_sha256": "b2f146127abb75de88e88c56599c5d6f957e8b83263e4b54cee6844cdde9112f",
+   "kissat_secs": [
+    104.9
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 77,
+   "status": "UNSAT",
+   "cnf_sha256": "f9901e2948eb7624bf8c7b3ef419d02525cfefb36b918078c70fe689289ed7d0",
+   "kissat_secs": [
+    130.3
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 78,
+   "status": "UNSAT",
+   "cnf_sha256": "652372b202cc9f02dc373f86d54958adc979091021d3fe96c9ce1dad968fc421",
+   "kissat_secs": [
+    111.8
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 79,
+   "status": "UNSAT",
+   "cnf_sha256": "f90bad4741b51d3b41d7b7d0f2913b72bb4bf84678c8a374fa2fe99a80e88a93",
+   "kissat_secs": [
+    179.1
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 80,
+   "status": "UNSAT",
+   "cnf_sha256": "3187efbfd7fa70ef1ce0da91fb5ef6a5fd00af716d4b051c3f93d43108e6f0ac",
+   "kissat_secs": [
+    256.2
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 81,
+   "status": "UNSAT",
+   "cnf_sha256": "5b00c6910fe23f53a2c308479c1bed306bdfa28995613a6c700d4a9d7edb70c4",
+   "kissat_secs": [
+    91.0
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 82,
+   "status": "UNSAT",
+   "cnf_sha256": "ce96c04dc788c918c4198ab7883c0ec9befff9a8fd7dd10538864648ecab052c",
+   "kissat_secs": [
+    119.7
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 83,
+   "status": "UNSAT",
+   "cnf_sha256": "7ac2b7afc2a09955bdb90a8ee4faf2c5c57c01d30a006dfeeedfa83918ef24a1",
+   "kissat_secs": [
+    108.6
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 84,
+   "status": "UNSAT",
+   "cnf_sha256": "d55ae381088615319eb84acfe6da430708beb4048461c94f581b74156ddd4384",
+   "kissat_secs": [
+    264.9
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 85,
+   "status": "UNSAT",
+   "cnf_sha256": "e07b74dea51905ac2c0b54649dac8da849961f098ffdaa2bf004aeea98885b58",
+   "kissat_secs": [
+    130.5
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 86,
+   "status": "UNSAT",
+   "cnf_sha256": "c03964b15d2c97318fbae3fa8b457c4e615677f030abeda6d54af70346c7809d",
+   "kissat_secs": [
+    77.6
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 87,
+   "status": "UNSAT",
+   "cnf_sha256": "0665ad476e059862b9f6433a050094f51c145a8e7dbab4ff183f1514bd63622a",
+   "kissat_secs": [
+    101.5
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 88,
+   "status": "UNSAT",
+   "cnf_sha256": "e4cf3427c0836ec9fb2bc1173f4efed149340e71c030e733508ee1fb27b58774",
+   "kissat_secs": [
+    87.5
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 89,
+   "status": "UNSAT",
+   "cnf_sha256": "8612c2c75bbf9243236bedb217c08ede3b638fd29856939084fcdc8d72f2e245",
+   "kissat_secs": [
+    288.9
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 90,
+   "status": "UNSAT",
+   "cnf_sha256": "86666491907679da521d4653bfaa65378d32b991acb5a59c72a6eb86bdf7ba11",
+   "kissat_secs": [
+    106.5
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 91,
+   "status": "UNSAT",
+   "cnf_sha256": "eba886748d9920635f317e3b3bbd3ef59273b098ec4b901be65e13444ebbe0e3",
+   "kissat_secs": [
+    74.4
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 92,
+   "status": "UNSAT",
+   "cnf_sha256": "aeb5355008f4525f4b63b287da7134cecd58d01057e34f947215947be188ae3d",
+   "kissat_secs": [
+    97.0
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 93,
+   "status": "UNSAT",
+   "cnf_sha256": "d030105a46fa76fb18c30d3920b02f31b13bfe82a8dfd5e4b04a39c4173663e7",
+   "kissat_secs": [
+    105.7
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 94,
+   "status": "UNSAT",
+   "cnf_sha256": "23f6ae1d0e9b6e4efd0f9bb4da736b9a608404880215b602ac26bc0b09522a0c",
+   "kissat_secs": [
+    76.0
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 95,
+   "status": "UNSAT",
+   "cnf_sha256": "d9c153de20a05656bbdf95d998831ec7b687b94aa75ccdda4a67c7e344d4561a",
+   "kissat_secs": [
+    83.2
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 96,
+   "status": "UNSAT",
+   "cnf_sha256": "88c74e0c734e601d099dacb3eb022a30df097787c476244b44da38aa09b59dc9",
+   "kissat_secs": [
+    211.6
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 97,
+   "status": "UNSAT",
+   "cnf_sha256": "15086442f23b8a7aed1ad21506a82d2716f2954e3904f324cb2a4f7912f2d719",
+   "kissat_secs": [
+    152.8
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 98,
+   "status": "UNSAT",
+   "cnf_sha256": "c39ffe68585efb3cde5ef7d19fc5b1f218940d98eab719128a6c130f9864d231",
+   "kissat_secs": [
+    104.7
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 99,
+   "status": "UNSAT",
+   "cnf_sha256": "9dcb8986c897a09c6b32d1ffe51af71f8be2765b3c93e8dd621fa545d799ae74",
+   "kissat_secs": [
+    295.2
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 100,
+   "status": "UNSAT",
+   "cnf_sha256": "feef3f8a975024fe77a8b85338db0f2d7b9d11d34924c9fa0889635fc1023c4b",
+   "kissat_secs": [
+    372.1
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 101,
+   "status": "UNSAT",
+   "cnf_sha256": "1cb6c5c045fbb91af1232e8ec7407450a991974cab100c0a2800298ba8ffb5bb",
+   "kissat_secs": [
+    111.7
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 102,
+   "status": "UNSAT",
+   "cnf_sha256": "a0f56c4ce58db109fd73ade2f68c84c20a4b8488d7cd935355adb802a46b906d",
+   "kissat_secs": [
+    304.6
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 103,
+   "status": "UNSAT",
+   "cnf_sha256": "9632d2a189450582cf9d5da3bb6dd0fe98f56b519cd4ee185541df0bfa38098f",
+   "kissat_secs": [
+    452.9
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 104,
+   "status": "UNSAT",
+   "cnf_sha256": "371467ca6ead3c921855dbd05afe228c8d2e67b9244b918f45cf494a4dcbb0a1",
+   "kissat_secs": [
+    127.3
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 105,
+   "status": "UNSAT",
+   "cnf_sha256": "596f1ef8624583d8ae490c1cf6c63a30c56b12c18789806d64fbbb954a96ca56",
+   "kissat_secs": [
+    277.4
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 106,
+   "status": "UNSAT",
+   "cnf_sha256": "57b199cee659a7a6633716601f22e807a3aef8f9c5fb4c7b5414ba0ebe3aac70",
+   "kissat_secs": [
+    191.8
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 107,
+   "status": "UNSAT",
+   "cnf_sha256": "811bfe8101cf4039815792d1f84e84aed51cb9f31c2c615b8a0779b7181f5a30",
+   "kissat_secs": [
+    133.2
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 108,
+   "status": "UNSAT",
+   "cnf_sha256": "9b200cae96baadb7b18acbb39934f3fa40dc728bfa842456df45d1653926d083",
+   "kissat_secs": [
+    185.1
+   ],
+   "runners": [
+    "forward"
+   ]
+  },
+  {
+   "shape": 109,
+   "status": "UNSAT",
+   "cnf_sha256": "dd2372cd93f8151c6541134925a8f273c216ac9711122472e9d3ed59213faf61",
+   "kissat_secs": [
+    376.0,
+    384
+   ],
+   "runners": [
+    "forward",
+    "reverse"
+   ]
+  },
+  {
+   "shape": 110,
+   "status": "UNSAT",
+   "cnf_sha256": "1ddaa9f4cab2b7aae6513b51514fcd8f595e6490f0d3ffefec70db0b66200fad",
+   "kissat_secs": [
+    179.7,
+    230
+   ],
+   "runners": [
+    "forward",
+    "reverse"
+   ]
+  },
+  {
+   "shape": 111,
+   "status": "UNSAT",
+   "cnf_sha256": "e0a8903e7fdc7c609b72d15c53722fa709a75993e8b6db815457f38fea52ef78",
+   "kissat_secs": [
+    279.1,
+    246
+   ],
+   "runners": [
+    "forward",
+    "reverse"
+   ]
+  },
+  {
+   "shape": 112,
+   "status": "UNSAT",
+   "cnf_sha256": "28c23139a3e1772a6f1dc41e3d53a22ab3287079ba4c653c02d73793695d8032",
+   "kissat_secs": [
+    333
+   ],
+   "runners": [
+    "reverse"
+   ]
+  },
+  {
+   "shape": 113,
+   "status": "UNSAT",
+   "cnf_sha256": "dcc0fa49cb3728492803319de1c1f06f9f9c33d79540e7baca2a86245119b5cf",
+   "kissat_secs": [
+    66
+   ],
+   "runners": [
+    "reverse"
+   ]
+  },
+  {
+   "shape": 114,
+   "status": "UNSAT",
+   "cnf_sha256": "f8393bde88aeda4f3aa42221857183072cc27f15f6568c404e47c4ffcab35384",
+   "kissat_secs": [
+    143
+   ],
+   "runners": [
+    "reverse"
+   ]
+  },
+  {
+   "shape": 115,
+   "status": "UNSAT",
+   "cnf_sha256": "6025d8371031f0d0a1b58681d5f1c577a12efbc4d1714f1a1db074cc0e0f97c0",
+   "kissat_secs": [
+    100
+   ],
+   "runners": [
+    "reverse"
+   ]
+  },
+  {
+   "shape": 116,
+   "status": "UNSAT",
+   "cnf_sha256": "ff8ef818051530183198918c66ba129105bafd41c7120985ea57e3155918862a",
+   "kissat_secs": [
+    81
+   ],
+   "runners": [
+    "reverse"
+   ]
+  },
+  {
+   "shape": 117,
+   "status": "UNSAT",
+   "cnf_sha256": "fb78ccfbcc6e4be1df8cdb33eed05d11069959233a78ae4872267090be00a805",
+   "kissat_secs": [
+    103
+   ],
+   "runners": [
+    "reverse"
+   ]
+  },
+  {
+   "shape": 118,
+   "status": "UNSAT",
+   "cnf_sha256": "2ca5c99a38c42a1ea78af736f72a06f155188ea971423866e922b6c2e88cc6f8",
+   "kissat_secs": [
+    88
+   ],
+   "runners": [
+    "reverse"
+   ]
+  },
+  {
+   "shape": 119,
+   "status": "UNSAT",
+   "cnf_sha256": "ca19d7b5f5c3e7a5e041331b8d9a2560654d27ecbd57510cc12d0dcd685e25c8",
+   "kissat_secs": [
+    111
+   ],
+   "runners": [
+    "reverse"
+   ]
+  },
+  {
+   "shape": 120,
+   "status": "UNSAT",
+   "cnf_sha256": "2e38c2dbfd050660c8663d576440205ece98c98e6b99668d63c9e3f9089a0028",
+   "kissat_secs": [
+    230
+   ],
+   "runners": [
+    "reverse"
+   ]
+  },
+  {
+   "shape": 121,
+   "status": "UNSAT",
+   "cnf_sha256": "45f61d75143260ef9c6b2145475c17a93a3a19ed42f0d542fb58c482e174ac66",
+   "kissat_secs": [
+    106
+   ],
+   "runners": [
+    "reverse"
+   ]
+  },
+  {
+   "shape": 122,
+   "status": "UNSAT",
+   "cnf_sha256": "e2dd199b4d203d933f3e362fbffa72da06364a76e6ce62f150d951f2daa42c2d",
+   "kissat_secs": [
+    101
+   ],
+   "runners": [
+    "reverse"
+   ]
+  },
+  {
+   "shape": 123,
+   "status": "UNSAT",
+   "cnf_sha256": "5fd67713527f7352b21b2076f446694ad892abfdd2b43b482b2887944f1912d2",
+   "kissat_secs": [
+    126
+   ],
+   "runners": [
+    "reverse"
+   ]
+  },
+  {
+   "shape": 124,
+   "status": "UNSAT",
+   "cnf_sha256": "1754e9c7104385771dbae4a572d7ea40d2b015966c83611165557d27dd8c28fa",
+   "kissat_secs": [
+    145
+   ],
+   "runners": [
+    "reverse"
+   ]
+  },
+  {
+   "shape": 125,
+   "status": "UNSAT",
+   "cnf_sha256": "022b995a4d81576f6864109870e9eb877273a2158bc0ffbd06cd2a98d6546a0b",
+   "kissat_secs": [
+    165
+   ],
+   "runners": [
+    "reverse"
+   ]
+  },
+  {
+   "shape": 126,
+   "status": "UNSAT",
+   "cnf_sha256": "f58ec980c2333f9bc138627954b96d97574c0b256123eaf1f56c052bc6ec8cca",
+   "kissat_secs": [
+    159
+   ],
+   "runners": [
+    "reverse"
+   ]
+  },
+  {
+   "shape": 127,
+   "status": "UNSAT",
+   "cnf_sha256": "fc8a1e99f08fe0831c173f31adcdd952e01b6c662b0f3500b4753336c99c95bd",
+   "kissat_secs": [
+    229
+   ],
+   "runners": [
+    "reverse"
+   ]
+  },
+  {
+   "shape": 128,
+   "status": "UNSAT",
+   "cnf_sha256": "686c856b77e6f0eebe740d0c7f92c71c8fabd970d90de46439c8265bc8bdede8",
+   "kissat_secs": [
+    164
+   ],
+   "runners": [
+    "reverse"
+   ]
+  },
+  {
+   "shape": 129,
+   "status": "UNSAT",
+   "cnf_sha256": "c7d84b619bb34cd1e3fc0f3fed80d21c34e1964f4eb0f74335b0052559216a43",
+   "kissat_secs": [
+    167
+   ],
+   "runners": [
+    "reverse"
+   ]
+  },
+  {
+   "shape": 130,
+   "status": "UNSAT",
+   "cnf_sha256": "50c96aded3f350b6e0890f4533c002f3b1d432d3b8270dc722011041de9d77a8",
+   "kissat_secs": [
+    140
+   ],
+   "runners": [
+    "reverse"
+   ]
+  },
+  {
+   "shape": 131,
+   "status": "UNSAT",
+   "cnf_sha256": "ea172420cdfa9ceea5f4fc3df95fe05eee5355c5e5af03c10da66bbf47957530",
+   "kissat_secs": [
+    215
+   ],
+   "runners": [
+    "reverse"
+   ]
+  },
+  {
+   "shape": 132,
+   "status": "UNSAT",
+   "cnf_sha256": "5cf1b5b217bd43c059007c08c60875ac4a18afee5b40c09bbffb70e44835b6ce",
+   "kissat_secs": [
+    209
+   ],
+   "runners": [
+    "reverse"
+   ]
+  },
+  {
+   "shape": 133,
+   "status": "UNSAT",
+   "cnf_sha256": "b3400e33b85e6449de1e1e6504d3bc00635d13ec9ea5553159b9c186c1e7ba55",
+   "kissat_secs": [
+    203
+   ],
+   "runners": [
+    "reverse"
+   ]
+  },
+  {
+   "shape": 134,
+   "status": "UNSAT",
+   "cnf_sha256": "7ddfbf228090c09c4d45c9b551e655b45779ffc1e380d175d3e0d44129006c2b",
+   "kissat_secs": [
+    228
+   ],
+   "runners": [
+    "reverse"
+   ]
+  }
+ ]
+}

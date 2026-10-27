@@ -1,0 +1,192 @@
+\documentclass[11pt]{amsart}
+\usepackage[a4paper,textwidth=158mm,textheight=237mm,centering]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,mathtools,amssymb,graphicx,flafter,booktabs}
+\usepackage[unicode,colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Z}{\mathbb Z}
+\title{No distinct covering system with minimum modulus $6$ and moduli dividing $2^a\cdot 45$}
+\author{Harvey Yorke}
+\address{Valyu AI}
+\ifdefined\journalversion\else
+\author{Valyu DeepResearch}
+\address{Valyu AI}
+\fi
+\ifdefined\journalversion
+  \hypersetup{pdftitle={No distinct covering system with minimum modulus 6 and moduli dividing 2^a 45},pdfauthor={Harvey Yorke}}
+\else
+  \hypersetup{pdftitle={No distinct covering system with minimum modulus 6 and moduli dividing 2^a 45},pdfauthor={Harvey Yorke and Valyu DeepResearch}}
+\fi
+\date{25 October 2026}
+\keywords{Covering systems of congruences, distinct moduli, minimum modulus, potential function, exhaustive search}
+\newcommand{\paperAuthorBlock}[1]{%
+  \begin{minipage}[t]{.44\textwidth}
+    \centering\normalfont\normalsize #1\par\small Valyu AI\par
+  \end{minipage}%
+}
+\makeatletter
+\renewcommand{\@setauthors}{%
+  \begingroup\trivlist\centering\normalfont\normalsize
+  \@topsep30\p@\relax\advance\@topsep by -\baselineskip\item\relax
+  \ifdefined\journalversion
+    \paperAuthorBlock{Harvey Yorke}%
+  \else
+    \paperAuthorBlock{Harvey Yorke}\hspace{.06\textwidth}\paperAuthorBlock{Valyu DeepResearch}%
+  \fi
+  \endtrivlist\endgroup
+}
+\renewcommand{\@setaddresses}{}
+\makeatother
+\begin{document}
+\raggedbottom
+\begin{abstract}
+Harrington, Klein, Lowrance and Trifonov asked whether some distinct covering system has minimum modulus $6$ and least common multiple of the moduli $2^a3^25$, and conjectured that none exists. We prove the conjecture: for every $a\ge0$, no finite system of congruences with distinct moduli, each at least $6$ and dividing $2^a\cdot45$, covers the integers. Together with their Theorem~1.8 this completes the description of the quadruples $(6,a,b,c)$ with $a\ge b\ge c\ge1$ for which a distinct covering with minimum modulus $6$ and least common multiple $2^a3^b5^c$ exists. The proof attaches to the uncovered residues a potential, defined from weighted covers modulo $45$, that at least doubles minus a fixed amount from one power of $2$ to the next. Once it reaches that amount, it never returns to zero. An exhaustive search over all systems with moduli dividing $180$ finds that each one already reaches this threshold for at least one of eleven explicit integer weight vectors. The search is replicated by three independent implementations, one of them in standard-library Python.
+\end{abstract}
+\maketitle
+
+\section{The question}
+
+A \emph{covering system} is a finite set of congruences $x\equiv r_i\pmod{m_i}$ whose union is $\Z$; it is \emph{distinct} if the moduli $m_i$ are pairwise distinct. Since Erd\H{o}s~\cite{Erdos1950} introduced them, the minimum modulus has been a central parameter. Hough~\cite{Hough2015} proved that it is bounded, and Balister, Bollob\'as, Morris, Sahasrabudhe and Tiba~\cite{BBMST2022} gave a bound of $616000$. For small minimum modulus $m$, much work concerns the least common multiple $L$ of the moduli: Krukenberg~\cite{Krukenberg1971}, Dalton and Trifonov~\cite{DaltonTrifonov2022} and Klein~\cite{Klein2025} give lower bounds on $L$. In particular, $m=6$ forces $L\ge5040$.
+
+Harrington, Klein, Lowrance and Trifonov~\cite{HKLT2026} study distinct coverings whose least common multiple has the form $L=2^a3^b5^c$, with $a\ge b\ge c$. They determine the possible $(a,b,c)$ for $m\le 5$ and almost all of the $m=6$ case; they also prove $m\le 9$ for all such coverings. Their Problem~2 asks whether some $a$ admits a distinct covering with minimum modulus $6$ and $L=2^a3^25$. They conjecture that none exists, and they construct a distinct \emph{infinite} covering with the same moduli~\cite[Theorem~1.10]{HKLT2026}. Their integer programs show that, for $0\le n\le 9$, the moduli at least $6$ dividing $2^n\cdot45$ always leave at least $36,40,51,52,\dots,52$ residues uncovered~\cite[Section~6]{HKLT2026}. We settle the question for every $a$.
+
+\begin{theorem}\label{thm:main}
+For every integer $a\ge 0$ there is no finite system of congruences with pairwise distinct moduli, every modulus at least $6$ and dividing $2^a\cdot 3^2\cdot 5$, that covers $\Z$.
+\end{theorem}
+
+\begin{corollary}\label{cor:class}
+There is no distinct covering system with minimum modulus $6$ and least common multiple $2^a3^25$ for any $a\ge1$. Consequently Problem~2 of~\cite{HKLT2026} has a negative answer.
+\end{corollary}
+
+The abstract of~\cite{HKLT2026} describes the open $m=6$ case as ``$b=c=1$''. Their Theorem~1.8(i) shows $b\ge2$, and Theorem~1.8(ii)--(viii) settle every remaining exponent pattern except $b=2$, $c=1$, $a\ge7$. That is exactly the case in Problem~2. If a distinct covering with minimum modulus $m$ and least common multiple $L$ exists, then one exists for every multiple $L'$ of $L$: add the congruence $0\bmod L'$. Combining this monotonicity with~\cite[Theorem~1.8]{HKLT2026} and Corollary~\ref{cor:class} gives the complete answer for $m=6$.
+
+\begin{corollary}\label{cor:m6}
+Let $a\ge b\ge c\ge1$. A distinct covering system with minimum modulus $6$ and least common multiple $2^a3^b5^c$ exists if and only if either $c\ge2$ and ($a\ge5$, or $a=4$ and $b\ge3$), or $c=1$ and ($a\ge6$ and $b\ge3$, or $a=5$ and $b\ge4$).
+\end{corollary}
+
+\begin{proof}
+Existence follows by monotonicity from the four coverings
+\[
+(a,b,c)=(4,3,2),\quad (5,2,2),\quad (5,4,1),\quad (6,3,1)
+\]
+in parts (iii), (v), (vi) and (viii) of~\cite[Theorem~1.8]{HKLT2026}.
+Nonexistence: $b=1$ and $a\le3$ are excluded by~\cite[Theorem~1.8(i)]{HKLT2026}. For $a=4$ one needs $b\ge3$ and $c\ge2$ by part (ii). For $a=5$ with $c=1$ one needs $b\ge4$ by part (iv). For $a=6$ with $c=1$ one needs $b\ge3$ by part (vii). For $a\ge7$ with $c=1$ and $b=2$, Corollary~\ref{cor:class} applies.
+\end{proof}
+
+Theorem~\ref{thm:main} also constrains larger minimum moduli: any distinct covering with minimum modulus at least $6$ whose least common multiple has the form $2^a3^b5^c$ must have $b\ge3$ or $c\ge2$. This is relevant to Problems~1 and~3 of~\cite{HKLT2026} (minimum moduli $9$ and $8$) for finite coverings.
+
+The argument has two parts. Section~\ref{sec:potential} proves a short lemma: a weighted-cover potential of the uncovered residues obeys $Q'\ge 2Q-R$ when one more power of $2$ is allowed. Once $Q\ge R$, the system can never be completed. Section~\ref{sec:computation} reports an exhaustive search. Every system with moduli in $\{6,9,10,12,15,18,20,30,36,45,60,90,180\}$ satisfies $Q\ge R$ for at least one of eleven explicit weight vectors. The infinite covering of~\cite[Theorem~1.10]{HKLT2026} does not contradict this. The potential stays at least $R$ along that covering too, which only means that residues remain uncovered at every finite stage.
+
+\section{Columns and a doubling potential}\label{sec:potential}
+
+Write $D=\{1,3,5,9,15,45\}$ for the divisors of $45$. Fix $k\ge0$. By the Chinese remainder theorem a residue $b \bmod 2^k\cdot45$ corresponds to the pair $(x,y)$ with $x=b\bmod 2^k$ and $y=b\bmod 45$. For $i\le k$ and $d\in D$, the congruence $b\equiv r\pmod{2^id}$ is the set of pairs with $x\equiv r\pmod{2^i}$ and $y\equiv r\pmod d$. We call $2^id$ a modulus of \emph{level} $i$ and \emph{type} $d$. For a system $\Sigma$ with moduli dividing $2^k\cdot45$, the \emph{column} $S_x\subseteq\Z/45$ is the set of $y$ for which $(x,y)$ is not covered.
+
+\begin{definition}
+A \emph{price vector} is $\rho=(\rho_d)_{d\in D}$ with nonnegative integer entries and $R(\rho)=\sum_{d\in D}\rho_d>0$. For $S\subseteq \Z/45$ let $\varphi_\rho(S)$ be the minimum of $\sum_j\rho_{d_j}$ over all finite families of residue classes $r_j\bmod d_j$ ($d_j\in D$) whose union contains $S$. Repetitions are allowed, and $\varphi_\rho(\emptyset)=0$. For a system $\Sigma$ with moduli dividing $2^k\cdot45$ put $Q_k(\Sigma,\rho)=\sum_{x\bmod 2^k}\varphi_\rho(S_x)$.
+\end{definition}
+
+Since the class $0\bmod1$ covers everything, $\varphi_\rho(S)\le\rho_1$. Adjoining a class $C$ modulo $d$ to a cover of $S\setminus C$ gives a cover of $S$, so
+\begin{equation}\label{eq:sub}
+ \varphi_\rho(S)\le \varphi_\rho(S\setminus C)+\rho_d .
+\end{equation}
+
+\begin{lemma}[doubling]\label{lem:doubling}
+Let $\Sigma$ have distinct moduli dividing $2^{k+1}\cdot 45$, and let $\Sigma_k$ be its subsystem of moduli dividing $2^k\cdot45$. Then for every price vector $\rho$,
+\[ Q_{k+1}(\Sigma,\rho)\ \ge\ 2\,Q_k(\Sigma_k,\rho)-\sum_{2^{k+1}d\in\Sigma}\rho_d\ \ge\ 2\,Q_k(\Sigma_k,\rho)-R(\rho). \]
+\end{lemma}
+
+\begin{proof}
+The classes of $\Sigma_k$ act on $x\bmod 2^{k+1}$ only through $x\bmod 2^k$, so before the level-$(k+1)$ classes are applied, both columns $x$ and $x+2^k$ modulo $2^{k+1}$ equal $S_{x\bmod 2^k}$. A class of level $k+1$ and type $d$ meets exactly one column $x'$ and removes from it one residue class modulo $d$. Let $G_{x'}$ be the set of level-$(k+1)$ classes meeting $x'$, and let $S$ be the parent column. Repeated use of~\eqref{eq:sub} gives $\varphi_\rho(S)\le\varphi_\rho(S'_{x'})+\sum_{C\in G_{x'}}\rho_{d(C)}$. Summing over the $2^{k+1}$ new columns, each level-$(k+1)$ class is counted once. Distinctness allows at most one level-$(k+1)$ class of each type, which gives the second inequality.
+\end{proof}
+
+\begin{corollary}\label{cor:dead}
+Let $j\ge k$ and let $\Sigma$ have distinct moduli dividing $2^j\cdot45$. If its subsystem $\Sigma_k$ of moduli dividing $2^k\cdot45$ satisfies $Q_k(\Sigma_k,\rho)\ge R(\rho)$ for some price vector $\rho$, then $\Sigma$ does not cover $\Z$.
+\end{corollary}
+
+\begin{proof}
+Let $\Sigma_i$ be the subsystem of moduli dividing $2^i\cdot45$. By Lemma~\ref{lem:doubling} and induction, $Q_{i}(\Sigma_i,\rho)\ge 2Q_{i-1}(\Sigma_{i-1},\rho)-R\ge Q_{i-1}(\Sigma_{i-1},\rho)\ge R$ for $i=k+1,\dots,j$. Thus $Q_j(\Sigma,\rho)\ge R>0$, so some column modulo $2^j$ is nonempty and $\Sigma$ leaves a residue modulo $2^j\cdot45$ uncovered.
+\end{proof}
+
+\section{Reduction to a finite computation}\label{sec:computation}
+
+Let $M_2=\{m\ge6: m\mid 180\}=\{6,9,10,12,15,18,20,30,36,45,60,90,180\}$. In level and type terms, $M_2$ consists of the types $9,15,45$ at level $0$ and the types $3,5,9,15,45$ at levels $1$ and $2$. Type $1$ first occurs at level $3$, as the modulus $8$. Let $\mathcal F$ be the eleven price vectors in Table~\ref{tab:prices}.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{rcccccc}
+\toprule
+ & $\rho_1$ & $\rho_3$ & $\rho_5$ & $\rho_9$ & $\rho_{15}$ & $\rho_{45}$\\
+\midrule
+1 & 1 & 1 & 1 & 1 & 1 & 1\\
+2 & 45 & 15 & 9 & 5 & 3 & 1\\
+3 & 15 & 6 & 5 & 6 & 3 & 2\\
+4 & 18 & 6 & 6 & 3 & 2 & 1\\
+5 & 40 & 20 & 8 & 10 & 5 & 5\\
+6 & 30 & 12 & 12 & 4 & 6 & 3\\
+7 & 28 & 14 & 6 & 7 & 6 & 2\\
+8 & 35 & 15 & 7 & 5 & 3 & 1\\
+9 & 20 & 12 & 4 & 4 & 3 & 1\\
+10 & 5 & 2 & 2 & 2 & 1 & 1\\
+11 & 14 & 7 & 4 & 2 & 2 & 1\\
+\bottomrule
+\end{tabular}
+\caption{The price family $\mathcal F$. Vector 1 counts nonempty columns. It can never close a branch at level $2$, because $Q_2\le4<6$; it is kept only because every run used this file, and removing it leaves all node counts unchanged. Vector 2 counts uncovered residues weighted by $45/d$, since $\varphi(S)=|S|$ for it. The others were obtained from the linear program in Remark~\ref{rem:lp} for systems that survived earlier vectors, rounded to integers. Any nonnegative integer vector is valid, so their provenance does not affect the proof.}
+\label{tab:prices}
+\end{table}
+
+\begin{proposition}[computation]\label{prop:comp}
+For every system $\Sigma$ that uses each modulus of $M_2$ at most once, with arbitrary residues, there is $\rho\in\mathcal F$ with $Q_2(\Sigma,\rho)\ge R(\rho)$.
+\end{proposition}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main} from Proposition~\ref{prop:comp}]
+Suppose a covering exists with distinct moduli at least $6$ dividing $2^a\cdot45$. If $a\le 2$, all its moduli lie in $M_2$. Then every column is empty, so $Q_2=0<R(\rho)$ for every $\rho$, contradicting the proposition. If $a\ge3$, the proposition gives $Q_2(\Sigma_2,\rho)\ge R(\rho)$ for its subsystem $\Sigma_2$ of moduli in $M_2$ and some $\rho\in\mathcal F$, and Corollary~\ref{cor:dead} contradicts the covering property. Corollary~\ref{cor:class} follows because a covering with minimum modulus $6$ and least common multiple $2^a3^25$ uses only such moduli.
+\end{proof}
+
+The rest of this section describes the search proving Proposition~\ref{prop:comp}.
+
+\subsection*{Exact weighted covers} Identify $\Z/45$ with $\Z/9\times\Z/5$, $y\mapsto(u,v)$. Classes of type $3$ are the three \emph{blocks} $\{u\equiv\beta\bmod 3\}$, type $5$ fixes $v$, type $9$ fixes $u$, type $15$ fixes a block and $v$, and type $45$ is a point. In a cover not using type $1$, let $V$ be the set of $v$ whose type-$5$ class is used. Every other class lies inside one block, so the cost splits over the three blocks. In block $\beta$ one either pays $\rho_3$, or chooses a set $U$ of $u$-values in the block (cost $\rho_9|U|$). Then for each $v\notin V$ one pays $\min(\rho_{15},\rho_{45}k)$, where $k$ counts the remaining points. Hence
+\[ \varphi_\rho(S)=\min\Bigl(\rho_1,\ \min_{V\subseteq\Z/5}\Bigl[\rho_5|V|+\sum_{\beta\in\Z/3}\min\bigl(\rho_3,\ \min_{U}\bigl[\rho_9|U|+\textstyle\sum_{v\notin V}\min(\rho_{15},\rho_{45}k_{\beta,U,v})\bigr]\bigr)\Bigr]\Bigr) \]
+for nonempty $S$. Both implementations of this formula were compared with exhaustive branching on random instances: $20000$ in C and $300$ in Python, with no disagreement.
+
+\subsection*{Symmetry} The bijections of $\Z/45$ that map every residue class modulo every $d\in D$ to a class modulo the same $d$ form the group $(S_3\wr S_3)\times S_5$. It permutes the blocks, permutes within blocks, and permutes $v$. Applying such a bijection to the $y$-coordinate of every class of a system preserves the moduli and the covered set. Up to this group, the three level-$0$ classes (moduli $9,15,45$) have $14$ configurations: the class modulo $9$ is $u=0$; the class modulo $15$ lies in the block of $0$ or in another block, with $v=0$; and the point modulo $45$ falls into one of $6$ or $8$ orbits of the remaining stabiliser. A modulus that a covering does not use can be given any class, so all three level-$0$ moduli may be assumed present. The automorphisms of the binary tree of $2$-adic classes, which permute the columns modulo $4$ while preserving the classes modulo $2$, are also symmetries.
+
+\subsection*{Search and pruning} The search fixes the level-$0$ classes and assigns the ten moduli of levels $1$ and $2$ in a fixed order. Each modulus receives either no class or a class that meets an uncovered residue in some column it acts on. A level-$i$ class acts on $2^{2-i}$ of the four columns. By~\eqref{eq:sub}, every completion of a partial system $P$ satisfies
+\[ Q_2(\Sigma,\rho)\ \ge\ Q_2(P,\rho)-\sum_{\text{undecided } 2^id}2^{2-i}\rho_d, \]
+so a branch is closed as soon as the right-hand side reaches $R(\rho)$ for some $\rho\in\mathcal F$. A complete assignment that is never closed would be a \emph{survivor}. When two subtrees carry identical columns, only one of them is explored.
+
+\subsection*{Results} Three implementations were run to completion with the family $\mathcal F$; all report zero survivors.
+\begin{itemize}
+\item \texttt{dfs2.c} uses the $14$ level-$0$ orbits and the tree symmetry. It explores $498{,}464$ nodes.
+\item \texttt{check\_p2.py} is a separate implementation in standard-library Python. It works with residues modulo $45$ directly, uses only translations $b\mapsto b+t$ to fix the classes modulo $9$ and $5$, and uses the tree symmetry. It covers all $135$ resulting level-$0$ configurations in $4{,}684{,}432$ nodes. On configurations that coincide with orbit representatives it reproduces the node counts of \texttt{dfs2.c} exactly, for example $68{,}004$ nodes for orbit 3.
+\item \texttt{gen.c} handles any odd part $3^B\cdot5$. It computes covers by dynamic programming over the $3$-adic tree, uses local symmetries (swapping identical sibling subtrees, identical rows and identical $2$-adic halves), and allows level-$0$ moduli to be skipped. It explores $66{,}821$ nodes.
+\end{itemize}
+Several controls show that the search does find survivors when they exist. With only the first ten vectors of $\mathcal F$ there are $1704$ survivors, in two of the fourteen orbits. Vector 11 eliminates all of them. Also, a distinct covering with minimum modulus $4$ and moduli dividing $360$, found with the CP-SAT solver of OR-Tools, has a level-$2$ state with $Q_2<R$ for all eleven vectors, as Lemma~\ref{lem:doubling} requires. The level-$2$ part of the infinite covering of~\cite[Theorem~1.10]{HKLT2026} (columns of sizes $8,16,0,36$) has $Q_2=R$ exactly for vectors 3, 9 and 10, for example $Q_2=37=R$ for $\rho=(15,6,5,6,3,2)$. Equality is what the fixed point $Q=R$ of $Q\mapsto 2Q-R$ predicts along a covering that never terminates.
+
+\subsection*{Calibration on cases with known answers} A separate generic implementation (\texttt{calib.py}, any odd part $d_0$ and minimum modulus $m$, exhaustive cover routine, no symmetry beyond one translation) runs the same alternation of search and linear program from an empty price family. It returns one of two answers: \emph{no survivors}, which proves nonexistence for all $a$, or a state that is alive for every price vector, where the method is silent. It proves nonexistence for $(d_0,m)=(9,4)$, matching Krukenberg's result that $m=4$ with $L=2^a3^b$ forces $b\ge3$~\cite{Krukenberg1971,DaltonTrifonov2022}, and for $(15,5)$, matching~\cite[Lemma~5.1]{HKLT2026}. It reports an alive state for $(9,3)$ and $(27,4)$, where coverings exist with $L=2^43^2$ and $L=2^73^3$~\cite{DaltonTrifonov2022}.
+
+\begin{remark}\label{rem:lp}
+For a fixed state (the four columns), the best price vector solves a linear program. Maximise $\sum_x z_x-\sum_d\rho_d$ subject to $\sum_d\rho_d=1$ and $z_x\le\sum_d c_d\rho_d$ for every cover of column $x$ with type counts $(c_d)$. We solved it by column generation with the exact cover formula as the oracle. We did not find a single price vector that suffices; for instance, at $\rho=(450,200,120,100,80,50)$ some system with moduli in $M_2$ has $Q_2\le 900<1000$. The family $\mathcal F$ was grown by alternating the search with this linear program. The final family needs vector 11 to close the last $1704$ branches.
+\end{remark}
+
+\begin{remark}
+Lemma~\ref{lem:doubling} uses only that each type occurs at most once per level. The method therefore applies to other odd parts $d_0$ and minimum moduli. Fix the odd part and run the same search to the level from which every type is available. If every state there satisfies $Q\ge R$ for some prices, no covering with moduli dividing $2^a d_0$ exists for any $a$. This may help with Problem~3 of~\cite{HKLT2026} (minimum modulus $8$), where integer programming over $L$ alone does not scale.
+\end{remark}
+
+\begin{remark}
+The following $19$ congruences use every modulus $m\ge6$ dividing $360$ and leave $51$ residues modulo $360$ uncovered: $1\bmod6$, $6\bmod8$, $0\bmod9$, $8\bmod10$, $5\bmod12$, $5\bmod15$, $3\bmod18$, $12\bmod20$, $10\bmod24$, $14\bmod30$, $23\bmod36$, $16\bmod40$, $24\bmod45$, $40\bmod60$, $66\bmod72$, $33\bmod90$, $26\bmod120$, $11\bmod180$ and $359\bmod360$. The table in~\cite[Section~6]{HKLT2026} reports $52$ for $L=2^3\cdot3^2\cdot5$; the difference may come from progressions preset in their model. This does not affect Theorem~\ref{thm:main}.
+\end{remark}
+
+\section{Scope and verification}
+
+Theorem~\ref{thm:main} rests on Lemma~\ref{lem:doubling}, which is proved above, and on Proposition~\ref{prop:comp}, which is a finite exhaustive computation. The computation uses only integer arithmetic. It has been replicated by independent code, but it has not been formalised in a proof assistant. The verification directory contains the price family, the C and Python checkers, run logs and negative controls; \texttt{build.sh} replays the C checks and rebuilds this paper.
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

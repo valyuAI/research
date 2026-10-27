@@ -1,0 +1,105 @@
+{
+  "record": "Hosted six-checker replay of the expanded 26 October Lean library",
+  "retrievedUtc": "2026-10-27",
+  "workflow": ".github/workflows/verify.yml",
+  "workflowName": "Verify proofs",
+  "sourceCommit": "07467db1a6fd9ac583831bb4a430a9f481e74832",
+  "sourceTree": "89ba3a2579386c08bff799cc90c56e1f6259da99",
+  "formalTree": "4e260658ddbb0ab9108f5a6b9800181a2c81ec60",
+  "treeNote": "Merge commit f09202d87452ba66daae29a399c6d8974fd4ba78 has the same root tree and the same formal/ tree as 07467db.",
+  "runs": [
+    {
+      "runId": 40373907951,
+      "event": "pull_request",
+      "checkedOut": "GitHub's merge of 07467db into e38c9967820056dfe66190bef40b5028ba2fed46; e38c996 is an ancestor of 07467db, so the merged tree equals the 07467db tree",
+      "startedUtc": "2026-10-26T18:00:40Z",
+      "completedUtc": "2026-10-26T18:13:53Z",
+      "conclusion": "success",
+      "artifact": {
+        "name": "proof-replay-diagnostics",
+        "id": 12674563278,
+        "digest": "sha256:eb1e0c36d0219b5a8dfd473d47e2b8126fcd8534e4f1fb4e87b7802d57d8d93e",
+        "expiresUtc": "2026-11-09T18:13:48Z"
+      },
+      "replayWallClock": "6:07.45",
+      "replayMaxResidentKiB": 5586316
+    },
+    {
+      "runId": 40373880188,
+      "event": "push",
+      "checkedOut": "07467db1a6fd9ac583831bb4a430a9f481e74832",
+      "startedUtc": "2026-10-26T18:00:29Z",
+      "completedUtc": "2026-10-26T18:22:52Z",
+      "conclusion": "success",
+      "artifact": {
+        "name": "proof-replay-diagnostics",
+        "id": 12675057524,
+        "digest": "sha256:94a0576abb6615efdcdc661663040b450a2886b2f718f8b6a92beb8c322aeac9",
+        "expiresUtc": "2026-11-09T18:22:43Z"
+      },
+      "replayWallClock": "9:32.39",
+      "replayMaxResidentKiB": 5571784
+    }
+  ],
+  "toolchain": "Lean v4.35.0, mathlib v4.35.0 (formal/lake-manifest.json)",
+  "requestedTheoremRootsUnique": 153,
+  "allowedAxioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "export": {
+    "file": "project-proofs.ndjson",
+    "sha256": "6497252b58050ff8873e62a2a46408405fb95df04f121e7bdfd564b073cd506b",
+    "lines": 1522504,
+    "bytes": 80636651,
+    "retained": "Not committed (80.6 MB). Both runs produced byte-identical exports; the file is kept in the unpublished working archive."
+  },
+  "checkers": [
+    {
+      "name": "Lean paranoid kernel",
+      "result": "accepts"
+    },
+    {
+      "name": "lean4lean",
+      "result": "accepts",
+      "declarationsChecked": 15880
+    },
+    {
+      "name": "nanoda",
+      "result": "accepts"
+    },
+    {
+      "name": "con-leche",
+      "result": "accepts",
+      "declarationsChecked": 15883
+    },
+    {
+      "name": "con-ron",
+      "result": "accepts",
+      "declarationsChecked": 15883
+    },
+    {
+      "name": "Lean default kernel",
+      "result": "accepts"
+    }
+  ],
+  "crossChecks": [
+    "The CI axiom-audit.log is byte-identical to the local docs/verification/formal-library-20261026/axiom-audit.log (sha256 3c954c91e010a976bb077ba708a0cc1b573c362e5c697cb897aef2cca2e2b4bc, as pinned in manifest.json).",
+    "Both runs produced identical requested-theorems.txt, checker.log, axiom-audit.log and export.sha256 files."
+  ],
+  "retainedFiles": {
+    "ci-replay-40373907951/checker.log": "e199c918e31b4a3fc4accda3032ad407ae04f1a3b686e3539cde94995df07a58",
+    "ci-replay-40373907951/requested-theorems.txt": "b6a50b942b5ff3d183207c9da92ad282c413e99609541a57c2e823b965f79fd8",
+    "ci-replay-40373907951/export.sha256": "0141aad09752bd076be6bea52765865f0dade87e5af8cb36ecf8dc8102b3e0a1"
+  },
+  "scope": "Shared formal library only: the seven modules in formal/ValyuResearch. This replay checks those 153 audited declarations (96 named theorems and 57 compiler-generated helpers) and their full proof dependencies. It does not formalize the manuscripts' other claims; see docs/formal-coverage.md for each paper's Lean scope. The separate determinant package is not part of this replay.",
+  "manifestNote": "manifest.json in this folder is the historical record of the local 26 October build and audit and is left unchanged; its independentSixCheckerReplay field predates these runs.",
+  "auditedDeclarations": 153,
+  "namedTheorems": 96,
+  "generatedHelpers": {
+    "proof": 40,
+    "simp": 17
+  },
+  "publicCopyNote": "The retained log hashes describe the original execution records. Public copies replace CI home-directory paths with placeholders; public-release/path-redactions.json records both byte hashes. Numerical results and checker output are unchanged."
+}

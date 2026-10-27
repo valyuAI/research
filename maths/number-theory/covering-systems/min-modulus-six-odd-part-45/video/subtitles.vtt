@@ -1,0 +1,662 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.891
+Can a finite list of repeating number
+patterns catch every integer?
+
+2
+00:00:04.891 --> 00:00:07.738
+Start with twelve positions on a clock.
+
+3
+00:00:07.738 --> 00:00:11.826
+Colour every even position. Then add
+multiples of three.
+
+4
+00:00:11.826 --> 00:00:17.520
+Some positions remain empty. We can keep
+adding remainder rules until none do.
+
+5
+00:00:18.067 --> 00:00:22.798
+Next take numbers leaving remainder one on
+division by four, then remainder
+
+6
+00:00:22.798 --> 00:00:27.089
+five on division by six, then remainder
+seven on division by twelve.
+
+7
+00:00:27.089 --> 00:00:31.947
+Every clock position is covered. Because
+all five divisors divide twelve, the
+
+8
+00:00:31.947 --> 00:00:34.723
+picture repeats along the whole number
+line.
+
+9
+00:00:35.267 --> 00:00:39.608
+This is a covering system. The divisor in
+each rule is its modulus.
+
+10
+00:00:39.608 --> 00:00:43.820
+Our moduli are two, three, four, six, and
+twelve, each used once.
+
+11
+00:00:43.820 --> 00:00:48.227
+Distinct means we cannot use the same
+modulus again with a different
+
+12
+00:00:48.227 --> 00:00:48.875
+remainder.
+
+13
+00:00:49.400 --> 00:00:53.912
+Now impose a harder restriction. Every
+modulus must be at least six, and
+
+14
+00:00:53.912 --> 00:00:56.543
+divide forty-five times some power of two.
+
+15
+00:00:56.543 --> 00:01:01.118
+We may choose the power as large as we
+like, but the list must be finite.
+
+16
+00:01:01.118 --> 00:01:03.248
+Can all integers still be covered?
+
+17
+00:01:03.767 --> 00:01:06.417
+The answer is no, for every power of two.
+
+18
+00:01:06.417 --> 00:01:10.102
+The proof does not search through
+infinitely many powers.
+
+19
+00:01:10.102 --> 00:01:14.563
+It checks a small initial stage exactly,
+then proves that a numerical
+
+20
+00:01:14.563 --> 00:01:17.279
+obstruction survives every later doubling.
+
+21
+00:01:17.797 --> 00:01:21.601
+First separate the odd part from the powers
+of two.
+
+22
+00:01:21.601 --> 00:01:26.896
+The odd divisors of forty-five are one,
+three, five, nine, fifteen, and
+
+23
+00:01:26.896 --> 00:01:32.639
+forty-five. Every permitted modulus has one
+of these odd parts, multiplied by
+
+24
+00:01:32.639 --> 00:01:33.757
+a power of two.
+
+25
+00:01:34.297 --> 00:01:39.512
+Represent a remainder modulo forty-five by
+two coordinates: its remainder
+
+26
+00:01:39.512 --> 00:01:42.583
+modulo nine, and its remainder modulo five.
+
+27
+00:01:42.583 --> 00:01:45.226
+There are nine columns and five rows.
+
+28
+00:01:45.226 --> 00:01:49.226
+For example, seventeen sits in column eight
+and row two.
+
+29
+00:01:49.226 --> 00:01:52.297
+Every integer residue has exactly one cell.
+
+30
+00:01:52.831 --> 00:01:55.752
+Each odd divisor now gives a shape of
+cells.
+
+31
+00:01:55.752 --> 00:01:58.143
+A rule modulo nine fixes one column.
+
+32
+00:01:58.143 --> 00:02:02.990
+A rule modulo five fixes one row. A rule
+modulo forty-five fixes a single
+
+33
+00:02:02.990 --> 00:02:07.639
+cell. These are repeating arithmetic rules
+drawn as pieces on a board.
+
+34
+00:02:08.164 --> 00:02:13.236
+A rule modulo three selects three spaced
+columns, all with the same remainder
+
+35
+00:02:13.236 --> 00:02:17.978
+modulo three. Modulo fifteen selects those
+three columns inside one row.
+
+36
+00:02:17.978 --> 00:02:20.284
+Modulo one selects the whole board.
+
+37
+00:02:20.284 --> 00:02:23.116
+These six types are all the pieces we need.
+
+38
+00:02:23.661 --> 00:02:28.494
+Next track parity. One board splits into
+two: an even branch and an odd
+
+39
+00:02:28.494 --> 00:02:32.510
+branch. Modulo four, each splits again,
+giving four boards.
+
+40
+00:02:32.510 --> 00:02:37.819
+Knowing the remainder modulo four and
+modulo forty-five identifies a remainder
+
+41
+00:02:37.819 --> 00:02:39.861
+modulo one hundred and eighty.
+
+42
+00:02:40.394 --> 00:02:45.134
+A rule whose modulus is two to the power i
+times an odd divisor chooses a
+
+43
+00:02:45.134 --> 00:02:48.446
+branch at depth i, and a piece type on that
+branch.
+
+44
+00:02:48.446 --> 00:02:52.212
+Below that branch it keeps covering the
+same odd residues.
+
+45
+00:02:52.212 --> 00:02:55.394
+Existing patterns are inherited by both
+children.
+
+46
+00:02:55.927 --> 00:03:00.777
+At each new depth, there is at most one new
+rule of each of the six types.
+
+47
+00:03:00.777 --> 00:03:05.561
+Why? Reusing a type at the same depth would
+reuse the exact same modulus.
+
+48
+00:03:05.561 --> 00:03:10.279
+Distinctness limits the new supply of
+pieces, even as the boards double.
+
+49
+00:03:10.826 --> 00:03:14.138
+Counting uncovered cells alone is not
+enough.
+
+50
+00:03:14.138 --> 00:03:19.659
+Their arrangement matters. Instead, assign
+prices to pieces: fourteen for a
+
+51
+00:03:19.659 --> 00:03:25.401
+whole board, seven for a three-column
+block, four for a row, two for a column,
+
+52
+00:03:25.401 --> 00:03:28.346
+two for a short row, and one for a cell.
+
+53
+00:03:28.892 --> 00:03:33.436
+A board's cost is the cheapest total price
+of pieces covering its remaining
+
+54
+00:03:33.436 --> 00:03:37.859
+cells. In this bookkeeping calculation,
+repeated piece types are allowed.
+
+55
+00:03:37.859 --> 00:03:42.342
+That is a relaxed measuring tool; it does
+not allow repeated moduli in the
+
+56
+00:03:42.342 --> 00:03:43.796
+actual covering problem.
+
+57
+00:03:44.326 --> 00:03:48.080
+Here is a real uncovered pattern from the
+retained check.
+
+58
+00:03:48.080 --> 00:03:53.086
+It contains seventeen cells. Four columns
+cover them all, at price two each,
+
+59
+00:03:53.086 --> 00:03:58.224
+for cost eight. The exact cost routine also
+checks that no cheaper combination
+
+60
+00:03:58.224 --> 00:03:59.542
+of pieces can do it.
+
+61
+00:04:00.059 --> 00:04:03.096
+Suppose a new rule removes the highlighted
+column.
+
+62
+00:04:03.096 --> 00:04:06.315
+Cover the remaining cells, then buy that
+column back.
+
+63
+00:04:06.315 --> 00:04:08.805
+You have a cover of the original pattern.
+
+64
+00:04:08.805 --> 00:04:13.542
+So removing a piece can lower the minimum
+cost by no more than the piece's own
+
+65
+00:04:13.542 --> 00:04:13.907
+price.
+
+66
+00:04:14.424 --> 00:04:18.586
+Add the minimum costs of all current boards
+and call the total Q.
+
+67
+00:04:18.586 --> 00:04:22.428
+Before any new rules, doubling the boards
+doubles Q exactly.
+
+68
+00:04:22.428 --> 00:04:27.039
+The children inherit identical uncovered
+patterns, so each parent's cost
+
+69
+00:04:27.039 --> 00:04:27.936
+appears twice.
+
+70
+00:04:28.457 --> 00:04:32.749
+Now spend the new rules. There is at most
+one piece of each type.
+
+71
+00:04:32.749 --> 00:04:35.654
+Their prices add to thirty, which we call
+R.
+
+72
+00:04:35.654 --> 00:04:39.616
+Together they can reduce the doubled cost
+by at most thirty.
+
+73
+00:04:39.616 --> 00:04:42.257
+So the next Q is at least two Q minus R.
+
+74
+00:04:42.790 --> 00:04:47.437
+Here is the trap. If Q has already reached
+thirty, then the next value is at
+
+75
+00:04:47.437 --> 00:04:50.495
+least two times thirty minus thirty: still
+thirty.
+
+76
+00:04:50.495 --> 00:04:53.002
+Repeat the argument at every later depth.
+
+77
+00:04:53.002 --> 00:04:54.958
+The cost can never fall to zero.
+
+78
+00:04:55.490 --> 00:05:00.270
+A completed covering has no uncovered
+cells, so every board costs zero.
+
+79
+00:05:00.270 --> 00:05:04.511
+Therefore, once Q reaches R, no finite
+continuation can finish.
+
+80
+00:05:04.511 --> 00:05:09.492
+That is the step turning a calculation at
+one small depth into a statement
+
+81
+00:05:09.492 --> 00:05:12.050
+about arbitrarily large powers of two.
+
+82
+00:05:12.588 --> 00:05:17.076
+The remaining job is finite. At depth two
+there are four boards and thirteen
+
+83
+00:05:17.076 --> 00:05:21.150
+allowed moduli, all dividing one hundred
+and eighty and at least six.
+
+84
+00:05:21.150 --> 00:05:25.519
+Check every possible placement of those
+remainder rules, including choices
+
+85
+00:05:25.519 --> 00:05:26.700
+that omit a modulus.
+
+86
+00:05:27.222 --> 00:05:30.649
+One price list is not enough for the
+retained proof.
+
+87
+00:05:30.649 --> 00:05:35.526
+There are eleven lists. For every initial
+configuration, at least one list
+
+88
+00:05:35.526 --> 00:05:39.745
+reaches its own threshold. The list that
+works can depend on the
+
+89
+00:05:39.745 --> 00:05:44.358
+configuration. After choosing it, the same
+doubling inequality applies
+
+90
+00:05:44.358 --> 00:05:44.886
+forever.
+
+91
+00:05:45.422 --> 00:05:49.107
+These four exact boards show why the
+eleventh list matters.
+
+92
+00:05:49.107 --> 00:05:53.791
+Their uncovered cell counts are zero,
+seventeen, eighteen, and twenty-four.
+
+93
+00:05:53.791 --> 00:05:55.915
+They survived the first ten tests.
+
+94
+00:05:55.915 --> 00:06:00.038
+Now apply the prices we have been using to
+the same four patterns.
+
+95
+00:06:00.555 --> 00:06:06.531
+The empty board costs zero. The second
+costs eight, using four columns.
+
+96
+00:06:06.531 --> 00:06:09.981
+The third costs twelve, using three rows.
+
+97
+00:06:09.981 --> 00:06:13.600
+The fourth costs twelve, using six columns.
+
+98
+00:06:13.600 --> 00:06:19.155
+The exact minima add to thirty-two, above
+the threshold of thirty.
+
+99
+00:06:19.688 --> 00:06:23.576
+Doubling this state therefore leaves cost
+at least thirty-four.
+
+100
+00:06:23.576 --> 00:06:26.353
+Double again and it is at least
+thirty-eight.
+
+101
+00:06:26.353 --> 00:06:30.859
+The obstruction persists. With another
+price list the same state can fall
+
+102
+00:06:30.859 --> 00:06:35.240
+below its threshold, so multiple ways of
+measuring are doing real work.
+
+103
+00:06:35.788 --> 00:06:40.989
+The main C search visits four hundred and
+ninety-eight thousand, four hundred
+
+104
+00:06:40.989 --> 00:06:43.825
+and sixty-four nodes, with zero survivors.
+
+105
+00:06:43.825 --> 00:06:47.337
+A separate generic C implementation also
+finds zero.
+
+106
+00:06:47.337 --> 00:06:52.267
+Independent Python covers one hundred and
+thirty-five roots and over four
+
+107
+00:06:52.267 --> 00:06:55.036
+million nodes, again with zero survivors.
+
+108
+00:06:55.555 --> 00:07:00.380
+The proof combines those exact finite
+checks with the written doubling lemma.
+
+109
+00:07:00.380 --> 00:07:03.326
+It is not a test of just a few large
+exponents.
+
+110
+00:07:03.326 --> 00:07:07.963
+Controls check known coverings and the cost
+calculations, and deliberately
+
+111
+00:07:07.963 --> 00:07:10.532
+incomplete result summaries are rejected.
+
+112
+00:07:10.532 --> 00:07:12.475
+There is no Lean formalisation.
+
+113
+00:07:13.017 --> 00:07:17.517
+There is a surprising limit to the
+statement: an infinite distinct covering
+
+114
+00:07:17.517 --> 00:07:19.557
+with these kinds of moduli exists.
+
+115
+00:07:19.557 --> 00:07:21.777
+That does not contradict the theorem.
+
+116
+00:07:21.777 --> 00:07:25.917
+At every finite stage, something remains
+uncovered, even though every
+
+117
+00:07:25.917 --> 00:07:28.977
+particular integer can eventually be
+covered later.
+
+118
+00:07:29.517 --> 00:07:32.815
+Think carefully about the order of those
+statements.
+
+119
+00:07:32.815 --> 00:07:36.049
+For each finite list, there is some missed
+integer.
+
+120
+00:07:36.049 --> 00:07:40.933
+That is compatible with each integer
+appearing somewhere in an infinite list.
+
+121
+00:07:40.933 --> 00:07:44.421
+There need not be one integer that escapes
+every stage.
+
+122
+00:07:44.950 --> 00:07:49.627
+Harrington, Klein, Lowrance and Trifonov
+posed this finite question and
+
+123
+00:07:49.627 --> 00:07:51.932
+supplied the infinite construction.
+
+124
+00:07:51.932 --> 00:07:54.435
+This result settles their Problem Two.
+
+125
+00:07:54.435 --> 00:07:59.177
+It does not settle the separate
+minimum-eight problem or the exploratory
+
+126
+00:07:59.177 --> 00:07:59.440
+case
+
+127
+00:07:59.440 --> 00:08:02.206
+with odd part one hundred and thirty-five.
+
+128
+00:08:02.750 --> 00:08:05.273
+The conclusion uses every restriction.
+
+129
+00:08:05.273 --> 00:08:07.929
+The list is finite. Moduli are distinct.
+
+130
+00:08:07.929 --> 00:08:12.510
+Each is at least six. And all divide
+forty-five times a power of two.
+
+131
+00:08:12.510 --> 00:08:17.689
+Under those conditions, every attempted
+covering leaves a gap, however far the
+
+132
+00:08:17.689 --> 00:08:18.950
+power of two grows.
+
+133
+00:08:19.484 --> 00:08:22.952
+The central idea is a price that survives
+doubling.
+
+134
+00:08:22.952 --> 00:08:28.256
+Exact enumeration proves every starting
+arrangement gets trapped by some price
+
+135
+00:08:28.256 --> 00:08:31.384
+list. The inequality keeps it trapped
+forever.
+
+136
+00:08:31.384 --> 00:08:36.688
+That is how a finite calculation can prove
+an infinite family of impossibility
+
+137
+00:08:36.688 --> 00:08:37.436
+statements.
+
+138
+00:08:37.984 --> 00:08:43.346
+The source paper, eleven price vectors,
+recorded checks and editable animation
+
+139
+00:08:43.346 --> 00:08:48.570
+accompany this video. Correctness
+confidence is high within the stated proof
+
+140
+00:08:48.570 --> 00:08:52.419
+and computational model; the priority
+search is bounded.
+
+141
+00:08:52.419 --> 00:08:54.688
+Narration uses a synthetic voice.

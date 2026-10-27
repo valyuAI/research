@@ -1,0 +1,30 @@
+[
+  {
+    "mutation": "facet normal",
+    "rejection": "Supporting-facet test failed"
+  },
+  {
+    "mutation": "kernel",
+    "rejection": "J*K is nonzero"
+  },
+  {
+    "mutation": "range_dual",
+    "rejection": "Range dual is not a left inverse on pivot columns"
+  },
+  {
+    "mutation": "left_nullspace",
+    "rejection": "Left-nullspace equation failed"
+  },
+  {
+    "mutation": "second_order_correction",
+    "rejection": "Second-order equation J*W2+q(K) failed"
+  },
+  {
+    "mutation": "cubic_obstruction",
+    "rejection": "Cubic obstruction differs from independent source reconstruction"
+  },
+  {
+    "mutation": "pure-power coefficient",
+    "rejection": "Pure-power identity failed"
+  }
+]

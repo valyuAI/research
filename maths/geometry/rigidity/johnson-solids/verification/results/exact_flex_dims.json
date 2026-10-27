@@ -1,0 +1,308 @@
+{
+ "3": {
+  "name": "Triangular Cupola",
+  "cols": 51,
+  "exact_rank": 44,
+  "flex_dim": 1
+ },
+ "4": {
+  "name": "Square Cupola",
+  "cols": 66,
+  "exact_rank": 58,
+  "flex_dim": 2
+ },
+ "5": {
+  "name": "Pentagonal Cupola",
+  "cols": 81,
+  "exact_rank": 72,
+  "flex_dim": 3
+ },
+ "7": {
+  "name": "Elongated Triangular Pyramid",
+  "cols": 42,
+  "exact_rank": 34,
+  "flex_dim": 2
+ },
+ "8": {
+  "name": "Elongated Square Pyramid",
+  "cols": 54,
+  "exact_rank": 46,
+  "flex_dim": 2
+ },
+ "9": {
+  "name": "Elongated Pentagonal Pyramid",
+  "cols": 66,
+  "exact_rank": 58,
+  "flex_dim": 2
+ },
+ "14": {
+  "name": "Elongated Triangular Dipyramid",
+  "cols": 51,
+  "exact_rank": 43,
+  "flex_dim": 2
+ },
+ "15": {
+  "name": "Elongated Square Dipyramid",
+  "cols": 66,
+  "exact_rank": 58,
+  "flex_dim": 2
+ },
+ "16": {
+  "name": "Elongated Pentagonal Dipyramid",
+  "cols": 81,
+  "exact_rank": 73,
+  "flex_dim": 2
+ },
+ "18": {
+  "name": "Elongated Triangular Cupola",
+  "cols": 87,
+  "exact_rank": 78,
+  "flex_dim": 3
+ },
+ "19": {
+  "name": "Elongated Square Cupola",
+  "cols": 114,
+  "exact_rank": 104,
+  "flex_dim": 4
+ },
+ "20": {
+  "name": "Elongated Pentagonal Cupola",
+  "cols": 141,
+  "exact_rank": 130,
+  "flex_dim": 5
+ },
+ "21": {
+  "name": "Elongated Pentagonal Rotunda",
+  "cols": 171,
+  "exact_rank": 163,
+  "flex_dim": 2
+ },
+ "26": {
+  "name": "Gyrobifastigium",
+  "cols": 48,
+  "exact_rank": 39,
+  "flex_dim": 3
+ },
+ "27": {
+  "name": "Triangular Orthobicupola",
+  "cols": 78,
+  "exact_rank": 69,
+  "flex_dim": 3
+ },
+ "28": {
+  "name": "Square Orthobicupola",
+  "cols": 102,
+  "exact_rank": 92,
+  "flex_dim": 4
+ },
+ "29": {
+  "name": "Square Gyrobicupola",
+  "cols": 102,
+  "exact_rank": 93,
+  "flex_dim": 3
+ },
+ "30": {
+  "name": "Pentagonal Orthobicupola",
+  "cols": 126,
+  "exact_rank": 115,
+  "flex_dim": 5
+ },
+ "31": {
+  "name": "Pentagonal Gyrobicupola",
+  "cols": 126,
+  "exact_rank": 117,
+  "flex_dim": 3
+ },
+ "35": {
+  "name": "Elongated Triangular Orthobicupola",
+  "cols": 114,
+  "exact_rank": 103,
+  "flex_dim": 5
+ },
+ "36": {
+  "name": "Elongated Triangular Gyrobicupola",
+  "cols": 114,
+  "exact_rank": 103,
+  "flex_dim": 5
+ },
+ "37": {
+  "name": "Elongated Square Gyrobicupola",
+  "cols": 150,
+  "exact_rank": 139,
+  "flex_dim": 5
+ },
+ "38": {
+  "name": "Elongated Pentagonal Orthobicupola",
+  "cols": 186,
+  "exact_rank": 173,
+  "flex_dim": 7
+ },
+ "39": {
+  "name": "Elongated Pentagonal Gyrobicupola",
+  "cols": 186,
+  "exact_rank": 175,
+  "flex_dim": 5
+ },
+ "40": {
+  "name": "Elongated Pentagonal Orthocupolarotunda",
+  "cols": 216,
+  "exact_rank": 208,
+  "flex_dim": 2
+ },
+ "41": {
+  "name": "Elongated Pentagonal Gyrocupolarotunda",
+  "cols": 216,
+  "exact_rank": 208,
+  "flex_dim": 2
+ },
+ "42": {
+  "name": "Elongated Pentagonal Orthobirotunda",
+  "cols": 246,
+  "exact_rank": 238,
+  "flex_dim": 2
+ },
+ "43": {
+  "name": "Elongated Pentagonal Gyrobirotunda",
+  "cols": 246,
+  "exact_rank": 238,
+  "flex_dim": 2
+ },
+ "49": {
+  "name": "Augmented Triangular Prism",
+  "cols": 45,
+  "exact_rank": 38,
+  "flex_dim": 1
+ },
+ "52": {
+  "name": "Augmented Pentagonal Prism",
+  "cols": 63,
+  "exact_rank": 54,
+  "flex_dim": 3
+ },
+ "53": {
+  "name": "Biaugmented Pentagonal Prism",
+  "cols": 75,
+  "exact_rank": 67,
+  "flex_dim": 2
+ },
+ "54": {
+  "name": "Augmented Hexagonal Prism",
+  "cols": 72,
+  "exact_rank": 62,
+  "flex_dim": 4
+ },
+ "55": {
+  "name": "Parabiaugmented Hexagonal Prism",
+  "cols": 84,
+  "exact_rank": 74,
+  "flex_dim": 4
+ },
+ "56": {
+  "name": "Metabiaugmented Hexagonal Prism",
+  "cols": 84,
+  "exact_rank": 75,
+  "flex_dim": 3
+ },
+ "57": {
+  "name": "Triaugmented Hexagonal Prism",
+  "cols": 96,
+  "exact_rank": 87,
+  "flex_dim": 3
+ },
+ "58": {
+  "name": "Augmented Dodecahedron",
+  "cols": 111,
+  "exact_rank": 102,
+  "flex_dim": 3
+ },
+ "59": {
+  "name": "Parabiaugmented Dodecahedron",
+  "cols": 126,
+  "exact_rank": 117,
+  "flex_dim": 3
+ },
+ "60": {
+  "name": "Metabiaugmented Dodecahedron",
+  "cols": 126,
+  "exact_rank": 119,
+  "flex_dim": 1
+ },
+ "67": {
+  "name": "Biaugmented Truncated Cube",
+  "cols": 186,
+  "exact_rank": 178,
+  "flex_dim": 2
+ },
+ "72": {
+  "name": "Gyrate Rhombicosidodecahedron",
+  "cols": 366,
+  "exact_rank": 354,
+  "flex_dim": 6
+ },
+ "73": {
+  "name": "Parabigyrate Rhombicosidodecahedron",
+  "cols": 366,
+  "exact_rank": 354,
+  "flex_dim": 6
+ },
+ "74": {
+  "name": "Metabigyrate Rhombicosidodecahedron",
+  "cols": 366,
+  "exact_rank": 356,
+  "flex_dim": 4
+ },
+ "75": {
+  "name": "Trigyrate Rhombicosidodecahedron",
+  "cols": 366,
+  "exact_rank": 357,
+  "flex_dim": 3
+ },
+ "76": {
+  "name": "Diminished Rhombicosidodecahedron",
+  "cols": 321,
+  "exact_rank": 309,
+  "flex_dim": 6
+ },
+ "77": {
+  "name": "Paragyrate Diminished Rhombicosidodecahedron",
+  "cols": 321,
+  "exact_rank": 311,
+  "flex_dim": 4
+ },
+ "78": {
+  "name": "Metagyrate Diminished Rhombicosidodecahedron",
+  "cols": 321,
+  "exact_rank": 311,
+  "flex_dim": 4
+ },
+ "79": {
+  "name": "Bigyrate Diminished Rhombicosidodecahedron",
+  "cols": 321,
+  "exact_rank": 313,
+  "flex_dim": 2
+ },
+ "80": {
+  "name": "Parabidiminished Rhombicosidodecahedron",
+  "cols": 276,
+  "exact_rank": 264,
+  "flex_dim": 6
+ },
+ "81": {
+  "name": "Metabidiminished Rhombicosidodecahedron",
+  "cols": 276,
+  "exact_rank": 266,
+  "flex_dim": 4
+ },
+ "82": {
+  "name": "Gyrate Bidiminished Rhombicosidodecahedron",
+  "cols": 276,
+  "exact_rank": 268,
+  "flex_dim": 2
+ },
+ "83": {
+  "name": "Tridiminished Rhombicosidodecahedron",
+  "cols": 231,
+  "exact_rank": 223,
+  "flex_dim": 2
+ }
+}

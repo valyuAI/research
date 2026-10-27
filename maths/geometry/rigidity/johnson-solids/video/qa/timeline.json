@@ -1,0 +1,254 @@
+[
+  {
+    "id": "r1",
+    "start": 0.0,
+    "duration": 11.664,
+    "scene": "Rules",
+    "global_start": 0.0
+  },
+  {
+    "id": "r2",
+    "start": 12.033333333333305,
+    "duration": 11.352,
+    "scene": "Rules",
+    "global_start": 12.033333333333305
+  },
+  {
+    "id": "r3",
+    "start": 23.766666666666676,
+    "duration": 13.512,
+    "scene": "Rules",
+    "global_start": 23.766666666666676
+  },
+  {
+    "id": "r4",
+    "start": 37.666666666666764,
+    "duration": 13.512,
+    "scene": "Rules",
+    "global_start": 37.666666666666764
+  },
+  {
+    "id": "c1",
+    "start": 0.0,
+    "duration": 13.8,
+    "scene": "Cupola",
+    "global_start": 51.566667
+  },
+  {
+    "id": "c2",
+    "start": 14.199999999999989,
+    "duration": 13.56,
+    "scene": "Cupola",
+    "global_start": 65.76666699999998
+  },
+  {
+    "id": "c3",
+    "start": 28.13333333333332,
+    "duration": 12.456,
+    "scene": "Cupola",
+    "global_start": 79.70000033333332
+  },
+  {
+    "id": "c4",
+    "start": 43.13333333333288,
+    "duration": 11.856,
+    "scene": "Cupola",
+    "global_start": 94.70000033333288
+  },
+  {
+    "id": "a1",
+    "start": 0.0,
+    "duration": 13.152,
+    "scene": "Addition",
+    "global_start": 107.7
+  },
+  {
+    "id": "a2",
+    "start": 13.533333333333314,
+    "duration": 15.408,
+    "scene": "Addition",
+    "global_start": 121.23333333333332
+  },
+  {
+    "id": "a3",
+    "start": 29.33333333333343,
+    "duration": 16.368,
+    "scene": "Addition",
+    "global_start": 137.03333333333345
+  },
+  {
+    "id": "a4",
+    "start": 46.099999999999696,
+    "duration": 15.168,
+    "scene": "Addition",
+    "global_start": 153.7999999999997
+  },
+  {
+    "id": "f1",
+    "start": 0.0,
+    "duration": 15.864,
+    "scene": "Flatness",
+    "global_start": 169.366667
+  },
+  {
+    "id": "f2",
+    "start": 16.23333333333331,
+    "duration": 14.664,
+    "scene": "Flatness",
+    "global_start": 185.60000033333333
+  },
+  {
+    "id": "f3",
+    "start": 31.266666666666943,
+    "duration": 16.704,
+    "scene": "Flatness",
+    "global_start": 200.63333366666694
+  },
+  {
+    "id": "p1",
+    "start": 0.0,
+    "duration": 14.616,
+    "scene": "Pyramid",
+    "global_start": 217.733334
+  },
+  {
+    "id": "p2",
+    "start": 14.999999999999996,
+    "duration": 12.648,
+    "scene": "Pyramid",
+    "global_start": 232.733334
+  },
+  {
+    "id": "p3",
+    "start": 28.033333333333523,
+    "duration": 12.552,
+    "scene": "Pyramid",
+    "global_start": 245.76666733333354
+  },
+  {
+    "id": "p4",
+    "start": 40.966666666666704,
+    "duration": 13.8,
+    "scene": "Pyramid",
+    "global_start": 258.7000006666667
+  },
+  {
+    "id": "v1",
+    "start": 0.0,
+    "duration": 14.952,
+    "scene": "FirstOrder",
+    "global_start": 272.90000100000003
+  },
+  {
+    "id": "v2",
+    "start": 15.333333333333325,
+    "duration": 14.448,
+    "scene": "FirstOrder",
+    "global_start": 288.23333433333335
+  },
+  {
+    "id": "v3",
+    "start": 30.16666666666707,
+    "duration": 14.712,
+    "scene": "FirstOrder",
+    "global_start": 303.0666676666671
+  },
+  {
+    "id": "v4",
+    "start": 45.266666666666936,
+    "duration": 14.016,
+    "scene": "FirstOrder",
+    "global_start": 318.16666766666697
+  },
+  {
+    "id": "s1",
+    "start": 0.0,
+    "duration": 13.8,
+    "scene": "SecondOrder",
+    "global_start": 332.56666800000005
+  },
+  {
+    "id": "s2",
+    "start": 14.199999999999996,
+    "duration": 15.648,
+    "scene": "SecondOrder",
+    "global_start": 346.76666800000004
+  },
+  {
+    "id": "s3",
+    "start": 30.233333333333682,
+    "duration": 15.768,
+    "scene": "SecondOrder",
+    "global_start": 362.80000133333374
+  },
+  {
+    "id": "s4",
+    "start": 46.40000000000004,
+    "duration": 16.368,
+    "scene": "SecondOrder",
+    "global_start": 378.9666680000001
+  },
+  {
+    "id": "n1",
+    "start": 0.0,
+    "duration": 14.256,
+    "scene": "Census",
+    "global_start": 395.73333500000007
+  },
+  {
+    "id": "n2",
+    "start": 14.63333333333333,
+    "duration": 16.512,
+    "scene": "Census",
+    "global_start": 410.3666683333334
+  },
+  {
+    "id": "n3",
+    "start": 31.5333333333336,
+    "duration": 17.712,
+    "scene": "Census",
+    "global_start": 427.26666833333366
+  },
+  {
+    "id": "e1",
+    "start": 0.0,
+    "duration": 16.368,
+    "scene": "Evidence",
+    "global_start": 445.36666800000006
+  },
+  {
+    "id": "e2",
+    "start": 16.76666666666666,
+    "duration": 16.056,
+    "scene": "Evidence",
+    "global_start": 462.1333346666667
+  },
+  {
+    "id": "e3",
+    "start": 33.20000000000032,
+    "duration": 19.752,
+    "scene": "Evidence",
+    "global_start": 478.5666680000004
+  },
+  {
+    "id": "z1",
+    "start": 0.0,
+    "duration": 14.568,
+    "scene": "Ending",
+    "global_start": 498.70000100000004
+  },
+  {
+    "id": "z2",
+    "start": 14.966666666666658,
+    "duration": 15.12,
+    "scene": "Ending",
+    "global_start": 513.6666676666667
+  },
+  {
+    "id": "z3",
+    "start": 30.466666666666885,
+    "duration": 19.008,
+    "scene": "Ending",
+    "global_start": 529.166667666667
+  }
+]

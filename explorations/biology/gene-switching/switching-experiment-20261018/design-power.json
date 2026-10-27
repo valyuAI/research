@@ -1,0 +1,599 @@
+{
+  "seed": 20261018,
+  "numpy_version": "2.3.3",
+  "scipy_version": "1.16.3",
+  "alpha": 0.05,
+  "binding_to_gate_ratio": 180.0,
+  "scope": "Synthetic exact-law experiments, prespecified complete episode counts; no biological data, instrument model, heterogeneity, or dose error.",
+  "sampler_checks": [
+    {
+      "dose": 0.1,
+      "orientation": "ON",
+      "sample_mean_z_score": -0.5498141448262508
+    },
+    {
+      "dose": 0.1,
+      "orientation": "OFF",
+      "sample_mean_z_score": -0.9797709015047399
+    },
+    {
+      "dose": 0.25,
+      "orientation": "ON",
+      "sample_mean_z_score": -0.1649768025537238
+    },
+    {
+      "dose": 0.25,
+      "orientation": "OFF",
+      "sample_mean_z_score": 0.8844893468966399
+    },
+    {
+      "dose": 1,
+      "orientation": "ON",
+      "sample_mean_z_score": 1.6300120403106704
+    },
+    {
+      "dose": 1,
+      "orientation": "OFF",
+      "sample_mean_z_score": 1.0503590475791138
+    },
+    {
+      "dose": 2,
+      "orientation": "ON",
+      "sample_mean_z_score": -0.11261268324203219
+    },
+    {
+      "dose": 2,
+      "orientation": "OFF",
+      "sample_mean_z_score": 0.8482037760488497
+    },
+    {
+      "dose": 4,
+      "orientation": "ON",
+      "sample_mean_z_score": 0.9527151745526758
+    },
+    {
+      "dose": 4,
+      "orientation": "OFF",
+      "sample_mean_z_score": -1.5688464593578275
+    },
+    {
+      "dose": 10,
+      "orientation": "ON",
+      "sample_mean_z_score": 0.8678373541508977
+    },
+    {
+      "dose": 10,
+      "orientation": "OFF",
+      "sample_mean_z_score": -1.8634105332005926
+    }
+  ],
+  "power": [
+    {
+      "design": "original_1_2_4",
+      "doses": [
+        1,
+        2,
+        4
+      ],
+      "episodes_per_orientation_per_dose": 25,
+      "probability": {
+        "rejections": 5,
+        "replicates": 20000,
+        "fraction": 0.00025,
+        "monte_carlo_95_percent_interval": [
+          8.117914280267086e-05,
+          0.0005833193489126621
+        ]
+      },
+      "expected_total_observation_hours_at_gate_2_over_3_per_minute": 9.21875
+    },
+    {
+      "design": "original_1_2_4",
+      "doses": [
+        1,
+        2,
+        4
+      ],
+      "episodes_per_orientation_per_dose": 50,
+      "probability": {
+        "rejections": 13,
+        "replicates": 20000,
+        "fraction": 0.00065,
+        "monte_carlo_95_percent_interval": [
+          0.0003461415732329871,
+          0.0011112633024966876
+        ]
+      },
+      "expected_total_observation_hours_at_gate_2_over_3_per_minute": 18.4375
+    },
+    {
+      "design": "original_1_2_4",
+      "doses": [
+        1,
+        2,
+        4
+      ],
+      "episodes_per_orientation_per_dose": 100,
+      "probability": {
+        "rejections": 24,
+        "replicates": 20000,
+        "fraction": 0.0012,
+        "monte_carlo_95_percent_interval": [
+          0.0007690092283363047,
+          0.001784982122860909
+        ]
+      },
+      "expected_total_observation_hours_at_gate_2_over_3_per_minute": 36.875
+    },
+    {
+      "design": "original_1_2_4",
+      "doses": [
+        1,
+        2,
+        4
+      ],
+      "episodes_per_orientation_per_dose": 200,
+      "probability": {
+        "rejections": 73,
+        "replicates": 20000,
+        "fraction": 0.00365,
+        "monte_carlo_95_percent_interval": [
+          0.002862075724286526,
+          0.004587170345127214
+        ]
+      },
+      "expected_total_observation_hours_at_gate_2_over_3_per_minute": 73.75
+    },
+    {
+      "design": "original_1_2_4",
+      "doses": [
+        1,
+        2,
+        4
+      ],
+      "episodes_per_orientation_per_dose": 500,
+      "probability": {
+        "rejections": 463,
+        "replicates": 20000,
+        "fraction": 0.02315,
+        "monte_carlo_95_percent_interval": [
+          0.021110424402257504,
+          0.025329762704423407
+        ]
+      },
+      "expected_total_observation_hours_at_gate_2_over_3_per_minute": 184.375
+    },
+    {
+      "design": "original_1_2_4",
+      "doses": [
+        1,
+        2,
+        4
+      ],
+      "episodes_per_orientation_per_dose": 1000,
+      "probability": {
+        "rejections": 2276,
+        "replicates": 20000,
+        "fraction": 0.1138,
+        "monte_carlo_95_percent_interval": [
+          0.10943017400024067,
+          0.11828243606993515
+        ]
+      },
+      "expected_total_observation_hours_at_gate_2_over_3_per_minute": 368.75
+    },
+    {
+      "design": "original_1_2_4",
+      "doses": [
+        1,
+        2,
+        4
+      ],
+      "episodes_per_orientation_per_dose": 3000,
+      "probability": {
+        "rejections": 15756,
+        "replicates": 20000,
+        "fraction": 0.7878,
+        "monte_carlo_95_percent_interval": [
+          0.7820668807154831,
+          0.7934493405811991
+        ]
+      },
+      "expected_total_observation_hours_at_gate_2_over_3_per_minute": 1106.25
+    },
+    {
+      "design": "balanced_16_fold",
+      "doses": [
+        0.25,
+        1,
+        4
+      ],
+      "episodes_per_orientation_per_dose": 25,
+      "probability": {
+        "rejections": 330,
+        "replicates": 20000,
+        "fraction": 0.0165,
+        "monte_carlo_95_percent_interval": [
+          0.014780076746154865,
+          0.018362461202082257
+        ]
+      },
+      "expected_total_observation_hours_at_gate_2_over_3_per_minute": 10.3125
+    },
+    {
+      "design": "balanced_16_fold",
+      "doses": [
+        0.25,
+        1,
+        4
+      ],
+      "episodes_per_orientation_per_dose": 50,
+      "probability": {
+        "rejections": 1765,
+        "replicates": 20000,
+        "fraction": 0.08825,
+        "monte_carlo_95_percent_interval": [
+          0.08435382717706107,
+          0.09226633954972159
+        ]
+      },
+      "expected_total_observation_hours_at_gate_2_over_3_per_minute": 20.625
+    },
+    {
+      "design": "balanced_16_fold",
+      "doses": [
+        0.25,
+        1,
+        4
+      ],
+      "episodes_per_orientation_per_dose": 100,
+      "probability": {
+        "rejections": 7579,
+        "replicates": 20000,
+        "fraction": 0.37895,
+        "monte_carlo_95_percent_interval": [
+          0.3722196247551661,
+          0.38571558085154506
+        ]
+      },
+      "expected_total_observation_hours_at_gate_2_over_3_per_minute": 41.25
+    },
+    {
+      "design": "balanced_16_fold",
+      "doses": [
+        0.25,
+        1,
+        4
+      ],
+      "episodes_per_orientation_per_dose": 200,
+      "probability": {
+        "rejections": 17848,
+        "replicates": 20000,
+        "fraction": 0.8924,
+        "monte_carlo_95_percent_interval": [
+          0.8880232572374246,
+          0.8966623037478155
+        ]
+      },
+      "expected_total_observation_hours_at_gate_2_over_3_per_minute": 82.5
+    },
+    {
+      "design": "balanced_16_fold",
+      "doses": [
+        0.25,
+        1,
+        4
+      ],
+      "episodes_per_orientation_per_dose": 500,
+      "probability": {
+        "rejections": 20000,
+        "replicates": 20000,
+        "fraction": 1.0,
+        "monte_carlo_95_percent_interval": [
+          0.9998155730360381,
+          1.0
+        ]
+      },
+      "expected_total_observation_hours_at_gate_2_over_3_per_minute": 206.25
+    },
+    {
+      "design": "balanced_16_fold",
+      "doses": [
+        0.25,
+        1,
+        4
+      ],
+      "episodes_per_orientation_per_dose": 1000,
+      "probability": {
+        "rejections": 20000,
+        "replicates": 20000,
+        "fraction": 1.0,
+        "monte_carlo_95_percent_interval": [
+          0.9998155730360381,
+          1.0
+        ]
+      },
+      "expected_total_observation_hours_at_gate_2_over_3_per_minute": 412.5
+    },
+    {
+      "design": "balanced_16_fold",
+      "doses": [
+        0.25,
+        1,
+        4
+      ],
+      "episodes_per_orientation_per_dose": 3000,
+      "probability": {
+        "rejections": 20000,
+        "replicates": 20000,
+        "fraction": 1.0,
+        "monte_carlo_95_percent_interval": [
+          0.9998155730360381,
+          1.0
+        ]
+      },
+      "expected_total_observation_hours_at_gate_2_over_3_per_minute": 1237.5
+    },
+    {
+      "design": "balanced_100_fold",
+      "doses": [
+        0.1,
+        1,
+        10
+      ],
+      "episodes_per_orientation_per_dose": 25,
+      "probability": {
+        "rejections": 13766,
+        "replicates": 20000,
+        "fraction": 0.6883,
+        "monte_carlo_95_percent_interval": [
+          0.6818286291784244,
+          0.6947165938609532
+        ]
+      },
+      "expected_total_observation_hours_at_gate_2_over_3_per_minute": 17.625
+    },
+    {
+      "design": "balanced_100_fold",
+      "doses": [
+        0.1,
+        1,
+        10
+      ],
+      "episodes_per_orientation_per_dose": 50,
+      "probability": {
+        "rejections": 19846,
+        "replicates": 20000,
+        "fraction": 0.9923,
+        "monte_carlo_95_percent_interval": [
+          0.9909892311324981,
+          0.9934644379942122
+        ]
+      },
+      "expected_total_observation_hours_at_gate_2_over_3_per_minute": 35.25
+    },
+    {
+      "design": "balanced_100_fold",
+      "doses": [
+        0.1,
+        1,
+        10
+      ],
+      "episodes_per_orientation_per_dose": 100,
+      "probability": {
+        "rejections": 20000,
+        "replicates": 20000,
+        "fraction": 1.0,
+        "monte_carlo_95_percent_interval": [
+          0.9998155730360381,
+          1.0
+        ]
+      },
+      "expected_total_observation_hours_at_gate_2_over_3_per_minute": 70.5
+    },
+    {
+      "design": "balanced_100_fold",
+      "doses": [
+        0.1,
+        1,
+        10
+      ],
+      "episodes_per_orientation_per_dose": 200,
+      "probability": {
+        "rejections": 20000,
+        "replicates": 20000,
+        "fraction": 1.0,
+        "monte_carlo_95_percent_interval": [
+          0.9998155730360381,
+          1.0
+        ]
+      },
+      "expected_total_observation_hours_at_gate_2_over_3_per_minute": 141.0
+    },
+    {
+      "design": "balanced_100_fold",
+      "doses": [
+        0.1,
+        1,
+        10
+      ],
+      "episodes_per_orientation_per_dose": 500,
+      "probability": {
+        "rejections": 20000,
+        "replicates": 20000,
+        "fraction": 1.0,
+        "monte_carlo_95_percent_interval": [
+          0.9998155730360381,
+          1.0
+        ]
+      },
+      "expected_total_observation_hours_at_gate_2_over_3_per_minute": 352.5
+    },
+    {
+      "design": "balanced_100_fold",
+      "doses": [
+        0.1,
+        1,
+        10
+      ],
+      "episodes_per_orientation_per_dose": 1000,
+      "probability": {
+        "rejections": 20000,
+        "replicates": 20000,
+        "fraction": 1.0,
+        "monte_carlo_95_percent_interval": [
+          0.9998155730360381,
+          1.0
+        ]
+      },
+      "expected_total_observation_hours_at_gate_2_over_3_per_minute": 705.0
+    },
+    {
+      "design": "balanced_100_fold",
+      "doses": [
+        0.1,
+        1,
+        10
+      ],
+      "episodes_per_orientation_per_dose": 3000,
+      "probability": {
+        "rejections": 20000,
+        "replicates": 20000,
+        "fraction": 1.0,
+        "monte_carlo_95_percent_interval": [
+          0.9998155730360381,
+          1.0
+        ]
+      },
+      "expected_total_observation_hours_at_gate_2_over_3_per_minute": 2115.0
+    }
+  ],
+  "null_checks": [
+    {
+      "affine_intercept": 1,
+      "affine_slope": 0,
+      "count": 25,
+      "probability": {
+        "rejections": 19,
+        "replicates": 20000,
+        "fraction": 0.00095,
+        "monte_carlo_95_percent_interval": [
+          0.0005720559043738818,
+          0.0014831468941549724
+        ]
+      }
+    },
+    {
+      "affine_intercept": 1,
+      "affine_slope": 0,
+      "count": 100,
+      "probability": {
+        "rejections": 16,
+        "replicates": 20000,
+        "fraction": 0.0008,
+        "monte_carlo_95_percent_interval": [
+          0.0004573360715951035,
+          0.0012988256380440566
+        ]
+      }
+    },
+    {
+      "affine_intercept": 1,
+      "affine_slope": 0,
+      "count": 500,
+      "probability": {
+        "rejections": 19,
+        "replicates": 20000,
+        "fraction": 0.00095,
+        "monte_carlo_95_percent_interval": [
+          0.0005720559043738818,
+          0.0014831468941549724
+        ]
+      }
+    },
+    {
+      "affine_intercept": 0.2,
+      "affine_slope": 0.7,
+      "count": 25,
+      "probability": {
+        "rejections": 4,
+        "replicates": 20000,
+        "fraction": 0.0002,
+        "monte_carlo_95_percent_interval": [
+          5.4495871132808785e-05,
+          0.0005119995337837134
+        ]
+      }
+    },
+    {
+      "affine_intercept": 0.2,
+      "affine_slope": 0.7,
+      "count": 100,
+      "probability": {
+        "rejections": 3,
+        "replicates": 20000,
+        "fraction": 0.00015,
+        "monte_carlo_95_percent_interval": [
+          3.093467444528524e-05,
+          0.00043830045339363695
+        ]
+      }
+    },
+    {
+      "affine_intercept": 0.2,
+      "affine_slope": 0.7,
+      "count": 500,
+      "probability": {
+        "rejections": 5,
+        "replicates": 20000,
+        "fraction": 0.00025,
+        "monte_carlo_95_percent_interval": [
+          8.117914280267086e-05,
+          0.0005833193489126621
+        ]
+      }
+    },
+    {
+      "affine_intercept": 0,
+      "affine_slope": 1,
+      "count": 25,
+      "probability": {
+        "rejections": 25,
+        "replicates": 20000,
+        "fraction": 0.00125,
+        "monte_carlo_95_percent_interval": [
+          0.0008090923378262644,
+          0.0018446973434142304
+        ]
+      }
+    },
+    {
+      "affine_intercept": 0,
+      "affine_slope": 1,
+      "count": 100,
+      "probability": {
+        "rejections": 29,
+        "replicates": 20000,
+        "fraction": 0.00145,
+        "monte_carlo_95_percent_interval": [
+          0.0009712961210016121,
+          0.0020817832728125913
+        ]
+      }
+    },
+    {
+      "affine_intercept": 0,
+      "affine_slope": 1,
+      "count": 500,
+      "probability": {
+        "rejections": 16,
+        "replicates": 20000,
+        "fraction": 0.0008,
+        "monte_carlo_95_percent_interval": [
+          0.0004573360715951035,
+          0.0012988256380440566
+        ]
+      }
+    }
+  ]
+}

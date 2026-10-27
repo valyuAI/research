@@ -1,0 +1,2 @@
+n=5 mode=L bound=6 first=(3,3) result=BLUE nodes=15035806 time=27.76s
+SUMMARY n=5 mode=L bound=6 blue_wins=1

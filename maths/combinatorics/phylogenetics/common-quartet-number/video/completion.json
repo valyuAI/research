@@ -1,0 +1,30 @@
+{
+  "completedUtc": "2026-10-26T14:51:40.533602+00:00",
+  "video": "video.mp4",
+  "durationSeconds": 565.266667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "voice": "cedar",
+  "clips": 36,
+  "maximumClipSeconds": 18.504,
+  "audioSeconds": 551.376,
+  "scenes": [
+    "FourLeaves",
+    "Witness",
+    "Separating",
+    "GridArgument",
+    "Budget",
+    "ManyTrees",
+    "Evidence"
+  ],
+  "fullDecode": "pass",
+  "visualInspection": "representative/boundary/all-beat sheets and detailed settled frames inspected",
+  "audioAlignment": "all 36 clips pass waveform comparison",
+  "listeningPerformed": false,
+  "fullRealtimePlaybackPerformed": false,
+  "scientificManifest": "scientific-completion-manifest.json",
+  "artifactHashes": "qa/artifact-sha256.json"
+}

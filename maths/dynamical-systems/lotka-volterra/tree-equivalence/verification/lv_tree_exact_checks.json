@@ -1,0 +1,76 @@
+{
+  "status": "all_checks_pass",
+  "arithmetic": "Python integers and rational fractions",
+  "all_order_proof_is_separate": true,
+  "triad_reconstruction_trees": 986,
+  "support_enumeration_trees": 200,
+  "rows": [
+    {
+      "n": 2,
+      "unlabelled_trees": 1,
+      "exact_dependent_triples_and_reconstruction": "pass",
+      "complete_support_enumeration": "pass"
+    },
+    {
+      "n": 3,
+      "unlabelled_trees": 1,
+      "exact_dependent_triples_and_reconstruction": "pass",
+      "complete_support_enumeration": "pass"
+    },
+    {
+      "n": 4,
+      "unlabelled_trees": 2,
+      "exact_dependent_triples_and_reconstruction": "pass",
+      "complete_support_enumeration": "pass"
+    },
+    {
+      "n": 5,
+      "unlabelled_trees": 3,
+      "exact_dependent_triples_and_reconstruction": "pass",
+      "complete_support_enumeration": "pass"
+    },
+    {
+      "n": 6,
+      "unlabelled_trees": 6,
+      "exact_dependent_triples_and_reconstruction": "pass",
+      "complete_support_enumeration": "pass"
+    },
+    {
+      "n": 7,
+      "unlabelled_trees": 11,
+      "exact_dependent_triples_and_reconstruction": "pass",
+      "complete_support_enumeration": "pass"
+    },
+    {
+      "n": 8,
+      "unlabelled_trees": 23,
+      "exact_dependent_triples_and_reconstruction": "pass",
+      "complete_support_enumeration": "pass"
+    },
+    {
+      "n": 9,
+      "unlabelled_trees": 47,
+      "exact_dependent_triples_and_reconstruction": "pass",
+      "complete_support_enumeration": "pass"
+    },
+    {
+      "n": 10,
+      "unlabelled_trees": 106,
+      "exact_dependent_triples_and_reconstruction": "pass",
+      "complete_support_enumeration": "pass"
+    },
+    {
+      "n": 11,
+      "unlabelled_trees": 235,
+      "exact_dependent_triples_and_reconstruction": "pass",
+      "complete_support_enumeration": "not_run"
+    },
+    {
+      "n": 12,
+      "unlabelled_trees": 551,
+      "exact_dependent_triples_and_reconstruction": "pass",
+      "complete_support_enumeration": "not_run"
+    }
+  ],
+  "code_sha256": "7ccec9be83822c6ff29e8e448b812f38c5169d7d578dfc8cde2a9273532fd6e9"
+}

@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "width": 1920,
+    "height": 1080,
+    "duration": 566.466667,
+    "controls": true,
+    "captionLanguage": "en",
+    "transcriptSections": 36
+  },
+  "samples": [
+    {
+      "time": 4.464226,
+      "error": null,
+      "readyState": 4,
+      "cueCount": 126,
+      "activeCaptions": [
+        "Imagine two neurons whose activity settles to a steady\npattern."
+      ],
+      "droppedFrames": 0,
+      "requestedTime": 3,
+      "advancedSeconds": 1.464226
+    },
+    {
+      "time": 284.696589,
+      "error": null,
+      "readyState": 4,
+      "cueCount": 126,
+      "activeCaptions": [
+        "For one changing number, a negative multiplier in its\nrate-of-change equation pulls it"
+      ],
+      "droppedFrames": 0,
+      "requestedTime": 283.2333335,
+      "advancedSeconds": 1.4632560000000012
+    },
+    {
+      "time": 561.931014,
+      "error": null,
+      "readyState": 4,
+      "cueCount": 126,
+      "activeCaptions": [
+        "The exact minimum at the standard parameters is still an\nopen question between eight"
+      ],
+      "droppedFrames": 0,
+      "requestedTime": 560.466667,
+      "advancedSeconds": 1.4643469999999752
+    }
+  ],
+  "mode": "Installed Chrome, fresh context, muted headless playback. No listening."
+}

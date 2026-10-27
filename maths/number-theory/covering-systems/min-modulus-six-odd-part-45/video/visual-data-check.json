@@ -1,0 +1,33 @@
+{
+  "warmup_12_residues_covered": true,
+  "actual_pattern_counts": [
+    0,
+    17,
+    18,
+    24
+  ],
+  "prices": [
+    14,
+    7,
+    4,
+    2,
+    2,
+    1
+  ],
+  "R": 30,
+  "retained_minimum_costs": [
+    0,
+    8,
+    12,
+    12
+  ],
+  "Q": 32,
+  "scope": "Display data checks only; exact minima sourced from locked research checks.",
+  "removed_column_example": {
+    "removed_column": 2,
+    "remaining_cells": 13,
+    "minimum_cost": 6,
+    "upper_bound": "Three type9 columns at price2 each.",
+    "lower_bound": "Any price at most5 excludes the price14 whole board and price7 type3 pieces. Each remaining affordable piece covers at most2.5 of these13 cells per price unit, so total price5 covers at most12.5 cells. Integer prices force cost at least6."
+  }
+}

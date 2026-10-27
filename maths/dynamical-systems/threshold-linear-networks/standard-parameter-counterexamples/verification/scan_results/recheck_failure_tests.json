@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "cases": {
+    "complete_n4_candidates": {
+      "returncode": 0,
+      "expected_pass": true
+    },
+    "wrong_candidate_count": {
+      "returncode": 1,
+      "expected_pass": false
+    },
+    "wrong_stable_count": {
+      "returncode": 1,
+      "expected_pass": false
+    },
+    "duplicate_candidates": {
+      "returncode": 1,
+      "expected_pass": false
+    },
+    "empty_candidates": {
+      "returncode": 1,
+      "expected_pass": false
+    }
+  }
+}

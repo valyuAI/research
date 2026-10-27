@@ -1,0 +1,16 @@
+{
+  "paper.tex": "64b6ecf5bb2c285fce0bd117b1e914913cae2c0e5ad77528b1a4482a3a0cd1a3",
+  "paper.pdf": "d06c144dd41e070bac10759296e6a13c24a960b7f9f4821ba13c6f3d53ee6cee",
+  "README.md": "c075620ffdfd5df1d4807b16092cc0020c18aa0b395300030a59a152ff533575",
+  "readiness.md": "0cd29d872e5b12ae8a2fccad7162294967c890bd2a0433c89919ab6bf8287171",
+  "video-brief.md": "10efe6ed75c6b7da6dc0c434f16d63abfdc65f603947e8c65f7c2f9ea376e5c5",
+  "verification/README.md": "ade241990feda3a855ce2ff3f3a7e4fe58e9e9c25f3e435b1e935f0673912bd3",
+  "verification/iterate_check.py": "65083b7aa5b54f17c932f89e9cc5352a253d7e97a440f25deba2d282e2dd42a1",
+  "verification/lean/CommonQuartetPotential.lean": "a85234aa55d40aa5772ad74dbd2f708595494383beb69717d46bd9ce5a16115e",
+  "verification/reviews/phylo-sharp-potential-review.md": "33bccdba6dbd1f8a10010496690e7bf9ce61410e1ea385d9402fb7b38cbd2b5f",
+  "verification/results/sharp-potential-iteration-20261026.log": "dc5ed7dc3900dc0d1f0752aec2cef196f16effe131a247b552a225b8c15e92e1",
+  "verification/results/sharp-potential-lean-20261026.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "verification/results/sharp-potential-axioms-20261026.log": "e5346ba624fcb484189b9140cf152ea70f7f076f9dba54e31261320009f9be37",
+  "verification/results/sharp-potential-typesetting-final-20261026.log": "fab0b0791d582d6f68d1936db20f9e8a37500146c97db28925ee9e331f8fee67",
+  "verification/results/sharp-potential-completion-20261026.json": "312a871fb233644cb1e76d6a6c6b8f713dcef65bfff8079b76ef1dcdf5f7aee8"
+}

@@ -1,0 +1,5 @@
+(3, 3, 1, 1) |F| = 8 max denominator 1
+(4, 4, 1, 1) |F| = 8 max denominator 1
+(5, 6, 1, 2) |F| >= 20000 max denominator 16384
+(6, 5, 2, 1) |F| >= 20000 max denominator 16384
+(7, 9, 3, 2) |F| >= 20000 max denominator 131072

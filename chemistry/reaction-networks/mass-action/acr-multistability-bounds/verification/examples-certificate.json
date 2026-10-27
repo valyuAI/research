@@ -1,0 +1,182 @@
+{
+  "example_1": {
+    "network": {
+      "species": 3,
+      "reactions": 6,
+      "complexes": 7,
+      "reactant_complexes": 6,
+      "dimension": 3
+    },
+    "reduced_polynomial_in_c": [
+      "60",
+      "-47",
+      "12",
+      "-1"
+    ],
+    "steady_states": [
+      {
+        "point": [
+          1,
+          15,
+          3
+        ],
+        "charpoly": [
+          1,
+          "92",
+          "1920",
+          "120"
+        ],
+        "routh_hurwitz_stable": true,
+        "det_J": "-120"
+      },
+      {
+        "point": [
+          1,
+          12,
+          4
+        ],
+        "charpoly": [
+          1,
+          "95",
+          "1752",
+          "-48"
+        ],
+        "routh_hurwitz_stable": false,
+        "det_J": "48"
+      },
+      {
+        "point": [
+          1,
+          10,
+          5
+        ],
+        "charpoly": [
+          1,
+          "102",
+          "1680",
+          "80"
+        ],
+        "routh_hurwitz_stable": true,
+        "det_J": "-80"
+      }
+    ]
+  },
+  "example_2": {
+    "network": {
+      "species": 3,
+      "reactions": 8,
+      "complexes": 6,
+      "reactant_complexes": 6,
+      "dimension": 3
+    },
+    "reduced_polynomial_in_b_times_b": [
+      "36",
+      "-36",
+      "11",
+      "-1"
+    ],
+    "steady_states": [
+      {
+        "point": [
+          1,
+          2,
+          3
+        ],
+        "charpoly": [
+          1,
+          "16",
+          "43",
+          "12"
+        ],
+        "routh_hurwitz_stable": true,
+        "det_J": "-12"
+      },
+      {
+        "point": [
+          1,
+          3,
+          2
+        ],
+        "charpoly": [
+          1,
+          "12",
+          "17",
+          "-6"
+        ],
+        "routh_hurwitz_stable": false,
+        "det_J": "6"
+      },
+      {
+        "point": [
+          1,
+          6,
+          1
+        ],
+        "charpoly": [
+          1,
+          "14",
+          "25",
+          "12"
+        ],
+        "routh_hurwitz_stable": true,
+        "det_J": "-12"
+      }
+    ]
+  },
+  "remark_decoupled": {
+    "network": {
+      "species": 3,
+      "reactions": 10,
+      "complexes": 7,
+      "reactant_complexes": 7,
+      "dimension": 3
+    },
+    "steady_states": [
+      {
+        "point": [
+          "6/7",
+          "1/7",
+          "1"
+        ],
+        "charpoly": [
+          1,
+          "3",
+          "123/49",
+          "25/49"
+        ],
+        "routh_hurwitz_stable": true,
+        "det_J": "-25/49"
+      },
+      {
+        "point": [
+          "1/7",
+          "6/7",
+          "1"
+        ],
+        "charpoly": [
+          1,
+          "3",
+          "123/49",
+          "25/49"
+        ],
+        "routh_hurwitz_stable": true,
+        "det_J": "-25/49"
+      },
+      {
+        "point": [
+          "3/7",
+          "3/7",
+          "1"
+        ],
+        "charpoly": [
+          1,
+          "17/7",
+          "59/49",
+          "-11/49"
+        ],
+        "routh_hurwitz_stable": false,
+        "det_J": "11/49"
+      }
+    ]
+  }
+}

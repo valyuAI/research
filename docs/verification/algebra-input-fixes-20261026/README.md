@@ -1,0 +1,11 @@
+# Algebra verification fixes, 26 October 2026
+
+The final integration review reproduced two unsafe input paths and an overly permissive result parser. The generic search could overrun its 64-element representative array; the binary search accepted invalid polynomial and rank dimensions; and the runner accepted q=5 output with zero candidate buckets. A related q=7 input could exhaust the hash table and hang.
+
+Checked integer parsing, dimension and allocation checks, a representative-capacity guard, and a larger bounded hash table close these paths. The runner now compares the complete deterministic RESULT line, including every printed scope and count field. Mathematical enumeration loops and field arithmetic are unchanged. Unsupported resource demands exit 2 without a scientific RESULT.
+
+The implementation replay passed 40 sanitizer rejection cases, 142 small valid searches, 12 retained-result fixtures and 13 deliberately corrupted runner outputs. All 142 small result lines also match freshly run original binaries. Separate allocation and rank-workspace controls passed. Fresh q=2/3/4/5 campaign cases reproduce the earlier exact results; q=5 checks 73,000 prefixes and 17,417,506 candidate buckets. A q=7 maximum-form control completes under sanitizers.
+
+Root inspected the patch and independently ran the durable regression suite without `--q5`: the rejection cases, small searches, runner fixtures/mutations, q=7 control and q=2/3/4 campaign cases pass. The worker's larger q=5 run is fresh evidence; root did not repeat it. See [root results](root-results.json), [implementation results](implementation-results.json), and the package's [source provenance](../../../maths/algebra/bilinear-complexity/mu-q-2-2/verification/source-provenance-20261026.md).
+
+The 103,406,616-subset binary enumeration and independent C++ q=5 replay remain retained earlier evidence. Historical manifests are unchanged. The existing 64-representative and 8,192-row resource caps can reject mathematically admissible inputs and are not negative rank decisions. The video snapshot does not include the three changed checker sources; all eight of its recorded science hashes still match. No manuscript, narration, animation or media changed. Confidence in these scoped fixes and executed controls is high.

@@ -1,0 +1,3 @@
+winning sets: 106
+strict n=5 bound=6 first=(3,3) result=BLUE nodes=1848951027 time=858.85s
+SUMMARY strict n=5 bound=6 blue_wins=1

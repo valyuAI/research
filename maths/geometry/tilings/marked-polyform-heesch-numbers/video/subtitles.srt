@@ -1,0 +1,695 @@
+1
+00:00:00,000 --> 00:00:03,962
+Take this marked hexagon and surround it
+with matching copies.
+
+2
+00:00:03,962 --> 00:00:07,220
+One complete ring fits. Then another, then
+a third.
+
+3
+00:00:07,220 --> 00:00:11,949
+How long can a shape keep growing before
+the next ring becomes impossible?
+
+4
+00:00:11,949 --> 00:00:14,760
+That is the question behind a Heesch
+number.
+
+5
+00:00:15,300 --> 00:00:20,474
+A ring is called a corona. Here, complete
+means that the new cluster fully
+
+6
+00:00:20,474 --> 00:00:24,949
+encloses the old one, with no overlaps,
+holes, or point pinches.
+
+7
+00:00:24,949 --> 00:00:27,956
+The union must be a solid disk-like region.
+
+8
+00:00:27,956 --> 00:00:31,452
+These strict rules matter when checking a
+picture.
+
+9
+00:00:32,000 --> 00:00:36,126
+A shape that tiles the entire plane can
+keep growing indefinitely.
+
+10
+00:00:36,126 --> 00:00:39,814
+A non-tiling shape may still surround
+itself several times.
+
+11
+00:00:39,814 --> 00:00:44,690
+The challenge is to distinguish an
+impressive patch from the largest number of
+
+12
+00:00:44,690 --> 00:00:47,816
+rings that any permitted construction can
+achieve.
+
+13
+00:00:48,333 --> 00:00:52,239
+This study asks a bounded version of that
+question.
+
+14
+00:00:52,239 --> 00:00:55,379
+Fix one of thirty-four small base shapes.
+
+15
+00:00:55,379 --> 00:01:00,050
+Give each boundary edge one centred bump,
+nick, or flat mark.
+
+16
+00:01:00,050 --> 00:01:05,641
+Keep rotated, reflected and translated
+copies on the prescribed square or
+
+17
+00:01:05,641 --> 00:01:06,789
+hexagonal grid.
+
+18
+00:01:07,331 --> 00:01:11,540
+A bump must fit a nick, while a flat edge
+meets another flat edge.
+
+19
+00:01:11,540 --> 00:01:16,131
+Two bumps collide, and a nick facing a flat
+edge leaves a forbidden gap.
+
+20
+00:01:16,131 --> 00:01:20,531
+These matching rules turn an ordinary shape
+into a jigsaw-like piece.
+
+21
+00:01:21,065 --> 00:01:25,796
+Our single-hexagon witness has three bumps,
+two nicks, and one flat edge.
+
+22
+00:01:25,796 --> 00:01:30,073
+Bumps outnumber nicks by one. Such a
+marking is called unbalanced.
+
+23
+00:01:30,073 --> 00:01:35,129
+We search over every unbalanced marking,
+not only this particular arrangement.
+
+24
+00:01:35,665 --> 00:01:40,532
+When two pieces meet correctly, an internal
+bump and nick cancel in the count.
+
+25
+00:01:40,532 --> 00:01:43,590
+Each copy still contributes one net surplus
+bump.
+
+26
+00:01:43,590 --> 00:01:48,207
+In a finite patch, that uncancelled surplus
+has to be carried by the outer
+
+27
+00:01:48,207 --> 00:01:48,769
+boundary.
+
+28
+00:01:49,298 --> 00:01:53,998
+For larger and larger patches, the number
+of pieces grows like area, while the
+
+29
+00:01:53,998 --> 00:01:56,348
+boundary capacity grows like perimeter.
+
+30
+00:01:56,348 --> 00:01:58,397
+Eventually the surplus cannot fit.
+
+31
+00:01:58,397 --> 00:02:02,736
+The written geometric argument makes this
+precise for the curved pieces,
+
+32
+00:02:02,736 --> 00:02:06,050
+showing that an unbalanced piece cannot
+tile the plane.
+
+33
+00:02:06,595 --> 00:02:11,322
+Now build the actual three-ring witness
+from its retained placements.
+
+34
+00:02:11,322 --> 00:02:15,775
+Start with one central piece, then add six,
+twelve, and eighteen.
+
+35
+00:02:15,775 --> 00:02:18,516
+That gives thirty-seven pieces in total.
+
+36
+00:02:18,516 --> 00:02:23,654
+Every displayed orientation comes from the
+checked witness, not an invented
+
+37
+00:02:23,654 --> 00:02:24,955
+decorative pattern.
+
+38
+00:02:25,495 --> 00:02:29,663
+For a single hexagon, a hypothetical fourth
+ring would contain sixty-one
+
+39
+00:02:29,663 --> 00:02:33,077
+hexagons altogether. Its outside has only
+fifty-four edges.
+
+40
+00:02:33,077 --> 00:02:37,302
+Each unbalanced piece contributes at least
+one surplus mark, so the patch
+
+41
+00:02:37,302 --> 00:02:39,559
+would need room for at least sixty-one.
+
+42
+00:02:40,095 --> 00:02:43,045
+Sixty-one cannot fit into fifty-four slots.
+
+43
+00:02:43,045 --> 00:02:47,365
+That is the classical counting obstruction
+credited to Epstein.
+
+44
+00:02:47,365 --> 00:02:50,795
+Three rings are attained, and four are
+impossible.
+
+45
+00:02:50,795 --> 00:02:56,007
+Larger base pieces have more complicated
+boundaries, so this simple count no
+
+46
+00:02:56,007 --> 00:02:58,407
+longer settles their best markings.
+
+47
+00:02:58,927 --> 00:03:01,848
+Consider a straight row of four hexagons.
+
+48
+00:03:01,848 --> 00:03:07,121
+It has eighteen outer edges. The retained
+optimal witness uses nine bumps,
+
+49
+00:03:07,121 --> 00:03:12,251
+eight nicks, and one flat edge. Around the
+boundary they form a block of
+
+50
+00:03:12,251 --> 00:03:14,887
+bumps, a flat, then a block of nicks.
+
+51
+00:03:15,427 --> 00:03:18,727
+Place the exact central row, then its first
+ring.
+
+52
+00:03:18,727 --> 00:03:23,038
+The cluster now contains twenty-four
+underlying hexagonal cells.
+
+53
+00:03:23,038 --> 00:03:26,540
+Add the second ring and there are
+sixty-eight cells.
+
+54
+00:03:26,540 --> 00:03:31,659
+Each whole marked row counts as one piece,
+so cells and pieces are different
+
+55
+00:03:31,659 --> 00:03:32,131
+counts.
+
+56
+00:03:32,660 --> 00:03:35,393
+Continue with the third, fourth and fifth
+rings.
+
+57
+00:03:35,393 --> 00:03:39,834
+The total cell counts become one hundred
+and sixty, three hundred and sixteen,
+
+58
+00:03:39,834 --> 00:03:44,104
+and five hundred and twenty-four. Dividing
+the last count by four gives one
+
+59
+00:03:44,104 --> 00:03:45,812
+hundred and thirty-one pieces.
+
+60
+00:03:46,360 --> 00:03:50,489
+This picture proves that this marking
+reaches at least five rings.
+
+61
+00:03:50,489 --> 00:03:54,555
+It does not by itself show that another
+marking cannot reach six.
+
+62
+00:03:54,555 --> 00:03:59,434
+The new question is a maximum over all
+unbalanced choices of the eighteen edge
+
+63
+00:03:59,434 --> 00:03:59,872
+labels.
+
+64
+00:04:00,391 --> 00:04:04,519
+Each edge has three labels, so eighteen
+edges give three to the eighteenth
+
+65
+00:04:04,519 --> 00:04:08,703
+possibilities: more than three hundred and
+eighty-seven million assignments
+
+66
+00:04:08,703 --> 00:04:10,656
+before restrictions and symmetries.
+
+67
+00:04:10,656 --> 00:04:15,007
+Checking each marking separately would
+repeat much of the same geometric work.
+
+68
+00:04:15,524 --> 00:04:20,377
+Instead, make both the marking and the
+placements part of one yes-or-no
+
+69
+00:04:20,377 --> 00:04:23,794
+puzzle. A switch says whether a placement
+is used.
+
+70
+00:04:23,794 --> 00:04:26,391
+Other switches choose its edge labels.
+
+71
+00:04:26,391 --> 00:04:31,654
+Rules forbid overlap, enforce matching, and
+require the requested surrounding
+
+72
+00:04:31,654 --> 00:04:32,132
+layers.
+
+73
+00:04:32,658 --> 00:04:36,297
+This is a satisfiability problem, often
+shortened to SAT.
+
+74
+00:04:36,297 --> 00:04:39,872
+All the switches must obey all the rules
+simultaneously.
+
+75
+00:04:39,872 --> 00:04:43,958
+One additional counting rule requires at
+least one surplus bump.
+
+76
+00:04:43,958 --> 00:04:48,810
+Swapping bumps and nicks covers the
+opposite imbalance in the lattice model.
+
+77
+00:04:49,358 --> 00:04:51,515
+The window is finite for a reason.
+
+78
+00:04:51,515 --> 00:04:56,338
+A piece in the next ring must touch the
+preceding cluster, so it cannot jump
+
+79
+00:04:56,338 --> 00:05:00,908
+arbitrarily far away. The paper proves a
+distance bound for every layer.
+
+80
+00:05:00,908 --> 00:05:05,414
+The search window contains every possible
+patch at the requested depth.
+
+81
+00:05:05,958 --> 00:05:09,364
+A yes answer comes with actual placements
+and marks.
+
+82
+00:05:09,364 --> 00:05:14,409
+A separate short program reconstructs the
+patch, checks matching and overlap,
+
+83
+00:05:14,409 --> 00:05:19,257
+and checks that each growing union is a
+disk enclosing the previous union.
+
+84
+00:05:19,257 --> 00:05:22,206
+The saved geometry is the witness we
+animate.
+
+85
+00:05:22,724 --> 00:05:25,162
+A no answer needs a different receipt.
+
+86
+00:05:25,162 --> 00:05:29,845
+The solver writes a sequence of logical
+proof steps, called a DRAT proof.
+
+87
+00:05:29,845 --> 00:05:34,656
+A separate checker verifies that those
+steps establish inconsistency of the
+
+88
+00:05:34,656 --> 00:05:39,403
+encoded puzzle. The written encoding
+argument connects that puzzle back to
+
+89
+00:05:39,403 --> 00:05:39,788
+rings.
+
+90
+00:05:40,321 --> 00:05:45,165
+For the straight four-row, five rings have
+a witness and six are excluded for
+
+91
+00:05:45,165 --> 00:05:49,757
+every unbalanced marking. The same maximum
+of five holds for the straight
+
+92
+00:05:49,757 --> 00:05:54,664
+five-row. These are exact maxima in the
+stated lattice model, not upper bounds
+
+93
+00:05:54,664 --> 00:05:56,929
+for arbitrary off-grid arrangements.
+
+94
+00:05:57,454 --> 00:06:02,796
+The full ledger covers thirty-four bases:
+twelve shapes made from at most four
+
+95
+00:06:02,796 --> 00:06:07,590
+hexagons, twenty-one made from at most five
+squares, plus the straight
+
+96
+00:06:07,590 --> 00:06:12,932
+five-hexagon row. Every entry has a checked
+witness and a verified upper-bound
+
+97
+00:06:12,932 --> 00:06:13,822
+proof record.
+
+98
+00:06:14,354 --> 00:06:19,509
+For straight hexagon rows of lengths one
+through five, the maxima are three,
+
+99
+00:06:19,509 --> 00:06:24,665
+four, four, five, and five. Among the
+twelve bases of at most four hexagons,
+
+100
+00:06:24,665 --> 00:06:27,378
+only the straight four-row reaches five.
+
+101
+00:06:27,378 --> 00:06:30,362
+The non-straight shapes reach at most
+three.
+
+102
+00:06:30,888 --> 00:06:36,145
+For the square-cell bases, the maximum is
+three, achieved by the straight rows
+
+103
+00:06:36,145 --> 00:06:40,053
+of four and five squares. The other values
+are one or two.
+
+104
+00:06:40,053 --> 00:06:45,243
+Six non-row optimal witnesses have
+imbalance two or three, so the row pattern
+
+105
+00:06:45,243 --> 00:06:47,400
+does not describe every optimum.
+
+106
+00:06:47,921 --> 00:06:51,263
+The checks also try deliberately broken
+witnesses.
+
+107
+00:06:51,263 --> 00:06:54,405
+One hundred and seventy mutations are
+rejected.
+
+108
+00:06:54,405 --> 00:06:59,552
+A second encoder agrees on both tested
+bounds for thirty-two bases, excluding
+
+109
+00:06:59,552 --> 00:07:04,298
+the two largest row cases. These
+cross-checks support the model without
+
+110
+00:07:04,298 --> 00:07:07,841
+pretending every implementation is formally
+verified.
+
+111
+00:07:08,384 --> 00:07:11,453
+Now separate this result from the planar
+record.
+
+112
+00:07:11,453 --> 00:07:16,249
+Mann already constructed five-ring
+hexapillars, and the Heesch Number Atlas
+
+113
+00:07:16,249 --> 00:07:20,213
+lists five for particular markings of the
+four- and five-rows.
+
+114
+00:07:20,213 --> 00:07:24,752
+This package does not announce a new
+five-ring example or a new record.
+
+115
+00:07:25,284 --> 00:07:29,847
+Its narrower contribution is the maximum
+over all unbalanced single-slot
+
+116
+00:07:29,847 --> 00:07:33,079
+markings, with replayable lower and upper
+evidence.
+
+117
+00:07:33,079 --> 00:07:37,705
+Possible overlap with Mann and Thomas's
+smaller tables remains unresolved
+
+118
+00:07:37,705 --> 00:07:40,240
+because their full text was unavailable.
+
+119
+00:07:40,240 --> 00:07:42,204
+Novelty is therefore qualified.
+
+120
+00:07:42,751 --> 00:07:47,824
+Bojan Bashich's published six-ring
+construction is a separate existing result.
+
+121
+00:07:47,824 --> 00:07:52,052
+Here is its retained geometry: one hundred
+and sixty-nine copies.
+
+122
+00:07:52,052 --> 00:07:57,060
+The package audits that published patch
+exactly, including the strict no-hole
+
+123
+00:07:57,060 --> 00:08:02,068
+and no-pinch requirements. It confirms the
+construction rather than extending
+
+124
+00:08:02,068 --> 00:08:02,263
+it.
+
+125
+00:08:02,784 --> 00:08:05,133
+Watch the six layers arrive in order.
+
+126
+00:08:05,133 --> 00:08:09,576
+They contain six, ten, thirteen,
+thirty-two, fifty-two, and fifty-five
+
+127
+00:08:09,576 --> 00:08:09,956
+pieces
+
+128
+00:08:09,956 --> 00:08:14,526
+around the centre. At each stage, the
+boundary was checked as one simple
+
+129
+00:08:14,526 --> 00:08:19,032
+closed cycle, so a pinched drawing cannot
+quietly pass as a valid disk.
+
+130
+00:08:19,551 --> 00:08:24,701
+The upper-bound proof files for the largest
+puzzles were checked in completed
+
+131
+00:08:24,701 --> 00:08:29,583
+runs. The retained package stores their
+hashes, commands and verification
+
+132
+00:08:29,583 --> 00:08:32,659
+logs; it does not ship every large proof
+file.
+
+133
+00:08:32,659 --> 00:08:37,407
+No claim is made that video production
+replayed those expensive proofs.
+
+134
+00:08:37,948 --> 00:08:40,450
+Remember the boundary of the result.
+
+135
+00:08:40,450 --> 00:08:43,717
+One centred mark per edge. Unbalanced
+markings.
+
+136
+00:08:43,717 --> 00:08:47,124
+Strict coronas. Copies on the prescribed
+lattice.
+
+137
+00:08:47,124 --> 00:08:52,407
+More mark slots, balanced non-tilers, or
+copies sliding off that lattice are
+
+138
+00:08:52,407 --> 00:08:57,412
+different questions. No global off-grid
+upper bound is established here.
+
+139
+00:08:57,948 --> 00:09:02,735
+The proof pattern has two halves. A
+concrete picture shows what can be built.
+
+140
+00:09:02,735 --> 00:09:07,212
+A checked impossibility proof rules out the
+next layer for every allowed
+
+141
+00:09:07,212 --> 00:09:12,000
+marking. Combining them turns a successful
+construction into an exact maximum
+
+142
+00:09:12,000 --> 00:09:14,052
+within a clearly specified model.
+
+143
+00:09:14,581 --> 00:09:18,657
+Nothing here establishes a planar Heesch
+number of seven.
+
+144
+00:09:18,657 --> 00:09:23,805
+Correctness confidence is high inside the
+lattice model; novelty is more
+
+145
+00:09:23,805 --> 00:09:29,025
+limited. The paper, retained witnesses and
+editable scenes accompany this
+
+146
+00:09:29,025 --> 00:09:31,885
+video. Narration uses a synthetic voice.

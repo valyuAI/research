@@ -1,0 +1,31 @@
+\begin{thebibliography}{1}
+
+\bibitem{CFGV2003}
+Timothy~Y. Chow, C.~Kenneth Fan, Michel~X. Goemans, and Jan Vondr{\'a}k.
+\newblock Wide partitions, {L}atin tableaux, and {R}ota's basis conjecture.
+\newblock {\em Advances in Applied Mathematics}, 31(2):334--358, 2003.
+\newblock \href{https://arxiv.org/abs/math/0205288}{arXiv:math/0205288}.
+
+\bibitem{DFHLMP2026}
+Spencer Daugherty, Michaela Fahnestock, Shawn Huxtable, Michael Larson, Nourah
+  Al~Munayes, and Storey Peacock.
+\newblock Counting and constructing {L}atin tableaux.
+\newblock \href{https://arxiv.org/abs/2610.29291}{arXiv:2610.29291v1}, 2026.
+\newblock Submitted 21 October 2026; Conjecture 6.3 and Proposition 2.4.
+
+\bibitem{PriorLatinProof2026}
+{The Omega Institute contributors}.
+\newblock Ordinary proof of {Latin} tableaux count {Conjecture} 6.3.
+\newblock
+  \url{https://github.com/the-omega-institute/trureturing/issues/20269}, 2026.
+\newblock Public proof dated 22 October 2026; retrieved 26 October 2026.
+
+\bibitem{PriorLatinImplementation2026}
+{The Omega Institute contributors}.
+\newblock Prove {Daugherty}'s full {Latin} tableaux {Conjecture} 6.3.
+\newblock \url{https://github.com/the-omega-institute/trureturing/pull/20329},
+  2026.
+\newblock Merged 22 October 2026; retrieved 26 October 2026; implementation not
+  replayed here.
+
+\end{thebibliography}

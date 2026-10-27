@@ -1,0 +1,32 @@
+{
+  "title": "Spare cells beat unknown moves",
+  "duration_seconds": 542.433333,
+  "native_resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "clips": 34,
+  "max_clip_seconds": 20.904,
+  "scenes": [
+    "Pairing",
+    "Cube",
+    "Matching",
+    "Surplus",
+    "Central",
+    "Noncentral",
+    "Correction",
+    "SixCube",
+    "Scope"
+  ],
+  "source_hashes_unchanged": true,
+  "audio_alignment": {
+    "method": "Central waveform correlation after mono 8kHz decoding; encoding delay allowed. Not listening.",
+    "minimum_correlation": 0.9814555419517036,
+    "maximum_absolute_offset_seconds": 0.021375
+  },
+  "listening_review": false,
+  "scope": "A concrete pairing defence, cube lines, Hall matching, surplus and deletion robustness, central and noncentral openings, the opposite-octant correction, and the six-cube obstruction. This is a new short proof of the known seven-cube theorem. Six-cube and five-cube remain open; Lean covers the abstract lemmas, not the actual board enumeration or whole game."
+}

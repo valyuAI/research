@@ -1,0 +1,213 @@
+{
+  "voice": "cedar",
+  "clips": [
+    {
+      "id": "s01_machine",
+      "text": "Inside every cell, tiny molecular machines flip at random between a few shapes, called states. Here is the simplest kind: three states in a ring."
+    },
+    {
+      "id": "s01_knob",
+      "text": "Now turn a knob, so that one kind of hop happens a little more often. How does the time spent in each state shift? And how far could it ever shift?"
+    },
+    {
+      "id": "s01_why",
+      "text": "That matters for how sharply a cell can sense a signal. In 2026, the physicists Fancher and Horowitz guessed an answer. We prove it for a whole family of networks, and find where our method breaks."
+    },
+    {
+      "id": "s02_rates",
+      "text": "The arrows are possible hops. A rate says how often a hop tends to happen while you occupy its starting state. Clockwise hops have rate two per second; anticlockwise hops have rate one."
+    },
+    {
+      "id": "s02_sim",
+      "text": "Drop a dot on state 0 and let it hop. It waits a random time, then jumps, clockwise twice as often as back."
+    },
+    {
+      "id": "s02_fractions",
+      "text": "Time each state with a stopwatch. The fractions jump around at first, then settle, here at one third each. These long-run fractions are the steady state: pi zero, pi one and pi two."
+    },
+    {
+      "id": "s02_current",
+      "text": "Steady does not mean still: the dot keeps circling clockwise, like a tiny motor."
+    },
+    {
+      "id": "s03_def",
+      "text": "Can you predict the steady state without simulating? Yes, with trees. A tree pointing at a chosen root gives every other state one arrow out, so that following arrows from anywhere leads to the root."
+    },
+    {
+      "id": "s03_ring",
+      "text": "On a ring this is easy. Cut one edge, then point everything else towards the root. Three edges to cut means three trees for each root."
+    },
+    {
+      "id": "s03_weights",
+      "text": "A tree's weight is the product of its rates. For root 0, two clockwise arrows give 2 times 2, which is 4. One of each gives 2. Two anticlockwise arrows give 1."
+    },
+    {
+      "id": "s04_theorem",
+      "text": "Now the trick, called the Markov chain tree theorem. The time spent in a state is proportional to the total weight of the trees pointing at it."
+    },
+    {
+      "id": "s04_check",
+      "text": "Every root has trees weighing 4, 2 and 1, so every total is 7. Seven out of twenty-one is one third, as the simulation found."
+    },
+    {
+      "id": "s04_lottery",
+      "text": "Divide each weight by its total, and each root gets a lottery: heavier trees are more likely. For root 0, the odds are four sevenths, two sevenths and one seventh."
+    },
+    {
+      "id": "s05_nudge",
+      "text": "Now turn the knob. Make the hop from 0 to 1 one percent faster. Only trees that use that arrow notice, and each gets one percent heavier."
+    },
+    {
+      "id": "s05_totals",
+      "text": "Root 0's total stays 7, root 1's becomes 7.06, and root 2's 7.04. So pi zero falls about 0.47 percent, pi one rises 0.38 percent, and pi two about 0.1."
+    },
+    {
+      "id": "s05_rule",
+      "text": "For a tiny percentage nudge, the relative response is each root's share using the arrow, zero, six sevenths and four sevenths, minus their average, ten twenty-firsts. That gives minus ten, eight and two, over twenty-one."
+    },
+    {
+      "id": "s06_family",
+      "text": "Fancher and Horowitz saw this another way. Pick one tree for every root at once: a tree family. Three roots with three trees each make twenty-seven families."
+    },
+    {
+      "id": "s06_score",
+      "text": "Score a family: for each root, 1 if its tree uses the nudged arrow, 0 if not, minus the average. This family scores minus two thirds, one third, one third. That's its building block."
+    },
+    {
+      "id": "s06_average",
+      "text": "Draw each root's tree from its own lottery, independently, and average the building blocks. You get exactly the response."
+    },
+    {
+      "id": "s06_hull",
+      "text": "Here the three numbers add to zero, so two are enough to plot. A weighted average always lands inside the shape around its points. The twenty-seven families land on four points, and the response sits inside."
+    },
+    {
+      "id": "s07_bags",
+      "text": "Now the subtle part. Tip all the arrows of a family into one bag. Different families can fill exactly the same bag, like these two."
+    },
+    {
+      "id": "s07_uc",
+      "text": "Twenty-seven families make only eighteen different bags. A family whose bag no other family can make is called uniquely constructable. Eleven of the twenty-seven are."
+    },
+    {
+      "id": "s07_guess",
+      "text": "The guess: look-alikes are never needed. For every network, every set of rates and every knob, the response is a weighted average of uniquely constructable building blocks alone."
+    },
+    {
+      "id": "s07_tighter",
+      "text": "Here, that throws away this corner, which only look-alikes reach, so the limit on how strongly a network can respond gets tighter. They proved it for three states and asked for a general proof."
+    },
+    {
+      "id": "s08_naive",
+      "text": "So which weights? The independent lotteries won't do: forty-four percent of the time, they pick a look-alike."
+    },
+    {
+      "id": "s08_insight",
+      "text": "But look at the score again. Root 1's part depends only on root 1's tree. So the average only cares about each root's own lottery, not how the lotteries are linked."
+    },
+    {
+      "id": "s08_goal",
+      "text": "The goal: one shared lottery that picks a whole family, gives every root its correct odds, and never lands on a look-alike. Pause and think: how could the roots share their luck?"
+    },
+    {
+      "id": "s09_cut",
+      "text": "On a ring, a tree is just the edge you cut. Slide the cut one step, and one arrow flips from clockwise to anticlockwise. The weight halves, whichever root you look at."
+    },
+    {
+      "id": "s09_stair",
+      "text": "So every tree weight sits on one staircase: one, a half, a quarter, an eighth, a sixteenth. Root 0 reads the first three steps, root 1 the next window, root 2 the one after."
+    },
+    {
+      "id": "s09_turn",
+      "text": "Each window covers every edge exactly once. And once round the ring, the staircase drops by a factor of eight, because the ring is driven."
+    },
+    {
+      "id": "s10_trick",
+      "text": "Now a classic way to run a lottery. Draw each option as a bar whose height counts doublings of its weight. Add a random bonus from the lopsided Gumbel curve, and pick the tallest bar."
+    },
+    {
+      "id": "s10_hist",
+      "text": "The winner's chances are exactly proportional to weight. Repeat it for root 0, and the tally settles at four, two and one seventh."
+    },
+    {
+      "id": "s10_share",
+      "text": "Here's the idea. Give each edge one bonus token, and put that same token on every bar for that edge, in every window."
+    },
+    {
+      "id": "s10_draw",
+      "text": "Each window holds every edge once, so each root sees three independent bonuses and gets exactly the right odds. Yet all three roots share the same tokens."
+    },
+    {
+      "id": "s10_seven",
+      "text": "Run it many times. Only seven families ever appear, each with probability exactly one seventh, and all seven are uniquely constructable."
+    },
+    {
+      "id": "s10_balance",
+      "text": "Their building blocks sit on three points: one family here, two here, four here. Weigh each family one seventh, and the balance point is exactly the response."
+    },
+    {
+      "id": "s11_factors",
+      "text": "A bonus on the doubling scale multiplies a weight by a positive number. Call the three multipliers a, b and c. Divide both hopping rates on each edge by its multiplier."
+    },
+    {
+      "id": "s11_cancel",
+      "text": "A tree missing edge a uses edges b and c, so its new weight is its old weight divided by b times c. Rewrite that as old weight times a, divided by a times b times c."
+    },
+    {
+      "id": "s11_rates",
+      "text": "The denominator is the same for every cut, so choosing the heaviest tree is exactly choosing the token winner. The same new rates work for every root. Ties have probability zero."
+    },
+    {
+      "id": "s11_bag",
+      "text": "A family's weight is the product of everything in its bag, so a look-alike would weigh exactly the same. But somewhere it uses a strictly lighter tree, so it weighs less. Contradiction."
+    },
+    {
+      "id": "s12_cactus",
+      "text": "Rings of any size work the same way. Now join rings at single states and add branches: a cactus, whose loops never share an edge."
+    },
+    {
+      "id": "s12_glue",
+      "text": "Every tree splits into one piece per loop, pointing towards the global root, plus forced branches. The weights multiply, so the lotteries split independently. Give each loop its own tokens, glue the picks, and the guess follows."
+    },
+    {
+      "id": "s13_k4",
+      "text": "Now four states, all joined. Each root has sixteen trees, giving over sixty-five thousand families, but only three hundred and forty-six uniquely constructable ones."
+    },
+    {
+      "id": "s13_cert",
+      "text": "For one set of rates, label each of the sixty-four root and tree pairs with plus or minus one. Every uniquely constructable family scores zero, two or four."
+    },
+    {
+      "id": "s13_contra",
+      "text": "But averaged over each root's own lottery, the total is minus 0.0566. A shared lottery would give the same average, for the same reason as before, but its scores are never negative. So none exists. This was checked in exact fractions."
+    },
+    {
+      "id": "s13_minor",
+      "text": "For connected networks with hops allowed both ways on every link, the block spreads. If deleting links or shortening paths gives these four fully joined states, some positive rates admit no shared lottery."
+    },
+    {
+      "id": "s13_not",
+      "text": "This does not refute the guess: matching the response asks for less than matching every tree lottery. One hundred and fifty searches on four states found no violation, but a search is not a proof."
+    },
+    {
+      "id": "s14_proved",
+      "text": "So, proved by a written argument: the guess holds for every cactus network, of any size, with any rates. The four-state block is an exact computer certificate, and its spread is a written proof."
+    },
+    {
+      "id": "s14_caveat",
+      "text": "These are research drafts, not externally refereed or formally checked in proof software. Correctness confidence is high, while originality remains less certain: the campaign search found no earlier result, but cannot prove priority."
+    },
+    {
+      "id": "s15_recap1",
+      "text": "To recap. One: the steady state comes from weighted tree totals, and its response is an average over tree families."
+    },
+    {
+      "id": "s15_recap2",
+      "text": "Two: on a ring, one token per edge gives every root the right odds at once, and never a look-alike. Three: four linked states block the method, but not the guess."
+    },
+    {
+      "id": "s15_open",
+      "text": "Still open in the paper: is the guess true for every network? The smallest uncovered graph is the diamond, two triangles sharing an edge. One token per edge fails there; it needs a different construction."
+    }
+  ]
+}

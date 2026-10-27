@@ -1,0 +1,8 @@
+Positive control for the Lemma 3.3 encoding, 26 October 2026.
+python3 sat/twotree.py 13 3 4 50 pos13_s50.cnf   -> 21450 variables, 103012 clauses
+kissat 4.0.4: SATISFIABLE (0.17 s)
+decode_twotree.py 13 3 4 50 <model>:
+  T1 (shape 50, the shape of T) = (1,13,(2,((3,4),((5,(6,7)),((8,9),(10,(11,12)))))));
+  T2 (decoded)                  = (1,12,((7,(9,13)),((10,(3,5)),((4,8),(2,(6,11))))));
+  brute-force separated (3,4) pair: None
+python3 sat/twotree.py 13 3 4 0 pos13_s0.cnf (caterpillar) -> kissat: UNSATISFIABLE

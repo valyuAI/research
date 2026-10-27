@@ -1,0 +1,20 @@
+Parsed 15-by-21 matrix and exact harmonic-degree-two point
+Exact base rank 11; left/right nullspace dimensions 4/10
+Normal-map rank 7; affine tangent dimension 8
+Projective chart h9=1: tangent dimension 7
+{
+  "field": "Q(i), characteristic zero",
+  "source_matrix_sha256": "f1aed397be6fdc22cfea4caaa7a4d3096e49d7e617c4c0a266e9fab9b39bf03e",
+  "point_source_sha256": "e3cd64b893f5f53da57a4d8c99104ef12f94751f9285a0adaa3c923a26f2e991",
+  "point_name": "harmonic_degree2_times_norm",
+  "basepoint_rank": 11,
+  "normal_map_rank": 7,
+  "nonzero_minor_determinant": "81",
+  "affine_tangent_dimension": 8,
+  "kernel_independence_minor_determinant": "1",
+  "projective_chart": "h9=1",
+  "projective_tangent_dimension": 7,
+  "rank11_incidence_fiber_dimension": 10,
+  "local_affine_incidence_dimension_bound_for_components_through_this_point": 18,
+  "scope": "Local dimension bound for rank<=11 components through this harmonic-degree-two point. Components whose Borel-fixed limit is only the rank-six point require separate analysis. No generic-injectivity conclusion."
+}

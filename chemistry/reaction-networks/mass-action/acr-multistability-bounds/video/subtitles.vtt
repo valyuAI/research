@@ -1,0 +1,708 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.521
+Here are two possible resting mixtures.
+
+2
+00:00:02.521 --> 00:00:06.851
+The amounts of B and C are different, but A
+is exactly one in both.
+
+3
+00:00:06.851 --> 00:00:11.893
+Can reactions make both mixtures stable,
+while keeping that same resting value
+
+4
+00:00:11.893 --> 00:00:12.216
+of A?
+
+5
+00:00:12.733 --> 00:00:17.179
+Yes. Three chemicals suffice. But the
+reactions need three independent
+
+6
+00:00:17.179 --> 00:00:21.942
+directions of change, and at least six
+different combinations of molecules.
+
+7
+00:00:21.942 --> 00:00:26.197
+To see why, first let us turn one reaction
+into a changing picture.
+
+8
+00:00:26.733 --> 00:00:31.490
+In this teaching example, one A meets one B
+and becomes two Bs.
+
+9
+00:00:31.490 --> 00:00:36.700
+Count before and after. A decreases by one,
+while B increases by one.
+
+10
+00:00:36.700 --> 00:00:40.701
+The arrow tells us the change caused by one
+reaction.
+
+11
+00:00:41.233 --> 00:00:46.205
+Mass action says that the reaction rate is
+proportional to the concentrations
+
+12
+00:00:46.205 --> 00:00:51.241
+of the ingredients. With rate constant two,
+concentration three of A, and four
+
+13
+00:00:51.241 --> 00:00:54.985
+of B, the rate is two times three times
+four: twenty-four.
+
+14
+00:00:55.533 --> 00:01:00.510
+So this reaction contributes minus
+twenty-four to A's rate of change, and plus
+
+15
+00:01:00.510 --> 00:01:04.976
+twenty-four to B's. Adding contributions
+from every reaction gives the
+
+16
+00:01:04.976 --> 00:01:09.825
+complete equations. A resting state means
+every net rate is zero, even while
+
+17
+00:01:09.825 --> 00:01:11.037
+reactions continue.
+
+18
+00:01:11.567 --> 00:01:17.044
+Now use the actual network. C can produce A
+while remaining present.
+
+19
+00:01:17.044 --> 00:01:22.763
+A together with C can remove A. Both
+reaction constants are one, so the
+
+20
+00:01:22.763 --> 00:01:25.583
+opposing rates are c and a times c.
+
+21
+00:01:26.100 --> 00:01:31.811
+Subtract the loss from the gain. A's rate
+is c times one minus a.
+
+22
+00:01:31.811 --> 00:01:35.237
+Below one, A rises. Above one, A falls.
+
+23
+00:01:35.237 --> 00:01:40.860
+At a positive resting state, c is positive,
+so A must equal one.
+
+24
+00:01:41.400 --> 00:01:45.915
+This is absolute concentration robustness,
+or A C R: the same concentration at
+
+25
+00:01:45.915 --> 00:01:50.257
+every positive steady state. It does not
+say that A is fixed during motion.
+
+26
+00:01:50.257 --> 00:01:53.904
+Nor does it say that every starting mixture
+eventually settles.
+
+27
+00:01:54.433 --> 00:01:59.160
+Complete the network with these six
+combinations and eight directed reactions.
+
+28
+00:01:59.160 --> 00:02:01.220
+A combination is called a complex.
+
+29
+00:02:01.220 --> 00:02:04.613
+Both sides of every arrow contain at most
+two molecules.
+
+30
+00:02:04.613 --> 00:02:07.945
+That restriction on both sides matters for
+the theorem.
+
+31
+00:02:08.467 --> 00:02:13.281
+A stable resting state pulls sufficiently
+small disturbances back towards it.
+
+32
+00:02:13.281 --> 00:02:16.407
+Two different stable resting states make a
+switch.
+
+33
+00:02:16.407 --> 00:02:21.096
+Merely finding two resting states is
+weaker: one could repel a disturbance,
+
+34
+00:02:21.096 --> 00:02:23.035
+like a ball balanced on a hill.
+
+35
+00:02:23.566 --> 00:02:27.557
+Let us find every positive resting state of
+our network.
+
+36
+00:02:27.557 --> 00:02:29.981
+We already know that a equals one.
+
+37
+00:02:29.981 --> 00:02:33.188
+C stops changing when six a equals b times
+c.
+
+38
+00:02:33.188 --> 00:02:37.678
+Substitute one, then divide by positive b:
+c equals six over b.
+
+39
+00:02:38.199 --> 00:02:43.260
+B's equation still has to vanish.
+Substitute c equals six over b, and
+
+40
+00:02:43.260 --> 00:02:43.847
+multiply
+
+41
+00:02:43.847 --> 00:02:49.422
+by b. The resulting expression factors into
+minus b minus two, times b minus
+
+42
+00:02:49.422 --> 00:02:51.255
+three, times b minus six.
+
+43
+00:02:51.799 --> 00:02:54.920
+A product is zero when one factor is zero.
+
+44
+00:02:54.920 --> 00:02:59.824
+So b is two, three, or six. Divide six by
+each value to recover c.
+
+45
+00:02:59.824 --> 00:03:05.470
+We get exactly the three positive resting
+mixtures shown here, with A always
+
+46
+00:03:05.470 --> 00:03:05.767
+one.
+
+47
+00:03:06.299 --> 00:03:11.328
+This curve shows B's rate only after
+imposing a equals one and c equals six
+
+48
+00:03:11.328 --> 00:03:14.948
+over b. Its three crossings locate the
+resting states.
+
+49
+00:03:14.948 --> 00:03:19.239
+It is a restricted algebraic picture, not
+the motion of the full
+
+50
+00:03:19.239 --> 00:03:20.915
+three-dimensional system.
+
+51
+00:03:21.433 --> 00:03:26.511
+Separate exact stability checks show that
+the two outer mixtures attract small
+
+52
+00:03:26.511 --> 00:03:30.743
+disturbances, while the middle mixture has
+a direction of escape.
+
+53
+00:03:30.743 --> 00:03:34.258
+These two simulated paths illustrate the
+two outcomes.
+
+54
+00:03:34.258 --> 00:03:38.946
+The stability claim comes from exact
+calculations, not from these sample
+
+55
+00:03:38.946 --> 00:03:39.337
+paths.
+
+56
+00:03:39.866 --> 00:03:42.306
+Why do three independent directions matter?
+
+57
+00:03:42.306 --> 00:03:45.257
+Imagine three amounts with their total
+fixed at two.
+
+58
+00:03:45.257 --> 00:03:47.697
+Increasing one forces a decrease elsewhere.
+
+59
+00:03:47.697 --> 00:03:51.045
+You can choose two amounts freely; the
+third is determined.
+
+60
+00:03:51.045 --> 00:03:53.882
+The motion is confined to a two-dimensional
+sheet.
+
+61
+00:03:54.399 --> 00:03:57.760
+A known three-chemical network makes this
+concrete.
+
+62
+00:03:57.760 --> 00:04:01.385
+These reactions conserve the total number
+of molecules.
+
+63
+00:04:01.385 --> 00:04:05.734
+At total concentration two, there are two
+positive resting states.
+
+64
+00:04:05.734 --> 00:04:09.951
+C equals one half in both, but only one of
+the states is stable.
+
+65
+00:04:10.499 --> 00:04:15.363
+So counting chemicals is different from
+counting independent directions.
+
+66
+00:04:15.363 --> 00:04:19.753
+This earlier network has three chemicals
+but only two directions.
+
+67
+00:04:19.753 --> 00:04:25.021
+Our six-complex network has three of each,
+with no conserved total restricting
+
+68
+00:04:25.021 --> 00:04:26.507
+its motion to a sheet.
+
+69
+00:04:27.033 --> 00:04:31.646
+The main theorem says that, in two
+dimensions, two distinct nondegenerate
+
+70
+00:04:31.646 --> 00:04:35.691
+positive resting states in the same class
+cannot both be stable.
+
+71
+00:04:35.691 --> 00:04:40.494
+Nondegenerate means that the local response
+has no zero direction within the
+
+72
+00:04:40.494 --> 00:04:44.097
+sheet. At least one state has a real
+expanding direction.
+
+73
+00:04:44.633 --> 00:04:47.703
+Here is the geometric structure of the
+argument.
+
+74
+00:04:47.703 --> 00:04:50.069
+Fix one sheet of compatible mixtures.
+
+75
+00:04:50.069 --> 00:04:54.994
+Robustness places every resting state on
+the line where one concentration has
+
+76
+00:04:54.994 --> 00:04:58.001
+its special value. We now look along that
+line.
+
+77
+00:04:58.533 --> 00:05:03.216
+Because the reaction rates contain at most
+products of two concentrations,
+
+78
+00:05:03.216 --> 00:05:07.835
+they are quadratic at worst. A
+factorisation lemma reduces resting states
+
+79
+00:05:07.835 --> 00:05:07.962
+on
+
+80
+00:05:07.962 --> 00:05:10.177
+the line to roots of one quadratic.
+
+81
+00:05:10.177 --> 00:05:14.037
+Two distinct nondegenerate roots are
+therefore the only ones.
+
+82
+00:05:14.566 --> 00:05:16.984
+Watch the slopes at the two crossings.
+
+83
+00:05:16.984 --> 00:05:19.529
+One points upwards, the other downwards.
+
+84
+00:05:19.529 --> 00:05:24.364
+Their signs are opposite. The proof
+connects those slopes to local stability
+
+85
+00:05:24.364 --> 00:05:28.564
+through another factor, called ell, which
+varies linearly with the
+
+86
+00:05:28.564 --> 00:05:29.518
+concentrations.
+
+87
+00:05:30.066 --> 00:05:34.396
+For two directions, the determinant
+describes the product of the local
+
+88
+00:05:34.396 --> 00:05:38.911
+stretching factors. A negative determinant
+forces one contracting and one
+
+89
+00:05:38.911 --> 00:05:43.674
+expanding direction: a saddle. The proof's
+determinant equals minus ell times
+
+90
+00:05:43.674 --> 00:05:45.282
+the slope at the crossing.
+
+91
+00:05:45.799 --> 00:05:51.136
+If ell keeps the same sign at both resting
+states, the opposite slopes force
+
+92
+00:05:51.136 --> 00:05:56.192
+opposite determinant signs. One determinant
+is negative, so one state is
+
+93
+00:05:56.192 --> 00:06:01.248
+unstable. The only remaining possibility is
+that ell itself changes sign
+
+94
+00:06:01.248 --> 00:06:02.863
+between the two states.
+
+95
+00:06:03.399 --> 00:06:06.402
+A linear function changes sign by crossing
+zero.
+
+96
+00:06:06.402 --> 00:06:08.592
+Draw its zero line through the gap.
+
+97
+00:06:08.592 --> 00:06:13.221
+In the remaining proof cases, robustness
+constrains the rate of the robust
+
+98
+00:06:13.221 --> 00:06:17.788
+chemical along this line: it cannot vanish
+there away from the prescribed
+
+99
+00:06:17.788 --> 00:06:18.663
+concentration.
+
+100
+00:06:19.199 --> 00:06:22.324
+Now the chemistry supplies the crucial
+restriction.
+
+101
+00:06:22.324 --> 00:06:25.816
+A chemical cannot be consumed when none of
+it is present.
+
+102
+00:06:25.816 --> 00:06:30.043
+And a reaction starting with two copies
+cannot end with more than two
+
+103
+00:06:30.043 --> 00:06:33.719
+molecules. Together these facts limit how
+its rate can bend.
+
+104
+00:06:34.266 --> 00:06:37.976
+Hold the other concentrations fixed and
+increase this one.
+
+105
+00:06:37.976 --> 00:06:42.966
+Its rate is a line or a downward-bending
+quadratic, starting at zero or above.
+
+106
+00:06:42.966 --> 00:06:47.443
+Once the rate becomes negative, it stays
+negative as the concentration
+
+107
+00:06:47.443 --> 00:06:50.130
+increases. Watch that forced continuation.
+
+108
+00:06:50.666 --> 00:06:55.707
+In one representative sign case, the
+proposed sign change requires a positive
+
+109
+00:06:55.707 --> 00:07:00.683
+rate farther to the right. But we already
+have a negative rate at the nearer
+
+110
+00:07:00.683 --> 00:07:05.397
+point. The bending rule forces a negative
+rate at the farther point too.
+
+111
+00:07:05.397 --> 00:07:06.314
+Contradiction.
+
+112
+00:07:06.833 --> 00:07:10.779
+The written proof checks the other sign and
+geometric cases as well.
+
+113
+00:07:10.779 --> 00:07:15.190
+They either give this kind of contradiction
+or expose an expanding direction
+
+114
+00:07:15.190 --> 00:07:19.601
+directly. The conclusion is universal
+within the assumptions: two dimensions
+
+115
+00:07:19.601 --> 00:07:21.401
+cannot support a robust switch.
+
+116
+00:07:21.933 --> 00:07:26.369
+Our actual network supplies the matching
+upper example in dimension three.
+
+117
+00:07:26.369 --> 00:07:30.985
+A separate counting argument, using the
+deficiency one theorem, excludes five
+
+118
+00:07:30.985 --> 00:07:34.882
+complexes. Since our network has six, the
+minimum is exactly six.
+
+119
+00:07:34.882 --> 00:07:36.981
+The counting proof is in the paper.
+
+120
+00:07:37.499 --> 00:07:40.455
+The number of chemicals has a simpler
+story.
+
+121
+00:07:40.455 --> 00:07:45.494
+You can take a two-chemical switch and add
+an independent chemical produced
+
+122
+00:07:45.494 --> 00:07:50.465
+and removed at equal rates. That third
+chemical has a fixed resting value.
+
+123
+00:07:50.465 --> 00:07:54.563
+So three species already suffice by a
+decoupled construction.
+
+124
+00:07:55.099 --> 00:07:59.377
+That simple construction limits the novelty
+of the species result.
+
+125
+00:07:59.377 --> 00:08:03.978
+The stronger content is the two-dimensional
+obstruction and the coupled
+
+126
+00:08:03.978 --> 00:08:08.709
+witnesses. In our running example,
+reactions involving A also involve the
+
+127
+00:08:08.709 --> 00:08:13.699
+other chemicals; the switch and robust
+component are not separate subsystems.
+
+128
+00:08:14.233 --> 00:08:19.810
+The earlier work of Kaihnsa, Nguyen and
+Shiu asked whether stability increases
+
+129
+00:08:19.810 --> 00:08:23.886
+all the minimum sizes. Dimension rises from
+two to three.
+
+130
+00:08:23.886 --> 00:08:27.819
+Complexes rise from five to six. Species
+stay at three.
+
+131
+00:08:27.819 --> 00:08:31.681
+The minimum number of reactant complexes
+remains open.
+
+132
+00:08:32.199 --> 00:08:36.754
+How are the examples checked? Two
+independent programs reconstruct the
+
+133
+00:08:36.754 --> 00:08:41.764
+reaction equations and use exact arithmetic
+for resting states and stability.
+
+134
+00:08:41.764 --> 00:08:46.774
+These are algebraic certificates, rather
+than a conclusion drawn from rounded
+
+135
+00:08:46.774 --> 00:08:49.767
+graphs or a handful of numerical
+trajectories.
+
+136
+00:08:50.299 --> 00:08:54.859
+Lean checks the two coupled examples'
+vector fields, their exact positive
+
+137
+00:08:54.859 --> 00:08:58.981
+resting states, and robustness. It does not
+check stability or the
+
+138
+00:08:58.981 --> 00:09:03.353
+minimum-size theorems. Those claims rely on
+the written proofs and the
+
+139
+00:09:03.353 --> 00:09:05.851
+separately described exact calculations.
+
+140
+00:09:06.399 --> 00:09:11.761
+Keep three distinctions. Robustness
+describes positive resting states, not all
+
+141
+00:09:11.761 --> 00:09:16.298
+times. Multiple resting states need not be
+multiple stable states.
+
+142
+00:09:16.298 --> 00:09:21.591
+And species, complexes, and independent
+directions measure different kinds of
+
+143
+00:09:21.591 --> 00:09:24.615
+size. Our example separates all three
+ideas.
+
+144
+00:09:25.133 --> 00:09:29.898
+The mathematical correctness is supported
+with high confidence; novelty is
+
+145
+00:09:29.898 --> 00:09:32.732
+more cautiously bounded by the prior
+search.
+
+146
+00:09:32.732 --> 00:09:37.434
+These are mathematical networks, not
+experimentally demonstrated devices.
+
+147
+00:09:37.434 --> 00:09:40.911
+The paper and editable materials accompany
+this video.
+
+148
+00:09:40.911 --> 00:09:43.037
+Narration uses a synthetic voice.

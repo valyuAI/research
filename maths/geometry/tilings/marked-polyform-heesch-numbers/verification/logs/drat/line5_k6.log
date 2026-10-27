@@ -1,0 +1,16 @@
+[10:51:25] build line5_k6 hex [[0,0],[1,0],[2,0],[3,0],[4,0]] k=6 
+hex cells=[[0, 0], [1, 0], [2, 0], [3, 0], [4, 0]] k=6 imb=1 radius=40.0: placements 69780 vars 1562333 clauses 12387835 (164.4s)
+wrote line5_k6.cnf
+d3f64fab08cbb0bd7e3d4bba14ac73bb4fa4a6a09688812682b5e509ff7fa171  line5_k6.cnf
+[10:54:25] cadical start
+s UNSATISFIABLE
+[13:17:42] cadical (pid 2894) exited; proof bytes 743985765
+610841aa36c7fa8a76ec6e9e7e6af670bebaae2198f14b08ee2d0c2fb393006c  line5_k6.drat
+c 915991 of 12387835 clauses in core                            
+c 2656143 of 14164347 lemmas in core using 937913239 resolution steps
+c 0 RAT lemmas in core; 1986727 redundant literals in core lemmas
+s VERIFIED
+c verification time: 4378.861 seconds
+[14:30:44] drat-trim done (4379s)
+DRAT_VERIFIED line5_k6
+[14:30:57] END

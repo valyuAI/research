@@ -1,0 +1,65 @@
+name: Check pending elasticity certificates
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: elasticity-certificates-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  certificates:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 60
+    env:
+      LEAN_NUM_THREADS: "2"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Prepare diagnostics
+        run: |
+          mkdir -p "$RUNNER_TEMP/elasticity-minors/diagnostics"
+          df -h > "$RUNNER_TEMP/elasticity-minors/diagnostics/initial-disk.txt"
+      - name: Check runner failure handling and source integrity
+        run: |
+          set -o pipefail
+          package="physics/mechanics/elasticity/generic-stiffness-recovery/verification/lean-certificate-checks"
+          python3 -B -O "$package/test_run_checks.py" 2>&1 \
+            | tee "$RUNNER_TEMP/elasticity-minors/diagnostics/runner-tests.log"
+      - uses: leanprover/lean-action@24581d74d674803a25a81b10b059c5c0cdd344c6 # v1.6.2
+        with:
+          lake-package-directory: formal
+          build: "false"
+          test: "false"
+          lint: "false"
+          use-mathlib-cache: "true"
+      - name: Install compilation sandbox
+        run: sudo apt-get update && sudo apt-get install -y bubblewrap
+      - name: Compile all eleven identities and audit their axioms
+        run: |
+          set -euo pipefail
+          package="$GITHUB_WORKSPACE/physics/mechanics/elasticity/generic-stiffness-recovery/verification/lean-certificate-checks"
+          project="$GITHUB_WORKSPACE/formal"
+          output="$RUNNER_TEMP/elasticity-minors"
+          bwrap --unshare-all --die-with-parent --new-session \
+            --ro-bind / / --dev /dev --proc /proc \
+            --tmpfs /tmp --tmpfs /run --tmpfs /var \
+            --bind "$project/.lake" "$project/.lake" \
+            --bind "$output" "$output" --chdir "$project" \
+            --clearenv --setenv PATH "$PATH" --setenv HOME "$HOME" \
+            --setenv LEAN_ABORT_ON_PANIC 1 --setenv LEAN_NUM_THREADS 2 \
+            python3 -B -u "$package/run_checks.py" \
+              --project "$project" --output "$output" \
+            2>&1 | tee "$output/diagnostics/runner.log"
+      - name: Retain compilation and axiom-audit diagnostics
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: elasticity-certificate-diagnostics
+          path: ${{ runner.temp }}/elasticity-minors/diagnostics/
+          if-no-files-found: warn
+          retention-days: 14

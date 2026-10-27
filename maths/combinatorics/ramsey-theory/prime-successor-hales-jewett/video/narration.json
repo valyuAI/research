@@ -1,0 +1,213 @@
+{
+  "voice": "cedar",
+  "clips": [
+    {
+      "id": "s01_board",
+      "text": "Here is a game you know. Tic-tac-toe. Three in a row, in a column, or along a diagonal wins."
+    },
+    {
+      "id": "s01_twist",
+      "text": "Now change the game. No turns. You colour every cell of the board at once, red or blue."
+    },
+    {
+      "id": "s01_rules",
+      "text": "Red wins with a whole red line. Blue has it easier: blue wins with just two blue cells next to each other on a line."
+    },
+    {
+      "id": "s01_question",
+      "text": "Can you colour the board so that nobody wins? And what happens on bigger boards, in more dimensions?"
+    },
+    {
+      "id": "s02_names",
+      "text": "First, what exactly is a line? Name each cell by its column, then its row, counting from zero. This corner is zero zero. This cell is two one."
+    },
+    {
+      "id": "s02_pattern",
+      "text": "A line is a pattern with a star. Star one means: replace the star by zero, then one, then two. That gives zero one, one one, two one. A row."
+    },
+    {
+      "id": "s02_more",
+      "text": "One star gives a column. Star star gives the diagonal: zero zero, one one, two two. Every star always gets the same digit."
+    },
+    {
+      "id": "s02_anti",
+      "text": "The other diagonal goes zero two, one one, two zero. One digit goes up while the other goes down, so no pattern makes it. Here, it is not a line. Seven lines in all."
+    },
+    {
+      "id": "s02_neighbours",
+      "text": "Two cells are neighbours on a line when their stars hold consecutive digits, like zero and one, or one and two. The two ends of a line are not neighbours."
+    },
+    {
+      "id": "s03_puzzle",
+      "text": "So here is the puzzle. Every one of the seven lines needs a blue cell, but no line may have two blue neighbours. Pause and try it."
+    },
+    {
+      "id": "s03_sums",
+      "text": "A natural first idea: add up the two digits of each cell. One step along a row or a column changes that sum by exactly one."
+    },
+    {
+      "id": "s03_checker",
+      "text": "So colour the odd sums blue, like a chessboard. Two odd numbers are never one apart, so no row or column has blue neighbours. And each has an odd sum somewhere."
+    },
+    {
+      "id": "s03_fail",
+      "text": "But the diagonal has sums zero, two and four. All even. The whole diagonal is red. Red wins."
+    },
+    {
+      "id": "s04_ponder",
+      "text": "How could you rescue the diagonal without breaking anything else? Pause and think."
+    },
+    {
+      "id": "s04_add",
+      "text": "Try making the corner zero zero blue. The diagonal is saved. But zero zero now sits next to one zero in its row, and zero one in its column. Blue wins."
+    },
+    {
+      "id": "s04_remove",
+      "text": "So turn those two red. Did that leave any line without blue?"
+    },
+    {
+      "id": "s04_check",
+      "text": "The bottom row and the left column now have zero zero. The middle row still has two one, and the middle column has one two. Every line has a blue cell, and there are no blue neighbours. A draw!"
+    },
+    {
+      "id": "s04_note",
+      "text": "One two and two one touch at a corner, but share no line. That's fine. And notice: the middle row was rescued by its last cell. Remember that."
+    },
+    {
+      "id": "s05_cube",
+      "text": "Now add a dimension. Cells get three digits, and the board becomes a three by three by three cube, with thirty seven lines."
+    },
+    {
+      "id": "s05_nodraw",
+      "text": "Here, a draw is impossible. However you colour the cube, someone wins. A computer search over every colouring confirms it."
+    },
+    {
+      "id": "s05_general",
+      "text": "In general, give each cell n digits, each from zero up to k minus one. That is n dimensions. What is the smallest n where a draw is impossible?"
+    },
+    {
+      "id": "s05_name",
+      "text": "That number is written H J of k, two, two. Red needs a whole line of k cells, blue needs two, and there are two colours. For tic-tac-toe, the answer is three."
+    },
+    {
+      "id": "s06_history",
+      "text": "In 1963, Alfred Hales and Robert Jewett proved that in the classic version, where both colours need a whole line, enough dimensions always rule out a draw."
+    },
+    {
+      "id": "s06_cfr",
+      "text": "In 2026, Conlon, Farnsworth and Robertson studied this lopsided version. They proved that dimension k always forces a winner. That is an upper bound."
+    },
+    {
+      "id": "s06_prime",
+      "text": "They showed the answer is exactly k when k is prime, and guessed that it is always k. Computer searches confirmed it up to seven. Eight was left open: seven or eight."
+    },
+    {
+      "id": "s07_result",
+      "text": "The new result settles eight, and infinitely many more. For every prime p, when k is p plus one, the answer is exactly p plus one."
+    },
+    {
+      "id": "s07_instances",
+      "text": "Seven gives eight, and eleven gives twelve. Since dimension p plus one forces a winner, the real work is a draw in dimension p. For p equals two: our tic-tac-toe draw."
+    },
+    {
+      "id": "s08_rule",
+      "text": "For any prime p, here is the colouring. Add up a cell's digits. Blue if the sum is one more than a multiple of p. Then our repair: add the zero cell, and remove the cells whose sum is exactly one."
+    },
+    {
+      "id": "s08_examples",
+      "text": "For p equals two, the blue sums are zero and three: our board. For p equals three, on a four by four by four cube, they are zero, four and seven."
+    },
+    {
+      "id": "s09_hops",
+      "text": "Why does this work for every prime? Watch the sums along a line. Our middle row goes one, two, three. The diagonal goes zero, two, four. Equal steps."
+    },
+    {
+      "id": "s09_formula",
+      "text": "In general, take a pattern with d stars, whose fixed digits add up to S. Filling the stars with a adds d times a. So the sums go S, S plus d, S plus two d, and so on: equal hops of d."
+    },
+    {
+      "id": "s09_example",
+      "text": "Here is a line from the seven dimensional case: three stars, and fixed digits adding to five. Its sums hop by three, from five up to twenty six."
+    },
+    {
+      "id": "s09_jobs",
+      "text": "So we need two things. The hops must land on blue at least once, and never on blue twice in a row."
+    },
+    {
+      "id": "s10_gap",
+      "text": "Second job first. Say d is less than p. Blue sums above one are a multiple of p apart. Neighbours are d apart, and d is not a multiple of p. So no blue neighbours."
+    },
+    {
+      "id": "s10_zero",
+      "text": "The zero cell always starts its line, and the next sum is d. If d is one, that cell was removed. Otherwise its remainder is not one. Safe."
+    },
+    {
+      "id": "s10_full",
+      "text": "If every digit is a star, then d is p, and the sums are zero, p, two p, and so on. Only zero is blue. That was our diagonal."
+    },
+    {
+      "id": "s11_clock",
+      "text": "Now the first job. Picture remainders on a clock with p hours. Each hop turns the hand d hours. On a seven hour clock, hops of three visit every hour."
+    },
+    {
+      "id": "s11_prime",
+      "text": "Any hop from one to six works, because seven is prime. On a six hour clock, hops of two from zero visit only three hours, and never reach one. That is where we need a prime."
+    },
+    {
+      "id": "s11_snag",
+      "text": "So among the first p cells of any line, one has remainder one. Usually it is blue. The snag: its sum might be exactly one, which we removed. That happens in only two ways."
+    },
+    {
+      "id": "s11_case1",
+      "text": "Either it is the first cell, and S is one. Then jump to the last cell, where every star is p. Its sum, one plus d times p, is blue. That is why we need the extra digit p."
+    },
+    {
+      "id": "s11_case2",
+      "text": "Or it is a later cell. Then S must be zero, so the line starts at the zero cell, which is blue. Either way, every line has a blue cell."
+    },
+    {
+      "id": "s11_done",
+      "text": "So in dimension p, nobody wins. Smaller boards sit inside this one, padded with zeros, so they have draws too. With the upper bound, the answer is exactly p plus one."
+    },
+    {
+      "id": "s12_size",
+      "text": "Now the smallest new case: p is seven and k is eight. Seven digits, each from zero to seven: just over two million cells, or over thirty two thousand eight by eight boards."
+    },
+    {
+      "id": "s12_hist",
+      "text": "Here is how many cells have each digit sum. The blue sums are zero, eight, fifteen, twenty two, twenty nine, thirty six and forty three: just under three hundred thousand blue cells."
+    },
+    {
+      "id": "s12_check",
+      "text": "A separate program checked every line, nearly two point seven million of them. Zero red lines. Zero blue neighbours. A draw in seven dimensions."
+    },
+    {
+      "id": "s12_meaning",
+      "text": "That check covers this one board. The proof covers every prime at once. With the upper bound, the answer for k equals eight is exactly eight."
+    },
+    {
+      "id": "s13_lean",
+      "text": "The whole argument was also written in Lean, a language in which a computer checks every step of a proof against the basic rules of logic."
+    },
+    {
+      "id": "s13_checked",
+      "text": "Lean confirms the colouring works for every prime, re-proves the upper bound, and concludes the answer is p plus one, including eight and twelve, with no step assumed."
+    },
+    {
+      "id": "s13_limits",
+      "text": "Lean cannot check that its definitions match the question we care about. A separate review compared them with the paper. Nor can it say the result is new. A search of published work found nothing earlier, and the paper is not yet peer reviewed."
+    },
+    {
+      "id": "s14_recap",
+      "text": "To recap. One: blue must touch every line, but never twice in a row. Two: digit sums, plus a repair at zero and one, give a draw in dimension p for every prime p. Three: so when k is p plus one, the answer is p plus one."
+    },
+    {
+      "id": "s14_open",
+      "text": "Still unknown: k equals nine and ten. For nine, the answer is eight or nine. For ten, eight, nine or ten. The guess says always k. That needs a draw in dimension k minus one, and nobody has found one, or ruled it out."
+    },
+    {
+      "id": "s14_end",
+      "text": "The paper, the checking program and the Lean proof are all in the folder shown here."
+    }
+  ]
+}

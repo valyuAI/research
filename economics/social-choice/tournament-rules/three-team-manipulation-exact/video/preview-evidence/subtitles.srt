@@ -1,0 +1,427 @@
+1
+00:00:00,000 --> 00:00:05,707
+Five teams. Everyone plays everyone. Could three of them improve their combined chance
+
+2
+00:00:05,707 --> 00:00:09,290
+of taking the trophy by fixing just their own matches?
+
+3
+00:00:09,290 --> 00:00:14,400
+Even the best fair rule must sometimes let them gain forty percentage points.
+
+4
+00:00:14,800 --> 00:00:19,283
+Start with one result. An arrow from A to B means A beat B.
+
+5
+00:00:19,283 --> 00:00:25,893
+Each pair gets exactly one arrow. The complete picture records results, rather than the
+
+6
+00:00:25,893 --> 00:00:28,400
+order in which games were played.
+
+7
+00:00:28,800 --> 00:00:31,968
+A rule turns that picture into a champion.
+
+8
+00:00:31,968 --> 00:00:36,946
+It may use a lottery. Here each team gets one fifth of the chance.
+
+9
+00:00:36,946 --> 00:00:42,000
+Five equal pieces make one whole probability, or a hundred percent.
+
+10
+00:00:42,333 --> 00:00:44,944
+We impose one clear fairness requirement.
+
+11
+00:00:44,944 --> 00:00:49,466
+If somebody beats everybody, that team must win the trophy for certain.
+
+12
+00:00:49,466 --> 00:00:55,133
+This is called Condorcet consistency. When nobody is unbeaten, the rule has more freedom.
+
+13
+00:00:55,467 --> 00:01:02,187
+Return to the circle. Every team beats the next two clockwise and loses to the other
+
+14
+00:01:02,187 --> 00:01:08,667
+two. Each has two wins, so there is no unbeaten team to settle the choice for us.
+
+15
+00:01:09,000 --> 00:01:15,084
+Now highlight A, D and E. Together they currently hold three fifths of the lottery.
+
+16
+00:01:15,084 --> 00:01:19,335
+They are allowed to change only matches inside this group.
+
+17
+00:01:19,335 --> 00:01:23,000
+Matches against B and C stay exactly as they were.
+
+18
+00:01:23,400 --> 00:01:30,044
+A already beat B and C. If D and E now throw their games against A, those two arrows
+
+19
+00:01:30,044 --> 00:01:36,846
+reverse. Watch A become unbeaten. Fairness forces the rule to give A the entire trophy
+
+20
+00:01:36,846 --> 00:01:37,400
+chance.
+
+21
+00:01:37,733 --> 00:01:40,400
+The group goes from three fifths to one.
+
+22
+00:01:40,400 --> 00:01:44,133
+Subtract the starting chance and the gain is two fifths.
+
+23
+00:01:44,133 --> 00:01:49,733
+That means forty percentage points, measured for the group together, rather than for
+
+24
+00:01:49,733 --> 00:01:51,333
+every member separately.
+
+25
+00:01:51,667 --> 00:01:56,454
+Could an uneven lottery avoid this? Perhaps give A almost nothing.
+
+26
+00:01:56,454 --> 00:02:02,693
+The difficulty is that every team has its own version of this trick: join with the two
+
+27
+00:02:02,693 --> 00:02:05,667
+teams that beat you, and become unbeaten.
+
+28
+00:02:06,067 --> 00:02:09,022
+Write those five groups underneath the teams.
+
+29
+00:02:09,022 --> 00:02:13,422
+A appears in three groups. So does B, and so does every other team.
+
+30
+00:02:13,422 --> 00:02:19,267
+Whatever probabilities the rule chooses, each probability is counted exactly three times.
+
+31
+00:02:19,667 --> 00:02:25,646
+The team probabilities add to one, so the five starting group chances add to three.
+
+32
+00:02:25,646 --> 00:02:29,536
+Each group can separately cheat its way to chance one.
+
+33
+00:02:29,536 --> 00:02:34,867
+Their five possible gains therefore add to five minus three, which is two.
+
+34
+00:02:35,200 --> 00:02:39,753
+Five numbers adding to two cannot all be smaller than two fifths.
+
+35
+00:02:39,753 --> 00:02:46,057
+At least one group gains that much. This is the known lower-bound argument from Schneider,
+
+36
+00:02:46,057 --> 00:02:50,400
+Schvartzman and Weinberg. No choice of a fair rule escapes it.
+
+37
+00:02:50,733 --> 00:02:53,809
+But a lower bound is only half the answer.
+
+38
+00:02:53,809 --> 00:02:57,618
+We also need a rule that never allows a bigger gain.
+
+39
+00:02:57,618 --> 00:03:01,646
+One nasty tournament anywhere could ruin the guarantee.
+
+40
+00:03:01,646 --> 00:03:06,333
+So we must control the worst cheat across every possible result.
+
+41
+00:03:06,667 --> 00:03:12,162
+First remove duplicate work. Rename the five teams without changing any arrows.
+
+42
+00:03:12,162 --> 00:03:18,006
+The shape is the same. We can average over names without worsening the guarantee, so
+
+43
+00:03:18,006 --> 00:03:21,067
+it is enough to store one lottery per shape.
+
+44
+00:03:21,467 --> 00:03:24,075
+Five teams have twelve different shapes.
+
+45
+00:03:24,075 --> 00:03:28,508
+Here are the twelve representatives in the actual small certificate.
+
+46
+00:03:28,508 --> 00:03:34,180
+The rule is a lookup table: recognise the shape, read its fractions, then transfer them
+
+47
+00:03:34,180 --> 00:03:36,267
+back to the original team names.
+
+48
+00:03:36,600 --> 00:03:42,438
+Take this real row. The five chances are two fifths, three tenths, one fifth, one tenth,
+
+49
+00:03:42,438 --> 00:03:48,011
+and zero. They add to one. The table contains different rows because different match
+
+50
+00:03:48,011 --> 00:03:50,200
+results need different lotteries.
+
+51
+00:03:50,533 --> 00:03:53,320
+For every allowed cheat, compare two rows.
+
+52
+00:03:53,320 --> 00:03:59,357
+Add the cheating group's chances after the change, subtract its chances before, and require
+
+53
+00:03:59,357 --> 00:04:02,276
+the answer to be at most our proposed limit.
+
+54
+00:04:02,276 --> 00:04:04,133
+This creates one inequality.
+
+55
+00:04:04,533 --> 00:04:10,993
+Do that for every group of two or three, and every way to change its internal matches.
+
+56
+00:04:10,993 --> 00:04:17,378
+Groups of two matter too. The guarantee covers groups of at most three; checking only
+
+57
+00:04:17,378 --> 00:04:20,533
+groups of exactly three would leave a gap.
+
+58
+00:04:20,933 --> 00:04:25,509
+Imagine each inequality cutting away forbidden choices of probabilities.
+
+59
+00:04:25,509 --> 00:04:28,687
+A linear program searches the choices that remain.
+
+60
+00:04:28,687 --> 00:04:34,088
+We ask whether all constraints can fit at two fifths, the limit already forced by the
+
+61
+00:04:34,088 --> 00:04:34,533
+circle.
+
+62
+00:04:34,867 --> 00:04:41,167
+The numerical solver suggests yes. But a decimal close to two fifths is not an exact
+
+63
+00:04:41,167 --> 00:04:46,717
+guarantee. A tiny rounding error could put a constraint on the wrong side.
+
+64
+00:04:46,717 --> 00:04:50,467
+The final rule must be a table of exact fractions.
+
+65
+00:04:50,800 --> 00:04:55,864
+The discovery process rounds to fractions, repairs the constraints that must be equalities,
+
+66
+00:04:55,864 --> 00:05:00,873
+and checks everything again. In the plain fair-rule certificates, only the known five-team
+
+67
+00:05:00,873 --> 00:05:03,600
+circle configurations reach the worst-case limit.
+
+68
+00:05:03,933 --> 00:05:07,258
+A separately written checker reads the resulting table.
+
+69
+00:05:07,258 --> 00:05:12,879
+It verifies that every lottery sums to one, that unbeaten teams win, and that every permitted
+
+70
+00:05:12,879 --> 00:05:17,533
+manipulation stays within the bound. It calculates with fractions throughout.
+
+71
+00:05:17,933 --> 00:05:22,214
+At eight teams there are six thousand eight hundred and eighty shapes.
+
+72
+00:05:22,214 --> 00:05:28,208
+The checker covers two million, eight hundred and eighty-nine thousand, six hundred manipulations.
+
+73
+00:05:28,208 --> 00:05:32,733
+Its exact largest gain is two fifths. These are recorded completed checks.
+
+74
+00:05:33,067 --> 00:05:35,794
+Why does checking shapes cover named teams?
+
+75
+00:05:35,794 --> 00:05:38,903
+The lottery respects every symmetry of its shape.
+
+76
+00:05:38,903 --> 00:05:41,948
+Relabelling therefore gives a consistent answer.
+
+77
+00:05:41,948 --> 00:05:47,467
+For up to six teams, a second checker also expands all labelled tournaments and agrees.
+
+78
+00:05:47,800 --> 00:05:51,662
+The same optimal values can satisfy two extra requirements.
+
+79
+00:05:51,662 --> 00:05:55,720
+First, winning one more match never lowers that team's chance.
+
+80
+00:05:55,720 --> 00:06:01,284
+This is monotonicity. We check it separately; it does not follow just from being hard
+
+81
+00:06:01,284 --> 00:06:02,200
+to manipulate.
+
+82
+00:06:02,600 --> 00:06:05,766
+Second, winners come only from the top cycle.
+
+83
+00:06:05,766 --> 00:06:10,620
+Picture a group whose members can reach every team by chains of wins.
+
+84
+00:06:10,620 --> 00:06:13,505
+Teams outside that group get zero chance.
+
+85
+00:06:13,505 --> 00:06:16,600
+Here a three-team cycle beats two outsiders.
+
+86
+00:06:17,000 --> 00:06:21,667
+The eight-team certificate with both extra requirements passes the same manipulation
+
+87
+00:06:21,667 --> 00:06:26,000
+checks, plus the extra tests. Across this package, fourteen certificates pass.
+
+88
+00:06:26,000 --> 00:06:30,667
+The recovered eight-team result is an exact certificate, not an unfinished numerical
+
+89
+00:06:30,667 --> 00:06:31,000
+solve.
+
+90
+00:06:31,333 --> 00:06:37,370
+Now put the two halves together. The old argument says no rule can beat two fifths.
+
+91
+00:06:37,370 --> 00:06:42,533
+The new tables achieve two fifths for five, six, seven and eight teams.
+
+92
+00:06:42,533 --> 00:06:46,533
+Matching lower and upper bounds give the exact optimum.
+
+93
+00:06:46,933 --> 00:06:52,339
+With three or four teams, the optimum for groups of at most three is one third.
+
+94
+00:06:52,339 --> 00:06:58,633
+A separate seven-team certificate handles groups of at most four and reaches three sevenths.
+
+95
+00:06:58,633 --> 00:07:02,533
+These are different finite cases, not one universal rule.
+
+96
+00:07:02,933 --> 00:07:07,777
+For nine or more teams, this work gives no matching upper bound.
+
+97
+00:07:07,777 --> 00:07:12,166
+A table for eight teams does not tell us how to extend it.
+
+98
+00:07:12,166 --> 00:07:18,901
+If three-team collusion ever needs more than two fifths, the first failure needs at least
+
+99
+00:07:18,901 --> 00:07:19,733
+nine teams.
+
+100
+00:07:20,067 --> 00:07:22,734
+Remember three ideas. Arrows describe results.
+
+101
+00:07:22,734 --> 00:07:26,040
+A five-team circle forces an unavoidable cheating reward.
+
+102
+00:07:26,040 --> 00:07:29,461
+Exact fraction tables meet that reward through eight teams.
+
+103
+00:07:29,461 --> 00:07:34,391
+Earlier work already refuted the broader guess for some large groups; the small-group
+
+104
+00:07:34,391 --> 00:07:35,667
+question remains open.
+
+105
+00:07:36,000 --> 00:07:40,554
+The companion paper contains the full definitions, tables and independent checkers.
+
+106
+00:07:40,554 --> 00:07:44,559
+This animation shows the lower-bound mechanism and the certificate logic.
+
+107
+00:07:44,559 --> 00:07:48,400
+It does not replace the complete mathematical and computational proof.

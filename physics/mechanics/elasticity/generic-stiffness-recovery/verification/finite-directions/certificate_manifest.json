@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-17",
+  "purpose": "Exact source reconstruction and direct ideal-membership certificate for the quartic-divisibility dimension bound",
+  "prime": 32003,
+  "original_generators": 28,
+  "source_dimension": 42,
+  "slice_dimension": 11,
+  "pure_leading_powers": [
+    3,
+    3,
+    3,
+    3,
+    4,
+    4,
+    5,
+    5,
+    6,
+    6,
+    7
+  ],
+  "characteristic_zero_affine_dimension_upper_bound": 31,
+  "required_commands": [
+    "python3 -O -u verify_gcd4_slice_source.py 11",
+    "python3 -O -u verify_direct_powers.py"
+  ],
+  "scope": "Written projective properness and intersection arguments transfer the verified finite-field emptiness; the complete recovery theorem also uses the inherited rank-stratum bounds.",
+  "files": {
+    "gcd4_slice_n11.sing": {
+      "bytes": 114213,
+      "sha256": "060bde924b3b6d80a4ca4b648122c58fc6130aff535becd5ff88913fb1d18a86"
+    },
+    "gcd4_slice_n11_input.json": {
+      "bytes": 6544,
+      "sha256": "abe4b784a5adecfb3a280ecb6e6239e9270fdd3ed54102bc8727da4a2dd56a72"
+    },
+    "gcd4_slice_n11_targets.txt": {
+      "bytes": 97381,
+      "sha256": "45aa81d60d1f445880651be9009e76fef4a5eb91a1f7eb1b34b48f65a4a1ba37"
+    },
+    "verify_direct_powers.py": {
+      "bytes": 3850,
+      "sha256": "95955c262608fbeb8f5d97dae88e551edbf4a6a5b0cde0f6e884f6c4392170f7"
+    },
+    "verify_gcd4_slice_source.py": {
+      "bytes": 6038,
+      "sha256": "e0e1a4208db35ecdac121b296677d2f80c3a38cd968ffa25696d0f9ae83f261a"
+    },
+    "verify_membership.py": {
+      "bytes": 2032,
+      "sha256": "581a565ee9f79dfce6b396ced09efdb3464fbedd48eaa986a4cb94e726f35534"
+    },
+    "README.md": {
+      "bytes": 5223,
+      "sha256": "c7beefe856b4a1f369b9ecd0412c63344cc2e001505bc8e5469fece15f7034cb"
+    },
+    "INCIDENCE_PROOF.md": {
+      "bytes": 12079,
+      "sha256": "64041ff83c947051c644203e254a172a5eca16febd7f0fa7f34f85283b343e31"
+    },
+    "macaulay_degree3_membership.txt": {
+      "bytes": 2611,
+      "sha256": "bfa4aca4e470eb395ab473b1ed8d57f9743a9bff19ee5463d611d6fd556251a8"
+    },
+    "macaulay_degree4_membership.txt": {
+      "bytes": 6396,
+      "sha256": "295a54d58639ec3caf39e8c53041f093dddf0fbd22fb55d256ab9fa756c3108c"
+    },
+    "macaulay_degree5_membership.txt": {
+      "bytes": 44104,
+      "sha256": "b026e95637241275eb2bf0a26e2590ca9b8d307b2a014915941740a61b57c519"
+    },
+    "macaulay_degree6_membership.txt": {
+      "bytes": 220200,
+      "sha256": "a3a04ab5db43ec01602f9fa7df385510648fcaa34f291887e3124c54c56e19ca"
+    },
+    "macaulay_degree7_membership.txt": {
+      "bytes": 462840,
+      "sha256": "c4137bdca7df030d165a0d2fa0e4508cc9963b350912df41bec3e7418fcd44a6"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+f=21: 12 units, 2 functional classes, 3 F1 representatives, 225 rank-one matrices
+  representative 0 done: triples so far 24953, hits 0, 24s
+  representative 5 done: triples so far 49897, hits 0, 44s
+  representative 80 done: triples so far 74377, hits 0, 76s
+RESULT f=21: rank <= 8 is IMPOSSIBLE (triples 74377, hits 0)

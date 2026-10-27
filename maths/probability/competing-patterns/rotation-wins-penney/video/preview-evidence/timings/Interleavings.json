@@ -1,0 +1,21 @@
+{
+  "scene": "Interleavings",
+  "total": 47.86666666666689,
+  "clips": [
+    {
+      "id": "p17",
+      "start": 0.0,
+      "duration": 14.4
+    },
+    {
+      "id": "p18",
+      "start": 14.733333333333334,
+      "duration": 14.8
+    },
+    {
+      "id": "p19",
+      "start": 29.933333333333312,
+      "duration": 17.6
+    }
+  ]
+}

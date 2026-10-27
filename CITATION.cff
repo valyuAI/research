@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Cite the individual paper for a scientific result. Use this record when citing the collection or its verification tooling."
+title: "Valyu Research: papers, videos and verification"
+authors:
+  - family-names: Yorke
+    given-names: Harvey
+    affiliation: Valyu AI
+url: "https://github.com/valyuAI/research"
+repository-code: "https://github.com/valyuAI/research"
+date-released: 2026-10-27
+version: "2026.10.27"
+license:
+  - Apache-2.0
+  - CC-BY-4.0
+  - CC-BY-SA-4.0
+abstract: "Research drafts and narrated explainers across mathematics, physics, chemistry and economics, with editable sources, computational evidence and scoped Lean formalizations. LICENSE identifies the terms for each material type and third-party exceptions."

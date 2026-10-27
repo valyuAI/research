@@ -1,0 +1,1508 @@
+{
+  "description": "Non-scientific execution paths and service job identifiers removed from public copies. Original records are preserved outside this release. No proof certificates, mathematical inputs or Lean statements were changed by these substitutions.",
+  "files": [
+    {
+      "path": "chemistry/reaction-networks/mass-action/acr-multistability-bounds/README.md",
+      "originalSha256": "ce731b6101d47653eb5d25b05330b42651230574ac21b214da6bac13e9627f45",
+      "publicSha256": "e32a5d679b0bb0886336cc70eaa206fadcc24b8a43b3fb8540bc94eed93c8034",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "chemistry/reaction-networks/mass-action/acr-multistability-bounds/readiness.md",
+      "originalSha256": "e49555bfb20fbeb90689de5b9461a71dd10b26e1cb3f4a1e1eab139776966520",
+      "publicSha256": "5672260f609cbf1c20ae1596b119053bc0a0521bbbd47462307b2eb0f54e2eef",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "chemistry/reaction-networks/mass-action/acr-multistability-bounds/verification/results/completion-manifest-20261026.json",
+      "originalSha256": "3b17bcd8270fbe7507040082bb0da3b8b7698e143a8dff315686bacb656b65f5",
+      "publicSha256": "fc04c8eb0235f4e4ee619d9b55c0e06572acceea2134367213a9bd62f122b193",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "chemistry/reaction-networks/mass-action/acr-multistability-bounds/verification/results/final-typesetting-20261026.log",
+      "originalSha256": "aa67646a33fadad9d8646112160b540cf0d5e9c681042f04c67632fa5e4ddd6f",
+      "publicSha256": "04052b8f5e6215ea0db5c16445405ed72296c6096c74fb96f0520c989c132d15",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "path": "chemistry/reaction-networks/mass-action/acr-multistability-bounds/verification/reviews/chem-acr-final-review.md",
+      "originalSha256": "12ee08e9ee75bb98e867c57e4b589c353a7c6a90d4cda7c228136719043a7625",
+      "publicSha256": "1dbaab81cc43883805975703b4c4313cfd4ce4176fca8c9e9474a61b06a9833e",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "chemistry/reaction-networks/mass-action/acr-multistability-bounds/verification/reviews/chem-acr-priority.md",
+      "originalSha256": "6734acb78c8b955640cb1c0946332fd886e53569719e0472bb4f3eccfa5ad4de",
+      "publicSha256": "7cde601cf0616b77228cff8e2e722da8c0d1030350b15c8d8a138f8a64a32c5b",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "chemistry/reaction-networks/mass-action/acr-multistability-bounds/verification/reviews/chem-acr-review.md",
+      "originalSha256": "7b9284014de056a86bd4bb847ad13a72444964abd7234964734ec72ced7217a3",
+      "publicSha256": "e2cc9476435e17ba2b2608eef32d275f31f1918b0da202c79a2f4832321ba6e2",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/formal-input-sha256.json",
+      "originalSha256": "04dd770f004b1cd02168a803f286cd0c9c5cb4415f2f0458d071fcd155c83797",
+      "publicSha256": "40165214861a2b50194ab3e2e84b940d2a38ed3d60245d104a4ddf8c67da0bac",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/production-state.json",
+      "originalSha256": "6bfe5b3557a35961e39d4c38499b11f5c6462afbae1fb24cac7dca667ac152f9",
+      "publicSha256": "62ea8dd3fb48eab9bc39324518f1ad5f147f2338ea0ef344afc2d0ebc0c906c9",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/provenance-status.json",
+      "originalSha256": "abacf0fc0a3e687d3604b05b82efe178bd600d31a4bdd2f1d2f6f7f512ef150e",
+      "publicSha256": "31a327d224eae9159b928c3fb5b1a4ddf177db607d0a0b999e680e90efb22d66",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/qa/ffprobe.json",
+      "originalSha256": "eadbf2c88bfb9d2927ca07df49d010dfb83043e4cac905157f7c8faf6337a306",
+      "publicSha256": "41cc37d33d1be95261a4838da8f33621dc7ddb1be33e6b8e7f5cc39a60932ce5",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/qa-before-spacing-repair/ffprobe.json",
+      "originalSha256": "66711ce9cccf308f8023e90187fa141b3c4edbcf7300fddd7b1af2322be26d4b",
+      "publicSha256": "9449f7891c14784612beecf40bbd98d56cea5cf0fba3bd18f4ed1c06793b70bf",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/scientific-input-sha256.before-validation-fixes.json",
+      "originalSha256": "54f4b53c2e08268660e8d75df3fa0fc76f28a63bfd03739d900e88f8df7a7428",
+      "publicSha256": "730717096eeb4afd949d42f4dcdbb2530c9485306c6b45a8957d3d9aeed0bc66",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/scientific-input-sha256.json",
+      "originalSha256": "54f4b53c2e08268660e8d75df3fa0fc76f28a63bfd03739d900e88f8df7a7428",
+      "publicSha256": "730717096eeb4afd949d42f4dcdbb2530c9485306c6b45a8957d3d9aeed0bc66",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "chemistry/reaction-networks/mass-action/acr-multistability-bounds/video/scientific-input-supplement.json",
+      "originalSha256": "231116c30689c74722581af833e55a02f7dab3f2eb8b2fd913fb774600201bab",
+      "publicSha256": "bec75780b35bc94c5e1c3fdaff54ebb856384e72ff1b30c9d93c454f1b02358b",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "path": "docs/campaigns/2026-10-17-physics-mechanics.md",
+      "originalSha256": "056bf12a94de199d5f1139a6546f094ebf28b4a4cd4dc5fc09860be5fed317a0",
+      "publicSha256": "18289965f2d68bdc26f704b5d6862cc1dbe46ad9101e6c73c569ed60df3baef9",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 19
+        }
+      ]
+    },
+    {
+      "path": "docs/campaigns/2026-10-18-chemistry-biology-physics.md",
+      "originalSha256": "df7708ce4e59fb1c365effc51ef73d58a24f5ae7f10601c9e3820806698af000",
+      "publicSha256": "a22ba7234bd278174598666d185ecba72174a196b083490d8ee84eec558e686a",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 11
+        }
+      ]
+    },
+    {
+      "path": "docs/research-provenance.md",
+      "originalSha256": "ece2f475ea4113996d39d3535306b2b435298fb968abb370ef894c8f16459674",
+      "publicSha256": "911b022bdbe399c2e7cee1c4ce209b91c4206671db4cec93386d5af4087cf95a",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 13
+        }
+      ]
+    },
+    {
+      "path": "docs/verification/algebra-input-fixes-20261026/closure-summary.json",
+      "originalSha256": "4a128f9c1680030b57b1a031972a6ff8d85b70f7b3331877b2614b6432958694",
+      "publicSha256": "efef2adacaa308903e52ccd7715d2e9a15ba3c58c285fa9ca0c28202d596c6d9",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "path": "docs/verification/algebra-input-fixes-20261026/implementation-results.json",
+      "originalSha256": "894fba057923dad0c22c4ad9a088faebfaa0d863c034a255bd8d277fc2a5b227",
+      "publicSha256": "29493d74f6195e8f848bcb01f5ac92ea834a29267e907c71ce567712c7971c1e",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 3
+        },
+        {
+          "kind": "local execution context",
+          "count": 191
+        }
+      ]
+    },
+    {
+      "path": "docs/verification/algebra-input-fixes-20261026/resource-controls.json",
+      "originalSha256": "f5114f235dfa2b47952b766274e89887126760d533d31728972eed88bea52b1f",
+      "publicSha256": "fc390e84b54eebf31300d3045fa4727b9272f8ff0d0440c6083a790c4472a3b2",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 20
+        }
+      ]
+    },
+    {
+      "path": "docs/verification/algebra-input-fixes-20261026/root-results.json",
+      "originalSha256": "222cddfa7bda8ad708af3837f5eaee0b82e1d8acf3cda766db2e2fffe61e4046",
+      "publicSha256": "10cbf01d1598620b804cb7facf64941b639d5fb001b6865b777d9cd44864bd27",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 2
+        },
+        {
+          "kind": "local execution context",
+          "count": 189
+        }
+      ]
+    },
+    {
+      "path": "docs/verification/algebra-input-fixes-20261026/valid-differential-controls.json",
+      "originalSha256": "c155675866bd531f287fa188cd313b024048fa95a6e12bf5ac5a99eec810b411",
+      "publicSha256": "07a6f462023c799c903686cbe74619e1a2a9d619f414b44fa9e9df3d520ba2f3",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 142
+        }
+      ]
+    },
+    {
+      "path": "docs/verification/checker-guards-20261026/after-acr-normal-negative.log",
+      "originalSha256": "a5431059c06f7abea5852d093c28f287ff5195949193aaad06bc92118a896a43",
+      "publicSha256": "cf99faf404d457fbbb12740b0ba762115c8384ddc8a679c5e9369aabf478e833",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/verification/checker-guards-20261026/after-quartet-normal-negative.log",
+      "originalSha256": "24f99e43e4670a0c70d59b56cb531140f0802e42a373459ee8da0b24ed61d2ae",
+      "publicSha256": "bbccdd0535aa01dd047d9e38899b9d801a8b27d0bf178db188414e27c41602fb",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/verification/checker-guards-20261026/before-acr-normal-negative.log",
+      "originalSha256": "b373afd314f929c26d4d0822d7d882bcedaa909b72fc82980da1bbab8c835fa2",
+      "publicSha256": "d7cebdacefbb789ed00540f2b86f62332edfda1872d9fde388ba6c3d1fcf228c",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/verification/checker-guards-20261026/before-quartet-normal-negative.log",
+      "originalSha256": "63fc7bb678f712f25d30655f3ce9b1fa460906eb5da67f97050873eff4fc1106",
+      "publicSha256": "9b27d5c671ee628a2b4a87a678bfddb6e6ceaab1113310bee603560883e75653",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/verification/ci-disk-fix-20261026.json",
+      "originalSha256": "288e30d1caea447e0ddc28c1e16740d39cb04b6f76849051ca6f3b05dbd93cc4",
+      "publicSha256": "207854920b7e8be902de9260b2ee263f80ab5fcabd6c4da604914225db3a2747",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/verification/final-fix-closure-20261026/source-hash-snapshot.json",
+      "originalSha256": "1a19bddc6653df0c6b45b11d331184093acdbbbf78232dcf30cd6a56ea5f59cf",
+      "publicSha256": "1eb784eba060ef3a0c1518447bcd971681095c96659fdd190f63153156e0aecb",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        },
+        {
+          "kind": "local execution context",
+          "count": 1
+        },
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/verification/release-20261026/source-scan.json",
+      "originalSha256": "c42488df3173c0b615ee8e2116a1aa6cb873a8b3fc87458fb4dc2ad88eb7329e",
+      "publicSha256": "becb7de70778fe4d094ae116bcbc4085f92bdb8d6b15a4ca06159548a9bce3d3",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/verification/tiling-record-binding-20261026/negative_ledger.log",
+      "originalSha256": "bf92d0e0ec7df5972693860ab1a794ffe6c949791997455c604760aa4f5f0bb1",
+      "publicSha256": "db0b0493ecfa11292ab9816b033c6e41419a481c51e64fea267bf0d76517675d",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "economics/social-choice/tournament-rules/three-team-manipulation-exact/README.md",
+      "originalSha256": "8a997239f5d144a2db920e7ccf99fc8beb30aae7344e2f107a40f96967fdf1c5",
+      "publicSha256": "5526204dd9359c907b209f4b8ef52d9b76c1bbac9df247093dfa02167f9440e0",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "economics/social-choice/tournament-rules/three-team-manipulation-exact/readiness.md",
+      "originalSha256": "1c4a2c7248f7a1f34a8d929530fef70718e568f39bf08d560d5a9f411574dbc3",
+      "publicSha256": "7e12296640b0c9318a5b1b150afcc2fc246352d6f4ab7a3a7db649d64304b073",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "economics/social-choice/tournament-rules/three-team-manipulation-exact/review.md",
+      "originalSha256": "222c9628584be5629f7f9c456f6e9a35d6ecaeea563f468168e9da9206e6f478",
+      "publicSha256": "137baefca4828e8bd1abb4fc83ccaba8ecc1a354b8960c4294a83ce8e1513cd1",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "economics/social-choice/tournament-rules/three-team-manipulation-exact/video/qa/ffprobe.json",
+      "originalSha256": "7b92630adcc38e78964f8190c54488515cdb59cc0a2cc3be8ec8438631c602b0",
+      "publicSha256": "d85bb4665f733681ebbded6b74755934676ca20db8c480d6872251886a477d6e",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "explorations/biology/gene-switching/README.md",
+      "originalSha256": "e3ecc45c4aabac2484793d1414bc0336f2e683efa7a73d051031a4eaea8ebc36",
+      "publicSha256": "b079082594295b453fa837fed7029793f62e3b62b715ed6311115f8b8351926e",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/algebra/bilinear-complexity/mu-q-2-2/README.md",
+      "originalSha256": "c249f6c4f30900b025d60bc3118a4ab0b402a0933d794a52795a96bd322253e8",
+      "publicSha256": "ad17266c59aaef7b5e8e2f1ca248c26cff624e5757477b4849503feb07a3b465",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "path": "maths/algebra/bilinear-complexity/mu-q-2-2/readiness.md",
+      "originalSha256": "c9f774380b4710bba5eb904df4089d696a4a2db218c2a228efa4bb51093c43aa",
+      "publicSha256": "a8160a782687171437d14d76acf59ae9385009ecb10ea74908ce9de69da7b49e",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "maths/algebra/bilinear-complexity/mu-q-2-2/verification/certificates/sat_A2_rank8.manifest.json",
+      "originalSha256": "bd3673f564cc178e15812fd938ff5223ffd3dd49d608a806fd5a19a7b0e453b1",
+      "publicSha256": "9a1065bc77d097b5650d86522c740311cd0f2075a88fcf3eb27828e68053442a",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/algebra/bilinear-complexity/mu-q-2-2/verification/source-provenance-20261026.md",
+      "originalSha256": "491ea7fefd0feb571b015af42cce09051a2700714f99e6f9a0012f5028567ea9",
+      "publicSha256": "82845dbee6787da379f90ba2e3482b1d798086c61ad484b4b7a13adf39996196",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/algebra/bilinear-complexity/mu-q-2-2/video/qa/ffprobe.json",
+      "originalSha256": "2d718b179230f2e2658c4e907b29747e221527073d0f9bd9d2958f182c06e6b2",
+      "publicSha256": "f5df59e20b732797d5ed4501eff1e41d56ab97d6bbc2424db0010d7859753082",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/combinatorial-games/cubic-tic-tac-toe-surplus/README.md",
+      "originalSha256": "babe8aad5520cd4ce6cc258a0f4331f3eb2ffbd9d01f8b525bef467a375f9176",
+      "publicSha256": "490bb9519f5c5fae9ea4d2edbf42c2b7470a61924183c9576695b0e6ffbd359e",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/combinatorial-games/cubic-tic-tac-toe-surplus/review.md",
+      "originalSha256": "2adc79bd40cc29921e734417601ad7c3af055b612aad965b5fb590bd295ef834",
+      "publicSha256": "01bf82df5beb256de98fe20a3975d3f26bfa3d4c6dd76ad222c2326a72dc454d",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/combinatorial-games/cubic-tic-tac-toe-surplus/video/qa/ffprobe.json",
+      "originalSha256": "d7f4cee5adeffd9676c279c03582a3c37f6ea7db85a508fc7b2adb79282a1f42",
+      "publicSha256": "94fc9a7461d0795c8837e498b96d49df05561e7b78165eb2fa1e965ccce32473",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/combinatorial-games/hex-short-wins/README.md",
+      "originalSha256": "91ade048b15c23850209980d167d7f073fba6599c8142adeab10352cb055dc24",
+      "publicSha256": "42f19d333e99847c27a648a78e29509db31bdc975884728b6dca62465b2d60bf",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/combinatorial-games/hex-short-wins/readiness.md",
+      "originalSha256": "a408625aa2745af1000a61341b35296e8f25f9a389361d0494b2569228b20b63",
+      "publicSha256": "a90800f497bd6b5ac5273f19fa914945d8d1ccf9f93991ab360d1d40f2cd2d86",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/combinatorial-games/hex-short-wins/verification/review.md",
+      "originalSha256": "1d271089219e85d67e957d6583bba69d72ea8beb7d3d77387ad8b6f75e19fabe",
+      "publicSha256": "912ce146fa55cbfcaab97cc55d538300400e827d46e5809263200d77ce15ab39",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/combinatorial-games/hex-short-wins/video/production-state.json",
+      "originalSha256": "0811457f10e966a0453613561ee37945073e9ee045031d0762256f131943a312",
+      "publicSha256": "7305d9aed80a4894274531c60f501e48b406f568aae8e2e8a25d631b7ded55d9",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/combinatorial-games/hex-short-wins/video/qa/ffprobe.json",
+      "originalSha256": "f9a7bafe0627e546811c6d0c449b2013a97952878469839f6dd54c9a8a17ee47",
+      "publicSha256": "bae765b2e0ca50fc5dda31a080db38ae4e819b8bc8b73f8fee0dab1bb47c50c9",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/combinatorial-games/hex-short-wins/video/scientific-input-sha256.json",
+      "originalSha256": "7e79aec69dd68e88208278de709f9a824d02a59a6164f47904be8bbb2ee8dea0",
+      "publicSha256": "ee65e5b3ebd852e11522671c484a26df304445f2c86e5acdda3c078edadd916a",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/combinatorics-on-words/cartesian-tree-square-free-words/README.md",
+      "originalSha256": "09cf88067a2aa5a8827ade36356c9feefab7842c37492446baafc2be563aa10c",
+      "publicSha256": "0587d9802ff8d13d09b59a87d8d298321c9869274d337e9c738dbe0527544802",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/latin-squares/latin-tableaux-staircase-count/README.md",
+      "originalSha256": "95d09cb834344414065d6d9523e864c25c232c714b236ad02ab9123b62699a0f",
+      "publicSha256": "065501871aec336714acc9df22a9d167690cb712870523c2aa21c9111d6bb588",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/latin-squares/latin-tableaux-staircase-count/video/qa/ffprobe.json",
+      "originalSha256": "f121e0f8d83ac9e503366d6adc6f62a44f2673c9eccc45956b4b3483cdfce0df",
+      "publicSha256": "bd6c0cc8f81a85eb5df9694c630fd5bf521a2709a0dae60bac7acf35a95d554a",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/phylogenetics/colless-like-integer-weights/README.md",
+      "originalSha256": "6d99bbf3cacef9d900e24b04334de4021b129d5ae2af9cced51c7b1218078eff",
+      "publicSha256": "d11b790f30502c977bd57932f676367c4605572220a7e4c7173a94ccafb6e765",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/phylogenetics/colless-like-integer-weights/readiness.md",
+      "originalSha256": "ddbc1abc3aac58ca1f9dd2d566e5754807ab70166b22bafe223766e8c7d6a147",
+      "publicSha256": "89c2bda45f657ef77aca15956c0180230239b0a09d12f96a37721899a72cace1",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/phylogenetics/colless-like-integer-weights/verification/reviews/phylo-colless-prior.md",
+      "originalSha256": "bd4284f1c9911914117a9a406c8edaa263a1ea828ada984809f5a26145cd3326",
+      "publicSha256": "cc5e40e8302d55a1b11aeca8a19179db1421a8fb7686295e45ad8c694f277276",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/phylogenetics/colless-like-integer-weights/video/qa/ffprobe.json",
+      "originalSha256": "c4d451c6be0a3b8bf29f820d7d402e414a07ee77fde70d5f9b03a49572646616",
+      "publicSha256": "56e9e9104d850612551150baea07c9acf3923ce2384f3b61b1688fce324fab9a",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/phylogenetics/common-quartet-number/README.md",
+      "originalSha256": "fcc89dbe39e0a2f586712b81f8c095d5b73a30b79c6d01288bbf6a5787d62940",
+      "publicSha256": "48b3d03b179ad64eb772ffd93073572d2695fed14377d35befe2a2283a1aa662",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/phylogenetics/common-quartet-number/readiness.md",
+      "originalSha256": "c505a6bb5fdfebce1c15433f75ad587d9a3a59f74c49a5820e40c1a53f3fd029",
+      "publicSha256": "ddadabbaa9b9f750ef1283ebb16625d96d38ca1484c82a2499094aa30f743949",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/phylogenetics/common-quartet-number/verification/results/resume-20261026/negative-controls.json",
+      "originalSha256": "d8d069bb6f48b0d2d1e72e891e3beb7c0ada48caaaccdb5f2ac70de52c56c220",
+      "publicSha256": "56a546c1c2a52e4bf138d802271f18ef16c05d9c5cd59595a714a9674dfc8512",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/phylogenetics/common-quartet-number/verification/results/resume-20261026/negative-controls.log",
+      "originalSha256": "d3a668ee6f0dc0969c54d970e6b0747ca85af88485ad1e8d1b7735cfbce0a3fb",
+      "publicSha256": "9adfed28be8b68e937658e151a1c08e627ddde4d84e4c978c9ad68651e3f018d",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 7
+        },
+        {
+          "kind": "local execution context",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/phylogenetics/common-quartet-number/verification/results/resume-20261026/quartet-build.log",
+      "originalSha256": "c3f5fd1a817ecd8569496e4dd27aa6fac467ed7cd1f3efeb6214c60743983af9",
+      "publicSha256": "09dd50c23b3c93ef4e3bf629f8cfdef379b632f056b87af01f69e8f7892b4e87",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/phylogenetics/common-quartet-number/verification/results/resume-20261026/quartet-final-typeset.log",
+      "originalSha256": "df9d1e7a8a7da287ee03e87baa783abe9189e6a198b30de0a58f77cdae4a5a16",
+      "publicSha256": "a67cd87c63f69c517a376cc71c3ad04e194c5fb3b01e314086df6918ace0ba79",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/phylogenetics/common-quartet-number/verification/results/sharp-potential-completion-20261026.json",
+      "originalSha256": "312a871fb233644cb1e76d6a6c6b8f713dcef65bfff8079b76ef1dcdf5f7aee8",
+      "publicSha256": "6482dd49eac67747f0825a6dffa5ac2af167f4794257fda23f4084476972cb33",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 1
+        },
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/phylogenetics/common-quartet-number/verification/results/sharp-potential-typesetting-20261026.log",
+      "originalSha256": "d9a4d9a951a80d4c3d8c7211db19d54f0081c6c55d706820438e966c1d407593",
+      "publicSha256": "9b72dc8a71df1d3022155d9a8ce1d48f4f0e0a616c2dc40630a6df4cdc0f7d8f",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 18
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/phylogenetics/common-quartet-number/verification/results/sharp-potential-typesetting-final-20261026.log",
+      "originalSha256": "fab0b0791d582d6f68d1936db20f9e8a37500146c97db28925ee9e331f8fee67",
+      "publicSha256": "f58acde578ffb6024b25a4b0780cdf4a63ee3dee9280bc434bac6c4bddd4b35e",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/phylogenetics/common-quartet-number/verification/reviews/phylo-final-review.md",
+      "originalSha256": "5c9c47de34ff919bcf5a5add86a2ea1dde36d3cb7963165a5891ce97d04db6bd",
+      "publicSha256": "8e6a943879e37cb792e9d984b6eb359c765b7cc3a437d6f8907d9aa6d14d4285",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/phylogenetics/common-quartet-number/verification/reviews/phylo-game-review.md",
+      "originalSha256": "bb5e895cdcf08d0701d0ffe7fd1927857984fa2a0d01045bedb5a93f9a7df22c",
+      "publicSha256": "4fd1a6fe2dcaf4bfb32d222b2d7280c9a64a86965a5d839ecd7e8c4a48cfdf42",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/phylogenetics/common-quartet-number/verification/reviews/phylo-h3-review.md",
+      "originalSha256": "978ca61dd7a8f3fa39e3e33879a2a53c66438a97583193c45e0340a309eae9e2",
+      "publicSha256": "5fe5e0916ee6ea01f1a45c009517b238fc65abca4ee6c2ea8820828415913267",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/phylogenetics/common-quartet-number/verification/reviews/phylo-hk52-review.md",
+      "originalSha256": "eb0cc55f1cd7972c691f070d25f160ff744a860110920f9265d8dc7426a1d8ff",
+      "publicSha256": "eec146fc3d1ba93ead0e52678b6d50b9629bc5139334dd8846d2574dbfa2a44b",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/phylogenetics/common-quartet-number/verification/reviews/phylo-sharp-potential-review.md",
+      "originalSha256": "33bccdba6dbd1f8a10010496690e7bf9ce61410e1ea385d9402fb7b38cbd2b5f",
+      "publicSha256": "e0f191930ca97877273a1d54a62c29ccf449b48a7a1488bc959dcbfdf1ea4228",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/phylogenetics/common-quartet-number/video/qa/ffprobe.json",
+      "originalSha256": "b119bf8e041dd694f9e9b40c4d091b521ac1ea643adcadb8d5a9c08dbe8f5b1f",
+      "publicSha256": "de73e12a0260d389c4e2dc25e4aa3038256800ac473d6d12f1d1c5318bb40e1a",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/phylogenetics/common-quartet-number/video/scientific-completion-manifest.json",
+      "originalSha256": "312a871fb233644cb1e76d6a6c6b8f713dcef65bfff8079b76ef1dcdf5f7aee8",
+      "publicSha256": "6482dd49eac67747f0825a6dffa5ac2af167f4794257fda23f4084476972cb33",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 1
+        },
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/phylogenetics/common-quartet-number/video/sources.md",
+      "originalSha256": "1a06937a80b91eb5ff0a5ceed48a55d0becca5e2baa48d8533270053f880a184",
+      "publicSha256": "81e1c565d449f7d3c945250697138a0f3a7537360bb6f4e507e8ec7a610824eb",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/phylogenetics/common-quartet-number/video-brief.md",
+      "originalSha256": "10efe6ed75c6b7da6dc0c434f16d63abfdc65f603947e8c65f7c2f9ea376e5c5",
+      "publicSha256": "7fc49bf4e1eb8cc4d41db1e42155efa16eb7cfaeee5986d8f3f52ed82a803609",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/spectral-graph-theory/four-negative-eigenvalues/README.md",
+      "originalSha256": "efb86b83718b50535bcf5a5307953917e12364fdc609115811600a14acb927fc",
+      "publicSha256": "c761e9b53a668792f29a225f99a5573aa656ec9238c22238851b889ccd76cb9e",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/spectral-graph-theory/four-negative-eigenvalues/readiness.md",
+      "originalSha256": "84a83701b9fdae9d1b5667f2e009b0a4e988e068af8cb8a2735385d261041015",
+      "publicSha256": "f269831c35feac141843565c5905b001e5165da92c9709d3b19771ff2922729a",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/spectral-graph-theory/four-negative-eigenvalues/review.md",
+      "originalSha256": "0e935bd55f6ace95ae62f172cb7e698f0185fa1a7af8707645aa9a7a83c6c774",
+      "publicSha256": "80761d8ecdcc59836c47093ffea7569754ac75bbca00714a6d0304f3a2fc9c30",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "maths/combinatorics/spectral-graph-theory/four-negative-eigenvalues/video/qa/ffprobe.json",
+      "originalSha256": "f0f325d2d23277e0935b1fb991992d7a3f750d5c630a293c76a9eb8b82f97f9e",
+      "publicSha256": "f8a4f15445f1e803a9672f472976e8b6dc6dddd164ec1e44a34aae8fea5e1e24",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/dynamical-systems/billiards/special-octagon-symplectic-billiards/README.md",
+      "originalSha256": "d79ec8a6859a9c77239e7a268d7f4593c6f488c8f0bad6caa7e90d0350981b02",
+      "publicSha256": "e072137c08794b3ebbb3ee27aab95fca6ea6cc169ba46c46ccadd11bf3716a35",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "path": "maths/dynamical-systems/billiards/special-octagon-symplectic-billiards/video/audit/decode-validation.json",
+      "originalSha256": "1ddfb6812e627605f23fe166583391475f198007d13b269f0bf33ef6910c9211",
+      "publicSha256": "a11ed8254e25cad6e140f19a1785b6ff8d93c5dc613bf2c11076b040e1bb8832",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/dynamical-systems/billiards/special-octagon-symplectic-billiards/video/audit/validation.json",
+      "originalSha256": "8815a7cc389ab80755abd88aa2b1ff42a0f8852e84f8fd2dd4d095f52c8dc0c2",
+      "publicSha256": "0b588c9599f982e85ceab39cf59597f4c9d9af6a41496f04825e062ae28ff64f",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/dynamical-systems/billiards/special-octagon-symplectic-billiards/video/sources.md",
+      "originalSha256": "8a67091d9b1579a1f07e75b4a6950db9f9b18e4cd0b56132966ce41933e98355",
+      "publicSha256": "6dcf3ee19e0a1f25573600be3f97f8036b3e7322d1ceed534086ffb177fcc1cd",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/README.md",
+      "originalSha256": "7c6d7801f4a19bac656f29cf752f48ee0e79c62791302583d01d14a84bd11782",
+      "publicSha256": "c717b86cd77af535cd05377c84ff85f8d912f9b9f7162067e139a8c1f3c454af",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/readiness.md",
+      "originalSha256": "d8e215efda6399893093a1ef0d701fe64f9f2f0ca747467a3fbe12758979c010",
+      "publicSha256": "09b31ad6d3f0e09ef879e11a06830563b4ac61741ac7c22ee5cfca2d1f475505",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 3
+        },
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/review.md",
+      "originalSha256": "b2bcfc508e2c40f5684d12f83a5d2c7be27f99f3d94e5fef1398a11185579769",
+      "publicSha256": "f7964e9d34afc9111b0c9c53916c088bad69cad8383243b18a298b4067d59e13",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/verification/recovery/source-provenance.json",
+      "originalSha256": "2cc4c684a0c3f21d810ee750b66c64902a30d8c27202d7a82b68b289df4f715b",
+      "publicSha256": "b16f0bfbebf5a57ade173c7150c9a3c4da8db338287c94c3b6f0c1146e004a83",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/video/qa/completed-resume_render.py.txt",
+      "originalSha256": "b12e67c95cfb8df5779254519426eeffc00cfd9d953c8e377547e0519a6eda17",
+      "publicSha256": "5aeaac3e4602acc5f80c50e4b2f6f055c567911fdfba43a9f82117dee07fdcf9",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/video/qa/ffprobe.json",
+      "originalSha256": "32b6150c2c7aae75b87d71a348bcc6f84eba67964ee56d14e3135569d58176ae",
+      "publicSha256": "410e69606037fd2ee0388a1690a88f5752ebb0bcf8e1052a93f537e8c1dc6c0b",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/README.md",
+      "originalSha256": "f2b175757d738fde358edb33460e7f44e4a0f3b401dfd4af95b09b826d105f93",
+      "publicSha256": "3469262aac9466f1c88b03394d8659372e0cd8e20c22fa799a9ec69960526722",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/readiness.md",
+      "originalSha256": "714c967796475ee5cc9c35dcf1f50daa188b115d3bcbec05c60ffe20cdb90bf7",
+      "publicSha256": "1f3ab3d286183488ffb1510adf283ec26c47dbd0a850493718fda26834d2e7a0",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/14-latex-1.log",
+      "originalSha256": "2c8f808ff3d083f4ec77fac583c3d0723e0e7354ca8f449822cb85234d6201fc",
+      "publicSha256": "3715ad516a723b939a4cb495f7ae1402be257b1c1d3f4456da1f6f77098dc266",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/16-latex-2.log",
+      "originalSha256": "2c8f808ff3d083f4ec77fac583c3d0723e0e7354ca8f449822cb85234d6201fc",
+      "publicSha256": "3715ad516a723b939a4cb495f7ae1402be257b1c1d3f4456da1f6f77098dc266",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/17-latex-3.log",
+      "originalSha256": "2c8f808ff3d083f4ec77fac583c3d0723e0e7354ca8f449822cb85234d6201fc",
+      "publicSha256": "3715ad516a723b939a4cb495f7ae1402be257b1c1d3f4456da1f6f77098dc266",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/reviews/geometry-antiprism-review.md",
+      "originalSha256": "61cad59afb6148c5d441795788efff3002c76bc3cea75979a26734f00ffba7d6",
+      "publicSha256": "149c0fdb7f60f13994f92c402e8d6ddd5218bbcb54bc9fe860e749622ed688bd",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/reviews/geometry-johnson-priority.md",
+      "originalSha256": "6429e2e078cd35d76e990d957bff0ffce50d873f1d4b50860230abd9c8fd5e87",
+      "publicSha256": "d1c54fa4ce2d0d651c5a5bc7c7d1acdadf89e6ab512fa63b9a487bd6580dc465",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/reviews/geometry-johnson-review.md",
+      "originalSha256": "3e1f860ab82a97c355176ae493d7772b91a1c9ddbfb4f0fe0692e68baa2304ed",
+      "publicSha256": "52225f7ca9d47c873e3198a400496e7f4da88ff3548527f6a81020b2186f84e7",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/video/qa/ffprobe.json",
+      "originalSha256": "7eec12ec4ef553b8ce30544524257d14c0f3277a7aa22447a7b0ea06ef5a6981",
+      "publicSha256": "0b3461b65707351eb9607f748de5a588d443413feaac287e270ab65ef3fd4d56",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/README.md",
+      "originalSha256": "bccd3a01ce9b4c8392f9656e651ebe5d1e513a115ecbab1f422e50678ad0c45a",
+      "publicSha256": "0e1cc4ac05201a16ec84238acf406bc09716561f03aea0913f4e611856423ae1",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/readiness.md",
+      "originalSha256": "93bd443b28f49eb636c1cd48d278df2da37c9fe85e2e84889843766d7e50caa8",
+      "publicSha256": "75c02aaa7842374e67168ff937b51e80581d479babfe2261df606a79acf281e6",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/review.md",
+      "originalSha256": "4d18c8ecbd26e074608417fc0d9b3e7f1f779e7847b6c754d607e50201aca273",
+      "publicSha256": "eb5e93b6798795c218a8937e3a1bf1ee9ba89443ba125088be706d3eb67ebf9d",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/video/production-state.json",
+      "originalSha256": "a3ef87ad41c19595d67d8e3bd22b635204edf6eecd289f3e3d16e33173224d81",
+      "publicSha256": "0436d1de38f8108bac8d2f54a6206715ea092d3076b25ac3fababb55a7721129",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/video/provenance-status.json",
+      "originalSha256": "55f34c55ddf02aedba2f4bf5f1253fe1d91eb0f6b02650fee2adfb46268c0ff8",
+      "publicSha256": "2c9a9028c9d3f6be7841c5a37c8c392c162e5fb1c8eae3ccc325252b4a32b593",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/video/qa/ffprobe.json",
+      "originalSha256": "1ed2bff2c42c2492be2b9ad3654bf8905fd731f1da65c50375c3a24545133bd4",
+      "publicSha256": "bb5c9ce98b8c2ffdef1687438c187aebba3726f652f7a27b667723d41888a7b1",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/video/scientific-input-sha256.before-validation-fixes.json",
+      "originalSha256": "b16cf4fa326ed5a18e684d29c70c95ca34e134d104b692041275077d5a03a406",
+      "publicSha256": "dc8ee0c1bbcd828e99402fef463f3037f900bf7d86ca5fc74b81fa25d2306ecb",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/video/scientific-input-sha256.json",
+      "originalSha256": "66a34508adef502f0bd609fce14674f9c0d1fccbb8448c676b86964092c01669",
+      "publicSha256": "e50cccdb9c44570f3e0d51b4089f6513fe4587c0a69542c3ca1a4aa146016d89",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/video/scientific-input-supplement.json",
+      "originalSha256": "e2e7fd0f711180f57b0c80e46c278cf7f6e4205381e3b746c63fea3c3730e4d3",
+      "publicSha256": "bffc6ec4043551d0c7f98fb23c7e519c30d972cf887a5e3c3b282cb1ba262f48",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 4
+        },
+        {
+          "kind": "local execution context",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "path": "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/README.md",
+      "originalSha256": "2b7de60c318236ef03b7ce1930ddf1c4e51f6d5a270c687e68a884677c553917",
+      "publicSha256": "f3abc89f5cb94989c90f875fe6c8e9f2ec7950561c797febc9e9a039b5c144d3",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/readiness.md",
+      "originalSha256": "75540f987cd0350f067b619e2c911bee9676c2d48b2d7907875c78fa442cb5fd",
+      "publicSha256": "2f091ae09f17f3f2d84e6f812a5d6bab459cdbf2c45cb14bd8fbf72f510e9845",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/review.md",
+      "originalSha256": "540b2878a24de9390e09122fdc2b4052648c4e6c3182f13de26123cae98576a6",
+      "publicSha256": "7279f465a28b27d3f4aaf252720e8d6097d4e698f04c9d7d65ea5132dbac6953",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/verification/logs/finish-build.log",
+      "originalSha256": "e2581364c19f693bdbc27038b9050a25cece86760d52850ce07db304ff323a09",
+      "publicSha256": "8d8f1fc5db1c3aec2924d2abe4b52779ab391788a567e62a60f75fbf0013d36f",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/video/production-state.json",
+      "originalSha256": "de95d520d1ad498eb3127e7f66a6396ff9cc72d3cef6e4825ea6f07f20bede99",
+      "publicSha256": "a30c31b84e10b4b66081755842e1517cfc6c5bf6b97da2c78803065fb9f5c5b2",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/video/qa/ffprobe.json",
+      "originalSha256": "936db41edfcff56f0769e72e0231811d772f3793c40c013246f3efa44e67a0f1",
+      "publicSha256": "16d856a2bcfa2aeab60de387522aad0fd2b4c5d7a2430eb871b597cf5cd04aad",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/video/scientific-input-sha256.json",
+      "originalSha256": "95e8eb6bb62d325fbb569e5dfe1c7aa9755b34e4bb8161ae0067af8d5239a07d",
+      "publicSha256": "c1601fd12370c6f7ecd88bfa45bba98d7ff6e777248ee7fc0d73f01b4ac4508b",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/probability/competing-patterns/rotation-wins-penney/README.md",
+      "originalSha256": "933636b61949e8e9bb1bdf32b280599f7764be2e8700f07ff78e029daa8fd64b",
+      "publicSha256": "9a2c38da754a82f182543d8af8f23e6f2a165b769510461d65da9c5f9bc66451",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "path": "maths/probability/competing-patterns/rotation-wins-penney/verification/priority-audit.md",
+      "originalSha256": "ee45f2326fc70f21ffc79d497a2f46700202438233d19134cbf6f3506d6b534b",
+      "publicSha256": "38232cf8bb07b3b306a0b3e949c28c1bd85c1a4b77583b37286bc36d73b7c7c9",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "path": "maths/probability/competing-patterns/rotation-wins-penney/verification/review-record.md",
+      "originalSha256": "633699eaafdc9be00338785240c6970492738902960b1b7083bebc224b6e6253",
+      "publicSha256": "88d57f7d74b9c3e7296d762f4137df86493f4d3729bc236f0c25665a676bb747",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "maths/probability/competing-patterns/rotation-wins-penney/video/qa/ffprobe.json",
+      "originalSha256": "ff074512e913126d36782fe04e39ac5a88bcf0890ed0aedcbf2ddaa634bad44a",
+      "publicSha256": "255bfcebbb4e5f8bc353fd35c1c98ec7f691b089b033f880a9c6c418ca5fa6de",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/topology/knot-theory/bridge-thirteen-crossing-census/README.md",
+      "originalSha256": "bcdd3f5f0c8be830d3ab87436dcabd86b9b491cda446d6c6531f9ca155a5974f",
+      "publicSha256": "06fa6ccdf6964d9322d04fae9d7b8e0cefc9f0f50a99b1f0867a160bdd0c2a83",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "path": "maths/topology/knot-theory/bridge-thirteen-crossing-census/video/qa/ffprobe.json",
+      "originalSha256": "2a235d4007398fb0a867c704255530bcf2a84649aa1589aa7c8c3aaa3d512adc",
+      "publicSha256": "aaa28b20711403204ea30c6666ad36786e823a0b50e2b35f95be32cc23ce682e",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "maths/topology/knot-theory/bridge-thirteen-crossing-census/video/sources.md",
+      "originalSha256": "8603bc0434441b12978d4b8f1aa608de193b89e0b51d14d075ce8be57ae9a91b",
+      "publicSha256": "7cf8c920b4d13a3617db00a3f8e788144ae027e676c4dd19251d0412530930a8",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 1
+        },
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "physics/quantum-information/error-correction/distance-three-qudit-codes/README.md",
+      "originalSha256": "969f975a972d38996337178564ae31a874ababb361f1b23d53d5e20652ac557b",
+      "publicSha256": "cfbbd0048807749c0208acb6548764606c975fec8f51983490298840950f0fb2",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "physics/statistical-physics/nonequilibrium-response/cactus-response-coupling/README.md",
+      "originalSha256": "9036fd34890f775e830ac72a18b66c396f5783d3c1dba7c632e8b625349394bd",
+      "publicSha256": "3ce2ade1febdd298e28d0c7f801e832c9ddc8a1628580d1b06ab100d177b1d9d",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "path": "physics/statistical-physics/nonequilibrium-response/cactus-response-coupling/video/audit/decode-validation.json",
+      "originalSha256": "eb9249f948a0bad099b623ba1e43f127431ba75c57d49895d79782974ce5c1a5",
+      "publicSha256": "f464822576cc07ffdc26db36ac365f7c53b92f7a10ffddd806452af4617a84c4",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "physics/statistical-physics/nonequilibrium-response/cactus-response-coupling/video/audit/validation.json",
+      "originalSha256": "bc0e56abb96b2ac8f1f5870df8d224a60549b717d33940a3e9ff848e45120018",
+      "publicSha256": "eff8fa0096fbcc22a4bcf37fc0df304ce7160c118df1a3b951487b4d56247a8a",
+      "redactions": [
+        {
+          "kind": "local execution context",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "physics/statistical-physics/nonequilibrium-response/cactus-response-coupling/video/sources.md",
+      "originalSha256": "7e658891a9e1e9b28c4babcefa0402ad7dfbf1527cbb1c34c705a6ef33f6d733",
+      "publicSha256": "07b978d53c78839aa71c70cd9b8e6b6d07c712199249ee366497fe9b663bd3c2",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "path": "physics/statistical-physics/thermodynamic-inference/periodic-waiting-time/adversarial-review.md",
+      "originalSha256": "b1c774436aecfc1613523e31dd642aa8b484d2052eba6e37ca023245149d5a02",
+      "publicSha256": "368efbfe1caddf1467c9b50897aa4904e86355f0c8911d25245b39907a7d3c93",
+      "redactions": [
+        {
+          "kind": "review identifier",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "physics/statistical-physics/thermodynamic-inference/periodic-waiting-time/proof.md",
+      "originalSha256": "8e2ede644cd81e3bf3310a7a407c2b58b0686780177f0e1c19e99018b740a4f9",
+      "publicSha256": "593ccffefc187964d748a053b7422290a0628700bcbfb71625bc99b4d9e3a0e8",
+      "redactions": [
+        {
+          "kind": "contribution terminology",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "public-release/papers/manifest.json",
+      "originalSha256": "ba8d161c36c30ea5c0ba1b23d12af0953e9ddfe04e01a0443740d07d5fdbb96b",
+      "publicSha256": "16288236b7d6ed76dd4f14914d4aa5664db79ff28da5907052db6ecab2efde9e",
+      "redactions": [
+        {
+          "kind": "contribution terminology",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "path": "docs/verification/formal-library-20261026/ci-replay-40373907951/export.sha256",
+      "originalSha256": "0141aad09752bd076be6bea52765865f0dade87e5af8cb36ecf8dc8102b3e0a1",
+      "publicSha256": "4dd65cd04897fd8f6aaa0ce7c75f6d9fc9c812ebb8c20cfe5b5931677c4ac993",
+      "redactions": [
+        {
+          "kind": "CI execution path",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/verification/formal-library-20261026/ci-replay-40373907951/timing.txt",
+      "originalSha256": "c1df1cb2389a431b654539b70dd3298e6911803761dc351d6b019a77e590b596",
+      "publicSha256": "deeb35d245c121ce363428df5731716a81a95fbaf53d6ee8de3f04e995dd2c80",
+      "redactions": [
+        {
+          "kind": "CI execution path",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/verification/formal-library-20261026/ci-replay-40373907951/export-size.txt",
+      "originalSha256": "be4f428296147edf1506dee16100414cadddc41ff5a75d5769e2f10fe7b12e51",
+      "publicSha256": "0aea148669ad4d1eea5e874b98a449b421622083aa11294674698b4dba539668",
+      "redactions": [
+        {
+          "kind": "CI execution path",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/verification/formal-library-20261026/ci-replay-40373907951/checker.log",
+      "originalSha256": "e199c918e31b4a3fc4accda3032ad407ae04f1a3b686e3539cde94995df07a58",
+      "publicSha256": "77d831052462caa3680abf24f4ffb04710f65e08074058815cfdb219c86181a4",
+      "redactions": [
+        {
+          "kind": "CI execution path",
+          "count": 2
+        }
+      ]
+    }
+  ]
+}

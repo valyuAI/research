@@ -1,0 +1,22 @@
+{
+  "duration": 583.566667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "clip_count": 37,
+  "max_clip_seconds": 18.6,
+  "full_decode": "passed",
+  "mean_db": -26.6,
+  "peak_db": -4.3,
+  "listening_performed": false,
+  "visual_inspection": "passed; see visual-inspection.json",
+  "source_hashes_unchanged": false,
+  "completedUtc": "2026-10-26T16:16:13.076306+00:00",
+  "source_provenance_validated": true,
+  "approved_source_changes": [
+    "verification/independent_check.py"
+  ],
+  "source_provenance_reconciledUtc": "2026-10-26T16:37:22.405104+00:00"
+}

@@ -1,0 +1,30 @@
+name: Verify rigidity certificate
+
+on:
+  push:
+    paths:
+      - "maths/geometry/rigidity/truncated-dodecahedron/**"
+      - ".github/workflows/rigidity.yml"
+  pull_request:
+    paths:
+      - "maths/geometry/rigidity/truncated-dodecahedron/**"
+      - ".github/workflows/rigidity.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  certificate:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Reconstruct geometry and replay polynomial identities
+        working-directory: maths/geometry/rigidity/truncated-dodecahedron
+        run: python3 -B -O verification/independent_verification.py
+      - name: Reject corrupted certificates
+        working-directory: maths/geometry/rigidity/truncated-dodecahedron
+        run: python3 -B -O verification/negative_verification_checks.py

@@ -1,0 +1,33 @@
+\begin{thebibliography}{1}
+
+\bibitem{ABS19}
+Peter Albers, Gautam Banhatti, Filip Sadlo, Richard~Evan Schwartz, and Serge
+  Tabachnikov.
+\newblock Polygonal symplectic billiards.
+\newblock \href{https://arxiv.org/abs/1912.09404}{arXiv:1912.09404}, 2019.
+\newblock arXiv:1912.09404v1, 19 December 2019 (the only arXiv version).
+
+\bibitem{ABS25}
+Peter Albers, Gautam Banhatti, Filip Sadlo, Richard~Evan Schwartz, and Serge
+  Tabachnikov.
+\newblock Polygonal symplectic billiards.
+\newblock {\em Journal of Experimental Mathematics}, 1(1):1--22, 2025.
+\newblock Published 28 February 2025; Lemma 2.1, Conjecture 4.1, Conjectures
+  6.1 and 6.2, Question 7.1.
+
+\bibitem{ALW26}
+Peter Albers, Fabian Lander, and Jannik~M. Westermann.
+\newblock Symplectic billiards for pairs of polygons.
+\newblock \href{https://arxiv.org/abs/2402.12244}{arXiv:2402.12244}, 2026.
+\newblock arXiv:2402.12244v2, 15 July 2026 (v1 19 February 2024); Theorem 1.1 =
+  Theorem 3.4(III), Theorem 3.1, Corollary 3.3, Figure 21; Theorem 3.5(III) and
+  Corollary 3.4 in v1.
+
+\bibitem{AT18}
+Peter Albers and Serge Tabachnikov.
+\newblock Introducing symplectic billiards.
+\newblock {\em Advances in Mathematics}, 333:822--867, 2018.
+\newblock \href{https://arxiv.org/abs/1708.07395}{arXiv:1708.07395}; Theorems 8
+  and 9 (affine-regular polygons and trapezoids).
+
+\end{thebibliography}

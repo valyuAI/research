@@ -1,0 +1,5 @@
+q=3 f=[1, 0, 2, 0, 1] n=4 target rank 7: 72 units, 2 functional classes, 3 F1 reps, 1600 rank-ones
+  rep 0 exhausted (1599 prefixes, 143s)
+  rep 9 exhausted (3198 prefixes, 376s)
+  rep 369 exhausted (4794 prefixes, 770s)
+RESULT q=3 f=[1, 0, 2, 0, 1]: rank <= 7 IMPOSSIBLE (exhaustive, 4794 prefixes)

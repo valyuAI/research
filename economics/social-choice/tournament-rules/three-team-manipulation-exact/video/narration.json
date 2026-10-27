@@ -1,0 +1,133 @@
+{
+  "voice": "cedar",
+  "clips": [
+    {
+      "id": "s01",
+      "text": "Five teams. Everyone plays everyone. Could three of them improve their combined chance of taking the trophy by fixing just their own matches? Even the best fair rule must sometimes let them gain forty percentage points."
+    },
+    {
+      "id": "s02",
+      "text": "Start with one result. An arrow from A to B means A beat B. Each pair gets exactly one arrow. The complete picture records results, rather than the order in which games were played."
+    },
+    {
+      "id": "s03",
+      "text": "A rule turns that picture into a champion. It may use a lottery. Here each team gets one fifth of the chance. Five equal pieces make one whole probability, or a hundred percent."
+    },
+    {
+      "id": "s04",
+      "text": "We impose one clear fairness requirement. If somebody beats everybody, that team must win the trophy for certain. This is called Condorcet consistency. When nobody is unbeaten, the rule has more freedom."
+    },
+    {
+      "id": "s05",
+      "text": "Return to the circle. Every team beats the next two clockwise and loses to the other two. Each has two wins, so there is no unbeaten team to settle the choice for us."
+    },
+    {
+      "id": "s06",
+      "text": "Now highlight A, D and E. Together they currently hold three fifths of the lottery. They are allowed to change only matches inside this group. Matches against B and C stay exactly as they were."
+    },
+    {
+      "id": "s07",
+      "text": "A already beat B and C. If D and E now throw their games against A, those two arrows reverse. Watch A become unbeaten. Fairness forces the rule to give A the entire trophy chance."
+    },
+    {
+      "id": "s08",
+      "text": "The group goes from three fifths to one. Subtract the starting chance and the gain is two fifths. That means forty percentage points, measured for the group together, rather than for every member separately."
+    },
+    {
+      "id": "s09",
+      "text": "Could an uneven lottery avoid this? Perhaps give A almost nothing. The difficulty is that every team has its own version of this trick: join with the two teams that beat you, and become unbeaten."
+    },
+    {
+      "id": "s10",
+      "text": "Write those five groups underneath the teams. A appears in three groups. So does B, and so does every other team. Whatever probabilities the rule chooses, each probability is counted exactly three times."
+    },
+    {
+      "id": "s11",
+      "text": "The team probabilities add to one, so the five starting group chances add to three. Each group can separately cheat its way to chance one. Their five possible gains therefore add to five minus three, which is two."
+    },
+    {
+      "id": "s12",
+      "text": "Five numbers adding to two cannot all be smaller than two fifths. At least one group gains that much. This is the known lower-bound argument from Schneider, Schvartzman and Weinberg. No choice of a fair rule escapes it."
+    },
+    {
+      "id": "s13",
+      "text": "But a lower bound is only half the answer. We also need a rule that never allows a bigger gain. One nasty tournament anywhere could ruin the guarantee. So we must control the worst cheat across every possible result."
+    },
+    {
+      "id": "s14",
+      "text": "First remove duplicate work. Rename the five teams without changing any arrows. The shape is the same. We can average over names without worsening the guarantee, so it is enough to store one lottery per shape."
+    },
+    {
+      "id": "s15",
+      "text": "Five teams have twelve different shapes. Here are the twelve representatives in the actual small certificate. The rule is a lookup table: recognise the shape, read its fractions, then transfer them back to the original team names."
+    },
+    {
+      "id": "s16",
+      "text": "Take this real row. The five chances are two fifths, three tenths, one fifth, one tenth, and zero. They add to one. The table contains different rows because different match results need different lotteries."
+    },
+    {
+      "id": "s17",
+      "text": "For every allowed cheat, compare two rows. Add the cheating group's chances after the change, subtract its chances before, and require the answer to be at most our proposed limit. This creates one inequality."
+    },
+    {
+      "id": "s18",
+      "text": "Do that for every group of two or three, and every way to change its internal matches. Groups of two matter too. The guarantee covers groups of at most three; checking only groups of exactly three would leave a gap."
+    },
+    {
+      "id": "s19",
+      "text": "Imagine each inequality cutting away forbidden choices of probabilities. A linear program searches the choices that remain. We ask whether all constraints can fit at two fifths, the limit already forced by the circle."
+    },
+    {
+      "id": "s20",
+      "text": "The numerical solver suggests yes. But a decimal close to two fifths is not an exact guarantee. A tiny rounding error could put a constraint on the wrong side. The final rule must be a table of exact fractions."
+    },
+    {
+      "id": "s21",
+      "text": "The discovery process rounds to fractions, repairs the constraints that must be equalities, and checks everything again. In the plain fair-rule certificates, only the known five-team circle configurations reach the worst-case limit."
+    },
+    {
+      "id": "s22",
+      "text": "A separately written checker reads the resulting table. It verifies that every lottery sums to one, that unbeaten teams win, and that every permitted manipulation stays within the bound. It calculates with fractions throughout."
+    },
+    {
+      "id": "s23",
+      "text": "At eight teams there are six thousand eight hundred and eighty shapes. The checker covers two million, eight hundred and eighty-nine thousand, six hundred manipulations. Its exact largest gain is two fifths. These are recorded completed checks."
+    },
+    {
+      "id": "s24",
+      "text": "Why does checking shapes cover named teams? The lottery respects every symmetry of its shape. Relabelling therefore gives a consistent answer. For up to six teams, a second checker also expands all labelled tournaments and agrees."
+    },
+    {
+      "id": "s25",
+      "text": "The same optimal values can satisfy two extra requirements. First, winning one more match never lowers that team's chance. This is monotonicity. We check it separately; it does not follow just from being hard to manipulate."
+    },
+    {
+      "id": "s26",
+      "text": "Second, winners come only from the top cycle. Picture a group whose members can reach every team by chains of wins. Teams outside that group get zero chance. Here a three-team cycle beats two outsiders."
+    },
+    {
+      "id": "s27",
+      "text": "The eight-team certificate with both extra requirements passes the same manipulation checks, plus the extra tests. Across this package, fourteen certificates pass. The recovered eight-team result is an exact certificate, not an unfinished numerical solve."
+    },
+    {
+      "id": "s28",
+      "text": "Now put the two halves together. The old argument says no rule can beat two fifths. The new tables achieve two fifths for five, six, seven and eight teams. Matching lower and upper bounds give the exact optimum."
+    },
+    {
+      "id": "s29",
+      "text": "With three or four teams, the optimum for groups of at most three is one third. A separate seven-team certificate handles groups of at most four and reaches three sevenths. These are different finite cases, not one universal rule."
+    },
+    {
+      "id": "s30",
+      "text": "For nine or more teams, this work gives no matching upper bound. A table for eight teams does not tell us how to extend it. If three-team collusion ever needs more than two fifths, the first failure needs at least nine teams."
+    },
+    {
+      "id": "s31",
+      "text": "Remember three ideas. Arrows describe results. A five-team circle forces an unavoidable cheating reward. Exact fraction tables meet that reward through eight teams. Earlier work already refuted the broader guess for some large groups; the small-group question remains open."
+    },
+    {
+      "id": "s32",
+      "text": "The companion paper contains the full definitions, tables and independent checkers. This animation shows the lower-bound mechanism and the certificate logic. It does not replace the complete mathematical and computational proof."
+    }
+  ]
+}

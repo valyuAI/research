@@ -1,0 +1,40 @@
+{
+  "inspected_at_utc": "2026-10-26T15:08:46.975306+00:00",
+  "pdf": "paper.pdf",
+  "pdf_sha256": "52783ae8e8d2f8e1a7f47c56fb893f26460b369d4b02df9f0cddff1a47f126c6",
+  "source_sha256": "f23706864e14023083309d7ad18d53813f07b840c3ea7bfc12c3923a0eb17ba1",
+  "pages": 9,
+  "visually_inspected_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "checks": [
+    "Readable page text, equations and tables",
+    "Margins, headers, references and figures visually inspected",
+    "No overfull boxes or undefined references in final LaTeX log"
+  ],
+  "result": "pass",
+  "additional_inspected_pdfs": [
+    {
+      "file": "patch-bar4.pdf",
+      "pages": [
+        1
+      ],
+      "sha256": "fac5517169a89feb04c2e437e7466ffb4c8b690be32528ed5848f0e1be94746c"
+    },
+    {
+      "file": "table-tiles.pdf",
+      "pages": [
+        1
+      ],
+      "sha256": "0b3f977c64fab9ab925214aa4ca65fc52fe2c9bc13cf8279ff66e0909df1508f"
+    }
+  ]
+}

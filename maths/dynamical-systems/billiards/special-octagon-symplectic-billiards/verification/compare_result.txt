@@ -1,0 +1,1 @@
+PASS: 340 octagons with parameters <= 10: identical critical sets and state counts

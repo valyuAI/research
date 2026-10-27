@@ -1,0 +1,31 @@
+{
+  "duration": 486.733333,
+  "muted": true,
+  "records": [
+    {
+      "currentTime": 6.059603,
+      "error": null,
+      "paused": false,
+      "readyState": 4,
+      "requested": 5
+    },
+    {
+      "currentTime": 244.427452,
+      "error": null,
+      "paused": false,
+      "readyState": 4,
+      "requested": 243.3666665
+    },
+    {
+      "currentTime": 481.78982,
+      "error": null,
+      "paused": false,
+      "readyState": 4,
+      "requested": 480.733333
+    }
+  ],
+  "source": "/latin/video.mp4",
+  "videoHeight": 1080,
+  "videoWidth": 1920,
+  "method": "Muted local browser playback via in-memory Blob at beginning, middle and end. Not listening or full real-time playback."
+}

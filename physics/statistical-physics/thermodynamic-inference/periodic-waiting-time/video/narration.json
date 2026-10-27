@@ -1,0 +1,253 @@
+{
+  "voice": "cedar",
+  "clips": [
+    {
+      "id": "s01_ball",
+      "text": "Here is a ball, bouncing. Each bounce is a little lower than the last, because some of its energy turns into heat."
+    },
+    {
+      "id": "s01_reverse",
+      "text": "Now play it backwards. The ball bounces higher and higher, and you know at once something is wrong. That is the arrow of time."
+    },
+    {
+      "id": "s01_measure",
+      "text": "Physicists turn this into a measurement. The more wrong the backwards film looks, the more energy is being wasted."
+    },
+    {
+      "id": "s01_tiny",
+      "text": "Tiny machines, like the motors in your cells, only show you a few jumps, and the waits between them. Can the waits alone reveal the waste?"
+    },
+    {
+      "id": "s01_guess",
+      "text": "A published paper proposed a waiting-time test for machines on a repeating schedule, and conjectured, meaning guessed without proof, that it never overstates the waste."
+    },
+    {
+      "id": "s01_plan",
+      "text": "We will build a machine that wastes nothing, and yet the test says it does. Pause, and ask: how could that happen?"
+    },
+    {
+      "id": "s02_board",
+      "text": "Here is the smallest machine we can build: three squares in a triangle, and a counter that hops between them."
+    },
+    {
+      "id": "s02_dice",
+      "text": "Time passes in tiny ticks. Each tick, roll a die for every line out of the counter's square. If it says go, the counter hops."
+    },
+    {
+      "id": "s02_rate",
+      "text": "Each line has a rate: its average number of hops per unit of time. A bigger rate is a wider door. More faces say go."
+    },
+    {
+      "id": "s02_play",
+      "text": "Start simple. Every rate is one, in both directions. Watch the counter wander."
+    },
+    {
+      "id": "s02_probs",
+      "text": "Over a long game, it spends a third of its time on each square. Those are the squares' probabilities."
+    },
+    {
+      "id": "s03_traffic",
+      "text": "Now think about traffic: the chance of being on one, times the rate from one to two. Here, one third times one."
+    },
+    {
+      "id": "s03_detailed",
+      "text": "Traffic back, from two to one, is the same. Every line balances both ways. That is detailed balance, or equilibrium."
+    },
+    {
+      "id": "s03_backwards",
+      "text": "Played backwards, nothing looks wrong. A hop backwards is just a hop the other way, and both are equally common."
+    },
+    {
+      "id": "s03_clockwise",
+      "text": "Now push the counter clockwise: rate two one way round, and rate one the other way."
+    },
+    {
+      "id": "s03_arrow",
+      "text": "Each square still holds a third, but every line carries twice the traffic clockwise. Backwards, the counter would mostly circle the wrong way: an arrow of time. Like a motor, this game burns energy."
+    },
+    {
+      "id": "s04_name",
+      "text": "That waste is measured by a number called the entropy production. We will call it sigma."
+    },
+    {
+      "id": "s04_log",
+      "text": "We need one tool, the logarithm. The log of one is zero. It is positive above one, and negative below one."
+    },
+    {
+      "id": "s04_formula",
+      "text": "For every line, in each direction, multiply the traffic by the log of traffic this way over traffic that way. Then add it all up."
+    },
+    {
+      "id": "s04_examples",
+      "text": "For the clockwise game, the total is log two, about zero point seven. For the balanced game, every ratio is one, every log is zero, and sigma is zero."
+    },
+    {
+      "id": "s04_key",
+      "text": "Balanced at every moment means no waste."
+    },
+    {
+      "id": "s05_hidden",
+      "text": "Real machines are harder to watch. Suppose the line from one to three is hidden, so you only see hops on the other two."
+    },
+    {
+      "id": "s05_tape",
+      "text": "So you record pairs: a visible jump, the next one, and the wait between. Say, one to two, then two to three."
+    },
+    {
+      "id": "s05_reverse",
+      "text": "Backwards, that becomes three to two, then two to one, with the same wait. With no arrow of time, both pairs show the same waits."
+    },
+    {
+      "id": "s05_curves",
+      "text": "Draw a waiting-time curve for each pair. In the balanced game, the two curves match exactly."
+    },
+    {
+      "id": "s05_estimator",
+      "text": "The test adds up the mismatches between each pair's curve and its reverse's, into one number: sigma hat, an estimate of sigma."
+    },
+    {
+      "id": "s05_hope",
+      "text": "The whole film's backwards wrongness would equal sigma. Seeing only part, you would expect to catch less. So the hope is that sigma hat never exceeds sigma."
+    },
+    {
+      "id": "s06_driven",
+      "text": "Now drive the machine: doors on a timer."
+    },
+    {
+      "id": "s06_doors",
+      "text": "Let t be the angle of a clock hand. Door a, between one and two, has rate one plus epsilon times cosine t. Door b, between two and three, has rate one plus epsilon times sine t. The hidden line stays at one."
+    },
+    {
+      "id": "s06_epsilon",
+      "text": "Epsilon, between zero and one, sets how far the doors swing. We use one half."
+    },
+    {
+      "id": "s06_order",
+      "text": "Door a is widest at the start of each turn, and door b a quarter turn later. A opens first, then b."
+    },
+    {
+      "id": "s06_conjecture",
+      "text": "In 2024, Maier and colleagues proposed such a test for driven machines, using only forward-schedule data, and conjectured that sigma hat never exceeds sigma."
+    },
+    {
+      "id": "s06_forward",
+      "text": "But a true backwards film would run the schedule backwards too. This test only reverses the jumps."
+    },
+    {
+      "id": "s07_symmetric",
+      "text": "First, the true waste. At every instant, each door is equally wide in both directions."
+    },
+    {
+      "id": "s07_third",
+      "text": "So with a third on each square, traffic in matches traffic out, and the probabilities stay at one third."
+    },
+    {
+      "id": "s07_zero",
+      "text": "Every line is balanced at every moment. Sigma is exactly zero. This machine wastes nothing."
+    },
+    {
+      "id": "s08_weight",
+      "text": "Now the waits. A hop through door a is most likely when door a is wide, near the start of a turn."
+    },
+    {
+      "id": "s08_forward",
+      "text": "Just then, door b is opening. So the chance of the next hop, through door b, is rising."
+    },
+    {
+      "id": "s08_backward",
+      "text": "The reverse pair starts with a hop through door b, likely a quarter turn in. Then door a is closing, so the chance of the next hop, through door a, is falling."
+    },
+    {
+      "id": "s08_meaning",
+      "text": "So the test reports an arrow of time. There is one, but it is the schedule's: door a opens before door b. That is not waste."
+    },
+    {
+      "id": "s09_curves",
+      "text": "Let's make it exact. Call the forward pair's curve f, and the reverse pair's curve g. Both start at height one."
+    },
+    {
+      "id": "s09_slopes",
+      "text": "Compare their starting slopes. Write a prime for how fast door a is changing, and angle brackets for an average over one turn."
+    },
+    {
+      "id": "s09_split",
+      "text": "Each slope has two parts. The second, from leaving square two through either door, is the same for both curves, so it cancels."
+    },
+    {
+      "id": "s09_left",
+      "text": "What remains is the average of a times b prime, minus b times a prime."
+    },
+    {
+      "id": "s09_plug",
+      "text": "Put in our doors. The slope of sine follows cosine, and the slope of cosine follows minus sine. Then multiply out."
+    },
+    {
+      "id": "s09_pythag",
+      "text": "By Pythagoras, cosine squared plus sine squared is one. And over a full turn, cosine and sine each average to zero. What survives is exactly epsilon squared."
+    },
+    {
+      "id": "s09_numbers",
+      "text": "With epsilon one half, the slopes are minus two point one two five and minus two point three seven five: a gap of one quarter. So f starts above g. An exact program, using fractions, confirms every identity."
+    },
+    {
+      "id": "s11_plot",
+      "text": "Here is f minus g, for epsilon one half. It starts at zero with slope one quarter. Later, g catches up, and overtakes."
+    },
+    {
+      "id": "s11_nocancel",
+      "text": "Can the differences cancel? No. Each pair is scored with its reverse as f minus g, times the log of f over g. Where f is bigger, both are positive. Where g is bigger, both are negative, and negative times negative is positive."
+    },
+    {
+      "id": "s11_allpairs",
+      "text": "All four visible jumps happen equally often, so this works for every pair. In fact, sigma hat is four thirds times a standard measure of mismatch, which is zero only when nothing mismatches."
+    },
+    {
+      "id": "s11_verdict",
+      "text": "So sigma hat is positive, and the paper proves it is finite. But sigma is exactly zero. The conjecture said sigma hat never exceeds sigma. Here it does. The conjecture is false."
+    },
+    {
+      "id": "s11_every",
+      "text": "This happens for every epsilon between zero and one, with smooth rates that never reach zero."
+    },
+    {
+      "id": "s12_kills",
+      "text": "So what does this kill? One thing: the forward-only conjecture, in its general form."
+    },
+    {
+      "id": "s12_survives",
+      "text": "The same paper's theorem using backwards-schedule data still stands. Reversing the jumps is not reversing the whole film."
+    },
+    {
+      "id": "s12_prior",
+      "text": "Waiting-time false alarms are not new. Hartich and Godec found one at equilibrium, and Harunari, Fiore and Barato used backwards-schedule data. What is new is an exact counterexample to this conjecture."
+    },
+    {
+      "id": "s12_device",
+      "text": "Nothing is claimed about the energy used by the device turning the doors. That is outside this sigma."
+    },
+    {
+      "id": "s12_status",
+      "text": "How sure is this? The proof is fully written, and needs no simulation. A computer checked the algebra exactly, and internal reviews checked the rest. There is no formal machine proof or outside peer review yet."
+    },
+    {
+      "id": "s13_one",
+      "text": "Three takeaways. One: entropy production measures waste, and this machine's is exactly zero."
+    },
+    {
+      "id": "s13_two",
+      "text": "Two: its doors open in a fixed order, so a jump pair and its reverse wait differently."
+    },
+    {
+      "id": "s13_three",
+      "text": "Three: a test that keeps the schedule running forwards mistakes that order for waste. So the conjectured bound fails."
+    },
+    {
+      "id": "s13_open",
+      "text": "Still unknown: whether a narrower forward-only test is safe, with extra rules on how the rates may change, and whether this was found before. The search of earlier work was careful, but not complete."
+    },
+    {
+      "id": "s13_end",
+      "text": "Thanks for watching."
+    }
+  ]
+}

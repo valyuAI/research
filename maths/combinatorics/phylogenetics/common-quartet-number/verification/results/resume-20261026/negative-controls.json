@@ -1,0 +1,42 @@
+[
+  {
+    "arguments": [
+      "check_family.py",
+      "--expect-common",
+      "0",
+      "<unpublished-record-22b8c3b36eee>"
+    ],
+    "exit_code": 1,
+    "rejected": true
+  },
+  {
+    "arguments": [
+      "check_family_edges.py",
+      "<unpublished-record-22b8c3b36eee>"
+    ],
+    "exit_code": 1,
+    "rejected": true
+  },
+  {
+    "arguments": [
+      "bipartition_check.py",
+      "5",
+      "2",
+      "--expect-shapes",
+      "1",
+      "--expect-bad",
+      "0"
+    ],
+    "exit_code": 1,
+    "rejected": true
+  },
+  {
+    "arguments": [
+      "game/verify_exact_game.py",
+      "<unpublished-record-18526cb4dc73>",
+      "4"
+    ],
+    "exit_code": 1,
+    "rejected": true
+  }
+]

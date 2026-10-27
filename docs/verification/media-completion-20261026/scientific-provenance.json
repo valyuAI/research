@@ -1,0 +1,14 @@
+[
+  {
+    "path": "chemistry/reaction-networks/mass-action/acr-multistability-bounds",
+    "scienceHashesChecked": 30,
+    "supplementalChanges": 1,
+    "historicalSnapshotPreserved": true
+  },
+  {
+    "path": "maths/geometry/tilings/marked-polyform-heesch-numbers",
+    "scienceHashesChecked": 116,
+    "supplementalChanges": 2,
+    "historicalSnapshotPreserved": true
+  }
+]

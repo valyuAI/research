@@ -1,0 +1,692 @@
+{
+  "command": "git diff --cached --check",
+  "exit": 2,
+  "issues": [
+    {
+      "path": "maths/algebra/bilinear-complexity/mu-q-2-2/verification/certificates/q3_W.txt",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/algebra/bilinear-complexity/mu-q-2-2/verification/certificates/q3_W.txt",
+      "line": 2,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/algebra/bilinear-complexity/mu-q-2-2/verification/certificates/q3_W.txt",
+      "line": 3,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/algebra/bilinear-complexity/mu-q-2-2/verification/certificates/q3_W.txt",
+      "line": 4,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/algebra/bilinear-complexity/mu-q-2-2/verification/certificates/q3_W.txt",
+      "line": 5,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/algebra/bilinear-complexity/mu-q-2-2/verification/certificates/q3_W.txt",
+      "line": 6,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/algebra/bilinear-complexity/mu-q-2-2/verification/certificates/q3_W.txt",
+      "line": 7,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/algebra/bilinear-complexity/mu-q-2-2/verification/certificates/q3_W.txt",
+      "line": 8,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/algebra/bilinear-complexity/mu-q-2-2/verification/logs/drat_A2_rank8.txt",
+      "line": 4,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/combinatorics/combinatorial-games/hex-short-wins/readiness.md",
+      "line": 34,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/dynamical-systems/billiards/special-octagon-symplectic-billiards/video/audit_layout.py",
+      "line": 67,
+      "message": "new blank line at EOF."
+    },
+    {
+      "path": "maths/dynamical-systems/billiards/special-octagon-symplectic-billiards/video/inspect_final.py",
+      "line": 99,
+      "message": "new blank line at EOF."
+    },
+    {
+      "path": "maths/dynamical-systems/billiards/special-octagon-symplectic-billiards/video/render_final.py",
+      "line": 58,
+      "message": "new blank line at EOF."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 2,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 6,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 10,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 11,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 12,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 13,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 17,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 22,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 23,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 24,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 25,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 32,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 33,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 34,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 44,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 45,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 46,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 47,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 48,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 50,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 51,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 61,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 62,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 63,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 64,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 65,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 66,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 68,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 69,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 70,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 71,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 84,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 85,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 86,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 87,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 88,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 89,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 90,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 91,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/13-summarize.py.log",
+      "line": 92,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/readiness.md",
+      "line": 34,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq00_k2.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq00_k2.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq01_k3.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq01_k3.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq02_k3.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq02_k3.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq03_k2.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq03_k2.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq05_k3.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq05_k3.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq06_k2.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq06_k2.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq07_k2.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq07_k2.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq08_k2.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq08_k2.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq10_k2.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq10_k2.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq11_k2.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq11_k2.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq12_k2.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq12_k2.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq13_k2.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq13_k2.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq14_k2.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq14_k2.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq15_k2.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq15_k2.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq16_k2.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq16_k2.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq17_k2.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq17_k2.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq18_k2.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq18_k2.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq19_k2.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq19_k2.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq20_k2.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/dec_sq20_k2.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/hex_bent3_k4.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/hex_bent3_k4.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/hex_di_k5.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/hex_di_k5.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/hex_line3_k5.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/hex_line3_k5.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/hex_mono_k4.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/hex_mono_k4.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/hex_t1_k3.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/hex_t1_k3.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/hex_t2_k4.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/hex_t2_k4.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/hex_t3_k3.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/hex_t3_k3.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/hex_t4_k3.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/hex_t4_k3.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/hex_t5_k2.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/hex_t5_k2.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/hex_t6_k2.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/hex_t6_k2.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/hex_tri3_k3.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/hex_tri3_k3.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/line4_k6.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/line4_k6.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/line5_k6.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/line5_k6.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/sq_b04_k4.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/sq_b04_k4.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/sq_b09_k4.log",
+      "line": 1,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/logs/drat/sq_b09_k4.log",
+      "line": 9,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/readiness.md",
+      "line": 34,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/verification/c/dfs2.c",
+      "line": 48,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/verification/logs/finish-build.log",
+      "line": 54,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/verification/logs/finish-build.log",
+      "line": 55,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/verification/logs/finish-build.log",
+      "line": 57,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/verification/logs/finish-build.log",
+      "line": 58,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/verification/logs/finish-build.log",
+      "line": 59,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/verification/logs/finish-build.log",
+      "line": 60,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/verification/logs/finish-build.log",
+      "line": 61,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/verification/logs/finish-build.log",
+      "line": 64,
+      "message": "trailing whitespace."
+    },
+    {
+      "path": "maths/probability/competing-patterns/rotation-wins-penney/verification/enumerate_python.py",
+      "line": 90,
+      "message": "new blank line at EOF."
+    },
+    {
+      "path": "physics/statistical-physics/nonequilibrium-response/cactus-response-coupling/video/audit_layout.py",
+      "line": 68,
+      "message": "new blank line at EOF."
+    },
+    {
+      "path": "physics/statistical-physics/nonequilibrium-response/cactus-response-coupling/video/inspect_final.py",
+      "line": 99,
+      "message": "new blank line at EOF."
+    },
+    {
+      "path": "physics/statistical-physics/nonequilibrium-response/cactus-response-coupling/video/render_final.py",
+      "line": 58,
+      "message": "new blank line at EOF."
+    }
+  ],
+  "decision": "Retain byte-exact certificate, execution-log and reviewed-source snapshots. These findings are trailing whitespace or an extra final blank line, not a failed mathematical verification. No whitespace check, hook or linter was disabled."
+}

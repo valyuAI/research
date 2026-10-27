@@ -1,0 +1,193 @@
+{
+  "voice": "cedar",
+  "clips": [
+    {
+      "id": "s01_hook",
+      "text": "You have lost your keys. You walk out from the front door, scanning the path, but no luck, and now you have drifted a long way. Keep going, or go back to the door and start again?"
+    },
+    {
+      "id": "s01_q",
+      "text": "Going back sounds like giving up. But in many searches, restarting makes the search faster on average. Today we will see why, and meet a new result about the best possible way to restart."
+    },
+    {
+      "id": "s02_walker",
+      "text": "Let's make the search simple enough for maths. Here is a searcher on a line, starting at zero. Every instant it takes a tiny random step, left or right, like a coin flip."
+    },
+    {
+      "id": "s02_target",
+      "text": "Somewhere along the line is the target. The search ends the moment the walker touches it."
+    },
+    {
+      "id": "s02_plot",
+      "text": "To see a whole search at once, turn the line upright, so position goes up, and let time run across. Each search draws a jagged path. This one hits the target quickly."
+    },
+    {
+      "id": "s02_wander",
+      "text": "This one is unlucky. Its first steps go the wrong way, and it wanders off. It will come back eventually, but that can take a very long time."
+    },
+    {
+      "id": "s03_hist",
+      "text": "Run thousands of searches and record how long each one takes. Most are short. But a few are enormously long, and they never quite stop coming."
+    },
+    {
+      "id": "s03_inf",
+      "text": "For a walker on a line, those rare long searches are so long that the average search time is infinite. This is a classic fact, long known. The walker always finds the target, but on average you would wait forever."
+    },
+    {
+      "id": "s04_rule",
+      "text": "Now add one rule. Every so often, a timer rings. If the walker has not found the target yet, it jumps straight back to zero and starts a fresh, independent attempt."
+    },
+    {
+      "id": "s04_cut",
+      "text": "Watch the unlucky walker again. The timer rings, and the long excursion is cut short. On a later attempt it heads the right way and finds the target."
+    },
+    {
+      "id": "s04_finite",
+      "text": "Restarting throws away hopeless attempts. With a sensible timer, the average search time drops from infinite to an ordinary, finite number. That is the surprising power of restarting."
+    },
+    {
+      "id": "s05_fixed",
+      "text": "How should the timer work? The simplest choice is a fixed timer: it rings after exactly the same time on every attempt."
+    },
+    {
+      "id": "s05_random",
+      "text": "Another choice is a random timer. In every moment it has the same small chance of ringing, like a radioactive atom that could decay at any moment. Sometimes it rings early, sometimes late."
+    },
+    {
+      "id": "s05_recipe",
+      "text": "In general, a restart recipe is any rule for picking the wait before each restart, picked fresh and independently on every attempt. Fixed, random, or any blend of the two."
+    },
+    {
+      "id": "s05_ratio",
+      "text": "For any recipe, two numbers matter: how long one attempt lasts on average, and the chance that it succeeds. If attempts last two seconds and one in four succeeds, you need four attempts, so eight seconds in total."
+    },
+    {
+      "id": "s05_formula",
+      "text": "So the average search time is the average attempt length, divided by the success chance."
+    },
+    {
+      "id": "s06_map",
+      "text": "In real life you do not know where the keys are. You have a hunch: probably close, possibly far. Here is our map of where the target might be. Near is likely, and the chance fades with distance."
+    },
+    {
+      "id": "s06_curve",
+      "text": "Average over this map, and try random timers with different rates. Restart too often, and the walker never gets far. Too rarely, and it wanders off. The sweet spot is a rate of one, giving an average search time of exactly one."
+    },
+    {
+      "id": "s06_ponder",
+      "text": "But that only compares random timers with each other. Could a fixed timer, or some strange blend, do better? Out of every possible recipe, which is best? Pause, and think: how could you ever check infinitely many?"
+    },
+    {
+      "id": "s07_flip",
+      "text": "In 2025, Evans and Ray turned the question around. Start with a recipe, and ask: for which map is this recipe the natural choice?"
+    },
+    {
+      "id": "s07_f",
+      "text": "Take our random timer with rate one. Its success curve shows the chance that a single attempt finds a target at each distance. Close by, it is almost certain. Far away, it fades."
+    },
+    {
+      "id": "s07_square",
+      "text": "Their prescription: square the success curve, then rescale it so the total chance is one. For this timer, that gives exactly our map. It is called the conjugate map."
+    },
+    {
+      "id": "s07_flat",
+      "text": "They showed that on its conjugate map, a recipe is balanced: tiny tweaks do not help. But balanced is not the same as best. A flat spot could be a small dip, with a deeper valley elsewhere."
+    },
+    {
+      "id": "s07_checks",
+      "text": "Their checks against other recipes were numerical, and stayed inside two families of timers. So the big question was still open."
+    },
+    {
+      "id": "s08_thm",
+      "text": "The new result settles it for the walker on a line. Take any restart recipe whose conjugate map makes sense, and whose average time on that map is finite. Then it beats every other recipe on that map, and it is the only recipe that achieves the best."
+    },
+    {
+      "id": "s08_scope",
+      "text": "Every other recipe means any positive, finite waits, picked independently each attempt. Smart restarts that react to the walker, and restarts that cost extra time, are outside the theorem."
+    },
+    {
+      "id": "s09_sym",
+      "text": "Here is the key idea. The average length of an attempt can be built from the success curve, using a weight for every pair of distances, x and y. The weight is simply the smaller of the two. Swap x and y, and the weight stays the same."
+    },
+    {
+      "id": "s09_pairs",
+      "text": "Now bring in a rival recipe, and compare its success curve with ours as a ratio, distance by distance. The rival's average time becomes a sum over pairs. The pair x, y carries u over v, and the swapped pair carries v over u, with the same weight."
+    },
+    {
+      "id": "s09_identity",
+      "text": "Add the two together. u over v plus v over u always equals two, plus u minus v squared, over u times v."
+    },
+    {
+      "id": "s09_check",
+      "text": "Try u equals two and v equals one. Two plus a half is two and a half. And two, plus one squared over two, is also two and a half."
+    },
+    {
+      "id": "s09_ge",
+      "text": "The twos add up to exactly the cost of our recipe. Everything left over is a square divided by positive numbers, so it can never be negative. No rival can beat it."
+    },
+    {
+      "id": "s09_unique",
+      "text": "When is the leftover zero? Only when every square is zero, so the rival's success curve matches ours everywhere. And a success curve is like a fingerprint: it pins down the timer exactly. So the best recipe is unique."
+    },
+    {
+      "id": "s09_credit",
+      "text": "Credit where it is due. This pairing trick is known, and a closely matching version appears in work by Davila and Topp. What is new is using it here to prove the global best and its uniqueness, even against rivals whose average time is infinite."
+    },
+    {
+      "id": "s10_ex",
+      "text": "Back to our map. The theorem says the random timer with rate one is the unique best recipe, with average search time one."
+    },
+    {
+      "id": "s10_bars",
+      "text": "A computer check agrees. Random timers with rates one quarter and nine quarters both give four thirds. A blend of two timers gives about one point two seven. Thirty six random blends land between one point zero zero two and one point four five."
+    },
+    {
+      "id": "s10_fixed",
+      "text": "And every fixed timer is infinitely bad on this map, because a distant target needs an absurdly lucky attempt. That last point is our own quick calculation, not from the paper."
+    },
+    {
+      "id": "s10_proof",
+      "text": "No finite list of checks can cover infinitely many recipes. That is the proof's job."
+    },
+    {
+      "id": "s11_rooms",
+      "text": "The paper also studies a different search: a walker hopping between a few rooms. Each room has an exit, and the search ends when the walker leaves. A restart sends it back to the room it started in."
+    },
+    {
+      "id": "s11_rev",
+      "text": "Here the map says which room the walker starts in. The pairing trick now needs the network to be reversible: as much traffic flows from one room to another as flows back. Then the squared success prescription always gives the best recipe."
+    },
+    {
+      "id": "s11_converse",
+      "text": "The new part is the converse. Under a technical condition, if the prescription works for every recipe, then the network must be reversible. So the prescription is a test for reversibility."
+    },
+    {
+      "id": "s11_loop",
+      "text": "Here is a network that fails: three rooms in a one way loop, with exit rates one, two and three. Apply the prescription to a random timer of rate one. The average time is two thousand three hundred and thirty two over four thousand four hundred and fifty three."
+    },
+    {
+      "id": "s11_beat",
+      "text": "Now slow the timer to nine tenths. The average drops, by about one ten-thousandth. Tiny, but exact. The prescribed recipe is not the best, so without reversibility the prescription fails."
+    },
+    {
+      "id": "s12_status",
+      "text": "How sure can we be? The main theorem and the converse have careful written proofs, but they are not formalised in the Lean proof checker. Only the finite pairing algebra and the three room numbers were checked in Lean."
+    },
+    {
+      "id": "s12_review",
+      "text": "The paper has not been peer reviewed. The conjugate map and the pairing trick are earlier work, and whether these exact additions are new still needs a full check of the literature."
+    },
+    {
+      "id": "s12_recap",
+      "text": "So, three things. Restarting can turn an infinite average search into a finite one. Squaring a recipe's success curve gives a map where that recipe is balanced. And for a walker on a line, that recipe is the one best recipe, thanks to a hidden symmetry and a sum of squares."
+    },
+    {
+      "id": "s12_open",
+      "text": "What we still don't know: whether the same holds in two or three dimensions; what happens with smart or costly restarts; and the room networks that fail the technical condition."
+    },
+    {
+      "id": "s12_end",
+      "text": "So next time you lose your keys, going back to the door might not be giving up. It might be the smartest move."
+    }
+  ]
+}

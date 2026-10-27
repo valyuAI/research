@@ -1,0 +1,32 @@
+  monotonicity: 178024/192640 single-match reversals
+  manipulations: 272/6880 classes, 114240 checked, max gain 394103/1000000
+  progress: 500/6880 classes, 210000 manipulations, max gain so far 394103/1000000
+  manipulations: 629/6880 classes, 264180 checked, max gain 394103/1000000
+  progress: 1000/6880 classes, 420000 manipulations, max gain so far 394103/1000000
+  manipulations: 1082/6880 classes, 454440 checked, max gain 394103/1000000
+  manipulations: 1449/6880 classes, 608580 checked, max gain 394103/1000000
+  progress: 1500/6880 classes, 630000 manipulations, max gain so far 394103/1000000
+  manipulations: 1775/6880 classes, 745500 checked, max gain 397142/1000001
+  progress: 2000/6880 classes, 840000 manipulations, max gain so far 397142/1000001
+  manipulations: 2128/6880 classes, 893760 checked, max gain 397427/1000001
+  manipulations: 2468/6880 classes, 1036560 checked, max gain 397427/1000001
+  progress: 2500/6880 classes, 1050000 manipulations, max gain so far 397427/1000001
+  manipulations: 2775/6880 classes, 1165500 checked, max gain 397427/1000001
+  progress: 3000/6880 classes, 1260000 manipulations, max gain so far 397427/1000001
+  manipulations: 3134/6880 classes, 1316280 checked, max gain 397427/1000001
+  progress: 3500/6880 classes, 1470000 manipulations, max gain so far 397427/1000001
+  manipulations: 3629/6880 classes, 1524180 checked, max gain 397427/1000001
+  manipulations: 3957/6880 classes, 1661940 checked, max gain 397427/1000001
+  progress: 4000/6880 classes, 1680000 manipulations, max gain so far 397427/1000001
+  manipulations: 4383/6880 classes, 1840860 checked, max gain 397427/1000001
+  progress: 4500/6880 classes, 1890000 manipulations, max gain so far 397427/1000001
+  manipulations: 4915/6880 classes, 2064300 checked, max gain 397427/1000001
+  progress: 5000/6880 classes, 2100000 manipulations, max gain so far 397427/1000001
+  manipulations: 5397/6880 classes, 2266740 checked, max gain 2/5
+  progress: 5500/6880 classes, 2310000 manipulations, max gain so far 2/5
+  manipulations: 5914/6880 classes, 2483880 checked, max gain 2/5
+  progress: 6000/6880 classes, 2520000 manipulations, max gain so far 2/5
+  manipulations: 6384/6880 classes, 2681280 checked, max gain 2/5
+  progress: 6500/6880 classes, 2730000 manipulations, max gain so far 2/5
+n=8 k=3 mode=le: 6880 classes, 2889600 manipulations checked, max gain 2/5 <= alpha = 2/5: OK; top-cycle consistent; monotone (192640 single-match reversals checked)
+20 manipulations attain gain alpha, in 2 classes: 0011111001111001110111111010 (scores [5, 5, 5, 5, 5, 1, 1, 1]), 0011111001111001110111111111 (scores [5, 5, 5, 5, 5, 2, 1, 0])

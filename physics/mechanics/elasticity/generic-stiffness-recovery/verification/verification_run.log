@@ -1,0 +1,632 @@
+Python 3.13.7; SymPy 1.14.0
+
+START check_collision_incidence
+Built degree 6 slowness coefficients: 28
+Built degree 4 slowness coefficients: 15
+Built degree 2 slowness coefficients: 6
+{
+  "trace_rank": 6,
+  "trace_kernel_dimension": 15,
+  "H_basis_columns": [
+    [
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "-1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "-1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  ],
+  "source_variables": [
+    "c11",
+    "c12",
+    "c13",
+    "c14",
+    "c15",
+    "c16",
+    "c22",
+    "c23",
+    "c24",
+    "c25",
+    "c26",
+    "c33",
+    "c34",
+    "c35",
+    "c36",
+    "c44",
+    "c45",
+    "c46",
+    "c55",
+    "c56",
+    "c66"
+  ],
+  "H0_coordinates": [
+    "4",
+    "4",
+    "0",
+    "4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "-1",
+    "0",
+    "0",
+    "-1",
+    "0",
+    "-1"
+  ],
+  "H0_tensor": {
+    "c11": 2,
+    "c12": 4,
+    "c13": 4,
+    "c14": 0,
+    "c15": 0,
+    "c16": 0,
+    "c22": 2,
+    "c23": 4,
+    "c24": 0,
+    "c25": 0,
+    "c26": 0,
+    "c33": 2,
+    "c34": 0,
+    "c35": 0,
+    "c36": 0,
+    "c44": -1,
+    "c45": 0,
+    "c46": 0,
+    "c55": -1,
+    "c56": 0,
+    "c66": -1
+  },
+  "H0_incidence_rank": 15,
+  "H0_determinant": "2*(p1**2 + p2**2 + p3**2)**3",
+  "full_rank_incidence_dimension": 21,
+  "full_rank_collision_dimension_upper_bound": 20,
+  "scope": "This component verifies only the full-rank incidence. Separate rank-stratum certificates complete the paper argument."
+}
+PASS check_collision_incidence (1.7s)
+
+START check_minimum_rank_borel
+Built degree 6 slowness coefficients: 28
+Built degree 4 slowness coefficients: 15
+Built degree 2 slowness coefficients: 6
+harmonic_degree4: rank=6
+harmonic_degree2_times_norm: rank=11
+norm_squared: rank=15
+{
+  "field": "Q(i), embedded in C",
+  "tracefree_contraction_determinant": "4194304",
+  "raising_operator_rank": 12,
+  "raising_operator_kernel_dimension": 3,
+  "distinct_torus_weights": [
+    4,
+    2,
+    0
+  ],
+  "highest_weight_line_checks": [
+    {
+      "name": "harmonic_degree4",
+      "H_coordinates": [
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-I",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1"
+      ],
+      "incidence_rank": 6
+    },
+    {
+      "name": "harmonic_degree2_times_norm",
+      "H_coordinates": [
+        "0",
+        "5/2",
+        "0",
+        "-5/2",
+        "0",
+        "I/2",
+        "0",
+        "0",
+        "5*I/2",
+        "1",
+        "-I",
+        "0",
+        "-1",
+        "0",
+        "0"
+      ],
+      "incidence_rank": 11
+    },
+    {
+      "name": "norm_squared",
+      "H_coordinates": [
+        "2",
+        "2",
+        "0",
+        "2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1/2",
+        "0",
+        "0",
+        "-1/2",
+        "0",
+        "-1/2"
+      ],
+      "incidence_rank": 15
+    }
+  ],
+  "minimum_rank_lower_bound_using_Borel_fixed_point_theorem": 6,
+  "scope": "Exact algebraic ingredients. Requires the stated SO3 equivariance and Borel fixed-point theorem; not a full injectivity proof."
+}
+PASS check_minimum_rank_borel (1.5s)
+
+START check_rank6_tangent
+Normal block dimensions: 9 x 15
+Normal linear-map rank=10, affine tangent dimension=5
+{
+  "field": "Q(i)",
+  "basepoint_rank": 6,
+  "left_nullspace_dimension": 9,
+  "right_nullspace_dimension": 15,
+  "normal_linear_map_rank": 10,
+  "affine_rank6_locus_tangent_dimension_at_highest_weight_point": 5,
+  "implication": "Every projective rank<=6 component contains this unique eligible B-fixed point; hence its affine dimension is at most the displayed tangent dimension."
+}
+PASS check_rank6_tangent (0.6s)
+
+START check_normal_borel
+Built degree 6 slowness coefficients: 28
+Built degree 4 slowness coefficients: 15
+Built degree 2 slowness coefficients: 6
+{'weight': '0', 'eigenspace_dimension': 1, 'basis': [['-3*I', '-3*I', '0', '-5*I', '0', '0', '0', '-1', '2*I', '1']], 'normal_matrix_rank': 6}
+{'weight': '2', 'eigenspace_dimension': 1, 'basis': [['0', '-I', '0', 'I', '0', '0', '0', '1', '0', '0']], 'normal_matrix_rank': 2}
+PASS check_normal_borel (1.7s)
+
+START check_recursive_normal_borel
+Recursive normal dimensions=(7, 13); kernel=2; quotient=8
+{'weight': '0', 'eigenspace_dimension': 2, 'basis': [['0', '1', '0', '1', '0', '0', '0', '0'], ['-3*I', '0', '0', '0', '0', '0', '2*I', '1']]}
+PASS check_recursive_normal_borel (0.9s)
+
+START check_rank11_tangent
+Parsed 15-by-21 matrix and exact harmonic-degree-two point
+Exact base rank 11; left/right nullspace dimensions 4/10
+Normal-map rank 7; affine tangent dimension 8
+Projective chart h9=1: tangent dimension 7
+{
+  "field": "Q(i), characteristic zero",
+  "source_matrix_sha256": "f1aed397be6fdc22cfea4caaa7a4d3096e49d7e617c4c0a266e9fab9b39bf03e",
+  "point_source_sha256": "e3cd64b893f5f53da57a4d8c99104ef12f94751f9285a0adaa3c923a26f2e991",
+  "point_name": "harmonic_degree2_times_norm",
+  "basepoint_rank": 11,
+  "normal_map_rank": 7,
+  "nonzero_minor_determinant": "81",
+  "affine_tangent_dimension": 8,
+  "kernel_independence_minor_determinant": "1",
+  "projective_chart": "h9=1",
+  "projective_tangent_dimension": 7,
+  "rank11_incidence_fiber_dimension": 10,
+  "local_affine_incidence_dimension_bound_for_components_through_this_point": 18,
+  "scope": "Local dimension bound for rank<=11 components through this harmonic-degree-two point. Components whose Borel-fixed limit is only the rank-six point require separate analysis. No generic-injectivity conclusion."
+}
+PASS check_rank11_tangent (1.0s)
+
+START certify_rank14_pencil
+candidate minor 12: degree=15
+candidate minor 21: degree=15
+CERTIFIED: pencil has rank 15 at every complex projective point; rank<=14 locus has affine dimension <=13.
+PASS certify_rank14_pencil (0.6s)
+
+START verify_slice_certificates
+r13: Bezout product 1/6
+r13: Bezout product 2/6
+r13: Bezout product 3/6
+r13: Bezout product 4/6
+r13: Bezout product 5/6
+r13: Bezout product 6/6
+r13: determinant grid 100/120
+r13: determinant grid 120/120
+verify_slice_certificates: elapsed 10.4s
+verify_slice_certificates: elapsed 20.4s
+verify_slice_certificates: elapsed 30.5s
+r12: Bezout product 1/6
+r12: Bezout product 2/6
+r12: Bezout product 3/6
+r12: Bezout product 4/6
+r12: Bezout product 5/6
+r12: Bezout product 6/6
+r12: determinant grid 100/560
+r12: determinant grid 200/560
+r12: determinant grid 300/560
+r12: determinant grid 400/560
+r12: determinant grid 500/560
+r12: determinant grid 560/560
+Both complete projective-slice certificates independently verified.
+PASS verify_slice_certificates (40.0s)
+
+START verify_rank1_minor_certificate
+250/1638 minors inspected; span rank=19
+500/1638 minors inspected; span rank=25
+750/1638 minors inspected; span rank=32
+1000/1638 minors inspected; span rank=33
+1250/1638 minors inspected; span rank=33
+1500/1638 minors inspected; span rank=33
+All34 equations independently verified in the original minor span; support line verified.
+PASS verify_rank1_minor_certificate (1.6s)
+
+START check_finite_direction_interpolation
+Degree 2: 6 nodes, exact determinant 4
+Degree 4: 15 nodes, exact determinant 47775744
+PASS check_finite_direction_interpolation (0.4s)
+PASS all representation and normal-space arithmetic gates
+PASS embedded N2 matrix equals the reconstructed normal quotient
+
+START verify_minor_dimension_certificates
+Rank<=2, identity 19: exact original-minor reconstruction passed
+Rank<=2, identity 32: exact original-minor reconstruction passed
+Rank<=2, identity 58: exact original-minor reconstruction passed
+Rank<=2, identity 92: exact original-minor reconstruction passed
+Rank<=2, identity 98: exact original-minor reconstruction passed
+Rank<=2, identity 101: exact original-minor reconstruction passed
+Rank<=2: independently verified dimension upper bound 2
+Rank<=3, identity 68: exact original-minor reconstruction passed
+Rank<=3, identity 135: exact original-minor reconstruction passed
+Rank<=3, identity 198: exact original-minor reconstruction passed
+Rank<=3, identity 210: exact original-minor reconstruction passed
+Rank<=3, identity 213: exact original-minor reconstruction passed
+Rank<=3: independently verified dimension upper bound 3
+All identities and dimension bounds passed in 0.58s
+PASS verify_minor_dimension_certificates (0.7s)
+
+ALL ARITHMETIC GATES PASSED. Read the paper for the geometric deductions.

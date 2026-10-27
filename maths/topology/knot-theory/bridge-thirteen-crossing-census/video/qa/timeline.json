@@ -1,0 +1,240 @@
+[
+  {
+    "id": "h1",
+    "start": 0.0,
+    "duration": 13.104,
+    "scene": "Humps",
+    "global_start": 0.0
+  },
+  {
+    "id": "h2",
+    "start": 13.49999999999999,
+    "duration": 13.32,
+    "scene": "Humps",
+    "global_start": 13.49999999999999
+  },
+  {
+    "id": "h3",
+    "start": 27.200000000000138,
+    "duration": 14.856,
+    "scene": "Humps",
+    "global_start": 27.200000000000138
+  },
+  {
+    "id": "h4",
+    "start": 42.43333333333366,
+    "duration": 13.608,
+    "scene": "Humps",
+    "global_start": 42.43333333333366
+  },
+  {
+    "id": "l1",
+    "start": 0.0,
+    "duration": 14.256,
+    "scene": "Loops",
+    "global_start": 56.433333
+  },
+  {
+    "id": "l2",
+    "start": 14.633333333333308,
+    "duration": 15.96,
+    "scene": "Loops",
+    "global_start": 71.0666663333333
+  },
+  {
+    "id": "l3",
+    "start": 30.9666666666669,
+    "duration": 15.864,
+    "scene": "Loops",
+    "global_start": 87.3999996666669
+  },
+  {
+    "id": "p1",
+    "start": 0.0,
+    "duration": 14.52,
+    "scene": "Permutations",
+    "global_start": 103.633333
+  },
+  {
+    "id": "p2",
+    "start": 14.899999999999995,
+    "duration": 15.36,
+    "scene": "Permutations",
+    "global_start": 118.53333299999998
+  },
+  {
+    "id": "p3",
+    "start": 30.633333333333617,
+    "duration": 14.616,
+    "scene": "Permutations",
+    "global_start": 134.2666663333336
+  },
+  {
+    "id": "x1",
+    "start": 0.0,
+    "duration": 14.712,
+    "scene": "Crossing",
+    "global_start": 149.266666
+  },
+  {
+    "id": "x2",
+    "start": 15.09999999999998,
+    "duration": 12.504,
+    "scene": "Crossing",
+    "global_start": 164.36666599999995
+  },
+  {
+    "id": "x3",
+    "start": 28.000000000000014,
+    "duration": 15.216,
+    "scene": "Crossing",
+    "global_start": 177.266666
+  },
+  {
+    "id": "x4",
+    "start": 43.59999999999988,
+    "duration": 14.256,
+    "scene": "Crossing",
+    "global_start": 192.86666599999987
+  },
+  {
+    "id": "f1",
+    "start": 0.0,
+    "duration": 15.12,
+    "scene": "FixedValues",
+    "global_start": 207.499999
+  },
+  {
+    "id": "f2",
+    "start": 15.499999999999986,
+    "duration": 13.848,
+    "scene": "FixedValues",
+    "global_start": 222.999999
+  },
+  {
+    "id": "f3",
+    "start": 29.73333333333354,
+    "duration": 16.368,
+    "scene": "FixedValues",
+    "global_start": 237.23333233333355
+  },
+  {
+    "id": "f4",
+    "start": 46.50000000000013,
+    "duration": 18.408,
+    "scene": "FixedValues",
+    "global_start": 253.99999900000012
+  },
+  {
+    "id": "g1",
+    "start": 0.0,
+    "duration": 15.216,
+    "scene": "Connected",
+    "global_start": 272.799999
+  },
+  {
+    "id": "g2",
+    "start": 15.599999999999984,
+    "duration": 14.568,
+    "scene": "Connected",
+    "global_start": 288.399999
+  },
+  {
+    "id": "g3",
+    "start": 30.566666666666976,
+    "duration": 16.608,
+    "scene": "Connected",
+    "global_start": 303.366665666667
+  },
+  {
+    "id": "b1",
+    "start": 0.0,
+    "duration": 15.408,
+    "scene": "LowerBound",
+    "global_start": 320.366666
+  },
+  {
+    "id": "b2",
+    "start": 15.799999999999994,
+    "duration": 13.464,
+    "scene": "LowerBound",
+    "global_start": 336.166666
+  },
+  {
+    "id": "b3",
+    "start": 29.6333333333337,
+    "duration": 12.408,
+    "scene": "LowerBound",
+    "global_start": 349.99999933333373
+  },
+  {
+    "id": "u1",
+    "start": 0.0,
+    "duration": 15.864,
+    "scene": "Colouring",
+    "global_start": 362.799999
+  },
+  {
+    "id": "u2",
+    "start": 16.23333333333332,
+    "duration": 13.56,
+    "scene": "Colouring",
+    "global_start": 379.0333323333333
+  },
+  {
+    "id": "u3",
+    "start": 30.166666666667037,
+    "duration": 14.016,
+    "scene": "Colouring",
+    "global_start": 392.96666566666704
+  },
+  {
+    "id": "u4",
+    "start": 44.566666666666556,
+    "duration": 13.416,
+    "scene": "Colouring",
+    "global_start": 407.36666566666656
+  },
+  {
+    "id": "c1",
+    "start": 0.0,
+    "duration": 16.056,
+    "scene": "Census",
+    "global_start": 421.166666
+  },
+  {
+    "id": "c2",
+    "start": 16.433333333333312,
+    "duration": 15.264,
+    "scene": "Census",
+    "global_start": 437.59999933333336
+  },
+  {
+    "id": "c3",
+    "start": 32.06666666666693,
+    "duration": 16.704,
+    "scene": "Census",
+    "global_start": 453.23333266666697
+  },
+  {
+    "id": "z1",
+    "start": 0.0,
+    "duration": 17.352,
+    "scene": "Ending",
+    "global_start": 470.33333300000004
+  },
+  {
+    "id": "z2",
+    "start": 17.73333333333332,
+    "duration": 18.048,
+    "scene": "Ending",
+    "global_start": 488.0666663333334
+  },
+  {
+    "id": "z3",
+    "start": 36.166666666666934,
+    "duration": 20.016,
+    "scene": "Ending",
+    "global_start": 506.49999966666695
+  }
+]

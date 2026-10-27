@@ -1,0 +1,320 @@
+== 5x5, Campbell's game Hex(5,l): Red holds Hex(5,5) after every opening
+Replay certs/n5L5_0_red.txt.gz
+n=5 mode=L bound=5 first=(1,1) side=red winning sets=48 certificate entries=2096
+VERIFIED [n=5 mode=L bound=5 first=0 side=red]: Red stops Blue after first move (1,1); Red-to-move positions checked=2096
+Replay certs/n5L5_1_red.txt.gz
+n=5 mode=L bound=5 first=(1,2) side=red winning sets=48 certificate entries=1551
+VERIFIED [n=5 mode=L bound=5 first=1 side=red]: Red stops Blue after first move (1,2); Red-to-move positions checked=1551
+Replay certs/n5L5_2_red.txt.gz
+n=5 mode=L bound=5 first=(1,3) side=red winning sets=48 certificate entries=1442
+VERIFIED [n=5 mode=L bound=5 first=2 side=red]: Red stops Blue after first move (1,3); Red-to-move positions checked=1440
+Replay certs/n5L5_3_red.txt.gz
+n=5 mode=L bound=5 first=(1,4) side=red winning sets=48 certificate entries=1734
+VERIFIED [n=5 mode=L bound=5 first=3 side=red]: Red stops Blue after first move (1,4); Red-to-move positions checked=1732
+Replay certs/n5L5_4_red.txt.gz
+n=5 mode=L bound=5 first=(1,5) side=red winning sets=48 certificate entries=3563
+VERIFIED [n=5 mode=L bound=5 first=4 side=red]: Red stops Blue after first move (1,5); Red-to-move positions checked=3546
+Replay certs/n5L5_5_red.txt.gz
+n=5 mode=L bound=5 first=(2,1) side=red winning sets=48 certificate entries=2096
+VERIFIED [n=5 mode=L bound=5 first=5 side=red]: Red stops Blue after first move (2,1); Red-to-move positions checked=2096
+Replay certs/n5L5_6_red.txt.gz
+n=5 mode=L bound=5 first=(2,2) side=red winning sets=48 certificate entries=1682
+VERIFIED [n=5 mode=L bound=5 first=6 side=red]: Red stops Blue after first move (2,2); Red-to-move positions checked=1682
+Replay certs/n5L5_7_red.txt.gz
+n=5 mode=L bound=5 first=(2,3) side=red winning sets=48 certificate entries=2062
+VERIFIED [n=5 mode=L bound=5 first=7 side=red]: Red stops Blue after first move (2,3); Red-to-move positions checked=2060
+Replay certs/n5L5_8_red.txt.gz
+n=5 mode=L bound=5 first=(2,4) side=red winning sets=48 certificate entries=2741
+VERIFIED [n=5 mode=L bound=5 first=8 side=red]: Red stops Blue after first move (2,4); Red-to-move positions checked=2739
+Replay certs/n5L5_9_red.txt.gz
+n=5 mode=L bound=5 first=(2,5) side=red winning sets=48 certificate entries=2161
+VERIFIED [n=5 mode=L bound=5 first=9 side=red]: Red stops Blue after first move (2,5); Red-to-move positions checked=2161
+Replay certs/n5L5_10_red.txt.gz
+n=5 mode=L bound=5 first=(3,1) side=red winning sets=48 certificate entries=2096
+VERIFIED [n=5 mode=L bound=5 first=10 side=red]: Red stops Blue after first move (3,1); Red-to-move positions checked=2096
+Replay certs/n5L5_11_red.txt.gz
+n=5 mode=L bound=5 first=(3,2) side=red winning sets=48 certificate entries=1520
+VERIFIED [n=5 mode=L bound=5 first=11 side=red]: Red stops Blue after first move (3,2); Red-to-move positions checked=1516
+Replay certs/n5L5_12_red.txt.gz
+n=5 mode=L bound=5 first=(3,3) side=red winning sets=48 certificate entries=2766
+VERIFIED [n=5 mode=L bound=5 first=12 side=red]: Red stops Blue after first move (3,3); Red-to-move positions checked=2733
+Replay certs/n5L5_13_red.txt.gz
+n=5 mode=L bound=5 first=(3,4) side=red winning sets=48 certificate entries=1453
+VERIFIED [n=5 mode=L bound=5 first=13 side=red]: Red stops Blue after first move (3,4); Red-to-move positions checked=1450
+Replay certs/n5L5_14_red.txt.gz
+n=5 mode=L bound=5 first=(3,5) side=red winning sets=48 certificate entries=2161
+VERIFIED [n=5 mode=L bound=5 first=14 side=red]: Red stops Blue after first move (3,5); Red-to-move positions checked=2161
+Replay certs/n5L5_15_red.txt.gz
+n=5 mode=L bound=5 first=(4,1) side=red winning sets=48 certificate entries=2096
+VERIFIED [n=5 mode=L bound=5 first=15 side=red]: Red stops Blue after first move (4,1); Red-to-move positions checked=2096
+Replay certs/n5L5_16_red.txt.gz
+n=5 mode=L bound=5 first=(4,2) side=red winning sets=48 certificate entries=2658
+VERIFIED [n=5 mode=L bound=5 first=16 side=red]: Red stops Blue after first move (4,2); Red-to-move positions checked=2656
+Replay certs/n5L5_17_red.txt.gz
+n=5 mode=L bound=5 first=(4,3) side=red winning sets=48 certificate entries=2087
+VERIFIED [n=5 mode=L bound=5 first=17 side=red]: Red stops Blue after first move (4,3); Red-to-move positions checked=2085
+Replay certs/n5L5_18_red.txt.gz
+n=5 mode=L bound=5 first=(4,4) side=red winning sets=48 certificate entries=1760
+VERIFIED [n=5 mode=L bound=5 first=18 side=red]: Red stops Blue after first move (4,4); Red-to-move positions checked=1760
+Replay certs/n5L5_19_red.txt.gz
+n=5 mode=L bound=5 first=(4,5) side=red winning sets=48 certificate entries=2161
+VERIFIED [n=5 mode=L bound=5 first=19 side=red]: Red stops Blue after first move (4,5); Red-to-move positions checked=2161
+Replay certs/n5L5_20_red.txt.gz
+n=5 mode=L bound=5 first=(5,1) side=red winning sets=48 certificate entries=3905
+VERIFIED [n=5 mode=L bound=5 first=20 side=red]: Red stops Blue after first move (5,1); Red-to-move positions checked=3879
+Replay certs/n5L5_21_red.txt.gz
+n=5 mode=L bound=5 first=(5,2) side=red winning sets=48 certificate entries=1737
+VERIFIED [n=5 mode=L bound=5 first=21 side=red]: Red stops Blue after first move (5,2); Red-to-move positions checked=1735
+Replay certs/n5L5_22_red.txt.gz
+n=5 mode=L bound=5 first=(5,3) side=red winning sets=48 certificate entries=1433
+VERIFIED [n=5 mode=L bound=5 first=22 side=red]: Red stops Blue after first move (5,3); Red-to-move positions checked=1431
+Replay certs/n5L5_23_red.txt.gz
+n=5 mode=L bound=5 first=(5,4) side=red winning sets=48 certificate entries=1643
+VERIFIED [n=5 mode=L bound=5 first=23 side=red]: Red stops Blue after first move (5,4); Red-to-move positions checked=1643
+Replay certs/n5L5_24_red.txt.gz
+n=5 mode=L bound=5 first=(5,5) side=red winning sets=48 certificate entries=2161
+VERIFIED [n=5 mode=L bound=5 first=24 side=red]: Red stops Blue after first move (5,5); Red-to-move positions checked=2161
+== 5x5: Blue wins Hex(5,6) opening in the centre; Red holds it after every other opening
+Replay certs/n5L6_12.txt.gz
+n=5 mode=L bound=6 first=(3,3) side=blue winning sets=106 certificate entries=126213
+  checked 50000 positions
+  checked 100000 positions
+VERIFIED [n=5 mode=L bound=6 first=12 side=blue]: Blue wins with first move (3,3); Blue-to-move positions checked=106826, max Blue stones=12
+Replay certs/n5L6_0_red.txt.gz
+n=5 mode=L bound=6 first=(1,1) side=red winning sets=106 certificate entries=9514
+VERIFIED [n=5 mode=L bound=6 first=0 side=red]: Red stops Blue after first move (1,1); Red-to-move positions checked=9325
+Replay certs/n5L6_1_red.txt.gz
+n=5 mode=L bound=6 first=(1,2) side=red winning sets=106 certificate entries=10346
+VERIFIED [n=5 mode=L bound=6 first=1 side=red]: Red stops Blue after first move (1,2); Red-to-move positions checked=10171
+Replay certs/n5L6_2_red.txt.gz
+n=5 mode=L bound=6 first=(1,3) side=red winning sets=106 certificate entries=8845
+VERIFIED [n=5 mode=L bound=6 first=2 side=red]: Red stops Blue after first move (1,3); Red-to-move positions checked=8705
+Replay certs/n5L6_3_red.txt.gz
+n=5 mode=L bound=6 first=(1,4) side=red winning sets=106 certificate entries=8897
+VERIFIED [n=5 mode=L bound=6 first=3 side=red]: Red stops Blue after first move (1,4); Red-to-move positions checked=8640
+Replay certs/n5L6_4_red.txt.gz
+n=5 mode=L bound=6 first=(1,5) side=red winning sets=106 certificate entries=34444
+VERIFIED [n=5 mode=L bound=6 first=4 side=red]: Red stops Blue after first move (1,5); Red-to-move positions checked=33060
+Replay certs/n5L6_5_red.txt.gz
+n=5 mode=L bound=6 first=(2,1) side=red winning sets=106 certificate entries=9331
+VERIFIED [n=5 mode=L bound=6 first=5 side=red]: Red stops Blue after first move (2,1); Red-to-move positions checked=9137
+Replay certs/n5L6_6_red.txt.gz
+n=5 mode=L bound=6 first=(2,2) side=red winning sets=106 certificate entries=8385
+VERIFIED [n=5 mode=L bound=6 first=6 side=red]: Red stops Blue after first move (2,2); Red-to-move positions checked=8216
+Replay certs/n5L6_7_red.txt.gz
+n=5 mode=L bound=6 first=(2,3) side=red winning sets=106 certificate entries=5777
+VERIFIED [n=5 mode=L bound=6 first=7 side=red]: Red stops Blue after first move (2,3); Red-to-move positions checked=5425
+Replay certs/n5L6_8_red.txt.gz
+n=5 mode=L bound=6 first=(2,4) side=red winning sets=106 certificate entries=36811
+VERIFIED [n=5 mode=L bound=6 first=8 side=red]: Red stops Blue after first move (2,4); Red-to-move positions checked=35441
+Replay certs/n5L6_9_red.txt.gz
+n=5 mode=L bound=6 first=(2,5) side=red winning sets=106 certificate entries=13333
+VERIFIED [n=5 mode=L bound=6 first=9 side=red]: Red stops Blue after first move (2,5); Red-to-move positions checked=13243
+Replay certs/n5L6_10_red.txt.gz
+n=5 mode=L bound=6 first=(3,1) side=red winning sets=106 certificate entries=9396
+VERIFIED [n=5 mode=L bound=6 first=10 side=red]: Red stops Blue after first move (3,1); Red-to-move positions checked=9203
+Replay certs/n5L6_11_red.txt.gz
+n=5 mode=L bound=6 first=(3,2) side=red winning sets=106 certificate entries=11666
+VERIFIED [n=5 mode=L bound=6 first=11 side=red]: Red stops Blue after first move (3,2); Red-to-move positions checked=11378
+Replay certs/n5L6_13_red.txt.gz
+n=5 mode=L bound=6 first=(3,4) side=red winning sets=106 certificate entries=11362
+VERIFIED [n=5 mode=L bound=6 first=13 side=red]: Red stops Blue after first move (3,4); Red-to-move positions checked=11091
+Replay certs/n5L6_14_red.txt.gz
+n=5 mode=L bound=6 first=(3,5) side=red winning sets=106 certificate entries=9473
+VERIFIED [n=5 mode=L bound=6 first=14 side=red]: Red stops Blue after first move (3,5); Red-to-move positions checked=9278
+Replay certs/n5L6_15_red.txt.gz
+n=5 mode=L bound=6 first=(4,1) side=red winning sets=106 certificate entries=13081
+VERIFIED [n=5 mode=L bound=6 first=15 side=red]: Red stops Blue after first move (4,1); Red-to-move positions checked=12995
+Replay certs/n5L6_16_red.txt.gz
+n=5 mode=L bound=6 first=(4,2) side=red winning sets=106 certificate entries=36264
+VERIFIED [n=5 mode=L bound=6 first=16 side=red]: Red stops Blue after first move (4,2); Red-to-move positions checked=34896
+Replay certs/n5L6_17_red.txt.gz
+n=5 mode=L bound=6 first=(4,3) side=red winning sets=106 certificate entries=5724
+VERIFIED [n=5 mode=L bound=6 first=17 side=red]: Red stops Blue after first move (4,3); Red-to-move positions checked=5373
+Replay certs/n5L6_18_red.txt.gz
+n=5 mode=L bound=6 first=(4,4) side=red winning sets=106 certificate entries=8411
+VERIFIED [n=5 mode=L bound=6 first=18 side=red]: Red stops Blue after first move (4,4); Red-to-move positions checked=8242
+Replay certs/n5L6_19_red.txt.gz
+n=5 mode=L bound=6 first=(4,5) side=red winning sets=106 certificate entries=9347
+VERIFIED [n=5 mode=L bound=6 first=19 side=red]: Red stops Blue after first move (4,5); Red-to-move positions checked=9122
+Replay certs/n5L6_20_red.txt.gz
+n=5 mode=L bound=6 first=(5,1) side=red winning sets=106 certificate entries=34069
+VERIFIED [n=5 mode=L bound=6 first=20 side=red]: Red stops Blue after first move (5,1); Red-to-move positions checked=32788
+Replay certs/n5L6_21_red.txt.gz
+n=5 mode=L bound=6 first=(5,2) side=red winning sets=106 certificate entries=9314
+VERIFIED [n=5 mode=L bound=6 first=21 side=red]: Red stops Blue after first move (5,2); Red-to-move positions checked=9032
+Replay certs/n5L6_22_red.txt.gz
+n=5 mode=L bound=6 first=(5,3) side=red winning sets=106 certificate entries=8272
+VERIFIED [n=5 mode=L bound=6 first=22 side=red]: Red stops Blue after first move (5,3); Red-to-move positions checked=8119
+Replay certs/n5L6_23_red.txt.gz
+n=5 mode=L bound=6 first=(5,4) side=red winning sets=106 certificate entries=10002
+VERIFIED [n=5 mode=L bound=6 first=23 side=red]: Red stops Blue after first move (5,4); Red-to-move positions checked=9854
+Replay certs/n5L6_24_red.txt.gz
+n=5 mode=L bound=6 first=(5,5) side=red winning sets=106 certificate entries=9463
+VERIFIED [n=5 mode=L bound=6 first=24 side=red]: Red stops Blue after first move (5,5); Red-to-move positions checked=9250
+== 5x5, Hex_d(5): Red holds Hex_6(5) after every opening
+Replay certs/n5D6_0_red.txt.gz
+n=5 mode=D bound=6 first=(1,1) side=red winning sets=106 certificate entries=104
+VERIFIED [n=5 mode=D bound=6 first=0 side=red]: Red stops Blue after first move (1,1); Red-to-move positions checked=103
+Replay certs/n5D6_1_red.txt.gz
+n=5 mode=D bound=6 first=(1,2) side=red winning sets=106 certificate entries=122
+VERIFIED [n=5 mode=D bound=6 first=1 side=red]: Red stops Blue after first move (1,2); Red-to-move positions checked=121
+Replay certs/n5D6_2_red.txt.gz
+n=5 mode=D bound=6 first=(1,3) side=red winning sets=106 certificate entries=172
+VERIFIED [n=5 mode=D bound=6 first=2 side=red]: Red stops Blue after first move (1,3); Red-to-move positions checked=171
+Replay certs/n5D6_3_red.txt.gz
+n=5 mode=D bound=6 first=(1,4) side=red winning sets=106 certificate entries=164
+VERIFIED [n=5 mode=D bound=6 first=3 side=red]: Red stops Blue after first move (1,4); Red-to-move positions checked=163
+Replay certs/n5D6_4_red.txt.gz
+n=5 mode=D bound=6 first=(1,5) side=red winning sets=106 certificate entries=237
+VERIFIED [n=5 mode=D bound=6 first=4 side=red]: Red stops Blue after first move (1,5); Red-to-move positions checked=236
+Replay certs/n5D6_5_red.txt.gz
+n=5 mode=D bound=6 first=(2,1) side=red winning sets=106 certificate entries=108
+VERIFIED [n=5 mode=D bound=6 first=5 side=red]: Red stops Blue after first move (2,1); Red-to-move positions checked=107
+Replay certs/n5D6_6_red.txt.gz
+n=5 mode=D bound=6 first=(2,2) side=red winning sets=106 certificate entries=125
+VERIFIED [n=5 mode=D bound=6 first=6 side=red]: Red stops Blue after first move (2,2); Red-to-move positions checked=124
+Replay certs/n5D6_7_red.txt.gz
+n=5 mode=D bound=6 first=(2,3) side=red winning sets=106 certificate entries=182
+VERIFIED [n=5 mode=D bound=6 first=7 side=red]: Red stops Blue after first move (2,3); Red-to-move positions checked=181
+Replay certs/n5D6_8_red.txt.gz
+n=5 mode=D bound=6 first=(2,4) side=red winning sets=106 certificate entries=239
+VERIFIED [n=5 mode=D bound=6 first=8 side=red]: Red stops Blue after first move (2,4); Red-to-move positions checked=238
+Replay certs/n5D6_9_red.txt.gz
+n=5 mode=D bound=6 first=(2,5) side=red winning sets=106 certificate entries=129
+VERIFIED [n=5 mode=D bound=6 first=9 side=red]: Red stops Blue after first move (2,5); Red-to-move positions checked=129
+Replay certs/n5D6_10_red.txt.gz
+n=5 mode=D bound=6 first=(3,1) side=red winning sets=106 certificate entries=115
+VERIFIED [n=5 mode=D bound=6 first=10 side=red]: Red stops Blue after first move (3,1); Red-to-move positions checked=114
+Replay certs/n5D6_11_red.txt.gz
+n=5 mode=D bound=6 first=(3,2) side=red winning sets=106 certificate entries=158
+VERIFIED [n=5 mode=D bound=6 first=11 side=red]: Red stops Blue after first move (3,2); Red-to-move positions checked=157
+Replay certs/n5D6_12_red.txt.gz
+n=5 mode=D bound=6 first=(3,3) side=red winning sets=106 certificate entries=368
+VERIFIED [n=5 mode=D bound=6 first=12 side=red]: Red stops Blue after first move (3,3); Red-to-move positions checked=366
+Replay certs/n5D6_13_red.txt.gz
+n=5 mode=D bound=6 first=(3,4) side=red winning sets=106 certificate entries=158
+VERIFIED [n=5 mode=D bound=6 first=13 side=red]: Red stops Blue after first move (3,4); Red-to-move positions checked=157
+Replay certs/n5D6_14_red.txt.gz
+n=5 mode=D bound=6 first=(3,5) side=red winning sets=106 certificate entries=118
+VERIFIED [n=5 mode=D bound=6 first=14 side=red]: Red stops Blue after first move (3,5); Red-to-move positions checked=117
+Replay certs/n5D6_15_red.txt.gz
+n=5 mode=D bound=6 first=(4,1) side=red winning sets=106 certificate entries=126
+VERIFIED [n=5 mode=D bound=6 first=15 side=red]: Red stops Blue after first move (4,1); Red-to-move positions checked=126
+Replay certs/n5D6_16_red.txt.gz
+n=5 mode=D bound=6 first=(4,2) side=red winning sets=106 certificate entries=253
+VERIFIED [n=5 mode=D bound=6 first=16 side=red]: Red stops Blue after first move (4,2); Red-to-move positions checked=252
+Replay certs/n5D6_17_red.txt.gz
+n=5 mode=D bound=6 first=(4,3) side=red winning sets=106 certificate entries=179
+VERIFIED [n=5 mode=D bound=6 first=17 side=red]: Red stops Blue after first move (4,3); Red-to-move positions checked=178
+Replay certs/n5D6_18_red.txt.gz
+n=5 mode=D bound=6 first=(4,4) side=red winning sets=106 certificate entries=128
+VERIFIED [n=5 mode=D bound=6 first=18 side=red]: Red stops Blue after first move (4,4); Red-to-move positions checked=127
+Replay certs/n5D6_19_red.txt.gz
+n=5 mode=D bound=6 first=(4,5) side=red winning sets=106 certificate entries=105
+VERIFIED [n=5 mode=D bound=6 first=19 side=red]: Red stops Blue after first move (4,5); Red-to-move positions checked=104
+Replay certs/n5D6_20_red.txt.gz
+n=5 mode=D bound=6 first=(5,1) side=red winning sets=106 certificate entries=238
+VERIFIED [n=5 mode=D bound=6 first=20 side=red]: Red stops Blue after first move (5,1); Red-to-move positions checked=237
+Replay certs/n5D6_21_red.txt.gz
+n=5 mode=D bound=6 first=(5,2) side=red winning sets=106 certificate entries=165
+VERIFIED [n=5 mode=D bound=6 first=21 side=red]: Red stops Blue after first move (5,2); Red-to-move positions checked=164
+Replay certs/n5D6_22_red.txt.gz
+n=5 mode=D bound=6 first=(5,3) side=red winning sets=106 certificate entries=173
+VERIFIED [n=5 mode=D bound=6 first=22 side=red]: Red stops Blue after first move (5,3); Red-to-move positions checked=172
+Replay certs/n5D6_23_red.txt.gz
+n=5 mode=D bound=6 first=(5,4) side=red winning sets=106 certificate entries=116
+VERIFIED [n=5 mode=D bound=6 first=23 side=red]: Red stops Blue after first move (5,4); Red-to-move positions checked=115
+Replay certs/n5D6_24_red.txt.gz
+n=5 mode=D bound=6 first=(5,5) side=red winning sets=106 certificate entries=102
+VERIFIED [n=5 mode=D bound=6 first=24 side=red]: Red stops Blue after first move (5,5); Red-to-move positions checked=101
+== 5x5: Blue wins Hex_7(5) from (3,3), (2,4), (4,2); Red holds it after the other openings
+Replay certs/n5D7_0_red.txt.gz
+n=5 mode=D bound=7 first=(1,1) side=red winning sets=164 certificate entries=787
+VERIFIED [n=5 mode=D bound=7 first=0 side=red]: Red stops Blue after first move (1,1); Red-to-move positions checked=779
+Replay certs/n5D7_1_red.txt.gz
+n=5 mode=D bound=7 first=(1,2) side=red winning sets=164 certificate entries=956
+VERIFIED [n=5 mode=D bound=7 first=1 side=red]: Red stops Blue after first move (1,2); Red-to-move positions checked=949
+Replay certs/n5D7_2_red.txt.gz
+n=5 mode=D bound=7 first=(1,3) side=red winning sets=164 certificate entries=1392
+VERIFIED [n=5 mode=D bound=7 first=2 side=red]: Red stops Blue after first move (1,3); Red-to-move positions checked=1380
+Replay certs/n5D7_3_red.txt.gz
+n=5 mode=D bound=7 first=(1,4) side=red winning sets=164 certificate entries=699
+VERIFIED [n=5 mode=D bound=7 first=3 side=red]: Red stops Blue after first move (1,4); Red-to-move positions checked=685
+Replay certs/n5D7_4_red.txt.gz
+n=5 mode=D bound=7 first=(1,5) side=red winning sets=164 certificate entries=1592
+VERIFIED [n=5 mode=D bound=7 first=4 side=red]: Red stops Blue after first move (1,5); Red-to-move positions checked=1555
+Replay certs/n5D7_5_red.txt.gz
+n=5 mode=D bound=7 first=(2,1) side=red winning sets=164 certificate entries=816
+VERIFIED [n=5 mode=D bound=7 first=5 side=red]: Red stops Blue after first move (2,1); Red-to-move positions checked=808
+Replay certs/n5D7_6_red.txt.gz
+n=5 mode=D bound=7 first=(2,2) side=red winning sets=164 certificate entries=1020
+VERIFIED [n=5 mode=D bound=7 first=6 side=red]: Red stops Blue after first move (2,2); Red-to-move positions checked=1015
+Replay certs/n5D7_7_red.txt.gz
+n=5 mode=D bound=7 first=(2,3) side=red winning sets=164 certificate entries=1040
+VERIFIED [n=5 mode=D bound=7 first=7 side=red]: Red stops Blue after first move (2,3); Red-to-move positions checked=1013
+Replay certs/n5D7_8.txt.gz
+n=5 mode=D bound=7 first=(2,4) side=blue winning sets=164 certificate entries=12557
+VERIFIED [n=5 mode=D bound=7 first=8 side=blue]: Blue wins with first move (2,4); Blue-to-move positions checked=12358, max Blue stones=7
+Replay certs/n5D7_9_red.txt.gz
+n=5 mode=D bound=7 first=(2,5) side=red winning sets=164 certificate entries=1041
+VERIFIED [n=5 mode=D bound=7 first=9 side=red]: Red stops Blue after first move (2,5); Red-to-move positions checked=1030
+Replay certs/n5D7_10_red.txt.gz
+n=5 mode=D bound=7 first=(3,1) side=red winning sets=164 certificate entries=895
+VERIFIED [n=5 mode=D bound=7 first=10 side=red]: Red stops Blue after first move (3,1); Red-to-move positions checked=887
+Replay certs/n5D7_11_red.txt.gz
+n=5 mode=D bound=7 first=(3,2) side=red winning sets=164 certificate entries=1273
+VERIFIED [n=5 mode=D bound=7 first=11 side=red]: Red stops Blue after first move (3,2); Red-to-move positions checked=1265
+Replay certs/n5D7_12.txt.gz
+n=5 mode=D bound=7 first=(3,3) side=blue winning sets=164 certificate entries=12686
+VERIFIED [n=5 mode=D bound=7 first=12 side=blue]: Blue wins with first move (3,3); Blue-to-move positions checked=12651, max Blue stones=7
+Replay certs/n5D7_13_red.txt.gz
+n=5 mode=D bound=7 first=(3,4) side=red winning sets=164 certificate entries=1241
+VERIFIED [n=5 mode=D bound=7 first=13 side=red]: Red stops Blue after first move (3,4); Red-to-move positions checked=1234
+Replay certs/n5D7_14_red.txt.gz
+n=5 mode=D bound=7 first=(3,5) side=red winning sets=164 certificate entries=882
+VERIFIED [n=5 mode=D bound=7 first=14 side=red]: Red stops Blue after first move (3,5); Red-to-move positions checked=874
+Replay certs/n5D7_15_red.txt.gz
+n=5 mode=D bound=7 first=(4,1) side=red winning sets=164 certificate entries=1087
+VERIFIED [n=5 mode=D bound=7 first=15 side=red]: Red stops Blue after first move (4,1); Red-to-move positions checked=1076
+Replay certs/n5D7_16.txt.gz
+n=5 mode=D bound=7 first=(4,2) side=blue winning sets=164 certificate entries=12387
+VERIFIED [n=5 mode=D bound=7 first=16 side=blue]: Blue wins with first move (4,2); Blue-to-move positions checked=12190, max Blue stones=7
+Replay certs/n5D7_17_red.txt.gz
+n=5 mode=D bound=7 first=(4,3) side=red winning sets=164 certificate entries=1077
+VERIFIED [n=5 mode=D bound=7 first=17 side=red]: Red stops Blue after first move (4,3); Red-to-move positions checked=1049
+Replay certs/n5D7_18_red.txt.gz
+n=5 mode=D bound=7 first=(4,4) side=red winning sets=164 certificate entries=988
+VERIFIED [n=5 mode=D bound=7 first=18 side=red]: Red stops Blue after first move (4,4); Red-to-move positions checked=984
+Replay certs/n5D7_19_red.txt.gz
+n=5 mode=D bound=7 first=(4,5) side=red winning sets=164 certificate entries=758
+VERIFIED [n=5 mode=D bound=7 first=19 side=red]: Red stops Blue after first move (4,5); Red-to-move positions checked=750
+Replay certs/n5D7_20_red.txt.gz
+n=5 mode=D bound=7 first=(5,1) side=red winning sets=164 certificate entries=1538
+VERIFIED [n=5 mode=D bound=7 first=20 side=red]: Red stops Blue after first move (5,1); Red-to-move positions checked=1500
+Replay certs/n5D7_21_red.txt.gz
+n=5 mode=D bound=7 first=(5,2) side=red winning sets=164 certificate entries=799
+VERIFIED [n=5 mode=D bound=7 first=21 side=red]: Red stops Blue after first move (5,2); Red-to-move positions checked=784
+Replay certs/n5D7_22_red.txt.gz
+n=5 mode=D bound=7 first=(5,3) side=red winning sets=164 certificate entries=1446
+VERIFIED [n=5 mode=D bound=7 first=22 side=red]: Red stops Blue after first move (5,3); Red-to-move positions checked=1433
+Replay certs/n5D7_23_red.txt.gz
+n=5 mode=D bound=7 first=(5,4) side=red winning sets=164 certificate entries=966
+VERIFIED [n=5 mode=D bound=7 first=23 side=red]: Red stops Blue after first move (5,4); Red-to-move positions checked=959
+Replay certs/n5D7_24_red.txt.gz
+n=5 mode=D bound=7 first=(5,5) side=red winning sets=164 certificate entries=737
+VERIFIED [n=5 mode=D bound=7 first=24 side=red]: Red stops Blue after first move (5,5); Red-to-move positions checked=729
+ALL CHECKS PASSED
+rejected: Blue Hex(5,6) certificate relabelled as Hex(5,5): FAIL: no certificate move for key (0, 135432, 16234888)
+rejected: Blue Hex_7(5) certificate relabelled as Hex_6(5): FAIL: no certificate move for key (5, 4096, 33554430)
+rejected: Red Hex(5,5) certificate relabelled as Hex(5,6): FAIL: no Red move for key (0, 4099, 33554039)
+rejected: Red Hex_6(5) certificate relabelled as Hex_7(5): FAIL: no Red move for key (6, 4096, 33554431)
+rejected: Blue certificate with its first entry deleted: FAIL: no certificate move for key (0, 4096, 33554430)
+rejected: Blue certificate with a move onto a Blue stone: FAIL: illegal or irrelevant move 12 at key (0, 4096, 33554430)
+rejected: Blue certificate with a move off the board: FAIL: illegal or irrelevant move 25 at key (0, 4096, 33554430)
+rejected: Red certificate with its first entry deleted: FAIL: no Red move for key (0, 4096, 33554431)
+rejected: Blue certificate claimed for another opening: FAIL: no certificate move for key (0, 1, 33554429)
+rejected: Empty certificate on a 1x1 board: FAIL: bad header ['#', 'n=1', 'mode=L', 'bound=0', 'first=0']
+ALL 10 CORRUPTED CERTIFICATES REJECTED
+figures written to .
+Built paper.pdf

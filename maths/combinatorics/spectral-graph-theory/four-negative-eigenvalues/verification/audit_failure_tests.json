@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "cases": {
+    "clean_package_without_generated_output": {
+      "returncode": 0,
+      "expected_pass": true
+    },
+    "required_generated_output_missing": {
+      "returncode": 1,
+      "expected_pass": false
+    },
+    "missing_termination_level": {
+      "returncode": 1,
+      "expected_pass": false
+    },
+    "partial_generated_output": {
+      "returncode": 1,
+      "expected_pass": false
+    }
+  }
+}

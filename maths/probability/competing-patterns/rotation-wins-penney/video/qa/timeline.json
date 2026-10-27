@@ -1,0 +1,212 @@
+[
+  {
+    "id": "p01",
+    "start": 0.0,
+    "duration": 15.264,
+    "scene": "RankAndRace"
+  },
+  {
+    "id": "p02",
+    "start": 15.633333333333322,
+    "duration": 12.96,
+    "scene": "RankAndRace"
+  },
+  {
+    "id": "p03",
+    "start": 28.966666666666782,
+    "duration": 15.912,
+    "scene": "RankAndRace"
+  },
+  {
+    "id": "p04",
+    "start": 45.26666666666671,
+    "duration": 14.112,
+    "scene": "RankAndRace"
+  },
+  {
+    "id": "p05",
+    "start": 59.766666666666254,
+    "duration": 17.856,
+    "scene": "RankAndRace"
+  },
+  {
+    "id": "p06",
+    "start": 77.9999999999993,
+    "duration": 16.416,
+    "scene": "RankAndRace"
+  },
+  {
+    "id": "p07",
+    "start": 94.8,
+    "duration": 18.648,
+    "scene": "LocalOverlap"
+  },
+  {
+    "id": "p08",
+    "start": 113.83333333333333,
+    "duration": 15.36,
+    "scene": "LocalOverlap"
+  },
+  {
+    "id": "p09",
+    "start": 129.56666666666695,
+    "duration": 15.912,
+    "scene": "LocalOverlap"
+  },
+  {
+    "id": "p10",
+    "start": 145.86666666666667,
+    "duration": 17.52,
+    "scene": "LocalOverlap"
+  },
+  {
+    "id": "p11",
+    "start": 163.7666666666664,
+    "duration": 17.52,
+    "scene": "LocalOverlap"
+  },
+  {
+    "id": "p12",
+    "start": 181.66666700000002,
+    "duration": 17.616,
+    "scene": "CancelMarks"
+  },
+  {
+    "id": "p13",
+    "start": 199.66666700000002,
+    "duration": 16.656,
+    "scene": "CancelMarks"
+  },
+  {
+    "id": "p14",
+    "start": 216.70000033333366,
+    "duration": 15.048,
+    "scene": "CancelMarks"
+  },
+  {
+    "id": "p15",
+    "start": 232.1333336666665,
+    "duration": 15.504,
+    "scene": "CancelMarks"
+  },
+  {
+    "id": "p16",
+    "start": 248.03333366666618,
+    "duration": 17.4,
+    "scene": "CancelMarks"
+  },
+  {
+    "id": "p17",
+    "start": 265.83333400000004,
+    "duration": 15.048,
+    "scene": "Interleavings"
+  },
+  {
+    "id": "p18",
+    "start": 281.2666673333334,
+    "duration": 14.16,
+    "scene": "Interleavings"
+  },
+  {
+    "id": "p19",
+    "start": 295.80000066666696,
+    "duration": 17.856,
+    "scene": "Interleavings"
+  },
+  {
+    "id": "p20",
+    "start": 314.033334,
+    "duration": 15.456,
+    "scene": "Tail"
+  },
+  {
+    "id": "p21",
+    "start": 329.86666733333334,
+    "duration": 18.864,
+    "scene": "Tail"
+  },
+  {
+    "id": "p22",
+    "start": 349.100000666667,
+    "duration": 15.504,
+    "scene": "Tail"
+  },
+  {
+    "id": "p23",
+    "start": 365.00000066666666,
+    "duration": 18.168,
+    "scene": "Tail"
+  },
+  {
+    "id": "p24",
+    "start": 383.56666733333304,
+    "duration": 16.968,
+    "scene": "Tail"
+  },
+  {
+    "id": "p25",
+    "start": 400.93333400000006,
+    "duration": 16.008,
+    "scene": "UniformRange"
+  },
+  {
+    "id": "p26",
+    "start": 417.33333400000004,
+    "duration": 18.216,
+    "scene": "UniformRange"
+  },
+  {
+    "id": "p27",
+    "start": 435.9333340000005,
+    "duration": 19.464,
+    "scene": "UniformRange"
+  },
+  {
+    "id": "p28",
+    "start": 455.76666700000004,
+    "duration": 16.368,
+    "scene": "Certificates"
+  },
+  {
+    "id": "p29",
+    "start": 472.5333336666667,
+    "duration": 15.96,
+    "scene": "Certificates"
+  },
+  {
+    "id": "p30",
+    "start": 488.86666700000035,
+    "duration": 16.368,
+    "scene": "Certificates"
+  },
+  {
+    "id": "p31",
+    "start": 505.6333336666667,
+    "duration": 19.752,
+    "scene": "Certificates"
+  },
+  {
+    "id": "p32",
+    "start": 525.7666670000001,
+    "duration": 15.504,
+    "scene": "Conclusion"
+  },
+  {
+    "id": "p33",
+    "start": 541.6666670000001,
+    "duration": 14.448,
+    "scene": "Conclusion"
+  },
+  {
+    "id": "p34",
+    "start": 556.5000003333337,
+    "duration": 18.048,
+    "scene": "Conclusion"
+  },
+  {
+    "id": "p35",
+    "start": 574.9333336666668,
+    "duration": 15.048,
+    "scene": "Conclusion"
+  }
+]

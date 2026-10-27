@@ -1,0 +1,41 @@
+"""Resume the already paused render under the campaign's shared lock."""
+import datetime
+import fcntl
+import json
+import os
+from pathlib import Path
+import signal
+import time
+
+ROOT = Path(__file__).resolve().parent
+STATUS = Path('<unpublished-record-eca48a9d4452>')
+
+def report(message):
+  print(message, flush=True)
+  with STATUS.open('a') as f:
+    f.write('\n- '+datetime.datetime.now(datetime.timezone.utc).isoformat()+': '+message+'\n')
+
+with open('<unpublished-record-213d9f60335a>', 'a') as lock:
+  while True:
+    try:
+      os.kill(96759, 0)
+      reason = 'legacy render 96759'
+    except ProcessLookupError:
+      try:
+        fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        break
+      except BlockingIOError:
+        reason = 'shared final-render lock'
+    report('CTLN resume waiting for '+reason)
+    time.sleep(15)
+  pids = json.loads((ROOT/'paused-pids.json').read_text())
+  report(f'CTLN lock holder {os.getpid()} acquired shared lock; resuming {pids}')
+  for pid in reversed(pids):
+    os.kill(pid, signal.SIGCONT)
+  while True:
+    state = json.loads((ROOT/'active-job.json').read_text())
+    if state['exit_code'] is not None:
+      report(f'CTLN render completed with exit {state["exit_code"]}; releasing shared lock')
+      raise SystemExit(state['exit_code'])
+    report(f'CTLN shared lock held by {os.getpid()}; render PID {pids[1]}; log {ROOT / "final.log"}')
+    time.sleep(15)

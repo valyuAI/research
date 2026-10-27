@@ -1,0 +1,141 @@
+\documentclass[11pt]{amsart}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\HJ}{\operatorname{HJ}}
+\newcommand{\GG}{\operatorname{G}}
+\title[Off-diagonal Hales--Jewett numbers at prime successors]{Exact off-diagonal Hales--Jewett numbers at prime successors}
+\author{Harvey Yorke}
+\ifdefined\journalversion
+  \hypersetup{pdftitle={Exact off-diagonal Hales-Jewett numbers at prime successors},pdfauthor={Harvey Yorke}}
+\else
+  \author{Valyu DeepResearch}
+  \hypersetup{pdftitle={Exact off-diagonal Hales-Jewett numbers at prime successors},pdfauthor={Harvey Yorke and Valyu DeepResearch}}
+\fi
+\address{Valyu AI}
+\date{18 October 2026}
+\keywords{Hales--Jewett numbers, Ramsey theory, modular colorings}
+% Keep AMS title spacing, with each author's affiliation directly below the name.
+\newcommand{\paperAuthorBlock}[1]{%
+  \begin{minipage}[t]{.44\textwidth}
+    \centering\normalfont\normalsize
+    #1\par
+    \small Valyu AI\par
+  \end{minipage}%
+}
+\makeatletter
+\renewcommand{\@setauthors}{%
+  \begingroup
+  \trivlist
+  \centering\normalfont\normalsize
+  \@topsep30\p@\relax
+  \advance\@topsep by -\baselineskip
+  \item\relax
+  \ifdefined\journalversion
+    \paperAuthorBlock{Harvey Yorke}%
+  \else
+    \paperAuthorBlock{Harvey Yorke}\hspace{.06\textwidth}%
+    \paperAuthorBlock{Valyu DeepResearch}%
+  \fi
+  \endtrivlist
+  \endgroup
+}
+\renewcommand{\@setaddresses}{}
+\makeatother
+\begin{document}
+\begin{abstract}
+Let $\HJ(k,2;2)$ be the least dimension $n$ in which every red--blue coloring of $\{0,\ldots,k-1\}^n$ contains a red full combinatorial line or a blue pair of consecutive points on such a line. We prove $\HJ(p+1,2;2)=p+1$ for every prime $p$. More generally, $\HJ(k,2;2)\ge p+1$ whenever $p<k$ is prime. The proof modifies a coordinate-sum coloring modulo $p$ at the zero word and the unit vectors. In particular, $\HJ(8,2;2)=8$, resolving a case left undecided by Conlon, Farnsworth and Robertson. Together with their reported geometric value, this also disproves their proposed comparison between the combinatorial and geometric numbers.
+\end{abstract}
+\maketitle
+
+\section{Definitions and result}
+
+Let $A_k=\{0,1,\ldots,k-1\}$. A variable word of length $n$ is a member of $(A_k\cup\{*\})^n$ containing at least one wildcard. Write $w(a)$ for the word obtained by replacing every wildcard by $a$. A full combinatorial line is $\{w(a):a\in A_k\}$. A consecutive two-point partial line is $\{w(a),w(a+1)\}$ for some $0\le a<k-1$.
+
+Following Definitions 10 and 11 of \cite{CFR}, $\HJ(k,2;2)$ is the least dimension in which every red--blue coloring contains either a red full line or a blue consecutive two-point partial line. We abbreviate this number to $\HJ(k,2)$. The consecutive requirement is essential; the first and last alphabet values are not adjacent. These are off-diagonal numbers, distinct from the classical diagonal numbers $\HJ(k;2)$.
+
+Conlon, Farnsworth and Robertson proved $\HJ(k,2)\le k$ and $\HJ(p,2)=p$ for prime $p$ \cite[Theorem 12 and Corollary 16]{CFR}. More generally, if $p$ is the largest prime at most $k$, their Theorem 15 gives $\HJ(k,2)\ge p$. They conjectured equality $\HJ(k,2)=k$ for every $k\ge2$. Their computations establish it through $k=7$, but leave $7\le\HJ(8,2)\le8$. The following construction improves their prime lower bound by one whenever the alphabet has at least $p+1$ symbols.
+
+\begin{theorem}\label{thm:lower}
+Let $p$ be prime and $k\ge p+1$. There is a red--blue coloring of $A_k^p$ with no red full line and no blue consecutive two-point partial line. Consequently,
+\[
+\HJ(k,2)\ge p+1.
+\]
+\end{theorem}
+
+\begin{corollary}\label{cor:exact}
+For every prime $p$, $\HJ(p+1,2)=p+1$. In particular,
+\[
+\HJ(8,2)=8,\qquad \HJ(12,2)=12.
+\]
+For composite $k$, if $p$ is the largest prime below $k$, then
+$p+1\le\HJ(k,2)\le k$.
+\end{corollary}
+
+The cases $p=2,3,5$ recover exact values already recorded in \cite[Table 3]{CFR}; $p=7$ settles its first undecided alphabet size. The general conjecture remains open when both $k$ and $k-1$ are composite, beginning with $k=9$ and $k=10$.
+
+\section{A boundary repair of the modular coloring}
+
+The modular argument for the prime-alphabet lower bound uses invertibility of every nonzero wildcard count modulo $p$; see \cite[Theorem 15]{CFR} and \cite{Farnsworth}. In dimension $p$, the all-wildcard line is the additional obstruction. The construction below repairs it while preserving the other lines.
+
+\begin{proof}[Proof of Theorem~\ref{thm:lower}]
+For $x=(x_1,\ldots,x_p)$ put $s(x)=\sum_i x_i$. Color $x$ blue exactly when
+\begin{equation}\label{eq:color}
+s(x)=0\quad\text{or}\quad\bigl(s(x)\equiv1\pmod p\ \text{and}\ s(x)>1\bigr).
+\end{equation}
+Equivalently, start with the coloring that makes residue $1$ modulo $p$ blue, add the all-zero word, and remove the $p$ unit vectors. The extra alphabet value $p$ will repair the case in which a line's removed blue point occurs at $w(0)$.
+
+Fix a variable word with $d$ wildcards and fixed-coordinate sum $S$. Thus $1\le d\le p$ and
+\[
+s(w(a))=S+da.
+\]
+If $d=p$, then $S=0$. Every sum is divisible by $p$, so \eqref{eq:color} makes precisely $w(0)$ blue. Both required properties hold for this line.
+
+Assume $d<p$. Two adjacent sums cannot both be congruent to $1$ modulo $p$, because their difference is $d$. Deleting blue points therefore cannot create a blue consecutive pair. A pair involving the newly blue all-zero word must consist of $w(0)$ and $w(1)$ with $S=0$. Their sums are $0$ and $d$. If $d=1$, the latter point was removed; if $2\le d<p$, it does not have residue $1$. Thus no consecutive pair is blue.
+
+It remains to find a blue point on the full line. Since $d$ is invertible modulo $p$, some $a\in\{0,\ldots,p-1\}$ satisfies $S+da\equiv1\pmod p$. If $S+da>1$, this point is blue. Otherwise nonnegativity gives $S+da=1$. There are only two possibilities. If $a=0$, then $S=1$, and $w(p)$ has sum $1+dp>1$ and remains blue. If $a>0$, then $S=0$ and $d=a=1$, and $w(0)$ is blue. The value $p$ is available because $k\ge p+1$. Every full line therefore contains a blue point. Restricting the coloring to coordinate faces gives avoiding colorings in all smaller dimensions, proving the lower bound.
+\end{proof}
+
+\section{The upper bound and consequences}
+
+For completeness, we include the upper bound from \cite[Theorem 12]{CFR}, so the exact-value argument is self-contained.
+
+\begin{proposition}[Conlon--Farnsworth--Robertson]\label{prop:upper}
+For every $k\ge2$, $\HJ(k,2)\le k$.
+\end{proposition}
+\begin{proof}
+Suppose a coloring of $A_k^k$ has neither forbidden configuration. The diagonal full line contains a blue constant word $c^k$.
+
+First suppose $c<k-1$, and set $a=c$. For $i=0,\ldots,k-1$, consider the axis line whose first $k-1$ coordinates consist of $k-1-i$ copies of $a$, followed by $i$ copies of $a+1$. Choose a blue point on each axis line, and let $b_i$ be its last coordinate. Choose $b_0=c$, using the blue constant word. If $b_i=b_j$ with $i<j$, the two chosen points form a blue consecutive partial line, a contradiction. The $k$ values $b_i$ are therefore all distinct. Some $b_j=c+1$ with $j>0$. Its blue point and $c^k$ again form a blue consecutive partial line.
+
+If $c=k-1$, use $a=k-2$ and the same axis lines, choosing $b_{k-1}=c$. Distinctness gives some $b_j=c-1$ with $j<k-1$. That chosen blue point and $c^k$ form a forbidden consecutive pair. This contradiction proves the upper bound.
+\end{proof}
+
+Corollary~\ref{cor:exact} follows by combining Theorem~\ref{thm:lower} with Proposition~\ref{prop:upper}.
+
+\paragraph{A comparison with geometric lines.}
+In the geometric variant of \cite{CFR}, a variable word may also contain reversed wildcards, replaced by $k-1-a$ when the ordinary wildcards are replaced by $a$. A geometric line has at least one wildcard of each orientation. The corresponding off-diagonal number is denoted $\GG(k,2)$, again with consecutive pairs for the blue obstruction. Question D of \cite{CFR} asks whether $\HJ(k,2)\le\GG(k,2)$ for all $k$. Their Table 3 reports $\GG(8,2)=7$, so Corollary~\ref{cor:exact} gives
+\[
+\HJ(8,2)=8>7=\GG(8,2).
+\]
+This negative answer uses their reported geometric computation. The combinatorial theorem and its proof do not depend on that computation.
+
+\paragraph{Finite verification and discovery.}
+For $p=7$, a search among coordinate-permutation-invariant colorings found \eqref{eq:color}: in $A_8^7$, precisely the sums $0,8,15,22,29,36,43$ are blue. Symmetric and one-weight colorings also underlie recent lower bounds for the classical diagonal numbers~\cite{Mouhib}; the present contribution concerns the off-diagonal consecutive-line problem. There are $\binom{14}{7}=3432$ coordinate histograms and $\binom{14}{6}=3003$ full-line orbits. A separate verifier enumerated all $9^7-8^7=2{,}685{,}817$ ordered variable words and found no forbidden configuration. It also compared the short rule with the saved histogram witness on all $8^7=2{,}097{,}152$ points. There are $299{,}587$ blue points. These finite checks supplement the proof; they are not assumptions of it.
+
+\paragraph{Formal verification.}
+The accompanying Lean source formalizes words, full lines, consecutive partial lines, and the least forced dimension. Using Lean 4.35.0 and mathlib 4.35.0, it proves the coloring construction, the general lower bound, the upper bound in Proposition~\ref{prop:upper}, and the exact prime-successor theorem, including the cases $8$ and $12$. The checked declarations use only Lean's standard logical axioms; no theorem is left as an admitted proof or supplied as an additional axiom. The geometric computation and the claim of priority are outside this formal verification.
+
+\ifdefined\journalversion
+\section*{Research assistance and reproducibility}
+Coding agents implemented the local SAT search and exhaustive verifier, developed and revised the elementary argument, produced the Lean formalization, and drafted and edited this manuscript. Valyu DeepResearch supported the literature search, priority checks and adversarial proof review after the construction was obtained. The elementary proof is self-contained; the accompanying source and finite certificates permit independent reproduction. Formal checking establishes the stated theorem, not priority or the correctness of the separately reported geometric computation.
+\fi
+
+\bibliographystyle{amsplain}
+\bibliography{references}
+\end{document}

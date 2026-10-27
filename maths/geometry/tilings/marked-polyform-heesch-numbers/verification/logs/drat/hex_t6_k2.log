@@ -1,0 +1,16 @@
+[12:47:26] build hex_t6_k2 hex [[0, 0], [1, -2], [1, -1], [2, -1]] k=2 
+hex cells=[[0, 0], [1, -2], [1, -1], [2, -1]] k=2 imb=1 radius=10.9: placements 5196 vars 68989 clauses 514805 (1.8s)
+wrote hex_t6_k2.cnf
+a8975e7c6d8ea4e837100f73b5c8345e0476c5f497bc2ce85e5cc8f86608adb5  hex_t6_k2.cnf
+[12:47:28] cadical start
+s UNSATISFIABLE
+[12:48:24] cadical rc=20 (56s) proof bytes 26529810
+88d8bcc83ff6403512c09e89e454d466204c06ecd4bf239401a228c3334314c2  hex_t6_k2.drat
+c 45069 of 514805 clauses in core                            
+c 265286 of 464716 lemmas in core using 15843434 resolution steps
+c 0 RAT lemmas in core; 144071 redundant literals in core lemmas
+s VERIFIED
+c verification time: 70.257 seconds
+[12:49:34] drat-trim done (70s)
+DRAT_VERIFIED hex_t6_k2
+[12:49:36] END rc=20

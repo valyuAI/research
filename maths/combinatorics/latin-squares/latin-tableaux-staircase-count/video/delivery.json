@@ -1,0 +1,30 @@
+{
+  "title": "Four new ways, every time",
+  "duration_seconds": 486.733333,
+  "native_resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "clips": 32,
+  "max_clip_seconds": 19.848,
+  "scenes": [
+    "Rules",
+    "Grow",
+    "ForcedMiddle",
+    "FourWays",
+    "Invariants",
+    "Induction",
+    "Scope"
+  ],
+  "source_hashes_unchanged": true,
+  "audio_alignment": {
+    "method": "Central waveform correlation after mono 8kHz decoding; encoding delay allowed. Not listening.",
+    "minimum_correlation": 0.9834150567261035,
+    "maximum_absolute_offset_seconds": 0.021375
+  },
+  "listening_review": false,
+  "scope": "Latin squares and staircase tableaux, one exact six-to-seven-column extension, forced entries, two independent swaps, invariant preservation and induction. This is an independent verification note; the earlier 22 October 2026 proof has priority."
+}

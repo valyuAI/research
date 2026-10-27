@@ -1,0 +1,37 @@
+[
+  {
+    "scene": "TinyStrategy",
+    "start": 0.0,
+    "end": 71.33138
+  },
+  {
+    "scene": "TwoCosts",
+    "start": 71.33138,
+    "end": 101.463411
+  },
+  {
+    "scene": "TheActualGame",
+    "start": 101.463411,
+    "end": 210.692187
+  },
+  {
+    "scene": "AdaptiveProof",
+    "start": 210.692187,
+    "end": 259.45755199999996
+  },
+  {
+    "scene": "Checking",
+    "start": 259.45755199999996,
+    "end": 355.61705699999993
+  },
+  {
+    "scene": "SixBySix",
+    "start": 355.61705699999993,
+    "end": 455.87981699999995
+  },
+  {
+    "scene": "Evidence",
+    "start": 455.87981699999995,
+    "end": 559.14388
+  }
+]

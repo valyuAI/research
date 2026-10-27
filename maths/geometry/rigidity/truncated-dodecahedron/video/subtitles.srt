@@ -1,0 +1,519 @@
+1
+00:00:00,000 --> 00:00:04,159
+Here are four sticks, joined at the corners by hinges.
+
+2
+00:00:04,159 --> 00:00:08,163
+Push the top, and the square wobbles into a rhombus.
+
+3
+00:00:08,163 --> 00:00:12,168
+Every stick keeps its length, yet the shape changes.
+
+4
+00:00:12,467 --> 00:00:18,035
+Now try three sticks. However hard you push, the triangle keeps its shape.
+
+5
+00:00:18,333 --> 00:00:23,744
+A shape that can't wobble, except by sliding or turning as a whole, is called rigid.
+
+6
+00:00:23,744 --> 00:00:27,093
+That's why bridges and cranes are full of triangles.
+
+7
+00:00:27,367 --> 00:00:32,453
+Now go to three dimensions: a box of twelve sticks, with six faces.
+
+8
+00:00:32,453 --> 00:00:36,857
+The rules: sticks keep their lengths, and faces stay flat.
+
+9
+00:00:36,857 --> 00:00:38,983
+But a face may change shape.
+
+10
+00:00:39,300 --> 00:00:46,260
+The box still wobbles. It leans over, and each square face becomes a flat rhombus.
+
+11
+00:00:46,567 --> 00:00:52,631
+Now meet the truncated dodecahedron: sixty corners, ninety sticks, twenty triangles,
+
+12
+00:00:52,631 --> 00:00:55,735
+and twelve ten-sided faces called decagons.
+
+13
+00:00:56,067 --> 00:01:01,076
+The triangles can't change shape. But each decagon is a ring of ten sticks that could
+
+14
+00:01:01,076 --> 00:01:04,023
+flex within its plane. Can the whole solid wobble?
+
+15
+00:01:04,023 --> 00:01:05,379
+Pause and make a guess.
+
+16
+00:01:05,700 --> 00:01:11,697
+In twenty twenty-six, three mathematicians tested thirty-one famous solids this way.
+
+17
+00:01:11,697 --> 00:01:14,767
+This was the only one they couldn't decide.
+
+18
+00:01:14,767 --> 00:01:17,052
+The answer is no. Let's see why.
+
+19
+00:01:17,967 --> 00:01:23,904
+A first idea: count. In the flat square, each corner needs two numbers, so eight numbers.
+
+20
+00:01:23,904 --> 00:01:29,775
+The sticks give four rules. And sliding or turning the whole square uses three freedoms.
+
+21
+00:01:30,067 --> 00:01:34,854
+Eight minus four minus three leaves one: exactly the wobble we saw.
+
+22
+00:01:34,854 --> 00:01:38,998
+For the triangle, six minus three minus three leaves zero.
+
+23
+00:01:38,998 --> 00:01:39,427
+Rigid.
+
+24
+00:01:39,700 --> 00:01:44,836
+In space, each corner needs three numbers, and so does each face's flat plane.
+
+25
+00:01:44,836 --> 00:01:47,668
+That's two hundred and seventy-six numbers.
+
+26
+00:01:47,967 --> 00:01:53,740
+There are ninety stick rules, and a hundred and eighty rules saying a corner lies on
+
+27
+00:01:53,740 --> 00:01:58,071
+a face. Take away six ways to slide and turn, and zero is left.
+
+28
+00:01:58,367 --> 00:02:04,623
+But the box also counts to zero, and the box wobbles: some rules quietly repeat each
+
+29
+00:02:04,623 --> 00:02:10,134
+other. Euler's formula makes this count zero for every solid of this kind.
+
+30
+00:02:10,134 --> 00:02:12,071
+Counting can never decide.
+
+31
+00:02:12,866 --> 00:02:16,057
+To look closer, imagine a wobble just starting.
+
+32
+00:02:16,057 --> 00:02:21,285
+At that first instant, each corner sets off in some direction, at some speed.
+
+33
+00:02:21,285 --> 00:02:22,778
+Draw that as an arrow.
+
+34
+00:02:23,066 --> 00:02:28,097
+For a stick not to stretch or squash at first, its two ends must move equally along the
+
+35
+00:02:28,097 --> 00:02:31,682
+stick. So the shadows of their arrows on the stick must match.
+
+36
+00:02:31,966 --> 00:02:37,185
+In the square, the top corners slide sideways and the bottom ones stay put.
+
+37
+00:02:37,185 --> 00:02:42,404
+The upright sticks see two zero shadows; the top stick sees two equal ones.
+
+38
+00:02:42,404 --> 00:02:43,030
+All pass.
+
+39
+00:02:43,300 --> 00:02:48,900
+An arrow pattern that keeps every length unchanged at the first instant is called an
+
+40
+00:02:48,900 --> 00:02:52,900
+infinitesimal flex. Looking for one is the first-order test.
+
+41
+00:02:53,700 --> 00:02:59,771
+But passing that test isn't enough. Fix two sticks in a straight line, pinned at both
+
+42
+00:02:59,771 --> 00:03:02,700
+ends, and push the middle joint sideways.
+
+43
+00:03:03,000 --> 00:03:07,963
+The arrow points straight across both sticks, so both shadows are zero.
+
+44
+00:03:07,963 --> 00:03:11,808
+The first-order test is passed. Yet the joint is stuck.
+
+45
+00:03:12,100 --> 00:03:14,834
+Move the joint up by a small amount, t.
+
+46
+00:03:14,834 --> 00:03:20,583
+By Pythagoras, each stick would need length the square root of one plus t squared.
+
+47
+00:03:20,583 --> 00:03:23,668
+That's too long, by about half of t squared.
+
+48
+00:03:23,966 --> 00:03:29,263
+That error grows like t squared, too slowly for the first-order test to see.
+
+49
+00:03:29,263 --> 00:03:32,469
+Could nudging the joint along the line fix it?
+
+50
+00:03:32,469 --> 00:03:37,000
+The left stick needs a nudge left, the right stick a nudge right.
+
+51
+00:03:37,000 --> 00:03:37,766
+Impossible.
+
+52
+00:03:38,066 --> 00:03:42,011
+That clash is called a second-order obstruction.
+
+53
+00:03:42,011 --> 00:03:48,914
+So the tests come in layers: errors like t, then t squared, then t cubed, and so on.
+
+54
+00:03:49,700 --> 00:03:55,640
+Now test our solid. The first-order test finds four independent infinitesimal flexes,
+
+55
+00:03:55,640 --> 00:03:59,204
+not counting slides and turns. Here is one of them.
+
+56
+00:03:59,533 --> 00:04:05,673
+Any mix works too: v zero times the first, plus v one times the second, and so on.
+
+57
+00:04:05,673 --> 00:04:08,893
+Four numbers describe every possible start.
+
+58
+00:04:09,200 --> 00:04:14,507
+Follow the arrows in a straight line, and the sticks begin to stretch, just as before,
+
+59
+00:04:14,507 --> 00:04:16,112
+by amounts like t squared.
+
+60
+00:04:17,033 --> 00:04:22,051
+Now the second-order test: bend the path to cancel those t squared errors.
+
+61
+00:04:22,051 --> 00:04:26,255
+Here it always works: all forty second-order numbers are zero.
+
+62
+00:04:26,255 --> 00:04:29,849
+That's where the twenty twenty-six paper had to stop.
+
+63
+00:04:30,133 --> 00:04:33,810
+The bent path's errors now grow like t cubed.
+
+64
+00:04:33,810 --> 00:04:40,755
+After cancelling all we can, four leftover errors remain, each a cubic in v zero to v
+
+65
+00:04:40,755 --> 00:04:41,245
+three.
+
+66
+00:04:41,533 --> 00:04:46,875
+A real wobble needs all four leftovers to be zero, for some choice of the four numbers
+
+67
+00:04:46,875 --> 00:04:51,037
+that isn't all zeros. If only all zeros works, no wobble can start.
+
+68
+00:04:51,333 --> 00:04:57,765
+Here's a small version. Take two numbers, x and y, and two leftovers: x squared minus
+
+69
+00:04:57,765 --> 00:05:04,197
+y squared, and x times y. The first one alone is zero all along these diagonal lines.
+
+70
+00:05:04,466 --> 00:05:11,193
+The second is zero along the axes. The only point on both is the origin, where x and
+
+71
+00:05:11,193 --> 00:05:12,074
+y are zero.
+
+72
+00:05:12,366 --> 00:05:18,345
+Algebra proves it. Multiply the first leftover by x, the second by y, and add.
+
+73
+00:05:18,345 --> 00:05:21,488
+The middle terms cancel, leaving x cubed.
+
+74
+00:05:21,488 --> 00:05:25,014
+So if both leftovers are zero, x must be zero.
+
+75
+00:05:25,300 --> 00:05:31,389
+For the solid, a computer found a certificate, a list of numbers anyone can check, that
+
+76
+00:05:31,389 --> 00:05:37,478
+does the same. It combines the four cubics into v zero to the ninth power, and likewise
+
+77
+00:05:37,478 --> 00:05:39,508
+for v one, v two and v three.
+
+78
+00:05:40,300 --> 00:05:43,725
+Finding those multipliers takes exact arithmetic.
+
+79
+00:05:43,725 --> 00:05:49,738
+The solid's coordinates involve the golden ratio, about one point six one eight, whose
+
+80
+00:05:49,738 --> 00:05:51,556
+square is itself plus one.
+
+81
+00:05:51,833 --> 00:05:55,654
+Decimals bring rounding errors, and rounding can fake a wobble.
+
+82
+00:05:55,654 --> 00:06:00,324
+A numerical search in the twenty twenty-six paper found what looked like one.
+
+83
+00:06:00,324 --> 00:06:02,993
+With more careful numerics, it snapped back.
+
+84
+00:06:03,266 --> 00:06:07,936
+So do the arithmetic on a clock with one thousand and nine hours.
+
+85
+00:06:07,936 --> 00:06:10,882
+One thousand plus twenty lands on eleven.
+
+86
+00:06:10,882 --> 00:06:14,186
+Every answer is exact, and numbers never grow.
+
+87
+00:06:14,466 --> 00:06:18,932
+On this clock, six hundred and twenty-seven plays the golden ratio.
+
+88
+00:06:18,932 --> 00:06:24,864
+Its square is three hundred and ninety-three thousand, one hundred and twenty-nine, which
+
+89
+00:06:24,864 --> 00:06:28,530
+lands on six hundred and twenty-eight: itself plus one.
+
+90
+00:06:28,800 --> 00:06:34,560
+And because one thousand and nine is prime, division always works too.
+
+91
+00:06:35,333 --> 00:06:42,028
+Here is the first leftover, in clock numbers: six hundred and forty-nine v zero cubed,
+
+92
+00:06:42,028 --> 00:06:44,597
+plus nineteen more terms like it.
+
+93
+00:06:44,866 --> 00:06:50,008
+Each square in this grid stands for one of the two hundred and twenty possible terms
+
+94
+00:06:50,008 --> 00:06:53,986
+whose powers add up to nine. A lit square holds a nonzero number.
+
+95
+00:06:54,266 --> 00:06:59,445
+Add the first leftover times its multiplier: two hundred and one squares light up.
+
+96
+00:06:59,445 --> 00:07:02,729
+Add the second: one hundred and eighty-two stay lit.
+
+97
+00:07:02,729 --> 00:07:05,066
+The third: one hundred and sixty-one.
+
+98
+00:07:05,333 --> 00:07:12,012
+And the fourth. Everything cancels except one square: v zero to the ninth, with coefficient
+
+99
+00:07:12,012 --> 00:07:12,893
+exactly one.
+
+100
+00:07:13,166 --> 00:07:16,614
+The same happens for v one, v two and v three.
+
+101
+00:07:16,614 --> 00:07:22,908
+So if all four leftovers vanish, so do all four numbers: no mix of flexes passes the
+
+102
+00:07:22,908 --> 00:07:24,182
+third-order test.
+
+103
+00:07:24,466 --> 00:07:29,749
+Terms beyond t cubed only add pieces whose powers add up to ten or more, and a standard
+
+104
+00:07:29,749 --> 00:07:33,634
+result called Nakayama's lemma shows they can't rescue a wobble.
+
+105
+00:07:34,432 --> 00:07:38,689
+But the real solid lives in the real numbers, not on a clock.
+
+106
+00:07:38,689 --> 00:07:41,200
+Why should the clock's answer count?
+
+107
+00:07:41,499 --> 00:07:46,543
+Start simple. If a whole number is zero, its clock reading is zero.
+
+108
+00:07:46,543 --> 00:07:50,307
+So a nonzero reading proves the number isn't zero.
+
+109
+00:07:50,599 --> 00:07:56,163
+A wobble is that kind of zero fact. If the real solid could wobble, its equations, read
+
+110
+00:07:56,163 --> 00:08:01,663
+on the clock, would wobble too. The clock shows no wobble, so the real solid has none.
+
+111
+00:08:01,932 --> 00:08:06,922
+The reverse fails: one thousand and nine reads zero on its own clock.
+
+112
+00:08:06,922 --> 00:08:11,117
+A clock can invent a wobble, but it can't hide a real one.
+
+113
+00:08:11,117 --> 00:08:12,780
+So one clock is enough.
+
+114
+00:08:13,566 --> 00:08:19,941
+So what is proved? The truncated dodecahedron is locally rigid: any nearby shape with
+
+115
+00:08:19,941 --> 00:08:24,891
+the same sticks and flat faces is the same solid, moved or turned.
+
+116
+00:08:24,891 --> 00:08:26,166
+It cannot wobble.
+
+117
+00:08:26,499 --> 00:08:31,755
+It says nothing about far-away shapes that no wobble could reach.
+
+118
+00:08:32,066 --> 00:08:37,310
+The proof is computer-assisted. A small independent program, using exact arithmetic,
+
+119
+00:08:37,310 --> 00:08:42,616
+rebuilds the solid and its equations from scratch and checks every identity, in under
+
+120
+00:08:42,616 --> 00:08:43,178
+a second.
+
+121
+00:08:43,499 --> 00:08:47,027
+Turning those identities into rigidity is a written proof.
+
+122
+00:08:47,027 --> 00:08:52,562
+It was reviewed within the project, but not checked step by step by proof-checking software
+
+123
+00:08:52,562 --> 00:08:55,907
+like Lean, and outside experts haven't refereed it yet.
+
+124
+00:08:56,832 --> 00:09:03,336
+To recap. One: for solids like this, counting always balances, so it can't decide.
+
+125
+00:09:03,632 --> 00:09:09,744
+Two: four infinitesimal flexes pass the first two layers of tests, but at the third layer,
+
+126
+00:09:09,744 --> 00:09:12,392
+four cubic leftovers rule them all out.
+
+127
+00:09:12,666 --> 00:09:18,797
+Three: on a clock with one thousand and nine hours, that algebra is exact, and a clock
+
+128
+00:09:18,797 --> 00:09:22,434
+that sees no wobble proves the real solid has none.
+
+129
+00:09:22,732 --> 00:09:28,581
+Still open: outside experts have yet to check the argument, far-away shapes are untouched,
+
+130
+00:09:28,581 --> 00:09:34,300
+and this settles one solid, not a general rule for which solids need these deeper tests.

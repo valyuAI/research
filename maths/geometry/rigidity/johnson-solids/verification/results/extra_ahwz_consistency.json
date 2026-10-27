@@ -1,0 +1,36 @@
+{
+ "data_extra/dodecahedron.json": {
+  "name": "Regular Dodecahedron",
+  "field_degree": 2,
+  "cols": 96,
+  "rank": 85,
+  "flex_dim": 5,
+  "stress_dim": 5,
+  "macaulay": {
+   "degree": 6,
+   "rank": 210,
+   "monomials": 210
+  },
+  "second_order_rigid": true,
+  "method": "Macaulay matrix full rank: no common complex zero",
+  "prestress_certificate_found": false,
+  "not_prestress_stable_certificate": true
+ },
+ "data_extra/truncated_icosahedron.json": {
+  "name": "Truncated Icosahedron",
+  "field_degree": 2,
+  "cols": 276,
+  "rank": 265,
+  "flex_dim": 5,
+  "stress_dim": 5,
+  "macaulay": {
+   "degree": 6,
+   "rank": 210,
+   "monomials": 210
+  },
+  "second_order_rigid": true,
+  "method": "Macaulay matrix full rank: no common complex zero",
+  "prestress_certificate_found": false,
+  "not_prestress_stable_certificate": true
+ }
+}

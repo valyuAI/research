@@ -1,0 +1,291 @@
+\documentclass[11pt]{amsart}
+\usepackage[a4paper,textwidth=158mm,textheight=237mm,centering]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,mathtools,amssymb,graphicx,flafter,booktabs}
+\usepackage[unicode,colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\F}{\mathbb F}
+\newcommand{\wt}{\operatorname{wt}}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\Tr}{\operatorname{T}}
+\newcommand{\N}{\operatorname{N}}
+\newcommand{\qq}[1]{[\![#1]\!]}
+\title{All qudit stabilizer codes of distance three}
+\author{Harvey Yorke}
+\address{Valyu AI}
+\ifdefined\journalversion\else
+\author{Valyu DeepResearch}
+\address{Valyu AI}
+\fi
+\ifdefined\journalversion
+  \hypersetup{pdftitle={All qudit stabilizer codes of distance three},pdfauthor={Harvey Yorke}}
+\else
+  \hypersetup{pdftitle={All qudit stabilizer codes of distance three},pdfauthor={Harvey Yorke and Valyu DeepResearch}}
+\fi
+\date{25 October 2026}
+\keywords{Quantum error-correcting codes, qudit stabilizer codes, partial spreads, impure codes, Pl\"ucker coordinates}
+\newcommand{\paperAuthorBlock}[1]{%
+  \begin{minipage}[t]{.44\textwidth}
+    \centering\normalfont\normalsize #1\par\small Valyu AI\par
+  \end{minipage}%
+}
+\makeatletter
+\renewcommand{\@setauthors}{%
+  \begingroup\trivlist\centering\normalfont\normalsize
+  \@topsep30\p@\relax\advance\@topsep by -\baselineskip\item\relax
+  \ifdefined\journalversion
+    \paperAuthorBlock{Harvey Yorke}%
+  \else
+    \paperAuthorBlock{Harvey Yorke}\hspace{.06\textwidth}\paperAuthorBlock{Valyu DeepResearch}%
+  \fi
+  \endtrivlist\endgroup
+}
+\renewcommand{\@setaddresses}{}
+\makeatother
+\begin{document}
+\raggedbottom
+\begin{abstract}
+For every prime power $q\ge3$ we determine exactly which parameters are realized by $\F_q$-linear stabilizer codes of minimum distance three. A code $\qq{n,k,3}_q$ with $k\ge1$ exists if and only if $r=n-k\ge4$ and $n\le\mu_q(r)$, where $\mu_q(r)$ is the maximum size of a partial line spread of $\mathrm{PG}(r-1,q)$: $(q^r-1)/(q^2-1)$ for even $r$ and $(q^r-q^3)/(q^2-1)+1$ for odd $r$. Codes that are pure to distance three attain every admissible parameter. For odd $r$ the maximum length lies strictly below the quantum Hamming bound; for $r=5$ it is $q^3+1$. For odd $r\ge5$, Bierbrauer and Edel had constructed pure codes of length $\mu_q(r)-1$; we add the endpoint and every shorter admissible length. The upper bound covers impure codes through a geometric form of Gottesman's support-removal argument that applies to every distance $d\ge3$: positions outside the supports of the low-weight stabilizers carry independent lines in a subspace whose codimension is the number of independent low-weight stabilizers. The constructions use a Gabidulin-type partial spread whose Pl\"ucker vectors depend quadratically on a field parameter. Weighted zero-sum blocks of this family and an explicit absorption of the last line give every admissible length. The results settle six entries of the qudit tables at codetables.de: there are $\qq{65,60,3}_4$, $\qq{62,57,3}_4$, $\qq{61,56,3}_4$ and $\qq{59,54,3}_4$ codes, and no $\qq{29,24,3}_3$ or $\qq{66,61,3}_4$ codes. Combined with projection and Thas's bound for generalized arcs, the reduction settles five further entries and lowers one more upper bound. Computer-generated certificates for the base cases and all claimed codes are checked by an independent exact verifier.
+\end{abstract}
+\maketitle
+
+\section{Introduction and results}
+
+A stabilizer code $\qq{n,k,d}_q$ on $n$ qudits of prime-power dimension $q$ encodes $k$ qudits and detects every error of weight less than $d$~\cite{AshikhminKnill2001,KKKS2006}. Distance three is the first case that corrects errors. For qubits, Yu, Bierbrauer, Dong, Chen and Oh determined every parameter set of a distance-three stabilizer code~\cite{YuEtAl2013}, building on the geometry of Bierbrauer, Faina, Giulietti, Marcugini and Pambianco~\cite{BFGMP2008}. For $q\ge3$, the quantum Hamming codes reach the sphere-packing bound when the redundancy $r=n-k$ is even~\cite{BierbrauerEdel2000,KKKS2006}, and the redundancy-four case is settled by the quantum MDS bound together with explicit constructions~\cite{HuberGrassl2020,LiXu2010,GrasslRoetteler2015}. For odd redundancy $r\ge5$, Bierbrauer and Edel paste their codes $\qq{q^{r-2},q^{r-2}-r,3}_q$ into pure codes of length $\mu_q(r)-1$ for every $q$~\cite[Theorems~9, 11 and~12]{BierbrauerEdel2000}, one less than the maximum established below; we found no earlier determination of the maximum itself or of the complete set of lengths. The tables maintained by Grassl~\cite{codetables}, whose qudit part is based mainly on~\cite{EzermanEtAl2024} and the twisted codes of Bierbrauer and Edel~\cite{BierbrauerEdel2000}, listed lower bound~2 and upper bound~3 for $\qq{29,24}_3$, $\qq{59,54}_4$, $\qq{61,56}_4$, $\qq{62,57}_4$, $\qq{65,60}_4$ and $\qq{66,61}_4$ on 25 October 2026. Ball, Centelles and Huber describe qudit stabilizer codes by sets of subspaces and note that, unlike the qubit case, purity is hard to read from the geometry when $p\ge3$; they ask for a geometric classification for larger $q$~\cite[Research Problem~4]{BallCentellesHuber2023}.
+
+Throughout, $\qq{n,k,d}_q$ denotes a code of minimum distance \emph{at least} $d$, as in the tables. For a prime power $q$ and $s\ge0$ put
+\begin{equation}\label{eq:mu}
+\mu_q(s)=\begin{cases}\dfrac{q^s-1}{q^2-1}, & s\text{ even},\\[2mm] \dfrac{q^s-q^3}{q^2-1}+1, & s\ge3\text{ odd},\end{cases}\qquad \mu_q(1)=0 .
+\end{equation}
+This is the maximum number of pairwise skew lines of $\mathrm{PG}(s-1,q)$~\cite{Beutelspacher1975,NastaseSissokho2017}; we prove the upper bound in Lemma~\ref{lem:spread} and construct the spreads in Section~\ref{sec:constructions}.
+
+\begin{theorem}\label{thm:main}
+Let $q\ge3$ be a prime power and $n>k\ge1$. An $\F_q$-linear stabilizer code $\qq{n,k,3}_q$ exists if and only if $r=n-k\ge4$ and $n\le\mu_q(r)$. Whenever it exists, a code with these parameters that is pure to distance three exists.
+\end{theorem}
+
+For prime $q$ every stabilizer code is $\F_q$-linear, so the theorem then covers all stabilizer codes. Equivalently, the minimum redundancy of a distance-three code of length $n\ge5$ is the least $r\ge4$ with $\mu_q(r)\ge n$. For even $r$ the bound $\mu_q(r)$ equals the quantum Hamming bound. For odd $r$ the Hamming bound allows $\lfloor (q^r-1)/(q^2-1)\rfloor$, which exceeds $\mu_q(r)$ by $q-1$; for $r=5$ the maximum length is $q^3+1$ instead of $q^3+q$. The Hamming bound itself was recently proved for all quantum codes of local dimension $q\ge3$~\cite{ZhangChen2026}; for stabilizer codes of odd redundancy Theorem~\ref{thm:main} is sharper. A closer comparator is the strengthened Hamming bound of Yu, Lai and Oh, which also holds for impure codes of distance three and four~\cite[Theorem~2(ii)]{YuLaiOh2010} and has recently been extended to all codes~\cite{GrishinZabokritskiy2026}: for $(q,r)=(3,5)$ and $(4,5)$ it allows $n\le29$ and $n\le66$, against the maxima $\mu_3(5)=28$ and $\mu_4(5)=65$. For qubits the answer differs: the maximum is $\mu_2(r)-1$ for odd $r$ and some shorter lengths are missing~\cite{YuEtAl2013}.
+
+\begin{corollary}\label{cor:tables}
+The following entries of the qudit tables at codetables.de~\cite{codetables} (snapshot of 25 October 2026) are improved, as bounds on stabilizer codes; all but the last become exact.
+\begin{center}\small
+\begin{tabular}{lccl}
+\toprule
+parameters & table bounds & new value & reason\\
+\midrule
+$\qq{59,54}_4$, $\qq{61,56}_4$, $\qq{62,57}_4$, $\qq{65,60}_4$ & 2--3 & 3 & new codes (Theorem~\ref{thm:construct})\\
+$\qq{29,24}_3$, $\qq{66,61}_4$ & 2--3 & 2 & Theorem~\ref{thm:upper}, Proposition~\ref{prop:additive}\\
+$\qq{30,23}_3$, $\qq{67,60}_4$ & 3--4 & 3 & Corollary~\ref{cor:higher}, Proposition~\ref{prop:additive}\\
+$\qq{27,21}_5$, $\qq{51,45}_7$ & 3--4 & 3 & Corollary~\ref{cor:higher}, Thas\\
+$\qq{52,44}_7$ & 4--5 & 4 & Corollary~\ref{cor:higher}, Thas\\
+$\qq{53,43}_7$ & 4--6 & 4--5 & Corollary~\ref{cor:higher}, Thas\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{corollary}
+For $q=3,5,7$ every stabilizer code is $\F_q$-linear; for $q=4$ the two upper bounds also hold for stabilizers that are only $\F_2$-linear (Proposition~\ref{prop:additive}), and the new codes are $\F_4$-linear.
+
+Section~\ref{sec:geometry} recalls the geometry. Section~\ref{sec:upper} proves the reduction lemma for impure codes and the upper bound. Section~\ref{sec:constructions} gives the constructions and the proof of Theorem~\ref{thm:main}. Section~\ref{sec:higher} derives the higher-distance entries, and Section~\ref{sec:verification} describes the certificates and the scope of the claims.
+
+\section{Geometry of distance-three codes}\label{sec:geometry}
+
+Let $\F=\F_q$. A Pauli operator on $n$ qudits is a vector $e=(\alpha\,|\,\beta)\in\F^{2n}$ with symplectic form $\langle(a|b),(\alpha|\beta)\rangle=\sum_i(a_i\beta_i-b_i\alpha_i)$, and its weight $\wt(e)$ is the number of positions $i$ with $(\alpha_i,\beta_i)\ne(0,0)$. A stabilizer code with $k\ge1$ is given by an $r$-dimensional isotropic subspace $S\subseteq\F^{2n}$, $r=n-k$; its normalizer is $N(S)=S^{\perp}$, its distance is the minimum weight of $N(S)\setminus S$, and it is \emph{pure} if $S$ has no nonzero element of weight below the distance~\cite{AshikhminKnill2001,KKKS2006}. More generally, $S$ is \emph{pure to distance $\delta$} if it has no nonzero element of weight less than $\delta$. Write $S$ as the row space of a rank-$r$ matrix $H=[A\,|\,B]\in\F^{r\times 2n}$ with columns $A_i,B_i\in\F^r$, and put $W_i=\langle A_i,B_i\rangle$. The \emph{syndrome} of $e$ is $\sigma(e)=\sum_i(\beta_iA_i-\alpha_iB_i)\in\F^r$; thus $e\in N(S)$ exactly when $\sigma(e)=0$.
+
+\begin{lemma}\label{lem:geometry}
+\begin{enumerate}
+\item The rows of $H$ are pairwise orthogonal if and only if $\sum_i A_i\wedge B_i=0$ in $\Lambda^2\F^r$.
+\item For a set $J$ of positions, some nonzero $e$ supported in $J$ has $\sigma(e)=0$ if and only if the vectors $A_i,B_i$ $(i\in J)$ are linearly dependent, that is, unless $\sum_{i\in J}W_i$ is a direct sum of $|J|$ planes.
+\item The code has distance at least three and is pure to distance three if and only if the $W_i$ are $n$ pairwise skew lines of $\mathrm{PG}(r-1,q)$.
+\item Conversely, let $\ell_1,\dots,\ell_n$ be pairwise skew lines of $\F^r$ with bases $u_i,v_i$, spanning a subspace of dimension $r'$, and let $\lambda_i\in\F^\ast$ satisfy $\sum_i\lambda_iu_i\wedge v_i=0$. Then there is a $\qq{n,n-s,3}_q$ code pure to distance three for every $r'\le s\le n-1$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+(1) The $(j,l)$ coefficient of $\sum_iA_i\wedge B_i$ is $\sum_i(A_{ji}B_{li}-B_{ji}A_{li})$, the symplectic product of rows $j$ and $l$. (2) $\sigma(e)=\sum_{i\in J}(\beta_iA_i-\alpha_iB_i)$ ranges over all linear combinations of these vectors. (3) Apply (2) to $|J|\le2$. (4) Choose coordinates of the span $\F^{r'}$ and take columns $A_i=u_i$, $B_i=\lambda_iv_i$; by (1) and (3) this is an $\qq{n,n-r',3}_q$ code pure to distance three. If $S$ has distance at least $d$, is pure to distance $d$ and $k\ge2$, adding one $L\in N(S)\setminus S$ to $S$ gives an isotropic $S'$ with $N(S')\subseteq N(S)$ and $S'\setminus S\subseteq N(S)\setminus S$. Hence $N(S')\setminus S'\subseteq N(S)\setminus S$, and the new code again has distance at least $d$ and is pure to distance $d$. Repeating this reaches every $s$.
+\end{proof}
+
+Rescaling $B_i$ by $\lambda\in\F^\ast$ keeps the line $W_i$ but multiplies its Pl\"ucker vector $A_i\wedge B_i$ by $\lambda$. For $q=2$ there is no freedom and isotropy becomes the parity condition of~\cite{BFGMP2008}; for $q\ge3$ the scalars $\lambda_i$ are what makes the extremal configurations below possible.
+
+\section{Upper bounds, including impure codes}\label{sec:upper}
+
+For $d\ge3$ and $s\ge0$ let $m_q(d,s)$ be the largest number of planes ($2$-dimensional subspaces) of $\F^s$ such that any at most $d-1$ of them form a direct sum. In particular $m_q(3,s)=\mu_q(s)$ is the maximum size of a partial line spread.
+
+\begin{lemma}[reduction for impure codes]\label{lem:reduction}
+Let $S$ define an $\qq{n,k,d}_q$ code with $k\ge1$ and $d\ge3$, $r=n-k$. Let $T$ be the span of the elements of $S$ of weight less than $d$ and $t=\dim T$. Then $n\le(d-1)t+m_q(d,r-t)$.
+\end{lemma}
+
+\begin{proof}
+Choose a basis $g_1,\dots,g_t$ of $T$ consisting of elements of weight less than $d$, and let $U=\bigcup_j\supp(g_j)$, so $|U|\le(d-1)t$ and every element of $T$ is supported in $U$. Write $g_j=c_j^{\mathsf T}H$; the $c_j\in\F^r$ are independent because $H$ has rank $r$, so $C=\langle c_1,\dots,c_t\rangle$ has $\dim C^{\perp}=r-t$. For $i\notin U$ the $i$th entries of every $g_j$ vanish, so $c_j\cdot A_i=c_j\cdot B_i=0$ and $W_i\subseteq C^\perp$.
+
+Let $J\subseteq[n]\setminus U$ with $|J|\le d-1$. If the $W_i$, $i\in J$, were not a direct sum of planes, Lemma~\ref{lem:geometry}(2) would give a nonzero $e\in N(S)$ supported in $J$. Since $\wt(e)<d$ and $k\ge1$, the definition of distance forces $e\in S$, so $e\in T$ and $\supp(e)\subseteq U$, which contradicts $\emptyset\ne\supp(e)\subseteq J$. Thus the $n-|U|$ planes $W_i$ ($i\notin U$) lie in $C^\perp\cong\F^{r-t}$ and any at most $d-1$ of them form a direct sum.
+\end{proof}
+
+The method is not new. Gottesman bounded degenerate binary codes correcting one or two errors by taking the span of the low-weight stabilizers, discarding the positions they touch, and packing the remaining low-weight errors into the smaller fixed space~\cite[Section~7.3]{Gottesman1997}; Nemec and Tansuwannont reuse this technique~\cite[Section~IV, Lemma~1]{NemecTansuwannont2023}. Lemma~\ref{lem:reduction} is the geometric form of the same idea for all $q$ and all $d\ge3$, with the sphere-packing count replaced by $m_q(d,\cdot)$. For $d=3$ the $q$-ary packing count $[1+(q^2-1)(n-2t)]q^k\le q^{n-t}$ already excludes impure codes with $n\ge\mu_q(r)$ when $t\ge1$, and with Lemma~\ref{lem:spread} for $t=0$ it gives Theorem~\ref{thm:upper}; the geometric form is what Section~\ref{sec:higher} needs. For qubits a related reduction, in terms of points on several code lines, appears in~\cite[Theorem~3.2]{BFGMP2008}. For $q\ge3$, Ball, Centelles and Huber observe that dependencies need not lie in the hyperplanes defined by stabilizers~\cite[Section~5]{BallCentellesHuber2023}. Lemma~\ref{lem:reduction} avoids this issue: it uses only the positions outside the low-weight supports.
+
+\begin{lemma}[partial line spreads~\cite{Beutelspacher1975}]\label{lem:spread}
+A set of pairwise skew lines of $\F^s$ has at most $\mu_q(s)$ elements.
+\end{lemma}
+
+\begin{proof}
+For even $s$ count points. For $s=3$ two lines always meet. Let $s\ge5$ be odd and suppose $N=\mu_q(s)+1$ lines are pairwise skew. They cover $(q+1)N$ points, leaving $h=(q^3-1)/(q-1)-2(q+1)=q^2-q-1$ uncovered points (holes). A hyperplane $\Sigma$ containing $x_\Sigma$ of the lines meets each other line in one point. It therefore contains $|\Sigma|-N-qx_\Sigma$ holes. Here $|\Sigma|=(q^{s-1}-1)/(q-1)\equiv1$ and $N=q^3(q^{s-3}-1)/(q^2-1)+2\equiv2\pmod q$, so every hyperplane contains at least $q-1$ holes. Counting incident pairs of holes and hyperplanes,
+\[
+(q-1)\frac{q^s-1}{q-1}\le h\,\frac{q^{s-1}-1}{q-1}<q(q-1)\frac{q^{s-1}-1}{q-1}=q^s-q,
+\]
+a contradiction.
+\end{proof}
+
+\begin{lemma}\label{lem:ineq}
+For $q\ge3$, $r\ge4$ and $1\le t\le r$, $2t+\mu_q(r-t)\le\mu_q(r)$.
+\end{lemma}
+
+\begin{proof}
+Since $\mu_q$ is nondecreasing, the left side is at most $2r+\mu_q(r-1)$. From~\eqref{eq:mu}, $\mu_q(r)-\mu_q(r-1)$ equals $(q^{r-1}+q^2)/(q+1)$ for even $r$ and $q^2(q^{r-3}-1)/(q+1)$ for odd $r$. Both expressions increase with $q$ and equal $9>8$ and $18>10$ for $(q,r)=(3,4),(3,5)$. Replacing $r$ by $r+2$ at least doubles them: $q^{r+1}+q^2\ge2(q^{r-1}+q^2)$ because $q^{r-1}(q^2-2)\ge q^2$, and $(q^{r-1}-1)/(q^{r-3}-1)\ge q^2$. Since $2(2r)\ge2(r+2)$, induction gives $\mu_q(r)-\mu_q(r-1)>2r$ for all $r\ge4$.
+\end{proof}
+
+\begin{theorem}\label{thm:upper}
+Every $\qq{n,k,3}_q$ stabilizer code with $k\ge1$ satisfies $n\le\max_{0\le t\le r}\bigl(2t+\mu_q(r-t)\bigr)$, $r=n-k$. For $q\ge3$ and $r\ge4$ this maximum is $\mu_q(r)$.
+\end{theorem}
+
+\begin{proof}
+Combine Lemmas~\ref{lem:reduction}, \ref{lem:spread} and~\ref{lem:ineq}.
+\end{proof}
+
+For $q=3$, $r=5$ this gives $n\le28$; for $q=4$, $r=5$ it gives $n\le65$. These two values settle the upper bounds $\qq{29,24}_3$ and $\qq{66,61}_4$ in Corollary~\ref{cor:tables}.
+
+\section{Constructions}\label{sec:constructions}
+
+\subsection{A Gabidulin family}
+Fix $m\ge2$, the field $K=\F_{q^m}$ with an $\F$-basis, and $\omega\in K\setminus\F$. Put $V=\F^2\oplus K\cong\F^{m+2}$, $\Pi=0\oplus K$ and, for $a\in K$,
+\[
+u_a=(1,0,a),\qquad v_a=(0,1,a\omega),\qquad L_a=\langle u_a,v_a\rangle=\{(x,y,a(x+y\omega)):x,y\in\F\}.
+\]
+If two points of $L_a$ and $L_b$ coincide, then $(x,y)$ agree and $(a-b)(x+y\omega)=0$, so $x=y=0$ or $a=b$. Hence the $q^m$ lines $L_a$ are pairwise skew and skew to $\Pi$; their slopes form a maximum-rank-distance family~\cite{Delsarte1978,Gabidulin1985}. Writing $\iota(z)=(0,0,z)$,
+\begin{equation}\label{eq:plucker}
+u_a\wedge v_a=e_1\wedge e_2+e_1\wedge\iota(a\omega)+\iota(a)\wedge e_2+Q(a),\qquad Q(a)=\iota(a)\wedge\iota(a\omega),
+\end{equation}
+so every coordinate of $u_a\wedge v_a$ is a polynomial of degree at most two in the coordinates of $a$.
+
+\begin{definition}
+A weighted set $(B,\lambda)$, with $B\subseteq K$ and $\lambda:B\to\F^\ast$, is \emph{balanced} if $\sum_{a\in B}\lambda_af(a)=0$ for every polynomial function $f:K\to\F$ of degree at most two. By~\eqref{eq:plucker}, then $\sum_{a\in B}\lambda_au_a\wedge v_a=0$. Disjoint unions of balanced sets are balanced.
+\end{definition}
+
+\begin{lemma}\label{lem:blocks}
+Let $A=\{b+sc:s\in\F\}$ be an affine line of $K$ ($c\ne0$). The following are balanced:
+\begin{enumerate}
+\item for $q\ge3$, every affine subspace of dimension at least two, with $\lambda\equiv1$;
+\item for $q\ge3$, $A\cup(A+c')$ with $c'\notin\F c$, weighted $1$ on $A$ and $-1$ on $A+c'$;
+\item for $q\ge4$, the line $A$ with $\lambda\equiv1$;
+\item for $q\ge4$, any four points $b+s_ic$ with $\lambda_i=\prod_{j\ne i}(s_i-s_j)^{-1}$;
+\item for $q\ge5$, any $j\ge4$ points of $A$, with suitable weights.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+Restricted to an affine subspace with coordinates $x_1,\dots,x_e$, a function of degree at most two is a polynomial of degree at most two in the $x_i$. We use that $\sum_{x\in\F}x^g$ vanishes for $g=0$, for $g=1$ when $q\ge3$, and for $g=2$ when $q\ge4$. (1) For $e\ge2$, each monomial of degree at most two either omits a variable, whose sum contributes the factor $q=0$, or is $x_ix_j$ with sum $(\sum_tt)^2=0$. (2) $f(b+c'+sc)-f(b+sc)$ has degree at most one in $s$ because the $s^2$ coefficient depends only on $c$; its sum over $s$ vanishes. (3) follows from the power sums. (4) is the third divided difference, which annihilates polynomials of degree at most two and has nonzero weights. (5) Let $s_1,\dots,s_j$ be the parameters. For $i\ge4$ let $w^{(i)}$ be the weight vector of (4) on $\{s_1,s_2,s_3,s_i\}$. Every combination $w=\sum_ic_iw^{(i)}$ is balanced, and its weight at $s_i$, $i\ge4$, is nonzero when $c_i\ne0$. At $s_1,s_2,s_3$ the weights are linear forms in $c\in(\F^\ast)^{j-3}$ with nonzero coefficient of $c_4$. Each therefore vanishes for at most $(q-1)^{j-4}$ choices, leaving at least $(q-1)^{j-4}(q-4)>0$ good choices.
+\end{proof}
+
+\begin{lemma}[absorption]\label{lem:absorb}
+Let $q\ge3$ and $m\in\{2,3\}$. There are weights $\lambda:K\to\F^\ast$, a line $\ell\subseteq\Pi$ and $\nu\in\F^\ast$ with $\sum_{a\in K}\lambda_au_a\wedge v_a+\nu\,p(\ell)=0$, where $p(\ell)$ is the wedge of a basis of $\ell$. Hence $\F^{m+2}$ contains $q^m+1=\mu_q(m+2)$ pairwise skew lines with a zero-sum weighting.
+\end{lemma}
+
+\begin{proof}
+Write $\lambda=1+\delta$; by Lemma~\ref{lem:blocks}(1), $\sum_au_a\wedge v_a=0$. Let $\beta(x,y)=Q(x+y)-Q(x)-Q(y)$ be the polar form of $Q$.
+\emph{Odd $q$.} Put $\delta=1$ at $\pm d$ and $\delta=-2$ at $0$ for some $d\ne0$. The constant and linear parts of~\eqref{eq:plucker} cancel, and $\sum\delta_au_a\wedge v_a=Q(d)+Q(-d)=2Q(d)$. Now $Q(d)=p(\ell)$ for $\ell=\langle\iota(d),\iota(d\omega)\rangle\subseteq\Pi$, so $\nu=-2$ works. The weights $2,-1,2$ are nonzero.
+\emph{Even $q\ge4$.} Choose $\F$-independent $x,y\in K$ and $s\in\F\setminus\{0,1\}$, and put $\delta=s$ on $0,x,y,x+y$. In characteristic two the constant and linear parts cancel and $\sum\delta_au_a\wedge v_a=s\,\beta(x,y)$. For $m=3$ take $x=1$, $y=\omega$: then $\beta(1,\omega)=\iota(1)\wedge\iota(\omega^2)\ne0$ is decomposable because $\Lambda^2\Pi$ has dimension three. For $m=2$, $\Lambda^2\Pi$ is spanned by $p(\Pi)=\iota(1)\wedge\iota(\omega)$ and $Q(z)=\N(z)\,p(\Pi)$, where $\N$ is the norm, since multiplication by $z$ has determinant $\N(z)$. Thus $\beta(x,y)=\Tr(xy^q)\,p(\Pi)$ with $\Tr$ the trace. Choosing $x=1$ and $y$ with $\Tr(y)\ne0$, which forces $y\notin\F$, gives $\ell=\Pi$. The weights $1+s$ are nonzero.
+The line $\ell\subseteq\Pi$ is skew to every $L_a$.
+\end{proof}
+
+\subsection{All admissible lengths}
+For $r\ge4$ let $\mathcal A_q(r)$ be the set of $n$ for which $\F^r$ contains $n$ pairwise skew lines with a zero-sum weighting $\sum\lambda_iu_i\wedge v_i=0$, $\lambda_i\ne0$.
+
+\begin{theorem}\label{thm:construct}
+For every prime power $q\ge3$, $[5,\mu_q(4)]\subseteq\mathcal A_q(4)$ and $[6,\mu_q(r)]\subseteq\mathcal A_q(r)$ for every $r\ge5$.
+\end{theorem}
+
+\begin{proof}
+Take $m=r-2$ in the Gabidulin family. A balanced weighted subset of $K$ of size $n_1$ gives $n_1$ lines $L_a$ with a zero-sum weighting. A zero-sum configuration of $n_2$ lines inside $\Pi\cong\F^{r-2}$ is skew to them. Hence
+\begin{equation}\label{eq:sumset}
+\mathcal T_q(r)+\bigl(\{0\}\cup\mathcal A_q(r-2)\bigr)\subseteq\{0\}\cup\mathcal A_q(r),
+\end{equation}
+where $\mathcal T_q(r)$ is the set of sizes of balanced subsets of $K$. Partition $K$ into the $q^{m-1}$ affine lines parallel to $\F\cdot1$ and, for $q=3$, into the $3^{m-2}$ affine planes parallel to $\langle1,\omega\rangle$. Lemma~\ref{lem:blocks} gives:
+\begin{itemize}
+\item $q\ge7$: $\mathcal T_q(r)\supseteq\{0\}\cup[4,q^m]$. Lengths up to $q$ use one line by (3)--(5). A length $n_1\in(q,q^m]$ is split into $\lceil n_1/q\rceil$ parts in $[4,q]$ on distinct lines, which is possible because $(j-1)q+1\ge4j$ for $j\ge2$ when $q\ge7$.
+\item $q=5$: $\mathcal T_5(r)\supseteq\{0,4,5,8,9,10\}\cup[12,5^m]$, using sums of fours and fives on distinct lines.
+\item $q=4$: $\mathcal T_4(r)\supseteq\{0,4,8,\dots,4^m\}$, using full lines.
+\item $q=3$: $\mathcal T_3(r)\supseteq\{0\}\cup\{6,9,12,\dots,3^m\}$, using blocks of sizes $6$ and $9$ from (2) and (1) inside parallel planes.
+\end{itemize}
+\emph{Base cases $r\in\{4,5\}$.} Here $\Pi$ contains at most one line, and $\mu_q(r)=q^{r-2}+1$ is supplied by Lemma~\ref{lem:absorb}. For $q\ge7$ the list above gives $[4,q^{r-2}]\subseteq\mathcal A_q(r)$. For $q\in\{3,4,5\}$ we use $245$ explicit configurations, one for each required length in $\mathcal A_q(4)$ and $\mathcal A_q(5)$. These are verified as described in Section~\ref{sec:verification}.
+\emph{Induction.} Let $r\ge6$ and assume the claim for $r-2$, so $\mathcal A_q(r-2)\supseteq I=[c,\mu_q(r-2)]$ with $c\le6$ and $|I|\ge\mu_q(4)-4\ge6$. Consecutive elements of $\{0\}\cup\mathcal T_q(r)$ differ by at most $6$ for $q=3$ and by at most $4$ otherwise, so the translates of $I$ leave no gaps. Hence~\eqref{eq:sumset} covers $[c,\max\mathcal T_q(r)+\mu_q(r-2)]=[c,q^{r-2}+\mu_q(r-2)]=[c,\mu_q(r)]$, since $\mu_q(r)=q^{r-2}+\mu_q(r-2)$ for $r\ge4$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Necessity: the quantum Singleton bound gives $r\ge 2d-2=4$~\cite{Rains1999,KKKS2006}, and Theorem~\ref{thm:upper} gives $n\le\mu_q(r)$. Sufficiency: $n\ge r+1$ lies in $\mathcal A_q(r)$ by Theorem~\ref{thm:construct}, and Lemma~\ref{lem:geometry}(4) yields an $\qq{n,n-r,3}_q$ code that is pure to distance three.
+\end{proof}
+
+For $r=5$ the extremal code $\qq{q^3+1,q^3-4,3}_q$ is completely explicit: the $q^3$ lines $L_a$ with weights $1$, changed to $2,-1,2$ at $a=-1,0,1$ for odd $q$, together with $\ell=\langle\iota(1),\iota(\omega)\rangle$ of weight $-2$. The new code $\qq{65,60,3}_4$ is the even-characteristic case of Lemma~\ref{lem:absorb}; the codes $\qq{59,54,3}_4$, $\qq{61,56,3}_4$ and $\qq{62,57,3}_4$ are base-case configurations found by searching subsets of the $65$ lines for zero-sum weightings. Bierbrauer and Edel's family has length $\mu_q(r)-1$ for odd $r$~\cite[Theorem~12]{BierbrauerEdel2000}; Theorem~\ref{thm:construct} adds the endpoint and fills every shorter length. The instance $\qq{28,23,3}_3$ was already in the tables, from a stored generator matrix. Pasting it into their family by~\cite[Theorem~11]{BierbrauerEdel2000} already yields length $\mu_3(r)$ for every odd $r\ge5$, as an independent referee observed, so for $q=3$ the endpoint follows from older ingredients. The longest redundancy-five codes of distance three in the twisted-code tables of Bierbrauer and Edel have length $q^3$ for $q=3,4,5$~\cite{EdelTables}.
+
+\section{Higher distance}\label{sec:higher}
+
+\begin{lemma}[projection]\label{lem:projection}
+If $X$ is a set of planes in $\F^s$ such that any at most $d-1$ of them form a direct sum ($d\ge3$) and $L\in X$, then the images of the other members in $\F^s/L$ are planes, any at most $d-2$ of which form a direct sum. Hence $m_q(d,s)\le1+m_q(d-1,s-2)$.
+\end{lemma}
+
+\begin{proof}
+For at most $d-2$ members $M_j\in X\setminus\{L\}$ the sum $L+\sum_jM_j$ is direct, so the images form a direct sum.
+\end{proof}
+
+A set of lines of $\mathrm{PG}(5,q)$ any three of which span the space is a generalized arc. Thas proved that it has at most $q^2+1$ elements for odd $q$~\cite{Thas1971}; see Theorem~6.3 of the arXiv version of~\cite{HirschfeldThas2025} (Theorem~23 of the published version). Thus $m_q(4,6)\le q^2+1$ for odd $q$. Trivially $m_q(d,s)\le\lfloor s/2\rfloor$ when $s<2(d-1)$.
+
+\begin{corollary}\label{cor:higher}
+There are no codes $\qq{30,23,4}_3$, $\qq{67,60,4}_4$, $\qq{27,21,4}_5$, $\qq{51,45,4}_7$, $\qq{52,44,5}_7$ or $\qq{53,43,6}_7$.
+\end{corollary}
+
+\begin{proof}
+By Lemma~\ref{lem:reduction}, an $\qq{n,n-r,d}_q$ code has $n\le\max_t\bigl((d-1)t+m_q(d,r-t)\bigr)$. With the bounds just listed, Lemma~\ref{lem:projection} and Lemma~\ref{lem:spread}, the $t=0$ term is $1+\mu_3(5)=29$ for $(q,r,d)=(3,7,4)$ and $1+\mu_4(5)=66$ for $(4,7,4)$. Thas's bound gives $26$ for $(5,6,4)$ and $50$ for $(7,6,4)$. Projection then gives $51$ for $(7,8,5)$ and $52$ for $(7,10,6)$. The terms with $t\ge1$ are at most $21$, $21$, $18$, $18$, $32$ and $50$ in the six cases. Each listed length exceeds the maximum.
+\end{proof}
+
+For $q=5$ and $q=7$ Thas's bound is essential: projection alone gives $27$, $51$, $52$ and $53$, which do not exclude the listed lengths.
+
+The tables at codetables.de are titled ``additive quantum codes''. For prime $q$ additive and $\F_q$-linear stabilizers coincide; for $q=4$ we check the additive case separately.
+
+\begin{proposition}\label{prop:additive}
+There is no ququart stabilizer code $\qq{66,61,3}_4$ or $\qq{67,60,4}_4$ whose stabilizer $S\subseteq\F_4^{2n}$ is merely $\F_2$-linear, with $|S|=4^{r}$ and the trace-symplectic form.
+\end{proposition}
+
+\begin{proof}
+Regard $S$ as an $\F_2$-subspace of dimension $\rho=2r$ and let $H$ be an $\F_2$-generator matrix. Position $i$ now contributes the image $W_i\subseteq\F_2^{\rho}$ of the $4$-dimensional $\F_2$-space of single-position Paulis under the syndrome map. Lemma~\ref{lem:geometry}(2) and the proof of Lemma~\ref{lem:reduction} carry over verbatim with $\F_2$-spans. Let $\tau$ be the $\F_2$-dimension of the span of the elements of weight less than $d$. Outside a set of at most $(d-1)\tau$ positions, the $W_i$ are $4$-dimensional subspaces of an $\F_2$-space of dimension $\rho-\tau$, and any at most $d-1$ of them form a direct sum. Let $a(s)$ be the maximum number of pairwise trivially intersecting $4$-dimensional subspaces of $\F_2^s$. Then $a(s)=0$ for $s<4$, $a(s)\le1$ for $4\le s\le7$ (two such subspaces of $\F_2^7$ meet), $a(8)\le17$ and $a(9)\le34$ by counting points, and $a(10)=65$~\cite{NastaseSissokho2017}. For $\qq{66,61,3}_4$, $\rho=10$: the case $\tau=0$ allows at most $65$ positions, and for $\tau\ge1$ the bound $2\tau+a(10-\tau)$ is at most $2+34=36$. For $\qq{67,60,4}_4$, $\rho=14$: projecting from one subspace as in Lemma~\ref{lem:projection} bounds the case $\tau=0$ by $1+a(10)=66$. For $\tau\ge1$ the bound is $3\tau+1+a(10-\tau)$, which is at most $38$, $24$ and $3\tau+2\le44$ for $\tau=1$, $\tau=2$ and $\tau\ge3$. In both cases the length is excluded.
+\end{proof}
+
+\section{Verification and scope}\label{sec:verification}
+
+The written proofs of Lemmas~\ref{lem:geometry}--\ref{lem:projection} and Theorems~\ref{thm:upper} and~\ref{thm:construct} carry the general statements. The computer evidence has three parts, all in exact arithmetic over $\F_q$.
+\begin{enumerate}
+\item \emph{Certificates.} The 245 base configurations for $q\in\{3,4,5\}$, the four new ququart codes, and the codes $\qq{q^3+1,q^3-4,3}_q$ for $q\in\{3,4,5,7,8,9\}$ are stored as check matrices. An independent checker, using only the Python standard library and no code from the generator, rebuilds $\F_q$ from the stored modulus and verifies its irreducibility. It checks that the symplectic Gram matrix vanishes and that the $n(q^2-1)$ syndromes of nonzero single-qudit Paulis are distinct and nonzero, which is equivalent to purity with distance at least three by Lemma~\ref{lem:geometry}. It also computes the rank. All 255 certificates pass, and seven deliberately corrupted inputs are rejected.
+\item \emph{Replay of the induction.} The recipe of Theorem~\ref{thm:construct} was run with no search over line configurations, and every configuration was checked by the same verifier. The weights on line blocks with a size other than $4$ or $q$ are chosen, as in Lemma~\ref{lem:blocks}(5), by seeded random trials of the coefficients $c_i$, so the replay is reproducible but not a deterministic transcription of the proof. The runs cover $q=3$ with $r\le8$, $q=4$ with $r\le7$, $q=5,7,8$ with $r\le6$, $q=9,11$ with $r\le5$, and $q=13$ with $r=4$. Each run includes all $r+1\le n\le\mu_q(r)$, with the length capped at $700$ for $(q,r)\in\{(7,6),(8,6)\}$ and at $400$ for $(11,5)$. For $q\ge7$ the base cases need only blocks and absorption, as in the proof. This tests the proof's arithmetic, not only its conclusion.
+\item \emph{Bounds.} A short script recomputes $\mu_q$ and checks Lemma~\ref{lem:ineq} for all prime powers $q\le32$ and $r\le40$. It evaluates the bounds of Theorem~\ref{thm:upper}, Corollary~\ref{cor:higher} and Proposition~\ref{prop:additive}, compares them with the stored table snapshot, and finds exactly the entries in Corollary~\ref{cor:tables}.
+\end{enumerate}
+As further internal checks, a third hand-written verifier confirmed the four ququart codes and the extremal codes for $q=3,5,7$ by rank tests on all pairs of column planes. A constraint solver confirmed that the largest partial line spread of $\mathrm{PG}(4,2)$ has $9$ lines. The live table pages were re-read for all twelve entries.
+Nothing here is formalized in a proof assistant.
+
+\emph{Scope.} Theorem~\ref{thm:main} concerns $\F_q$-linear stabilizer codes, which are all stabilizer codes for prime $q$; we do not claim it for merely additive codes over non-prime fields (apart from Proposition~\ref{prop:additive}), nor for non-stabilizer codes. Pure distance-three codes for $q\ge3$ and lines with zero-sum weightings are equivalent objects (Lemma~\ref{lem:geometry}), so the content of the theorem is the extremal value $\mu_q(r)$ for odd $r$, the exclusion of impure codes beyond it, and the absence of gaps. Parts were known: the bound for $r=4$~\cite{HuberGrassl2020} with codes of all lengths~\cite{LiXu2010,GrasslRoetteler2015,BallCentellesHuber2023}, quantum Hamming codes for even $r$~\cite{BierbrauerEdel2000,KKKS2006}, the value $\mu_q(s)$~\cite{Beutelspacher1975,NastaseSissokho2017}, the qubit classification~\cite{YuEtAl2013}, pure codes of length $\mu_q(r)-1$ for every odd $r\ge5$~\cite{BierbrauerEdel2000}, the support-removal and packing technique behind Lemma~\ref{lem:reduction}~\cite{Gottesman1997,NemecTansuwannont2023}, and a strengthened Hamming bound valid for impure codes of distance three~\cite{YuLaiOh2010}. What we add is the geometric all-distance form of the reduction for $q\ge3$, the attainment of the endpoint $\mu_q(r)$ for general $q$, and the construction of every admissible length. We found no earlier statement of the odd-$r$ maximum for $q\ge3$ or of the full spectrum; this is a bounded literature search. A concurrent dataset reports new distance-four codes, including $\qq{16,9,4}_3$, from line sets with prescribed symmetry~\cite{Farhan2026}. Distance four with odd redundancy remains largely open: for $q=3$ and $r=7$ the best lengths known to us are $16$ and our bound $29$.
+
+\paragraph{Research assistance.}
+Valyu DeepResearch scouted open problems in quantum information, audited the literature for the claims above and carried out an adversarial review of the proofs; its corrections are incorporated. Coding agents downloaded and parsed the code tables, found the geometric arguments and constructions, wrote the generator, the independent checker and the replay scripts, and drafted this manuscript. Further agent reviews checked the proofs. These reviews are internal checks and do not constitute external peer review.
+
+\smallskip
+\noindent\textbf{Reproduction.} Run the following from this directory:
+\begin{quote}\small\ttfamily
+sh build.sh\\
+python3 -B -O verification/replay\_recipe.py
+\end{quote}
+The first command runs the certificate checker, the negative checks and the bound arithmetic, then builds the PDF. The second replays the induction and takes several minutes. Certificates and results are in \path{verification/}.
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

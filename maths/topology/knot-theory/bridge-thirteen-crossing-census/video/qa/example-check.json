@@ -1,0 +1,123 @@
+{
+  "illustrated_certificate_replayed": true,
+  "first_crossing": [
+    [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        4
+      ]
+    ]
+  ],
+  "components_after_seed_actions": [
+    6,
+    5,
+    3,
+    1
+  ],
+  "coloring_moves": [
+    {
+      "crossing": 3,
+      "new_arc": 2,
+      "over_arc": 4,
+      "known_under_arc": 3,
+      "seed_colour": 1
+    },
+    {
+      "crossing": 1,
+      "new_arc": 1,
+      "over_arc": 2,
+      "known_under_arc": 0,
+      "seed_colour": 0
+    },
+    {
+      "crossing": 2,
+      "new_arc": 5,
+      "over_arc": 0,
+      "known_under_arc": 2,
+      "seed_colour": 1
+    },
+    {
+      "crossing": 4,
+      "new_arc": 6,
+      "over_arc": 2,
+      "known_under_arc": 4,
+      "seed_colour": 3
+    },
+    {
+      "crossing": 6,
+      "new_arc": 11,
+      "over_arc": 7,
+      "known_under_arc": 6,
+      "seed_colour": 3
+    },
+    {
+      "crossing": 7,
+      "new_arc": 9,
+      "over_arc": 11,
+      "known_under_arc": 7,
+      "seed_colour": 2
+    },
+    {
+      "crossing": 8,
+      "new_arc": 8,
+      "over_arc": 9,
+      "known_under_arc": 1,
+      "seed_colour": 0
+    },
+    {
+      "crossing": 10,
+      "new_arc": 10,
+      "over_arc": 6,
+      "known_under_arc": 8,
+      "seed_colour": 0
+    },
+    {
+      "crossing": 11,
+      "new_arc": 12,
+      "over_arc": 8,
+      "known_under_arc": 11,
+      "seed_colour": 3
+    }
+  ],
+  "diagram_check": {
+    "extra_segment_intersections": [],
+    "crossing_rotation_system_consistent": true,
+    "global_orientation_radians": 6.283185307179586,
+    "minimum_gap_radius": 0.02018051015780402
+  },
+  "input_sha256": {
+    "README.md": "910504100f62d3794cf1c583498364fd0f321960f56f617d3d003f5b8b7ff25e",
+    "paper.tex": "0bb0a9e7e82091fc7a045ff826992a533954a210d61e95a8b64b830c873d46d9",
+    "video-brief.md": "a2907a8f861a7803895924339fefeb9d96b649456be2d46f3b2b4189d053d265",
+    "verification/certificates.json": "e466c2b0647922eed7e4e279194b97130d9ac66909805f3898f10ed40803594f",
+    "verification/source-snapshot.json": "30f71d9bbec6b5e20475116961d4859cfba79c58afc5d4b25a91e413c11b08a8",
+    "verification/open-list-v1.3.0.json": "6559e2ea0cf93502f3a4f7698d35d3fce2a11038117e27ddd520553f2786dc96",
+    "verification/remaining-v1.3.0.json": "3277c5cd717de432da1c786464497b2572c402f7b83a4e8b71b4657773bc5d36",
+    "verification/coxeter-overlap-summary.json": "475d489926d20e7eb96ef3b5a42d6b66d5acc6de8aa7c7fcb21a2d2207bbeaaa"
+  },
+  "scope": "Two source checkers replayed; diagram embedding and exact displayed operations additionally checked. Not an independent new theorem or priority audit."
+}

@@ -1,0 +1,7 @@
+{
+  "checkedAt": "2026-10-26T17:00:43.272105+00:00",
+  "textFilesScanned": 2251,
+  "findings": [],
+  "scope": "Known credential and signed-URL patterns plus environment-file names in release candidates; not a universal secret-detection guarantee.",
+  "excludedDraft": "<excluded-draft>/"
+}

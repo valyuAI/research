@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "cases": {
+    "complete_real_shards": {
+      "returncode": 0,
+      "expected_pass": true
+    },
+    "missing_shard": {
+      "returncode": 1,
+      "expected_pass": false
+    },
+    "different_certificate": {
+      "returncode": 1,
+      "expected_pass": false
+    },
+    "failed_shard": {
+      "returncode": 1,
+      "expected_pass": false
+    },
+    "different_definition": {
+      "returncode": 1,
+      "expected_pass": false
+    }
+  }
+}

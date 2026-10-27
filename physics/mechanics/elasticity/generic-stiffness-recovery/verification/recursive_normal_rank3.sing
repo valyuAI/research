@@ -1,0 +1,20 @@
+ring R=(0,i),(w0,w1,w2,w3,w4,w5,w6,w7),dp;
+minpoly=i^2+1;
+matrix N[7][13]=-2*w2,-2*w0 - 6*i*w7,0,-2*i*w4 - 2*w5,-2*w0 - 2*w6 - 2*i*w7,0,0,0,2*w6 - 4*i*w7,-2*w2 - 2*i*w4 - 2*w5,-2*i*w6 - 4*w7,-4*w4 + 4*i*w5,2*i*w6 + 4*w7,
+4*w0 - 2*w1 + 12*i*w7,-2*w2 - 2*i*w4,-4*i*w2 + 2*w4,2*w0 + 2*w3 + 2*w6 + 2*i*w7,-2*w2 - 2*i*w4 - 4*w5,0,2*w6 - 4*i*w7,-6*w2 - 4*i*w4 - 2*w5,2*w2 + 2*w5,-2*w0 - 2*w1 + 2*w3 - 6*i*w7,-4*i*w2 + 2*w4 - 4*i*w5,-4*i*w3 - 4*i*w6 - 8*w7,4*i*w5,
+-2*i*w2,-2*i*w0 + 6*w7,0,2*w4 - 2*i*w5,-2*i*w0 - 2*i*w6 + 2*w7,0,0,0,2*i*w6 + 4*w7,-2*i*w2 + 2*w4 - 2*i*w5,2*w6 - 4*i*w7,-4*i*w4 - 4*w5,-2*w6 + 4*i*w7,
+2*i*w0 - 2*i*w1 - 6*w7,-2*i*w2 + 2*w4,2*w2 - 2*w5,2*i*w3,-2*i*w2 + 2*w4 - 4*i*w5,0,2*i*w6 + 4*w7,-4*i*w2 + 2*w4,2*w4,-2*i*w0 - 2*i*w1 + 2*i*w3 + 6*w7,2*w2 + 2*w5,4*w3 + 2*w6 - 4*i*w7,-4*w5,
+-2*i*w2 + 2*w4,0,-2*w1 + 2*w3 + 2*w6 - 4*i*w7,-2*i*w2 + 2*w4 - 4*i*w5,0,w6 - 2*i*w7,-2*i*w2 + 2*w4 - 2*i*w5,2*i*w1 - 2*i*w3 - 2*i*w6 - 4*w7,-2*i*w0 - 2*i*w1 + 2*i*w3 + 6*w7,0,-2*w1 + 2*w3 + w6 - 2*i*w7,-4*w5,0,
+2*w7,0,2*w5,2*i*w6 + 2*w7,0,2*w5,-2*i*w1 + 2*i*w3 + 2*i*w6 + 4*w7,-2*i*w5,-2*i*w2 + 2*w4 - 2*i*w5,0,0,2*w6,0,
+0,0,0,0,0,-w6,2*i*w5,0,2*i*w6 + 2*w7,0,w6,0,0;
+print("Generating all 4x4 minors over Q(i)");
+ideal J=minor(N,4);
+print("NONZERO_MINORS"); size(J);
+print("Computing exact standard basis");
+ideal G=std(J);
+print("AFFINE_DIMENSION"); dim(G);
+print("STANDARD_BASIS_SIZE"); size(G);
+link output="ASCII:w recursive_normal_rank3_basis.txt";
+for(int k=1;k<=size(G);k++){write(output,"generator="+string(k));write(output,G[k]);}
+close(output);
+quit;

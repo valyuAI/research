@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-26",
+  "change": "Replace full background retrieval responses with citation metadata; remove temporary signed image URLs from the repository.",
+  "scientificInputsChanged": false,
+  "narrationOrScenesChanged": false,
+  "mediaChanged": false,
+  "sourceLedgerSha256Before": "53127d417a3b76a7ed2c067b130918ae8434f9532bd117c2d33d4e7bff51f284",
+  "sourceLedgerSha256After": "1a06937a80b91eb5ff0a5ceed48a55d0becca5e2baa48d8533270053f880a184",
+  "rawResponseLocation": "Private research archive outside the repository."
+}

@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "census_graphs": 45242,
+  "sha256_uncompressed": "a4dd169dfccc2c4b64f5e6f7fe88fb0d867da5e7fc51e2d9cb29d2e625c9e211",
+  "terminating_orders": [
+    16,
+    17
+  ],
+  "max_reduced_order_by_rank": {
+    "5": 5,
+    "6": 10,
+    "7": 18,
+    "8": 30,
+    "9": 26,
+    "10": 22,
+    "11": 20,
+    "12": 17,
+    "13": 15,
+    "14": 15,
+    "15": 15
+  },
+  "scope": "complete recorded evidence audited; use --full for a fresh enumeration"
+}
+Extremal graphs W5 and X: inertia (11,0,4) verified (verification/extremal_result.json)
+Built paper.pdf

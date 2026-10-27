@@ -1,0 +1,511 @@
+1
+00:00:00,000 --> 00:00:05,478
+Rabbits breed. Foxes eat rabbits. When rabbits are plentiful, foxes thrive.
+
+2
+00:00:05,478 --> 00:00:10,298
+Then rabbits get scarce, foxes go hungry, and the rabbits recover.
+
+3
+00:00:10,298 --> 00:00:13,512
+The two populations rise and fall in cycles.
+
+4
+00:00:13,900 --> 00:00:19,640
+Now imagine many species, their interactions organised by a tree-shaped network.
+
+5
+00:00:19,640 --> 00:00:23,228
+Here are two for four species: a chain and a star.
+
+6
+00:00:23,228 --> 00:00:26,672
+Could they secretly behave exactly the same way?
+
+7
+00:00:26,672 --> 00:00:27,820
+Pause and guess.
+
+8
+00:00:28,200 --> 00:00:31,319
+The answer is no, apart from rare special cases.
+
+9
+00:00:31,319 --> 00:00:35,477
+And one thing first: someone else announced this result earlier.
+
+10
+00:00:35,477 --> 00:00:39,960
+What you'll see is an independent check of it, not a first discovery.
+
+11
+00:00:41,033 --> 00:00:45,055
+Start with rabbits alone, growing by about ten percent a month.
+
+12
+00:00:45,055 --> 00:00:50,033
+A hundred become about a hundred and ten, then about a hundred and twenty-two.
+
+13
+00:00:50,433 --> 00:00:55,608
+The rate of change is the gradient of this graph, written d r by d t.
+
+14
+00:00:55,608 --> 00:01:01,233
+Here it is nought point one times r: growth proportional to the population.
+
+15
+00:01:02,300 --> 00:01:07,774
+Now add foxes. The more foxes there are, the slower the rabbits grow.
+
+16
+00:01:07,774 --> 00:01:11,900
+The rabbits' rate of change is r, times two minus f.
+
+17
+00:01:12,300 --> 00:01:18,060
+And foxes need food. Their rate of change is f, times r minus three.
+
+18
+00:01:18,433 --> 00:01:23,249
+To see the whole story at once, use a plane: rabbits across, foxes up.
+
+19
+00:01:23,249 --> 00:01:28,753
+Each point is a possible state, and its arrow shows where that state is heading.
+
+20
+00:01:29,133 --> 00:01:32,353
+Follow the arrows and you go round a loop: the cycle.
+
+21
+00:01:32,353 --> 00:01:35,997
+These are the Lotka-Volterra equations, about a century old.
+
+22
+00:01:37,100 --> 00:01:42,433
+With more species, each follows the same kind of rule: its population, times a weighted
+
+23
+00:01:42,433 --> 00:01:47,765
+sum of all the populations. There are no separate birth or death numbers, so every term
+
+24
+00:01:47,765 --> 00:01:49,604
+is two populations multiplied.
+
+25
+00:01:50,000 --> 00:01:55,507
+The weights fit in a table. Row one says how species one responds to each species.
+
+26
+00:01:55,507 --> 00:01:58,664
+This four-species table is our running example.
+
+27
+00:01:59,033 --> 00:02:04,241
+The big negative numbers on the diagonal mean that each species crowds itself out.
+
+28
+00:02:05,333 --> 00:02:10,218
+Now the network. Draw each species as a dot and join some pairs with lines.
+
+29
+00:02:10,218 --> 00:02:14,711
+With no loops, and every dot reachable from every other, it's a tree.
+
+30
+00:02:14,711 --> 00:02:18,293
+Four dots allow just two trees: the chain and the star.
+
+31
+00:02:18,667 --> 00:02:24,622
+Careful: the tree is not a food web. In these systems every species can affect every
+
+32
+00:02:24,622 --> 00:02:29,515
+other. Instead, the tree is a rule about which effects must be equal.
+
+33
+00:02:29,900 --> 00:02:35,450
+Here's the rule. Remove species two, and the chain falls into branches: one on one side,
+
+34
+00:02:35,450 --> 00:02:40,748
+three and four on the other. Species two must affect everything in a branch equally.
+
+35
+00:02:41,133 --> 00:02:46,588
+In the table, that's column two: a one for species one, and a two for both three and
+
+36
+00:02:46,588 --> 00:02:51,914
+four. Every column follows this rule, leaving ten free numbers instead of sixteen.
+
+37
+00:02:51,914 --> 00:02:54,381
+All such tables form the chain family.
+
+38
+00:02:54,767 --> 00:02:59,946
+The star gives its own pattern. Removing the centre leaves three branches, so column
+
+39
+00:02:59,946 --> 00:03:01,919
+one has three different numbers.
+
+40
+00:03:03,000 --> 00:03:07,225
+To picture this, suppose species three and four are absent.
+
+41
+00:03:07,225 --> 00:03:12,167
+They stay absent, since their rate of change is zero times something.
+
+42
+00:03:12,167 --> 00:03:16,464
+So we can watch species one and two on a plane, with arrows.
+
+43
+00:03:16,833 --> 00:03:21,876
+Now describe the same motion in new variables: mixtures of the old ones.
+
+44
+00:03:21,876 --> 00:03:27,129
+Keep x one, and replace x two by twenty-seven x two minus twenty-six x one.
+
+45
+00:03:27,129 --> 00:03:32,241
+The grid shears, the arrows go with it, but only the description changed.
+
+46
+00:03:32,633 --> 00:03:36,692
+Usually, the new rules look nothing like our equations.
+
+47
+00:03:36,692 --> 00:03:42,744
+But this time they have the same shape again: each variable, times a weighted sum.
+
+48
+00:03:42,744 --> 00:03:44,441
+Only the table changed.
+
+49
+00:03:44,833 --> 00:03:50,663
+When mixing turns one system exactly into another, the two are called equivalent: the
+
+50
+00:03:50,663 --> 00:03:56,425
+same system in disguise. So the real question is: can a chain system be disguised as
+
+51
+00:03:56,425 --> 00:03:57,385
+a star system?
+
+52
+00:03:57,767 --> 00:04:03,703
+In twenty twenty-five, Peter van der Kamp conjectured no, for any two different trees,
+
+53
+00:04:03,703 --> 00:04:06,119
+and checked it up to eight species.
+
+54
+00:04:07,200 --> 00:04:12,360
+Why did that particular mixture work? Pause and think about it.
+
+55
+00:04:12,733 --> 00:04:19,393
+Start simple. An absent species stays absent, because its rate of change is itself times
+
+56
+00:04:19,393 --> 00:04:24,085
+something. Anything with that property, once zero, stays zero.
+
+57
+00:04:24,467 --> 00:04:29,948
+Our mixture, twenty-seven x two minus twenty-six x one, is one of these.
+
+58
+00:04:29,948 --> 00:04:36,875
+Work out its rate of change, and it factorises: the mixture itself, times minus twenty-five
+
+59
+00:04:36,875 --> 00:04:39,083
+x one minus twenty-six x two.
+
+60
+00:04:39,467 --> 00:04:43,741
+So on the line where the mixture is zero, the motion stays on that line.
+
+61
+00:04:43,741 --> 00:04:48,788
+Start species one and two in the ratio twenty-seven to twenty-six, and they keep that
+
+62
+00:04:48,788 --> 00:04:49,619
+ratio forever.
+
+63
+00:04:50,000 --> 00:04:54,927
+Quantities like this are called Darboux polynomials: hidden invariants.
+
+64
+00:04:54,927 --> 00:04:58,674
+They aren't conserved themselves, but their zeros are.
+
+65
+00:04:58,674 --> 00:05:02,768
+And our mixing simply turned this hidden line into an axis.
+
+66
+00:05:03,167 --> 00:05:09,618
+A tree system has one for each species, and one for each tree line, mixing just its two
+
+67
+00:05:09,618 --> 00:05:15,106
+ends; the tree rule makes that work. The chain has four plus three: seven.
+
+68
+00:05:15,106 --> 00:05:16,367
+So does the star.
+
+69
+00:05:17,467 --> 00:05:23,526
+Here's why they matter. Mixing can't create or destroy a hidden invariant; it just rewrites
+
+70
+00:05:23,526 --> 00:05:26,923
+each one. So equivalent systems have matching sets.
+
+71
+00:05:27,300 --> 00:05:33,433
+But mixing scrambles the formulas. After this mixing, x three minus x four has become
+
+72
+00:05:33,433 --> 00:05:38,700
+plain y one. You can no longer tell which invariants were single species.
+
+73
+00:05:39,067 --> 00:05:45,252
+So what survives? Take x one, x two, and twenty-seven x two minus twenty-six x one.
+
+74
+00:05:45,252 --> 00:05:50,394
+The third is built from the other two, and stays so after any mixing.
+
+75
+00:05:50,394 --> 00:05:53,971
+Call three invariants like this a linked triple.
+
+76
+00:05:54,367 --> 00:05:59,227
+Each tree line gives one linked triple: its two ends and their mixture.
+
+77
+00:05:59,227 --> 00:06:05,114
+Draw each as a triangle. Mixing can move everything around, but it never changes which
+
+78
+00:06:05,114 --> 00:06:06,415
+triples are linked.
+
+79
+00:06:06,800 --> 00:06:11,561
+Now count. In the chain, two invariants sit in two triangles each.
+
+80
+00:06:11,561 --> 00:06:17,692
+In the star, one sits in three. Mixing can't change that, so a chain system can never
+
+81
+00:06:17,692 --> 00:06:19,856
+be disguised as a star system.
+
+82
+00:06:20,933 --> 00:06:25,427
+But there's a hole. What if there are hidden invariants we haven't found?
+
+83
+00:06:25,427 --> 00:06:28,997
+Extra ones could form extra triangles and spoil the count.
+
+84
+00:06:29,367 --> 00:06:31,708
+First, a mixture can't skip a species.
+
+85
+00:06:31,708 --> 00:06:36,945
+Mix species one and three but not two: species two affects one with strength one, but
+
+86
+00:06:36,945 --> 00:06:40,704
+three with strength two, since they're in different branches.
+
+87
+00:06:40,704 --> 00:06:42,183
+That mismatch breaks it.
+
+88
+00:06:42,567 --> 00:06:48,577
+Next, try three in a row: amounts p one, p two and p three of species one, two and three.
+
+89
+00:06:48,577 --> 00:06:54,183
+Writing out the condition gives one equation per pair, with numbers from the table.
+
+90
+00:06:54,567 --> 00:07:00,533
+Take the first equation, subtract twenty-six times the second, and add the third.
+
+91
+00:07:00,533 --> 00:07:04,142
+The p two terms cancel. The p three terms cancel.
+
+92
+00:07:04,142 --> 00:07:07,383
+What's left is fifty-five p one equals zero.
+
+93
+00:07:07,767 --> 00:07:11,583
+But p one isn't zero: species one is in the mixture.
+
+94
+00:07:11,583 --> 00:07:16,866
+Contradiction. Bigger mixtures contain three in a row, so they fail too.
+
+95
+00:07:16,866 --> 00:07:21,783
+The only hidden invariants are single species and the tree's pairs.
+
+96
+00:07:22,167 --> 00:07:28,868
+That fifty-five comes from column two: one plus twenty-six, plus two plus twenty-six.
+
+97
+00:07:28,868 --> 00:07:32,494
+The proof needs sums like this to be non-zero.
+
+98
+00:07:32,494 --> 00:07:36,279
+Generic means ruling out such rare coincidences.
+
+99
+00:07:36,667 --> 00:07:41,994
+This cancellation, with letters in place of numbers, was checked line by line in Lean,
+
+100
+00:07:41,994 --> 00:07:43,915
+a program that verifies proofs.
+
+101
+00:07:45,000 --> 00:07:49,458
+An invariant in two or more triangles is a species with several neighbours.
+
+102
+00:07:49,458 --> 00:07:54,629
+A triangle joining two of those is a line between them; a triangle with one adds an end
+
+103
+00:07:54,629 --> 00:07:55,104
+species.
+
+104
+00:07:55,500 --> 00:08:00,378
+Here it is on a seven-species tree, starting from triangles alone.
+
+105
+00:08:00,378 --> 00:08:04,000
+The rule rebuilds the tree exactly, for any size.
+
+106
+00:08:04,000 --> 00:08:08,508
+So generic systems from different trees are never equivalent.
+
+107
+00:08:09,600 --> 00:08:14,864
+Now the history. These tree families were introduced in twenty twenty-three by Quispel,
+
+108
+00:08:14,864 --> 00:08:19,704
+Tapley, McLaren and van der Kamp. The conjecture followed in twenty twenty-five.
+
+109
+00:08:20,100 --> 00:08:24,739
+In September twenty twenty-six, a preprint by Zijian Zeng announced this result.
+
+110
+00:08:24,739 --> 00:08:30,073
+It has since been withdrawn and its text is unavailable, so the arguments can't be compared.
+
+111
+00:08:30,073 --> 00:08:32,508
+Withdrawal doesn't erase the announcement.
+
+112
+00:08:32,900 --> 00:08:38,337
+This work gives an independent, self-contained proof of a closely matching theorem.
+
+113
+00:08:38,337 --> 00:08:43,316
+It is a verification note, not a first discovery, and it claims no priority.
+
+114
+00:08:43,700 --> 00:08:49,488
+The written proof covers every size. Exact computer checks passed for all nine hundred
+
+115
+00:08:49,488 --> 00:08:55,141
+and eighty-six trees up to twelve species and, at chosen numbers, the full invariant
+
+116
+00:08:55,141 --> 00:08:57,698
+lists for two hundred trees up to ten.
+
+117
+00:08:57,698 --> 00:08:59,852
+Consistency checks, not a proof.
+
+118
+00:09:00,233 --> 00:09:02,833
+Lean checks only the three-in-a-row step.
+
+119
+00:09:02,833 --> 00:09:08,033
+The rest is a written proof, reviewed internally, but not yet by outside referees.
+
+120
+00:09:08,433 --> 00:09:13,829
+There are limits. Special tables are excluded: if every row is the same, every mixture
+
+121
+00:09:13,829 --> 00:09:19,162
+is an invariant and the tree is lost. And the tree is a rule about equal effects, not
+
+122
+00:09:19,162 --> 00:09:20,793
+a food web read from data.
+
+123
+00:09:21,867 --> 00:09:25,967
+To recap. One: each tree defines a family of population systems.
+
+124
+00:09:25,967 --> 00:09:31,412
+Two: their hidden invariants form linked triples, one per tree line, and mixing can't
+
+125
+00:09:31,412 --> 00:09:36,921
+change how they overlap. Three: the overlaps rebuild the tree, so different trees give
+
+126
+00:09:36,921 --> 00:09:38,715
+genuinely different systems.
+
+127
+00:09:39,100 --> 00:09:44,475
+Still open: what exactly happens at the special tables, where extra invariants appear?
+
+128
+00:09:44,475 --> 00:09:48,100
+And which networks beyond trees can be recovered this way?

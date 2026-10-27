@@ -1,0 +1,10 @@
+q=3 basis=1,t,u,tu u^2=0 forms=40 rank-ones=1600
+rep=1/3 second=1000/1600 prefixes=997 elapsed=0s
+representative 1/3 complete prefixes=1596
+rep=2/3 second=0/1600 prefixes=1597 elapsed=0s
+rep=2/3 second=1000/1600 prefixes=2596 elapsed=0s
+representative 2/3 complete prefixes=3195
+rep=3/3 second=0/1600 prefixes=3196 elapsed=0s
+rep=3/3 second=1000/1600 prefixes=4195 elapsed=0s
+representative 3/3 complete prefixes=4794
+RESULT rank<=7: NO prefixes=4794 candidates=205980

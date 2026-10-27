@@ -1,0 +1,15 @@
+{
+  "recorded_utc": "2026-10-26 13:23:14 UTC",
+  "package_build_command": "nice -n 10 sh build.sh",
+  "package_build_exit_code": 0,
+  "pdf_pages_visually_inspected": 2,
+  "final_latex_warnings": [],
+  "artifact_sha256": {
+    "paper.tex": "33732d2c68c20c24b0848981e9120de904449ffd3d5ee350d8b21342dfb0a3d9",
+    "paper.pdf": "622efc22a5582849305ea725682c25f3414988f5d415abef008e96670d308563",
+    "references.bib": "19f4655d3ff9df559c57c79adea5ad66a6b1ceae28ea0ae47f0268bf3f575a33",
+    "build.sh": "6345337901a640c66ab831e00d415f1b2d46c3d80f379c9feef9f4c686e9c1c4",
+    "readiness.md": "620491bb6a7fd1aceef19bebae27621bc5ec3dc9e5b1327b6cb972e4822f6171",
+    "video-brief.md": "baf0574f78f6207cef558c71c71ca59d0b34f819588b3db8d0dc76d58885ec60"
+  }
+}

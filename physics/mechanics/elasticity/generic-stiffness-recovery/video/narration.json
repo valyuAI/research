@@ -1,0 +1,161 @@
+{
+ "voice": "cedar",
+ "clips": [
+  {
+   "id": "s01_tap",
+   "text": "Tap a crystal, and a ripple of sound races through it. But in many materials, that ripple isn't a circle. Sound runs faster along the grain of wood than across it, and earthquake waves change speed with direction through some rocks deep inside the Earth."
+  },
+  {
+   "id": "s01_question",
+   "text": "So here's the question. If you measured how fast waves travel in every direction, could you work out exactly what the material is like inside? Pause and make a guess."
+  },
+  {
+   "id": "s02_spring",
+   "text": "Start with a spring. Squash it, and it pushes back: a stiff spring hard, a soft one gently. How hard it pushes back for each bit of squash is its stiffness."
+  },
+  {
+   "id": "s02_chain",
+   "text": "A solid is like a grid of balls joined by springs. Push one end, and the squash passes from ball to ball. That travelling squash is a sound wave."
+  },
+  {
+   "id": "s02_ratio",
+   "text": "Stiffer springs pass it on faster, and heavier balls slow it down. In fact, speed squared equals stiffness divided by density, so waves only reveal that ratio. From now on, stiffness means that ratio."
+  },
+  {
+   "id": "s03_three",
+   "text": "A wave can push and pull the balls along its path, or shake them sideways, in either of two directions. Each kind has its own speed. So in any one direction, you measure three speeds."
+  },
+  {
+   "id": "s03_grain",
+   "text": "Now make the springs stiffer one way, like the grain in wood. A flat wave runs faster along the stiff springs than across them. Draw an arrow in each direction, as long as the speed there, and the tips trace a curve. That's called anisotropy: speed depends on direction."
+  },
+  {
+   "id": "s03_surface",
+   "text": "In three dimensions, the tips trace a surface. Here's the fastest wave's surface for our running example: an imaginary crystal with no symmetry at all, from the paper's test files. It's lumpy, because it's stiffer some ways than others."
+  },
+  {
+   "id": "s03_slice",
+   "text": "Each kind of wave has its own surface, nested inside one another. Here's a slice through all three. One over speed is called slowness, and it carries the same information."
+  },
+  {
+   "id": "s04_modes",
+   "text": "How many numbers describe a material's stiffness? A tiny cube can be deformed in six basic ways: stretched along each of three directions, or skewed in each of three planes."
+  },
+  {
+   "id": "s04_table",
+   "text": "Deform the cube in any of these ways, and it can push back in all six: a six by six table. Physics makes it a mirror image across its diagonal, so only six, plus five, plus four, plus three, plus two, plus one numbers are free. Twenty-one unknowns, like twenty-one dials you can turn."
+  },
+  {
+   "id": "s05_speeds",
+   "text": "Now the measurements. Straight up, our crystal's three speeds are one point one two, one point four two, and one point six nine. Square them, and take three summaries: the sum, the sum of products in pairs, and the product."
+  },
+  {
+   "id": "s05_toy",
+   "text": "Knowing the three summaries is the same as knowing the three numbers, just as two numbers that add to five and multiply to six must be two and three."
+  },
+  {
+   "id": "s05_formula",
+   "text": "The summaries also change with direction in a tidy way. Write the direction as x, y and z. The sum is always a formula like this, fixed by six numbers. Put in straight up, so x and y are zero and z is one, and out comes six point one, just as measured."
+  },
+  {
+   "id": "s05_count",
+   "text": "The sum of pair products follows a formula fixed by fifteen numbers, and the product needs twenty-eight. That's forty-nine numbers in all, every one set by the twenty-one stiffness values."
+  },
+  {
+   "id": "s06_counting",
+   "text": "Forty-nine measurements, twenty-one unknowns. Surely that settles it? Not necessarily. x squared equals four is one equation in one unknown, and it has two answers: two, and minus two."
+  },
+  {
+   "id": "s06_twins",
+   "text": "Materials can do this too. These two tables describe different materials with a neat, box-like symmetry, differing in two entries. Yet in every direction, their speeds are identical. They are twins."
+  },
+  {
+   "id": "s06_conjecture",
+   "text": "Four mathematicians, de Hoop, Ilmavirta, Lassas and Várilly-Alvarado, proved that in two dimensions, a typical material has no twin. In three dimensions, they left it as Conjecture E: a typical material, with no special symmetry, is pinned down by its speeds."
+  },
+  {
+   "id": "s07_result",
+   "text": "This paper proves Conjecture E. A typical three-dimensional material has no twin, not even a physically impossible one. And twenty-two numbers are enough: the six of the sum formula, the fifteen of the pair formula, and the product in just one direction."
+  },
+  {
+   "id": "s07_dart",
+   "text": "Typical means this. The materials that might have twins form a thinner set, with fewer dials, like a curve drawn on a sheet of paper. Throw a dart at the paper, and you miss the curve with probability one."
+  },
+  {
+   "id": "s08_split",
+   "text": "Here's the proof idea. Suppose two tables, A and B, give the same measurements. Describe them by their midpoint, M, and half-gap, D, so A is M plus D, and B is M minus D. That's twenty-one dials for M, and twenty-one for D."
+  },
+  {
+   "id": "s08_test1",
+   "text": "Test one: the sum formulas must match. That fixes six of D's numbers in terms of the others, leaving D with fifteen dials."
+  },
+  {
+   "id": "s08_test2",
+   "text": "Test two: the pair formulas must match. Once D is chosen, that's fifteen simultaneous equations for M, the straight-line kind from school. If all fifteen are genuinely different, they use up fifteen of M's dials, leaving six. So far, fifteen plus six: twenty-one."
+  },
+  {
+   "id": "s08_test3",
+   "text": "Test three: the product in one direction must match. One more equation takes us to twenty, unless it's automatically true. The paper rules that out with an exact example."
+  },
+  {
+   "id": "s08_witness",
+   "text": "Take M as zero, and D a table that treats every direction the same. Straight up, D's numbers are minus one, minus one, and two. Minus D's are one, one, and minus two. The sums match, and so do the pair products. But the products, two and minus two, don't. So test three really removes a dial."
+  },
+  {
+   "id": "s09_repeat",
+   "text": "But there's a catch. Some equations might secretly repeat others, like x plus y equals two, and two x plus two y equals four. That's really one equation. If only r of the fifteen are genuinely different, M keeps twenty-one minus r dials. More room for twins."
+  },
+  {
+   "id": "s09_balance",
+   "text": "The heart of the paper is a balancing act. It proves that half-gaps with only r genuine equations are rare: they have at most r minus one dials. Whenever M gains freedom, D loses at least as much."
+  },
+  {
+   "id": "s09_cancel",
+   "text": "Add them up: r minus one, plus twenty-one minus r. The r's cancel, and you're left with twenty."
+  },
+  {
+   "id": "s09_bars",
+   "text": "Here it is for every r, from fifteen down to six. Every bar stops at twenty, one short of twenty-one. And apart from zero, no half-gap has fewer than six genuine equations."
+  },
+  {
+   "id": "s09_conclude",
+   "text": "So every possible twin pair fits in a family of at most twenty dials, while materials have twenty-one. Like the curve on the paper, it's too thin to cover everything. A typical material has no twin."
+  },
+  {
+   "id": "s10_points",
+   "text": "Proving 'at most r minus one' is where the computer comes in. A symmetry argument about rotations shows that every family of bad half-gaps must pass through one of two special tables, with six and eleven genuine equations. So the computer only has to look closely there, and check a few flat slices."
+  },
+  {
+   "id": "s10_exact",
+   "text": "All this uses exact whole-number arithmetic, with no rounding, partly on a clock with thirty-two thousand and three hours. The paper explains why a miss on that clock is a miss for ordinary numbers too. The results are certificates: identities anyone can multiply out and check."
+  },
+  {
+   "id": "s11_seven",
+   "text": "Real experiments measure only a few directions. Seven or fewer can never work. The sums give at most six useful numbers, since their formula has six, and the other two summaries give two per direction. Six, plus seven, plus seven, is twenty: one short."
+  },
+  {
+   "id": "s11_eleven",
+   "text": "Eleven random directions are enough, with probability one. A material plus eleven directions has forty-three dials, and every way of having a twin fits in forty-two. The paper also gives fifteen specific directions that work for any typical material."
+  },
+  {
+   "id": "s11_open",
+   "text": "What about eight, nine or ten? Counting doesn't rule them out, and nobody knows yet."
+  },
+  {
+   "id": "s12_proved",
+   "text": "So what's proved? A typical material has no twin. The proof is computer-assisted: written reasoning joined to exact certificates. Lean, a proof-checking program, has checked eleven key identities, but not the whole argument. It's been reviewed internally, not yet by outside referees."
+  },
+  {
+   "id": "s12_not",
+   "text": "And what isn't? Unique doesn't mean stable. In one simulated test, noise of one part in a thousand in the speeds left the best fit to the twenty-two numbers about forty-five percent off. Symmetric materials can still have twins, and density is never separated from stiffness."
+  },
+  {
+   "id": "s13_recap",
+   "text": "To recap. One: stiffness takes twenty-one numbers, and counting measurements can't rule out twins. Two: split a twin pair into midpoint and half-gap, and all such pairs fill at most twenty dials, so a typical material has none. Three: twenty-two summary numbers, or eleven random directions, are enough. Seven are not."
+  },
+  {
+   "id": "s13_open",
+   "text": "Still unknown: whether eight, nine or ten directions are enough, exactly which special materials have twins, and how to recover stiffness reliably from noisy measurements."
+  }
+ ]
+}

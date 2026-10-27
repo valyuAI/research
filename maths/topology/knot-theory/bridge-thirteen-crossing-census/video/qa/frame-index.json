@@ -1,0 +1,182 @@
+[
+  {
+    "scene": "Humps",
+    "kind": "start",
+    "time": 0.35,
+    "file": "qa/frames/01-Humps-start.png"
+  },
+  {
+    "scene": "Humps",
+    "kind": "middle",
+    "time": 28.217,
+    "file": "qa/frames/01-Humps-middle.png"
+  },
+  {
+    "scene": "Humps",
+    "kind": "end",
+    "time": 56.033,
+    "file": "qa/frames/01-Humps-end.png"
+  },
+  {
+    "scene": "Loops",
+    "kind": "start",
+    "time": 56.783,
+    "file": "qa/frames/02-Loops-start.png"
+  },
+  {
+    "scene": "Loops",
+    "kind": "middle",
+    "time": 80.033,
+    "file": "qa/frames/02-Loops-middle.png"
+  },
+  {
+    "scene": "Loops",
+    "kind": "end",
+    "time": 103.233,
+    "file": "qa/frames/02-Loops-end.png"
+  },
+  {
+    "scene": "Permutations",
+    "kind": "start",
+    "time": 103.983,
+    "file": "qa/frames/03-Permutations-start.png"
+  },
+  {
+    "scene": "Permutations",
+    "kind": "middle",
+    "time": 126.45,
+    "file": "qa/frames/03-Permutations-middle.png"
+  },
+  {
+    "scene": "Permutations",
+    "kind": "end",
+    "time": 148.867,
+    "file": "qa/frames/03-Permutations-end.png"
+  },
+  {
+    "scene": "Crossing",
+    "kind": "start",
+    "time": 149.617,
+    "file": "qa/frames/04-Crossing-start.png"
+  },
+  {
+    "scene": "Crossing",
+    "kind": "middle",
+    "time": 178.383,
+    "file": "qa/frames/04-Crossing-middle.png"
+  },
+  {
+    "scene": "Crossing",
+    "kind": "end",
+    "time": 207.1,
+    "file": "qa/frames/04-Crossing-end.png"
+  },
+  {
+    "scene": "FixedValues",
+    "kind": "start",
+    "time": 207.85,
+    "file": "qa/frames/05-FixedValues-start.png"
+  },
+  {
+    "scene": "FixedValues",
+    "kind": "middle",
+    "time": 240.15,
+    "file": "qa/frames/05-FixedValues-middle.png"
+  },
+  {
+    "scene": "FixedValues",
+    "kind": "end",
+    "time": 272.4,
+    "file": "qa/frames/05-FixedValues-end.png"
+  },
+  {
+    "scene": "Connected",
+    "kind": "start",
+    "time": 273.15,
+    "file": "qa/frames/06-Connected-start.png"
+  },
+  {
+    "scene": "Connected",
+    "kind": "middle",
+    "time": 296.583,
+    "file": "qa/frames/06-Connected-middle.png"
+  },
+  {
+    "scene": "Connected",
+    "kind": "end",
+    "time": 319.967,
+    "file": "qa/frames/06-Connected-end.png"
+  },
+  {
+    "scene": "LowerBound",
+    "kind": "start",
+    "time": 320.717,
+    "file": "qa/frames/07-LowerBound-start.png"
+  },
+  {
+    "scene": "LowerBound",
+    "kind": "middle",
+    "time": 341.583,
+    "file": "qa/frames/07-LowerBound-middle.png"
+  },
+  {
+    "scene": "LowerBound",
+    "kind": "end",
+    "time": 362.4,
+    "file": "qa/frames/07-LowerBound-end.png"
+  },
+  {
+    "scene": "Colouring",
+    "kind": "start",
+    "time": 363.15,
+    "file": "qa/frames/08-Colouring-start.png"
+  },
+  {
+    "scene": "Colouring",
+    "kind": "middle",
+    "time": 391.983,
+    "file": "qa/frames/08-Colouring-middle.png"
+  },
+  {
+    "scene": "Colouring",
+    "kind": "end",
+    "time": 420.767,
+    "file": "qa/frames/08-Colouring-end.png"
+  },
+  {
+    "scene": "Census",
+    "kind": "start",
+    "time": 421.517,
+    "file": "qa/frames/09-Census-start.png"
+  },
+  {
+    "scene": "Census",
+    "kind": "middle",
+    "time": 445.75,
+    "file": "qa/frames/09-Census-middle.png"
+  },
+  {
+    "scene": "Census",
+    "kind": "end",
+    "time": 469.933,
+    "file": "qa/frames/09-Census-end.png"
+  },
+  {
+    "scene": "Ending",
+    "kind": "start",
+    "time": 470.683,
+    "file": "qa/frames/10-Ending-start.png"
+  },
+  {
+    "scene": "Ending",
+    "kind": "middle",
+    "time": 498.617,
+    "file": "qa/frames/10-Ending-middle.png"
+  },
+  {
+    "scene": "Ending",
+    "kind": "end",
+    "time": 526.5,
+    "file": "qa/frames/10-Ending-end.png"
+  }
+]

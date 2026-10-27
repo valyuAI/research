@@ -1,0 +1,4 @@
+6-periodic trajectory verified; sides [2, 0, 5, 2, 7, 5]
+even return slope -2  odd return slope -1/2
+perturbation by 1/1000 returns as -1/500 and -1/2000
+PASS: hyperbolic periodic orbit, so Q is not fully periodic

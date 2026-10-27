@@ -1,0 +1,90 @@
+\begin{thebibliography}{10}
+
+\bibitem{DeformationPaths}
+Matthias Adrian-Himmelmann.
+\newblock {DeformationPaths.jl}.
+\newblock \url{https://github.com/matthiashimmelmann/DeformationPaths.jl}.
+\newblock Julia package; main branch and all branches inspected up to 23
+  September 2026. Described in M. Adrian-Himmelmann, arXiv:2602.08016v2.
+
+\bibitem{DeformationPathsZenodo}
+Matthias Adrian-Himmelmann.
+\newblock matthiashimmelmann/{DeformationPaths.jl}: Release 1.1.0.
+\newblock Zenodo,
+  \href{https://doi.org/10.5281/zenodo.19830468}{doi:10.5281/zenodo.19830468},
+  2026.
+\newblock Published 27 April 2026.
+
+\bibitem{AHWZ2026}
+Matthias Adrian-Himmelmann, Martin Winter, and Zhen Zhang.
+\newblock Deformations and second-order rigidity of polytopes.
+\newblock \href{https://arxiv.org/abs/2607.09252}{arXiv:2607.09252}, 2026.
+\newblock arXiv:2607.09252v1, submitted 10 July 2026.
+
+\bibitem{AHWZsupp}
+Matthias Adrian-Himmelmann, Martin Winter, and Zhen Zhang.
+\newblock Supplementary material: ``deformations and second-order rigidity of
+  polytopes''.
+\newblock Zenodo,
+  \href{https://doi.org/10.5281/zenodo.20595067}{doi:10.5281/zenodo.20595067},
+  2026.
+\newblock Version 1, 8 June 2026.
+
+\bibitem{Cauchy1813}
+Augustin-Louis Cauchy.
+\newblock Sur les polygones et les poly\`edres, second m\'emoire.
+\newblock {\em Journal de l'\'Ecole Polytechnique}, 9:87--98, 1813.
+
+\bibitem{CW1996}
+Robert Connelly and Walter Whiteley.
+\newblock Second-order rigidity and prestress stability for tensegrity
+  frameworks.
+\newblock {\em SIAM Journal on Discrete Mathematics}, 9(3):453--491, 1996.
+
+\bibitem{OSCARJohnson}
+Zoe Geiselmann, Alexej Jordan, Michael Joswig, Bernd Sturmfels, Marta Panizzut,
+  and Olivia R\"ohrig.
+\newblock Exact {J}ohnson solids.
+\newblock Zenodo,
+  \href{https://doi.org/10.5281/zenodo.10729583}{doi:10.5281/zenodo.10729583},
+  2024.
+\newblock Dataset, version 1, 29 February 2024.
+
+\bibitem{HSW2026}
+Matthias Himmelmann, Bernd Schulze, and Martin Winter.
+\newblock Rigidity of polytopes with edge length and coplanarity constraints.
+\newblock \href{https://arxiv.org/abs/2505.00874}{arXiv:2505.00874}, 2026.
+\newblock arXiv:2505.00874v3, revised 9 March 2026.
+
+\bibitem{Johnson1966}
+Norman~W. Johnson.
+\newblock Convex polyhedra with regular faces.
+\newblock {\em Canadian Journal of Mathematics}, 18:169--200, 1966.
+
+\bibitem{Kochetkov2020}
+Yury Kochetkov.
+\newblock The geometry of quadrangular convex pyramids.
+\newblock \href{https://arxiv.org/abs/2008.07285}{arXiv:2008.07285}, 2020.
+\newblock arXiv:2008.07285v1, 17 August 2020.
+
+\bibitem{McCooey}
+David~I. McCooey.
+\newblock Visual polyhedra: Johnson solids.
+\newblock \url{https://dmccooey.com/polyhedra/}.
+\newblock Exact coordinate files for J1--J92; accessed 25 October 2026.
+
+\bibitem{Winter2023}
+Martin Winter.
+\newblock Rigidity, tensegrity and reconstruction of polytopes under metric
+  constraints.
+\newblock \href{https://arxiv.org/abs/2302.14194}{arXiv:2302.14194}, 2024.
+\newblock arXiv:2302.14194v2, 8 January 2024.
+
+\bibitem{Zalgaller1969}
+Victor~A. Zalgaller.
+\newblock {\em Convex Polyhedra with Regular Faces}, volume~2 of {\em Seminars
+  in Mathematics, V. A. Steklov Mathematical Institute, Leningrad}.
+\newblock Consultants Bureau, New York, 1969.
+\newblock English translation of Zap. Nauchn. Sem. LOMI 2 (1967), 5--221.
+
+\end{thebibliography}

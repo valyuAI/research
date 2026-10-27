@@ -1,0 +1,157 @@
+\documentclass[11pt]{amsart}
+\usepackage[a4paper,textwidth=158mm,textheight=237mm,centering]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,mathtools,amssymb,graphicx,flafter,booktabs}
+\usepackage[unicode,colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\LT}{\operatorname{LT}}
+\DeclareRobustCommand{\shapek}{\ensuremath{(k,k-1,\dots,4,3,3)}}
+\title{Latin tableaux of shape \texorpdfstring{\shapek}{(k,k-1,...,4,3,3)}}
+\author{Harvey Yorke}
+\address{Valyu AI}
+\ifdefined\journalversion\else
+\author{Valyu DeepResearch}
+\address{Valyu AI}
+\fi
+\ifdefined\journalversion
+  \hypersetup{pdftitle={Latin tableaux of shape (k,k-1,...,4,3,3)},pdfauthor={Harvey Yorke}}
+\else
+  \hypersetup{pdftitle={Latin tableaux of shape (k,k-1,...,4,3,3)},pdfauthor={Harvey Yorke and Valyu DeepResearch}}
+\fi
+\date{25 October 2026}
+\keywords{Latin tableaux, wide partitions, Rota's basis conjecture, enumeration}
+\newcommand{\paperAuthorBlock}[1]{%
+  \begin{minipage}[t]{.44\textwidth}
+    \centering\normalfont\normalsize #1\par\small Valyu AI\par
+  \end{minipage}%
+}
+\makeatletter
+\renewcommand{\@setauthors}{%
+  \begingroup\trivlist\centering\normalfont\normalsize
+  \@topsep30\p@\relax\advance\@topsep by -\baselineskip\item\relax
+  \ifdefined\journalversion
+    \paperAuthorBlock{Harvey Yorke}%
+  \else
+    \paperAuthorBlock{Harvey Yorke}\hspace{.06\textwidth}\paperAuthorBlock{Valyu DeepResearch}%
+  \fi
+  \endtrivlist\endgroup
+}
+\renewcommand{\@setaddresses}{}
+\makeatother
+\begin{document}
+\raggedbottom
+\begin{abstract}
+A Latin tableau of shape $\lambda$ and type $\lambda'$ fills row $i$ of the Young diagram of $\lambda$ with $1,\dots,\lambda_i$ so that no column repeats an entry. We give an independent reconstruction and computational verification of the formula $\LT(\lambda_k)=9\cdot4^{k-3}$ for $\lambda_k=(k,k-1,\dots,5,4,3,3)$ and every $k\ge5$, conjectured by Daugherty and coauthors. An earlier public proof dated 22 October 2026 already establishes the same formula with the same four-extension mechanism; no first-resolution claim is made. Five invariants of the top row and column contents propagate when a row is added, forcing exactly four extensions. The base case $k=6$ is an independently replicated finite check of $576$ tableaux. We also supply explicit checked examples for six further shapes, without claiming new existence results.
+\end{abstract}
+\maketitle
+
+\section{The conjecture}
+
+Let $\lambda$ be a partition and $\lambda'$ its conjugate. Following~\cite{DFHLMP2026}, a \emph{Latin tableau of shape $\lambda$ and type $\lambda'$} is a filling of the Young diagram of $\lambda$ in which row $i$ contains each of $1,\dots,\lambda_i$ exactly once and no integer appears twice in a column; $\LT(\lambda)$ is the number of such fillings. A partition is \emph{Latin} if $\LT(\lambda)>0$. The wide partition conjecture on free matroids of Chow, Fan, Goemans and Vondr\'ak~\cite{CFGV2003} asserts that $\lambda$ is Latin exactly when it is wide, and it is a special case of the wide partition conjecture, which implies Rota's basis conjecture~\cite{DFHLMP2026}.
+
+Section~6 of~\cite{DFHLMP2026} asks for the exact count throughout this family. Its discussion of missing general results should be distinguished from finite verification: \cite{CFGV2003} already reports Latinness checks for all wide diagrams with at most $65$ cells and all those fitting in a $10\times10$ square. In particular that finite work covers $\lambda_k$ through $k=10$. The exact-count conjecture is:
+
+\begin{theorem}[Conjecture~6.3 of~\cite{DFHLMP2026}]\label{thm:main}
+If $\lambda_k=(k,k-1,\dots,5,4,3,3)$ with $k\ge5$, then $\LT(\lambda_k)=9\cdot4^{k-3}$.
+\end{theorem}
+
+The source also records that for $k=6$ every filling has $4,5,6$ in the first three cells of the top row and $1,2,3$ in the last three. The argument below extends this observation to all $k$ and turns it into an induction.
+
+\paragraph{Prior proof and scope of this note.}
+A public proof dated 22 October 2026 in~\cite{PriorLatinProof2026} establishes this exact formula by top-row insertion, using an availability-set invariant that gives four extensions at each step. The corresponding implementation was merged that day~\cite{PriorLatinImplementation2026}. Direct inspection on 26 October 2026 confirmed that the issue contains a complete ordinary proof, not merely a preregistration. Our independently developed argument uses the same mechanism, expressed as invariants of entries and column contents. This is a verification note with reproducible finite checks, not a claim to a new solution. We have not replayed the earlier formal implementation.
+
+\section{Notation and invariants}
+
+Index rows from the top and columns from the left, starting at $1$. The shape $\lambda_k$ has $k-1$ rows of lengths $k,k-1,\dots,4,3,3$. Columns $1,2,3$ have $k-1$ cells; for $c\ge4$, column $c$ consists of the cells in rows $1,\dots,k-c+1$. Deleting the top row of a tableau of shape $\lambda_k$ leaves a tableau of shape $\lambda_{k-1}$, written in columns $1,\dots,k-1$. For a tableau $T$ write $T(r,c)$ for the entry in row $r$ and column $c$, and $\mathrm{col}_T(c)$ for the set of entries of column $c$.
+
+\begin{definition}
+For $k\ge6$, a tableau $T$ of shape $\lambda_k$ satisfies the \emph{invariants} if:
+\begin{enumerate}
+\item[(I1)] Its top row has $\{T(1,1),T(1,2),T(1,3)\}=\{k-2,k-1,k\}$, $T(1,c)=k+1-c$ for $4\le c\le k-3$, and $\{T(1,k-2),T(1,k-1),T(1,k)\}=\{1,2,3\}$.
+\item[(I2)] $\mathrm{col}_T(c)=\{1,\dots,k-c+1\}$ for $4\le c\le k-2$; column $k-1$ consists of two entries from $\{1,2,3\}$ and column $k$ of one.
+\item[(I3)] Each value $v\le k-2$ occurs in each of columns $1,2,3$; the value $k-1$ occurs in exactly two of them and $k$ in exactly one.
+\item[(I4)] The column of $k$ in row $1$ differs from the column of $k-1$ in row $2$.
+\item[(I5)] $T(1,k)\ne T(2,k-1)$.
+\end{enumerate}
+\end{definition}
+
+The entries of column $c$ are distinct, and column $c$ has exactly $k-c+1$ cells for $c\ge4$, so (I2) says these cells hold the smallest possible values. In (I3), $k-1$ occurs only in rows $1$ and $2$ and $k$ only in row $1$, so these occurrences all lie in columns $1,2,3$.
+
+\begin{lemma}\label{lem:step}
+Let $k\ge7$ and let $T'$ be a tableau of shape $\lambda_{k-1}$ satisfying the invariants. Then exactly four tableaux $T$ of shape $\lambda_k$ have $T'$ as their lower $k-2$ rows, and each of them satisfies the invariants.
+\end{lemma}
+
+\begin{proof}
+Write $k'=k-1$ and let $(x_1,\dots,x_k)$ be a candidate top row, a permutation of $1,\dots,k$ with $x_c\notin\mathrm{col}_{T'}(c)$ for all $c$ (column $k$ of $T'$ is empty).
+
+\emph{Columns $1,2,3$.} By (I3) for $T'$, every $v\le k'-2=k-3$ occurs in each of columns $1,2,3$ of $T'$, so $x_1,x_2,x_3\in\{k-2,k-1,k\}$, and hence $\{x_1,x_2,x_3\}=\{k-2,k-1,k\}$. The value $k-2=k'-1$ occurs in $T'$ in exactly two of these columns, in rows $1$ and $2$ of $T'$; call them $a$ (row 1) and $b$ (row 2), and let $c^*$ be the third column. The value $k-1=k'$ occurs once, in row 1 of $T'$, in a column $d\ne a$. By (I4) for $T'$, $d\ne b$, so $d=c^*$. Hence $k-2$ must go to column $c^*$, $k-1$ to $a$ or $b$, and $k$ to the remaining column: two choices.
+
+\emph{Middle columns.} The remaining values are $1,\dots,k-3$. For $4\le c\le k-3=k'-2$, (I2) for $T'$ gives $\mathrm{col}_{T'}(c)=\{1,\dots,k-c\}$, so $x_c\ge k-c+1$. Column $4$ needs a value at least $k-3$, and only $k-3$ remains; column $5$ then needs at least $k-4$, and only $k-4$ remains; continuing, $x_c=k+1-c$ for $4\le c\le k-3$.
+
+\emph{Last three columns.} The values $1,2,3$ remain for columns $k-2,k-1,k$. By (I2) for $T'$, column $k-2=k'-1$ of $T'$ holds two values of $\{1,2,3\}$, namely $T'(1,k'-1)$ and $T'(2,k'-1)$, so $x_{k-2}$ is the third value $s^*$. Column $k-1=k'$ of $T'$ holds the single value $e=T'(1,k')$. Since $e\ne T'(1,k'-1)$ (same row) and $e\ne T'(2,k'-1)$ by (I5) for $T'$, we have $e=s^*$. So $x_{k-1}$ is either of the two values other than $s^*$, and $x_k$ is the last one: two choices.
+
+Conversely each of the $2\times2$ choices is a permutation of $1,\dots,k$ meeting every column condition, by the facts just used. So there are exactly four extensions. Each satisfies (I1) by construction. For (I2): for $4\le c\le k-3$, $\mathrm{col}_T(c)=\{1,\dots,k-c\}\cup\{k+1-c\}$; column $k-2$ gains $s^*$ and becomes $\{1,2,3\}$; column $k-1$ holds $e$ and $x_{k-1}$; column $k$ holds $x_k$. For (I3): values up to $k-3$ already occurred in all three columns, $k-2$ is added in the missing column $c^*$, $k-1$ now occurs in $d=c^*$ (row 2 of $T$) and in $a$ or $b$, and $k$ occurs once. For (I4): $k$ lies in column $a$ or $b$ of row 1, while $k-1$ lies in column $d=c^*$ of row 2. For (I5): $T(1,k)=x_k\ne s^*=e=T(2,k-1)$.
+\end{proof}
+
+\begin{lemma}\label{lem:base}
+$\LT(\lambda_5)=144$, $\LT(\lambda_6)=576$, and every tableau of shape $\lambda_6$ satisfies the invariants.
+\end{lemma}
+
+\begin{proof}
+Finite enumeration; see Section~\ref{sec:verify}. For $k=6$ condition (I1) says that the top row is a permutation of $4,5,6$ followed by a permutation of $1,2,3$, and (I2) says that column $4$ is $\{1,2,3\}$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+For $k=5,6$ this is Lemma~\ref{lem:base}. By induction on $k\ge6$, Lemma~\ref{lem:step} shows that every tableau of shape $\lambda_k$ satisfies the invariants and that deleting the top row is exactly four-to-one onto the tableaux of shape $\lambda_{k-1}$. Hence $\LT(\lambda_k)=4^{k-6}\cdot576=9\cdot4^{k-3}$.
+\end{proof}
+
+\begin{corollary}
+Every partition $\lambda_k=(k,k-1,\dots,5,4,3,3)$ with $k\ge5$ is Latin. These partitions are wide, so this confirms the wide partition conjecture on free matroids for this family.
+\end{corollary}
+
+\begin{proof}
+Latinness is immediate from Theorem~\ref{thm:main}. For wideness it suffices, by~\cite[Proposition~2.4]{DFHLMP2026} (from~\cite{CFGV2003}), that every lower subpartition, obtained by deleting some top rows, dominates its conjugate. The lower subpartitions of $\lambda_k$ are $\lambda_j$ for $5\le j\le k$ together with $(4,3,3)$, $(3,3)$ and $(3)$. The conjugate of $\lambda_j$ is $(j-1,j-1,j-1,j-3,j-4,\dots,1)$, and for $3\le i\le j-3$ both $\lambda_j$ and its conjugate have $i$-th partial sum $i(j+1)-i(i+1)/2$. The first two partial sums are $j\ge j-1$ and $2j-1\ge2j-2$; at $i=j-2$ both add $3$, and at $i=j-1$ the partition adds $3$ while the conjugate adds $2$. So dominance holds for every $i\le j-1=\ell(\lambda_j)$. The three small cases are checked directly: $(4,3,3)\succeq(3,3,3,1)$, $(3,3)\succeq(2,2,2)$ and $(3)\succeq(1,1,1)$.
+\end{proof}
+
+The proof also describes the top row of every tableau of shape $\lambda_k$ for $k\ge6$: a permutation of $k-2,k-1,k$, then $k-3,k-4,\dots,4$, then a permutation of $1,2,3$. This extends the observation of~\cite[\S6]{DFHLMP2026} for $k=6$.
+
+\begin{remark}\label{rem:six}
+After Conjecture~6.3, \cite[\S6]{DFHLMP2026} lists $(8,7,5,4,4,4)$, $(8,6,5,5,4,4)$, $(7,6,6,5,4,4)$, $(7,7,6,4,4,2,2)$, $(7,7,5,5,4,2,2)$ and $(7,7,6,5,3,3,2)$ as natural next cases for general results. Each has $32$ cells, so existence was already covered by the finite verification reported in~\cite{CFGV2003}. Table~\ref{tab:six} supplies explicit tableaux found by a randomized depth-first search and independently checked here. These are reproducible examples, not new existence results or a structural explanation.
+\end{remark}
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{ll}
+\toprule
+shape & rows of a Latin tableau, top to bottom\\
+\midrule
+$(8,7,5,4,4,4)$ & 87653241, 2657431, 54312, 3124, 1243, 4312\\
+$(8,6,5,5,4,4)$ & 87562314, 316542, 25341, 54213, 1243, 4312\\
+$(7,6,6,5,4,4)$ & 3576214, 265413, 613542, 54213, 1243, 4312\\
+$(7,7,6,4,4,2,2)$ & 7653241, 5746312, 653412, 3421, 4312, 12, 21\\
+$(7,7,5,5,4,2,2)$ & 7654312, 6735421, 35412, 54231, 4312, 12, 21\\
+$(7,7,6,5,3,3,2)$ & 6745312, 7653421, 546123, 45321, 132, 321, 21\\
+\bottomrule
+\end{tabular}
+\caption{Latin tableaux for the six shapes listed after Conjecture~6.3 of~\cite{DFHLMP2026}.}
+\label{tab:six}
+\end{table}
+
+\section{Verification}\label{sec:verify}
+
+The supplied standard-library Python program enumerates all tableaux of shapes $\lambda_5$ and $\lambda_6$ in two independent ways (row permutations from the bottom row up, and cell-by-cell from the top row down), obtaining $144$ and $576$, and checks (I1)--(I5) on all $576$ tableaux of shape $\lambda_6$. As consistency checks it also confirms $\LT(\lambda_k)=9\cdot4^{k-3}$ by direct enumeration for $k\le7$ (for $k\le9$ with the option \texttt{--full}; a separate run reached $k=10$), that every tableau of shape $\lambda_k$ satisfies the invariants for $6\le k\le7$ (up to $8$ with \texttt{--full}), that each has exactly four extensions, and that $\lambda_k$ is wide for $5\le k\le15$ directly from Definition~2.2 of~\cite{DFHLMP2026}. Only Lemma~\ref{lem:base} is used in the proof; the rest is redundancy. It uses no assertions and exits non-zero on failure.
+
+\paragraph{Scope.} The proof is a short induction plus a finite base case. Our proof is not formalized in a proof assistant. The monotonicity Conjectures~6.1 and~6.2 in~\cite[\S6]{DFHLMP2026} are not addressed, nor is a general structural theorem for the six example shapes.
+
+\paragraph{Research assistance.}
+Valyu DeepResearch scouted recent open problems and audited prior work. Coding agents ran the enumerations, found the invariants and the induction, wrote the checker and drafted this manuscript. These are internal checks and do not constitute external peer review.
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

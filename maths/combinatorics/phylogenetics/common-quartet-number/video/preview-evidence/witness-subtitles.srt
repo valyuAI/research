@@ -1,0 +1,87 @@
+1
+00:00:00,000 --> 00:00:03,170
+Here is the actual thirteen-leaf example used in the paper.
+
+2
+00:00:03,170 --> 00:00:07,952
+Its labels are one through thirteen. We will keep the branches fixed and move the labels.
+
+3
+00:00:07,952 --> 00:00:12,626
+That preserves the unlabelled shape while changing the relationships between particular
+
+4
+00:00:12,626 --> 00:00:13,056
+species.
+
+5
+00:00:13,400 --> 00:00:17,824
+Rotate the labels one, two and three around their three positions.
+
+6
+00:00:17,824 --> 00:00:23,187
+Do the same within four, five, six; seven, eight, nine; and ten, eleven, twelve.
+
+7
+00:00:23,187 --> 00:00:28,952
+Thirteen stays fixed. One rotation gives the second tree, and another gives the third.
+
+8
+00:00:29,333 --> 00:00:33,235
+Look only at labels one, four, seven and thirteen.
+
+9
+00:00:33,235 --> 00:00:36,980
+In the first tree, four and seven form one pair.
+
+10
+00:00:36,980 --> 00:00:41,428
+In the other two trees, one and four form a pair instead.
+
+11
+00:00:41,428 --> 00:00:44,237
+The three answers are not all equal.
+
+12
+00:00:44,600 --> 00:00:50,807
+Notice that two answers can match. We only need to prevent agreement by all three trees
+
+13
+00:00:50,807 --> 00:00:57,300
+at once. In fact, each pair of these trees agrees on one hundred and thirty-seven quartets.
+
+14
+00:00:57,300 --> 00:01:00,368
+Pairwise agreement is a different question.
+
+15
+00:01:00,733 --> 00:01:05,169
+Thirteen leaves contain seven hundred and fifteen groups of four.
+
+16
+00:01:05,169 --> 00:01:10,082
+The check examines every group, and finds none with three equal answers.
+
+17
+00:01:10,082 --> 00:01:14,449
+Two methods, using path distances and edge splits, confirm this.
+
+18
+00:01:14,449 --> 00:01:18,133
+It is an exhaustive finite check, not random sampling.
+
+19
+00:01:18,533 --> 00:01:22,907
+One example is enough to show that thirteen cannot force agreement.
+
+20
+00:01:22,907 --> 00:01:26,105
+But proving that fourteen always works is harder.
+
+21
+00:01:26,105 --> 00:01:31,654
+We must cover every possible triple of trees, not just trees built by our relabelling
+
+22
+00:01:31,654 --> 00:01:32,045
+trick.

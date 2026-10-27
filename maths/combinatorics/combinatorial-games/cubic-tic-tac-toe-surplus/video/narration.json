@@ -1,0 +1,141 @@
+{
+  "voice": "cedar",
+  "clips": [
+    {
+      "id": "t01",
+      "text": "Can you stop someone completing a line, without trying to complete one yourself? That is the Maker-Breaker version of noughts and crosses. Maker moves first and wants a whole line. Breaker only needs to spoil every possible line."
+    },
+    {
+      "id": "t02",
+      "text": "Here is a five by five board. Each repeated number marks a pair of cells. Every row, every column, and both long diagonals contain one complete pair. The centre is unpaired. Watch what happens when Maker takes a numbered cell."
+    },
+    {
+      "id": "t03",
+      "text": "Breaker takes its partner. Whatever Maker tries next, answer in the paired cell. Maker can never own both cells of a pair. Since every winning line contains a pair, every line will contain a cell Maker cannot own."
+    },
+    {
+      "id": "t04",
+      "text": "Notice why the pairs must not overlap. One cell cannot serve as the answer to two different threats. We want each line to receive two private cells. This turns a game strategy into a problem about assigning distinct cells."
+    },
+    {
+      "id": "t05",
+      "text": "Now stack seven square boards into a cube. A winning line can run along an axis, across a flat slice diagonally, or from one corner to its opposite corner. On the seven-cube, every such line has seven cells."
+    },
+    {
+      "id": "t06",
+      "text": "There are one hundred and forty seven axis lines, forty two plane diagonals, and four space diagonals. That makes one hundred and ninety three lines. Giving every line two private cells would require three hundred and eighty six cells."
+    },
+    {
+      "id": "t07",
+      "text": "But the cube has only three hundred and forty three cells. So a pairing cannot work from the empty board. Breaker must first claim cells that kill several lines at once. A killed line already contains a Breaker mark and needs no pair."
+    },
+    {
+      "id": "t08",
+      "text": "To find a pairing later, draw two slots for every surviving line. Connect each slot to the free cells on its line. Our task is to assign a different cell to every slot. Such an assignment is called a matching."
+    },
+    {
+      "id": "t09",
+      "text": "A local shortage can ruin everything. These three slots can reach only two cells. Even if many other cells exist elsewhere, one of these slots must lose out. The shortage belongs to this group, not necessarily to the whole board."
+    },
+    {
+      "id": "t10",
+      "text": "Hall's theorem says that this is the only kind of obstruction. A matching exists exactly when every group of slots can reach at least as many cells as the group contains. Every group matters, including ones that overlap other groups."
+    },
+    {
+      "id": "t11",
+      "text": "Now ask for spare capacity. Suppose a group of four slots can reach seven cells. Its surplus is three. But the surplus of the entire graph is the smallest spare capacity over every nonempty group of slots, not just this visible example."
+    },
+    {
+      "id": "t12",
+      "text": "If every group has at least three spare cells, delete any three cells. Each group loses at most three of its neighbours, so every group still has enough. Hall's condition survives. The new matching may differ from the old matching."
+    },
+    {
+      "id": "t13",
+      "text": "That is the key move. Unknown Maker choices simply delete available cells. If the graph has enough surplus, we do not need to enumerate where those choices went. A single robust certificate covers all of them."
+    },
+    {
+      "id": "t14",
+      "text": "How do we measure the minimum without listing every group? Temporarily add copies of one slot and ask for a matching again. If every slot can tolerate three extra copies, every group must have at least three spare neighbours."
+    },
+    {
+      "id": "t15",
+      "text": "Why? Pick any group, then pick a slot inside it. That group plus its three copies now needs three extra distinct cells. Passing the test supplies them. Because a line's two slots have identical neighbours, only one test per surviving line is needed."
+    },
+    {
+      "id": "t16",
+      "text": "Consider Maker opening at the centre of the seven-cube. Breaker first takes five, five, five. Over the next three rounds, Breaker takes a free cell on each of the other space diagonals, favouring cells that kill the most new lines."
+    },
+    {
+      "id": "t17",
+      "text": "Four Breaker cells can therefore block many lines. In the successful opening they meet twenty seven lines, leaving one hundred and sixty six alive. The certificate temporarily remembers only Maker's centre cell and leaves the other three Maker moves unspecified."
+    },
+    {
+      "id": "t18",
+      "text": "Every checked central configuration meeting twenty six or twenty seven lines has surplus at least four. Removing the three unknown Maker cells therefore preserves a pairing. At that point Breaker switches to the partner-response strategy for the rest of the game."
+    },
+    {
+      "id": "t19",
+      "text": "The opening rule must also remain legal against every reply. A separate tree checks the diagonal-relevant choices: ten thousand, six hundred and twenty seven leaves, leading to fourteen final Breaker sets. Every one meets twenty seven lines."
+    },
+    {
+      "id": "t20",
+      "text": "The full central check includes one thousand, two hundred and ninety six possible sets. Five hundred and seventy six meet twenty seven lines, and two hundred and eighty eight meet twenty six. Both groups have surplus at least four, not necessarily exactly four."
+    },
+    {
+      "id": "t21",
+      "text": "The remaining groups show why placement matters. Three hundred and eighty four sets meet twenty five lines and have surplus two. Forty eight meet only twenty two lines and have no pairing. The opening rule avoids these weaker configurations."
+    },
+    {
+      "id": "t22",
+      "text": "If Maker starts elsewhere, Breaker takes the centre instead. Next choose a free cell on a space diagonal, then a cell on another diagonal sharing no line with it. Each first choice has twelve eligible partners, so Maker cannot occupy them all."
+    },
+    {
+      "id": "t23",
+      "text": "These three Breaker cells meet twenty five lines. The checker remembers Maker's first move and ignores the next two. Across all forty eight thousand, nine hundred and sixty legal configurations, the surplus is exactly three. Two unknown moves fit comfortably inside that allowance."
+    },
+    {
+      "id": "t24",
+      "text": "An independent reconstruction checks those configurations in two equal shards, each with twenty four thousand, four hundred and eighty cases. A symmetry-reduced run agrees on one thousand, one hundred and fifty eight classes. These are positions checked, each requiring several matching tests."
+    },
+    {
+      "id": "t25",
+      "text": "The seven-cube result was already proved by Cain, Raymond, and Kallersjo in twenty twenty five. This work supplies a shorter certificate and repairs a gap in the written case analysis. It does not overturn the known conclusion that Breaker wins."
+    },
+    {
+      "id": "t26",
+      "text": "The old non-central argument assumed both of Maker's first two cells could be moved into the same half-cube by symmetry. But take one, seven, one, and six, two, six. Relative to the centre, their signs are opposite in all three coordinates."
+    },
+    {
+      "id": "t27",
+      "text": "Permuting axes or reversing them preserves that opposition. Along whichever axis becomes horizontal, one cell stays on each side. They cannot both enter the stated half-cube. There are two thousand, nine hundred and sixteen unordered pairs like this, or twice as many ordered pairs."
+    },
+    {
+      "id": "t28",
+      "text": "For the concrete published move rule, Maker can occupy both proposed third replies. The new flexible opening covers these cases. The authors' non-central code was not available in the inspected public package, so the criticism concerns the written analysis, not unseen code."
+    },
+    {
+      "id": "t29",
+      "text": "Why not solve the six-cube in the same way? It has two hundred and sixteen cells and one hundred and forty eight lines. After seven complete rounds, only two hundred and two cells remain free. At most one hundred and one lines could receive private pairs."
+    },
+    {
+      "id": "t30",
+      "text": "So Breaker would need to have killed at least forty seven lines. But seven Breaker cells can meet at most forty six: at most six non-space-diagonal lines per cell, plus only four space diagonals altogether. Forty six is one short."
+    },
+    {
+      "id": "t31",
+      "text": "This excludes a pairing before Breaker's eighth move. It does not exclude every possible strategy. There is another limit: one surviving six-cell line has two slots, so its surplus is at most four, and smaller if Maker already occupies cells on it."
+    },
+    {
+      "id": "t32",
+      "text": "The six by six by six game remains open, as does five by five by five in the accepted research scope. The seven-cube proof succeeds because enough lines can be killed early, and the remaining matching tolerates all the unknown opening moves."
+    },
+    {
+      "id": "t33",
+      "text": "Lean checks the abstract Hall replication, surplus, deletion-matching argument, and counting obstruction. It does not check the actual board enumeration or formalize the whole game. The finite board certificates come from exact programs; the game strategy is justified in the written proof."
+    },
+    {
+      "id": "t34",
+      "text": "Remember three ideas: pair cells to block lines, test every group for spare capacity, and use that spare capacity to absorb unknown moves. Correctness confidence is high for this checked seven-cube certificate. Originality of the surplus application remains moderately confident, within the sources reviewed."
+    }
+  ]
+}

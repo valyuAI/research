@@ -1,0 +1,188 @@
+\documentclass[11pt]{amsart}
+\usepackage[a4paper,textwidth=158mm,textheight=237mm,centering]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,mathtools,amssymb,graphicx,flafter,booktabs}
+\usepackage[unicode,colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\title[Three-team manipulation of tournament rules on at most eight teams]{Exact optimal manipulability of Condorcet-consistent tournament rules against three-team coalitions on at most eight teams}
+\author{Harvey Yorke}
+\address{Valyu AI}
+\ifdefined\journalversion\else
+\author{Valyu DeepResearch}
+\address{Valyu AI}
+\fi
+\ifdefined\journalversion
+  \hypersetup{pdftitle={Exact optimal manipulability of Condorcet-consistent tournament rules},pdfauthor={Harvey Yorke}}
+\else
+  \hypersetup{pdftitle={Exact optimal manipulability of Condorcet-consistent tournament rules},pdfauthor={Harvey Yorke and Valyu DeepResearch}}
+\fi
+\date{25 October 2026}
+\keywords{Tournament rules, Condorcet consistency, coalitional manipulation, linear programming, exact certificates}
+\newcommand{\paperAuthorBlock}[1]{%
+  \begin{minipage}[t]{.44\textwidth}
+    \centering\normalfont\normalsize #1\par\small Valyu AI\par
+  \end{minipage}%
+}
+\makeatletter
+\renewcommand{\@setauthors}{%
+  \begingroup\trivlist\centering\normalfont\normalsize
+  \@topsep30\p@\relax\advance\@topsep by -\baselineskip\item\relax
+  \ifdefined\journalversion
+    \paperAuthorBlock{Harvey Yorke}%
+  \else
+    \paperAuthorBlock{Harvey Yorke}\hspace{.06\textwidth}\paperAuthorBlock{Valyu DeepResearch}%
+  \fi
+  \endtrivlist\endgroup
+}
+\renewcommand{\@setaddresses}{}
+\makeatother
+\begin{document}
+\raggedbottom
+\begin{abstract}
+A randomized tournament rule is $k$-SNM-$\alpha$ if no coalition of at most $k$ teams can raise its joint winning probability by more than $\alpha$ by fixing the matches among its members. Schneider, Schvartzman and Weinberg proved that every Condorcet-consistent rule on $n\ge 2k-1$ teams has $\alpha\ge (k-1)/(2k-1)$ and conjectured that this is tight. Schvartzman, Weinberg, Zlatin and Zuo showed that the conjecture fails for some large $k$ and asked how large $k$ must be; for $k=3$ the best known bounds are $2/5\le\alpha\le 1/2$. Let $\alpha^*_k(n)$ be the optimum over all Condorcet-consistent rules on $n$ teams. We prove $\alpha^*_3(n)=2/5$ for $n=5,6,7,8$, $\alpha^*_3(3)=\alpha^*_3(4)=1/3$ and $\alpha^*_4(7)=3/7$. Every upper bound is an explicit rule with rational probabilities, and a standard-library Python checker replays every manipulation in exact arithmetic; at $n=8$ that is $2{,}889{,}600$ coalition re-orientations over all $6{,}880$ isomorphism classes. The optimum for $k=3$ is attained by rules that are in addition monotone and top-cycle consistent. So a three-team counterexample to the conjectured value, if one exists, needs at least nine teams. The rules come from a symmetry-reduced linear program. Among Condorcet-consistent rules, only the inequalities of the known lower-bound configuration are tight on the whole optimal face, which makes exact rounding cheap. We do not settle any value for $n\ge 9$.
+\end{abstract}
+\maketitle
+
+\section{The question}
+
+A \emph{tournament} $T$ on the team set $[n]$ records the winner of each of the $\binom n2$ matches. A \emph{tournament rule} $r$ assigns to each $T$ a probability distribution $(r_i(T))_{i\in[n]}$ over the champion; write $r_S(T)=\sum_{i\in S}r_i(T)$. The rule is \emph{Condorcet-consistent} (CC) if a team that wins all its matches is champion with probability one. Two tournaments are \emph{$S$-adjacent} if they differ only in matches between two members of $S$. Following~\cite{SSW17}, $r$ is \emph{monotone} if $r_i(T)\le r_i(T')$ whenever $T'$ is obtained from $T$ by reversing one match that $i$ lost. The \emph{top cycle} of $T$ is the smallest nonempty set of teams that beat every team outside it, and $r$ is \emph{top-cycle consistent} (TCC) if it puts probability one on the top cycle; TCC implies CC.
+
+\begin{definition}[Altman and Kleinberg~\cite{AK10}; Schneider, Schvartzman and Weinberg~\cite{SSW17}]
+A rule $r$ on $n$ teams is \emph{$k$-SNM-$\alpha$} if $r_S(T')-r_S(T)\le\alpha$ for every set $S$ with $|S|\le k$ and all $S$-adjacent $T,T'$.
+\end{definition}
+
+For $k=2$ the optimum among CC rules is $1/3$, attained by the random single-elimination bracket~\cite{SSW17}. For general $k$, \cite[Theorem~3.2]{SSW17} shows that no CC rule on $n\ge 2k-1$ teams is $k$-SNM-$\alpha$ with $\alpha<(k-1)/(2k-1)$, and the authors conjecture that this is tight. Schvartzman, Weinberg, Zlatin and Zuo~\cite{SWZZ20} prove that for some finite $k$ no CC rule is $k$-SNM-$1/2$; the discussion in their introduction notes that the proof rules out a $939$-SNM-$1/2$ rule on $1878$ teams. They add that it is ``interesting to understand how large $k$ needs to be in order for the [\dots] conjecture to be false'', meaning the conjecture of~\cite{SSW17}, and that their work ``does not rule out the existence of a $3$-SNM-$2/5$ tournament rule.'' They also report exhaustive searches that found rules which were $k$-SNM-$1/2$ on $n$ teams for $k,n\le 7$.
+
+For $k=3$ the best rules known are randomized death match, which is $3$-SNM-$31/60$ with a tight analysis for that rule~\cite{DW22}, and the SignificantOnly rule of Mik\v{s}an\'ik, Schvartzman and Soukup, defined for $n\ge 6$ and $3$-SNM-$1/2$~\cite{MSS24}. The same authors note that $2/5$ is the best lower bound~\cite[footnotes~2 and~8]{MSS24}. Recent papers still cite $1/2$ as the best upper bound for $k=3$~\cite{PSW25} and state that much less is known for coalitions of size $k>2$~\cite{DLW26}.
+
+Let $\alpha^*_k(n)$ be the least $\alpha$ for which some CC rule on $n$ teams is $k$-SNM-$\alpha$. The minimum exists because, for fixed $n$, the CC rules form a compact polytope and the SNM conditions are finitely many linear inequalities. A rule in the sense of~\cite{SWZZ20} is a family with one member for each $n$, and nothing couples different $n$; so the existence of a $k$-SNM-$\alpha$ rule is the statement $\sup_n\alpha^*_k(n)\le\alpha$.
+
+\begin{theorem}\label{thm:main}
+\begin{enumerate}
+\item $\alpha^*_3(n)=2/5$ for $n=5,6,7,8$, and $\alpha^*_3(3)=\alpha^*_3(4)=1/3$.
+\item $\alpha^*_4(7)=3/7$.
+\item For $k=3$ and every $3\le n\le 8$ the value $\alpha^*_3(n)$ is attained by a rule that is also monotone and top-cycle consistent.
+\end{enumerate}
+\end{theorem}
+
+The lower bounds are those of~\cite{SSW17}; we recall the argument in Section~\ref{sec:lower}. The upper bounds are explicit rational rules, checked exhaustively (Section~\ref{sec:cert}).
+
+\begin{corollary}
+If the conjectured value fails for $k=3$, that is if $\alpha^*_3(n)>2/5$ for some $n$, then $n\ge 9$.
+\end{corollary}
+
+The theorem settles finitely many cases. It does not show $\sup_n\alpha^*_3(n)=2/5$: the rules are separate objects for each $n$, and we know no argument that carries an optimal rule on $n$ teams to $n+1$ teams without loss (see Section~\ref{sec:discussion}). Part~(3) answers, for $n\le 8$, the small-$n$ version of the question raised in~\cite[Section~5]{MSS24}, who note that a top-cycle consistent $3$-SNM-$2/5$ rule on $25$ teams would yield top-cycle consistent rules with $\alpha<1/2$ for all larger $n$.
+
+\section{Lower bounds}\label{sec:lower}
+
+Let $R$ be a regular tournament on $2k-1$ teams, so every team loses exactly $k-1$ matches; Schneider, Schvartzman and Weinberg use the cyclic one, in which $i$ beats $i+1,\dots,i+k-1$ modulo $2k-1$. Add $n-(2k-1)$ teams that lose to every team of $R$ (with arbitrary matches among themselves) and call the result $T$. For each team $i$ of $R$ let $S_i$ consist of $i$ and the $k-1$ teams that beat it. Reversing the matches that $i$ loses inside $S_i$ makes $i$ a Condorcet winner, so a CC rule gives $r_{S_i}(T_i')=1$. Each team of $R$ lies in exactly $k$ of the sets $S_i$ (its own and those of the $k-1$ teams it beats), so $\sum_i r_{S_i}(T)\le k$, and the $2k-1$ gains sum to at least $(2k-1)-k=k-1$. Hence some gain is at least $(k-1)/(2k-1)$ \cite[Theorem~3.2]{SSW17}, and if a rule attains $\alpha=(k-1)/(2k-1)$ then all $2k-1$ gains equal $\alpha$. For $k=3$ this needs $n\ge 5$ and gives $2/5$; for $k=4$ it needs $n\ge 7$ and gives $3/7$. Since coalitions of size two are included, $\alpha^*_3(n)\ge\alpha^*_2(n)\ge1/3$ for $n\ge3$ by the case $k=2$.
+
+\section{A finite linear program}
+
+A rule on $n$ teams is \emph{neutral} if $r_{\pi(i)}(\pi T)=r_i(T)$ for every permutation $\pi$ of $[n]$.
+
+\begin{lemma}\label{lem:neutral}
+If some CC rule on $n$ teams is $k$-SNM-$\alpha$, then some neutral CC rule on $n$ teams is $k$-SNM-$\alpha$.
+\end{lemma}
+
+\begin{proof}
+Let $\bar r_i(T)=\frac1{n!}\sum_{\pi}r_{\pi(i)}(\pi T)$. For each $\pi$ the relabelled rule $i\mapsto r_{\pi(i)}(\pi T)$ is CC and $k$-SNM-$\alpha$, because relabelling maps a Condorcet winner to a Condorcet winner, a coalition to a coalition of the same size and an $S$-adjacent pair to a $\pi(S)$-adjacent pair. Both properties are linear, so they survive averaging, and the average is neutral.
+\end{proof}
+
+A neutral rule is determined by one probability vector per isomorphism class of tournaments, constant on the automorphism orbits of a fixed representative. The numbers of classes are $2,4,12,56,456,6880$ for $n=3,\dots,8$~\cite{OEIS568}. Minimizing $\alpha$ subject to normalization, Condorcet consistency and one inequality $r_S(T')-r_S(T)\le\alpha$ for each representative $T$, coalition $S$ with $2\le|S|\le k$ and re-orientation $T'$ of the matches inside $S$ is a linear program whose optimum is $\alpha^*_k(n)$; one representative per class suffices because the constraint set is invariant under relabelling. Monotonicity (one inequality per representative and single-match reversal) and top-cycle consistency (zero probability on orbits outside the top cycle) are also linear and invariant under relabelling, so Lemma~\ref{lem:neutral} holds with them added. For $n=8$ and $k=3$ the program has $54{,}256$ variables (one per class and orbit) and $2{,}667{,}216$ distinct manipulation inequalities after dropping identically zero rows and merging duplicates; the checker below enumerates all $6880\cdot(\binom82+7\binom83)=2{,}889{,}600$ re-orientations without merging. Monotonicity adds $192{,}640$ inequalities and top-cycle consistency fixes $3{,}547$ variables to zero. Representatives were generated with \texttt{gentourng} from nauty~\cite{McKayPiperno14}, and the programs were solved with the interior-point solver of HiGHS~\cite{HuangfuHall18}.
+
+Mik\v{s}an\'ik, Schvartzman and Soukup~\cite[Section~5]{MSS24} already propose solving such programs for small $n$ and $k$, and attribute a linear program for the minimally manipulable CC monotone rule to~\cite{SSW17}; we did not find a linear program or computed optima in the arXiv version of~\cite{SSW17}, whose only related remark is that simulations indicate that the formats studied there do not achieve the bound. We know of no earlier report of the values in Theorem~\ref{thm:main}.
+
+\section{Exact certificates}\label{sec:cert}
+
+\subsection*{How the rules were found}
+A basic optimal solution of these programs tends to have large denominators: a vertex found by the simplex method with a random objective at $n=7$, $k=3$ has denominators up to $3\cdot10^{16}$. We instead fix $\alpha$ at the lower bound and compute, with the interior-point method and no crossover, a point $x$ near the relative interior of the optimal face $F$. For CC rules the numerical picture is simple.
+\begin{itemize}
+\item Apart from variables forced to zero, almost no inequality has zero slack at $x$. For $k=3$ and $n=5,6,7,8$ the inequalities with slack below $10^{-7}$ all come from the lower-bound configuration of Section~\ref{sec:lower}: the regular five-team tournament plus $n-5$ losers, a coalition $S_i$, and either orientation of the match between the two helpers. There are two such rows at $n=5,6,7$ and four at $n=8$ (the three losers can be transitive or cyclic). Every other slack at $x$ is at least $4\times10^{-3}$ for $n\le7$ and $6.7\times10^{-4}$ at $n=8$.
+\item For $k=4$, $n=7$ the zero-slack rows ($28$ distinct rows) all live on the three regular tournaments on seven teams, each of which supports the averaging argument of Section~\ref{sec:lower}.
+\end{itemize}
+These rows are tight for every optimal rule, since the averaging argument forces each of its gains to equal $\alpha$. We round the nonzero coordinates of $x$ to multiples of $1/D$, restore the tight rows exactly by a least-norm correction on the few classes they touch, rescale every other class exactly, and check all inequalities in rational arithmetic. The same procedure, with the monotonicity inequalities and the top-cycle zeros included, gives the monotone TCC rules. The rule for $n=3$ is the obvious one: the Condorcet winner if there is one, else uniform on the $3$-cycle; it is monotone and TCC.
+
+\subsection*{How the rules are checked}
+Each rule is stored as a list of tournaments with one rational vector each. The checker uses only the Python standard library and shares no code with the generator. It
+\begin{enumerate}
+\item computes its own canonical form for every listed tournament, by colour refinement followed by exhaustive search within colour classes, and confirms that the list contains exactly one tournament from each of the A000568$(n)$ isomorphism classes;
+\item checks that each vector is a probability vector, constant on the automorphism orbits of its tournament, and equal to one on a Condorcet winner;
+\item enumerates every coalition $S$ with $2\le|S|\le k$ and every re-orientation of the matches inside $S$, maps the result to its listed representative, and checks $r_S(T')-r_S(T)\le\alpha$ exactly;
+\item when the certificate claims it, checks monotonicity for every representative and every single-match reversal, and checks that no team outside the top cycle has positive probability.
+\end{enumerate}
+By neutrality the rule on all labelled tournaments is obtained by transporting each vector along isomorphisms; step~(2) makes this well defined, and the invariance of the constraint set makes checking one representative per class sufficient. Deliberately corrupted certificates (lower $\alpha$, a missing or duplicated class, probability moved inside a class or between two teams of one automorphism orbit, a Condorcet winner given $1/2$, a vector scaled by $9/10$) are rejected. For $n\le6$ a second checker expands each certificate to all $2^{\binom n2}$ labelled tournaments by brute force over permutations, without canonical forms or the neutrality argument, and repeats the checks; it agrees. The discovery code also checks every row of the linear program exactly, using its own canonical forms, before a rule is exported.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{rrrrrrrrr}
+\toprule
+&&&&& \multicolumn{2}{c}{CC rule} & \multicolumn{2}{c}{monotone TCC rule}\\
+\cmidrule(lr){6-7}\cmidrule(lr){8-9}
+$n$ & $k$ & classes & re-orientations & $\alpha$ & tight & max.\ den. & tight & max.\ den.\\
+\midrule
+3 & 3 & 2 & 20 & $1/3$ & 3 & 3 & 3 & 3\\
+4 & 3 & 4 & 136 & $1/3$ & 22 & 3 & 22 & 3\\
+5 & 3 & 12 & 960 & $2/5$ & 10 & 1{,}001 & 12 & 1{,}002\\
+6 & 3 & 56 & 8{,}680 & $2/5$ & 10 & 1{,}002 & 10 & 1{,}002\\
+7 & 3 & 456 & 121{,}296 & $2/5$ & 10 & 1{,}002 & 10 & 1{,}002\\
+8 & 3 & 6{,}880 & 2{,}889{,}600 & $2/5$ & 20 & 1{,}000{,}003 & 20 & 1{,}000{,}003\\
+7 & 4 & 456 & 1{,}126{,}776 & $3/7$ & 168 & 72 & -- & --\\
+\bottomrule
+\end{tabular}
+\caption{Certified rules. ``Re-orientations'' counts the pairs $(S,T')$ checked over all representatives $T$ and all coalitions of size two to $k$; ``tight'' counts those whose gain equals $\alpha$; ``max.\ den.'' is the largest denominator in the certificate. In every case the largest gain equals the lower bound of Section~\ref{sec:lower}, which proves Theorem~\ref{thm:main}.}
+\label{tab:results}
+\end{table}
+
+For the CC rules with $k=3$ and $5\le n\le 8$, the ten tight re-orientations per configuration class are the five coalitions $S_i$ times the two orientations of the helpers' match, in the lower-bound configuration only. Since a single feasible rule has positive slack everywhere else, no other manipulation inequality is tight on the whole optimal face. For $k=4$ the $168$ tight re-orientations lie in the three regular tournaments on seven teams. The monotone TCC rules have a few more tight re-orientations at $n=5$, which shows that these extra requirements can bind but not change the optimum.
+
+\subsection*{A five-team rule}
+Table~\ref{tab:n5} lists a further certified rule on five teams, rounded with $D=20$ so that it can be checked by hand. It is monotone and top-cycle consistent. Each tournament is written as the string of results of matches $(1,2),(1,3),\dots,(4,5)$ in lexicographic order, with \texttt{1} meaning that the lower-numbered team wins. The regular tournament gets the uniform distribution, which makes the five lower-bound inequalities tight: each coalition $S_i$ holds $3/5$ and can reach $1$.
+
+\begin{table}[ht]
+\centering\small\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{llccccc}
+\toprule
+$T$ & scores & $r_1$ & $r_2$ & $r_3$ & $r_4$ & $r_5$\\
+\midrule
+\texttt{1111111111} & $(4,3,2,1,0)$ & $1$ & $0$ & $0$ & $0$ & $0$ \\
+\texttt{1111111010} & $(4,3,1,1,1)$ & $1$ & $0$ & $0$ & $0$ & $0$ \\
+\texttt{1011111011} & $(3,3,2,2,0)$ & $\tfrac{2}{5}$ & $\tfrac{3}{10}$ & $\tfrac{1}{5}$ & $\tfrac{1}{10}$ & $0$ \\
+\texttt{0111010011} & $(3,2,2,2,1)$ & $\tfrac{1}{3}$ & $\tfrac{1}{3}$ & $\tfrac{5}{21}$ & $\tfrac{1}{21}$ & $\tfrac{1}{21}$ \\
+\texttt{0111001101} & $(3,2,2,2,1)$ & $\tfrac{2}{5}$ & $\tfrac{1}{4}$ & $\tfrac{1}{4}$ & $\tfrac{1}{10}$ & $0$ \\
+\texttt{1011111010} & $(3,3,2,1,1)$ & $\tfrac{7}{19}$ & $\tfrac{6}{19}$ & $\tfrac{5}{19}$ & $\tfrac{1}{19}$ & $0$ \\
+\texttt{1101111110} & $(3,3,2,1,1)$ & $\tfrac{11}{20}$ & $\tfrac{1}{4}$ & $\tfrac{1}{20}$ & $\tfrac{3}{20}$ & $0$ \\
+\texttt{0011001000} & $(2,2,2,2,2)$ & $\tfrac{1}{5}$ & $\tfrac{1}{5}$ & $\tfrac{1}{5}$ & $\tfrac{1}{5}$ & $\tfrac{1}{5}$ \\
+\texttt{1111011011} & $(4,2,2,2,0)$ & $1$ & $0$ & $0$ & $0$ & $0$ \\
+\texttt{1110011011} & $(3,2,2,2,1)$ & $\tfrac{11}{20}$ & $\tfrac{1}{10}$ & $\tfrac{1}{10}$ & $\tfrac{1}{10}$ & $\tfrac{3}{20}$ \\
+\texttt{1111101110} & $(4,2,2,1,1)$ & $1$ & $0$ & $0$ & $0$ & $0$ \\
+\texttt{0111011111} & $(3,3,3,1,0)$ & $\tfrac{1}{3}$ & $\tfrac{1}{3}$ & $\tfrac{1}{3}$ & $0$ & $0$ \\
+\bottomrule
+\end{tabular}
+\caption{A neutral, monotone, top-cycle consistent, $3$-SNM-$2/5$ rule on five teams: one representative of each of the $12$ isomorphism classes, its score vector and the winning probabilities. Other tournaments are handled by relabelling.}
+\label{tab:n5}
+\end{table}
+
+\section{Discussion and limits}\label{sec:discussion}
+
+For CC rules with $k=3$ and $5\le n\le8$, the lower-bound configuration is the only place where the value $2/5$ binds: some optimal rule gains strictly less than $2/5$ on every other manipulation. That is evidence, not proof, that $k=3$ lies below the threshold at which the conjecture of~\cite{SSW17} starts to fail. The slack of the next constraint at our interior point falls from about $10^{-2}$ at $n=7$ to $7\times10^{-4}$ at $n=8$; this number depends on the point the solver returns and is not a robust margin, so we draw no conclusion from it. Several caveats limit what the computation says about large $n$.
+\begin{itemize}
+\item \emph{Transfer in $n$ goes the wrong way.} Restricting a TCC rule on $n+1$ teams to tournaments in which one team loses every match gives a TCC rule on $n$ teams that is no more manipulable, so the TCC optimum cannot decrease with $n$. This shows that a TCC failure at some $n$ persists for all larger $n$, but it gives no way to extend our rules upward. For CC rules we know no monotonicity in $n$ at all; none of our statements depends on it.
+\item \emph{Too small for the reduction of~\cite{MSS24}.} Their Theorem~3 turns a TCC $k$-SNM-$\alpha$ rule on $n$ teams into TCC rules on more teams with $\alpha'\le\alpha(1-(k-1)^2/n)+(k-1)^2/n$. Our rules are TCC, but with $n=8$, $k=3$ and $\alpha=2/5$ the bound is $0.7$, which is useless; it needs $n\ge25$ to beat $1/2$.
+\item \emph{The rules are not simple.} Apart from the forced configurations the optimal face is large, and the certified rules are one arbitrary point in it.
+\item \emph{Size.} At $n=9$ there are $191{,}536$ classes and about $191{,}536\cdot(\binom92+7\binom93)\approx1.2\times10^8$ inequalities, so the direct method stops at $n=8$ on modest hardware.
+\end{itemize}
+
+\subsection*{Contributions and provenance}
+The question was identified and the literature audited with Valyu DeepResearch and Search; the linear programs, certificates and checker were written for this note. An adversarial review of an earlier draft pointed out that the then-reported $n=8$ value rested on a floating-point solve of a program restricted to coalitions of exactly three teams; the present version replaces it with the full program and an exact certificate. A separate audit of the checker, including differential testing against an independent brute-force implementation on mutated certificates, found one defect, in the script that merges parallel runs, which is fixed. Priority checks covered arXiv listings from 2025 onward, Zenodo and GitHub searches, and the papers citing~\cite{SSW17,SWZZ20,DW22,MSS24}; they found no earlier exact computation of these optima.
+
+\bibliographystyle{amsplain}
+\bibliography{references}
+\end{document}

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+    sp = m['sp']; x = sp.Symbol('x'); print(m['exact_stability'](sp.Poly(x**3+x**2+x+2,x)))
+                                            ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/chemistry/reaction-networks/mass-action/acr-multistability-bounds/verification/independent_check.py", line 95, in exact_stability
+    c3 < 0
+AssertionError: neither a strict Hurwitz certificate nor a positive-root certificate

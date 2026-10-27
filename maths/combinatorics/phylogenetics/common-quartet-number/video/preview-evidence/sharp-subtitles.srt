@@ -1,0 +1,179 @@
+1
+00:00:00,000 --> 00:00:05,269
+For many trees, we can repeat the idea: keep two separated sets while processing one
+
+2
+00:00:05,269 --> 00:00:08,907
+tree after another. The challenge is that the sets shrink.
+
+3
+00:00:08,907 --> 00:00:13,800
+We need to track enough information to ensure two leaves survive on each side.
+
+4
+00:00:14,200 --> 00:00:20,871
+Call their sizes a and d. Define a budget as the smallest of three numbers: a times d,
+
+5
+00:00:20,871 --> 00:00:27,774
+twice a squared, and twice d squared. A budget greater than two forces both integer sizes
+
+6
+00:00:27,774 --> 00:00:29,248
+to be at least two.
+
+7
+00:00:29,600 --> 00:00:32,770
+Take sixteen blue leaves and thirty-two teal leaves.
+
+8
+00:00:32,770 --> 00:00:37,952
+The three budget candidates are five hundred and twelve, five hundred and twelve, and
+
+9
+00:00:37,952 --> 00:00:42,281
+two thousand and forty-eight. Their minimum is five hundred and twelve.
+
+10
+00:00:42,281 --> 00:00:45,512
+Now cut the next tree, balancing the larger teal set.
+
+11
+00:00:45,867 --> 00:00:51,664
+Suppose the cut divides blue into seven and nine, and teal into eleven and twenty-one.
+
+12
+00:00:51,664 --> 00:00:55,978
+Either diagonal remains separated in all trees processed so far.
+
+13
+00:00:55,978 --> 00:00:59,752
+The seven and twenty-one choice has budget ninety-eight.
+
+14
+00:00:59,752 --> 00:01:03,123
+The nine and eleven choice has budget ninety-nine.
+
+15
+00:01:03,467 --> 00:01:05,959
+Choose the larger budget, ninety-nine.
+
+16
+00:01:05,959 --> 00:01:11,862
+The proof guarantees a retained fraction c, about eighteen point eight five eight percent.
+
+17
+00:01:11,862 --> 00:01:16,912
+Multiplying the old budget by c gives about ninety-six point five five three.
+
+18
+00:01:16,912 --> 00:01:19,667
+Our chosen diagonal clears that guarantee.
+
+19
+00:01:20,067 --> 00:01:24,648
+Keep naming the smaller retained set X, and the larger Y.
+
+20
+00:01:24,648 --> 00:01:31,639
+On the next tree, balance Y again. For the algebra, x and y mean the fractions of X and
+
+21
+00:01:31,639 --> 00:01:34,131
+Y lying on one side of the cut.
+
+22
+00:01:34,467 --> 00:01:38,788
+The proof rescales the sizes so the smaller is one.
+
+23
+00:01:38,788 --> 00:01:44,211
+Larger size ratios can be reduced to two for a worst-case bound.
+
+24
+00:01:44,211 --> 00:01:49,635
+Swapping the cut's sides lets us assume x plus y is at most one.
+
+25
+00:01:50,000 --> 00:01:55,296
+The two cases meet where x squared equals one minus x, divided by three.
+
+26
+00:01:55,296 --> 00:02:01,253
+Call that crossing t. Above t the first diagonal works; below t the second works.
+
+27
+00:02:01,253 --> 00:02:07,064
+Checking all three budget terms proves the shared guarantee c equals t squared.
+
+28
+00:02:07,400 --> 00:02:13,165
+This constant is best possible for this real-number inequality, not for every tree strategy.
+
+29
+00:02:13,165 --> 00:02:16,298
+Its written proof has been independently reviewed.
+
+30
+00:02:16,298 --> 00:02:20,246
+Lean also checks the sharp inequality and its equality example.
+
+31
+00:02:20,246 --> 00:02:25,760
+The tree model, iteration, finite searches and fourteen-leaf theorem are not formalised.
+
+32
+00:02:26,133 --> 00:02:28,723
+Repeat the budget step for each new tree.
+
+33
+00:02:28,723 --> 00:02:33,396
+The initial budget is at least two ninths of the square of the leaf count.
+
+34
+00:02:33,396 --> 00:02:38,196
+Requiring the final budget to stay above two gives this general upper bound.
+
+35
+00:02:38,196 --> 00:02:42,237
+Its exponential base, beta, is about two point three zero three.
+
+36
+00:02:42,600 --> 00:02:47,179
+For one through six trees, this formula gives the guarantees shown.
+
+37
+00:02:47,179 --> 00:02:52,920
+They need not be exact: for three trees it gives sixteen, while the sharper argument
+
+38
+00:02:52,920 --> 00:02:59,208
+gives fourteen. Exact finite bookkeeping improves the four-tree upper bound to twenty-eight.
+
+39
+00:02:59,600 --> 00:03:04,842
+On the lower side, four explicit trees on twenty-two leaves have no common quartet.
+
+40
+00:03:04,842 --> 00:03:09,642
+Checking all seven thousand, three hundred and fifteen groups confirms this.
+
+41
+00:03:09,642 --> 00:03:14,063
+So the four-tree threshold lies between twenty-three and twenty-eight.
+
+42
+00:03:14,063 --> 00:03:16,400
+Its exact value remains unknown here.
+
+43
+00:03:16,733 --> 00:03:23,251
+For any number k of trees, the lower bound two to the k plus two was already stated by
+
+44
+00:03:23,251 --> 00:03:27,874
+Snir and Yuster. The paper supplies a construction and proof.
+
+45
+00:03:27,874 --> 00:03:34,997
+The contribution here includes the new general upper bound and the exact three-tree threshold.

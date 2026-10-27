@@ -1,0 +1,21 @@
+{
+  "inspected_at_utc": "2026-10-26T15:08:46.975306+00:00",
+  "pdf": "paper.pdf",
+  "pdf_sha256": "81ad7927b375d8ab2098801e2cfe3f6cca817013152ccc66a7c7b450e4dd0ac0",
+  "source_sha256": "817bd98237b5a379d48ed720bd853aa485cac9656afb53fb0db783100c3dc4fa",
+  "pages": 6,
+  "visually_inspected_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "checks": [
+    "Readable page text, equations and tables",
+    "Margins, headers, references and figures visually inspected",
+    "No overfull boxes or undefined references in final LaTeX log"
+  ],
+  "result": "pass"
+}

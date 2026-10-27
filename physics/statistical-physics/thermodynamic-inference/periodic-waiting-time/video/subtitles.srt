@@ -1,0 +1,507 @@
+1
+00:00:00,000 --> 00:00:05,827
+Here is a ball, bouncing. Each bounce is a little lower than the last, because some of
+
+2
+00:00:05,827 --> 00:00:07,656
+its energy turns into heat.
+
+3
+00:00:08,033 --> 00:00:14,800
+Now play it backwards. The ball bounces higher and higher, and you know at once something
+
+4
+00:00:14,800 --> 00:00:17,537
+is wrong. That is the arrow of time.
+
+5
+00:00:17,933 --> 00:00:20,397
+Physicists turn this into a measurement.
+
+6
+00:00:20,397 --> 00:00:24,893
+The more wrong the backwards film looks, the more energy is being wasted.
+
+7
+00:00:25,267 --> 00:00:30,992
+Tiny machines, like the motors in your cells, only show you a few jumps, and the waits
+
+8
+00:00:30,992 --> 00:00:34,387
+between them. Can the waits alone reveal the waste?
+
+9
+00:00:34,767 --> 00:00:40,380
+A published paper proposed a waiting-time test for machines on a repeating schedule,
+
+10
+00:00:40,380 --> 00:00:45,927
+and conjectured, meaning guessed without proof, that it never overstates the waste.
+
+11
+00:00:46,300 --> 00:00:51,620
+We will build a machine that wastes nothing, and yet the test says it does.
+
+12
+00:00:51,620 --> 00:00:54,316
+Pause, and ask: how could that happen?
+
+13
+00:00:55,300 --> 00:01:00,589
+Here is the smallest machine we can build: three squares in a triangle, and a counter
+
+14
+00:01:00,589 --> 00:01:02,020
+that hops between them.
+
+15
+00:01:02,400 --> 00:01:09,017
+Time passes in tiny ticks. Each tick, roll a die for every line out of the counter's
+
+16
+00:01:09,017 --> 00:01:12,168
+square. If it says go, the counter hops.
+
+17
+00:01:12,567 --> 00:01:17,071
+Each line has a rate: its average number of hops per unit of time.
+
+18
+00:01:17,071 --> 00:01:20,415
+A bigger rate is a wider door. More faces say go.
+
+19
+00:01:20,800 --> 00:01:25,873
+Start simple. Every rate is one, in both directions.
+
+20
+00:01:25,873 --> 00:01:28,312
+Watch the counter wander.
+
+21
+00:01:28,700 --> 00:01:33,402
+Over a long game, it spends a third of its time on each square.
+
+22
+00:01:33,402 --> 00:01:36,164
+Those are the squares' probabilities.
+
+23
+00:01:36,828 --> 00:01:43,206
+Now think about traffic: the chance of being on one, times the rate from one to two.
+
+24
+00:01:43,206 --> 00:01:45,180
+Here, one third times one.
+
+25
+00:01:45,561 --> 00:01:48,926
+Traffic back, from two to one, is the same.
+
+26
+00:01:48,926 --> 00:01:54,561
+Every line balances both ways. That is detailed balance, or equilibrium.
+
+27
+00:01:54,961 --> 00:01:57,442
+Played backwards, nothing looks wrong.
+
+28
+00:01:57,442 --> 00:02:02,209
+A hop backwards is just a hop the other way, and both are equally common.
+
+29
+00:02:02,594 --> 00:02:08,954
+Now push the counter clockwise: rate two one way round, and rate one the other way.
+
+30
+00:02:09,328 --> 00:02:14,707
+Each square still holds a third, but every line carries twice the traffic clockwise.
+
+31
+00:02:14,707 --> 00:02:19,510
+Backwards, the counter would mostly circle the wrong way: an arrow of time.
+
+32
+00:02:19,510 --> 00:02:21,880
+Like a motor, this game burns energy.
+
+33
+00:02:22,556 --> 00:02:27,236
+That waste is measured by a number called the entropy production.
+
+34
+00:02:27,236 --> 00:02:28,820
+We will call it sigma.
+
+35
+00:02:29,190 --> 00:02:33,862
+We need one tool, the logarithm. The log of one is zero.
+
+36
+00:02:33,862 --> 00:02:37,950
+It is positive above one, and negative below one.
+
+37
+00:02:38,323 --> 00:02:44,144
+For every line, in each direction, multiply the traffic by the log of traffic this way
+
+38
+00:02:44,144 --> 00:02:46,987
+over traffic that way. Then add it all up.
+
+39
+00:02:47,356 --> 00:02:52,691
+For the clockwise game, the total is log two, about zero point seven.
+
+40
+00:02:52,691 --> 00:02:58,876
+For the balanced game, every ratio is one, every log is zero, and sigma is zero.
+
+41
+00:02:59,256 --> 00:03:02,904
+Balanced at every moment means no waste.
+
+42
+00:03:03,589 --> 00:03:09,339
+Real machines are harder to watch. Suppose the line from one to three is hidden, so you
+
+43
+00:03:09,339 --> 00:03:11,389
+only see hops on the other two.
+
+44
+00:03:11,789 --> 00:03:18,458
+So you record pairs: a visible jump, the next one, and the wait between.
+
+45
+00:03:18,458 --> 00:03:21,701
+Say, one to two, then two to three.
+
+46
+00:03:22,089 --> 00:03:27,472
+Backwards, that becomes three to two, then two to one, with the same wait.
+
+47
+00:03:27,472 --> 00:03:31,401
+With no arrow of time, both pairs show the same waits.
+
+48
+00:03:31,789 --> 00:03:34,563
+Draw a waiting-time curve for each pair.
+
+49
+00:03:34,563 --> 00:03:38,101
+In the balanced game, the two curves match exactly.
+
+50
+00:03:38,489 --> 00:03:44,511
+The test adds up the mismatches between each pair's curve and its reverse's, into one
+
+51
+00:03:44,511 --> 00:03:47,345
+number: sigma hat, an estimate of sigma.
+
+52
+00:03:47,722 --> 00:03:51,579
+The whole film's backwards wrongness would equal sigma.
+
+53
+00:03:51,579 --> 00:03:55,015
+Seeing only part, you would expect to catch less.
+
+54
+00:03:55,015 --> 00:03:58,522
+So the hope is that sigma hat never exceeds sigma.
+
+55
+00:03:59,222 --> 00:04:02,534
+Now drive the machine: doors on a timer.
+
+56
+00:04:02,922 --> 00:04:10,013
+Let t be the angle of a clock hand. Door a, between one and two, has rate one plus epsilon
+
+57
+00:04:10,013 --> 00:04:16,789
+times cosine t. Door b, between two and three, has rate one plus epsilon times sine t.
+
+58
+00:04:16,789 --> 00:04:19,074
+The hidden line stays at one.
+
+59
+00:04:19,455 --> 00:04:24,514
+Epsilon, between zero and one, sets how far the doors swing.
+
+60
+00:04:24,514 --> 00:04:25,863
+We use one half.
+
+61
+00:04:26,255 --> 00:04:32,509
+Door a is widest at the start of each turn, and door b a quarter turn later.
+
+62
+00:04:32,509 --> 00:04:34,319
+A opens first, then b.
+
+63
+00:04:34,688 --> 00:04:41,771
+In 2024, Maier and colleagues proposed such a test for driven machines, using only forward-schedule
+
+64
+00:04:41,771 --> 00:04:45,848
+data, and conjectured that sigma hat never exceeds sigma.
+
+65
+00:04:46,222 --> 00:04:50,929
+But a true backwards film would run the schedule backwards too.
+
+66
+00:04:50,929 --> 00:04:53,470
+This test only reverses the jumps.
+
+67
+00:04:54,155 --> 00:05:01,259
+First, the true waste. At every instant, each door is equally wide in both directions.
+
+68
+00:05:01,655 --> 00:05:07,596
+So with a third on each square, traffic in matches traffic out, and the probabilities
+
+69
+00:05:07,596 --> 00:05:08,855
+stay at one third.
+
+70
+00:05:09,255 --> 00:05:12,635
+Every line is balanced at every moment.
+
+71
+00:05:12,635 --> 00:05:17,055
+Sigma is exactly zero. This machine wastes nothing.
+
+72
+00:05:17,821 --> 00:05:25,389
+Now the waits. A hop through door a is most likely when door a is wide, near the start
+
+73
+00:05:25,389 --> 00:05:26,269
+of a turn.
+
+74
+00:05:26,655 --> 00:05:33,255
+Just then, door b is opening. So the chance of the next hop, through door b, is rising.
+
+75
+00:05:33,655 --> 00:05:38,873
+The reverse pair starts with a hop through door b, likely a quarter turn in.
+
+76
+00:05:38,873 --> 00:05:44,503
+Then door a is closing, so the chance of the next hop, through door a, is falling.
+
+77
+00:05:44,888 --> 00:05:50,493
+So the test reports an arrow of time. There is one, but it is the schedule's: door a
+
+78
+00:05:50,493 --> 00:05:53,096
+opens before door b. That is not waste.
+
+79
+00:05:53,788 --> 00:06:00,316
+Let's make it exact. Call the forward pair's curve f, and the reverse pair's curve g.
+
+80
+00:06:00,316 --> 00:06:02,236
+Both start at height one.
+
+81
+00:06:02,621 --> 00:06:08,969
+Compare their starting slopes. Write a prime for how fast door a is changing, and angle
+
+82
+00:06:08,969 --> 00:06:11,741
+brackets for an average over one turn.
+
+83
+00:06:12,121 --> 00:06:17,866
+Each slope has two parts. The second, from leaving square two through either door, is
+
+84
+00:06:17,866 --> 00:06:20,569
+the same for both curves, so it cancels.
+
+85
+00:06:20,955 --> 00:06:27,219
+What remains is the average of a times b prime, minus b times a prime.
+
+86
+00:06:27,588 --> 00:06:34,847
+Put in our doors. The slope of sine follows cosine, and the slope of cosine follows minus
+
+87
+00:06:34,847 --> 00:06:36,804
+sine. Then multiply out.
+
+88
+00:06:37,188 --> 00:06:41,574
+By Pythagoras, cosine squared plus sine squared is one.
+
+89
+00:06:41,574 --> 00:06:46,279
+And over a full turn, cosine and sine each average to zero.
+
+90
+00:06:46,279 --> 00:06:49,548
+What survives is exactly epsilon squared.
+
+91
+00:06:49,921 --> 00:06:56,466
+With epsilon one half, the slopes are minus two point one two five and minus two point
+
+92
+00:06:56,466 --> 00:06:59,433
+three seven five: a gap of one quarter.
+
+93
+00:06:59,433 --> 00:07:05,521
+So f starts above g. An exact program, using fractions, confirms every identity.
+
+94
+00:07:06,219 --> 00:07:09,753
+Here is f minus g, for epsilon one half.
+
+95
+00:07:09,753 --> 00:07:13,375
+It starts at zero with slope one quarter.
+
+96
+00:07:13,375 --> 00:07:16,467
+Later, g catches up, and overtakes.
+
+97
+00:07:16,853 --> 00:07:23,670
+Can the differences cancel? No. Each pair is scored with its reverse as f minus g, times
+
+98
+00:07:23,670 --> 00:07:28,162
+the log of f over g. Where f is bigger, both are positive.
+
+99
+00:07:28,162 --> 00:07:34,205
+Where g is bigger, both are negative, and negative times negative is positive.
+
+100
+00:07:34,586 --> 00:07:39,886
+All four visible jumps happen equally often, so this works for every pair.
+
+101
+00:07:39,886 --> 00:07:45,973
+In fact, sigma hat is four thirds times a standard measure of mismatch, which is zero
+
+102
+00:07:45,973 --> 00:07:48,050
+only when nothing mismatches.
+
+103
+00:07:48,419 --> 00:07:53,118
+So sigma hat is positive, and the paper proves it is finite.
+
+104
+00:07:53,118 --> 00:07:59,148
+But sigma is exactly zero. The conjecture said sigma hat never exceeds sigma.
+
+105
+00:07:59,148 --> 00:08:02,123
+Here it does. The conjecture is false.
+
+106
+00:08:02,519 --> 00:08:08,806
+This happens for every epsilon between zero and one, with smooth rates that never reach
+
+107
+00:08:08,806 --> 00:08:09,167
+zero.
+
+108
+00:08:09,853 --> 00:08:16,021
+So what does this kill? One thing: the forward-only conjecture, in its general form.
+
+109
+00:08:16,419 --> 00:08:20,989
+The same paper's theorem using backwards-schedule data still stands.
+
+110
+00:08:20,989 --> 00:08:24,483
+Reversing the jumps is not reversing the whole film.
+
+111
+00:08:24,853 --> 00:08:27,370
+Waiting-time false alarms are not new.
+
+112
+00:08:27,370 --> 00:08:33,861
+Hartich and Godec found one at equilibrium, and Harunari, Fiore and Barato used backwards-schedule
+
+113
+00:08:33,861 --> 00:08:38,101
+data. What is new is an exact counterexample to this conjecture.
+
+114
+00:08:38,486 --> 00:08:43,339
+Nothing is claimed about the energy used by the device turning the doors.
+
+115
+00:08:43,339 --> 00:08:45,134
+That is outside this sigma.
+
+116
+00:08:45,519 --> 00:08:50,164
+How sure is this? The proof is fully written, and needs no simulation.
+
+117
+00:08:50,164 --> 00:08:55,339
+A computer checked the algebra exactly, and internal reviews checked the rest.
+
+118
+00:08:55,339 --> 00:08:59,319
+There is no formal machine proof or outside peer review yet.
+
+119
+00:09:00,019 --> 00:09:07,390
+Three takeaways. One: entropy production measures waste, and this machine's is exactly
+
+120
+00:09:07,390 --> 00:09:07,819
+zero.
+
+121
+00:09:08,186 --> 00:09:14,690
+Two: its doors open in a fixed order, so a jump pair and its reverse wait differently.
+
+122
+00:09:15,086 --> 00:09:20,959
+Three: a test that keeps the schedule running forwards mistakes that order for waste.
+
+123
+00:09:20,959 --> 00:09:23,102
+So the conjectured bound fails.
+
+124
+00:09:23,486 --> 00:09:29,053
+Still unknown: whether a narrower forward-only test is safe, with extra rules on how
+
+125
+00:09:29,053 --> 00:09:32,764
+the rates may change, and whether this was found before.
+
+126
+00:09:32,764 --> 00:09:36,542
+The search of earlier work was careful, but not complete.
+
+127
+00:09:36,919 --> 00:09:39,871
+Thanks for watching.

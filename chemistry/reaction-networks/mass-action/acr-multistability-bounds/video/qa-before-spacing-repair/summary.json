@@ -1,0 +1,16 @@
+{
+  "duration": 583.566667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "clip_count": 37,
+  "max_clip_seconds": 18.6,
+  "full_decode": "passed",
+  "mean_db": -26.6,
+  "peak_db": -4.3,
+  "listening_performed": false,
+  "visual_inspection": "pending human-style image review by production agent",
+  "source_hashes_unchanged": true
+}

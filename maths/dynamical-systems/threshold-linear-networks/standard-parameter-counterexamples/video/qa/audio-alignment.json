@@ -1,0 +1,333 @@
+{
+  "method": "Normalized waveform cross-correlation of a high-energy two-second window from every source clip against its expected location in the final AAC soundtrack. No subjective listening performed.",
+  "all_passed": true,
+  "sample_rate": 12000,
+  "min_correlation": 0.999351803987163,
+  "max_absolute_lag_seconds": 0.021333333333333333,
+  "clips": [
+    {
+      "id": "c01",
+      "scene": "Rates",
+      "expected_start": 0.0,
+      "sample_offset": 8.289583333333333,
+      "correlation": 0.999351803987163,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "3ce912ec999313d0a0066f71c675fa3805f016c8ef456f7580f298319b13ee26"
+    },
+    {
+      "id": "c02",
+      "scene": "Rates",
+      "expected_start": 15.63333333333331,
+      "sample_offset": 8.865166666666667,
+      "correlation": 0.9997169337327526,
+      "lag_seconds": 0.021,
+      "sha256": "8355ec5a01952645e7605ba1628a12f1622186e61eedad5991428630a676d7df"
+    },
+    {
+      "id": "c03",
+      "scene": "Rates",
+      "expected_start": 31.80000000000026,
+      "sample_offset": 7.429583333333333,
+      "correlation": 0.9998908633767892,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "5501507d35dcb3296e9f56462b5b9c7e434252c7b25653c2f843fffea2bfe9ee"
+    },
+    {
+      "id": "c04",
+      "scene": "Rates",
+      "expected_start": 45.03333333333327,
+      "sample_offset": 6.915583333333333,
+      "correlation": 0.9997058354134825,
+      "lag_seconds": 0.021,
+      "sha256": "9d034408738d6147f8340962d7af382ae3946fa3655c570df7917e76d179b8b3"
+    },
+    {
+      "id": "c05",
+      "scene": "Balance",
+      "expected_start": 61.533333,
+      "sample_offset": 8.048333333333334,
+      "correlation": 0.9997118676622704,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "63eeac271eb33b8814f1b5d056006f35dc4a923121809a74c088915075d19f9a"
+    },
+    {
+      "id": "c06",
+      "scene": "Balance",
+      "expected_start": 75.56666633333333,
+      "sample_offset": 5.152333333333333,
+      "correlation": 0.9997622923956888,
+      "lag_seconds": 0.021,
+      "sha256": "290246f671562620cea06fe958f20254023754c43d07116b6e2bb24a3eb6e825"
+    },
+    {
+      "id": "c07",
+      "scene": "Balance",
+      "expected_start": 86.96666633333354,
+      "sample_offset": 5.167166666666667,
+      "correlation": 0.9998988560300366,
+      "lag_seconds": 0.021,
+      "sha256": "f561f91252cdb430040eea4e467c8badcede2ce2ca099d4e492a830eaa91c0c8"
+    },
+    {
+      "id": "c08",
+      "scene": "Balance",
+      "expected_start": 101.79999966666705,
+      "sample_offset": 6.768,
+      "correlation": 0.9996557953545305,
+      "lag_seconds": 0.020666666666666667,
+      "sha256": "b81cc05adc1be1fc0a722c1a84391ea82535c5d6ba4fc47f17df666e11262b1d"
+    },
+    {
+      "id": "c09",
+      "scene": "Prediction",
+      "expected_start": 117.3,
+      "sample_offset": 2.7495833333333333,
+      "correlation": 0.9998115383042844,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "58cf9afd90ba13d421321f15c638ff8de13d28bc38d8ad288bd46d701fa41905"
+    },
+    {
+      "id": "c10",
+      "scene": "Prediction",
+      "expected_start": 129.33333333333331,
+      "sample_offset": 6.048333333333333,
+      "correlation": 0.9998826811078825,
+      "lag_seconds": 0.021,
+      "sha256": "142d34a0f2e0af9891c326a9fe21e202f19f636100c57234e2701e2785ef59d5"
+    },
+    {
+      "id": "c11",
+      "scene": "Prediction",
+      "expected_start": 143.3666666666668,
+      "sample_offset": 8.124,
+      "correlation": 0.9998063088041116,
+      "lag_seconds": 0.020666666666666667,
+      "sha256": "4a10b3eaa0091d411bcb65523e9b8dd0ce93cc269386807807beea9d2cbcee96"
+    },
+    {
+      "id": "c12",
+      "scene": "Prediction",
+      "expected_start": 157.90000000000032,
+      "sample_offset": 8.66,
+      "correlation": 0.9995099147347848,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "64ad9e7ae3d5f254eae4f5b88d92b3fb7d9920ed70469eb560270300fa615bd9"
+    },
+    {
+      "id": "c13",
+      "scene": "Witness",
+      "expected_start": 172.7,
+      "sample_offset": 7.667166666666667,
+      "correlation": 0.9995060843152729,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "c29c90e6c4f34de88cf5cde8570cb80aaaceb5b658e9feb038443b852727778c"
+    },
+    {
+      "id": "c14",
+      "scene": "Witness",
+      "expected_start": 187.5333333333333,
+      "sample_offset": 2.6851666666666665,
+      "correlation": 0.9998969177989526,
+      "lag_seconds": 0.021,
+      "sha256": "04e0e62d16d3a8b1d1c9ee8d300a68410d74a480ea3aedde3ba8da4867fcbe62"
+    },
+    {
+      "id": "c15",
+      "scene": "Witness",
+      "expected_start": 202.50000000000023,
+      "sample_offset": 7.581166666666666,
+      "correlation": 0.9998003478288475,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "7271207ca43fe7c8beb77766d3caac8a8987f199394b809658fc8edf9d554df0"
+    },
+    {
+      "id": "c16",
+      "scene": "Witness",
+      "expected_start": 220.10000000000022,
+      "sample_offset": 8.804,
+      "correlation": 0.9996870257948853,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "72010827fe3408de1e2a89ac1abffe3faf63668531e931fd62c3c6bb6663092d"
+    },
+    {
+      "id": "c17",
+      "scene": "Matrix",
+      "expected_start": 235.83333299999998,
+      "sample_offset": 9.304,
+      "correlation": 0.9995173321615788,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "a0061d0bef3e3ae514b5954a272c311cb5442760aaf0f18467ca1f22a783f913"
+    },
+    {
+      "id": "c18",
+      "scene": "Matrix",
+      "expected_start": 251.5666663333333,
+      "sample_offset": 5.16,
+      "correlation": 0.9993594865390475,
+      "lag_seconds": 0.021,
+      "sha256": "ba9317b0dfb9ac29ec09aebafb3af4f5df1434acb5f8d60cf2823bda28113b42"
+    },
+    {
+      "id": "c19",
+      "scene": "Matrix",
+      "expected_start": 266.3333330000003,
+      "sample_offset": 8.142333333333333,
+      "correlation": 0.999917221638211,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "2d3ab2d552d66cfa8db66a78a5165640d1976df49d45924a90f4ea6b62bd799d"
+    },
+    {
+      "id": "c20",
+      "scene": "Matrix",
+      "expected_start": 284.33333300000004,
+      "sample_offset": 7.07,
+      "correlation": 0.9996722730889428,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "e5eae83f31c9cb9332d5c6a398b05bc98da56132f4b7e76c8a3badb74d59877e"
+    },
+    {
+      "id": "c21",
+      "scene": "Stability",
+      "expected_start": 298.53333299999997,
+      "sample_offset": 8.685166666666667,
+      "correlation": 0.999919864657867,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "9c5bbe7a3a39e732a6e5c6ab05b28a67162de82934b024a07718d3fb89053302"
+    },
+    {
+      "id": "c22",
+      "scene": "Stability",
+      "expected_start": 313.4999996666666,
+      "sample_offset": 5.2571666666666665,
+      "correlation": 0.9999119086012006,
+      "lag_seconds": 0.020666666666666667,
+      "sha256": "205172f0bea20199660fe1e7a899ca24169458c874d9538d351c5586c5203fa7"
+    },
+    {
+      "id": "c23",
+      "scene": "Stability",
+      "expected_start": 328.9333330000004,
+      "sample_offset": 9.372333333333334,
+      "correlation": 0.9998329584401485,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "c9b6d198e12e9d2b56655f40a0b6730efc92051623d7ccda557355f69c5d5006"
+    },
+    {
+      "id": "c24",
+      "scene": "Stability",
+      "expected_start": 345.1333330000003,
+      "sample_offset": 10.685583333333334,
+      "correlation": 0.9996615194989172,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "51e6eabfa70dd573c6499abafa7230aaf076f65555822e9ffe9ef075ed6517f3"
+    },
+    {
+      "id": "c25",
+      "scene": "Nondegenerate",
+      "expected_start": 363.43333299999995,
+      "sample_offset": 8.401166666666667,
+      "correlation": 0.9997130872646668,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "85519d8b74b04552b46c53674f82ff6c6fcbb72b784463cf28a457c0afe0c60f"
+    },
+    {
+      "id": "c26",
+      "scene": "Nondegenerate",
+      "expected_start": 379.8333329999999,
+      "sample_offset": 1.9655833333333332,
+      "correlation": 0.9999761758731419,
+      "lag_seconds": 0.02033333333333333,
+      "sha256": "7762f7e20d17ea31237adb58d14b2b581eb1a63c429d0a8e9be06c004ae2e20d"
+    },
+    {
+      "id": "c27",
+      "scene": "Nondegenerate",
+      "expected_start": 393.3333330000002,
+      "sample_offset": 2.65675,
+      "correlation": 0.9997686492020931,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "b7c078597e288406abfc48110a9373a15ab4184fd06b7845fba70d066beb7d10"
+    },
+    {
+      "id": "c28",
+      "scene": "Nondegenerate",
+      "expected_start": 411.4333330000001,
+      "sample_offset": 8.70675,
+      "correlation": 0.9997522196516911,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "5ce2e2b9b6998898376b5a3f50c15f129e7a8f3ebac0a107680f49be2fadc018"
+    },
+    {
+      "id": "c29",
+      "scene": "Size",
+      "expected_start": 426.53333299999997,
+      "sample_offset": 9.52,
+      "correlation": 0.9998277463905867,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "6c92f063f3f22d2ca87f85a05a6e32f51b4ad55fff84b3ac6db1ee5435337a1d"
+    },
+    {
+      "id": "c30",
+      "scene": "Size",
+      "expected_start": 443.73333299999996,
+      "sample_offset": 13.628333333333334,
+      "correlation": 0.999665784516326,
+      "lag_seconds": 0.02033333333333333,
+      "sha256": "3b89e9cfc6914b5ab8bb6604defba23f2a9503446cb8a66357a633ec38069fee"
+    },
+    {
+      "id": "c31",
+      "scene": "Size",
+      "expected_start": 464.9666663333337,
+      "sample_offset": 8.52,
+      "correlation": 0.9998347757270031,
+      "lag_seconds": 0.021,
+      "sha256": "71043a59d445fbdca2360de0249b0c9276d95a79fcf1cc7733e3b46462fc977c"
+    },
+    {
+      "id": "c32",
+      "scene": "Size",
+      "expected_start": 482.16666633333335,
+      "sample_offset": 6.667166666666667,
+      "correlation": 0.999632400925906,
+      "lag_seconds": 0.021,
+      "sha256": "c6432552c9aa2c67e09baca7a1b9da2d25ce7c29b5b7d37f8c8c76c861e379aa"
+    },
+    {
+      "id": "c33",
+      "scene": "Credit",
+      "expected_start": 497.0,
+      "sample_offset": 9.901166666666667,
+      "correlation": 0.9997803627034335,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "f50bcb3892a0e143fe5307f8505051a024337f1be4fa46e672d8630b540bf0c1"
+    },
+    {
+      "id": "c34",
+      "scene": "Credit",
+      "expected_start": 513.4,
+      "sample_offset": 8.10275,
+      "correlation": 0.9997897083353074,
+      "lag_seconds": 0.02033333333333333,
+      "sha256": "468cb152d08dfacaa4b8c0b6499831e5ac5a324795cc418da07a88c715032710"
+    },
+    {
+      "id": "c35",
+      "scene": "Credit",
+      "expected_start": 531.1333333333337,
+      "sample_offset": 10.815166666666666,
+      "correlation": 0.9999032967436201,
+      "lag_seconds": 0.021,
+      "sha256": "87c9bd83fa97b7087051761ba112212bbd5c790169f3544a5359dd12c252f4a0"
+    },
+    {
+      "id": "c36",
+      "scene": "Credit",
+      "expected_start": 550.3000000000001,
+      "sample_offset": 6.365166666666667,
+      "correlation": 0.9995584178445063,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "dde9270cc83664b770e56b78845aedbcd84adcd1a088da973ad8cbc4c57d7393"
+    }
+  ]
+}

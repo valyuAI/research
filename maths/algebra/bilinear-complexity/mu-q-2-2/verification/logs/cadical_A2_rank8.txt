@@ -1,0 +1,3 @@
+s UNSATISFIABLE
+c (percentage relative to total process time)
+c total process time since initialization:       367.95    seconds

@@ -1,0 +1,160 @@
+\begin{thebibliography}{10}
+
+\bibitem{AshikhminKnill2001}
+Alexei Ashikhmin and Emanuel Knill.
+\newblock Nonbinary quantum stabilizer codes.
+\newblock {\em IEEE Transactions on Information Theory}, 47(7):3065--3072,
+  2001.
+
+\bibitem{BallCentellesHuber2023}
+Simeon Ball, Aina Centelles, and Felix Huber.
+\newblock Quantum error-correcting codes and their geometries.
+\newblock {\em Annales de l'Institut Henri Poincar{\'e} D, Combinatorics,
+  Physics and their Interactions}, 10(2):337--405, 2023.
+\newblock arXiv:2007.05992.
+
+\bibitem{Beutelspacher1975}
+Albrecht Beutelspacher.
+\newblock Partial spreads in finite projective spaces and partial designs.
+\newblock {\em Mathematische Zeitschrift}, 145(3):211--229, 1975.
+
+\bibitem{BierbrauerEdel2000}
+J{\"u}rgen Bierbrauer and Yves Edel.
+\newblock Quantum twisted codes.
+\newblock {\em Journal of Combinatorial Designs}, 8(3):174--188, 2000.
+
+\bibitem{BFGMP2008}
+J{\"u}rgen Bierbrauer, Giorgio Faina, Massimo Giulietti, Stefano Marcugini, and
+  Fernanda Pambianco.
+\newblock The geometry of quantum codes.
+\newblock {\em Innovations in Incidence Geometry}, 6--7:53--71, 2008.
+
+\bibitem{Delsarte1978}
+Philippe Delsarte.
+\newblock Bilinear forms over a finite field, with applications to coding
+  theory.
+\newblock {\em Journal of Combinatorial Theory, Series A}, 25(3):226--241,
+  1978.
+
+\bibitem{EdelTables}
+Yves Edel.
+\newblock Parameters of some {GF}(q)-linear quantum twisted codes.
+\newblock \url{http://www.yvesedel.de/Matritzen/QTBCH/QTBCHIndex.html}.
+\newblock Tables for $q=3,4,5$ retrieved 26 October 2026.
+
+\bibitem{EzermanEtAl2024}
+Martianus~Frederic Ezerman, Markus Grassl, San Ling, Ferruh {\"O}zbudak, and
+  Buket {\"O}zkaya.
+\newblock Characterization of nearly self-orthogonal quasi-twisted codes and
+  related quantum codes.
+\newblock {\em IEEE Transactions on Information Theory}, 71(1):499--517, 2025.
+\newblock arXiv:2405.15057.
+
+\bibitem{Farhan2026}
+Mohamed Farhan~S.
+\newblock New optimal pure stabilizer codes of minimum distance 4 (15 qubit
+  codes, 1 qutrit code).
+\newblock Zenodo dataset, version 1.0, 2026.
+\newblock Published 11 October 2026, \url{https://zenodo.org/records/23295497}.
+
+\bibitem{Gabidulin1985}
+Ernst~M. Gabidulin.
+\newblock Theory of codes with maximum rank distance.
+\newblock {\em Problems of Information Transmission}, 21(1):1--12, 1985.
+
+\bibitem{Gottesman1997}
+Daniel Gottesman.
+\newblock {\em Stabilizer Codes and Quantum Error Correction}.
+\newblock PhD thesis, California Institute of Technology, 1997.
+\newblock arXiv:quant-ph/9705052.
+
+\bibitem{codetables}
+Markus Grassl.
+\newblock Bounds on the minimum distance of quantum codes [[n,k,d]]$_q$ for
+  $q=3,4,5,7,8$.
+\newblock \url{https://www.codetables.de}.
+\newblock Tables retrieved 25 October 2026; page footer ``Last change:
+  10.06.2024''.
+
+\bibitem{GrasslRoetteler2015}
+Markus Grassl and Martin R{\"o}tteler.
+\newblock Quantum {MDS} codes over small fields.
+\newblock In {\em Proceedings of the IEEE International Symposium on
+  Information Theory (ISIT)}, pages 1104--1108, 2015.
+\newblock arXiv:1502.05267.
+
+\bibitem{GrishinZabokritskiy2026}
+Valery Grishin and Aryeh~Lev Zabokritskiy.
+\newblock The strengthened quantum {H}amming bound of {Y}u, {L}ai, and {O}h,
+  2026.
+\newblock arXiv:2610.30088v2.
+
+\bibitem{HirschfeldThas2025}
+James W.~P. Hirschfeld and Joseph~A. Thas.
+\newblock Arcs, caps and generalisations in a finite projective space.
+\newblock {\em Mathematics}, 13(9):1489, 2025.
+\newblock arXiv:2503.06243.
+
+\bibitem{HuberGrassl2020}
+Felix Huber and Markus Grassl.
+\newblock Quantum codes of maximal distance and highly entangled subspaces.
+\newblock {\em Quantum}, 4:284, 2020.
+\newblock arXiv:1907.07733.
+
+\bibitem{KKKS2006}
+Avanti Ketkar, Andreas Klappenecker, Santosh Kumar, and Pradeep~Kiran
+  Sarvepalli.
+\newblock Nonbinary stabilizer codes over finite fields.
+\newblock {\em IEEE Transactions on Information Theory}, 52(11):4892--4914,
+  2006.
+\newblock arXiv:quant-ph/0508070.
+
+\bibitem{LiXu2010}
+Ruihu Li and Zongben Xu.
+\newblock Construction of $[[n,n-4,3]]_q$ quantum codes for odd prime power
+  $q$.
+\newblock {\em Physical Review A}, 82:052316, 2010.
+\newblock arXiv:0906.2509.
+
+\bibitem{NastaseSissokho2017}
+Esmeralda~L. N{\u{a}}stase and Papa~A. Sissokho.
+\newblock The maximum size of a partial spread in a finite projective space.
+\newblock {\em Journal of Combinatorial Theory, Series A}, 152:353--362, 2017.
+\newblock arXiv:1605.04824.
+
+\bibitem{NemecTansuwannont2023}
+Andrew Nemec and Theerapat Tansuwannont.
+\newblock A {H}amming-like bound for degenerate stabilizer codes, 2023.
+\newblock arXiv:2306.00048.
+
+\bibitem{Rains1999}
+Eric~M. Rains.
+\newblock Nonbinary quantum codes.
+\newblock {\em IEEE Transactions on Information Theory}, 45(6):1827--1832,
+  1999.
+
+\bibitem{Thas1971}
+Joseph~A. Thas.
+\newblock The $m$-dimensional projective space $s_m(m_n(gf(q)))$ over the total
+  matrix algebra $m_n(gf(q))$ of the $n\times n$-matrices with elements in the
+  galois field $gf(q)$.
+\newblock {\em Rendiconti di Matematica (6)}, 4:459--532, 1971.
+
+\bibitem{YuEtAl2013}
+Sixia Yu, J{\"u}rgen Bierbrauer, Ying Dong, Qing Chen, and C.~H. Oh.
+\newblock All the stabilizer codes of distance 3.
+\newblock {\em IEEE Transactions on Information Theory}, 59(8):5179--5185,
+  2013.
+\newblock arXiv:0901.1968.
+
+\bibitem{YuLaiOh2010}
+Sixia Yu, C.~H. Lai, and C.~H. Oh.
+\newblock Strengthened quantum {H}amming bound, 2010.
+\newblock arXiv:1005.4758.
+
+\bibitem{ZhangChen2026}
+Yu-Xuan Zhang and Jing-Ling Chen.
+\newblock The quantum {H}amming bound in arbitrary local dimension, 2026.
+\newblock arXiv:2606.22538v2.
+
+\end{thebibliography}

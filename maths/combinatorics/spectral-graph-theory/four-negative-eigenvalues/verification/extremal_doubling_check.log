@@ -1,0 +1,5 @@
+k=1: order 2, 1 bases of rank 2, 1 classes; words (applied left to right) [['K2']]; OK
+k=2: order 6, 3 bases of rank 4, 2 classes; words (applied left to right) [['k'], ["k'"]]; OK
+k=3: order 14, 39 bases of rank 6, 3 classes; words (applied left to right) [["k'k'"], ['kk'], ["k'k"]]; OK
+k=4: order 30, 3648 bases of rank 8, 4 classes; words (applied left to right) [['kkk'], ["k'kk"], ["k'k'k"], ["k'k'k'"]]; OK
+ALL OK

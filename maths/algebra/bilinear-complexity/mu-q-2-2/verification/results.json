@@ -1,0 +1,91 @@
+{
+ "all_passed": true,
+ "checks": [
+  {
+   "check": "decomposition A2_F2_rank9",
+   "ok": true,
+   "detail": "q=2, modulus [1, 0, 1, 0, 1], 9 terms"
+  },
+  {
+   "check": "decomposition A1_F2_rank3",
+   "ok": true,
+   "detail": "q=2, modulus [1, 0, 1], 3 terms"
+  },
+  {
+   "check": "decomposition C6_F2_rank12",
+   "ok": true,
+   "detail": "q=2, modulus [1, 0, 0, 0, 0, 0, 1], 12 terms"
+  },
+  {
+   "check": "decomposition B5_F5_rank8",
+   "ok": true,
+   "detail": "q=5, modulus [4, 0, 4, 0, 1], 8 terms"
+  },
+  {
+   "check": "decomposition F3[x]/((x^2+1)^2) with 8 products",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "the F3 decomposition is symmetric (a_t = b_t)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "x^4+x^2+1 = (x^2+x+1)^2 over F2",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "x^4+2x^2+1 = (x^2+1)^2 over F3",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "x^4+4x^2+4 = (x^2+2)^2 over F5",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "x^2+x+1 irreducible over F2",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "x^2+1 irreducible over F3",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "x^2+2 irreducible over F5",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "x^6+1 = (x+1)^2 (x^2+x+1)^2 over F2",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "R_F2(F2[x]/((x^2+x+1)^2)) > 8 by exhaustive search",
+   "ok": true,
+   "detail": "74377 prefixes (F1, F2, F3), 12 units, 2 functional orbits, 3 F1 representatives, 225 rank-one forms, 1054s"
+  },
+  {
+   "check": "control: rank-8 subspace found for F2[x]/(x^4) (rank 8)",
+   "ok": true,
+   "detail": "after 24898 prefixes"
+  },
+  {
+   "check": "control: no rank-8 subspace for F16 = F2[x]/(x^4+x+1) (rank 9)",
+   "ok": true,
+   "detail": "24962 prefixes, 184s"
+  },
+  {
+   "check": "R_F3(F3[x]/((x^2+1)^2)) > 7 by exhaustive search",
+   "ok": true,
+   "detail": "4794 prefixes (F1, F2), 72 units, 2 functional orbits, 3 F1 representatives, 1600 rank-one forms, 335s"
+  }
+ ],
+ "python": "3.13.7"
+}

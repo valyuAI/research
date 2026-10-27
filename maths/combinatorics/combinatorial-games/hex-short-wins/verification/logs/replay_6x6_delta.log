@@ -1,0 +1,76 @@
+== D9 opening 0 09:13:03
+VERIFIED: Red stops Blue after first move (1,1); Red-to-move positions checked=31877
+== D9 opening 1 09:13:19
+VERIFIED: Red stops Blue after first move (1,2); Red-to-move positions checked=36463
+== D9 opening 2 09:13:39
+VERIFIED: Red stops Blue after first move (1,3); Red-to-move positions checked=58763
+== D9 opening 3 09:14:16
+VERIFIED: Red stops Blue after first move (1,4); Red-to-move positions checked=38828
+== D9 opening 4 09:14:39
+VERIFIED: Red stops Blue after first move (1,5); Red-to-move positions checked=21630
+== D9 opening 5 09:14:50
+VERIFIED: Red stops Blue after first move (1,6); Red-to-move positions checked=49078
+== D9 opening 6 09:15:18
+VERIFIED: Red stops Blue after first move (2,1); Red-to-move positions checked=31872
+== D9 opening 7 09:15:42
+VERIFIED: Red stops Blue after first move (2,2); Red-to-move positions checked=38217
+== D9 opening 8 09:16:09
+VERIFIED: Red stops Blue after first move (2,3); Red-to-move positions checked=39949
+== D9 opening 9 09:16:44
+VERIFIED: Red stops Blue after first move (2,4); Red-to-move positions checked=31420
+== D9 opening 10 09:17:08
+VERIFIED: Red stops Blue after first move (2,5); Red-to-move positions checked=45309
+== D9 opening 11 09:17:43
+VERIFIED: Red stops Blue after first move (2,6); Red-to-move positions checked=61689
+== D9 opening 12 09:18:27
+VERIFIED: Red stops Blue after first move (3,1); Red-to-move positions checked=32337
+== D9 opening 13 09:18:54
+VERIFIED: Red stops Blue after first move (3,2); Red-to-move positions checked=37583
+== D9 opening 14 09:19:29
+VERIFIED: Red stops Blue after first move (3,3); Red-to-move positions checked=42035
+== D9 opening 15 09:20:20
+VERIFIED: Red stops Blue after first move (3,4); Red-to-move positions checked=51384
+== D9 opening 16 09:21:10
+VERIFIED: Red stops Blue after first move (3,5); Red-to-move positions checked=50188
+== D9 opening 17 09:21:57
+VERIFIED: Red stops Blue after first move (3,6); Red-to-move positions checked=36988
+== D9 opening 18 09:22:35
+VERIFIED: Red stops Blue after first move (4,1); Red-to-move positions checked=36894
+== D9 opening 19 09:23:21
+VERIFIED: Red stops Blue after first move (4,2); Red-to-move positions checked=50076
+== D9 opening 20 09:24:04
+VERIFIED: Red stops Blue after first move (4,3); Red-to-move positions checked=51026
+== D9 opening 21 09:24:55
+VERIFIED: Red stops Blue after first move (4,4); Red-to-move positions checked=42149
+== D9 opening 22 09:25:43
+VERIFIED: Red stops Blue after first move (4,5); Red-to-move positions checked=37937
+== D9 opening 23 09:26:30
+VERIFIED: Red stops Blue after first move (4,6); Red-to-move positions checked=32091
+== D9 opening 24 09:27:02
+VERIFIED: Red stops Blue after first move (5,1); Red-to-move positions checked=61425
+== D9 opening 25 09:27:55
+VERIFIED: Red stops Blue after first move (5,2); Red-to-move positions checked=45380
+== D9 opening 26 09:28:41
+VERIFIED: Red stops Blue after first move (5,3); Red-to-move positions checked=31457
+== D9 opening 27 09:29:14
+VERIFIED: Red stops Blue after first move (5,4); Red-to-move positions checked=39975
+== D9 opening 28 09:29:59
+VERIFIED: Red stops Blue after first move (5,5); Red-to-move positions checked=39172
+== D9 opening 29 09:30:46
+VERIFIED: Red stops Blue after first move (5,6); Red-to-move positions checked=31749
+== D9 opening 30 09:31:19
+VERIFIED: Red stops Blue after first move (6,1); Red-to-move positions checked=48675
+== D9 opening 31 09:32:04
+VERIFIED: Red stops Blue after first move (6,2); Red-to-move positions checked=21956
+== D9 opening 32 09:32:28
+VERIFIED: Red stops Blue after first move (6,3); Red-to-move positions checked=39216
+== D9 opening 33 09:33:13
+VERIFIED: Red stops Blue after first move (6,4); Red-to-move positions checked=58670
+== D9 opening 34 09:34:18
+VERIFIED: Red stops Blue after first move (6,5); Red-to-move positions checked=37449
+== D9 opening 35 09:34:59
+VERIFIED: Red stops Blue after first move (6,6); Red-to-move positions checked=31929
+== D10 Blue opening 15 09:35:39
+n=6 mode=D bound=10 first=(3,4) side=blue winning sets=1301 certificate entries=5222871
+VERIFIED: Blue wins with first move (3,4); Blue-to-move positions checked=5158730, max Blue stones=10
+== done 10:36:19

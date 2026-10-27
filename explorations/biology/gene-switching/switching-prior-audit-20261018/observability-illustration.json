@@ -1,0 +1,17 @@
+{
+  "parameters": {
+    "b_per_min": 120.0,
+    "k_per_min": 0.6666666666666666,
+    "c": 1.0
+  },
+  "fast_decay_seconds": 0.24930556091384046,
+  "fast_covariance_weight": 7.7158707750824e-06,
+  "slow_decay_minutes": 1.5041782406514312,
+  "mean_dwell_time_statistic_minutes": 1.5,
+  "integrated_covariance_minutes": 1.5041666666666667,
+  "slow_decay_relative_excess": 0.002785493767620828,
+  "CV_OFF_squared": 1.0027777777777778,
+  "CV_ON_squared": 1.0027777777777778,
+  "frame_seconds": 10,
+  "burst_kernel_width_seconds": 50
+}

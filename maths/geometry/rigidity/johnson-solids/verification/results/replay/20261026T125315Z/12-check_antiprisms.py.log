@@ -1,0 +1,6 @@
+det M4(z) = 4 R^4 (c-1)^3 (c+1) (z-1) (z^2 - 2 cos(2 phi) z + 1) / z^3   [verified]
+  -> nonzero for every n-th root of unity z != 1, e^{+-2 i phi}, i.e. every mode 2 <= j <= n-2
+modes j = +-1: minor (x_a, z_a, x_b, z_b) = 16*R**2*z0**2*(c - 1)**2*(c + 1)**2*(z - 1)*(z + 1)**2/z**3
+  -> nonzero at z = e^{+-2 i phi} because z != +-1 for n >= 3, c != +-1 and z0 > 0
+mode j = 0: minor (x_a, y_a, z_a, x_b) at z = 1 = -64*R**3*s*z0*(c - 1)**2*(c + 1)**2
+  -> nonzero since R, s, z0 > 0 and c != +-1

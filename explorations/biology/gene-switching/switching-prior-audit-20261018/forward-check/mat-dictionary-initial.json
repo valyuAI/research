@@ -1,0 +1,192 @@
+{
+  "BPHENO_hb_MS2_INTRON_Nc14_AP16.mat": {
+    "format": "MATLAB 7.3 HDF5"
+  },
+  "DECONV_hb_MS2_INTRON_Nc14_AP16.mat": {
+    "format": "MATLAB 7.3 HDF5"
+  },
+  "hb_MS2_INTRON_NC14_OutDS.mat": {
+    "OutDS": {
+      "type": "ndarray",
+      "shape": [
+        35
+      ],
+      "dtype": "object",
+      "first": {
+        "type": "struct",
+        "fields": {
+          "Traces": {
+            "type": "ndarray",
+            "shape": [
+              0
+            ],
+            "dtype": "object"
+          },
+          "AP": 0.13018822862226614,
+          "Ti": {
+            "type": "ndarray",
+            "shape": [
+              361
+            ],
+            "dtype": "float64",
+            "min": 0.0,
+            "max": 60.0
+          },
+          "M1": {
+            "type": "ndarray",
+            "shape": [
+              361
+            ],
+            "dtype": "float64",
+            "min": -1.2145362728281135,
+            "max": 10.540110720340646
+          },
+          "S2": {
+            "type": "ndarray",
+            "shape": [
+              361
+            ],
+            "dtype": "float64",
+            "min": 6.938893903907228e-18,
+            "max": 115.44699081937048
+          },
+          "K3": {
+            "type": "ndarray",
+            "shape": [
+              361
+            ],
+            "dtype": "float64",
+            "min": -54.82791958810367,
+            "max": 1725.7016891107028
+          },
+          "K4": {
+            "type": "ndarray",
+            "shape": [
+              361
+            ],
+            "dtype": "float64",
+            "min": -9753.723493699139,
+            "max": 22207.05402166983
+          },
+          "WEmb": {
+            "type": "ndarray",
+            "shape": [
+              10,
+              361
+            ],
+            "dtype": "float64",
+            "min": 0.0,
+            "max": 3.747946745037047
+          },
+          "M1Emb": {
+            "type": "ndarray",
+            "shape": [
+              10,
+              361
+            ],
+            "dtype": "float64",
+            "min": -1.5725330468058427,
+            "max": 10.540110720340646
+          },
+          "S2Emb": {
+            "type": "ndarray",
+            "shape": [
+              10,
+              361
+            ],
+            "dtype": "float64",
+            "min": -2.220446049250313e-16,
+            "max": 119.5973050268077
+          },
+          "V1Emb": {
+            "type": "ndarray",
+            "shape": [
+              361
+            ],
+            "dtype": "float64",
+            "min": -1.4210854715202004e-14,
+            "max": 12.908085019457445
+          },
+          "Corr": {
+            "type": "ndarray",
+            "shape": [
+              361,
+              361
+            ],
+            "dtype": "float64",
+            "min": NaN,
+            "max": NaN
+          }
+        }
+      }
+    }
+  },
+  "MeasNoise2PhotonMS2.mat": {
+    "ff": {
+      "type": "ndarray",
+      "shape": [],
+      "dtype": "object",
+      "first": {
+        "type": "struct",
+        "fields": {
+          "matlabroot": "/Applications/MATLAB_R2020a.app",
+          "separator": "/",
+          "sentinel": "@",
+          "function_handle": {
+            "type": "struct",
+            "fields": {
+              "function": "sf%0@(x)ft.b*x+ft.c",
+              "type": "anonymous",
+              "file": {
+                "type": "ndarray",
+                "shape": [
+                  0
+                ],
+                "dtype": "<U1"
+              },
+              "workspace": {
+                "type": "ndarray",
+                "shape": [
+                  1
+                ],
+                "dtype": "[('s0', 'O'), ('s1', 'O'), ('s2', 'O'), ('arr', 'O')]"
+              },
+              "within_file_path": {
+                "type": "ndarray",
+                "shape": [
+                  0
+                ],
+                "dtype": "<U1"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Kernel_hb_MS2_INTRON.mat": {
+    "Kernel": {
+      "type": "struct",
+      "fields": {
+        "K": {
+          "type": "ndarray",
+          "shape": [
+            25
+          ],
+          "dtype": "float64",
+          "min": 0.041666666666666664,
+          "max": 1.0
+        },
+        "X": {
+          "type": "ndarray",
+          "shape": [
+            25
+          ],
+          "dtype": "uint16",
+          "min": 0.0,
+          "max": 4464.0
+        }
+      }
+    }
+  }
+}

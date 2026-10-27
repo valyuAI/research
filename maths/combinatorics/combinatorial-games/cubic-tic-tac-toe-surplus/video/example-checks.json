@@ -1,0 +1,110 @@
+{
+  "all_passed": true,
+  "pairing_board": [
+    [
+      2,
+      6,
+      8,
+      5,
+      8
+    ],
+    [
+      11,
+      10,
+      3,
+      1,
+      10
+    ],
+    [
+      11,
+      4,
+      0,
+      4,
+      12
+    ],
+    [
+      9,
+      1,
+      9,
+      5,
+      12
+    ],
+    [
+      7,
+      6,
+      3,
+      7,
+      2
+    ]
+  ],
+  "line_counts": {
+    "7": 193,
+    "6": 148
+  },
+  "central_displayed_breaker_cells": [
+    [
+      5,
+      5,
+      5
+    ],
+    [
+      1,
+      1,
+      7
+    ],
+    [
+      2,
+      6,
+      2
+    ],
+    [
+      1,
+      7,
+      7
+    ]
+  ],
+  "central_lines_met": 27,
+  "all_diagonal_partner_counts": [
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12
+  ],
+  "opposite_pair_checked_under_48_symmetries": [
+    [
+      1,
+      7,
+      1
+    ],
+    [
+      6,
+      2,
+      6
+    ]
+  ],
+  "six_round7_bound": [
+    46,
+    47
+  ],
+  "scope": "Exact display data checks only. Surplus values and full opening universality come from the accepted independent research records."
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Nine multiplications, and not one fewer",
+  "duration_seconds": 504.233333,
+  "native_resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "clips": 32,
+  "max_clip_seconds": 20.304,
+  "scenes": [
+    "ThreeProducts",
+    "TinyArithmetic",
+    "ProductGrids",
+    "SearchSpace",
+    "OtherFields",
+    "Convolution",
+    "Evidence"
+  ],
+  "source_hashes_unchanged": true,
+  "audio_alignment": {
+    "method": "Central waveform correlation after mono 8kHz decoding; encoding delay allowed. Not listening.",
+    "minimum_correlation": 0.9803195035074732,
+    "maximum_absolute_offset_seconds": 0.021375
+  },
+  "listening_review": false,
+  "scope": "Karatsuba, binary polynomial arithmetic, rank-one grids, exhaustive lower bounds, the finite-field table and binary length-six convolution. The prior symmetric binary result and prior search methods are credited; novelty remains bounded. No Lean formalization is claimed."
+}

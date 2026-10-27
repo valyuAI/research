@@ -1,0 +1,281 @@
+\documentclass[11pt]{amsart}
+\usepackage[a4paper,textwidth=158mm,textheight=237mm,centering]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,mathtools,amssymb,graphicx,flafter,booktabs,longtable}
+\usepackage[unicode,colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\F}{\mathbb F}
+\newcommand{\RR}{\mathcal R}
+\title{Rigidity of the Johnson solids with fixed edge lengths and flat faces}
+\author{Harvey Yorke}
+\address{Valyu AI}
+\ifdefined\journalversion\else
+\author{Valyu DeepResearch}
+\address{Valyu AI}
+\fi
+\ifdefined\journalversion
+  \hypersetup{pdftitle={Rigidity of the Johnson solids with fixed edge lengths and flat faces},pdfauthor={Harvey Yorke}}
+\else
+  \hypersetup{pdftitle={Rigidity of the Johnson solids with fixed edge lengths and flat faces},pdfauthor={Harvey Yorke and Valyu DeepResearch}}
+\fi
+\date{25 October 2026}
+\keywords{Polytope rigidity, Johnson solids, point-hyperplane frameworks, second-order rigidity, Minkowski sums}
+\newcommand{\paperAuthorBlock}[1]{%
+  \begin{minipage}[t]{.44\textwidth}
+    \centering\normalfont\normalsize #1\par\small Valyu AI\par
+  \end{minipage}%
+}
+\makeatletter
+\renewcommand{\@setauthors}{%
+  \begingroup\trivlist\centering\normalfont\normalsize
+  \@topsep30\p@\relax\advance\@topsep by -\baselineskip\item\relax
+  \ifdefined\journalversion
+    \paperAuthorBlock{Harvey Yorke}%
+  \else
+    \paperAuthorBlock{Harvey Yorke}\hspace{.06\textwidth}\paperAuthorBlock{Valyu DeepResearch}%
+  \fi
+  \endtrivlist\endgroup
+}
+\renewcommand{\@setaddresses}{}
+\makeatother
+\begin{document}
+\raggedbottom
+\begin{abstract}
+A convex polytope is rigid in the sense of Adrian-Himmelmann, Schulze, Winter and Zhang if it admits no non-trivial continuous deformation preserving its edge lengths and the planarity of its faces; face shapes may change, so Cauchy's theorem does not apply. Their recent work classifies the Platonic, Archimedean and Catalan solids. We classify all 92 Johnson solids. Exactly 41 are first-order rigid. Of the other 51, 45 have explicit continuous flexes, obtained by rotating one summand of a decomposition of the edge set or by flexing an augmented prism. The remaining six, the augmented dodecahedra J58, J59, J60 and the diminished rhombicosidodecahedra J81, J82, J83, are first-order flexible but second-order rigid, hence rigid. So 47 Johnson solids are rigid and 45 are flexible. We also give the exact dimension of every first-order flex space, and we prove that every antiprism is first-order rigid. Together with the work of Adrian-Himmelmann, Winter and Zhang, this settles the rigidity of every strictly convex polyhedron with regular faces except the truncated dodecahedron. The proof uses exact coordinates in number fields of degree up to 32, two independent rank certificates (modular and interval arithmetic), explicit flexes, and exact second-order certificates.
+\end{abstract}
+\maketitle
+
+\section{Introduction}
+
+Let $P\subset\R^3$ be a convex polyhedron with vertex set $V$, edge set $E$ and facet set $F$, translated so that the origin is interior. Following~\cite{AHWZ2026} we describe $P$ by its vertices $p_i$ and facet normals $a_\sigma$ normalised by $\langle p_i,a_\sigma\rangle=1$ for every incidence $i\sim\sigma$. A \emph{flex} is a continuous family $(p(t),a(t))$, $t\in[0,1)$, starting at $P$, that keeps every edge length $\|p_i-p_j\|$, $ij\in E$, and every incidence $\langle p_i,a_\sigma\rangle=1$, and is not induced by Euclidean motions. $P$ is \emph{rigid} if it has no flex. The faces may change their shape: a square may become a rhombus. The cube is flexible in this sense~\cite{HSW2026}, which introduced the model.
+
+We use the formulation of~\cite{AHWZ2026}. The earlier paper~\cite{HSW2026} uses unit normals and the conditions $\langle p_j-p_i,a_\sigma\rangle=0$. Near convex realisations with the origin in the interior, the two descriptions are related by the local change of variables $a\mapsto a/\langle p_i,a\rangle$, so they have the same flexes and the same first-order flexes~\cite{AHWZ2026}.
+
+The \emph{rigidity matrix} $\RR(P)$ has one row $\langle p_i-p_j,\dot p_i-\dot p_j\rangle$ per edge and one row $\langle p_i,\dot a_\sigma\rangle+\langle\dot p_i,a_\sigma\rangle$ per incidence, in the unknowns $(\dot p,\dot a)\in\R^{3|V|+3|F|}$. Its kernel always contains the six-dimensional space of trivial motions, and $P$ is \emph{first-order rigid} if it contains nothing else~\cite[Cor.~3.2]{AHWZ2026}. First-order rigidity implies rigidity~\cite[Thm.~3.3]{AHWZ2026}. Elements of $\ker\RR(P)$ that are not trivial are \emph{first-order flexes}. For polyhedra the number of rows is exactly the number of columns minus six, so the flex space and the space of self-stresses $\ker\RR(P)^\top$ have equal dimension~\cite[Prop.~3.6]{AHWZ2026}. A polytope is \emph{second-order rigid} if every first-order flex $\dot P$ admits a stress $\xi$ with $\xi^\top\RR(\dot P)\dot P\neq0$~\cite[Thm.~4.2]{AHWZ2026}, and second-order rigidity implies rigidity~\cite[Thm.~4.1]{AHWZ2026}.
+
+Adrian-Himmelmann, Winter and Zhang~\cite{AHWZ2026} determine these properties for the 5 Platonic, 13 Archimedean and 13 Catalan solids, with the truncated dodecahedron left open. The Johnson solids~\cite{Johnson1966,Zalgaller1969}, the 92 strictly convex polyhedra with regular faces that are not uniform (that is, neither Platonic, Archimedean, prisms nor antiprisms), are the natural next family. They mix triangles, squares, pentagons, hexagons, octagons and decagons, and many of them are built by gluing pyramids, cupolae and rotundae to Archimedean pieces. We did not find any earlier treatment of them in this model (Section~\ref{sec:scope}).
+
+\begin{theorem}\label{thm:main}
+Consider the 92 Johnson solids with unit edges, in the model above.
+\begin{enumerate}
+\item Exactly 41 are first-order rigid: J1, J2, J6, J10--J13, J17, J22--J25, J32--J34, J44--J48, J50, J51, J61--J66, J68--J71 and J84--J92.
+\item The other 51 are first-order flexible, with the flex-space dimensions listed in Table~\ref{tab:all}.
+\item Of these, 45 are flexible: J3--J5, J7--J9, J14--J16, J18--J21, J26--J31, J35--J43, J49, J52--J57, J67 and J72--J80. Each admits an explicit flex of the type described in Section~\ref{sec:flex}.
+\item The remaining six, J58, J59, J60, J81, J82 and J83, are second-order rigid and therefore rigid. J60 and J82 are moreover prestress stable, while J58, J59, J81 and J83 are not.
+\end{enumerate}
+In particular, 47 Johnson solids are rigid and 45 are flexible.
+\end{theorem}
+
+The same model also settles the two infinite families of uniform polyhedra.
+
+\begin{theorem}\label{thm:anti}
+For every $n\ge3$ and every positive height, the $n$-antiprism (two regular $n$-gons in parallel planes, one rotated by $\pi/n$ against the other, joined by $2n$ triangles) is first-order rigid, hence rigid. Every $n$-prism is flexible.
+\end{theorem}
+
+Together with~\cite{AHWZ2026}, this determines the rigidity of every strictly convex polyhedron with regular faces except the truncated dodecahedron.
+
+Items 1 and 2 of Theorem~\ref{thm:main} rest on exact rank computations; items 3 and 4 on explicit flexes and on exact second-order certificates. All are replayed by standard-library Python code supplied with the paper (Section~\ref{sec:scope}).
+
+Part 4 adds six natural examples of rigid polytopes that are not first-order rigid. Before this, the dodecahedron and the truncated icosahedron were the natural examples of this kind~\cite[Sec.~8]{AHWZ2026}. The augmented dodecahedra inherit this behaviour: attaching pentagonal pyramids to the dodecahedron, whose flex space has dimension 5, gives flex spaces of dimensions 3 (J58, J59) and 1 (J60), and J61 is first-order rigid. Part 3 contains a sharp contrast between near-identical solids. The parabidiminished rhombicosidodecahedron J80 is flexible, while the metabidiminished J81, with the same face counts and four first-order flexes, is rigid.
+
+\section{Exact data and the first-order computation}\label{sec:data}
+
+\subsection{Coordinates}
+For each Johnson solid we use coordinates in a real number field $L$. Either $L=K=\Q(\theta)$, with $\theta$ specified by a monic integer minimal polynomial and a rational isolating interval, or $L=K(\sqrt w)$ with $w\in K$ positive. The degrees $[L:\Q]$ are listed in Table~\ref{tab:all}. They are 2 for 45 solids and at most 8 for all but five: J85 has degree 12, J87 has 16, J89 has 20, J90 has 24 and J88 has 32. The starting data are D.~McCooey's exact coordinates~\cite{McCooey}, given as roots of explicit polynomials. We rewrote them in a primitive element using integer-relation finding (PSLQ or LLL). J23, J28, J37 and J84 were constructed directly, and J87 was built from the exact J86 by attaching a square pyramid. This rewriting step is untrusted; the following exact validation is what certifies the data.
+
+\begin{lemma}\label{lem:valid}
+For each of the 92 data sets the following hold exactly in $L$, with signs decided in the real embedding: every edge has length 1; every face is planar; every face is a regular polygon (all chords of each step are equal); every vertex not on a face lies strictly on the inner side of that face's plane; every face polygon is convex in the listed cyclic order; each edge lies in exactly two faces; and $|V|-|E|+|F|=2$.
+\end{lemma}
+
+By Cauchy's rigidity theorem~\cite{Cauchy1813}, two convex polyhedra with the same combinatorics and congruent corresponding faces are congruent. So each validated data set is the Johnson solid of that combinatorial type. To make sure the combinatorial type matches the label, we use two checks. First, by Cauchy's theorem every combinatorial automorphism of such a polyhedron is induced by an isometry. The computed automorphism group orders agree with the known symmetry groups of all 92 solids, and simple face-adjacency counts distinguish the ortho and gyro members of the pairs J28/J29, J30/J31, J35/J36, J38/J39 and J42/J43. Second, the vertex-facet incidence graphs are isomorphic to those of the independent OSCAR dataset~\cite{OSCARJohnson} for the 91 solids it contains. For J32/J33 and J40/J41 the ortho/gyro naming follows McCooey's data; both members of each pair receive the same verdict and dimension, so the table does not depend on this convention.
+
+\subsection{Modular rank}
+Let $m$ be the minimal polynomial of $\theta$, $p$ a prime and $r\in\F_p$ a root of $m$ modulo $p$. When every coordinate is $p$-integral, $\theta\mapsto r$ defines a ring map from the coordinate ring into $\F_p$; for $L=K(\sqrt w)$ we also send $\sqrt w$ to a square root of $w(r)$ modulo $p$.
+
+\begin{lemma}\label{lem:modp}
+If $L$ is a field, the rank of the reduction of $\RR(P)$ modulo $p$ is at most the real rank of $\RR(P)$.
+\end{lemma}
+
+\begin{proof}
+A minor that vanishes at the real point is the zero element of the field $L$, so its image in $\F_p$ is zero.
+\end{proof}
+
+All minimal polynomials are irreducible. For the towers, $w$ is certified to be a non-square in $K$ in one of two ways: its norm is not a rational square, or $w$ is a quadratic non-residue modulo a prime at which $m$ is squarefree.
+
+\begin{theorem}\label{thm:rank}
+For every Johnson solid, $\operatorname{rank}_{\F_p}\RR(P)=3|V|+3|F|-6-d$, where $d$ is the number in Table~\ref{tab:all}. Exact elimination over $L$ gives the same rank for the 51 solids with $d>0$. Hence the first-order flex space has dimension exactly $d$, and the 41 solids with $d=0$ are first-order rigid.
+\end{theorem}
+
+The dimensions in Table~\ref{tab:all} are first-order counts. Where the realisation space is singular they need not equal the dimension of a family of actual flexes, and we make no claim about the local structure of the flexible solids beyond the existence of the flexes of Section~\ref{sec:flex}.
+
+\subsection{An independent check}
+A second checker shares no code with the first. It uses a different formulation, different arithmetic and different evidence for flexibility. It keeps only the vertex velocities. Each face with $k\ge4$ vertices contributes $k-3$ rows, the linearisations of $\det(p_b-p_a,p_c-p_a,p_d-p_a)=0$, where $a,b,c$ are the first three vertices of the face and $d$ runs over the others.
+
+\begin{lemma}\label{lem:vertexonly}
+Suppose every face has three affinely independent vertices and its plane avoids the origin. Then $(\dot p,\dot a)\mapsto\dot p$ is an isomorphism from $\ker\RR(P)$ onto the kernel of the vertex-only matrix.
+\end{lemma}
+
+\begin{proof}
+Let $a,b,c$ be three affinely independent vertices of a face $\sigma$. Since the plane of $\sigma$ avoids $0$, the vectors $p_a,p_b,p_c$ are linearly independent. Hence the three incidence rows of $\sigma$ at $a,b,c$ determine $\dot a_\sigma$ uniquely from $\dot p$, which proves injectivity. Given $\dot p$, define $\dot a_\sigma$ in this way. Let $d$ be another vertex of $\sigma$, and put $\delta_d=\langle\dot p_d,a_\sigma\rangle+\langle p_d,\dot a_\sigma\rangle$; the incidence row of $d$ at $\sigma$ says $\delta_d=0$. Move the points linearly, $p_x(t)=p_x+t\dot p_x$. For small $t$ the points $p_a(t),p_b(t),p_c(t)$ span a plane $\{x:\langle x,\alpha(t)\rangle=1\}$ with $\alpha$ smooth, $\alpha(0)=a_\sigma$ and $\alpha'(0)=\dot a_\sigma$ (differentiate the three incidences). Both $x\mapsto\det(p_b(t)-p_a(t),p_c(t)-p_a(t),x-p_a(t))$ and $x\mapsto\langle x,\alpha(t)\rangle-1$ are affine functions vanishing on this plane, so the first is $c(t)$ times the second, with $c$ smooth and $c(0)\neq0$. Evaluating at $x=p_d(t)$ and differentiating at $t=0$, where the second factor vanishes, gives $\frac{d}{dt}\big|_0 D=c(0)\,\delta_d$ for $D=\det(p_b-p_a,p_c-p_a,p_d-p_a)$. So the determinant rows vanish exactly when all incidence rows do.
+\end{proof}
+
+Equalities are tested formally in $\Q[x]/(m)$, or in $\Q[x]/(m)[y]/(y^2-w)$. A formal identity holds at every real root of $m$, so this test needs no irreducibility. Inequalities and ranks are certified at the root in the given interval, using rigorous fixed-point interval arithmetic with 640 fractional bits. The rank is obtained by interval Gaussian elimination that accepts a pivot only when its interval excludes 0, so the count of accepted pivots is a lower bound for the real rank. The second checker recovers rank $3|V|-6$ for the 41 solids of Theorem~\ref{thm:main}(1). As a negative control, its lower bound equals $3|V|-6-d$ for every other solid. For each of the 51 first-order flexible solids it also verifies an explicit exact first-order flex, checking formally that it lies in the kernel and certifying by interval arithmetic that some distance $\|p_u-p_w\|$ has non-zero derivative. Such a flex cannot be trivial.
+
+\section{Continuous flexes}\label{sec:flex}
+
+\subsection{Rotating a summand}
+Let $E=E_1\sqcup E_2$ be a partition of the edges such that, around every face, the $E_1$-edge vectors sum to zero. Summing $E_1$-edge vectors along paths then gives well-defined maps $s_1:V\to\R^3$ and $s_2=p-s_1$. Every edge vector is an edge vector of $s_1$ (if in $E_1$) or of $s_2$ (if in $E_2$). For a face $\sigma$ let $k_j(\sigma)$ be the dimension of the affine hull of $s_j(\sigma)$; both lie in the plane direction of $\sigma$, so $k_j\le2$. For a unit vector $\ell$ let $R_t$ be the rotation by angle $t$ about $\ell$ and put
+\[
+p_i(t)=s_1(i)+R_t\,s_2(i).
+\]
+
+\begin{lemma}\label{lem:mink}
+Suppose that $\ell$ satisfies the following condition for every face $\sigma$: if $(k_1,k_2)=(2,2)$, then $\ell$ is normal to $\sigma$; if $(k_1,k_2)=(2,1)$, then $\ell$ is normal to $\sigma$ or parallel to the segment $s_2(\sigma)$; if $(k_1,k_2)=(1,2)$, then $\ell$ is normal to $\sigma$ or parallel to $s_1(\sigma)$. Suppose also that $\frac{d}{dt}\|p_u(t)-p_w(t)\|^2\neq0$ at $t=0$ for some pair $u,w$. Then $p(t)$ is a flex of $P$ for small $t$.
+\end{lemma}
+
+\begin{proof}
+Edges in $E_1$ keep their vectors and edges in $E_2$ are rotated, so all edge lengths are preserved. A face with $k_1=0$ or $k_2=0$ is translated or moved rigidly. When $(k_1,k_2)=(1,1)$, all vertices of the face lie in $s_1(a)+R_ts_2(a)+\operatorname{span}(u_1,R_tu_2)$, where $u_1,u_2$ are the directions of the two segments, so the face stays planar. In the critical cases the stated condition keeps the plane spanned by $s_1(\sigma)$ and $R_ts_2(\sigma)$ two-dimensional. Every face therefore stays planar, and its plane moves continuously. At $t=0$ every vertex off a face lies strictly inside that face's plane; this persists for small $t$, so the combinatorial type and convexity are preserved. The distance condition excludes congruence.
+\end{proof}
+
+This is a version of the Minkowski flexes of~\cite[Sec.~4.1]{HSW2026}, adapted to summands with parallel faces, which are the rule for Johnson solids. For 38 solids a suitable partition and axis exist, and both are checked exactly. Examples:
+\begin{itemize}
+\item The triangular cupola J3 splits into a triangle (its top) and a regular tetrahedron. Rotating the tetrahedron about the normal of the hexagon gives a one-parameter flex, and the first-order flex space of J3 is one-dimensional. The hexagon's sides alternate between the two summands, so its angles become $120^\circ\pm t$.
+\item The gyrobifastigium J26 splits into two triangles in perpendicular planes.
+\item Every elongated solid (J7--J9, J14--J16, J18--J21, J35--J43) is the Minkowski sum of the unelongated solid and a segment, the lateral edges. Tilting the segment shears the belt of squares into parallelograms. For several of these the search found, and the certificate uses, a different partition.
+\item For the gyrate and diminished rhombicosidodecahedra J72--J80 both summands are three-dimensional; for J72 they have 21 and 11 vertices. Where decagonal faces exist, the axis must be normal to them. For J80 the two decagons are parallel, so their common normal is admissible.
+\end{itemize}
+For all 38 solids, the file \path{verification/results/classification.json} records the vertex counts and dimensions of both summands.
+
+\subsection{Augmented prisms}
+\begin{lemma}\label{lem:prism}
+The augmented prisms J49 and J52--J57 are flexible.
+\end{lemma}
+
+\begin{proof}
+Each is a right prism over a regular $n$-gon $B$ with top $B+h$, $h\perp B$, $|h|=1$, with square pyramids attached to some lateral squares. If $n\ge4$, deform $B$ inside its plane through equilateral $n$-gons (an $(n-3)$-parameter family) and keep $h$. Every lateral face remains a unit square, so each pyramid follows its square rigidly. For J49 ($n=3$, one pyramid) rotate $h$ about the direction of the horizontal edges of the augmented square. That square stays a square, and the other two lateral faces become parallelograms. In both cases convexity persists for small deformations, and some distance changes to first order.
+\end{proof}
+
+The structural hypotheses (right prism, unit lateral edges, pyramid apices over lateral squares, and parallel horizontal edges in the case $n=3$) are verified exactly. This gives Theorem~\ref{thm:main}(3).
+
+\begin{remark}
+J81, J82 and J83 also admit a two-summand partition, but their decagonal faces have pairwise non-parallel normals, so no axis is admissible. Similarly, the tilt of J49 cannot keep two non-parallel augmented squares square, which is consistent with the first-order rigidity of J50 and J51 (proved by Theorem~\ref{thm:rank}, not by this heuristic).
+\end{remark}
+
+\section{Six rigid solids that are not first-order rigid}\label{sec:second}
+
+For J58, J59, J60, J81, J82 and J83 (all with coordinates in $\Q(\sqrt5)$) we compute exactly:
+\begin{itemize}
+\item a basis of $\ker\RR(P)$;
+\item the six trivial motions, including the normal velocities $\dot a_\sigma=-\langle c,a_\sigma\rangle a_\sigma$ for a translation by $c$;
+\item flexes $F_1,\dots,F_k$ completing the trivial motions to a basis;
+\item a basis $\xi_1,\dots,\xi_k$ of stresses.
+\end{itemize}
+Here $k=3,3,1,4,2,2$ respectively. Let
+\[
+Q_j(\lambda)=\xi_j^\top\RR(\dot P)\dot P,\qquad \dot P=\textstyle\sum_a\lambda_aF_a,
+\]
+where the edge row of $\RR(\dot P)\dot P$ is $\|\dot p_i-\dot p_j\|^2$ and the incidence row is $2\langle\dot p_i,\dot a_\sigma\rangle$. The constraints are invariant under the Euclidean group, so $\xi^\top\RR(\dot T)\dot X=0$ for every trivial $\dot T$, every stress $\xi$ and every first-order motion $\dot X\in\ker\RR(P)$; hence $Q_j$ is well defined on flexes modulo trivial motions. By~\cite[Thm.~4.2]{AHWZ2026}, $P$ is second-order rigid if and only if the forms $Q_1,\dots,Q_k$ have no common real zero $\lambda\neq0$.
+
+\begin{theorem}\label{thm:second}
+For each of the six solids, $Q_1,\dots,Q_k$ have no common real zero except $0$. Hence all six are second-order rigid and rigid.
+\end{theorem}
+
+\begin{proof}
+J60 ($k=1$): the single form is $c\lambda^2$ with $c\neq0$.
+
+J81 ($k=4$), J82 and J83 ($k=2$): the Macaulay matrix spanned by the multiples $\mu Q_j$, with $\mu$ running over the monomials of degree $k-1$, has rank equal to the number of monomials of degree $k+1$ (56 and 4 respectively). Every monomial of degree $k+1$, in particular $\lambda_a^{k+1}$, then lies in the ideal of the forms, so any common zero, even a complex one, is $0$.
+
+J58 and J59 ($k=3$): the Macaulay rank in degree 4 is 13 of 15, so this sufficient test is inconclusive. We exclude real common zeros as follows. After the rational substitution $(x,y,z)\mapsto(x+2z,\,y-3z,\,x-y+z)$ every $Q_j$ has a non-zero $z^2$ coefficient. Write $Q_j=\alpha_jz^2+\beta_jz+\gamma_j$. For a real common zero $(x:y:z)$, the point $(x:y)$ is a real common root of the resultants $R_{12}=\operatorname{Res}_z(Q_1,Q_2)$ and $R_{13}=\operatorname{Res}_z(Q_1,Q_3)$, which are binary quartics over $\Q(\sqrt5)$. The point $(0:0:1)$ is excluded because $\alpha_1\neq0$, and $y=0$ is excluded because $R_{12}(1,0)$ and $R_{13}(1,0)$ do not both vanish. The gcd of $R_{12}(x,1)$ and $R_{13}(x,1)$ over $\Q(\sqrt5)$ has degree 2, and a Sturm sequence shows that it has no real root.
+\end{proof}
+
+\begin{remark}
+The second-order test of~\cite[Sec.~6]{AHWZ2026} certifies that the forms have no common \emph{complex} zero, and its authors point out that this is sufficient but not necessary for second-order rigidity. J58 and J59 are natural examples where it is not enough: their forms have common complex zeros (they project to roots of the gcd in the proof above, which are non-real), but no real one, so a real argument is needed. An independent symbolic elimination with \texttt{sympy} verifies that the affine chart ideal is proper, its elimination polynomial is quadratic with strictly negative discriminant, and the remaining projective points are excluded. This shares the stress forms but uses neither our resultant nor our Sturm implementation.
+\end{remark}
+
+Following~\cite{CW1996,AHWZ2026}, $P$ is prestress stable if a single stress blocks every first-order flex, that is, if some combination $\sum_j\mu_jQ_j$ is definite. J60 and J82 are prestress stable. For J60 this is trivial, and for J82 the form of $\xi_1+\xi_2$ is definite (checked exactly by Sylvester's criterion).
+
+\begin{theorem}\label{thm:prestress}
+J58, J59, J81 and J83 are not prestress stable. They are therefore natural examples of second-order rigid polytopes that are not prestress stable, with exact certificates for both properties.
+\end{theorem}
+
+\begin{proof}
+The open cone of positive definite $k\times k$ matrices meets the subspace spanned by the $Q_j$ if and only if there is no non-zero positive semidefinite $X$ with $\operatorname{tr}(Q_jX)=0$ for all $j$. Indeed, if $\sum\mu_jQ_j$ were definite, then $\operatorname{tr}((\sum\mu_jQ_j)X)\neq0$ for every non-zero $X\succeq0$; the converse is the separation theorem for convex cones. For each of the four solids we exhibit $X$ with entries in $\Q(\sqrt5)$, orthogonal to every $Q_j$ and positive definite by Sylvester's criterion, all checked exactly. Numerical optimisation proposes rational coefficients in a basis of the orthogonal complement; no numerical eigenvalue is used as evidence. The saved matrices are replayed by \path{verification/check_prestress.py}. For J81 the proposal required higher-precision evaluation of the algebraic coefficients before rounding, while the final verification uses exact arithmetic only. For J83 ($k=2$) an independent exact argument agrees: $\det(\mu_1M_1+\mu_2M_2)$ is a negative definite binary quadratic form in $\mu$.
+\end{proof}
+
+AHWZ report the failure of prestress stability for the dodecahedron and the truncated icosahedron numerically, and note that they have no symbolic certificate for such negative results~\cite[Sec.~8]{AHWZ2026}. The certificate above applies to them as well. On exact data for these two solids, our pipeline reproduces the five-dimensional flex spaces and second-order rigidity of~\cite{AHWZ2026} (Macaulay matrices of full rank), and certifies exactly that neither is prestress stable. In both cases the degree-six Macaulay matrix has rank $210$ out of $210$. The exact dual matrices are saved alongside the Johnson certificates and replayed by \path{verification/check_extra.py}. These are confirmations and exact certificates for the published verdicts, rather than new rigidity classifications.
+
+\section{Prisms and antiprisms}\label{sec:anti}
+
+\begin{proof}[Proof of Theorem~\ref{thm:anti}]
+An $n$-prism is the Minkowski sum of a regular $n$-gon and a segment. Tilting the segment is a flex: the caps translate and the lateral squares become parallelograms~\cite[Sec.~4.1]{HSW2026}. This is Lemma~\ref{lem:mink} with $(k_1,k_2)\in\{(2,0),(1,1)\}$ for all faces.
+
+For the antiprism we show that there is no non-zero stress $(\omega,\eta)$; by~\cite[Prop.~3.6]{AHWZ2026} this is equivalent to first-order rigidity. Put $\varphi=\pi/n$. Let the top vertices be $a_k=(R\cos2k\varphi,R\sin2k\varphi,z_0)$ and the bottom vertices $b_k=(R\cos(2k+1)\varphi,R\sin(2k+1)\varphi,-z_0)$, with $z_0>0$ and $R>0$. The edges are $a_ka_{k+1}$, $b_kb_{k+1}$, $a_kb_k$ and $b_ka_{k+1}$. For a triangle $\sigma$ the face condition $\sum_{i\sim\sigma}\eta_{i\sigma}p_i=0$ involves three linearly independent vectors, so $\eta$ vanishes on all triangles. Only the two caps carry $\eta$, and the cap normals are $\pm e_z/z_0$.
+
+The rotation by $2\varphi$ permutes the vertices cyclically and acts on the stress space, so we may assume a stress lies in an eigenspace: $\omega(a_ka_{k+1})=\omega_T\zeta^k$, $\omega(b_kb_{k+1})=\omega_B\zeta^k$, $\omega(a_kb_k)=\omega_L\zeta^k$, $\omega(b_ka_{k+1})=\omega_M\zeta^k$, $\eta(a_k)=\eta_A\zeta^k$ and $\eta(b_k)=\eta_B\zeta^k$, where $\zeta=e^{2\pi ij/n}$. The equilibrium equations at $a_k$ and $b_k$, written in the frames rotated by $2k\varphi$ and $(2k+1)\varphi$, do not depend on $k$. Their horizontal components do not involve $\eta$ and form a $4\times4$ system $M_4(\zeta)\,(\omega_T,\omega_B,\omega_L,\omega_M)^\top=0$. With $c=\cos\varphi$, a direct computation gives
+\[
+\det M_4(\zeta)=\frac{4R^4(c-1)^3(c+1)(\zeta-1)(\zeta-e^{2i\varphi})(\zeta-e^{-2i\varphi})}{\zeta^3}.
+\]
+For $2\le j\le n-2$ this is non-zero, so $\omega=0$, and the vertical components then give $\eta_A=\eta_B=0$.
+
+For $j=0,\pm1$ the cap conditions $\sum_k\eta(a_k)a_k=0$ and $\sum_k\eta(b_k)b_k=0$ force $\eta_A=\eta_B=0$: the vertical component when $j=0$, and the horizontal component $\sum_k\zeta^kR\cos2k\varphi=nR/2$ when $j=\pm1$. The six equilibrium components in the four unknowns $\omega$ then have a non-zero $4\times4$ minor. For $j=0$ it is $-64R^3\sin\varphi\,z_0(c-1)^2(c+1)^2$. For $\zeta=e^{\pm2i\varphi}$ it is $16R^2z_0^2(c-1)^2(c+1)^2(\zeta-1)(\zeta+1)^2\zeta^{-3}$, which is non-zero because $\zeta\neq\pm1$ for $n\ge3$. Hence there is no non-zero stress.
+\end{proof}
+
+The determinant and the minors are recomputed by \path{verification/check_antiprisms.py}. As an independent check, floating-point singular values confirm first-order rigidity for $3\le n\le24$ at unit edges and at other heights. The case $n=3$ is the octahedron, which is rigid by Dehn's theorem.
+
+\section{Remarks}
+
+\emph{Families.} Adding pyramids to the dodecahedron lowers the dimension of the first-order flex space from 5 to 3 (J58, J59), 1 (J60) and 0 (J61). The augmented truncated dodecahedra J68--J71 are first-order rigid, although the truncated dodecahedron itself has four first-order flexes~\cite{AHWZ2026}. The augmented truncated tetrahedron J65 and cube J66 are first-order rigid, and the biaugmented truncated cube J67 is flexible. The rhombicosidodecahedron itself is flexible~\cite{AHWZ2026}. Among the solids J72--J83 derived from it, those with at most one decagonal face (J72--J79) or with two parallel decagons (J80) are flexible, while J81--J83, with two or three pairwise non-parallel decagons, are rigid.
+
+\emph{Questions of~\cite{HSW2026,AHWZ2026}.} Every flexible Johnson solid has parallel edges; only J2, J12, J13 and J84, all first-order rigid, have none. Each flex constructed here is of Minkowski type or dissectable. So the Johnson solids give no counterexample for Questions~4.2 and~4.4 of~\cite{HSW2026}. For Question~8.1 of~\cite{AHWZ2026} (first-order rigidity of polytopes with triangular and quadrilateral faces), the triangle-and-square Johnson solids split as follows. J1, J10, J12, J13, J17, J44, J45, J50, J51 and J84--J90 are first-order rigid. J7, J8, J14--J16, J26--J29, J35--J37 and J49 are flexible, each of them flexes by rotating a summand or, for J49, through its prism, and none of them is first-order flexible without being flexible.
+
+\section{Scope of the verification and prior work}\label{sec:scope}
+
+The supplied directory \path{verification/} contains the exact data and the following standard-library Python checkers:
+\begin{itemize}
+\item a check that each data set has the combinatorial type of its label;
+\item checker 1 (exact validation and modular rank of $\RR(P)$);
+\item checker 2 (independent vertex-only formulation, formal ring arithmetic, interval rank, explicit first-order flexes);
+\item the exact flex dimensions;
+\item the continuous-flex certificates of Lemmas~\ref{lem:mink} and~\ref{lem:prism};
+\item the second-order certificates of Theorem~\ref{thm:second};
+\item exact positive-definite dual matrices for Theorem~\ref{thm:prestress}, and the two published comparison solids.
+\end{itemize}
+The antiprism computation (\path{check_antiprisms.py}) and the independent J58/J59 elimination use \texttt{sympy}.
+A short \texttt{sympy} script confirms that the minimal polynomials are irreducible, which Lemma~\ref{lem:modp} needs; checker 2 does not need it. The integer-relation step that produced the data is not trusted. The deductions (Lemmas~\ref{lem:valid}--\ref{lem:prism}, the stress test, and the Macaulay and resultant arguments) are written proofs and are not formalised in a proof assistant.
+
+On novelty: \cite{AHWZ2026} and the unit tests of its software~\cite{DeformationPaths} treat exactly the Platonic, Archimedean and Catalan solids. We inspected both Zenodo deposits~\cite{AHWZsupp,DeformationPathsZenodo} and every branch of the repository up to 23 September 2026. We found three earlier statements that agree with Theorem~\ref{thm:main}. Kochetkov~\cite{Kochetkov2020} proved that every convex quadrangular pyramid is determined locally by its edge lengths, which includes J1. A square pyramid (J1) is rigid as a polytope~\cite[Fig.~16]{Winter2023}. The ``cube with a pyramid roof'', combinatorially J8, is flexible~\cite[Fig.~6]{HSW2026}. Our searches of arXiv, including listings after 1 September 2026 and the papers citing~\cite{AHWZ2026}, found no classification of Johnson solids in this model. Such a search cannot prove absence. The contribution is the complete classification and the certificates; no new general rigidity criterion is claimed.
+
+\paragraph{Research assistance.}
+Valyu DeepResearch carried out the literature and priority audits and an adversarial review of the argument. The exact computations, certificates and manuscript were produced with automated assistance and checked by independent re-implementation. These reviews are internal and are not external peer review.
+
+\smallskip
+\noindent\textbf{Reproduction.} From this directory run \texttt{sh build.sh}, which replays all checkers and rebuilds the paper.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\clearpage
+{\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{rlcccll}
+\caption{All 92 Johnson solids. $[L:\Q]$: degree of the coordinate field; $d$: dimension of the first-order flex space (exact). Class R1: first-order rigid; F: flexible; R2: first-order flexible but second-order rigid. Mechanism M: rotating a summand (Lemma~\ref{lem:mink}); P: augmented prism (Lemma~\ref{lem:prism}); S: second-order certificate (Theorem~\ref{thm:second}), S* with a prestress certificate.}\label{tab:all}\\
+\toprule
+J & name & $|V|/|E|/|F|$ & $[L:\Q]$ & $d$ & class & mech.\\
+\midrule
+\endfirsthead
+\toprule
+J & name & $|V|/|E|/|F|$ & $[L:\Q]$ & $d$ & class & mech.\\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+\input{verification/results/table.tex}
+\end{longtable}
+}
+\end{document}

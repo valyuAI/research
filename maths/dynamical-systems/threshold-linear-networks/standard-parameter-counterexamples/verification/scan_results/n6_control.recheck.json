@@ -1,0 +1,22 @@
+{
+  "parameters": [
+    21,
+    500,
+    10
+  ],
+  "candidates": 2322,
+  "stable": 2,
+  "tags": {
+    "REJ": 2320,
+    "HIT": 2
+  },
+  "stable_graphs": [
+    "&ED@@QsE",
+    "&ED@@QkE"
+  ],
+  "float_exact_disagreements": 0,
+  "inputs_sha256": {
+    "n6_control.txt": "9d4931a53e0aa2da082a5c7c7817b4770e58e4ee4c18b68ebf6eeefd5705217e"
+  },
+  "ok": true
+}

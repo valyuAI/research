@@ -1,0 +1,61 @@
+{
+  "completed_at_utc": "2026-10-26T14:03:56.210441+00:00",
+  "correctness_confidence": "high",
+  "originality_confidence": "moderate",
+  "compiled_checks": 12,
+  "compiled_replay": "verification/logs/replay-20261026T134435172402Z/results.json",
+  "python_full_replay": "Previously completed; verify.py unchanged in coordinator continuation",
+  "pdf": {
+    "pages": 6,
+    "all_pages_visually_inspected": true,
+    "changed_pages_reinspected": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "latex_layout_or_reference_warnings": []
+  },
+  "controls_observed": {
+    "wrong_answer": "rejected",
+    "wrong_count": "rejected",
+    "count_with_extra_digit": "rejected",
+    "nonzero_process_exit": "rejected",
+    "missing_result": "rejected",
+    "valid_result": "accepted",
+    "python_exit_37": "propagated_without_pdf_phase",
+    "missing_compiled_arguments": "all_three_edited_entry_points_exit_2",
+    "guarded_subsp_replay": "103406616 independent four-sets; no witness"
+  },
+  "scope_limits": [
+    "No Lean formalization",
+    "Optional628MB DRAT proof archived outside package",
+    "Broader priority remains bounded by read sources",
+    "Video not yet produced",
+    "Pre-commit code-simplifier review and integration remain separate"
+  ],
+  "sha256": {
+    "README.md": "012cbf87387cb57966dcb2be9b291e2b6e136de606da6e54f9c9602a1adbb020",
+    "paper.tex": "ed1da6fa06f6f72b623d86d7378b52934f1b2286ff5805fe0c0d70de3a191372",
+    "paper.pdf": "29852e0b22e51fead74cdb1ccc8377ef4038473dfa5dbd206ed212603dc29c3e",
+    "references.bib": "25efc6e6615a7a31a6e4591146ed7343a19531ddd4e6b1d8f73f6cd2c4d573ab",
+    "build.sh": "f587279b84291ba4bd4268510ae5d300158df95fc79d61d32fff39125473b4e9",
+    "video-brief.md": "6d604c09818bbf69705245ef8984fb3d6a3776a6126eb9384c24fc9e9536bbe5",
+    "readiness.md": "8761af5418928fd0fd33036f91b80908ac006cd0c8dfa0cae6659bb2f15b288c",
+    "verification/README.md": "287135c7006e727a110e3434e49f1285421a1ae2414dc689cf05d53bc18a56e5",
+    "verification/run_searches.sh": "d5ac71eae080c9ff61f3a3f1f022ceda5b090c2637ea22b9d945d24d0ba6ef65",
+    "verification/run_searches.py": "80514a36f6224842e8a8794888153aec86aad7cabbbd9544785346898adc7350",
+    "verification/rankfq.c": "af830d7f8226e9d514ebd7ec27565aa9db48e5cf010b2c41cefbc365668438f5",
+    "verification/subsp.c": "1a9ff45d83bd3c452cb98605ae6603fc0b85776f070bce9d53846d9fe1b60b7b",
+    "verification/check_local_rank7.cpp": "cb50d45edf8b26e08957e48f4089119b2671a6236a78bd49f1c1b2cf7172a330",
+    "verification/satenc.py": "20185446a8f591e7a11bcb9c0d592fc9c8e033b8a50945e2ccff1a5d36e78838",
+    "verification/verify.py": "d4520aec66a386e2808ba4fd0155094daed3c088bdc48249a29a403d84c9ad81",
+    "verification/results.json": "24742f86660147fbe60f3a4540bb1dfb5e4422f0080a0db34fc4db6431144a9e",
+    "verification/certificates/upper_bounds.json": "c119981e722c008fd74a0df15eb27dbfd378598a94a24ed67fe57d05a4cb613f",
+    "verification/certificates/q3_rank8.json": "6b0def15c6451411ee78033457a7dd8dfcbf8007f49b092c4c31e2c8e47ea45e",
+    "verification/certificates/sat_A2_rank8.manifest.json": "bd3673f564cc178e15812fd938ff5223ffd3dd49d608a806fd5a19a7b0e453b1",
+    "verification/logs/subsp_guarded.txt": "5ec0d91347145ef4ba2691dad670859e58662a4d63b14387d909378762f0bfe3",
+    "verification/logs/drat_A2_rank8.txt": "a39c203136b0cce7203b489cc838d6c87d2ea168cde031ed011883615720b78f",
+    "verification/logs/replay-20261026T134435172402Z/results.json": "4dab941845a04ca68e7758df2117d9785d6448e0f365be63041a60200d08effe"
+  }
+}

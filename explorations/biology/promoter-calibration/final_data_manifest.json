@@ -1,0 +1,53 @@
+[
+  {
+    "file": "GSE334082_203Ex78P_upstream_integrated_BC_counts.txt.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE334nnn/GSE334082/suppl/GSE334082_203Ex78P_upstream_integrated_BC_counts.txt.gz",
+    "bytes": 12685861,
+    "sha256": "8801fcfe858d12d559193f6840ba3c7184f293cb31a87182ec8205700e73515d",
+    "retrieval": "binary scientific-data download; endpoint discovered and inspected through Valyu CLI"
+  },
+  {
+    "file": "GSE334082_RAW.tar",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE334nnn/GSE334082/suppl/GSE334082_RAW.tar",
+    "bytes": 583680,
+    "sha256": "4d9c91ca2223e7114f07edc77c99744a4c198b62a128708e7348a29d33f63f51",
+    "retrieval": "binary scientific-data download; endpoint discovered and inspected through Valyu CLI"
+  },
+  {
+    "file": "GSE334082_21Ex500P_upstream_integrated_BC_counts.txt.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE334nnn/GSE334082/suppl/GSE334082_21Ex500P_upstream_integrated_BC_counts.txt.gz",
+    "sha256": "9e311cb5560905beca4478973ed84dfdaf0227a33f633896f891b8d14ef65dff",
+    "bytes": 30141417,
+    "retrieval": "binary scientific-data download; discovered through Valyu CLI"
+  },
+  {
+    "file": "78P_annotations.txt",
+    "bytes": 31808,
+    "sha256": "56fea65b72d557afc2fcd5e1d641f3691941f382d4d82ebf2fbf6ac94a09aa47",
+    "source": "https://github.com/yj-tan/ExP-MPRA/tree/main/annotations"
+  },
+  {
+    "file": "203E_annotations.txt",
+    "bytes": 77528,
+    "sha256": "1565327c0bd4c5550c42c6718d96b9edd3720ad70beba928f5ed232f217e5dcf",
+    "source": "https://github.com/yj-tan/ExP-MPRA/tree/main/annotations"
+  },
+  {
+    "file": "500P_annotations.txt",
+    "bytes": 196550,
+    "sha256": "3e24ea1856ec0e957e3096ed799bbe99c769dc27b920a60c401c99836037b117",
+    "source": "https://github.com/yj-tan/ExP-MPRA/tree/main/annotations"
+  },
+  {
+    "file": "21E_annotations.txt",
+    "bytes": 10147,
+    "sha256": "6f86ac77005a8bb5a3bd5539e02a8fe45a88d35d9212938aec0b1d02a0b948be",
+    "source": "https://github.com/yj-tan/ExP-MPRA/tree/main/annotations"
+  },
+  {
+    "file": "GSM9780095_21Ex500P_TSS_mapping_counts.txt.gz",
+    "bytes": 14478,
+    "sha256": "127c6e764523683e238364a02b1de187e577c34da55d6eba136fa41e871c3c67",
+    "source": "GSE334082_RAW.tar"
+  }
+]

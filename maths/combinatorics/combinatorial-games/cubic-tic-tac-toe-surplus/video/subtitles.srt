@@ -1,0 +1,495 @@
+1
+00:00:00,000 --> 00:00:05,046
+Can you stop someone completing a line, without trying to complete one yourself?
+
+2
+00:00:05,046 --> 00:00:08,642
+That is the Maker-Breaker version of noughts and crosses.
+
+3
+00:00:08,642 --> 00:00:11,228
+Maker moves first and wants a whole line.
+
+4
+00:00:11,228 --> 00:00:14,256
+Breaker only needs to spoil every possible line.
+
+5
+00:00:14,633 --> 00:00:19,717
+Here is a five by five board. Each repeated number marks a pair of cells.
+
+6
+00:00:19,717 --> 00:00:24,940
+Every row, every column, and both long diagonals contain one complete pair.
+
+7
+00:00:24,940 --> 00:00:30,233
+The centre is unpaired. Watch what happens when Maker takes a numbered cell.
+
+8
+00:00:30,600 --> 00:00:36,296
+Breaker takes its partner. Whatever Maker tries next, answer in the paired cell.
+
+9
+00:00:36,296 --> 00:00:39,215
+Maker can never own both cells of a pair.
+
+10
+00:00:39,215 --> 00:00:45,267
+Since every winning line contains a pair, every line will contain a cell Maker cannot
+
+11
+00:00:45,267 --> 00:00:45,552
+own.
+
+12
+00:00:45,933 --> 00:00:48,649
+Notice why the pairs must not overlap.
+
+13
+00:00:48,649 --> 00:00:53,007
+One cell cannot serve as the answer to two different threats.
+
+14
+00:00:53,007 --> 00:00:56,365
+We want each line to receive two private cells.
+
+15
+00:00:56,365 --> 00:01:01,581
+This turns a game strategy into a problem about assigning distinct cells.
+
+16
+00:01:01,967 --> 00:01:05,010
+Now stack seven square boards into a cube.
+
+17
+00:01:05,010 --> 00:01:11,388
+A winning line can run along an axis, across a flat slice diagonally, or from one corner
+
+18
+00:01:11,388 --> 00:01:16,823
+to its opposite corner. On the seven-cube, every such line has seven cells.
+
+19
+00:01:17,200 --> 00:01:22,821
+There are one hundred and forty seven axis lines, forty two plane diagonals, and four
+
+20
+00:01:22,821 --> 00:01:26,987
+space diagonals. That makes one hundred and ninety three lines.
+
+21
+00:01:26,987 --> 00:01:32,608
+Giving every line two private cells would require three hundred and eighty six cells.
+
+22
+00:01:33,000 --> 00:01:37,230
+But the cube has only three hundred and forty three cells.
+
+23
+00:01:37,230 --> 00:01:40,585
+So a pairing cannot work from the empty board.
+
+24
+00:01:40,585 --> 00:01:45,180
+Breaker must first claim cells that kill several lines at once.
+
+25
+00:01:45,180 --> 00:01:49,848
+A killed line already contains a Breaker mark and needs no pair.
+
+26
+00:01:50,233 --> 00:01:54,686
+To find a pairing later, draw two slots for every surviving line.
+
+27
+00:01:54,686 --> 00:01:57,974
+Connect each slot to the free cells on its line.
+
+28
+00:01:57,974 --> 00:02:01,605
+Our task is to assign a different cell to every slot.
+
+29
+00:02:01,605 --> 00:02:04,345
+Such an assignment is called a matching.
+
+30
+00:02:04,733 --> 00:02:09,623
+A local shortage can ruin everything. These three slots can reach only two cells.
+
+31
+00:02:09,623 --> 00:02:14,151
+Even if many other cells exist elsewhere, one of these slots must lose out.
+
+32
+00:02:14,151 --> 00:02:18,437
+The shortage belongs to this group, not necessarily to the whole board.
+
+33
+00:02:18,833 --> 00:02:22,647
+Hall's theorem says that this is the only kind of obstruction.
+
+34
+00:02:22,647 --> 00:02:27,813
+A matching exists exactly when every group of slots can reach at least as many cells
+
+35
+00:02:27,813 --> 00:02:33,041
+as the group contains. Every group matters, including ones that overlap other groups.
+
+36
+00:02:33,433 --> 00:02:38,750
+Now ask for spare capacity. Suppose a group of four slots can reach seven cells.
+
+37
+00:02:38,750 --> 00:02:44,599
+Its surplus is three. But the surplus of the entire graph is the smallest spare capacity
+
+38
+00:02:44,599 --> 00:02:48,985
+over every nonempty group of slots, not just this visible example.
+
+39
+00:02:49,367 --> 00:02:53,908
+If every group has at least three spare cells, delete any three cells.
+
+40
+00:02:53,908 --> 00:02:59,227
+Each group loses at most three of its neighbours, so every group still has enough.
+
+41
+00:02:59,227 --> 00:03:04,223
+Hall's condition survives. The new matching may differ from the old matching.
+
+42
+00:03:04,600 --> 00:03:09,516
+That is the key move. Unknown Maker choices simply delete available cells.
+
+43
+00:03:09,516 --> 00:03:15,230
+If the graph has enough surplus, we do not need to enumerate where those choices went.
+
+44
+00:03:15,230 --> 00:03:18,352
+A single robust certificate covers all of them.
+
+45
+00:03:18,733 --> 00:03:22,301
+How do we measure the minimum without listing every group?
+
+46
+00:03:22,301 --> 00:03:26,238
+Temporarily add copies of one slot and ask for a matching again.
+
+47
+00:03:26,238 --> 00:03:31,713
+If every slot can tolerate three extra copies, every group must have at least three spare
+
+48
+00:03:31,713 --> 00:03:32,389
+neighbours.
+
+49
+00:03:32,767 --> 00:03:35,619
+Why? Pick any group, then pick a slot inside it.
+
+50
+00:03:35,619 --> 00:03:39,778
+That group plus its three copies now needs three extra distinct cells.
+
+51
+00:03:39,778 --> 00:03:44,828
+Passing the test supplies them. Because a line's two slots have identical neighbours,
+
+52
+00:03:44,828 --> 00:03:47,383
+only one test per surviving line is needed.
+
+53
+00:03:47,767 --> 00:03:48,539
+Consider Maker opening at the centre of the seven-cube.
+
+54
+00:03:48,539 --> 00:03:49,747
+Breaker first takes five, five, five. Over the next three rounds, Breaker takes a free
+
+55
+00:03:49,747 --> 00:03:50,983
+cell on each of the other space diagonals, favouring cells that kill the most new lines.
+
+56
+00:03:55,167 --> 00:03:58,702
+Four Breaker cells can therefore block many lines.
+
+57
+00:03:58,702 --> 00:04:04,712
+In the successful opening they meet twenty seven lines, leaving one hundred and sixty
+
+58
+00:04:04,712 --> 00:04:10,651
+six alive. The certificate temporarily remembers only Maker's centre cell and leaves
+
+59
+00:04:10,651 --> 00:04:13,479
+the other three Maker moves unspecified.
+
+60
+00:04:13,867 --> 00:04:19,167
+Every checked central configuration meeting twenty six or twenty seven lines has surplus
+
+61
+00:04:19,167 --> 00:04:24,226
+at least four. Removing the three unknown Maker cells therefore preserves a pairing.
+
+62
+00:04:24,226 --> 00:04:29,587
+At that point Breaker switches to the partner-response strategy for the rest of the game.
+
+63
+00:04:29,967 --> 00:04:33,827
+The opening rule must also remain legal against every reply.
+
+64
+00:04:33,827 --> 00:04:39,617
+A separate tree checks the diagonal-relevant choices: ten thousand, six hundred and twenty
+
+65
+00:04:39,617 --> 00:04:43,027
+seven leaves, leading to fourteen final Breaker sets.
+
+66
+00:04:43,027 --> 00:04:45,279
+Every one meets twenty seven lines.
+
+67
+00:04:45,667 --> 00:04:50,963
+The full central check includes one thousand, two hundred and ninety six possible sets.
+
+68
+00:04:50,963 --> 00:04:56,199
+Five hundred and seventy six meet twenty seven lines, and two hundred and eighty eight
+
+69
+00:04:56,199 --> 00:05:01,435
+meet twenty six. Both groups have surplus at least four, not necessarily exactly four.
+
+70
+00:05:01,833 --> 00:05:04,762
+The remaining groups show why placement matters.
+
+71
+00:05:04,762 --> 00:05:09,581
+Three hundred and eighty four sets meet twenty five lines and have surplus two.
+
+72
+00:05:09,581 --> 00:05:13,181
+Forty eight meet only twenty two lines and have no pairing.
+
+73
+00:05:13,181 --> 00:05:16,353
+The opening rule avoids these weaker configurations.
+
+74
+00:05:16,733 --> 00:05:21,233
+If Maker starts elsewhere, Breaker takes the centre instead.
+
+75
+00:05:21,233 --> 00:05:27,533
+Next choose a free cell on a space diagonal, then a cell on another diagonal sharing
+
+76
+00:05:27,533 --> 00:05:34,058
+no line with it. Each first choice has twelve eligible partners, so Maker cannot occupy
+
+77
+00:05:34,058 --> 00:05:34,733
+them all.
+
+78
+00:05:35,133 --> 00:05:38,818
+These three Breaker cells meet twenty five lines.
+
+79
+00:05:38,818 --> 00:05:43,781
+The checker remembers Maker's first move and ignores the next two.
+
+80
+00:05:43,781 --> 00:05:50,473
+Across all forty eight thousand, nine hundred and sixty legal configurations, the surplus
+
+81
+00:05:50,473 --> 00:05:56,037
+is exactly three. Two unknown moves fit comfortably inside that allowance.
+
+82
+00:05:56,433 --> 00:06:02,019
+An independent reconstruction checks those configurations in two equal shards, each with
+
+83
+00:06:02,019 --> 00:06:05,320
+twenty four thousand, four hundred and eighty cases.
+
+84
+00:06:05,320 --> 00:06:10,588
+A symmetry-reduced run agrees on one thousand, one hundred and fifty eight classes.
+
+85
+00:06:10,588 --> 00:06:14,841
+These are positions checked, each requiring several matching tests.
+
+86
+00:06:15,233 --> 00:06:20,859
+The seven-cube result was already proved by Cain, Raymond, and Kallersjo in twenty twenty
+
+87
+00:06:20,859 --> 00:06:26,169
+five. This work supplies a shorter certificate and repairs a gap in the written case
+
+88
+00:06:26,169 --> 00:06:30,593
+analysis. It does not overturn the known conclusion that Breaker wins.
+
+89
+00:06:30,967 --> 00:06:37,383
+The old non-central argument assumed both of Maker's first two cells could be moved into
+
+90
+00:06:37,383 --> 00:06:42,924
+the same half-cube by symmetry. But take one, seven, one, and six, two, six.
+
+91
+00:06:42,924 --> 00:06:48,319
+Relative to the centre, their signs are opposite in all three coordinates.
+
+92
+00:06:48,700 --> 00:06:52,276
+Permuting axes or reversing them preserves that opposition.
+
+93
+00:06:52,276 --> 00:06:56,457
+Along whichever axis becomes horizontal, one cell stays on each side.
+
+94
+00:06:56,457 --> 00:06:59,124
+They cannot both enter the stated half-cube.
+
+95
+00:06:59,124 --> 00:07:04,215
+There are two thousand, nine hundred and sixteen unordered pairs like this, or twice
+
+96
+00:07:04,215 --> 00:07:05,548
+as many ordered pairs.
+
+97
+00:07:05,933 --> 00:07:11,387
+For the concrete published move rule, Maker can occupy both proposed third replies.
+
+98
+00:07:11,387 --> 00:07:14,279
+The new flexible opening covers these cases.
+
+99
+00:07:14,279 --> 00:07:19,996
+The authors' non-central code was not available in the inspected public package, so the
+
+100
+00:07:19,996 --> 00:07:23,741
+criticism concerns the written analysis, not unseen code.
+
+101
+00:07:24,133 --> 00:07:26,660
+Why not solve the six-cube in the same way?
+
+102
+00:07:26,660 --> 00:07:31,067
+It has two hundred and sixteen cells and one hundred and forty eight lines.
+
+103
+00:07:31,067 --> 00:07:35,298
+After seven complete rounds, only two hundred and two cells remain free.
+
+104
+00:07:35,298 --> 00:07:38,941
+At most one hundred and one lines could receive private pairs.
+
+105
+00:07:39,333 --> 00:07:43,427
+So Breaker would need to have killed at least forty seven lines.
+
+106
+00:07:43,427 --> 00:07:49,056
+But seven Breaker cells can meet at most forty six: at most six non-space-diagonal lines
+
+107
+00:07:49,056 --> 00:07:52,382
+per cell, plus only four space diagonals altogether.
+
+108
+00:07:52,382 --> 00:07:53,853
+Forty six is one short.
+
+109
+00:07:54,233 --> 00:07:57,406
+This excludes a pairing before Breaker's eighth move.
+
+110
+00:07:57,406 --> 00:08:00,039
+It does not exclude every possible strategy.
+
+111
+00:08:00,039 --> 00:08:05,067
+There is another limit: one surviving six-cell line has two slots, so its surplus is
+
+112
+00:08:05,067 --> 00:08:08,897
+at most four, and smaller if Maker already occupies cells on it.
+
+113
+00:08:09,267 --> 00:08:14,892
+The six by six by six game remains open, as does five by five by five in the accepted
+
+114
+00:08:14,892 --> 00:08:20,649
+research scope. The seven-cube proof succeeds because enough lines can be killed early,
+
+115
+00:08:20,649 --> 00:08:25,083
+and the remaining matching tolerates all the unknown opening moves.
+
+116
+00:08:25,467 --> 00:08:30,806
+Lean checks the abstract Hall replication, surplus, deletion-matching argument, and counting
+
+117
+00:08:30,806 --> 00:08:35,913
+obstruction. It does not check the actual board enumeration or formalize the whole game.
+
+118
+00:08:35,913 --> 00:08:40,904
+The finite board certificates come from exact programs; the game strategy is justified
+
+119
+00:08:40,904 --> 00:08:42,123
+in the written proof.
+
+120
+00:08:42,500 --> 00:08:47,969
+Remember three ideas: pair cells to block lines, test every group for spare capacity,
+
+121
+00:08:47,969 --> 00:08:51,315
+and use that spare capacity to absorb unknown moves.
+
+122
+00:08:51,315 --> 00:08:55,883
+Correctness confidence is high for this checked seven-cube certificate.
+
+123
+00:08:55,883 --> 00:09:01,481
+Originality of the surplus application remains moderately confident, within the sources
+
+124
+00:09:01,481 --> 00:09:02,060
+reviewed.

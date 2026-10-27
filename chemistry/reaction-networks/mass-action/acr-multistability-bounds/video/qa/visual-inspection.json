@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "inspectedUtc": "2026-10-26T16:10:01.279870+00:00",
+  "videoSha256": "1b739682343570c92a4d6b807d5ce29af884c7718757c2802759dfa0394229ac",
+  "inspected_files": [
+    "qa/beats.png",
+    "qa/boundaries.png",
+    "qa/a09.png",
+    "qa/a19.png",
+    "qa/a28.png",
+    "qa/a30.png",
+    "qa/a31.png",
+    "poster.png",
+    "contact.png"
+  ],
+  "notes": [
+    "All 37 final beat images and all 16 scene-boundary images inspected. Early boundary samples intentionally capture the beginning of Write or FadeIn animations.",
+    "Full-resolution network frames show separated arrowheads, rate labels and complex names after the spacing repair; both reactant and product molecule limits remain visible.",
+    "The exact equilibria, restricted nullcline, dimension-two hypotheses, decoupled species construction and formal-proof scope remain legible. The representative sign case is labelled as only one case.",
+    "No clipped text or unintended overlays observed in inspected final frames. Colour distinctions also have labels or numerical values.",
+    "No listening or real-time playback performed.",
+    "Final poster and selected contact sheet also inspected after package closure."
+  ]
+}

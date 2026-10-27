@@ -1,0 +1,21 @@
+import MinorBatch20
+
+set_option Elab.async false
+set_option maxHeartbeats 8000000
+set_option maxRecDepth 4096
+
+noncomputable section
+namespace ValyuResearch.ElasticityMinorCertificates
+
+/-- Exact identity in the original minors, with denominators cleared. -/
+theorem certificate_3_213 (w : Fin 8 → ℂ) :
+    192 * certificate_3_213_target w =
+    (cadd (cadd (cadd (cadd (cadd (certificate_3_213_chunk_0 w) (certificate_3_213_chunk_1 w)) (cadd (certificate_3_213_chunk_2 w) (certificate_3_213_chunk_3 w))) (cadd (cadd (certificate_3_213_chunk_4 w) (certificate_3_213_chunk_5 w)) (cadd (certificate_3_213_chunk_6 w) (certificate_3_213_chunk_7 w)))) (cadd (cadd (cadd (certificate_3_213_chunk_8 w) (certificate_3_213_chunk_9 w)) (cadd (certificate_3_213_chunk_10 w) (certificate_3_213_chunk_11 w))) (cadd (cadd (certificate_3_213_chunk_12 w) (certificate_3_213_chunk_13 w)) (cadd (certificate_3_213_chunk_14 w) (certificate_3_213_chunk_15 w))))) (cadd (cadd (cadd (cadd (certificate_3_213_chunk_16 w) (certificate_3_213_chunk_17 w)) (cadd (certificate_3_213_chunk_18 w) (certificate_3_213_chunk_19 w))) (cadd (cadd (certificate_3_213_chunk_20 w) (certificate_3_213_chunk_21 w)) (cadd (certificate_3_213_chunk_22 w) (certificate_3_213_chunk_23 w)))) (cadd (cadd (cadd (certificate_3_213_chunk_24 w) (certificate_3_213_chunk_25 w)) (cadd (certificate_3_213_chunk_26 w) (certificate_3_213_chunk_27 w))) (cadd (cadd (certificate_3_213_chunk_28 w) (certificate_3_213_chunk_29 w)) (cadd (certificate_3_213_chunk_30 w) (cadd (certificate_3_213_chunk_31 w) (certificate_3_213_chunk_32 w))))))) := by
+  simp only [certificate_3_213_chunk_0_identity, certificate_3_213_chunk_1_identity, certificate_3_213_chunk_2_identity, certificate_3_213_chunk_3_identity, certificate_3_213_chunk_4_identity, certificate_3_213_chunk_5_identity, certificate_3_213_chunk_6_identity, certificate_3_213_chunk_7_identity, certificate_3_213_chunk_8_identity, certificate_3_213_chunk_9_identity, certificate_3_213_chunk_10_identity, certificate_3_213_chunk_11_identity, certificate_3_213_chunk_12_identity, certificate_3_213_chunk_13_identity, certificate_3_213_chunk_14_identity, certificate_3_213_chunk_15_identity, certificate_3_213_chunk_16_identity, certificate_3_213_chunk_17_identity, certificate_3_213_chunk_18_identity, certificate_3_213_chunk_19_identity, certificate_3_213_chunk_20_identity, certificate_3_213_chunk_21_identity, certificate_3_213_chunk_22_identity, certificate_3_213_chunk_23_identity, certificate_3_213_chunk_24_identity, certificate_3_213_chunk_25_identity, certificate_3_213_chunk_26_identity, certificate_3_213_chunk_27_identity, certificate_3_213_chunk_28_identity, certificate_3_213_chunk_29_identity, certificate_3_213_chunk_30_identity, certificate_3_213_chunk_31_identity, certificate_3_213_chunk_32_identity]
+  unfold certificate_3_213_target certificate_3_213_chunk_0_polynomial certificate_3_213_chunk_1_polynomial certificate_3_213_chunk_2_polynomial certificate_3_213_chunk_3_polynomial certificate_3_213_chunk_4_polynomial certificate_3_213_chunk_5_polynomial certificate_3_213_chunk_6_polynomial certificate_3_213_chunk_7_polynomial certificate_3_213_chunk_8_polynomial certificate_3_213_chunk_9_polynomial certificate_3_213_chunk_10_polynomial certificate_3_213_chunk_11_polynomial certificate_3_213_chunk_12_polynomial certificate_3_213_chunk_13_polynomial certificate_3_213_chunk_14_polynomial certificate_3_213_chunk_15_polynomial certificate_3_213_chunk_16_polynomial certificate_3_213_chunk_17_polynomial certificate_3_213_chunk_18_polynomial certificate_3_213_chunk_19_polynomial certificate_3_213_chunk_20_polynomial certificate_3_213_chunk_21_polynomial certificate_3_213_chunk_22_polynomial certificate_3_213_chunk_23_polynomial certificate_3_213_chunk_24_polynomial certificate_3_213_chunk_25_polynomial certificate_3_213_chunk_26_polynomial certificate_3_213_chunk_27_polynomial certificate_3_213_chunk_28_polynomial certificate_3_213_chunk_29_polynomial certificate_3_213_chunk_30_polynomial certificate_3_213_chunk_31_polynomial certificate_3_213_chunk_32_polynomial
+  try simp only [cadd, cmul, cpow]
+  ring
+
+#print axioms certificate_3_213
+
+end ValyuResearch.ElasticityMinorCertificates

@@ -1,0 +1,16 @@
+injective=1 synchronizing=1
+radius r=0 (window 1, base length 1, distinct factors 2): ambiguous
+radius r=1 (window 3, base length 2, distinct factors 8): ambiguous
+radius r=2 (window 5, base length 2, distinct factors 21): ambiguous
+radius r=3 (window 7, base length 3, distinct factors 27): DECODES
+M=56, checking all 7/4+-free ternary f of length 1..K=24 for CT-squares with half-length in [4,56]
+checked 21801 words: no CT-square found
+THEOREM VERIFIED: tau(w) is 4+-CT-square-free for every infinite 7/4+-free ternary word w (q=5, r=3, M=56; source lengths 1..K also checked)
+injective=1 synchronizing=1
+radius r=0 (window 1, base length 1, distinct factors 3): ambiguous
+radius r=1 (window 3, base length 2, distinct factors 13): ambiguous
+radius r=2 (window 5, base length 2, distinct factors 22): ambiguous
+radius r=3 (window 7, base length 2, distinct factors 28): DECODES
+M=64, checking all 7/4+-free ternary f of length 1..K=23 for CT-squares with half-length in [3,64]
+checked 17205 words: no CT-square found
+THEOREM VERIFIED: tau(w) is 3+-CT-square-free for every infinite 7/4+-free ternary word w (q=6, r=3, M=64; source lengths 1..K also checked)

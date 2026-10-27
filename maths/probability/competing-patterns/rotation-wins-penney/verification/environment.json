@@ -1,0 +1,11 @@
+{
+  "python": "Python 3.13.7",
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)",
+  "target": "arm64-apple-darwin25.1.0",
+  "pdflatex": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026)",
+  "bibtex": "BibTeX 0.99e (TeX Live 2026)",
+  "thirdPartyPythonDependencies": [],
+  "enumerationWorkers": 1,
+  "maximumSimultaneousWorkers": 2,
+  "nicePriority": 10
+}

@@ -1,0 +1,57 @@
+{
+  "phase": "after",
+  "sourceHashes": {
+    "acr": "60f2440261db2d09671f05261d0d5f8e21c8b0e65de00c61f28cac5abd4c3bd2",
+    "quartet": "a86ae610ec34a584178fc482374555e23e262052a85ad4aeded7e1c2f71b9ad0"
+  },
+  "checks": [
+    {
+      "label": "acr-normal-negative",
+      "exit": 1,
+      "log": "after-acr-normal-negative.log",
+      "sha256": "a5431059c06f7abea5852d093c28f287ff5195949193aaad06bc92118a896a43"
+    },
+    {
+      "label": "acr-optimized-negative",
+      "exit": 1,
+      "log": "after-acr-optimized-negative.log",
+      "sha256": "a7a633dc205552cea3aaf26594d47e9affb8baba0d6f7139f0ad89040882621c"
+    },
+    {
+      "label": "quartet-normal-negative",
+      "exit": 1,
+      "log": "after-quartet-normal-negative.log",
+      "sha256": "24f99e43e4670a0c70d59b56cb531140f0802e42a373459ee8da0b24ed61d2ae"
+    },
+    {
+      "label": "quartet-optimized-negative",
+      "exit": 1,
+      "log": "after-quartet-optimized-negative.log",
+      "sha256": "a7a633dc205552cea3aaf26594d47e9affb8baba0d6f7139f0ad89040882621c"
+    },
+    {
+      "label": "acr-env-optimization",
+      "exit": 1,
+      "log": "after-acr-env-optimization.log",
+      "sha256": "a7a633dc205552cea3aaf26594d47e9affb8baba0d6f7139f0ad89040882621c"
+    },
+    {
+      "label": "quartet-env-optimization",
+      "exit": 1,
+      "log": "after-quartet-env-optimization.log",
+      "sha256": "a7a633dc205552cea3aaf26594d47e9affb8baba0d6f7139f0ad89040882621c"
+    },
+    {
+      "label": "acr-full-independent",
+      "exit": 0,
+      "log": "after-acr-full-independent.log",
+      "sha256": "bf67c132f6f70d130a29fbcb66d8a2e04b130333fc286f429b5f419d0140eb2a"
+    },
+    {
+      "label": "quartet-18-families",
+      "exit": 0,
+      "log": "after-quartet-18-families.log",
+      "sha256": "7f02219d34695686ff7a14772f627c3c56600e604c14618b439eca60927c8e7e"
+    }
+  ]
+}

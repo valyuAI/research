@@ -1,0 +1,16 @@
+[11:49:36] build hex_di_k5 hex [[0,0],[1,0]] k=5 
+hex cells=[[0, 0], [1, 0]] k=5 imb=1 radius=14.0: placements 8652 vars 148738 clauses 842676 (13.6s)
+wrote hex_di_k5.cnf
+871080aeede6b5ac1580bc5f88bb01c440bb8bfb699bfb78cc0157a6add1f5e5  hex_di_k5.cnf
+[11:49:51] cadical start
+s UNSATISFIABLE
+[11:50:32] cadical rc=20 (41s) proof bytes 15821091
+2728c4b7c81990f0b5b1fa616d8a41d42fa0da0896e801aafebba3adaa41087b  hex_di_k5.drat
+c 77107 of 842676 clauses in core                            
+c 47128 of 241498 lemmas in core using 13231904 resolution steps
+c 0 RAT lemmas in core; 6152 redundant literals in core lemmas
+s VERIFIED
+c verification time: 80.154 seconds
+[11:51:53] drat-trim done (80s)
+DRAT_VERIFIED hex_di_k5
+[11:52:04] END rc=20

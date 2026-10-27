@@ -1,0 +1,7 @@
+Recomputing exact forms: data_extra/dodecahedron.json
+Regular Dodecahedron checking degree-six Macaulay matrix
+Regular Dodecahedron : rank 210/210, exact dual certificate PASS
+Recomputing exact forms: data_extra/truncated_icosahedron.json
+Truncated Icosahedron checking degree-six Macaulay matrix
+Truncated Icosahedron : rank 210/210, exact dual certificate PASS
+CONSISTENT WITH AHWZ; BOTH DUAL CERTIFICATES REPLAYED

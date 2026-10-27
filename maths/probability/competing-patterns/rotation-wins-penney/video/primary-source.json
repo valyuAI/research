@@ -1,0 +1,19 @@
+{
+  "retrievedOn": "2026-10-26",
+  "purpose": "Background source citation metadata; scientific claim scope is recorded in sources.md.",
+  "records": [
+    {
+      "title": "Penney's game for permutations",
+      "url": "https://arxiv.org/html/2404.06585v4",
+      "authors": [
+        "Sergi Elizalde",
+        "Yixin Lin"
+      ],
+      "doi": "https://doi.org/10.48550/arxiv.2404.06585",
+      "publication_date": "2024-04-09"
+    }
+  ],
+  "rawResponseSha256": "3eebd4897b226a245bbaf0270e246eee7bb8de0def77060438ebb86164befbb6",
+  "rawResponseRetainedOutsideRepository": true,
+  "curation": "Full third-party text, temporary image URLs and retrieval-service bookkeeping are omitted from the research package."
+}

@@ -1,0 +1,18 @@
+{
+  "parameters": [
+    3,
+    3,
+    1
+  ],
+  "candidates": 15,
+  "stable": 0,
+  "tags": {
+    "REJ": 15
+  },
+  "stable_graphs": [],
+  "float_exact_disagreements": 0,
+  "inputs_sha256": {
+    "n5_std.txt": "b59db6e055be165447d2285e9067867602b6b7dc64cebe6e4567398a9496d71a"
+  },
+  "ok": true
+}

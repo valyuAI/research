@@ -1,0 +1,189 @@
+{
+  "voice": "cedar",
+  "clips": [
+    {
+      "id": "s01_hook",
+      "text": "Mix a few chemicals and let them react. Often they settle into one final state. But some reaction networks can settle into different states, depending on how they start. A bit like a switch."
+    },
+    {
+      "id": "s01_question",
+      "text": "So here's the question. With only a few chemicals and reactions, how many resting states can a network have? And how complicated must the reactions be to reach that maximum?"
+    },
+    {
+      "id": "s02_rate",
+      "text": "Let's start from zero. Molecules drift around, and when a blue X meets a gold Y, they can react. How often? Three X's and two Y's make six possible meetings. Double the X's, and there are twelve: twice as fast."
+    },
+    {
+      "id": "s02_massaction",
+      "text": "So write X and Y for how concentrated each chemical is. Then the rate is a fixed number, called the rate constant, times X times Y. That's the law of mass action."
+    },
+    {
+      "id": "s02_three",
+      "text": "Some reactions need three molecules at once, say two X's and a Y. Then the rate is a number times X squared Y. That's a three-body collision. With at most two molecules going in, call it a pair collision."
+    },
+    {
+      "id": "s03_tank",
+      "text": "Now, what does settling mean? Picture a water tank. A tap fills it steadily, and a hole drains it, faster when the tank is fuller."
+    },
+    {
+      "id": "s03_balance",
+      "text": "The level rises until water leaves as fast as it arrives. Then it stops changing, even though water still flows. That's an equilibrium, or a resting state: the flows balance."
+    },
+    {
+      "id": "s03_cross",
+      "text": "Plot both flows against the level. The tap is flat, and the drain rises. The resting level is where they cross. So counting resting states means counting crossings, and wiggly curves could cross more than once."
+    },
+    {
+      "id": "s04_a",
+      "text": "Now our running example, from the paper. Two chemicals, two reactions. In the first, two X's and a Y collide, and a single X comes out. So one X and one Y disappear."
+    },
+    {
+      "id": "s04_b",
+      "text": "In the second, two Y's make an X and three Y's, so one X and one Y appear. By mass action, the rates are one ninth of X squared Y, and Y squared."
+    },
+    {
+      "id": "s04_conserve",
+      "text": "Both reactions change X and Y by the same amount. Start with five X's and three Y's. The first reaction gives four and two. The second gives five and three. X minus Y never changes. That's a conservation law."
+    },
+    {
+      "id": "s05_plane",
+      "text": "Let's draw it. A mixture is a point: X across, Y up. Since X minus Y is stuck at two, the mixture can only slide along this line. We'll call it the slice."
+    },
+    {
+      "id": "s05_balance",
+      "text": "Where can it rest? Where both reactions run equally fast: one ninth of X squared Y equals Y squared. Divide by Y, and Y equals X squared over nine: a parabola. Call it the balance curve."
+    },
+    {
+      "id": "s05_cross",
+      "text": "A resting state lies on both. So X squared over nine equals X minus two, which tidies up and factorises as X minus three, times X minus six. Two resting states: three and one, and six and four."
+    },
+    {
+      "id": "s05_clean",
+      "text": "Both are clean crossings, not mere touches. That's called nondegenerate. Nudge the slice, and a touch vanishes. A clean crossing just slides a little, and survives."
+    },
+    {
+      "id": "s06_bound",
+      "text": "Now the big picture. Murad Banaji and Elisenda Feliu proved that any network with n chemicals, n reactions and one conservation law has at most n clean resting states on a slice. Ours reaches the maximum: two."
+    },
+    {
+      "id": "s06_question",
+      "text": "Then they asked: is that maximum reached for every n? And how many molecules must collide in one reaction to get there?"
+    },
+    {
+      "id": "s06_answer",
+      "text": "The new result answers both. For every n from two up, a network reaches exactly n, with collisions of at most three molecules. And three is the least possible. Two chemicals was already known. The rest is new."
+    },
+    {
+      "id": "s07_pause",
+      "text": "Here's a puzzle. Why does our example need a three-body collision? Think about the reaction that destroys an X and a Y. Pause, and have a think."
+    },
+    {
+      "id": "s07_input",
+      "text": "A reaction can only destroy molecules that went into it. So that collision needs an X and a Y. With at most two molecules, it must be exactly one of each."
+    },
+    {
+      "id": "s07_curves",
+      "text": "Balance it against any other pair collision, and the balance curve is a line from the corner, a falling curve, or a flat or upright line. Each one meets our rising slice at most once."
+    },
+    {
+      "id": "s07_bend",
+      "text": "With three molecules, the collision can be two X's and a Y. That X squared bends the balance curve into a parabola, and a parabola can cross a line twice."
+    },
+    {
+      "id": "s07_general",
+      "text": "If the slice sloped down instead, the balance curve never would, so again, one crossing. For bigger networks, Banaji and Feliu proved pair collisions give at most two, which falls short from three chemicals up."
+    },
+    {
+      "id": "s08_net",
+      "text": "Now three chemicals: X, Y and Z. Two X's and a Y make an X. Two Y's and a Z make a Y and two Z's. And two Z's make an X, two Y's and a Z."
+    },
+    {
+      "id": "s08_equal",
+      "text": "When can this rest? X is used by the first reaction and made by the third, so those two must match. Z is made by the second and used by the third, so those match too. All three rates are equal."
+    },
+    {
+      "id": "s08_curve",
+      "text": "Two conditions on three numbers leave one free dial. Call it t. The resting states are exactly the points where X is sixty t cubed, Y is eighty-five t squared, and Z is eleven t to the fourth."
+    },
+    {
+      "id": "s08_check",
+      "text": "Check the first rate. Sixty squared times eighty-five is three hundred and six thousand, exactly the number underneath, so only t to the eighth survives. The other two rates give t to the eighth as well."
+    },
+    {
+      "id": "s09_conserve",
+      "text": "Every reaction here leaves Y plus Z minus X unchanged. That's this network's conservation law. Let's take the slice where it equals thirty-six."
+    },
+    {
+      "id": "s09_plug",
+      "text": "Walk along the resting curve and track that quantity: eleven t to the fourth, minus sixty t cubed, plus eighty-five t squared. A sum of powers like this is called a polynomial. When does it equal thirty-six?"
+    },
+    {
+      "id": "s09_roots",
+      "text": "It crosses the line at t equals one, two and three. Three resting states, the most allowed. The first is sixty, eighty-five and eleven. Check: eighty-five plus eleven, minus sixty, is thirty-six."
+    },
+    {
+      "id": "s10_signs",
+      "text": "But could a fourth crossing be hiding further along? Move everything to one side, and read only the signs: plus, minus, plus, minus. Three flips."
+    },
+    {
+      "id": "s10_descartes",
+      "text": "In sixteen thirty-seven, René Descartes showed that a polynomial has no more positive solutions than sign flips. Three flips, at most three. We have three, and a touch would count twice, so all three are clean."
+    },
+    {
+      "id": "s10_robust",
+      "text": "Clean crossings are robust, too. Shift the slice a little, or the rate constants, and the crossings slide but survive. It's not a knife-edge coincidence."
+    },
+    {
+      "id": "s11_pattern",
+      "text": "Here's the recipe for n chemicals. Each reaction's input is two of one chemical, plus one of the next. The last is just two of the final one. Never more than three molecules going in."
+    },
+    {
+      "id": "s11_poly",
+      "text": "As before, the resting states lie on one curve, with every concentration a different power of t. So the conservation law gives a polynomial with n plus one terms: at most n sign flips, so at most n crossings."
+    },
+    {
+      "id": "s11_backwards",
+      "text": "Now run it backwards. Choose a polynomial that's zero at one, two, up to n. Its numbers then fix each reaction's output and rate, and the paper proves these are always valid reactions."
+    },
+    {
+      "id": "s11_four",
+      "text": "For four chemicals, here's the polynomial. Four sign flips, and zero at exactly one, two, three and four. Four clean resting states."
+    },
+    {
+      "id": "s12_stable",
+      "text": "Now, what this doesn't say. Resting is not the same as stable. In our two-chemical example, the flow along the slice runs away from the first resting state, and into the second. A hilltop, and a valley."
+    },
+    {
+      "id": "s12_switch",
+      "text": "The theorem counts resting states. It says nothing about how many can be stable at once, which is what a real switch needs."
+    },
+    {
+      "id": "s12_slice",
+      "text": "Also, the conserved quantity has a minus sign. Unlike the total mass in a sealed flask, its slice runs off forever. Banaji and Feliu showed a slice that doesn't run off allows at most two, so beyond two chemicals, that's unavoidable."
+    },
+    {
+      "id": "s12_outputs",
+      "text": "And three molecules is a limit on inputs only: one output here has four. This is mathematics about the mass action equations, not a mixture anyone has made in a lab."
+    },
+    {
+      "id": "s13_proof",
+      "text": "So how sure can we be? The result for every n rests on a written proof, checked by internal reviewers. Two independent programs also rebuilt the networks for n from two to eight, and checked all thirty-five resting states exactly."
+    },
+    {
+      "id": "s13_limits",
+      "text": "Those checks catch errors in the formulas, but a few cases can't prove every n. That's the proof's job. Outside experts haven't reviewed it yet, and a literature search found no earlier recipe for every n, though it can't rule one out."
+    },
+    {
+      "id": "s14_recap",
+      "text": "To recap. Resting states are crossings of a balance curve and a slice. With n chemicals and n reactions, three-body collisions reach the maximum, n, for every n. And pair collisions never can."
+    },
+    {
+      "id": "s14_open",
+      "text": "Still open: how many of these resting states can be stable at the same time, which a real switch needs. And whether the outputs, which grow with n in this recipe, could be kept small too."
+    },
+    {
+      "id": "s14_end",
+      "text": "Thanks for watching."
+    }
+  ]
+}

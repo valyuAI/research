@@ -1,0 +1,74 @@
+winning sets: 848
+certificate cert/n6D9_0_red.txt: 32424 lines
+n=6 mode=D bound=9 first=(1,1) result=RED nodes=172873 time=0.48s
+certificate cert/n6D9_1_red.txt: 37031 lines
+n=6 mode=D bound=9 first=(1,2) result=RED nodes=168599 time=0.40s
+certificate cert/n6D9_2_red.txt: 59377 lines
+n=6 mode=D bound=9 first=(1,3) result=RED nodes=315171 time=0.58s
+certificate cert/n6D9_3_red.txt: 39140 lines
+n=6 mode=D bound=9 first=(1,4) result=RED nodes=203683 time=0.43s
+certificate cert/n6D9_4_red.txt: 21939 lines
+n=6 mode=D bound=9 first=(1,5) result=RED nodes=75924 time=0.20s
+certificate cert/n6D9_5_red.txt: 49457 lines
+n=6 mode=D bound=9 first=(1,6) result=RED nodes=203042 time=0.60s
+certificate cert/n6D9_6_red.txt: 32406 lines
+n=6 mode=D bound=9 first=(2,1) result=RED nodes=131620 time=0.40s
+certificate cert/n6D9_7_red.txt: 38830 lines
+n=6 mode=D bound=9 first=(2,2) result=RED nodes=149393 time=0.43s
+certificate cert/n6D9_8_red.txt: 40652 lines
+n=6 mode=D bound=9 first=(2,3) result=RED nodes=410484 time=0.55s
+certificate cert/n6D9_9_red.txt: 32068 lines
+n=6 mode=D bound=9 first=(2,4) result=RED nodes=101621 time=0.32s
+certificate cert/n6D9_10_red.txt: 45793 lines
+n=6 mode=D bound=9 first=(2,5) result=RED nodes=536083 time=0.78s
+certificate cert/n6D9_11_red.txt: 62192 lines
+n=6 mode=D bound=9 first=(2,6) result=RED nodes=274387 time=0.65s
+certificate cert/n6D9_12_red.txt: 32519 lines
+n=6 mode=D bound=9 first=(3,1) result=RED nodes=82685 time=0.34s
+certificate cert/n6D9_13_red.txt: 38358 lines
+n=6 mode=D bound=9 first=(3,2) result=RED nodes=117318 time=0.46s
+certificate cert/n6D9_14_red.txt: 42837 lines
+n=6 mode=D bound=9 first=(3,3) result=RED nodes=98035 time=0.50s
+certificate cert/n6D9_15_red.txt: 52073 lines
+n=6 mode=D bound=9 first=(3,4) result=RED nodes=466768 time=0.65s
+certificate cert/n6D9_16_red.txt: 50485 lines
+n=6 mode=D bound=9 first=(3,5) result=RED nodes=115032 time=0.81s
+certificate cert/n6D9_17_red.txt: 37180 lines
+n=6 mode=D bound=9 first=(3,6) result=RED nodes=70806 time=0.39s
+certificate cert/n6D9_18_red.txt: 37085 lines
+n=6 mode=D bound=9 first=(4,1) result=RED nodes=39359 time=0.41s
+certificate cert/n6D9_19_red.txt: 50375 lines
+n=6 mode=D bound=9 first=(4,2) result=RED nodes=54694 time=0.83s
+certificate cert/n6D9_20_red.txt: 51692 lines
+n=6 mode=D bound=9 first=(4,3) result=RED nodes=59940 time=0.60s
+certificate cert/n6D9_21_red.txt: 42936 lines
+n=6 mode=D bound=9 first=(4,4) result=RED nodes=48020 time=0.45s
+certificate cert/n6D9_22_red.txt: 38717 lines
+n=6 mode=D bound=9 first=(4,5) result=RED nodes=45616 time=0.44s
+certificate cert/n6D9_23_red.txt: 32271 lines
+n=6 mode=D bound=9 first=(4,6) result=RED nodes=35538 time=0.30s
+certificate cert/n6D9_24_red.txt: 61928 lines
+n=6 mode=D bound=9 first=(5,1) result=RED nodes=82970 time=0.50s
+certificate cert/n6D9_25_red.txt: 45866 lines
+n=6 mode=D bound=9 first=(5,2) result=RED nodes=56229 time=0.40s
+certificate cert/n6D9_26_red.txt: 32100 lines
+n=6 mode=D bound=9 first=(5,3) result=RED nodes=37545 time=0.32s
+certificate cert/n6D9_27_red.txt: 40675 lines
+n=6 mode=D bound=9 first=(5,4) result=RED nodes=50401 time=0.39s
+certificate cert/n6D9_28_red.txt: 39787 lines
+n=6 mode=D bound=9 first=(5,5) result=RED nodes=53322 time=0.39s
+certificate cert/n6D9_29_red.txt: 32286 lines
+n=6 mode=D bound=9 first=(5,6) result=RED nodes=40714 time=0.41s
+certificate cert/n6D9_30_red.txt: 49050 lines
+n=6 mode=D bound=9 first=(6,1) result=RED nodes=56436 time=0.45s
+certificate cert/n6D9_31_red.txt: 22266 lines
+n=6 mode=D bound=9 first=(6,2) result=RED nodes=27076 time=0.17s
+certificate cert/n6D9_32_red.txt: 39529 lines
+n=6 mode=D bound=9 first=(6,3) result=RED nodes=49709 time=0.34s
+certificate cert/n6D9_33_red.txt: 59286 lines
+n=6 mode=D bound=9 first=(6,4) result=RED nodes=80473 time=0.61s
+certificate cert/n6D9_34_red.txt: 38033 lines
+n=6 mode=D bound=9 first=(6,5) result=RED nodes=47252 time=0.40s
+certificate cert/n6D9_35_red.txt: 32485 lines
+n=6 mode=D bound=9 first=(6,6) result=RED nodes=41450 time=0.32s
+SUMMARY n=6 mode=D bound=9 blue_wins=0

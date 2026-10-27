@@ -1,0 +1,341 @@
+{
+ "all_ok": true,
+ "report": [
+  {
+   "q": 3,
+   "r": 4,
+   "mu": 10,
+   "n_range": [
+    5,
+    10
+   ],
+   "missing": [],
+   "invalid": [],
+   "methods": {
+    "stored certificate": 6
+   }
+  },
+  {
+   "q": 3,
+   "r": 5,
+   "mu": 28,
+   "n_range": [
+    6,
+    28
+   ],
+   "missing": [],
+   "invalid": [],
+   "methods": {
+    "stored certificate": 23
+   }
+  },
+  {
+   "q": 3,
+   "r": 6,
+   "mu": 91,
+   "n_range": [
+    7,
+    91
+   ],
+   "missing": [],
+   "invalid": [],
+   "methods": {
+    "blocks+lower": 60,
+    "blocks": 25
+   }
+  },
+  {
+   "q": 3,
+   "r": 7,
+   "mu": 271,
+   "n_range": [
+    8,
+    271
+   ],
+   "missing": [],
+   "invalid": [],
+   "methods": {
+    "blocks+lower": 185,
+    "blocks": 79
+   }
+  },
+  {
+   "q": 3,
+   "r": 8,
+   "mu": 820,
+   "n_range": [
+    9,
+    820
+   ],
+   "missing": [],
+   "invalid": [],
+   "methods": {
+    "blocks": 241,
+    "blocks+lower": 571
+   }
+  },
+  {
+   "q": 4,
+   "r": 4,
+   "mu": 17,
+   "n_range": [
+    5,
+    17
+   ],
+   "missing": [],
+   "invalid": [],
+   "methods": {
+    "stored certificate": 13
+   }
+  },
+  {
+   "q": 4,
+   "r": 5,
+   "mu": 65,
+   "n_range": [
+    6,
+    65
+   ],
+   "missing": [],
+   "invalid": [],
+   "methods": {
+    "stored certificate": 60
+   }
+  },
+  {
+   "q": 4,
+   "r": 6,
+   "mu": 273,
+   "n_range": [
+    7,
+    273
+   ],
+   "missing": [],
+   "invalid": [],
+   "methods": {
+    "blocks+lower": 204,
+    "blocks": 63
+   }
+  },
+  {
+   "q": 4,
+   "r": 7,
+   "mu": 1089,
+   "n_range": [
+    8,
+    1089
+   ],
+   "missing": [],
+   "invalid": [],
+   "methods": {
+    "blocks": 255,
+    "blocks+lower": 827
+   }
+  },
+  {
+   "q": 5,
+   "r": 4,
+   "mu": 26,
+   "n_range": [
+    5,
+    26
+   ],
+   "missing": [],
+   "invalid": [],
+   "methods": {
+    "stored certificate": 22
+   }
+  },
+  {
+   "q": 5,
+   "r": 5,
+   "mu": 126,
+   "n_range": [
+    6,
+    126
+   ],
+   "missing": [],
+   "invalid": [],
+   "methods": {
+    "stored certificate": 121
+   }
+  },
+  {
+   "q": 5,
+   "r": 6,
+   "mu": 651,
+   "n_range": [
+    7,
+    651
+   ],
+   "missing": [],
+   "invalid": [],
+   "methods": {
+    "blocks+lower": 273,
+    "blocks": 372
+   }
+  },
+  {
+   "q": 7,
+   "r": 4,
+   "mu": 50,
+   "n_range": [
+    5,
+    50
+   ],
+   "missing": [],
+   "invalid": [],
+   "methods": {
+    "blocks": 45,
+    "absorption": 1
+   }
+  },
+  {
+   "q": 7,
+   "r": 5,
+   "mu": 344,
+   "n_range": [
+    6,
+    344
+   ],
+   "missing": [],
+   "invalid": [],
+   "methods": {
+    "blocks": 338,
+    "absorption": 1
+   }
+  },
+  {
+   "q": 7,
+   "r": 6,
+   "mu": 2451,
+   "n_range": [
+    7,
+    700
+   ],
+   "missing": [],
+   "invalid": [],
+   "methods": {
+    "blocks": 694
+   }
+  },
+  {
+   "q": 8,
+   "r": 4,
+   "mu": 65,
+   "n_range": [
+    5,
+    65
+   ],
+   "missing": [],
+   "invalid": [],
+   "methods": {
+    "blocks": 60,
+    "absorption": 1
+   }
+  },
+  {
+   "q": 8,
+   "r": 5,
+   "mu": 513,
+   "n_range": [
+    6,
+    513
+   ],
+   "missing": [],
+   "invalid": [],
+   "methods": {
+    "blocks": 507,
+    "absorption": 1
+   }
+  },
+  {
+   "q": 8,
+   "r": 6,
+   "mu": 4161,
+   "n_range": [
+    7,
+    700
+   ],
+   "missing": [],
+   "invalid": [],
+   "methods": {
+    "blocks": 694
+   }
+  },
+  {
+   "q": 9,
+   "r": 4,
+   "mu": 82,
+   "n_range": [
+    5,
+    82
+   ],
+   "missing": [],
+   "invalid": [],
+   "methods": {
+    "blocks": 77,
+    "absorption": 1
+   }
+  },
+  {
+   "q": 9,
+   "r": 5,
+   "mu": 730,
+   "n_range": [
+    6,
+    730
+   ],
+   "missing": [],
+   "invalid": [],
+   "methods": {
+    "blocks": 724,
+    "absorption": 1
+   }
+  },
+  {
+   "q": 11,
+   "r": 4,
+   "mu": 122,
+   "n_range": [
+    5,
+    122
+   ],
+   "missing": [],
+   "invalid": [],
+   "methods": {
+    "blocks": 117,
+    "absorption": 1
+   }
+  },
+  {
+   "q": 11,
+   "r": 5,
+   "mu": 1332,
+   "n_range": [
+    6,
+    400
+   ],
+   "missing": [],
+   "invalid": [],
+   "methods": {
+    "blocks": 395
+   }
+  },
+  {
+   "q": 13,
+   "r": 4,
+   "mu": 170,
+   "n_range": [
+    5,
+    170
+   ],
+   "missing": [],
+   "invalid": [],
+   "methods": {
+    "blocks": 165,
+    "absorption": 1
+   }
+  }
+ ]
+}

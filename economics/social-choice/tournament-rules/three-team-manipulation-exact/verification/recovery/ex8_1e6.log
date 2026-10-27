@@ -1,0 +1,6 @@
+2667216 rows, 54256 vars (80s)
+|Z|=3044  |E|=4  next slacks [0.00066594 0.00204163 0.00209981]
+2 touched classes, 2 unknowns, 6 equations
+rank 2, independent 2; all equations satisfied: True; max |delta| 0
+lotteries/CC ok=True; exact max row value 2/5 (target 2/5); feasible=True; max denominator 1000003 (391s)
+saved lp_n8_k3_le_frrule.pkl

@@ -1,0 +1,511 @@
+1
+00:00:00,000 --> 00:00:06,051
+Here is a word: banana. In the middle, the little block A N appears twice in a row.
+
+2
+00:00:06,051 --> 00:00:11,664
+A block followed straight away by an exact copy of itself is called a square.
+
+3
+00:00:12,033 --> 00:00:20,097
+Squares can be tiny, like two A's side by side, or long, like A B C, A B C.
+
+4
+00:00:20,467 --> 00:00:26,111
+So here is a puzzle. Can you write an endless string of letters with no square anywhere
+
+5
+00:00:26,111 --> 00:00:29,875
+in it? The answer depends on how many letters you may use.
+
+6
+00:00:30,867 --> 00:00:34,608
+Try it with two letters, A and B. Start with A.
+
+7
+00:00:34,608 --> 00:00:39,782
+The next letter can't be A, that would make a square, so write B.
+
+8
+00:00:39,782 --> 00:00:42,171
+Then A again. So far, so good.
+
+9
+00:00:42,567 --> 00:00:47,513
+Now add a fourth letter. If you add A, the word ends A, A: a square.
+
+10
+00:00:47,513 --> 00:00:51,586
+If you add B, the whole word is A B, A B: also a square.
+
+11
+00:00:51,586 --> 00:00:54,423
+Starting with B just swaps the letters.
+
+12
+00:00:54,800 --> 00:00:59,053
+So with two letters, three is as long as you can go.
+
+13
+00:00:59,053 --> 00:01:01,016
+Squares are unavoidable.
+
+14
+00:01:02,000 --> 00:01:04,449
+With three letters, everything changes.
+
+15
+00:01:04,449 --> 00:01:09,848
+Over a hundred years ago, the Norwegian mathematician Axel Thue proved that you can go
+
+16
+00:01:09,848 --> 00:01:15,248
+on forever without a single square. Here is the start of one endless square-free word.
+
+17
+00:01:15,633 --> 00:01:21,614
+Some blocks nearly repeat. A B C A B starts its pattern again but stops early.
+
+18
+00:01:21,614 --> 00:01:27,748
+It is five letters long and repeats every three, so its exponent is five thirds.
+
+19
+00:01:27,748 --> 00:01:30,201
+A square has exponent exactly 2.
+
+20
+00:01:30,600 --> 00:01:36,503
+In 1972, Francoise Dejean showed that three letters can do even better: there are endless
+
+21
+00:01:36,503 --> 00:01:40,151
+words where no block has exponent above seven quarters.
+
+22
+00:01:40,151 --> 00:01:46,054
+The word on screen is one. Its most repetitive blocks, like this one, reach exactly seven
+
+23
+00:01:46,054 --> 00:01:47,712
+quarters, and no further.
+
+24
+00:01:48,100 --> 00:01:53,500
+Keep this word in mind. It is the raw material for everything that follows.
+
+25
+00:01:54,500 --> 00:02:01,151
+Now a twist. Think of numbers, and draw each one as the height of a column.
+
+26
+00:02:01,151 --> 00:02:05,053
+3, 1, 4, 1, 5 gives a little mountain range.
+
+27
+00:02:05,053 --> 00:02:07,004
+So does 2, 0, 7, 0, 9.
+
+28
+00:02:07,400 --> 00:02:11,154
+The numbers are different, but the ups and downs look alike.
+
+29
+00:02:11,154 --> 00:02:16,160
+To say precisely that they have the same shape, every column gets a code number.
+
+30
+00:02:16,533 --> 00:02:21,749
+Stand on a column and walk left, hopping over every column taller than you.
+
+31
+00:02:21,749 --> 00:02:27,799
+Stop at the first one that is the same height or shorter, and write down how many steps
+
+32
+00:02:27,799 --> 00:02:30,789
+back it was. If you never stop, write zero.
+
+33
+00:02:31,167 --> 00:02:36,161
+For 3, 1, 4, 1, 5 the code is 0, 0, 1, 2, 1.
+
+34
+00:02:36,161 --> 00:02:41,269
+The second range gives exactly the same code.
+
+35
+00:02:41,269 --> 00:02:43,767
+Same code, same shape.
+
+36
+00:02:44,167 --> 00:02:50,292
+Computer scientists call this shape a Cartesian tree, and use it to search prices or
+
+37
+00:02:50,292 --> 00:02:55,615
+sensor data for a pattern of rises and falls, whatever the actual values.
+
+38
+00:02:56,600 --> 00:03:00,816
+Back to letters, now 0 and 1, with 0 lower than 1.
+
+39
+00:03:00,816 --> 00:03:05,369
+Zero zero, zero one and one one all get the code 0, 1.
+
+40
+00:03:05,369 --> 00:03:08,911
+Nothing steps down, so they share a shape.
+
+41
+00:03:08,911 --> 00:03:12,368
+One zero, which steps down, is different.
+
+42
+00:03:12,767 --> 00:03:15,444
+Longer blocks have more interesting codes.
+
+43
+00:03:15,444 --> 00:03:20,735
+In zero one one zero, the last zero hops over both ones and lands three steps back.
+
+44
+00:03:21,133 --> 00:03:27,143
+A shape square is a block followed straight away by a block of the same shape.
+
+45
+00:03:27,143 --> 00:03:30,303
+Zero one one one, then zero zero one one.
+
+46
+00:03:30,303 --> 00:03:34,232
+The letters differ, but both codes read 0, 1, 1, 1.
+
+47
+00:03:34,232 --> 00:03:37,237
+A shape square with halves of length 4.
+
+48
+00:03:37,633 --> 00:03:43,303
+Every ordinary square is also a shape square, so shape squares are harder to avoid.
+
+49
+00:03:43,303 --> 00:03:49,041
+Tiny ones can't be avoided at all, since any two single letters have the same shape.
+
+50
+00:03:49,041 --> 00:03:50,953
+So we only forbid long ones.
+
+51
+00:03:51,933 --> 00:03:55,926
+In 2026, Shibata, Mieno, Koeppl and Inenaga made a table.
+
+52
+00:03:55,926 --> 00:04:01,879
+Each row is a number of letters, each column a minimum half length, and each entry is
+
+53
+00:04:01,879 --> 00:04:04,890
+the longest word with no such shape square.
+
+54
+00:04:04,890 --> 00:04:06,501
+Infinity means forever.
+
+55
+00:04:06,900 --> 00:04:12,992
+With two letters and halves of at least 3, the longest possible word has 29 letters.
+
+56
+00:04:12,992 --> 00:04:16,764
+With three letters and halves of at least 2, only 9.
+
+57
+00:04:17,133 --> 00:04:22,497
+But some entries were question marks. From experiments, the authors guessed infinity
+
+58
+00:04:22,497 --> 00:04:27,925
+in two cells: two letters with halves of at least 4, and three letters with halves of
+
+59
+00:04:27,925 --> 00:04:31,437
+at least 3. Those two cells would fill in all the rest.
+
+60
+00:04:31,833 --> 00:04:36,897
+This finding proves both guesses. Every question mark becomes infinity.
+
+61
+00:04:38,467 --> 00:04:44,724
+How do you build such a word? Start from Dejean's word over A, B and C, and replace each
+
+62
+00:04:44,724 --> 00:04:48,067
+letter by a fixed block of five zeros and ones.
+
+63
+00:04:48,467 --> 00:04:53,636
+Every A becomes this block. Every B becomes this one.
+
+64
+00:04:53,636 --> 00:04:56,075
+Every C becomes this one.
+
+65
+00:04:56,467 --> 00:05:02,061
+Apply the rule letter by letter, and the endless three letter word turns into an endless
+
+66
+00:05:02,061 --> 00:05:03,523
+word of zeros and ones.
+
+67
+00:05:03,900 --> 00:05:09,878
+For three letters there is a similar rule, with blocks of six built from 0, 1 and 2.
+
+68
+00:05:09,878 --> 00:05:14,148
+We follow the two letter case; the other works the same way.
+
+69
+00:05:14,533 --> 00:05:20,827
+Short shape squares still appear. One one one, then zero one one: both have code 0, 1,
+
+70
+00:05:20,827 --> 00:05:27,048
+1. That is allowed, since these halves have only three letters, and the table says it
+
+71
+00:05:27,048 --> 00:05:30,853
+must happen. The claim is about halves of 4 or more.
+
+72
+00:05:31,833 --> 00:05:35,598
+Why should that be true? The key is a sliding window.
+
+73
+00:05:35,598 --> 00:05:40,641
+Look at a few letters at a time, and work out the code of what you see.
+
+74
+00:05:41,033 --> 00:05:47,251
+First try five letters. Zero zero one one one, and zero zero zero zero one, have the
+
+75
+00:05:47,251 --> 00:05:50,138
+same code but different middle letters.
+
+76
+00:05:50,138 --> 00:05:51,545
+Five is not enough.
+
+77
+00:05:51,933 --> 00:05:56,166
+So try seven. A computer listed every seven letter window that can occur.
+
+78
+00:05:56,166 --> 00:06:00,806
+There are 23 different codes, and each always comes with the same middle letter.
+
+79
+00:06:00,806 --> 00:06:04,749
+Here, the shape of seven letters tells you the letter in the middle.
+
+80
+00:06:05,733 --> 00:06:11,748
+Now suppose our word did contain a long shape square: two neighbouring blocks with the
+
+81
+00:06:11,748 --> 00:06:14,685
+same code. Call the length of each half m.
+
+82
+00:06:15,066 --> 00:06:21,195
+Put the second half under the first, and slide a seven letter window along both at once.
+
+83
+00:06:21,195 --> 00:06:27,255
+Matching pieces of matching halves have matching codes, so each pair of windows has the
+
+84
+00:06:27,255 --> 00:06:28,578
+same middle letter.
+
+85
+00:06:28,966 --> 00:06:34,746
+Do this all the way along. Apart from three letters at each end, where the window doesn't
+
+86
+00:06:34,746 --> 00:06:37,863
+fit, the two halves are equal letter for letter.
+
+87
+00:06:37,863 --> 00:06:42,214
+A long shape square is really an ordinary square with blurry edges.
+
+88
+00:06:43,199 --> 00:06:48,806
+Now the blocks matter. They were chosen so that a block never appears straddling two
+
+89
+00:06:48,806 --> 00:06:54,547
+others. Slide zero zero one zero one across a pair of blocks: it only fits at the real
+
+90
+00:06:54,547 --> 00:06:58,151
+boundary. Every block you see came from a real letter.
+
+91
+00:06:58,966 --> 00:07:02,520
+The equal stretch is long, so it contains whole blocks.
+
+92
+00:07:02,520 --> 00:07:08,077
+Their copies in the second half must be real blocks too, so the two halves are shifted
+
+93
+00:07:08,077 --> 00:07:09,886
+by a whole number of blocks.
+
+94
+00:07:10,266 --> 00:07:12,898
+Now read each block back as its letter.
+
+95
+00:07:12,898 --> 00:07:18,566
+Matching blocks mean matching letters, so Dejean's word would contain a stretch that
+
+96
+00:07:18,566 --> 00:07:19,578
+repeats itself.
+
+97
+00:07:19,966 --> 00:07:26,453
+How much does it repeat? At most 14 letters are lost: 3 at each end, plus up to 4 more
+
+98
+00:07:26,453 --> 00:07:33,015
+at each end to reach a whole block. That gives an exponent of at least 2, minus 14 over
+
+99
+00:07:33,015 --> 00:07:33,166
+m.
+
+100
+00:07:33,566 --> 00:07:37,577
+When m is bigger than 56, that is more than seven quarters.
+
+101
+00:07:37,577 --> 00:07:40,976
+But Dejean's word never goes above seven quarters.
+
+102
+00:07:40,976 --> 00:07:45,734
+Contradiction. So there is no shape square with halves longer than 56.
+
+103
+00:07:46,732 --> 00:07:49,782
+That leaves halves from 4 to 56 letters.
+
+104
+00:07:49,782 --> 00:07:56,263
+Any such square sits inside the blocks of just 24 consecutive letters of the starting
+
+105
+00:07:56,263 --> 00:07:56,644
+word.
+
+106
+00:07:57,032 --> 00:08:04,325
+So the computer took every 24 letter word over A, B and C with no block of exponent above
+
+107
+00:08:04,325 --> 00:08:07,602
+seven quarters. There are 4,596 of them.
+
+108
+00:08:07,602 --> 00:08:14,485
+In each one's zeros and ones it searched for shape squares with halves from 4 to 56.
+
+109
+00:08:14,485 --> 00:08:15,632
+It found none.
+
+110
+00:08:15,999 --> 00:08:23,850
+For the three letter rule, the same kind of check covers 3,654 words, with halves from
+
+111
+00:08:23,850 --> 00:08:25,767
+3 to 64. Again, none.
+
+112
+00:08:26,165 --> 00:08:31,392
+Two separately written programs agree on every count, and both reject rules that were
+
+113
+00:08:31,392 --> 00:08:32,621
+deliberately broken.
+
+114
+00:08:33,599 --> 00:08:39,180
+So what kind of proof is this? The endless part is the written argument you just watched.
+
+115
+00:08:39,180 --> 00:08:42,567
+The computer only checks a finite list of short cases.
+
+116
+00:08:42,567 --> 00:08:46,078
+Together they make a proof, but a computer assisted one.
+
+117
+00:08:46,078 --> 00:08:51,346
+It has not been checked in a proof assistant like Lean, and it has not yet been peer
+
+118
+00:08:51,346 --> 00:08:51,911
+reviewed.
+
+119
+00:08:52,299 --> 00:08:58,585
+It is also modest. It answers two questions left open in a recent paper and completes
+
+120
+00:08:58,585 --> 00:09:05,019
+its table. And the thresholds can't be lowered: the table's 29 and 9 already show that.
+
+121
+00:09:05,999 --> 00:09:10,917
+To recap. One: two letters can go on forever avoiding shape squares with halves of 4
+
+122
+00:09:10,917 --> 00:09:14,372
+or more, and three letters, those with halves of 3 or more.
+
+123
+00:09:14,372 --> 00:09:18,471
+Two: the words come from Dejean's word by swapping letters for blocks.
+
+124
+00:09:18,471 --> 00:09:23,389
+Three: a seven letter window turns long shape squares into near-exact squares, which
+
+125
+00:09:23,389 --> 00:09:26,903
+Dejean's word forbids, and a computer clears the short ones.
+
+126
+00:09:27,299 --> 00:09:32,329
+What we still don't know: how close to a shape square an endless word must come, and
+
+127
+00:09:32,329 --> 00:09:36,042
+how rare shape squares can be made when they can't be avoided.
+
+128
+00:09:36,042 --> 00:09:39,515
+Those are the next questions the original authors suggest.

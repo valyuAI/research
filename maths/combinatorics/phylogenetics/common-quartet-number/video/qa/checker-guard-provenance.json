@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-26",
+  "change": "Reject Python optimization before assertion-based verification. Normal-mode mathematical computation is unchanged.",
+  "path": "verification/iterate_check.py",
+  "beforeSha256": "65083b7aa5b54f17c932f89e9cc5352a253d7e97a440f25deba2d282e2dd42a1",
+  "afterSha256": "a86ae610ec34a584178fc482374555e23e262052a85ad4aeded7e1c2f71b9ad0",
+  "priorCompletionManifestPreserved": true,
+  "freshChecks": "8 thresholds, 2 factor controls, 18 seeded weighted families k=1..6; normal/optimized negative probes and PYTHONOPTIMIZE guard.",
+  "earlier613FamilyReplayRepeated": false,
+  "mediaChanged": false,
+  "priorArtifactManifestSha256": "35de450031a3ae1c450a0b313d46d5eef91b345fadf41b20fd60f213f44c87ff"
+}

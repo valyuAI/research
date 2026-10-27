@@ -1,0 +1,333 @@
+{
+  "method": "Normalized waveform cross-correlation of a high-energy two-second window from every source clip against its expected location in the final AAC soundtrack. No subjective listening performed.",
+  "all_passed": true,
+  "sample_rate": 12000,
+  "min_correlation": 0.9993737029814662,
+  "max_absolute_lag_seconds": 0.021333333333333333,
+  "clips": [
+    {
+      "id": "g01",
+      "scene": "Movement",
+      "expected_start": 0.0,
+      "sample_offset": 3.0555833333333333,
+      "correlation": 0.9997583713742153,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "d0392c1f57471f1c0b9fa2bb36aa2a4ff622e680676dfefe9992fdc7d4f7e215"
+    },
+    {
+      "id": "g02",
+      "scene": "Movement",
+      "expected_start": 14.09999999999999,
+      "sample_offset": 8.02675,
+      "correlation": 0.9997440275504824,
+      "lag_seconds": 0.02033333333333333,
+      "sha256": "9eb65956e0e7cf8751b1d483aeae8ceb5fd837a01b5a295165e8b3ed1a907a84"
+    },
+    {
+      "id": "g03",
+      "scene": "Movement",
+      "expected_start": 28.000000000000227,
+      "sample_offset": 8.678,
+      "correlation": 0.9996070164010802,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "32926a22c2c7f13ebd20be589bf41f0ae0d989da854a745eca53002c9d655965"
+    },
+    {
+      "id": "g04",
+      "scene": "Movement",
+      "expected_start": 42.900000000000304,
+      "sample_offset": 4.8,
+      "correlation": 0.9997915283212975,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "dbeb8798f3074df3f6c21762bbe836fe7733484844b9372e41cbb4ebb1fe38a1"
+    },
+    {
+      "id": "g05",
+      "scene": "Signs",
+      "expected_start": 55.3,
+      "sample_offset": 8.678,
+      "correlation": 0.9993737029814662,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "39836be1921f6570169f4ceb71f55eba559c8bf0732f5baddb309051e40961e1"
+    },
+    {
+      "id": "g06",
+      "scene": "Signs",
+      "expected_start": 70.19999999999999,
+      "sample_offset": 7.214,
+      "correlation": 0.9995391826048189,
+      "lag_seconds": 0.02033333333333333,
+      "sha256": "748874095075d659ae90ee739077abf572a7178597470d78d1d5bf890cb3b437"
+    },
+    {
+      "id": "g07",
+      "scene": "Signs",
+      "expected_start": 85.3333333333336,
+      "sample_offset": 8.041166666666667,
+      "correlation": 0.9996943546146572,
+      "lag_seconds": 0.021,
+      "sha256": "ef165224065f794dfccf7e69598ca901e3eca27a400b1d53f141d0118d3d53f9"
+    },
+    {
+      "id": "g08",
+      "scene": "Signs",
+      "expected_start": 99.33333333333346,
+      "sample_offset": 7.602333333333333,
+      "correlation": 0.9997338520737029,
+      "lag_seconds": 0.021,
+      "sha256": "17bb7e32c8be19d9ae4da53a9a59d3595e4a599f56afb5d583e2e0e32a8c83e6"
+    },
+    {
+      "id": "g09",
+      "scene": "Reduced",
+      "expected_start": 113.73333299999999,
+      "sample_offset": 6.775166666666666,
+      "correlation": 0.9996367186284659,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "e69351c86caf0abc064fcf341508b50ff8424be8a0a330e5980da10986295da8"
+    },
+    {
+      "id": "g10",
+      "scene": "Reduced",
+      "expected_start": 129.29999966666665,
+      "sample_offset": 7.52675,
+      "correlation": 0.9997944466776796,
+      "lag_seconds": 0.020666666666666667,
+      "sha256": "a5d1a62468cc4f70809843d65093e92a6c7a6d71fefda8298567673c88b75af4"
+    },
+    {
+      "id": "g11",
+      "scene": "Reduced",
+      "expected_start": 143.19999966666697,
+      "sample_offset": 8.052333333333333,
+      "correlation": 0.9997528943226262,
+      "lag_seconds": 0.020666666666666667,
+      "sha256": "7e539cbb25a49ca8acae1700811a39c4116bbbf9f9360629ba048a9a55b79bf7"
+    },
+    {
+      "id": "g12",
+      "scene": "Reduced",
+      "expected_start": 160.59999966666692,
+      "sample_offset": 6.145166666666666,
+      "correlation": 0.9996928890163005,
+      "lag_seconds": 0.020666666666666667,
+      "sha256": "6e5c65025f56346e40860a225e0071e3e25c0ae6afbfb9122c85eba99578b693"
+    },
+    {
+      "id": "g13",
+      "scene": "Cores",
+      "expected_start": 171.96666599999998,
+      "sample_offset": 6.24275,
+      "correlation": 0.9995471565606129,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "9c7e5a7088aee1eae8c092854f5230a8402bbad9f5da36149a37473e2c60b704"
+    },
+    {
+      "id": "g14",
+      "scene": "Cores",
+      "expected_start": 187.2999993333333,
+      "sample_offset": 7.43,
+      "correlation": 0.9999589038933305,
+      "lag_seconds": 0.021,
+      "sha256": "037de8c29430e842ef5d0ef2d44501148d24c48d850039af7136e4f2db0c0844"
+    },
+    {
+      "id": "g15",
+      "scene": "Cores",
+      "expected_start": 203.86666600000012,
+      "sample_offset": 9.915583333333334,
+      "correlation": 0.999511495355312,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "22449fcf690a6f19bde01d048e96af266c8b9930f0d6e2044bfebeb1f1860961"
+    },
+    {
+      "id": "g16",
+      "scene": "Cores",
+      "expected_start": 220.36666599999955,
+      "sample_offset": 5.894,
+      "correlation": 0.9996092092175005,
+      "lag_seconds": 0.02033333333333333,
+      "sha256": "d218c4472ccb6790c99f81e7f7ee3c58293a84edec78fce9c8af74e7f5bf6fea"
+    },
+    {
+      "id": "g17",
+      "scene": "Enumeration",
+      "expected_start": 236.699999,
+      "sample_offset": 6.138333333333334,
+      "correlation": 0.9997962959636155,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "13dd6399a7eb6131aec1336bcd0b601a7b7f810434c7d32e81c6bfde0bd0902e"
+    },
+    {
+      "id": "g18",
+      "scene": "Enumeration",
+      "expected_start": 251.33333233333332,
+      "sample_offset": 7.282333333333334,
+      "correlation": 0.999705321877277,
+      "lag_seconds": 0.021,
+      "sha256": "14a2d1695ea74be50a16002bcb2052421c4cc37a7973c46b9ea108f74726aac2"
+    },
+    {
+      "id": "g19",
+      "scene": "Enumeration",
+      "expected_start": 266.9333323333336,
+      "sample_offset": 8.379583333333333,
+      "correlation": 0.9998286872065196,
+      "lag_seconds": 0.021,
+      "sha256": "a25d60517f197b2c86cb511aa26e9406505b9ee0c3786cb9080f105c6706f490"
+    },
+    {
+      "id": "g20",
+      "scene": "Enumeration",
+      "expected_start": 283.1666656666668,
+      "sample_offset": 9.43,
+      "correlation": 0.9998631236266182,
+      "lag_seconds": 0.020666666666666667,
+      "sha256": "f806da8d7ab6a12aeb5ca28a5b3c11cc7f4c61e1f6615c94eca85055c3989b82"
+    },
+    {
+      "id": "g21",
+      "scene": "Termination",
+      "expected_start": 299.766666,
+      "sample_offset": 5.109583333333333,
+      "correlation": 0.9996597569466091,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "bca49b42cc7a9673d265927bc9825cf8299a19a40c97263eee2b5b4c2342c79f"
+    },
+    {
+      "id": "g22",
+      "scene": "Termination",
+      "expected_start": 314.1999993333333,
+      "sample_offset": 9.574,
+      "correlation": 0.9997877677162225,
+      "lag_seconds": 0.021,
+      "sha256": "5f60427e525acc426146389b74241a3e6da81bea123d12cdb2ae61dbce394b62"
+    },
+    {
+      "id": "g23",
+      "scene": "Termination",
+      "expected_start": 331.73333266666685,
+      "sample_offset": 3.3183333333333334,
+      "correlation": 0.9994081165254752,
+      "lag_seconds": 0.020666666666666667,
+      "sha256": "1689f3f2ac35e48ad92537be09d76265bfb2718deea133c9b44a38fc045d9a72"
+    },
+    {
+      "id": "g24",
+      "scene": "Termination",
+      "expected_start": 347.5666659999997,
+      "sample_offset": 6.645583333333334,
+      "correlation": 0.9995543472456258,
+      "lag_seconds": 0.02033333333333333,
+      "sha256": "d95ec2d30e8bc3d94a06c537417825749d04e1291afc7a28be3bf6f6c965ef28"
+    },
+    {
+      "id": "g25",
+      "scene": "Thirty",
+      "expected_start": 362.266666,
+      "sample_offset": 8.379583333333333,
+      "correlation": 0.9998614906014294,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "9d97b8d2687cf2c33727f29919702e83758a5ec7b5a9617abb7f4390ae960510"
+    },
+    {
+      "id": "g26",
+      "scene": "Thirty",
+      "expected_start": 378.49999933333334,
+      "sample_offset": 7.498,
+      "correlation": 0.9998785593746119,
+      "lag_seconds": 0.021,
+      "sha256": "6c40707c210acb19554c65d14c539fd7813a91d21f428fe18d3211f707465d71"
+    },
+    {
+      "id": "g27",
+      "scene": "Thirty",
+      "expected_start": 392.1999993333338,
+      "sample_offset": 9.908333333333333,
+      "correlation": 0.9998698405587825,
+      "lag_seconds": 0.021,
+      "sha256": "d5838ebc372922a93cc443272e6bd6310faf371915345c7318f351aa2f52203b"
+    },
+    {
+      "id": "g28",
+      "scene": "Thirty",
+      "expected_start": 408.63333266666655,
+      "sample_offset": 7.124,
+      "correlation": 0.9997561544030411,
+      "lag_seconds": 0.020666666666666667,
+      "sha256": "ddd39a4ed07e18f69db7367dd34bd6c4fef09af3c485463ed1a417025e007f09"
+    },
+    {
+      "id": "g29",
+      "scene": "Extremal",
+      "expected_start": 423.16666599999996,
+      "sample_offset": 9.29675,
+      "correlation": 0.9997990444720766,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "ff093f8acb24a85785dee6538e90042cb59d4d0bc9e4b4259a51ee14b59fbb54"
+    },
+    {
+      "id": "g30",
+      "scene": "Extremal",
+      "expected_start": 438.86666599999995,
+      "sample_offset": 4.145583333333334,
+      "correlation": 0.9998142040677244,
+      "lag_seconds": 0.02033333333333333,
+      "sha256": "d010d0c490d667e2904e43bfd064ee80393f325e9d3cae7203102ae15df9c494"
+    },
+    {
+      "id": "g31",
+      "scene": "Extremal",
+      "expected_start": 453.5666660000004,
+      "sample_offset": 5.347166666666666,
+      "correlation": 0.9999256880091844,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "0175d887d40430ac60442aa8f865b6c1bb35fbbb4ecdc5fdf679a3bc24149c67"
+    },
+    {
+      "id": "g32",
+      "scene": "Extremal",
+      "expected_start": 469.5999993333336,
+      "sample_offset": 8.718,
+      "correlation": 0.9997839659068609,
+      "lag_seconds": 0.021,
+      "sha256": "1e1a1ded102f3007f6ca3bfaf7faf02592edbcb34d3b48d782c7b4f85d9f1171"
+    },
+    {
+      "id": "g33",
+      "scene": "Scope",
+      "expected_start": 488.09999899999997,
+      "sample_offset": 2.24275,
+      "correlation": 0.9995050563434609,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "b215bafbae5683a131cb7da6277579e5bafd9e6c86b9daa56e7db48a142be7e6"
+    },
+    {
+      "id": "g34",
+      "scene": "Scope",
+      "expected_start": 503.4333323333333,
+      "sample_offset": 9.955166666666667,
+      "correlation": 0.9995213288288145,
+      "lag_seconds": 0.021,
+      "sha256": "015abc24bf7ef9642d9e70fcfa6fca53e6cc2ac3f1bc86e628ef2fd027d2a2c0"
+    },
+    {
+      "id": "g35",
+      "scene": "Scope",
+      "expected_start": 520.1999990000003,
+      "sample_offset": 8.728333333333333,
+      "correlation": 0.9997669961987399,
+      "lag_seconds": 0.021333333333333333,
+      "sha256": "0769b0032517378c93687345b34447cffe8a4d0f97eed3e99ac08154c9ea5784"
+    },
+    {
+      "id": "g36",
+      "scene": "Scope",
+      "expected_start": 535.4333323333333,
+      "sample_offset": 4.10275,
+      "correlation": 0.9997466953558491,
+      "lag_seconds": 0.021,
+      "sha256": "64670608ca021ea5c121d44661e9447c31a178426aa858e13f714930ea96fbfb"
+    }
+  ]
+}

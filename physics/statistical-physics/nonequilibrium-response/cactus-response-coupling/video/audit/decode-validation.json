@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-26T13:28:10+00:00",
+  "input": "video.mp4",
+  "sha256": "f48c550bdbf28ddbb0506ff02a4bf4ba586099480eb1e0daff3121453a8ae73c",
+  "full_video_and_audio_decode_exit_code": 0,
+  "peak_dbfs": [
+    -4.729652,
+    -4.729652,
+    -4.729652
+  ],
+  "rms_dbfs": [
+    -26.768592,
+    -26.768555,
+    -26.768573
+  ],
+  "listening_review_performed": false,
+  "rendered_input": "video-1080p-candidate.mp4",
+  "final_path": "<repo>/physics/statistical-physics/nonequilibrium-response/cactus-response-coupling/video/video.mp4"
+}

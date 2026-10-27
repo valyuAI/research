@@ -1,0 +1,8 @@
+.review/
+__pycache__/
+*.aux
+*.bbl
+*.blg
+*.build.log
+*.log
+*.out
