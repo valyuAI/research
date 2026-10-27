@@ -4,7 +4,7 @@
   "categories": {
     "third-party-data": "Required omission. Third-party table from github.com/yj-tan/ExP-MPRA (no license file at commit d73ad23); the source preprint is CC BY-NC-ND 4.0.",
     "non-final-media": "Optional omission (owner decision). Non-final video renders; the final video.mp4, poster and subtitles are kept.",
-    "superseded-presentation": "Earlier paper presentation; use the current human-author PDF in public-release/papers/.",
+    "superseded-presentation": "Earlier paper presentation; use the current public PDF in public-release/papers/.",
     "administrative-record": "Administrative planning or process telemetry, not mathematical evidence."
   },
   "omit": {

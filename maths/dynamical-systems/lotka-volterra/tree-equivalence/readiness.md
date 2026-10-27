@@ -15,4 +15,4 @@ The proof reconstructs the indexing tree from all homogeneous linear Darboux for
 
 Zeng's mathematical text remains unavailable. A withdrawal does not erase the prior announcement, establish an error in it, or make the present result novel. Do not package this as the first solution of the conjecture. Until the overlap is resolved or the contribution is clearly differentiated, this is an independent verification note, not an original-research claim.
 
-The author has not yet completed a line-by-line review of the proof. Start with the [proof walkthrough](author-walkthrough.md).
+Harvey Yorke has not yet completed a line-by-line review of the proof. Start with the [proof walkthrough](author-walkthrough.md).

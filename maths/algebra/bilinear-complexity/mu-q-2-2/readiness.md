@@ -40,4 +40,4 @@ The compiled runner now checks answers, enumeration counts and exit status, with
 
 ## Delivery state
 
-The six-page PDF builds. All pages were visually inspected; a long inline equation and a stretched reference were repaired, and changed pages rechecked. The video brief matches the corrected claims. The author has not yet completed a line-by-line review of every proof.
+The six-page PDF builds. All pages were visually inspected; a long inline equation and a stretched reference were repaired, and changed pages rechecked. The video brief matches the corrected claims. Harvey Yorke has not yet completed a line-by-line review of every proof.

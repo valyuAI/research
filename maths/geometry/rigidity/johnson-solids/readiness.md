@@ -1,6 +1,6 @@
 # Final research readiness: Johnson solids
 
-Status: research package complete; full replay passed and all ten PDF pages visually inspected. The author has not yet completed a line-by-line review of every proof.
+Status: research package complete; full replay passed and all ten PDF pages visually inspected. Harvey Yorke has not yet completed a line-by-line review of every proof.
 
 ## Exact claims and scope
 

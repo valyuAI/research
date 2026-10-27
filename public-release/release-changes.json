@@ -4,7 +4,7 @@
   "releaseManifest": "docs/artifact-hashes.json",
   "rule": "Every difference from the earlier artifact inventory is either an exact-hash change below or a declared omission. Historical execution hashes remain historical; public presentation and path redactions are recorded explicitly.",
   "reasons": {
-    "presentation": "Front-page and contributor text for the public layout: human-author paper links, 153-root CI replay, agent contributions without product names.",
+    "presentation": "Front-page and contributor text for the public layout: public paper links, 153-root CI replay, generic coding-agent contributions and named Valyu DeepResearch contributions.",
     "dated-statement": "A present-tense 'the repository is private' statement replaced by a dated one, so it does not become false on release.",
     "formal-record": "Records the 153-root six-checker CI replay (docs/verification/formal-library-20261026/ci-replay.json); scope stays the shared Lean library.",
     "reproduce-note": "Video-environment paragraph and a note explaining historical local paths retained in evidence files.",
@@ -14,7 +14,8 @@
     "public-presentation": "Public documentation, links, contribution wording, review limits, licences or portable execution instructions. Mathematical claims remain scoped as recorded.",
     "record-redaction": "Local execution context or research-service identifiers removed from a public record; original/public hashes are listed in path-redactions.json.",
     "minimal-factual-comparison": "Retain only the twelve numerical database rows used by the paper. Checker arithmetic is unchanged and its results are byte-identical to the full-snapshot run.",
-    "public-checker-docstring": "Scope description reflects the minimal comparison snapshot; executable AST is unchanged."
+    "public-checker-docstring": "Scope description reflects the minimal comparison snapshot; executable AST is unchanged.",
+    "shared-byline": "Restore Harvey Yorke and Valyu DeepResearch as the public PDF co-authors and name Harvey Yorke in incomplete human-review disclosures. Earlier privacy redactions and research caveats remain in place."
   },
   "changes": {
     "CONTRIBUTING.md": {
@@ -22,8 +23,8 @@
       "reason": "presentation"
     },
     "README.md": {
-      "sha256": "e91719c1197cd052bfa7ba61292086a9f56f03f78d01620a5d2ad8a669d4d46a",
-      "reason": "presentation"
+      "sha256": "d9e3e65609d22922e2af974c1eee77868373ff825ea1b71fd9e83e8014a32c2a",
+      "reason": "shared-byline"
     },
     "chemistry/reaction-networks/mass-action/acr-multistability-bounds/README.md": {
       "sha256": "e32a5d679b0bb0886336cc70eaa206fadcc24b8a43b3fb8540bc94eed93c8034",
@@ -114,8 +115,8 @@
       "reason": "source-attribution"
     },
     "chemistry/reaction-networks/mass-action/cubic-equilibrium-sharpness/readiness.md": {
-      "sha256": "f0013e3707ca606862a32bc8f82594956625e428bed74f7c49328125e09cdf1e",
-      "reason": "public-presentation"
+      "sha256": "6a8970082cb40ea1044a3354e2d703882983349e3818fe44e706e95f10abca08",
+      "reason": "shared-byline"
     },
     "docs/campaigns/2026-10-17-physics-mechanics.md": {
       "sha256": "18289965f2d68bdc26f704b5d6862cc1dbe46ad9101e6c73c569ed60df3baef9",
@@ -146,8 +147,8 @@
       "reason": "reproduce-note"
     },
     "docs/research-provenance.md": {
-      "sha256": "911b022bdbe399c2e7cee1c4ce209b91c4206671db4cec93386d5af4087cf95a",
-      "reason": "record-redaction"
+      "sha256": "85b80a27b58fb44103774e1bf9f75a549e92395312e7ed21fcbe8eb52db03034",
+      "reason": "shared-byline"
     },
     "docs/review-ledger.md": {
       "sha256": "367ad1d97553647750207fe46cae972f42682df5b93086bfd08cd76ed1bd2a1c",
@@ -294,8 +295,8 @@
       "reason": "record-redaction"
     },
     "maths/algebra/bilinear-complexity/mu-q-2-2/readiness.md": {
-      "sha256": "a8160a782687171437d14d76acf59ae9385009ecb10ea74908ce9de69da7b49e",
-      "reason": "record-redaction"
+      "sha256": "a151d421d8142c9b4ac6a876178570fa619e460ffc01a7b6ffa6abf0ca1f3c24",
+      "reason": "shared-byline"
     },
     "maths/algebra/bilinear-complexity/mu-q-2-2/verification/certificates/sat_A2_rank8.manifest.json": {
       "sha256": "9a1065bc77d097b5650d86522c740311cd0f2075a88fcf3eb27828e68053442a",
@@ -362,8 +363,8 @@
       "reason": "record-redaction"
     },
     "maths/combinatorics/combinatorial-games/hex-short-wins/readiness.md": {
-      "sha256": "a90800f497bd6b5ac5273f19fa914945d8d1ccf9f93991ab360d1d40f2cd2d86",
-      "reason": "record-redaction"
+      "sha256": "6b7abd522026e3d8d24de5efae15c1054675120fdf83890c5a527ce5df40e812",
+      "reason": "shared-byline"
     },
     "maths/combinatorics/combinatorial-games/hex-short-wins/verification/review.md": {
       "sha256": "912ce146fa55cbfcaab97cc55d538300400e827d46e5809263200d77ce15ab39",
@@ -430,8 +431,8 @@
       "reason": "record-redaction"
     },
     "maths/combinatorics/phylogenetics/colless-like-integer-weights/readiness.md": {
-      "sha256": "89c2bda45f657ef77aca15956c0180230239b0a09d12f96a37721899a72cace1",
-      "reason": "record-redaction"
+      "sha256": "a1b89254fbc9b9f22b4e06335d3dfcde44203cf59f8019688e8269df0dfcc05a",
+      "reason": "shared-byline"
     },
     "maths/combinatorics/phylogenetics/colless-like-integer-weights/verification/reviews/phylo-colless-prior.md": {
       "sha256": "cc5e40e8302d55a1b11aeca8a19179db1421a8fb7686295e45ad8c694f277276",
@@ -458,8 +459,8 @@
       "reason": "record-redaction"
     },
     "maths/combinatorics/phylogenetics/common-quartet-number/readiness.md": {
-      "sha256": "ddadabbaa9b9f750ef1283ebb16625d96d38ca1484c82a2499094aa30f743949",
-      "reason": "record-redaction"
+      "sha256": "136266644af7310ff6b3761bc31358ca752853aa5b8c63805ac85ccd1e6a4cd5",
+      "reason": "shared-byline"
     },
     "maths/combinatorics/phylogenetics/common-quartet-number/verification/results/resume-20261026/negative-controls.json": {
       "sha256": "56a546c1c2a52e4bf138d802271f18ef16c05d9c5cd59595a714a9674dfc8512",
@@ -538,24 +539,24 @@
       "reason": "portable-paths"
     },
     "maths/combinatorics/ramsey-theory/prime-successor-hales-jewett/README.md": {
-      "sha256": "ff914ab94f116ebf9b846b70145a735bef7e136183589b3b454e524898af24c8",
-      "reason": "public-presentation"
+      "sha256": "c61bb4fbc2c4fc28d3779c3cfd02d4292889b90f7c27d23f6fa613814bd46151",
+      "reason": "shared-byline"
     },
     "maths/combinatorics/ramsey-theory/prime-successor-hales-jewett/author-walkthrough.md": {
       "sha256": "a5a6eaad0044f856eb71e171eefef59c4e9058a1c070eb048616f9109c81ab0f",
       "reason": "public-presentation"
     },
     "maths/combinatorics/ramsey-theory/prime-successor-hales-jewett/readiness.md": {
-      "sha256": "63588dc5f1af267aa0e84d3ff2999bf16e419082091fabac3824f2f5c9544c79",
-      "reason": "public-presentation"
+      "sha256": "7cff669058df6369a9c3d7c7fbc5a5bc4641010a235bb4c19567cd2a38fae4b1",
+      "reason": "shared-byline"
     },
     "maths/combinatorics/spectral-graph-theory/four-negative-eigenvalues/README.md": {
       "sha256": "c761e9b53a668792f29a225f99a5573aa656ec9238c22238851b889ccd76cb9e",
       "reason": "record-redaction"
     },
     "maths/combinatorics/spectral-graph-theory/four-negative-eigenvalues/readiness.md": {
-      "sha256": "f269831c35feac141843565c5905b001e5165da92c9709d3b19771ff2922729a",
-      "reason": "record-redaction"
+      "sha256": "ce2e41d684778880c0fc90b196f7922cb747c54146281303854ffd8294047bed",
+      "reason": "shared-byline"
     },
     "maths/combinatorics/spectral-graph-theory/four-negative-eigenvalues/review.md": {
       "sha256": "80761d8ecdcc59836c47093ffea7569754ac75bbca00714a6d0304f3a2fc9c30",
@@ -602,24 +603,24 @@
       "reason": "record-redaction"
     },
     "maths/dynamical-systems/lotka-volterra/tree-equivalence/README.md": {
-      "sha256": "d80bc73e1095d9466820c9b31d83f872bf2383a971df88a0ea858deb8544ad55",
-      "reason": "public-presentation"
+      "sha256": "da07c0361457a733efcb9364bf769a0d9880466af80bf8b42e75e96e7d7d59d2",
+      "reason": "shared-byline"
     },
     "maths/dynamical-systems/lotka-volterra/tree-equivalence/paper.tex": {
       "sha256": "b05189179551168722183a0044576942d3724b4ebb433916a876dec727dbe350",
       "reason": "source-attribution"
     },
     "maths/dynamical-systems/lotka-volterra/tree-equivalence/readiness.md": {
-      "sha256": "e6f1fc41f5939e293a215a3d5b22cd8a1405a25cbf653710fa7a93db180970b1",
-      "reason": "public-presentation"
+      "sha256": "2e762b48d6a78483fbebceadebc698762efa0cad6931fe7abaa4546d591586f4",
+      "reason": "shared-byline"
     },
     "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/README.md": {
       "sha256": "c717b86cd77af535cd05377c84ff85f8d912f9b9f7162067e139a8c1f3c454af",
       "reason": "record-redaction"
     },
     "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/readiness.md": {
-      "sha256": "09b31ad6d3f0e09ef879e11a06830563b4ac61741ac7c22ee5cfca2d1f475505",
-      "reason": "record-redaction"
+      "sha256": "8d67029e00e07070331bbaad52a14b0a1dcf2e09fe27473f6c88d223ba62686b",
+      "reason": "shared-byline"
     },
     "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/review.md": {
       "sha256": "f7964e9d34afc9111b0c9c53916c088bad69cad8383243b18a298b4067d59e13",
@@ -658,8 +659,8 @@
       "reason": "record-redaction"
     },
     "maths/geometry/rigidity/johnson-solids/readiness.md": {
-      "sha256": "1f3ab3d286183488ffb1510adf283ec26c47dbd0a850493718fda26834d2e7a0",
-      "reason": "record-redaction"
+      "sha256": "551e482e4646a3f85536937bf33748f35369341d212b66c23e59bf62ba59f64c",
+      "reason": "shared-byline"
     },
     "maths/geometry/rigidity/johnson-solids/verification/results/replay/20261026T125315Z/14-latex-1.log": {
       "sha256": "3715ad516a723b939a4cb495f7ae1402be257b1c1d3f4456da1f6f77098dc266",
@@ -698,24 +699,24 @@
       "reason": "record-redaction"
     },
     "maths/geometry/rigidity/truncated-dodecahedron/README.md": {
-      "sha256": "3401ff12feb202f55593de018b0aa0338f5629e434925024b49fc081760ede6f",
-      "reason": "public-presentation"
+      "sha256": "9bcaa71c06afee0c864f798a8afa2f05a9c9f326f97a9d912195fce9ece5ebf9",
+      "reason": "shared-byline"
     },
     "maths/geometry/rigidity/truncated-dodecahedron/author-walkthrough.md": {
       "sha256": "e65d9fe1c4af898fafe44e86c46991da3f01b33d6eae790ab5a42282fac40e63",
       "reason": "public-presentation"
     },
     "maths/geometry/rigidity/truncated-dodecahedron/readiness.md": {
-      "sha256": "6beef63b848c86cf7454b807fcf5268a65b2ef5f0fc9468659a724c02a92dbd1",
-      "reason": "public-presentation"
+      "sha256": "aaa8d0780fa3a70d0be0b2a2332bef17ee06ea20438d0489f05082f88752bd82",
+      "reason": "shared-byline"
     },
     "maths/geometry/tilings/marked-polyform-heesch-numbers/README.md": {
       "sha256": "0e1cc4ac05201a16ec84238acf406bc09716561f03aea0913f4e611856423ae1",
       "reason": "record-redaction"
     },
     "maths/geometry/tilings/marked-polyform-heesch-numbers/readiness.md": {
-      "sha256": "75c02aaa7842374e67168ff937b51e80581d479babfe2261df606a79acf281e6",
-      "reason": "record-redaction"
+      "sha256": "c7a73a8f88e5b49b6b4b9c0760c3d1e042dcd4d1a3c7c948fdd4be88a746fecd",
+      "reason": "shared-byline"
     },
     "maths/geometry/tilings/marked-polyform-heesch-numbers/verification/review.md": {
       "sha256": "eb5e93b6798795c218a8937e3a1bf1ee9ba89443ba125088be706d3eb67ebf9d",
@@ -762,8 +763,8 @@
       "reason": "record-redaction"
     },
     "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/readiness.md": {
-      "sha256": "2f091ae09f17f3f2d84e6f812a5d6bab459cdbf2c45cb14bd8fbf72f510e9845",
-      "reason": "record-redaction"
+      "sha256": "b97c6a2e6e8c7cebdb13e509ffb0e4699f4cc8b0137c1eb5f712326fefecd205",
+      "reason": "shared-byline"
     },
     "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/review.md": {
       "sha256": "7279f465a28b27d3f4aaf252720e8d6097d4e698f04c9d7d65ea5132dbac6953",
@@ -850,8 +851,8 @@
       "reason": "public-presentation"
     },
     "physics/mechanics/elasticity/generic-stiffness-recovery/READINESS.md": {
-      "sha256": "8680da128e3c796c3835671635204a2cd82e54a8a0345798d4c354f8f3275277",
-      "reason": "public-presentation"
+      "sha256": "134c78619fbb4e9e407b2ca39046d1f5e8eb348ef4a6aa1fc538fc6553ba33e5",
+      "reason": "shared-byline"
     },
     "physics/mechanics/elasticity/generic-stiffness-recovery/README.md": {
       "sha256": "58d6c233b50c60231b6ff95de61104dbac842c9d8b7984479710a6c1b24e490e",
@@ -898,8 +899,8 @@
       "reason": "record-redaction"
     },
     "physics/statistical-physics/stochastic-resetting/conjugate-restart/README.md": {
-      "sha256": "d273cc343c329cf8c2d4fb997e63dbc28cf848629f49bd15e9d6bfc0325e387d",
-      "reason": "public-presentation"
+      "sha256": "9290541b125456c02b5b3272791ee4e35753d210afcee0f0f5b4c3a228b44d25",
+      "reason": "shared-byline"
     },
     "physics/statistical-physics/stochastic-resetting/conjugate-restart/author-walkthrough.md": {
       "sha256": "a9b06b7d007420679a7ed336ffd06a64d1573676c7e156d7fc51fc8f44fd164a",
@@ -910,12 +911,12 @@
       "reason": "source-attribution"
     },
     "physics/statistical-physics/stochastic-resetting/conjugate-restart/readiness.md": {
-      "sha256": "7e161c30c10fc30c8d1adb26d2e7b10b3a77054803ee610ca0f9bf81335311af",
-      "reason": "public-presentation"
+      "sha256": "693eb2b155bd88bcb2b6415208d8c98f8d3de61d4a123351710dd57b454d2d5b",
+      "reason": "shared-byline"
     },
     "physics/statistical-physics/thermodynamic-inference/periodic-waiting-time/README.md": {
-      "sha256": "739ddf5263d97625fc06bfc2da0a4aa88f74baa909d49398eebcff73d03f86c4",
-      "reason": "public-presentation"
+      "sha256": "7f45e960179a21571c0802c401a9f17b1284109657648b4b476d6929b63a7529",
+      "reason": "shared-byline"
     },
     "physics/statistical-physics/thermodynamic-inference/periodic-waiting-time/adversarial-review.md": {
       "sha256": "368efbfe1caddf1467c9b50897aa4904e86355f0c8911d25245b39907a7d3c93",
@@ -930,8 +931,8 @@
       "reason": "record-redaction"
     },
     "physics/statistical-physics/thermodynamic-inference/periodic-waiting-time/readiness.md": {
-      "sha256": "ed342341ff3d7e2dca5925a06d102f52091f0537a7f677ea04895b1efd8bbd49",
-      "reason": "public-presentation"
+      "sha256": "902572476c6ebfcbe3e3c388da6c1ffdc30576c8f799f16c1feeb4596df0ef84",
+      "reason": "shared-byline"
     }
   }
 }

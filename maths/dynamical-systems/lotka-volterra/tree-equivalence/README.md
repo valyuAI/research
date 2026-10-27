@@ -4,9 +4,9 @@
 
 A five-page self-contained reconstruction proof for generic Lotka-Volterra tree systems. This is an independent verification note with **no priority claim**: an earlier withdrawn preprint announces a closely matching result. Lean checks the three-vertex path algebra; the full reconstruction theorem remains a written proof.
 
-- The [public PDF](../../../../public-release/papers/tree-equivalence.pdf) lists the human author and records the contribution and review status. The earlier archival `paper.pdf` is omitted from the public export; its hash is retained in the release records.
+- The [public PDF](../../../../public-release/papers/tree-equivalence.pdf) lists Harvey Yorke and Valyu DeepResearch as co-authors and records the contribution and review status. The earlier archival `paper.pdf` is omitted from the public export; its hash is retained in the release records.
 - `paper.tex` and `references.bib`: editable mathematical source and bibliography.
-- [public paper](../../../../public-release/papers/tree-equivalence.pdf): human-author presentation with a research-assistance statement.
+- [public paper](../../../../public-release/papers/tree-equivalence.pdf): shared byline with a research-assistance statement.
 - `journal.tex`: small wrapper around the same mathematical source.
 - `paper.bbl` and `journal.bbl`: generated bibliographies for source portability.
 

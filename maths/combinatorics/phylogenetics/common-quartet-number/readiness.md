@@ -1,6 +1,6 @@
 # Final research readiness: common quartets
 
-Status: sharp-constant update complete. The written proof passed a fresh review; the sharp inequality and equality example compile in Lean with standard axioms only. The updated executable proof checks and all nine final PDF pages pass. The previous full `--game` replay remains the evidence for unchanged finite computations. The author has not yet completed a line-by-line review of every proof.
+Status: sharp-constant update complete. The written proof passed a fresh review; the sharp inequality and equality example compile in Lean with standard axioms only. The updated executable proof checks and all nine final PDF pages pass. The previous full `--game` replay remains the evidence for unchanged finite computations. Harvey Yorke has not yet completed a line-by-line review of every proof.
 
 ## Exact statements
 

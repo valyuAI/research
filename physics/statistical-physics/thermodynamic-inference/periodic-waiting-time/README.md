@@ -6,7 +6,7 @@ A smooth three-state Markov network has exactly zero entropy production under th
 
 [Readiness](readiness.md) · [Plain-language author walkthrough](author-walkthrough.md)
 
-Both presentations are four pages. The main PDF has Harvey Yorke and Valyu DeepResearch in an archival two-name author layout; the journal variant has Harvey Yorke as sole author and a statement identifying the literature, proof-development, verification and writing assistance. The mathematical text is identical. This is a research draft, not an externally refereed publication. Human author approval and priority review remain open.
+The public PDF lists Harvey Yorke and Valyu DeepResearch as co-authors and retains the contribution and review disclosures. The two manuscript presentations checked on 18 October were four pages: the archival two-name layout and a sole-author journal variant. These are historical build records; all presentations use the same mathematical source. This is a research draft, not an externally refereed publication. Harvey Yorke's proof review and approval, and priority review, remain open.
 
 ## The example
 

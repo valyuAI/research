@@ -1,8 +1,9 @@
-"""Build the human-author public PDFs from the recorded manuscript sources.
+"""Build the shared-byline public PDFs from the recorded manuscript sources.
 
 Each public PDF compiles a derived copy of a package's paper.tex in a temporary
-directory: the existing \\journalversion presentation, with Harvey Yorke as sole
-author, plus the standard statement in public-release/papers/contributions.tex.
+directory: Harvey Yorke and Valyu DeepResearch share the byline, while the existing
+\\journalversion body disclosures and the standard statement in
+public-release/papers/contributions.tex are retained.
 Package sources, the original paper.pdf files and docs/artifact-hashes.json are
 never written. An export may omit an archival paper.pdf only if
 public-release/export-exclusions.json declares it at its release hash. Every
@@ -34,17 +35,7 @@ MANIFEST = OUTPUT / "manifest.json"
 RELEASE_HASHES = ROOT / "docs/artifact-hashes.json"
 EXCLUSIONS = ROOT / "public-release/export-exclusions.json"
 EPOCH = int(datetime.datetime(2026, 10, 27, tzinfo=datetime.timezone.utc).timestamp())
-AUTHOR = "Harvey Yorke"
-# Used only for a source without a \journalversion branch; each must match once.
-SOLE_AUTHOR = [
-    ("\\author{Valyu DeepResearch}\n\\address{Valyu AI}\n", ""),
-    ("pdfauthor={Harvey Yorke and Valyu DeepResearch}", "pdfauthor={Harvey Yorke}"),
-    (
-        "\\paperAuthorBlock{Harvey Yorke}\\hspace{.06\\textwidth}"
-        "\\paperAuthorBlock{Valyu DeepResearch}%",
-        "\\paperAuthorBlock{Harvey Yorke}%",
-    ),
-]
+AUTHORS = ("Harvey Yorke", "Valyu DeepResearch")
 
 # Presentation-only wording for the public PDFs; the sources keep the original.
 # Each pair must match the stated number of times or the build fails.
@@ -110,13 +101,13 @@ def derive(slug, source, statement):
             raise ValueError(f"{source}: expected {count} of {old!r}")
         text = text.replace(old, new)
         transforms.append(f"presentation wording: {old!r} -> {new!r} ({count}x)")
-    if "\\journalversion" not in text:
-        for old, new in SOLE_AUTHOR:
-            if text.count(old) != 1:
-                raise ValueError(f"{source}: expected one {old!r}")
-            text = text.replace(old, new)
-        transforms.append("remove second author (no \\journalversion branch)")
     body = text.index("\\begin{document}")
+    # Select the shared author layout only in the preamble; keep journalversion
+    # enabled in the body so its research-assistance disclosures remain visible.
+    preamble = text[:body].replace("\\ifdefined\\journalversion", "\\iffalse")
+    text = preamble + text[body:]
+    transforms.append("retain Harvey Yorke and Valyu DeepResearch as co-authors")
+    body = len(preamble)
     anchor = min(
         text.find(marker, body)
         for marker in ("\\bibliographystyle{", "\\bibliography{")
@@ -249,12 +240,11 @@ def verify(slug, path, statement):
     found = leaks(path)
     if found:
         problems.append(f"PDF bytes contain {', '.join(found)}")
-    if facts["author"] != AUTHOR:
+    if facts["author"] != " and ".join(AUTHORS):
         problems.append(f"PDF author is {facts['author']!r}")
-    if "DeepResearch" in facts["titleBlock"]:
-        problems.append("title block still names DeepResearch")
-    if AUTHOR not in facts["titleBlock"]:
-        problems.append("title block lacks the author")
+    for author in AUTHORS:
+        if author not in facts["titleBlock"]:
+            problems.append(f"title block lacks {author}")
     if "Contributions and AI use" not in facts["text"] or not contains_statement(
         facts["text"], paragraph
     ):
@@ -404,6 +394,7 @@ def build(slugs, check_only):
                 {
                     "sha256": old["sha256"],
                     "bytes": old.get("bytes"),
+                    "author": old.get("author"),
                     "statementSha256": previous.get("statementSha256", statementBefore),
                     "transforms": previous.get("transforms"),
                 },
@@ -438,7 +429,7 @@ def build(slugs, check_only):
     if not check_only and not failures:
         manifest.update(
             {
-                "record": "Human-author public PDFs derived from the recorded manuscript sources",
+                "record": "Public PDFs with Harvey Yorke and Valyu DeepResearch as co-authors, derived from the recorded manuscript sources",
                 "supersededPublic": "Hashes of earlier builds of each public PDF, kept as a record; those builds are not in the export",
                 "generator": "tools/public_papers.py",
                 "statement": {

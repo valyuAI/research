@@ -1,6 +1,6 @@
 # Final research readiness: integer Colless-like weights
 
-Status: research package complete; proof, package build and visual inspection of both PDF pages passed. The author has not yet completed a line-by-line review of every proof.
+Status: research package complete; proof, package build and visual inspection of both PDF pages passed. Harvey Yorke has not yet completed a line-by-line review of every proof.
 
 ## Exact statement
 

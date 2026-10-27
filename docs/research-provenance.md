@@ -41,9 +41,9 @@ An 18 October writing pass also applied the public [scientific-paper-writer skil
 
 Harvey Yorke directed the project. Coding agents developed the arguments, the verification checkers and the manuscript drafts. Valyu DeepResearch carried out the literature, priority and internal adversarial reviews. Narration in the explainer videos is synthetic speech.
 
-The author has not yet completed a line-by-line review of every proof. Correctness rests on the agents' written proofs, independent exact checks and the stated [Lean coverage](formal-coverage.md). No result has been externally peer reviewed. Per-package author walkthroughs are reading guides, not records of human review.
+Harvey Yorke has not yet completed a line-by-line review of every proof. Correctness rests on the agents' written proofs, independent exact checks and the stated [Lean coverage](formal-coverage.md). No result has been externally peer reviewed. Per-package author walkthroughs are reading guides, not records of human review.
 
-The public PDFs in [`public-release/papers/`](../public-release/papers/) list Harvey Yorke as sole author with that contribution statement. Earlier archival `paper.pdf` builds listed Valyu DeepResearch as a co-author; that presentation was dropped because AI systems cannot take responsibility for a paper, consistent with the [AMS policy](https://www.ams.org/publications/journals/policies/UseofArtificialIntelligence). All presentations share the same mathematical source.
+The public PDFs in [`public-release/papers/`](../public-release/papers/) list Harvey Yorke and Valyu DeepResearch as co-authors with that contribution statement. This restores the shared byline used in the earlier archival `paper.pdf` builds. The superseded human-only public builds remain identified by their hashes in the [public PDF manifest](../public-release/papers/manifest.json). The shared byline does not assert completed human proof review or external peer review. All presentations share the same mathematical source.
 
 Competing interest: Valyu AI develops DeepResearch, Search and Contents, which were used throughout this work.
 

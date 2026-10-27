@@ -191,7 +191,7 @@
     {
       "path": "docs/research-provenance.md",
       "originalSha256": "ece2f475ea4113996d39d3535306b2b435298fb968abb370ef894c8f16459674",
-      "publicSha256": "911b022bdbe399c2e7cee1c4ce209b91c4206671db4cec93386d5af4087cf95a",
+      "publicSha256": "85b80a27b58fb44103774e1bf9f75a549e92395312e7ed21fcbe8eb52db03034",
       "redactions": [
         {
           "kind": "review identifier",
@@ -427,7 +427,7 @@
     {
       "path": "maths/algebra/bilinear-complexity/mu-q-2-2/readiness.md",
       "originalSha256": "c9f774380b4710bba5eb904df4089d696a4a2db218c2a228efa4bb51093c43aa",
-      "publicSha256": "a8160a782687171437d14d76acf59ae9385009ecb10ea74908ce9de69da7b49e",
+      "publicSha256": "a151d421d8142c9b4ac6a876178570fa619e460ffc01a7b6ffa6abf0ca1f3c24",
       "redactions": [
         {
           "kind": "review identifier",
@@ -515,7 +515,7 @@
     {
       "path": "maths/combinatorics/combinatorial-games/hex-short-wins/readiness.md",
       "originalSha256": "a408625aa2745af1000a61341b35296e8f25f9a389361d0494b2569228b20b63",
-      "publicSha256": "a90800f497bd6b5ac5273f19fa914945d8d1ccf9f93991ab360d1d40f2cd2d86",
+      "publicSha256": "6b7abd522026e3d8d24de5efae15c1054675120fdf83890c5a527ce5df40e812",
       "redactions": [
         {
           "kind": "review identifier",
@@ -614,7 +614,7 @@
     {
       "path": "maths/combinatorics/phylogenetics/colless-like-integer-weights/readiness.md",
       "originalSha256": "ddbc1abc3aac58ca1f9dd2d566e5754807ab70166b22bafe223766e8c7d6a147",
-      "publicSha256": "89c2bda45f657ef77aca15956c0180230239b0a09d12f96a37721899a72cace1",
+      "publicSha256": "a1b89254fbc9b9f22b4e06335d3dfcde44203cf59f8019688e8269df0dfcc05a",
       "redactions": [
         {
           "kind": "review identifier",
@@ -658,7 +658,7 @@
     {
       "path": "maths/combinatorics/phylogenetics/common-quartet-number/readiness.md",
       "originalSha256": "c505a6bb5fdfebce1c15433f75ad587d9a3a59f74c49a5820e40c1a53f3fd029",
-      "publicSha256": "ddadabbaa9b9f750ef1283ebb16625d96d38ca1484c82a2499094aa30f743949",
+      "publicSha256": "136266644af7310ff6b3761bc31358ca752853aa5b8c63805ac85ccd1e6a4cd5",
       "redactions": [
         {
           "kind": "review identifier",
@@ -868,7 +868,7 @@
     {
       "path": "maths/combinatorics/spectral-graph-theory/four-negative-eigenvalues/readiness.md",
       "originalSha256": "84a83701b9fdae9d1b5667f2e009b0a4e988e068af8cb8a2735385d261041015",
-      "publicSha256": "f269831c35feac141843565c5905b001e5165da92c9709d3b19771ff2922729a",
+      "publicSha256": "ce2e41d684778880c0fc90b196f7922cb747c54146281303854ffd8294047bed",
       "redactions": [
         {
           "kind": "review identifier",
@@ -956,7 +956,7 @@
     {
       "path": "maths/dynamical-systems/threshold-linear-networks/standard-parameter-counterexamples/readiness.md",
       "originalSha256": "d8e215efda6399893093a1ef0d701fe64f9f2f0ca747467a3fbe12758979c010",
-      "publicSha256": "09b31ad6d3f0e09ef879e11a06830563b4ac61741ac7c22ee5cfca2d1f475505",
+      "publicSha256": "8d67029e00e07070331bbaad52a14b0a1dcf2e09fe27473f6c88d223ba62686b",
       "redactions": [
         {
           "kind": "review identifier",
@@ -1026,7 +1026,7 @@
     {
       "path": "maths/geometry/rigidity/johnson-solids/readiness.md",
       "originalSha256": "714c967796475ee5cc9c35dcf1f50daa188b115d3bcbec05c60ffe20cdb90bf7",
-      "publicSha256": "1f3ab3d286183488ffb1510adf283ec26c47dbd0a850493718fda26834d2e7a0",
+      "publicSha256": "551e482e4646a3f85536937bf33748f35369341d212b66c23e59bf62ba59f64c",
       "redactions": [
         {
           "kind": "review identifier",
@@ -1125,7 +1125,7 @@
     {
       "path": "maths/geometry/tilings/marked-polyform-heesch-numbers/readiness.md",
       "originalSha256": "93bd443b28f49eb636c1cd48d278df2da37c9fe85e2e84889843766d7e50caa8",
-      "publicSha256": "75c02aaa7842374e67168ff937b51e80581d479babfe2261df606a79acf281e6",
+      "publicSha256": "c7a73a8f88e5b49b6b4b9c0760c3d1e042dcd4d1a3c7c948fdd4be88a746fecd",
       "redactions": [
         {
           "kind": "review identifier",
@@ -1228,7 +1228,7 @@
     {
       "path": "maths/number-theory/covering-systems/min-modulus-six-odd-part-45/readiness.md",
       "originalSha256": "75540f987cd0350f067b619e2c911bee9676c2d48b2d7907875c78fa442cb5fd",
-      "publicSha256": "2f091ae09f17f3f2d84e6f812a5d6bab459cdbf2c45cb14bd8fbf72f510e9845",
+      "publicSha256": "b97c6a2e6e8c7cebdb13e509ffb0e4699f4cc8b0137c1eb5f712326fefecd205",
       "redactions": [
         {
           "kind": "review identifier",
@@ -1452,7 +1452,7 @@
     {
       "path": "public-release/papers/manifest.json",
       "originalSha256": "ba8d161c36c30ea5c0ba1b23d12af0953e9ddfe04e01a0443740d07d5fdbb96b",
-      "publicSha256": "16288236b7d6ed76dd4f14914d4aa5664db79ff28da5907052db6ecab2efde9e",
+      "publicSha256": "a27a47d1aef43f082f9e4fafd6383b989b52551b1fa01fc1614605998684cde6",
       "redactions": [
         {
           "kind": "contribution terminology",

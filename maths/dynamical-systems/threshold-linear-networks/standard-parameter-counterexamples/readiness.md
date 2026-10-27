@@ -1,6 +1,6 @@
 # Final readiness: CTLN
 
-**Status: computational verification complete at the scope below, recorded on 26 October 2026.** The author has not yet completed a line-by-line review of every proof.
+**Status: computational verification complete at the scope below, recorded on 26 October 2026.** Harvey Yorke has not yet completed a line-by-line review of every proof.
 
 ## Exact retained claim
 

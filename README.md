@@ -14,7 +14,7 @@ Open problems in mathematics and science, worked through by coding agents with V
 Every entry gives a plain-language summary, the result, its boundary, the paper, the video, the checks and any formal proof.
 
 > [!IMPORTANT]
-> **Research drafts, not externally peer reviewed.** The author has not yet completed a line-by-line review of every proof. Reviews were internal; each package records its checks and limitations.
+> **Research drafts, not externally peer reviewed.** Harvey Yorke has not yet completed a line-by-line review of every proof. Reviews were internal; each package records its checks and limitations.
 >
 > The collection contains **23 new-result candidates**, one new proof of a known theorem and two independent verifications. Priority remains bounded by the literature searches. Lean covers the full Hales-Jewett theorem and supporting statements in six other findings; see [formal coverage](#formal-proofs).
 
