@@ -33,9 +33,9 @@ No exact earlier counterexample was found in the inspected material. Search abse
 
 ## Files and remaining decisions
 
-- The [public PDF](../../../../public-release/papers/periodic-waiting-time.pdf) lists the human author and records the contribution and review status. The earlier archival `paper.pdf` is omitted from the public export; its hash is retained in the release records.
+- The [public PDF](../../../../public-release/papers/periodic-waiting-time.pdf) lists Harvey Yorke and Valyu DeepResearch as co-authors and records the contribution and review status. The earlier archival `paper.pdf` is omitted from the public export; its hash is retained in the release records.
 - The two four-page presentations checked on 18 October built with no LaTeX warning, unresolved citation, overfull or underfull box in the recorded logs. These are historical build checks.
-- The sole-author version discloses the actual coding-agent contributions to the counterexample, proof, checker and manuscript, alongside DeepResearch literature work. It does not assert human approval.
+- The public version discloses the actual coding-agent contributions to the counterexample, proof, checker and manuscript, alongside DeepResearch literature work. It does not assert human approval.
 - [author-walkthrough.md](author-walkthrough.md) explains the model and the inference failure without relying on thermodynamics jargon.
 - Remaining work: human line-by-line review and approval of every proof step, and a final source and priority refresh. Specialist scrutiny of the physical interpretation remains valuable and has not occurred.
 

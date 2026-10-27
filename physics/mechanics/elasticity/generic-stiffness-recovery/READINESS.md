@@ -17,11 +17,11 @@ This resolves Conjecture E in the verified 30 April 2025 revision of de Hoop, Il
 - Separate exact, standard-library verification of the finite-direction cubic slice and its eleven membership identities. This part is not formalized in Lean.
 - Current target-paper version and the precise conjecture checked against the actual v2 text. A misleading older extraction from an explicitly versioned URL was excluded.
 - Targeted later-work search and comparison of classical inversion literature. See [the source audit](SOURCE_FACTCHECK.md) for what was read and what remains unavailable.
-- Sole-author variant ([public paper](../../../../public-release/papers/generic-stiffness-recovery.pdf)), editable LaTeX and a reproducible exact-arithmetic package are present. The research-assistance statement records contributions to proof development and manuscript drafting, as well as literature retrieval.
+- Shared-byline PDF ([public paper](../../../../public-release/papers/generic-stiffness-recovery.pdf)), editable LaTeX and a reproducible exact-arithmetic package are present. The research-assistance statement records contributions to proof development and manuscript drafting, as well as literature retrieval.
 
 ## Remaining work
 
-1. **Human author review.** The author has not yet completed a line-by-line review of the argument, the exact claims or the assistance statement.
+1. **Human author review.** Harvey Yorke has not yet completed a line-by-line review of the argument, the exact claims or the assistance statement.
 2. **Closest-prior full text.** Obtain and inspect Aristégui and Baste (1997), DOI [10.1121/1.418040](https://doi.org/10.1121/1.418040), especially its uniqueness and finite-measurement claims. The present audit has the publisher abstract only.
 3. **Outside mathematical scrutiny.** A specialist review of the algebraic-geometric deductions is strongly advisable and has not occurred.
 

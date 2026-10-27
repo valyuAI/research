@@ -21,7 +21,7 @@ The first command independently reconstructs the exact geometry, verifies the tr
 
 The replay writes [its result and input hashes](verification/independent_verification.json); [the source audit](source-audit.md) explains what is checked. The supplied `.sing` file records the cubic forms and is parsed as data only. The discovery generator is unnecessary for verification.
 
-Run `sh build.sh` to rebuild both PDFs with `pdflatex` and BibTeX, using the supplied diagram. The optional `--redraw-figure` flag also needs matplotlib. The illustration uses floating-point projection; the mathematical checks use exact arithmetic. The linked public PDF uses the human-author presentation and the current contribution statement. To rebuild it, run `python3 tools/public_papers.py build --only truncated-dodecahedron` from the repository root; `build.sh` reproduces the earlier manuscript presentations locally.
+Run `sh build.sh` to rebuild both PDFs with `pdflatex` and BibTeX, using the supplied diagram. The optional `--redraw-figure` flag also needs matplotlib. The illustration uses floating-point projection; the mathematical checks use exact arithmetic. The linked public PDF lists Harvey Yorke and Valyu DeepResearch as co-authors and includes the current contribution statement. To rebuild it, run `python3 tools/public_papers.py build --only truncated-dodecahedron` from the repository root; `build.sh` reproduces the earlier manuscript presentations locally.
 
 ## Verification scope
 

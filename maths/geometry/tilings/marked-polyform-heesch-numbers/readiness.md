@@ -1,6 +1,6 @@
 # Research readiness
 
-**Narrowed computational result; the author has not yet completed a line-by-line review.** No pending DRAT process blocks the retained tables. Originality remains bounded and qualified.
+**Narrowed computational result; Harvey Yorke has not yet completed a line-by-line review.** No pending DRAT process blocks the retained tables. Originality remains bounded and qualified.
 
 ## Exact scope
 

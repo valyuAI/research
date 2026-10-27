@@ -4,9 +4,9 @@
 
 For every prime p, the off-diagonal number HJ(p+1,2) equals p+1. The three-page paper gives an explicit coloring and a complete proof; the entire main theorem is formalized in Lean. Correctness confidence is high. Priority remains provisional after the recorded literature review.
 
-- The [public PDF](../../../../public-release/papers/prime-successor-hales-jewett.pdf) lists the human author and records the contribution and review status. The earlier archival `paper.pdf` is omitted from the public export; its hash is retained in the release records.
+- The [public PDF](../../../../public-release/papers/prime-successor-hales-jewett.pdf) lists Harvey Yorke and Valyu DeepResearch as co-authors and records the contribution and review status. The earlier archival `paper.pdf` is omitted from the public export; its hash is retained in the release records.
 - `paper.tex` and `references.bib`: editable mathematical source and bibliography.
-- [public paper](../../../../public-release/papers/prime-successor-hales-jewett.pdf): human-author presentation with a research-assistance statement.
+- [public paper](../../../../public-release/papers/prime-successor-hales-jewett.pdf): shared byline with a research-assistance statement.
 - `journal.tex`: small wrapper around the same mathematical source.
 - `paper.bbl` and `journal.bbl`: generated bibliographies for source portability.
 

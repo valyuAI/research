@@ -33,8 +33,8 @@ The fresh replay checked 490 blue histograms, all 2,685,817 ordered nonempty var
 
 ## Remaining work
 
-1. The author has not yet completed a line-by-line review of the proof. The [author walkthrough](author-walkthrough.md) lists the steps that review must cover. No human sign-off is recorded here.
-2. Editing by another coding agent does not substitute for that review. The sole-author [public paper](../../../../public-release/papers/prime-successor-hales-jewett.pdf) is a review draft, not a declaration that it has occurred.
-3. The [public PDF](../../../../public-release/papers/prime-successor-hales-jewett.pdf) lists the human author and records the contribution and review status. The earlier archival `paper.pdf` is omitted from the public export; its hash is retained in the release records.
+1. Harvey Yorke has not yet completed a line-by-line review of the proof. The [author walkthrough](author-walkthrough.md) lists the steps that review must cover. No human sign-off is recorded here.
+2. Editing by another coding agent does not substitute for that review. The [public paper](../../../../public-release/papers/prime-successor-hales-jewett.pdf) is a review draft, not a declaration that it has occurred.
+3. The [public PDF](../../../../public-release/papers/prime-successor-hales-jewett.pdf) lists Harvey Yorke and Valyu DeepResearch as co-authors and records the contribution and review status. The earlier archival `paper.pdf` is omitted from the public export; its hash is retained in the release records.
 
 Correctness confidence: high for the checked theorem. Originality confidence: moderate. Acceptance and significance remain editorial judgments.

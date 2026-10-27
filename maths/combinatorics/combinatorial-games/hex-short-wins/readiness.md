@@ -1,6 +1,6 @@
 # Research readiness
 
-No pending computation blocks the retained certified claims. The author has not yet completed a line-by-line review.
+No pending computation blocks the retained certified claims. Harvey Yorke has not yet completed a line-by-line review.
 
 ## Retained result and scope
 

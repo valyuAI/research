@@ -15,4 +15,4 @@ The proposed contribution is global optimality and uniqueness of the one-dimensi
 
 Priority remains provisional. A bounded current search returned the Evans-Ray source and related resetting literature, but no verified earlier proof of the exact two additions. Absence of a result in that search is not a novelty certificate. Compare the final argument with the complete closest-prior texts before claiming first discovery.
 
-The author has not yet completed a line-by-line review of the proof or approved the assistance disclosure. The [walkthrough](author-walkthrough.md) identifies the decisions that require that review.
+Harvey Yorke has not yet completed a line-by-line review of the proof or approved the assistance disclosure. The [walkthrough](author-walkthrough.md) identifies the decisions that require that review.

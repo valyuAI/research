@@ -4,9 +4,9 @@
 
 A five-page paper on global optimality and uniqueness of conjugate renewal restart laws for one-dimensional Brownian search, together with a finite-state reversibility characterization. Lean covers the finite-kernel inequality and exact counterexample. The analytic theorem and converse have written proofs; priority remains provisional.
 
-- The [public PDF](../../../../public-release/papers/conjugate-restart.pdf) lists the human author and records the contribution and review status. The earlier archival `paper.pdf` is omitted from the public export; its hash is retained in the release records.
+- The [public PDF](../../../../public-release/papers/conjugate-restart.pdf) lists Harvey Yorke and Valyu DeepResearch as co-authors and records the contribution and review status. The earlier archival `paper.pdf` is omitted from the public export; its hash is retained in the release records.
 - `paper.tex` and `references.bib`: editable mathematical source and bibliography.
-- [public paper](../../../../public-release/papers/conjugate-restart.pdf): human-author presentation with a research-assistance statement.
+- [public paper](../../../../public-release/papers/conjugate-restart.pdf): shared byline with a research-assistance statement.
 - `journal.tex`: small wrapper around the same mathematical source.
 - `paper.bbl` and `journal.bbl`: generated bibliographies for source portability.
 

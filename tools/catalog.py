@@ -489,7 +489,7 @@ def exportReadme(finding, files, repoUrl):
         "",
         "Files: " + ", ".join(f"[{name}]({name})" for name in files),
         "",
-        "The paper is the human-author presentation of the recorded manuscript. The LaTeX source, "
+        "The paper lists Harvey Yorke and Valyu DeepResearch as co-authors. The LaTeX source, "
         f"proofs and verification are in the full source collection: {sourceReference}.",
         "",
         "Papers and original media: [CC BY 4.0](../LICENSES/CC-BY-4.0.txt), subject to "

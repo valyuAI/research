@@ -14,13 +14,13 @@
         "pages": 8,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/acr-multistability-bounds.pdf",
-        "sha256": "6f833baed21c088cf141c18c0d3118a467d487c18b9cd03daaf6a3b38cfe2b73",
-        "bytes": 349165,
+        "sha256": "11a5b61d443d61bc395d7daae070cb9dd008e5118d78d6171c7185a3281cc6aa",
+        "bytes": 350087,
         "pages": 8,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "Absolute concentration robustness with multistability"
       },
       "transforms": [
@@ -28,6 +28,7 @@
         "define \\journalversion",
         "presentation wording: 'has a hand proof' -> 'has a direct written proof' (1x)",
         "presentation wording: 'are proved by hand and' -> 'have direct written proofs and' (1x)",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -37,6 +38,19 @@
           "bytes": 349100,
           "statementSha256": "752a5bf806b0326100e20a8a7e01d77fd8803d7578c86ada4fa9ee23ad7c3d46",
           "transforms": [
+            "define \\journalversion",
+            "presentation wording: 'has a hand proof' -> 'has a direct written proof' (1x)",
+            "presentation wording: 'are proved by hand and' -> 'have direct written proofs and' (1x)",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "6f833baed21c088cf141c18c0d3118a467d487c18b9cd03daaf6a3b38cfe2b73",
+          "bytes": 349165,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
             "define \\journalversion",
             "presentation wording: 'has a hand proof' -> 'has a direct written proof' (1x)",
             "presentation wording: 'are proved by hand and' -> 'have direct written proofs and' (1x)",
@@ -59,19 +73,19 @@
         "pages": 3,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/bridge-thirteen-crossing-census.pdf",
-        "sha256": "185a4a54f350b67b74564b4301369456bbac6fadb95e7ff9853e9847c48e80dd",
-        "bytes": 361917,
+        "sha256": "3857c65e2cf78cd2123b6f1afc39763997b30eb72141c8842c944090f861ca5b",
+        "bytes": 362198,
         "pages": 3,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "Twenty-five bridge-four knots from eight-point meridian actions"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
-        "remove second author (no \\journalversion branch)",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -81,6 +95,18 @@
           "bytes": 361886,
           "statementSha256": "752a5bf806b0326100e20a8a7e01d77fd8803d7578c86ada4fa9ee23ad7c3d46",
           "transforms": [
+            "define \\journalversion",
+            "remove second author (no \\journalversion branch)",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "185a4a54f350b67b74564b4301369456bbac6fadb95e7ff9853e9847c48e80dd",
+          "bytes": 361917,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
             "define \\journalversion",
             "remove second author (no \\journalversion branch)",
             "insert public-release/papers/contributions.tex before bibliography"
@@ -102,18 +128,19 @@
         "pages": 7,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/cactus-response-coupling.pdf",
-        "sha256": "f08ca5754a390da18381270824eb98ccbf05cdaf39f3ba2d67c7865908069bbc",
-        "bytes": 396852,
+        "sha256": "805f43c4127336b2ec41427f6c0bffec88879beddcdc0268d6490f72fe26a02b",
+        "bytes": 397111,
         "pages": 7,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "Unicyclic and cactus networks satisfy the topological response conjecture"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -123,6 +150,17 @@
           "bytes": 396801,
           "statementSha256": "752a5bf806b0326100e20a8a7e01d77fd8803d7578c86ada4fa9ee23ad7c3d46",
           "transforms": [
+            "define \\journalversion",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "f08ca5754a390da18381270824eb98ccbf05cdaf39f3ba2d67c7865908069bbc",
+          "bytes": 396852,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
             "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
@@ -143,18 +181,19 @@
         "pages": 5,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/cartesian-tree-square-free-words.pdf",
-        "sha256": "329b2f3c021d9b953515323fd2491aa2a639020c88792ddbf89d60acfaae9d2e",
-        "bytes": 322491,
+        "sha256": "52bfc0b12feb6939699ee10bfa0b046e86150ebf175bfad383fc37c906bc366e",
+        "bytes": 322897,
         "pages": 5,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "Infinite words avoiding long Cartesian-tree squares"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -164,6 +203,17 @@
           "bytes": 322454,
           "statementSha256": "752a5bf806b0326100e20a8a7e01d77fd8803d7578c86ada4fa9ee23ad7c3d46",
           "transforms": [
+            "define \\journalversion",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "329b2f3c021d9b953515323fd2491aa2a639020c88792ddbf89d60acfaae9d2e",
+          "bytes": 322491,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
             "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
@@ -184,18 +234,19 @@
         "pages": 2,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/colless-like-integer-weights.pdf",
-        "sha256": "709330738790358723f7bcc1791e3ac6e44e0919cd03572bfc4de471bd10d9ae",
-        "bytes": 277221,
+        "sha256": "60e79ee1f8d449adb8746f6db2933fbbc736cc2b8344cc9d8737f339da229b4a",
+        "bytes": 278648,
         "pages": 2,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "Integer weights never give a sound Colless-like balance index"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -205,6 +256,17 @@
           "bytes": 277169,
           "statementSha256": "752a5bf806b0326100e20a8a7e01d77fd8803d7578c86ada4fa9ee23ad7c3d46",
           "transforms": [
+            "define \\journalversion",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "709330738790358723f7bcc1791e3ac6e44e0919cd03572bfc4de471bd10d9ae",
+          "bytes": 277221,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
             "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
@@ -225,18 +287,19 @@
         "pages": 9,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/common-quartet-number.pdf",
-        "sha256": "4fb1e7b3844561e52744bad4be9ae27eff58ee0caa7e95704d603a16c2f9c020",
-        "bytes": 396528,
+        "sha256": "351b1deb08ec08f9939525bd69cf9441ee2f1a6cc8c50b31a93495eb7e65000b",
+        "bytes": 397017,
         "pages": 9,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "Three phylogenetic trees on fourteen leaves always share a quartet"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -246,6 +309,17 @@
           "bytes": 396688,
           "statementSha256": "752a5bf806b0326100e20a8a7e01d77fd8803d7578c86ada4fa9ee23ad7c3d46",
           "transforms": [
+            "define \\journalversion",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "4fb1e7b3844561e52744bad4be9ae27eff58ee0caa7e95704d603a16c2f9c020",
+          "bytes": 396528,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
             "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
@@ -266,18 +340,19 @@
         "pages": 5,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/conjugate-restart.pdf",
-        "sha256": "f9adb37c616945e9d1c9ccbbee5a12d9a24cc93912bfcdd6e50573eddbe949d4",
-        "bytes": 320288,
+        "sha256": "3895104a11cae34e21c8004e4781e905868be8ff710733823bbcbd77c09393ce",
+        "bytes": 320754,
         "pages": 5,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "Global optimality of conjugate restart laws"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -289,6 +364,17 @@
           "transforms": [
             "define \\journalversion",
             "normalize contribution terminology",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "f9adb37c616945e9d1c9ccbbee5a12d9a24cc93912bfcdd6e50573eddbe949d4",
+          "bytes": 320288,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
+            "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
         }
@@ -308,18 +394,19 @@
         "pages": 4,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/cubic-equilibrium-sharpness.pdf",
-        "sha256": "e4156c5184767206bfd12e5a39bcc74e393455ab57377cf5a2961b9c9ec2599e",
-        "bytes": 313139,
+        "sha256": "09d97c583b0ad80e9b26d412438eb80af54ba3d48afd5ced73c20bd682ad448c",
+        "bytes": 313667,
         "pages": 5,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "Sharp equilibrium counts with cubic sources"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -331,6 +418,17 @@
           "transforms": [
             "define \\journalversion",
             "normalize contribution terminology",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "e4156c5184767206bfd12e5a39bcc74e393455ab57377cf5a2961b9c9ec2599e",
+          "bytes": 313139,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
+            "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
         }
@@ -350,18 +448,19 @@
         "pages": 5,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/cubic-tic-tac-toe-surplus.pdf",
-        "sha256": "8b835bef633b4cd7aa8eabedbc86b2afa801f5142fb7c841e0d7c5aa0969f809",
-        "bytes": 352477,
+        "sha256": "bcffe1055dea37676c55bf54f166bd402551075bc287050ee9750b62df4e3cc9",
+        "bytes": 353048,
         "pages": 5,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "A Hall-surplus certificate for 7x7x7 tic-tac-toe"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -371,6 +470,17 @@
           "bytes": 352434,
           "statementSha256": "752a5bf806b0326100e20a8a7e01d77fd8803d7578c86ada4fa9ee23ad7c3d46",
           "transforms": [
+            "define \\journalversion",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "8b835bef633b4cd7aa8eabedbc86b2afa801f5142fb7c841e0d7c5aa0969f809",
+          "bytes": 352477,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
             "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
@@ -391,18 +501,19 @@
         "pages": 8,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/distance-three-qudit-codes.pdf",
-        "sha256": "19705edf2242823899a6c92899f7921919c20cc924af690f12ff6af52a0af28e",
-        "bytes": 442370,
+        "sha256": "cf9dab959445fae2990ac0e34d369aa3c30177894500ac66c1a75d0dc419e1b2",
+        "bytes": 442835,
         "pages": 9,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "All qudit stabilizer codes of distance three"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -412,6 +523,17 @@
           "bytes": 442291,
           "statementSha256": "752a5bf806b0326100e20a8a7e01d77fd8803d7578c86ada4fa9ee23ad7c3d46",
           "transforms": [
+            "define \\journalversion",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "19705edf2242823899a6c92899f7921919c20cc924af690f12ff6af52a0af28e",
+          "bytes": 442370,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
             "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
@@ -432,18 +554,19 @@
         "pages": 7,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/four-negative-eigenvalues.pdf",
-        "sha256": "d2a1c2ac33d8d82a4c9981953c5d44c4148e9e7f85b1dc8eab73c915da1fdb4f",
-        "bytes": 387436,
+        "sha256": "9277adce75baa2e98bd4cc7764ce19796fd6b4d68a666ee666bfb57d7d303224",
+        "bytes": 387722,
         "pages": 8,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "Reduced graphs with four negative eigenvalues have at most thirty vertices"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -453,6 +576,17 @@
           "bytes": 387390,
           "statementSha256": "752a5bf806b0326100e20a8a7e01d77fd8803d7578c86ada4fa9ee23ad7c3d46",
           "transforms": [
+            "define \\journalversion",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "d2a1c2ac33d8d82a4c9981953c5d44c4148e9e7f85b1dc8eab73c915da1fdb4f",
+          "bytes": 387436,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
             "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
@@ -473,18 +607,19 @@
         "pages": 10,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/generic-stiffness-recovery.pdf",
-        "sha256": "c5ecdffe9bc2f3e861ba6da42dd40650f3c84ec27920de0f8fba9964b2f78877",
-        "bytes": 406330,
+        "sha256": "fb91d6bd1d8df2ea9a6fa207e949f954423a56123d3b4cb1ceeed494a3ac5534",
+        "bytes": 406985,
         "pages": 11,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "Generic Recovery of Three-Dimensional Elasticity from the Slowness Polynomial"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -494,6 +629,17 @@
           "bytes": 406261,
           "statementSha256": "752a5bf806b0326100e20a8a7e01d77fd8803d7578c86ada4fa9ee23ad7c3d46",
           "transforms": [
+            "define \\journalversion",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "c5ecdffe9bc2f3e861ba6da42dd40650f3c84ec27920de0f8fba9964b2f78877",
+          "bytes": 406330,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
             "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
@@ -514,18 +660,19 @@
         "pages": 6,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/hex-short-wins.pdf",
-        "sha256": "a5ddd7b23c85216dda5b57e76f10985edff74085035edf0de99eba74f36895ed",
-        "bytes": 325929,
+        "sha256": "a5d34b1fd46c1697d9babec34198003d0b4ee5e9426419bd18168440cfcb2694",
+        "bytes": 326548,
         "pages": 6,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "Short forced wins in small Hex"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -535,6 +682,17 @@
           "bytes": 325894,
           "statementSha256": "752a5bf806b0326100e20a8a7e01d77fd8803d7578c86ada4fa9ee23ad7c3d46",
           "transforms": [
+            "define \\journalversion",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "a5ddd7b23c85216dda5b57e76f10985edff74085035edf0de99eba74f36895ed",
+          "bytes": 325929,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
             "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
@@ -555,18 +713,19 @@
         "pages": 10,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/johnson-solids.pdf",
-        "sha256": "7088cccba3344a3779a6d3439c4f22ed0334c14059c226fd3ed1536c2514d0ad",
-        "bytes": 373010,
+        "sha256": "6b14bfcfe1d07e2c5171f79d7060242cbcf661f5d1801dae1f4acafd395f4eb4",
+        "bytes": 373681,
         "pages": 10,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "Rigidity of the Johnson solids with fixed edge lengths and flat faces"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -576,6 +735,17 @@
           "bytes": 372982,
           "statementSha256": "752a5bf806b0326100e20a8a7e01d77fd8803d7578c86ada4fa9ee23ad7c3d46",
           "transforms": [
+            "define \\journalversion",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "7088cccba3344a3779a6d3439c4f22ed0334c14059c226fd3ed1536c2514d0ad",
+          "bytes": 373010,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
             "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
@@ -596,18 +766,19 @@
         "pages": 4,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/latin-tableaux-staircase-count.pdf",
-        "sha256": "2c4666ad9066b8db32cab047a0a7b5e18e6ce39311f1bb2870b9eadc833ff006",
-        "bytes": 318436,
+        "sha256": "1a76a30b459d81e063aac0af0881d88c06f99b496dca129f93419ecfd52a3386",
+        "bytes": 318976,
         "pages": 4,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "Latin tableaux of shape (k,k-1,...,4,3,3)"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -617,6 +788,17 @@
           "bytes": 318379,
           "statementSha256": "752a5bf806b0326100e20a8a7e01d77fd8803d7578c86ada4fa9ee23ad7c3d46",
           "transforms": [
+            "define \\journalversion",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "2c4666ad9066b8db32cab047a0a7b5e18e6ce39311f1bb2870b9eadc833ff006",
+          "bytes": 318436,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
             "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
@@ -637,18 +819,19 @@
         "pages": 9,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/marked-polyform-heesch-numbers.pdf",
-        "sha256": "3205ddb953e9b3832ee84baf69798d7b8410995f754603f8739eccbc90087975",
-        "bytes": 679377,
+        "sha256": "b6cff3fb18781986af6e22cd49df8dd5f736d8da0c6bc2145d65340c867d6247",
+        "bytes": 679696,
         "pages": 10,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "Exact Heesch numbers of small edge-marked polyforms"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -658,6 +841,17 @@
           "bytes": 679947,
           "statementSha256": "752a5bf806b0326100e20a8a7e01d77fd8803d7578c86ada4fa9ee23ad7c3d46",
           "transforms": [
+            "define \\journalversion",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "3205ddb953e9b3832ee84baf69798d7b8410995f754603f8739eccbc90087975",
+          "bytes": 679377,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
             "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
@@ -678,18 +872,19 @@
         "pages": 5,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/min-modulus-six-odd-part-45.pdf",
-        "sha256": "4cf7b883940a112c11b6a97fa6743c99657dbf2b00deb51bf7707bf255135fa8",
-        "bytes": 337017,
+        "sha256": "942257cc271afdb2d32888c8f5fee32031f0d43feefe64ff89e6c1604b201f68",
+        "bytes": 337460,
         "pages": 5,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "No distinct covering system with minimum modulus 6 and moduli dividing 2a 45"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -699,6 +894,17 @@
           "bytes": 336976,
           "statementSha256": "752a5bf806b0326100e20a8a7e01d77fd8803d7578c86ada4fa9ee23ad7c3d46",
           "transforms": [
+            "define \\journalversion",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "4cf7b883940a112c11b6a97fa6743c99657dbf2b00deb51bf7707bf255135fa8",
+          "bytes": 337017,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
             "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
@@ -719,18 +925,19 @@
         "pages": 6,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/mu-q-2-2.pdf",
-        "sha256": "2f899308930bc1df304378d529a6dd1ebd63ca1575bf793f8a2859a0ae213ca0",
-        "bytes": 400816,
+        "sha256": "4a7faeecf715cef6cc611afe907c110db6474ba73b67d11d0c1a22829a2eaff3",
+        "bytes": 401443,
         "pages": 6,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "The bilinear complexity of Fq2[u]/(u2) and of length-six cyclic convolution over F2"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -740,6 +947,17 @@
           "bytes": 400770,
           "statementSha256": "752a5bf806b0326100e20a8a7e01d77fd8803d7578c86ada4fa9ee23ad7c3d46",
           "transforms": [
+            "define \\journalversion",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "2f899308930bc1df304378d529a6dd1ebd63ca1575bf793f8a2859a0ae213ca0",
+          "bytes": 400816,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
             "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
@@ -760,18 +978,19 @@
         "pages": 4,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/periodic-waiting-time.pdf",
-        "sha256": "77f301c38449df1301268629b44e3f8be61b49e6c0b2772063b95d39e828a078",
-        "bytes": 311612,
+        "sha256": "c69c557fe5db1bc16ba8fe4bcff97bda4464918948314c1eadf41db15b5bb60a",
+        "bytes": 312032,
         "pages": 4,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "A counterexample to a periodic waiting-time entropy bound"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -783,6 +1002,17 @@
           "transforms": [
             "define \\journalversion",
             "normalize contribution terminology",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "77f301c38449df1301268629b44e3f8be61b49e6c0b2772063b95d39e828a078",
+          "bytes": 311612,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
+            "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
         }
@@ -802,18 +1032,19 @@
         "pages": 3,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/prime-successor-hales-jewett.pdf",
-        "sha256": "1ff6a5cfcd56313a6bbe1d2a0e90ec377413166920169dbf8d9a990b44c42937",
-        "bytes": 278574,
+        "sha256": "5a27a51f38d07e6511ccab2e744463829455be100052685667c868d9280de81a",
+        "bytes": 278774,
         "pages": 3,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "Exact off-diagonal Hales-Jewett numbers at prime successors"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -823,6 +1054,17 @@
           "bytes": 278556,
           "statementSha256": "752a5bf806b0326100e20a8a7e01d77fd8803d7578c86ada4fa9ee23ad7c3d46",
           "transforms": [
+            "define \\journalversion",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "1ff6a5cfcd56313a6bbe1d2a0e90ec377413166920169dbf8d9a990b44c42937",
+          "bytes": 278574,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
             "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
@@ -843,18 +1085,19 @@
         "pages": 6,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/rotation-wins-penney.pdf",
-        "sha256": "982eac1bb733b83e747e59bac17bcd1ebfea25525c6bf1e0634338a6bf9a33e3",
-        "bytes": 318330,
+        "sha256": "029c9b0ffbb64800e81720d11de256afe4a89ea094de8db91fc552f4352c0c06",
+        "bytes": 319069,
         "pages": 7,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "Right rotation wins Penney's game for permutations"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -864,6 +1107,17 @@
           "bytes": 317888,
           "statementSha256": "752a5bf806b0326100e20a8a7e01d77fd8803d7578c86ada4fa9ee23ad7c3d46",
           "transforms": [
+            "define \\journalversion",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "982eac1bb733b83e747e59bac17bcd1ebfea25525c6bf1e0634338a6bf9a33e3",
+          "bytes": 318330,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
             "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
@@ -884,18 +1138,19 @@
         "pages": 8,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/special-octagon-symplectic-billiards.pdf",
-        "sha256": "02ff9eb161f8c5ae05c5ec394493f51af018816f4569dc7b33023598f50448f1",
-        "bytes": 347178,
+        "sha256": "f6fb3491bd51a0f89d8cecfb7838dbd848f354f052f869e5a67919a6f024347f",
+        "bytes": 347644,
         "pages": 8,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "All symplectic billiard orbits in special octagons are periodic"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -905,6 +1160,17 @@
           "bytes": 347410,
           "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
           "transforms": [
+            "define \\journalversion",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "02ff9eb161f8c5ae05c5ec394493f51af018816f4569dc7b33023598f50448f1",
+          "bytes": 347178,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
             "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
@@ -925,18 +1191,19 @@
         "pages": 6,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/standard-parameter-counterexamples.pdf",
-        "sha256": "2ed0a02225199942b003535f38abcae36164a78f7ed1818dec3945a16d95e682",
-        "bytes": 437307,
+        "sha256": "656dcf321c85cceb3abb9139525ab30bcdb17c4377a7443a9605ac774626e2e8",
+        "bytes": 437578,
         "pages": 6,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "Small counterexamples to the target-free clique conjecture at the standard CTLN parameters"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -946,6 +1213,17 @@
           "bytes": 437870,
           "statementSha256": "752a5bf806b0326100e20a8a7e01d77fd8803d7578c86ada4fa9ee23ad7c3d46",
           "transforms": [
+            "define \\journalversion",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "2ed0a02225199942b003535f38abcae36164a78f7ed1818dec3945a16d95e682",
+          "bytes": 437307,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
             "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
@@ -966,18 +1244,19 @@
         "pages": 6,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/three-team-manipulation-exact.pdf",
-        "sha256": "5aa4e1f082f61576b42a2012429cc4853183a5a3753d9ac6535c098e6f41c251",
-        "bytes": 391840,
+        "sha256": "1f269a2e0d641d5d6aa40a7c01a00bb525b3dfcac183f0a872cf3ac7acd03acb",
+        "bytes": 392371,
         "pages": 6,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "Exact optimal manipulability of Condorcet-consistent tournament rules"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -987,6 +1266,17 @@
           "bytes": 391756,
           "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
           "transforms": [
+            "define \\journalversion",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "5aa4e1f082f61576b42a2012429cc4853183a5a3753d9ac6535c098e6f41c251",
+          "bytes": 391840,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
             "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
@@ -1007,18 +1297,19 @@
         "pages": 5,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/tree-equivalence.pdf",
-        "sha256": "be838863cb0b9cea3e7e569ac12fde1e80ad9ee6bc5439ebd9b4045b2a314765",
-        "bytes": 333994,
+        "sha256": "96cf559b5b52e19eef2f68ee04deec81c99e00eb1c68006a1e1d4d37c9e114bd",
+        "bytes": 334505,
         "pages": 6,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "Linear equivalence of Lotka-Volterra tree systems"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -1030,6 +1321,17 @@
           "transforms": [
             "define \\journalversion",
             "normalize contribution terminology",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
+        },
+        {
+          "sha256": "be838863cb0b9cea3e7e569ac12fde1e80ad9ee6bc5439ebd9b4045b2a314765",
+          "bytes": 333994,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
+            "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
         }
@@ -1049,18 +1351,19 @@
         "pages": 5,
         "author": "Harvey Yorke and Valyu DeepResearch"
       },
-      "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+      "statementSha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29",
       "public": {
         "path": "public-release/papers/truncated-dodecahedron.pdf",
-        "sha256": "70a25e595517ef1726fe00f04f043321082cf5af295671e3be4665ed2550ef42",
-        "bytes": 300556,
+        "sha256": "37f20f9e800b80485a486965fb2ae5751736b8f18ebd953adca6033965897b70",
+        "bytes": 301116,
         "pages": 5,
-        "author": "Harvey Yorke",
+        "author": "Harvey Yorke and Valyu DeepResearch",
         "title": "The truncated dodecahedron is rigid"
       },
       "transforms": [
         "suppress pdfTeX file metadata",
         "define \\journalversion",
+        "retain Harvey Yorke and Valyu DeepResearch as co-authors",
         "insert public-release/papers/contributions.tex before bibliography"
       ],
       "undefinedReferenceWarnings": [],
@@ -1073,15 +1376,26 @@
             "define \\journalversion",
             "insert public-release/papers/contributions.tex before bibliography"
           ]
+        },
+        {
+          "sha256": "70a25e595517ef1726fe00f04f043321082cf5af295671e3be4665ed2550ef42",
+          "bytes": 300556,
+          "author": "Harvey Yorke",
+          "statementSha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98",
+          "transforms": [
+            "suppress pdfTeX file metadata",
+            "define \\journalversion",
+            "insert public-release/papers/contributions.tex before bibliography"
+          ]
         }
       ]
     }
   },
-  "record": "Human-author public PDFs derived from the recorded manuscript sources",
+  "record": "Public PDFs with Harvey Yorke and Valyu DeepResearch as co-authors, derived from the recorded manuscript sources",
   "generator": "tools/public_papers.py",
   "statement": {
     "path": "public-release/papers/contributions.tex",
-    "sha256": "dbfdcb8d3696ada0875a3ad56f5aef674054f0ce440b4702c779f4a400005d98"
+    "sha256": "41eb11356b1004b51ffccb806535df345b0d08ea2102f3e2c7b4aa50dbff5e29"
   },
   "sourceDateEpoch": 1793059200,
   "tex": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026)",

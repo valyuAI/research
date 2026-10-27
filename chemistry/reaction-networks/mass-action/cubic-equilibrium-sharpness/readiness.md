@@ -30,9 +30,9 @@ No exact earlier all-`n` theorem was located in those bounded checks. That is **
 
 ## Files and remaining decisions
 
-- The [public PDF](../../../../public-release/papers/cubic-equilibrium-sharpness.pdf) lists the human author and records the contribution and review status. The earlier archival `paper.pdf` is omitted from the public export; its hash is retained in the release records.
+- The [public PDF](../../../../public-release/papers/cubic-equilibrium-sharpness.pdf) lists Harvey Yorke and Valyu DeepResearch as co-authors and records the contribution and review status. The earlier archival `paper.pdf` is omitted from the public export; its hash is retained in the release records.
 - The two four-page presentations checked on 18 October built with no LaTeX warning, unresolved citation, overfull or underfull box in the recorded logs. These are historical build checks.
-- The sole-author presentation discloses the actual coding-agent contribution to the construction, proof, verification programs and manuscript, alongside DeepResearch's literature work. It does not claim that the human author has already approved the argument.
+- The public presentation discloses the actual coding-agent contribution to the construction, proof, verification programs and manuscript, alongside DeepResearch's literature work. It does not claim that the human author has already approved the argument.
 - [author-walkthrough.md](author-walkthrough.md) gives the argument in plain language and a short set of questions to resolve before the author signs off.
 - Remaining work: human line-by-line review of the proof and the bounded priority assessment, and author approval. External specialist scrutiny would strengthen the result but has not occurred.
 

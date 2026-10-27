@@ -1,6 +1,6 @@
 # Research readiness
 
-Primary theorem complete; no pending certificate check. The author has not yet completed a line-by-line review.
+Primary theorem complete; no pending certificate check. Harvey Yorke has not yet completed a line-by-line review.
 
 ## Exact retained theorem
 

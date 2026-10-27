@@ -40,7 +40,7 @@ Both five-page author variants were rebuilt. Final LaTeX logs have no undefined 
 
 ## Remaining work
 
-- The author has not yet completed a line-by-line review of the claim and its proof. The [author walkthrough](author-walkthrough.md) identifies the critical deductions. No human sign-off is asserted here.
+- Harvey Yorke has not yet completed a line-by-line review of the claim and its proof. The [author walkthrough](author-walkthrough.md) identifies the critical deductions. No human sign-off is asserted here.
 - An algebraic geometer or rigidity specialist should scrutinize the complete argument and certificate interpretation. Internal agent reviews are not external peer review.
 - Passing the arithmetic checks does not substitute for either review.
 
